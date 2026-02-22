@@ -22,6 +22,9 @@ Recovery and operational governance are addressed separately
 > - **Multi-Zone Storm Triage Protocol (Section 3.4.2): priority scoring, dual-track intervention, externality-aware sequencing**
 > - **Storm–Collapse Mapping Layer (SCML): formal VST↔TLG interface with storm type → failure topology mapping + complete lifecycle closure + cross-theory variable correspondence**
 > - **Absolute Calibration Layer (Section 3.2.2): S₀ normalization, stage boundary ranges (0/1/2/3/4), triple determination (S_norm + dS/dt + d²S/dt²), component calibration rules, operational decision table**
+> - **Ontological position labeled: plural local realism — multiple absolute stability regimes coexisting locally**
+> - **Boundary Storm Concentration prediction: large-scale storms concentrate at Meta² domain boundaries**
+> - **Post-Saturation Differentiation: third pathway — cyclic fractal expansion via internal subregion generation**
 
 ---
 
@@ -2511,6 +2514,59 @@ This loop is self-terminating. Each cycle reduces the magnitude of the next cycl
 
 > Seed evolution is not unbounded. Adaptive governance converges toward a structural saturation point at which further landscape improvement yields diminishing stability gains. Rest Mode corresponds to the asymptotic limit of seed evolution — not the discovery of a fixed optimal rule set, but the state where the landscape has absorbed enough structural learning that further modification is unnecessary.
 
+**Post-saturation differentiation — the third pathway:**
+
+The preceding sections describe two responses to seed evolution convergence: substrate expansion (raising the ceiling) and Rest Mode maintenance (stable operation at the ceiling). A third pathway exists: internal differentiation.
+
+When a region reaches its Meta² saturation boundary but the environment continues to generate novel interaction demands, the system can respond by generating lower-scale subregions — each governed by a newly instantiated seed operating within the parent region's Meta² constraints:
+
+```
+Region A (saturation reached)
+  ├─ Subregion A1 (new seed, new local landscape)
+  ├─ Subregion A2 (new seed, new local landscape)
+  └─ Subregion A3 (new seed, new local landscape)
+
+The parent region maintains its saturated Rest Mode state.
+Growth continues at the subregion level.
+```
+
+Each subregion repeats the full DFG cycle:
+
+```
+generation → expansion → purification → saturation → differentiation → ...
+```
+
+This produces cyclic fractal expansion — not upward toward higher complexity within the same frame, but downward into new instances at lower scale. Total system complexity increases while no single region exceeds its Meta² boundary.
+
+**Structural consequence:** The system does not grow larger. It grows deeper. The fractal architecture is not a static property of the initial design — it is the emergent result of repeated saturation-differentiation cycles.
+
+**Cross-domain correspondence:**
+
+```
+Domain              Post-saturation differentiation
+───────────────────────────────────────────────────
+Biology             Cell division at growth limits
+Ecology             Speciation under niche saturation
+Science             Field splitting at paradigm boundaries
+Computing           Virtualization / containerization
+Civilization        Subcultural differentiation
+```
+
+**Connection to existing VST dynamics:**
+
+Post-saturation differentiation is not a new mechanism. It is the same seed generation process described in TLG Section 6.1, operating at a different trigger point:
+
+```
+Normal seed generation:  triggered by governance need (top-down)
+Post-saturation seeding: triggered by expansion pressure (bottom-up)
+```
+
+The seed dynamics, storm vulnerability of new subregions, and maturation pathway are identical in both cases. The difference is only the trigger — architectural need vs. saturation pressure.
+
+**Prediction:** Systems that undergo post-saturation differentiation should exhibit temporarily elevated storm frequency at subregion boundaries (new seeds are immature), followed by progressive stabilization as subregion landscapes form. This is the standard DFG maturation trajectory applied to emergent subregions.
+
+> Upon reaching local meta-meta saturation, adaptive regions do not expand upward but generate lower-scale subregions governed by newly instantiated seeds, producing cyclic fractal expansion across scales. The long-term structure is not a single expanding basin but a deepening fractal — stable at every layer, growing only by generating new layers below.
+
 **Convergence bounds are local, not global — substrate thickness determines ceiling:**
 
 The convergence limit described above is not a universal constant. It is ecosystem-specific — determined by the thickness of the lower-layer substrate that supports governance complexity.
@@ -2759,6 +2815,35 @@ with persistent boundaries between them.
 ```
 
 > Outcomes of seed interaction depend on structural compatibility between landscape-generating mechanisms, not on raw dominance. Seed competition results in absorption, coexistence, boundary stabilization, or mutual destabilization depending on attractor alignment. Stability between ecosystems does not emerge from eliminating differences between seeds but from allowing incompatible seeds to occupy separable regions of the landscape.
+
+**Prediction — Boundary Storm Concentration:**
+
+If the saturation-expansion model is correct, the frequency and severity of large-scale storms (Stage 3+) should correlate with proximity to Meta² boundary regions rather than with internal system parameters alone.
+
+```
+Specifically:
+  Internal storms (within a well-established basin):
+    Predominantly Stage 0–1, self-resolving, low cost.
+    
+  Boundary storms (at the interface between saturated domains):
+    Predominantly Stage 2–3, requiring active containment,
+    high propagation risk.
+
+Test design:
+  In a multi-domain system with established boundaries,
+  measure storm stage distribution as a function of
+  topological distance from the nearest domain boundary.
+  If boundary proximity is a significant predictor of
+  storm severity beyond what internal S_norm predicts,
+  the boundary concentration hypothesis is supported.
+
+Current evidence status:
+  No direct evidence.
+  Indirect support from Type C interaction dynamics
+  (persistent friction zones at incompatible seed boundaries).
+```
+
+> In saturated multi-domain systems, most large-scale storms are predicted to concentrate at domain boundaries rather than within established basins — because boundary regions are where Meta² constraints from incompatible domains generate persistent interaction pressure that internal governance mechanisms cannot fully absorb.
 
 ### The Meta-Seed — Structural Necessity of a Highest-Order Invariant
 
@@ -3245,6 +3330,8 @@ but because it is what stability means.
 Every system operates under local optimization with limited information and finite resolution. The highest constraint is visible only as the direction toward which purification moves and from which instability departs. A system that has not stormed cannot know its S_c. A system that has not purified cannot sense Meta² proximity. A system that has not converged cannot detect the ultimate constraint. The constraint reveals itself through the process of alignment, not through observation or design.
 
 > The highest-order constraint is treated as an ontologically real stability condition rather than a constructed principle. Systems do not create or reach it directly but asymptotically align with it through progressive purification and internalization. Intelligence does not develop by understanding the world — it develops by progressively conforming to stability structures that already exist.
+
+**Ontological position label:** DFG occupies a position that may be termed *plural local realism* — the claim that absolute stability conditions exist but are local rather than universal. This is distinct from both global relativism (no absolute conditions exist) and monistic absolutism (a single absolute condition governs all systems). Multiple ontologically real stability regimes coexist, each governing its own Meta² domain. Stability converges locally rather than universally. Distinct regions possess their own highest-order constraints, allowing multiple absolute stability regimes to coexist without requiring global unification.
 
 **Rest Mode (final definition):**
 
