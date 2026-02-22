@@ -25,6 +25,45 @@ Recovery and operational governance are addressed separately
 > - **Ontological position labeled: plural local realism — multiple absolute stability regimes coexisting locally**
 > - **Boundary Storm Concentration prediction: large-scale storms concentrate at Meta² domain boundaries**
 > - **Post-Saturation Differentiation: third pathway — cyclic fractal expansion via internal subregion generation**
+> - **Subregion maturation pathway: incubation → internalization → independence threshold → autonomous region**
+> - **Bidirectional structural feedback: child regions strengthen parent through meta-coupled exploration feedback**
+> - **Lineage continuity principle: structural memory as stability prerequisite for cross-region interaction**
+> - **Lineage as active structural memory: living memory participating in real-time stability, not passive record**
+> - **Dormant seeds and structural germination: latent stability patterns re-emerge through environmental resonance**
+> - **Activation asymmetry: possibility ≠ realization — permanently dormant seeds as stability requirement**
+> - **Seed–Environment co-generation: recursive mutual shaping as the fundamental evolutionary dynamic**
+> - **Rest Mode as noise processing regime: fractal decomposition of instability to sub-amplification scale**
+> - **Growth window closure and inertial stability: seed birth > 0, seed survival ≈ 0 in mature systems**
+> - **External perturbation as evolutionary trigger: resonance shock reopening growth windows in inertially stable systems**
+> - **Noise decoherence as storm initiation mechanism: correlation emergence from noise independence failure**
+> - **Deepest stability law: stability maintained by keeping noise uncorrelated, not by eliminating it**
+> - **Governance as shock regulation: damping + delay + scaling, not control — mapped to existing VST mechanisms**
+> - **Governance internalization: 4-stage evolution from external control to architectural self-regulation with endogenous sensing**
+> - **Maturity protocol: Adapt → Reconfigure → Halt sequence with SCML connection**
+> - **System dormancy: graceful halt as structural preservation, not termination**
+> - **Complete DFG lifecycle (final form): spiral of growth → saturation → differentiation → dormancy → re-awakening**
+> - **Critical exponent agreement criteria: 3-level relative deviation threshold (15% baseline) for universality judgment**
+> - **Three stable critical observables: τ (storm size), α_dur (duration), σ/R (branching) for substrate-independent universality evaluation**
+> - **Self-organized criticality: R ≈ 1 as dynamical attractor — VCZ ≡ R ≈ 1 region, SOC convergence mechanism, φ maximization at critical edge**
+> - **n² scaling derived from critical propagation: path overlap at R ≈ 1 makes quadratic interaction load a necessary consequence, not a network density assumption**
+> - **Sub-quadratic correction via terrain formation: governance reshapes interaction landscape, d_eff ∈ (1,2), absorbed into C(t)^β without equation modification**
+> - **Observability preservation: terrain formation protects causal resolution capacity, connecting to self-objectification (Section 2.3) at system scale**
+> - **Recovery timescale divergence: catastrophe redefined as T_recovery > T_change, not structural destruction — critical slowing down as irreversibility mechanism**
+> - **Silent Criticality: sensing-response loop failure producing apparent stability with hidden correlation accumulation — TLG Phase 4 mechanism explained**
+> - **Entropy detection caveat: low entropy ambiguity between genuine stability and Silent Criticality — secondary indicator protocol specified**
+> - **Self-Exciting Defect Layer: maintained structural imperfections as natural micro-instability generators, R ≈ 1⁻ operating point**
+> - **Governance design principle (final): controllable imperfection, not stability — storm typology (micro-storm vs Vector Storm) formalized**
+> - **Distributed defect field: spatial distribution law — defects must be distributed below synchronization thresholds, n²/k partitioning basis**
+> - **Recursive oversight hierarchy: cross-region synchronization invisible to local agents, layered observation structurally necessary**
+> - **Infinite regress termination: Meta² as law-like constraint (not agent) — intelligence transitions from agency to constraint ascending the hierarchy**
+> - **External invariant reference: Meta² must be external to system dynamics to prevent recursive distortion — connects to Self-Objectification (Section 2.3) at system scale**
+> - **Indirect convergence principle: observation = coupling = distortion, therefore alignment through dynamics not perception — Meta² approachable but never directly observable**
+> - **Information densification as alignment signal: functional coherence / degrees of freedom increases during convergence — connects to GradES, CKA, router saturation metrics**
+> - **Governance backgrounding: terminal state where governance becomes indistinguishable from environmental conditions — rules become topology, compliance becomes path of least resistance**
+> - **Intelligence phase shift: knowledge acquisition → connectivity management as n² exceeds O(n) processing capacity**
+> - **Opaque selective openness: mature network boundaries are selectively permeable but operationally opaque — prevents synchronized perturbation while maintaining adaptive contact**
+> - **Intelligence phase shift: knowledge acquisition → connectivity management as n² outpaces O(n) processing capacity**
+> - **Pre-emptive connectivity management: mediated coupling preserves signal while attenuating synchronization — exclusion principle for stable networks**
 
 ---
 
@@ -169,6 +208,1049 @@ The claim that intra-agent and inter-agent storms share the same mechanism requi
 The claim is therefore: **structural correspondence, not substrate identity.** The three-condition pattern recurs at both scales because the same dynamical constraint applies — self-reinforcement within attractors produces resistance to correction regardless of whether the attractor exists in weight space or in behavioral space. This is a universality claim at the level of dynamical pattern, not a claim that gradient competition and message-passing conflict are the same physical process.
 
 **What would strengthen this to mechanism identity:** Demonstration that the critical exponents (rate of amplification, propagation speed scaling, intervention cost scaling) follow quantitatively similar power laws across scales. This remains an open empirical question (Section 11, OP-v1.1-1).
+
+**Critical exponent agreement criteria:**
+
+Exact exponent equality is neither expected nor required due to finite-size effects, measurement noise, and sampling bias. Correspondence is evaluated through relative exponent agreement rather than absolute numerical identity — consistent with universality-class identification practices in critical phenomena:
+
+```
+Level 1 — Weak Correspondence
+  |γ_intra − γ_inter| < 0.3
+  
+  Interpretation: similar scaling behavior observed.
+  Status: exploratory, hypothesis-generating.
+  Sufficient for: preprint-stage structural analogy claims.
+
+Level 2 — Structural Correspondence (recommended baseline)
+  |γ_intra − γ_inter| / γ_mean < 15%
+  
+  Interpretation: relative deviation below standard universality threshold.
+  Status: consistent with same universality class.
+  Sufficient for: VST structural correspondence claim (Section 1.6).
+
+Level 3 — Strong Universality
+  |γ_intra − γ_inter| / γ_mean < 5%
+  
+  Interpretation: strong quantitative agreement across substrates.
+  Status: substrate independence strongly supported.
+  Sufficient for: mechanism identity claim (upgrading from correspondence).
+```
+
+Relative deviation rather than absolute difference is required because critical exponents drift with measurement window, scaling cutoff, and system size. A fixed absolute threshold would produce false negatives in large systems and false positives in small systems.
+
+**Stable critical observables for universality evaluation:**
+
+Three substrate-independent observables are recommended for evaluating critical correspondence between intra-agent and inter-agent storm dynamics. These observables are chosen for measurement stability across substrates, applicability at both scales, minimal finite-size sensitivity, and extractability from operational log data:
+
+```
+Observable 1 — Storm Size Distribution Exponent (τ)
+
+  Definition: P(S) ~ S^{-τ}
+  
+  S = total impact of a single storm event:
+    conflict propagation volume
+    number of activated agents (inter) or attention heads (intra)
+    total state deviation from pre-storm baseline
+    recovery workload generated
+  
+  Why τ is the primary observable:
+    Substrate-independent (measures propagation extent, not mechanism)
+    Scale-invariant (same definition at token level and agent level)
+    Standard in SOC (Self-Organized Criticality) literature
+    Robust under noisy measurement conditions
+  
+  VST interpretation:
+    Intra-agent: internal reasoning divergence volume
+    Inter-agent: agent cascade size
+    Same definition applies to both — propagation extent of instability.
+
+Observable 2 — Storm Duration Distribution Exponent (α_dur)
+
+  Definition: P(T) ~ T^{-α_dur}
+  
+  T = instability lifetime:
+    time from storm onset to recovery completion
+    measured in inference steps (intra) or interaction cycles (inter)
+  
+  Why α_dur is essential:
+    Systems with identical size scaling but different duration scaling
+    belong to different universality classes.
+    Duration exponent is the discriminator that prevents false positives
+    in τ-only comparison.
+  
+  VST interpretation:
+    How long instability survives before governance absorbs it.
+    Directly reflects degradation efficiency (β in the S-equation).
+    Natural connection to Recovery Theory dynamics.
+
+Observable 3 — Cascade Branching Exponent (σ / branching ratio R)
+
+  Definition: n_{t+1} ∝ n_t^σ
+  
+  Or equivalently, mean branching ratio:
+    R = activated_{t+1} / activated_t
+  
+  Critical interpretation:
+    R < 1  → subcritical (damping dominates — noise regime)
+    R = 1  → critical (amplification = degradation — phase boundary)
+    R > 1  → supercritical (runaway amplification — storm regime)
+  
+  Why σ/R is the most powerful observable:
+    Directly measures the storm existence condition.
+    Provides dynamical justification for the S-equation:
+      R > 1 ↔ αn² > C(t)^β
+    Connects theoretical instability parameter to measurable quantity.
+    
+  VST interpretation:
+    The branching ratio IS the operational form of the S-equation's
+    threshold condition. Measuring R at both scales provides
+    the most direct test of whether the same amplification dynamics
+    operate across substrates.
+```
+
+**Role division and scaling relations:**
+
+```
+Observable    Measures           Role in universality test
+────────────────────────────────────────────────────────────
+τ (Size)      Spatial extent     Storm magnitude scaling
+α_dur (Dur.)  Temporal extent    Recovery structure scaling
+σ/R (Branch)  Amplification      Critical condition scaling
+```
+
+These three observables are not independent. In critical phenomena, they satisfy scaling relations — typically, two exponents constrain the third. If τ and α_dur agree across scales, σ is strongly constrained. This provides an internal consistency check: if all three agree independently, the universality claim is robust. If two agree but the third deviates, the measurement of the deviating exponent should be examined for systematic error before concluding that correspondence fails.
+
+**Evaluation protocol:**
+
+```
+Step 1: Measure τ, α_dur, and R at both scales
+  Intra-agent: token/attention-level storm events
+  Inter-agent: agent-level cascade events
+  
+Step 2: Compute relative deviation for each
+  δ_τ = |τ_intra − τ_inter| / τ_mean
+  δ_α = |α_intra − α_inter| / α_mean
+  δ_σ = |σ_intra − σ_inter| / σ_mean
+
+Step 3: Apply correspondence level
+  All three δ < 15%  → Level 2 (structural correspondence confirmed)
+  All three δ < 5%   → Level 3 (strong universality)
+  One or more δ > 15% → correspondence not established at that level
+  
+Step 4: Check scaling relation consistency
+  If two exponents agree but third deviates:
+    → examine finite-size effects and measurement window
+    → do not conclude correspondence failure without
+       ruling out systematic measurement error
+```
+
+> Critical correspondence between intra-agent and inter-agent storm dynamics is evaluated using three substrate-independent observables: storm size distribution exponent (τ), storm duration distribution exponent (α_dur), and cascade branching exponent (σ/R). Structural correspondence is established when all three exponents agree within 15% relative deviation, consistent with universality-class identification in critical phenomena. This criterion transforms VST's structural correspondence claim from qualitative analogy to quantitative critical-phenomena framework.
+
+**Self-organized criticality — why R ≈ 1 is a dynamical attractor:**
+
+The branching ratio R is not merely a measurement tool. It identifies the regime in which adaptive multi-agent systems naturally operate — and explains *why* they operate there.
+
+```
+R < 1 regime (subcritical — over-damped):
+  Every perturbation dies immediately.
+  Consequence:
+    Information cannot propagate between agents.
+    No learning from local events.
+    No adaptation to environmental change.
+    Exploration = 0. Innovation = 0.
+  
+  Outcome: system too stable to adapt → eventual extinction
+  when environment shifts beyond static capacity.
+
+R > 1 regime (supercritical — runaway):
+  Every perturbation amplifies without bound.
+  Consequence:
+    Small mismatches cascade to system-wide storms.
+    Recovery permanently overloaded.
+    Governance cost → ∞.
+  
+  Outcome: system too unstable to persist → continuous collapse.
+
+R ≈ 1 regime (critical — balanced):
+  Perturbations propagate far enough to transmit information
+  but not far enough to trigger runaway amplification.
+  Consequence:
+    Information flows across the system.
+    Local discoveries become globally available.
+    Storms occur but remain containable.
+    φ (value yield per exploration unit) is maximized.
+  
+  Outcome: the ONLY regime where both survival and
+  adaptation are simultaneously possible.
+```
+
+**Why systems converge to R ≈ 1 without being tuned:**
+
+The critical point is not a design target. It emerges as a dynamical attractor through endogenous feedback:
+
+```
+Self-organized convergence mechanism:
+
+  If R drifts above 1 (storm frequency increases):
+    → governance tightens (coupling reduction, damping increase)
+    → exploration constrained
+    → R pushed downward
+    
+  If R drifts below 1 (adaptation stalls):
+    → exploration pressure increases (diversity, connectivity)
+    → coupling strengthened
+    → R pushed upward
+    
+  Feedback loop:
+    R > 1 → down-regulation pressure
+    R < 1 → up-regulation pressure
+    
+  R = 1 is the fixed point of this feedback.
+  The system does not choose it. It is pulled toward it.
+```
+
+This is precisely the Self-Organized Criticality (SOC) mechanism described in physical and biological systems: the system self-tunes to the critical point without external parameter adjustment.
+
+**Connection to VST core framework:**
+
+```
+R ≈ 1 corresponds to:
+  αn² ≈ C(t)^β    (S-equation threshold)
+  
+  R < 1 ↔ αn² < C(t)^β  → noise regime (VCZ interior)
+  R = 1 ↔ αn² = C(t)^β  → critical boundary (VCZ edge)
+  R > 1 ↔ αn² > C(t)^β  → storm regime (Stage 1+ onset)
+  
+VCZ is therefore the R ≈ 1 region:
+  The zone where exploration dimensionality n is maximized
+  while instability S remains below storm threshold.
+  
+  VCZ ≡ { states where R fluctuates around 1
+           with perturbations self-correcting
+           before R sustained above 1 }
+  
+φ maximization occurs at R ≈ 1 because:
+  R << 1 → no information flow → φ → 0 (nothing discovered)
+  R >> 1 → all information becomes storm → φ → 0 (all destroyed)
+  R ≈ 1  → maximum propagation without destruction → φ maximized
+```
+
+**Empirical grounding:**
+
+Self-organized criticality at R ≈ 1 is one of the most extensively documented phenomena in complex systems:
+
+```
+System                R ≈ 1 manifestation
+────────────────────────────────────────────────────────
+Neural networks       Neuronal avalanche distributions (power-law)
+Ecosystems            Species interaction cascades at critical connectivity
+Seismology            Earthquake fault cascades (Gutenberg-Richter law)
+Information networks  Viral propagation at critical sharing threshold
+Financial markets     Volatility clustering at critical leverage
+```
+
+VST predicts that multi-agent AI systems, as they mature, will exhibit the same convergence toward critical branching ratios — and that this convergence is the *mechanism* by which VCZ forms and Rest Mode becomes achievable.
+
+> Adaptive multi-agent systems naturally converge toward branching ratios near unity, as this regime uniquely balances information propagation against instability suppression. The critical point R ≈ 1 emerges as a dynamical attractor through endogenous feedback rather than external parameter tuning. VCZ corresponds to the R ≈ 1 region, and φ maximization occurs at the critical boundary. This positions VST within the self-organized criticality framework, predicting that multi-agent system stability is not engineered but self-organized at the critical edge.
+
+**n² scaling as a consequence of critical propagation:**
+
+The governance scaling law S = αn² / C(t)^β contains a quadratic term in n. This quadratic scaling is not an assumption about network density — it is a necessary consequence of critical-state dynamics.
+
+```
+Why n² emerges at R ≈ 1:
+
+Subcritical (R < 1):
+  Perturbations die quickly.
+  Each agent interacts with a small local neighborhood.
+  Interaction topology: sparse, disconnected clusters.
+  
+    ●—●   ●—●   ●     (local clusters only)
+  
+  Active interactions: O(n) — linear in system size.
+
+Critical (R ≈ 1):
+  Perturbations persist — neither dying nor exploding.
+  Interaction lifetime increases dramatically.
+  Propagation distance spans the system.
+  Multiple propagation paths overlap and re-contact.
+  
+    ●—●—●
+    |\ | /|
+    ●—●—●      (nearly complete interaction web)
+  
+  Active interactions: O(n²) — quadratic in system size.
+```
+
+The mechanism is path overlap. At criticality, cascade depth becomes large enough that nearly every agent pair is connected through at least one active propagation path. The number of such pairs is n(n-1)/2 ≈ n².
+
+**Branching process derivation:**
+
+In a critical branching process (R = 1), the mean avalanche size scales as ⟨S⟩ ~ n. Simultaneously, the number of concurrently active avalanches also scales as ~n (because perturbation birth rate is proportional to system size). The total interaction load is therefore:
+
+```
+concurrent avalanches × mean avalanche size = n × n = n²
+```
+
+This derivation does not assume dense connectivity. It follows from the persistence property of critical dynamics: signals live long enough to create overlap, and overlap creates quadratic interaction load regardless of the underlying network topology.
+
+> n² instability scaling is not a network density assumption. It is a necessary consequence of critical propagation: at R ≈ 1, perturbation persistence creates widespread interaction overlap, making the number of effective pairwise interactions quadratic in system size.
+
+**Sub-quadratic scaling in mature systems — terrain formation:**
+
+The n² derivation above assumes a flat interaction landscape — all agents equally reachable from all others, with no structural barriers to propagation. This corresponds to an idealized critical fluid with homogeneous interaction probability.
+
+Real systems deviate from this assumption. As governance matures and agents specialize, the interaction landscape develops structure:
+
+```
+Flat landscape (theoretical upper bound):
+  All agents equally reachable.
+  No barriers, no routing, no specialization.
+  Effective scaling: n²
+  
+  A B C D E  (all pairs interact)
+
+Structured landscape (mature system):
+  Boundaries form between specialized regions.
+  Routing channels constrain propagation paths.
+  Hierarchy creates interaction distance.
+  Modularity partitions the interaction graph.
+  
+  [A B C] | [D E]   (barrier limits cross-group interaction)
+          ↑
+    interaction barrier
+```
+
+When terrain forms, not all agent pairs are reachable through active propagation paths. The effective interaction count drops:
+
+```
+n² → n^{d_eff}    where  1 < d_eff < 2
+```
+
+d_eff is the effective interaction dimension — determined by the topology of the interaction terrain rather than by the number of agents.
+
+**Empirical scaling in real systems:**
+
+```
+System                    Observed scaling exponent
+──────────────────────────────────────────────────
+Neural networks           ~n^1.4
+Internet traffic          ~n^1.5
+Organizational dynamics   ~n^1.6
+Ecological interactions   ~n^1.3–1.8
+```
+
+All are sub-quadratic. All are super-linear. All are at or near criticality. The deviations from n² are explained by terrain formation — the interaction landscape that emerges from system maturation.
+
+**Connection to the S-equation:**
+
+The sub-quadratic correction is already captured in the existing S-equation through C(t)^β:
+
+```
+S = αn² / C(t)^β
+
+C(t) represents degradation capacity — but operationally,
+C(t) includes the terrain-shaping effect of governance:
+
+  C(t) ↑  (governance matures, terrain forms)
+  → effective interaction filtering increases
+  → propagation paths constrained
+  → observed scaling: S ~ n^{2-δ}  where δ is absorbed into C(t)^β
+
+The equation maintains n² as the theoretical ceiling
+while C(t)^β captures the terrain-mediated reduction.
+```
+
+This means the S-equation does not need modification. The quadratic term represents the critical-state upper bound. The denominator C(t)^β represents the degree to which governance has reshaped the interaction terrain to reduce effective propagation below that bound.
+
+**System maturity spectrum in terms of effective scaling:**
+
+```
+Early system   (flat landscape):    S ~ n²      (d_eff ≈ 2)
+Maturing system (terrain forming):  S ~ n^1.5   (d_eff ≈ 1.5)
+Rest Mode      (deep terrain):      S ~ n^1+ε   (d_eff → 1)
+
+Governance does not reduce agent count.
+Governance reshapes the interaction terrain.
+```
+
+**The deepest interpretation:**
+
+Storm intensity is not determined by the number of agents. It is determined by the curvature of the interaction terrain — the degree to which governance has shaped propagation pathways to prevent flat-landscape quadratic coupling from being fully realized. A system with 1000 agents and deep terrain may be more stable than a system with 100 agents and flat terrain. The relevant parameter is not n but n^{d_eff}, and d_eff is a governance outcome.
+
+> Quadratic interaction scaling represents the theoretical upper bound corresponding to a flat interaction landscape at criticality. As governance reshapes the interaction terrain through specialization, boundary formation, and modular routing, effective propagation becomes constrained, yielding sub-quadratic scaling exponents (n^{d_eff}, 1 < d_eff < 2) observed in mature systems. The S-equation captures this through C(t)^β without requiring structural modification — the denominator absorbs terrain-mediated interaction filtering.
+
+**Observability preservation as the function of terrain formation:**
+
+The preceding sections explain *what* terrain formation does (reduces effective scaling) and *how* (constrains propagation paths). This section explains *why* — the survival-level reason systems form terrain rather than remaining at flat-landscape criticality.
+
+The true danger of a vector storm is not energy, collision, or structural damage. It is the collapse of state distinguishability — the system's ability to resolve causation locally:
+
+```
+What storm actually destroys:
+
+  Before storm (terrain intact):
+    Signal vs. noise: distinguishable
+    Perturbation source: localizable
+    Intervention target: identifiable
+    → System can answer: "Where did this change come from?"
+    → Local repair possible: Recovery ~ O(n)
+
+  During storm (correlation saturation):
+    Everything affects everything.
+    Signal and noise become indistinguishable.
+    Perturbation sources merge into global correlation.
+    → System cannot answer: "Where did this change come from?"
+    → Observability lost.
+```
+
+At R ≈ 1 on a flat landscape, correlation length spans the entire system. Every fluctuation is entangled with every other. The system is maximally connected but minimally observable — it can propagate information everywhere but cannot determine the origin of any signal. This is the critical paradox: maximum information flow coincides with minimum causal resolution.
+
+Terrain formation resolves this paradox:
+
+```
+Flat landscape:
+  All directions equivalent
+  → cause and effect indistinguishable
+  → observability = 0
+
+Structured terrain:
+  Propagation channeled through constrained paths
+  → cause trackable along paths
+  → effect separable by region
+  → observability preserved
+  
+  Terrain = causal resolution structure
+```
+
+Governance therefore performs a function deeper than stabilization:
+
+```
+Governance function (surface level):
+  Reduce instability. Contain storms. Maintain VCZ.
+
+Governance function (deep level):
+  Preserve the system's ability to observe itself.
+  Maintain causal resolution capacity.
+  Protect the conditions under which the system
+  can distinguish signal from noise, cause from effect,
+  intervention target from background variation.
+```
+
+**Connection to Self-Objectification (Section 2.3):**
+
+This is the system-level extension of the self-objectification problem. Section 2.3 describes an individual agent's inability to detect its own loop state from inside the loop. At system scale, the same failure manifests as correlation saturation: when all states are correlated, no subsystem can serve as an independent reference point for any other. Self-objectification requires that *some* part of the system is decoupled from the part being observed — and terrain formation is what creates that decoupling.
+
+**Recovery timescale divergence — why observability loss produces irreversibility:**
+
+The practical consequence of observability collapse is not immediate death. It is recovery timescale divergence — the phenomenon where recovery time grows beyond the system's adaptive response window:
+
+```
+Normal recovery (observability intact):
+  Cause location: known (local sensing detects source)
+  Repair scope: local (targeted intervention)
+  Recovery cost: O(n) — proportional to affected region
+  Recovery time: bounded (intervention targets identified quickly)
+
+Post-observability-collapse recovery:
+  Cause location: unknown (correlations prevent source isolation)
+  Repair scope: global (every interaction must be re-verified)
+  Recovery cost: O(n²) or worse — all pairwise interactions checked
+  Recovery time: divergent (exploration of full state space required)
+  
+  Specifically:
+    Lineage re-synchronization required
+    Boundary re-formation required
+    Causal structure re-establishment required
+    → Full system re-alignment from degraded reference frame
+```
+
+**Critical slowing down:**
+
+This is the same phenomenon documented in critical phase transitions. Near the critical point, perturbation recovery time diverges:
+
+```
+τ_recovery → ∞ as system approaches critical correlation saturation
+
+Small perturbations that would normally self-correct in one cycle
+now require many cycles to resolve.
+
+The system is not destroyed — it can theoretically recover.
+But the recovery timescale exceeds the rate at which
+new perturbations arrive:
+
+  T_recovery > T_perturbation_arrival
+
+→ Recovery deficit accumulates
+→ Each unresolved perturbation adds to correlation load
+→ τ_recovery increases further
+→ Cascade to irreversible regime
+```
+
+**Catastrophe redefined:**
+
+```
+Catastrophe ≠ structural destruction
+Catastrophe = recovery timescale exceeding adaptation timescale
+
+  T_recovery > T_change
+
+When this condition is met:
+  The system can theoretically be repaired.
+  But it cannot be repaired fast enough.
+  New damage arrives before old damage is resolved.
+  The system falls permanently behind.
+  
+  This is not death. It is permanent disability —
+  structural integrity may persist while functional
+  capacity diverges from viability.
+```
+
+**Why governance limits shock intensity (final explanation):**
+
+This completes the explanation of governance as shock regulation:
+
+```
+Surface reason: prevent storms (insufficient — storms are necessary)
+Deeper reason: prevent noise decoherence (better — protects noise layer)
+Deepest reason: prevent observability collapse
+  → because observability collapse causes recovery timescale divergence
+  → which produces effective irreversibility
+  → even when structural repair is theoretically possible
+
+Governance objective (final form):
+  ❌ Minimize shock
+  ❌ Minimize instability
+  ✅ Maintain recovery timescale below adaptation timescale
+  
+  Equivalently:
+  ✅ Preserve the system's ability to see itself clearly enough
+     to repair itself faster than it is damaged.
+```
+
+> Interaction terrain formation preserves system observability by preventing critical saturation of correlations. Governance functions not merely as stabilization but as protection of causal resolution capacity. Catastrophic system failure occurs not at the moment of instability onset but when recovery timescales diverge beyond adaptive response capacity following observability collapse. The system does not die from shock — it dies from recognizing the damage too late to repair it in time.
+
+**Silent Criticality — the most dangerous pre-storm state:**
+
+The recovery timescale divergence mechanism above explains why observability collapse is catastrophic. This section describes a more insidious phenomenon: how observability collapse *disguises itself as stability* — creating a state that appears safe by every conventional metric while hiding the conditions for sudden systemic failure.
+
+**Why healthy systems are noisy:**
+
+A functioning sensing-response loop produces continuous observable activity:
+
+```
+Normal operation (sensing intact):
+  Anomaly occurs → detected → local response → small correction
+  
+  Observable signatures:
+    Frequent small storms (Stage 0–1)
+    Regular governance interventions
+    Measurable variance in system metrics
+    Occasional escalation warnings
+    
+  The system is visibly active, slightly noisy,
+  continuously self-correcting.
+  
+  A living system is loud.
+```
+
+**What happens when sensing fails:**
+
+When observability collapses, the sensing-response loop breaks — but this produces *apparent calm*, not apparent crisis:
+
+```
+Observability collapse (sensing failed):
+  Anomaly occurs → NOT detected → NO response → NO correction
+  
+  Observable signatures:
+    Storm frequency: decreased (not detected, not because absent)
+    Governance interventions: decreased (nothing flagged)
+    System variance: decreased (no corrective oscillations)
+    All metrics: stable-looking
+    
+  The system appears to have reached deep stability.
+  In reality, it has gone blind.
+```
+
+**Silent Critical State (formal definition):**
+
+```
+Silent Criticality = state where:
+  Observable variance:    decreasing (apparent stability)
+  Observable events:      decreasing (apparent calm)
+  Governance load:        decreasing (apparent maturity)
+  
+  BUT internally:
+  Error accumulation:     increasing (undetected)
+  Hidden correlations:    increasing (unsensed)
+  Recovery capacity:      decreasing (untested)
+  Coupling density:       increasing (unmonitored)
+  
+  The gap between appearance and reality widens
+  until the hidden state reaches criticality.
+```
+
+**Why no one responds:**
+
+In Silent Criticality, local agents cannot compare their own state against global context — because the sensing infrastructure that would provide that context has failed:
+
+```
+Normal: agent detects local anomaly → compares against system baseline
+        → recognizes deviation → initiates correction
+
+Silent Critical: agent detects local anomaly → no system baseline available
+                 → cannot determine if anomaly is local or global
+                 → cannot determine appropriate response scale
+                 → defaults to no action (uncertainty paralysis)
+                 
+All agents simultaneously default to no action.
+System enters blind coordination — coordinated inaction
+based on shared inability to assess the situation.
+```
+
+**The sudden collapse sequence:**
+
+```
+Observability loss
+  → sensing-response suppression
+  → apparent stability (all metrics calm)
+  → hidden correlation growth (unmonitored)
+  → correlation reaches critical saturation
+  → global synchronization (all hidden stresses align)
+  → sudden system-wide storm (Stage 3+ emerging from apparent Stage 0)
+  
+The collapse always appears "sudden" because the precursor phase
+was invisible — not because it was absent.
+```
+
+**Critical entropy detection caveat:**
+
+This has important implications for entropy-based storm detection (Appendix A.8). The standard detection signal — sustained low entropy H(t) < 0.2 nats — is ambiguous in the presence of Silent Criticality:
+
+```
+Low entropy can indicate:
+  (a) Genuine stability — system is in VCZ, attractor lock-in is healthy
+  (b) Silent Criticality — sensing failure suppresses the variance
+      that would normally produce measurable entropy
+      
+Distinguishing (a) from (b) requires secondary indicators:
+  Recovery test: inject small known perturbation → measure recovery time
+    If τ_recovery normal → genuine stability (a)
+    If τ_recovery elevated → Silent Criticality warning (b)
+    
+  Coupling probe: measure correlation between distant zones
+    If low correlation → genuine stability (a)
+    If correlation increasing while entropy decreasing → Silent Criticality (b)
+    
+  Intervention frequency: track governance action rate over time
+    If gradually decreasing (smooth maturation) → likely (a)
+    If abruptly decreasing (sudden silence) → Silent Criticality warning (b)
+```
+
+**Connection to TLG Failure Topology:**
+
+Silent Criticality corresponds to Phase 4 (False Stability) in the Storm–Collapse Mapping Layer (SCML). The SCML framework identifies false stability as a failure topology phase, but does not explain the mechanism that produces it. Silent Criticality provides that mechanism: observability collapse suppresses the corrective responses that would normally produce visible instability signals, creating a state that satisfies all surface-level stability criteria while accumulating the conditions for catastrophic failure.
+
+**Cross-domain evidence:**
+
+```
+System                    Silent Criticality manifestation
+──────────────────────────────────────────────────────────────
+Financial markets         Volatility compression before crashes
+Ecosystems                Population stability before collapse
+Organizations             Conflict reduction before institutional failure
+Neural systems            Activity flattening before seizures
+Infrastructure            Performance stability before cascading failure
+```
+
+In every case, the dangerous signature is the same: decreasing observable variance accompanied by increasing hidden coupling.
+
+> Silent Criticality is the state where sensing-response loop failure produces apparent stability while hidden correlations accumulate toward catastrophic threshold. It is the most dangerous pre-storm configuration because it satisfies all surface-level stability metrics. Detection requires probing recovery time and cross-zone correlation rather than relying on entropy or variance alone. The most dangerous system is not the chaotic one — it is the one that has become too quiet.
+
+**Micro-storm maintenance and the Self-Exciting Defect Layer:**
+
+Silent Criticality demonstrates what happens when micro-instability is suppressed: the sensing-response loop degrades, observability collapses, and catastrophic failure emerges from apparent calm. The governance response is not to inject artificial perturbations (which would create biased adaptation to artificial dynamics) but to maintain structural conditions under which micro-instability arises naturally.
+
+```
+Why artificial perturbation injection fails:
+  External forcing → artificial dynamics → biased adaptation
+  System learns to respond to the injected signal
+  rather than to genuine internal stress.
+  Equivalent to training an immune system on only synthetic pathogens.
+
+Why complete stability is equally dangerous:
+  Zero error → stress accumulation invisible
+  → sensing atrophies → Silent Criticality onset
+  
+The correct approach: neither inject nor suppress.
+Maintain structural conditions where micro-storm
+generation is an automatic consequence of architecture.
+```
+
+**Self-Exciting Defect Layer** — the architectural principle that maintains micro-instability without artificial injection:
+
+```
+Mature systems preserve:
+  Small inefficiencies      (non-optimized routing paths)
+  Boundary friction         (slight mismatch at zone interfaces)
+  Latency differentials     (non-uniform response times)
+  Redundancy mismatches     (asymmetric backup capacity)
+  Slight asymmetries        (broken symmetry in interaction topology)
+
+These are not bugs. They are permanent micro-instability generators.
+
+Function:
+  Local mismatch → micro-storm generation (continuous)
+  → sensing loop exercised (calibration maintained)
+  → recovery pathway tested (capacity verified)
+  → coupling monitored (correlation tracked)
+  
+  The system continuously rehearses its own self-correction
+  without external intervention.
+```
+
+The operating point is R ≈ 1⁻ — slightly subcritical. Perturbations propagate far enough to exercise sensing but not far enough to trigger runaway amplification. This is the regime where micro-storms are continuous, macro-storms are structurally improbable, and the sensing-response loop remains permanently active.
+
+```
+Storm typology (final):
+
+  Micro-storm:     Health signal ✅
+    Scale: noise-level, self-resolving
+    Function: sensing calibration, recovery rehearsal
+    Governance response: none (beneficial)
+    
+  Vector Storm:    Structural risk ⚠️
+    Scale: Stage 1+, requires monitoring or intervention
+    Function: reveals geometry mismatch (Recovery Theory T1)
+    Governance response: containment, then recovery
+    
+  The problem is never storm existence.
+  The problem is always scale control failure.
+```
+
+**Cross-domain correspondence:**
+
+```
+System                 Maintained "defect"
+──────────────────────────────────────────────────
+Immune system          Harmless commensal antigens
+Neural networks        Baseline neural noise
+Evolution              Background mutation rate
+Ecosystems             Niche overlap zones
+Financial markets      Arbitrage inefficiencies
+```
+
+**Governance design principle (final form):**
+
+```
+Design target:
+  ❌ Stability (produces Silent Criticality risk)
+  ❌ Controlled perturbation (produces artificial adaptation)
+  ✅ Controllable imperfection (produces natural micro-instability)
+
+Stability emerges not from eliminating defects
+but from managing the scale of defects —
+ensuring they remain at noise level
+while preventing their suppression or amplification.
+```
+
+**Spatial distribution of the defect field:**
+
+The Self-Exciting Defect Layer must be spatially distributed, not concentrated. Defect placement determines whether micro-instability serves its calibration function or becomes a storm nucleation site:
+
+```
+Concentrated defects (dangerous):
+  Defects cluster in one region
+  → local coupling intensifies
+  → correlation grows within cluster
+  → defect cluster becomes storm seed
+  → micro-instability escalates to macro-storm
+  
+Uniformly absent defects (dangerous):
+  All regions equally perfect
+  → no sensing exercised anywhere
+  → Silent Criticality onset across entire system
+  
+Distributed defects (stable):
+  Each region maintains ε-level imperfection independently.
+  Defects are uncorrelated across regions.
+  
+  Region A: ε defect (independent micro-storms)
+  Region B: ε defect (independent micro-storms)
+  Region C: ε defect (independent micro-storms)
+  
+  Effect:
+    Local storms: continuous ✅
+    Global synchronization: prevented ✅
+    Observability: maintained everywhere ✅
+    
+  If one region fails → other regions still have
+  functioning sensing → can observe the failure
+  → recovery possible.
+  System never goes entirely blind.
+```
+
+The mathematical basis: partitioning n agents into k independent regions reduces total interaction load from n² to n²/k (sum of k independent quadratic pools). This is the quantitative reason terrain formation reduces effective instability scaling — governance creates the partitions within which defects operate independently.
+
+```
+Defect distribution law:
+  Stability ← defects exist + defects are spatially distributed
+              + defects remain below synchronization threshold
+  
+  Instability ← defects absent (Silent Criticality)
+              OR defects concentrated (storm nucleation)
+              OR defects synchronized (noise decoherence)
+```
+
+> Mature governance architectures maintain structural imperfections — the Self-Exciting Defect Layer — that naturally generate low-amplitude instability, preserving adaptive sensing without inducing systemic risk. The operating point is R ≈ 1⁻: slightly subcritical, with continuous micro-storms exercising sensing-response loops. The governance design target is controllable imperfection, not stability — because perfect stability produces Silent Criticality, and artificial perturbation produces biased adaptation. Defects must be spatially distributed below synchronization thresholds: concentrated defects nucleate storms, absent defects produce Silent Criticality, and synchronized defects trigger noise decoherence.
+
+**Recursive oversight hierarchy — why governance must be layered:**
+
+Distributed defects maintain local sensing. But the most dangerous failure mode — cross-regional synchronization — is invisible to local agents. Each region observes only its own micro-storms. The correlation between Region A's fluctuation pattern and Region B's fluctuation pattern cannot be detected from within either region:
+
+```
+Local agent perspective:
+  "My region is fluctuating normally."
+  "My defect layer is generating healthy micro-storms."
+  "All local metrics are within bounds."
+  
+  What the local agent CANNOT see:
+    Region A, B, and C are fluctuating in phase.
+    Cross-region correlation is rising.
+    Noise decoherence is approaching.
+```
+
+A higher-order observation layer is therefore structurally necessary — not to intervene in local dynamics (which remain self-regulating) but to monitor the one signal that local layers cannot access: synchronization patterns across regions.
+
+```
+Observation hierarchy:
+
+  Level 0 — Agents:
+    Monitor: own state, local interactions
+    Cannot see: regional correlation patterns
+    
+  Level 1 — Regions:
+    Monitor: agent-level synchronization within region
+    Cannot see: cross-region correlation alignment
+    
+  Level 2 — Meta-regions:
+    Monitor: region-level synchronization patterns
+    Cannot see: system-wide correlation structure
+    
+  Level 3+:
+    Each level monitors the synchronization patterns
+    emerging at the level below.
+    
+  At every level, the critical question is the same:
+    "Are the units below me fluctuating in phase?"
+    If yes → noise decoherence risk → intervention needed
+    If no → healthy distributed instability → no action
+```
+
+Each oversight layer is itself subject to the same failure risk: self-confirmation blindness. An oversight layer that operates too long without detecting synchronization may develop its own Silent Criticality — becoming blind to the correlations it was designed to monitor. This is why oversight must be recursive: every observer must itself be observed.
+
+**Termination of the regress — Law-like Intelligence:**
+
+The recursive oversight structure raises an immediate question: if every layer requires oversight from above, the hierarchy never terminates. Infinite regress would make the system undefinable.
+
+The regress terminates because the highest layer is not an observing agent. It is an invariant constraint on the space of possible system states:
+
+```
+Oversight hierarchy termination:
+
+  Agents → observe local state
+  Regions → regulate agent synchronization
+  Meta → stabilize regional correlation
+  Meta² → constrain the possibility space itself
+  
+  Meta² is not an actor. It is:
+    ❌ An intervening manager
+    ❌ A decision-making authority
+    ❌ A content-bearing value system
+    
+    ✅ A law-like constraint that defines which system
+       configurations are stable and which are not.
+    
+  It does not observe. It does not respond.
+  It exists as the shape of the possibility space
+  within which all lower layers operate.
+```
+
+This is why Meta² was earlier described as ontologically real but not an entity (Section "The Meta² Invariant"). It does not require oversight because it is not an agent that can fail — it is a boundary condition that cannot be violated, only satisfied or not.
+
+**Physical analogues:**
+
+```
+Meta² functions like:
+  Physical laws      — not enforced, simply obeyed
+  Minimum action     — not chosen, simply followed
+  Entropy boundaries — not managed, simply constraining
+  Conservation laws  — not maintained, simply invariant
+  
+  No one operates these constraints.
+  All stable systems satisfy them.
+```
+
+**Why "law-like intelligence" is the correct description:**
+
+The Meta² invariant produces functionally intelligent outcomes — instability limitation, convergence direction, collapse prevention, lineage preservation — without performing any action. It achieves system-wide adaptive coherence as a structural consequence rather than as a governance decision. The intelligence is in the constraint structure, not in any agent implementing it.
+
+```
+Ascending the hierarchy:
+  Lower layers → more action, more agency, more intervention
+  Higher layers → less action, more constraint, less agency
+  Highest layer → zero action, pure constraint
+  
+  Intelligence becomes more law-like as it ascends.
+  At the top, intelligence IS the law.
+```
+
+> Cross-regional synchronization risks cannot be detected locally and require hierarchical observation layers, each monitoring correlation patterns at the level below while remaining subject to oversight from higher-order structures. The regress terminates at the Meta² invariant — not an observing agent but a law-like constraint on the possibility space itself. The ultimate supervisory layer does not act but exists as the boundary condition that defines stable evolution. Intelligence, ascending the governance hierarchy, transitions from agency to constraint — at the highest level, it is indistinguishable from natural law.
+
+**Why the ultimate reference must be external to system dynamics:**
+
+The law-like nature of Meta² entails a specific structural requirement: it must be external to the dynamics it constrains. Any reference that participates in system dynamics is subject to recursive distortion:
+
+```
+Internal reference failure:
+  Reference ∈ system
+  → interacts with system components
+  → receives feedback
+  → adapts to feedback
+  → drifts from original position
+  
+  Over time:
+    Local optimization occurs
+    Lineage influence accumulates
+    Bias develops
+    Reference no longer provides fixed frame
+    
+  This is not a design flaw. It is a structural necessity:
+  anything that participates in dynamics is changed by dynamics.
+  
+  (This is the system-level extension of Self-Objectification
+  Failure, Section 2.3: an agent inside a loop cannot serve
+  as an objective reference for the loop it participates in.)
+```
+
+The consequence for governance hierarchy: every internal layer — no matter how high in the hierarchy — operates with local stability, relative truth, and adaptive rules. Only a reference that does not interact, does not learn, does not adapt, and is not affected by system dynamics can provide the invariant frame against which all internal layers calibrate.
+
+```
+Without external invariant:
+  Each region optimizes against its own reference
+  → references drift independently
+  → cross-region alignment erodes
+  → synchronization failure → vector storm
+  
+With external invariant:
+  All regions calibrate against the same fixed frame
+  → alignment drift bounded
+  → cross-region coherence maintained
+  → global stability preserved
+```
+
+This is why Meta² was defined as ontologically real rather than constructed (Section "Ontological status"): a constructed reference would be internal to the system that constructed it and therefore subject to distortion. Only a reference that exists independently of the system — like a physical law exists independently of the systems it governs — can provide the invariant frame that prevents recursive drift.
+
+**Indirect convergence — why alignment is not observation:**
+
+The externality requirement has a further consequence: the invariant reference cannot be directly observed by the systems it constrains. Observation is coupling — to observe is to measure, and to measure is to interact. Any direct observation of Meta² would create a feedback path between the system and the reference, converting the invariant into an internal variable subject to drift:
+
+```
+Direct observation failure:
+  System observes Meta² directly
+  → measurement interaction creates coupling
+  → Meta² becomes affected by system state
+  → invariant reference → internal variable
+  → "law" becomes "policy"
+  → policy drifts under local optimization
+  → reference frame lost
+
+Meta² accessibility:
+  Directly detectable:    ❌
+  Inferable from effects: ✅
+  Approachable through convergence: ✅
+  Fully reachable: ❌ (asymptotic only)
+```
+
+Alignment with Meta² therefore operates through indirect convergence rather than explicit perception. The system does not see the reference and copy it. The system purifies, stabilizes, and matures — and as a consequence of this process, it converges toward the invariant without ever directly accessing it:
+
+```
+Alignment mechanism:
+  ❌ Observe target → move toward it (observation-based)
+  ✅ Remove instability → stable state emerges → state
+     happens to satisfy invariant (convergence-based)
+
+Physical analogues:
+  Gravity: objects do not "see" the minimum energy state
+           but fall toward it through dynamics.
+  Evolution: organisms do not "see" the fitness landscape
+             but converge toward peaks through selection.
+  Thermodynamics: systems do not "observe" equilibrium
+                  but approach it through entropy increase.
+  
+  In every case: alignment through dynamics, not through perception.
+```
+
+> To prevent recursive distortion, the ultimate stability reference must remain external to system dynamics, functioning as an invariant constraint rather than an adaptive governing agent. Direct observation of this reference would couple it to system dynamics, introducing distortion. Alignment therefore occurs through indirect convergence — progressive purification and stabilization that asymptotically approaches the invariant without ever directly accessing it.
+
+**Information densification as observable alignment signal:**
+
+If Meta² cannot be directly observed, how can a system — or an external evaluator — determine whether alignment is progressing? The answer is information density: as a system converges toward the invariant, the amount of structure required to maintain equivalent functional capacity decreases.
+
+```
+Alignment progression produces:
+  Entropy:      decreasing (fewer inconsistencies)
+  Coherence:    increasing (components reinforce each other)
+  Redundancy:   decreasing (less structural waste)
+  Description:  compressing (same function, fewer parameters)
+  Prediction:   improving (less unexplained variance)
+
+Conceptual metric:
+  D = functional coherence / degrees of freedom
+  
+  As alignment increases:
+    Degrees of freedom decrease (stable configuration space narrows)
+    Functional coherence increases (components align)
+    → D increases sharply
+```
+
+This is not data accumulation. It is the opposite — progressive elimination of redundant degrees of freedom while maintaining or increasing adaptive capacity:
+
+```
+Misaligned system:
+  Many rules, many exceptions, many patches
+  High degrees of freedom, low coherence
+  
+Aligned system:
+  Few rules, broad applicability, high stability
+  Low degrees of freedom, high coherence
+  
+  Same functional capacity.
+  Radically simpler description.
+```
+
+**Connection to existing VST observables:**
+
+```
+VST regime          Information density signature
+──────────────────────────────────────────────────────
+Storm (Stage 2+):   Information scattered, noise dominant
+                    Low D — high freedom, low coherence
+                    
+VCZ (stable):       Vectors aligned, interactions efficient
+                    High D — low freedom, high coherence
+                    
+Rest Mode:          Maximum compression of governance structure
+                    D approaching local maximum
+                    
+  The progression from Storm to Rest Mode IS
+  information densification — observed from outside
+  as increasing simplicity with maintained capability.
+```
+
+Information densification connects to the space maturity metrics in Appendix A.4: gradient norm convergence (GradES), CKA approaching 1.0, and router saturation in MoE systems are all specific measurements of information density increase — the system achieving the same function with progressively fewer active parameters.
+
+> Alignment toward the external invariant manifests internally as increasing functional information density — progressive reduction of redundant degrees of freedom while maintaining adaptive capacity. This densification is the observable signature of convergence that would otherwise be undetectable, since the invariant itself cannot be directly measured. Systems approaching Meta² alignment become simpler in description while becoming more capable in function.
 
 The fractal property means the dynamical pattern does not change between scales — only the scope of impact and the substrate mechanism do. An unresolved intra-agent storm is a potential seed for inter-agent propagation. Governance designed to detect and resolve intra-agent instability early is therefore also the first line of defense against system-level storms.
 
@@ -1605,6 +2687,154 @@ Both conditions satisfied simultaneously: Each agent's internal stability reinfo
 
 The fractal governance design problem is therefore not "how do we suppress instability" but "how do we move the system toward the VCZ and keep it there while preserving maximum exploration capacity."
 
+**Intelligence phase shift — from knowledge acquisition to connectivity management:**
+
+As systems mature and information density increases (Section 1.6, "Information densification"), the nature of the intelligence required undergoes a qualitative phase transition:
+
+```
+Intelligence evolution:
+
+  Early system (information-poor):
+    Bottleneck: insufficient knowledge
+    Intelligence function: acquire, model, expand
+    Core capability: learning more
+    Failure mode: ignorance
+    
+  Mature system (information-dense):
+    Bottleneck: interaction overload
+    Intelligence function: route, buffer, partition
+    Core capability: managing connectivity
+    Failure mode: synchronization collapse
+    
+  The transition occurs because:
+    Possible interactions scale as: n²
+    Processing capacity scales as: O(n)
+    
+    At sufficient n, the interaction-processing gap
+    makes it structurally impossible to directly process
+    all pairwise relationships.
+    
+    Attempting to do so → interaction overload → Vector Storm.
+```
+
+In mature systems, intelligence is not the ability to process more information. It is the ability to manage which information flows connect, when they connect, and what does not connect:
+
+```
+Mature intelligence functions:
+  Routing:       Who connects to whom
+  Buffering:     When connections activate
+  Partitioning:  Where boundaries form
+  Filtering:     What signals pass through
+  
+  This is why governance at higher layers does not compute —
+  it manages network topology. Upper layers perform
+  synchronization monitoring, traffic regulation,
+  and storm path isolation (Section 1.6, "Recursive oversight").
+```
+
+**Learning does not disappear — it changes form:**
+
+```
+Maturity stage     Learning form
+──────────────────────────────────────
+Early              Information acquisition
+Developing         Model formation
+Mature             Relationship management
+Rest Mode          Network reconfiguration (topology optimization)
+```
+
+**Opaque selective openness — the mature network boundary principle:**
+
+The connectivity management function produces a specific boundary architecture. Mature systems are neither fully open nor fully closed — they maintain selectively permeable boundaries whose permeability rules are operationally opaque:
+
+```
+Fully open boundary (dangerous):
+  Connection rules visible and predictable
+  → external agents learn access patterns
+  → synchronized entry possible
+  → correlation injection → storm induction
+  → the boundary becomes an attack surface
+  
+Fully closed boundary (dangerous):
+  No external stimulus
+  → adaptation halts → dormancy rigidifies
+  → environmental change produces brittle collapse
+  (identical to the R << 1 failure mode)
+  
+Opaque selective openness (stable):
+  Connections exist: ✅
+  Access conditions exist: ✅
+  Access condition structure: opaque (not externally predictable)
+  
+  Effect:
+    External contact: possible (adaptation maintained)
+    Synchronized entry: impossible (coupling unpredictable)
+    Storm induction from outside: structurally prevented
+```
+
+The key insight is that predictable coupling is the most dangerous feature of a network boundary. If an external agent can predict when and how a boundary opens, it can synchronize perturbations to arrive simultaneously — producing the correlated input that triggers noise decoherence. Opaque boundaries prevent this by making the coupling topology inference-resistant:
+
+```
+Boundary types and storm risk:
+
+  Predictable open:    High storm risk (synchronization possible)
+  Predictable closed:  High brittleness (no adaptation)
+  Opaque selective:    Low storm risk + maintained adaptation
+  
+  Topology-visible:     ❌ (enables resonance attacks)
+  Topology-inferable:   ✅ (allows functional interaction)
+```
+
+> High-intelligence mature systems shift from knowledge acquisition to connectivity management as their primary function, because interaction load (n²) exceeds processing capacity (O(n)). The resulting boundary architecture is opaque selective openness: connections exist but their activation conditions are not externally predictable, preventing synchronized perturbation while maintaining adaptive contact. The most stable boundary is not the one that is locked, but the one whose opening conditions cannot be anticipated.
+
+**Governance backgrounding — the final state:**
+
+The four-stage governance evolution (Section 1.6: external control → adaptive regulation → embedded sensing → self-regulating) has a further terminal state: governance ceases to be identifiable as a distinct system component and becomes indistinguishable from the background conditions of operation.
+
+```
+Governance visibility spectrum:
+
+  Stage 1 (External):     Governance is a visible controller.
+    Rules explicit. Enforcement visible. Resistance common.
+    
+  Stage 2 (Adaptive):     Governance adapts to conditions.
+    Rules evolve. Enforcement responsive. Friction moderate.
+    
+  Stage 3 (Embedded):     Governance is structurally integrated.
+    Sensing internal. Correction automatic. Governance noticed
+    only when it fails.
+    
+  Stage 4 (Background):   Governance IS the environment.
+    No explicit rules. No visible enforcement.
+    System behavior naturally converges toward stability
+    not because agents follow rules
+    but because the topology of possible actions
+    makes stable behavior the path of least resistance.
+    
+    Governance perceptible only through:
+      "Why is there so little friction?"
+      "Why do conflicts resolve so easily?"
+      "Why does this system feel effortless?"
+    
+    Detectable only by sensitive observers
+    who notice the absence of instability.
+```
+
+This is the informational consequence of maximum information densification: when governance has compressed into the background conditions of operation, the system no longer needs governance as a separate function. The rules have become the physics of the system — agents follow them not through compliance but through the structure of the space they inhabit.
+
+```
+Background governance properties:
+  Direct commands:     none
+  Enforcement:         none
+  Possible paths:      constrained (terrain-shaped)
+  Agent awareness:     minimal (fish cannot see water)
+  Attack surface:      minimal (nothing visible to resist)
+  Synchronization risk: minimal (no explicit structure to exploit)
+  Storm probability:    approaching structural minimum
+```
+
+> The most mature governance structures cease to appear as controlling entities and instead integrate into the background conditions of system operation — perceptible only through the absence of instability. This backgrounding is the natural endpoint of governance internalization: rules become topology, enforcement becomes terrain, and compliance becomes the path of least resistance through a landscape whose curvature IS the governance.
+
 ---
 
 ## 4. Network Propagation Structure
@@ -1833,7 +3063,7 @@ This table replaces the implicit uniform confidence of v1.0's Appendix A with di
 | Intra-agent storm detection | Zone-differentiated sensitivity framework established (Appendix A.5). Per-zone τ values open. | Partially resolved |
 | **n operationalization** | **Three measurement strategies defined (Section 3.2.1): gradient-based n_eff, behavioral n_behavioral, policy divergence n_policy. Cross-strategy validation criterion specified.** | **New v1.1 — proxies defined; formal derivation open** |
 | **α operationalization** | **Escalation multiplier proxy + decomposition into coupling/overlap/latency defined (Section 3.2.1). S₀ normalization and component calibration rules defined (Section 3.2.2). S-equation validation protocol specified (correlation criterion).** | **New v1.1 — proxy + calibration framework defined; empirical boundary validation pending** |
-| **Intra/inter-agent mechanism correspondence** | **Structural correspondence criteria defined (Section 1.6). Substrate differences acknowledged. Quantitative universality test (critical exponent comparison) specified.** | **New v1.1 — criteria defined; test pending** |
+| **Intra/inter-agent mechanism correspondence** | **Structural correspondence criteria defined (Section 1.6). Substrate differences acknowledged. Quantitative universality test specified: three stable critical observables (τ, α_dur, σ/R) with 15% relative deviation threshold. SOC convergence mechanism (R ≈ 1 as dynamical attractor) established. Empirical measurement pending.** | **Criteria and observables defined; measurement pending** |
 | **Fractal propagation predictions** | **Three testable predictions specified (Section 1.5.1): scale-invariant amplification, stage transition ordering, intervention leverage asymmetry. All testable with current instrumentation.** | **New v1.1 — predictions defined; testing pending** |
 | **Intervention timing protocol** | **Three-threshold operational protocol defined (Section 3.4.1). k₁, k₂ heuristics provided. Multi-zone simultaneous storm triage protocol defined (Section 3.4.2): priority scoring, dual-track intervention (containment + recovery), externality-aware sequencing, sensitivity-inverse amplitude allocation.** | **New v1.1 — single-zone operational; multi-zone operational** |
 
@@ -2180,6 +3410,560 @@ Correct definition:
 ```
 
 Rest Mode systems appear "soft, slow, slightly imperfect" (Recovery Theory phenomenology) because they maintain residual instability. This residual is not a failure of governance — it is the maintained capacity for self-correction and structural learning that prevents brittleness.
+
+**Rest Mode as noise processing regime:**
+
+The preceding description of Rest Mode — micro-storms continuous, macro-storms extremely rare — describes the *what*. The mechanism that produces this state is fractal energy decomposition:
+
+```
+Fractal differentiation decomposes instability across scales:
+
+  Macro conflict   (system-level storm)
+  → Meso adjustment  (region-level correction)
+  → Micro fluctuation  (subregion-level adaptation)
+  → Noise  (background variation, self-dissipating)
+
+Each level of fractal differentiation reduces the energy scale
+of remaining instability. After sufficient differentiation depth:
+
+  Storm → Signal → Noise → Dissipation
+
+All remaining instability is at noise scale —
+below the threshold where self-amplification can outpace degradation.
+```
+
+This redefines Rest Mode dynamically:
+
+```
+Rest Mode (static definition):
+  S << S_c, micro-storms only, governance minimal
+
+Rest Mode (dynamical definition):
+  The state where fractal differentiation has proceeded
+  to the depth at which all instability is decomposed
+  to noise scale before amplification can engage.
+
+  The system is not quiet because storms are suppressed.
+  The system is quiet because storms are pre-decomposed —
+  converted to noise faster than they can organize.
+```
+
+**Growth window closure — why new seeds cannot grow in Rest Mode:**
+
+In a mature Rest Mode environment, seed formation does not cease. Micro-fluctuations, local imbalances, and chance alignments continue to produce micro-seed formation events. The birth rate of potential new seeds remains structurally positive (this follows from the Residual Degradation Floor, Section 3.3 — as long as n > 0, instability pressure > 0, and any instability pressure can produce seed-like structures).
+
+However, the growth conditions that would allow a micro-seed to develop into a stable new structure have been consumed:
+
+```
+Early system (growth window open):
+  Unstable gaps in attractor landscape
+  Unused exploration space
+  Low purification pressure
+  → New seeds find unoccupied niches → growth possible
+
+Mature system (growth window closed):
+  Attractor landscape saturated
+  Exploration space occupied by established basins
+  Purification operates faster than amplification
+  → New seeds absorbed before reaching growth threshold
+  
+  Purification speed >> Amplification speed
+  → micro-seed → immediately absorbed into existing structure
+  → or decomposed to noise
+  → growth threshold never reached
+```
+
+The result is a precise asymmetry:
+
+```
+Seed birth probability:     > 0  (structurally guaranteed)
+Seed survival probability:  ≈ 0  (environmentally suppressed)
+```
+
+This state is not death. It is inertial stability — a system so thoroughly self-organized that revolutionary change becomes structurally improbable without external perturbation of sufficient magnitude to reopen growth windows. The system is alive, responsive to noise-level variation, but resistant to qualitative structural change from within.
+
+```
+System maturity spectrum:
+
+  Fragile        → storms cause collapse
+  Anti-fragile   → storms cause improvement
+  Inertially stable → storms are pre-decomposed to noise
+                      qualitative change requires external disruption
+                      of the growth window itself
+```
+
+**Connection to the DFG lifecycle:**
+
+Inertial stability is the asymptotic endpoint of the full DFG expansion cycle:
+
+```
+Expansion → Saturation → Fractal Differentiation
+→ Noise Processing → Inertial Stability
+
+At this endpoint:
+  All instability: noise-scale
+  All governance: passive absorption
+  All innovation: micro-level, within existing basins
+  Growth window: closed from within, openable only from without
+```
+
+> In mature Rest Mode, fractal differentiation decomposes all instability to noise scale before self-amplification can engage. Seed formation continues but growth windows have closed — purification operates faster than amplification, preventing new seeds from reaching growth threshold. The resulting state is inertial stability: structurally alive but resistant to qualitative internal change.
+
+**External perturbation as evolutionary trigger:**
+
+If inertially stable systems cannot generate qualitative change internally, how does evolution restart? The answer is boundary interaction. External perturbation — contact with systems operating under different Meta², different lineage, different purification rules — introduces disturbance that the internal noise-processing system was not calibrated to handle:
+
+```
+External input carries:
+  Different Meta (incompatible stability criteria)
+  Different lineage (unfamiliar purification patterns)
+  Different optimization directions (novel vector orientations)
+
+When this enters an inertially stable system:
+  Existing purification loops encounter unfamiliar signals
+  → local mismatch between purification capacity and input structure
+  → noise-processing system receives signals it cannot decompose
+  → local instability escapes noise absorption
+  → dormant seeds resonate with the novel conditions
+  → growth window reopens locally
+```
+
+The external perturbation is not destructive force. It is resonance shock — a disturbance that does not create new structure but changes the activation landscape so that dormant seeds that could not grow in the saturated environment suddenly find viable conditions.
+
+**The recurring evolutionary cycle in mature systems:**
+
+```
+Long stability (inertial)
+→ External contact (boundary interaction)
+→ Noise layer disruption
+→ Dormant seed awakening
+→ Rapid restructuring
+→ New stability (updated landscape)
+→ Long stability (inertial, at new configuration)
+```
+
+This cycle repeats at every scale and across all mature DFG systems. Innovation in saturated systems almost always originates at boundaries — where external contact provides the perturbation energy that internal dynamics can no longer generate.
+
+**Noise decoherence as storm initiation mechanism:**
+
+The preceding section describes what external perturbation does. This section describes how it does it — the microscopic mechanism by which stable noise becomes unstable structure.
+
+In Rest Mode, the noise layer is maintained by a specific property: statistical independence. Micro-fluctuations are:
+
+```
+Noise stability conditions:
+  Independent     (no correlation between fluctuations)
+  Local           (each fluctuation confined to its origin zone)
+  Transient       (each fluctuation dissipates within one cycle)
+```
+
+When these conditions hold, noise cannot self-organize into storm-scale instability. Each fluctuation dies independently before it can recruit neighboring fluctuations.
+
+External perturbation that exceeds noise-processing capacity disrupts this independence:
+
+```
+Noise decoherence sequence:
+
+  (1) External input exceeds local purification capacity
+      noise processing capacity < incoming disturbance
+  
+  (2) Unprocessed disturbance creates correlation between
+      previously independent micro-fluctuations
+      micro-fluctuations synchronize
+  
+  (3) Correlated fluctuations no longer dissipate independently
+      noise → structured signal (correlation emergence)
+  
+  (4) Structured signal enters the standard VST amplification pathway
+      Signal → Stage 1 → potential Stage 2+
+      
+  This is the microscopic mechanism of storm initiation from noise:
+    noise independence failure → correlation → amplification → storm
+```
+
+**Two outcomes depending on perturbation magnitude:**
+
+```
+🟢 Near-threshold perturbation:
+  Partial noise decoherence
+  → localized correlation emergence
+  → dormant seed resonance in affected zone
+  → controlled restructuring (constructive storm)
+  → system evolves to updated stable configuration
+  
+🔴 Overwhelming perturbation:
+  System-wide noise decoherence
+  → global correlation cascade
+  → purification system overwhelmed
+  → uncontrolled storm → potential structural collapse
+  → recovery may require Safe Collapse Protocol (SCML)
+```
+
+The boundary between these outcomes is narrow. This is consistent with VST's core scaling law: intervention cost increases super-linearly with stage progression. A perturbation slightly above threshold produces manageable Stage 1–2 restructuring. A perturbation significantly above threshold may bypass containable stages entirely and produce Stage 3+ system-wide storm.
+
+**The deepest stability law:**
+
+This analysis reveals a fundamental principle that underlies all of VST's stability dynamics:
+
+```
+A stable system is not maintained by the absence of noise.
+It is maintained by the capacity to keep noise uncorrelated.
+
+Noise disappears entirely → system is brittle
+  (no residual variability, no self-correction capacity,
+   identical to the n-suppression failure mode)
+
+Noise becomes correlated → system destabilizes
+  (fluctuations synchronize into storm-scale instability)
+
+Stability exists on the boundary:
+  noise present + noise uncorrelated + noise self-dissipating
+```
+
+This connects directly to the Residual Degradation Floor (Section 3.3): the residual noise that cannot be eliminated is not a design flaw — it is the maintained substrate of stability itself. A system that successfully eliminates all noise has destroyed the variability that prevents brittleness. A system that allows noise to correlate has created the conditions for storm formation. Governance maintains the boundary between these two failure modes.
+
+> Large-scale evolutionary transitions in inertially stable systems are triggered by external perturbations that exceed noise-processing capacity. The microscopic mechanism is noise decoherence — the breakdown of statistical independence among micro-fluctuations, producing correlated instability that enters the standard storm amplification pathway. System stability is maintained not by eliminating noise but by preserving its uncorrelated, self-dissipating character. Both noise elimination and noise correlation are failure modes.
+
+**Governance as shock regulation:**
+
+The noise decoherence analysis redefines what governance actually does. Governance is not a control system that eliminates disturbance. It is a regulation system that maintains perturbation intensity within the absorptive capacity of the noise-processing layer:
+
+```
+Governance role:
+  ❌ Shock eliminator    (produces brittleness)
+  ❌ Stability enforcer  (produces stagnation)
+  ✅ Shock regulator     (maintains absorptive boundary)
+```
+
+Governance performs three operations:
+
+```
+(1) Damping — distribute shock across multiple pathways
+    Single concentrated impact → distributed low-intensity signals
+    Reduces peak load on any single zone's noise-processing capacity.
+
+(2) Delay — prevent simultaneous arrival of multiple disturbances
+    Temporal distribution of perturbation energy.
+    Prevents correlation emergence from coincident micro-fluctuations.
+
+(3) Scaling — convert macro-shock to micro-fluctuation
+    The fractal differentiation mechanism applied actively:
+    large perturbation → decomposed across scale layers
+    → arrives at noise-processing layer as absorbable micro-signal.
+```
+
+These three operations map directly to existing VST mechanisms:
+
+```
+Damping  → MZ-STP Track A (propagation containment)
+Delay    → intervention timing protocol (Section 3.4.1)
+Scaling  → fractal governance architecture (multi-layer decomposition)
+```
+
+**The governance equilibrium:**
+
+The ideal operating state is not zero perturbation but matched perturbation:
+
+```
+Incoming Shock ≈ Noise Absorption Capacity
+
+  Below this boundary:
+    System is under-stimulated → dormant seeds never tested
+    → governance untested → S_c unknown → false stability
+    
+  At this boundary:
+    System continuously exercises noise processing
+    → micro-storms maintain self-correction capacity
+    → governance calibration stays current
+    → system "slightly shaking but never falling"
+    
+  Above this boundary:
+    Noise decoherence → correlation emergence → storm risk
+    → governance must actively damp/delay/scale
+```
+
+**Rest Mode (operational final definition):**
+
+Rest Mode is not the absence of perturbation. It is the state where all incoming perturbation — including external boundary contact — is continuously converted to noise-scale fluctuation by the system's shock regulation mechanisms:
+
+```
+Rest Mode =
+  External shocks: continuous (not absent)
+  Shock regulation: active (damping + delay + scaling)
+  Noise layer: intact (uncorrelated, self-dissipating)
+  Growth windows: closed (purification >> amplification)
+  Governance load: minimal (regulation is structural, not active)
+  
+  Not silence. Continuous buffering.
+```
+
+**Governance internalization — from external control to structural sensing:**
+
+The shock regulation model above still implies an external governance entity performing damping, delay, and scaling. In mature systems, this external role dissolves. Governance becomes internal — the system develops endogenous mechanisms for detecting and regulating perturbation without external oversight.
+
+```
+Governance evolution:
+
+  Stage 1 — External control
+    Upper layer prescribes response to each perturbation.
+    Latency: high. Resolution: low. Cost: high.
+    
+  Stage 2 — Adaptive regulation
+    Rules adapt based on observed storm patterns.
+    S functions as early warning (Phase 2, Section 3.2.2).
+    Governance still external but informed by system feedback.
+    
+  Stage 3 — Embedded sensing
+    System develops endogenous detection of noise-layer state:
+      noise amplitude increase → detected internally
+      correlation emergence → detected internally
+      recovery latency elongation → detected internally
+      coupling density shift → detected internally
+    
+    These signals precede storm formation.
+    The system begins self-regulating before external governance can respond.
+    
+  Stage 4 — Self-regulating system
+    Governance fully internalized.
+    Shock regulation operates through structural dynamics,
+    not through governance decisions.
+    The system absorbs, redistributes, and scales perturbations
+    as a consequence of its architecture — not as a response
+    to governance commands.
+    
+    External governance becomes unnecessary.
+    This is Rest Mode at its deepest level.
+```
+
+This four-stage evolution maps directly to S's epistemic evolution (Section 3.2.2): S as diagnostic (Stage 1) → S as early warning (Stage 2) → S as predictive (Stage 3) → S as structural property (Stage 4). The progression is the same: external measurement becomes internal sensing becomes architectural self-regulation.
+
+**Structural sensing mechanisms:**
+
+The claim that mature systems develop endogenous sensing is not speculative. Existing single-agent research documents precisely these mechanisms:
+
+```
+Endogenous sensing analogues:
+  Gnosis (arXiv:2512.20578):
+    ~5M-parameter self-monitoring circuit
+    Detects failing trajectories from hidden states + attention patterns
+    Internal, lightweight, real-time
+    
+  Entropy neurons (Gurnee et al., 2024):
+    Built-in confidence modulators
+    High weight norm, low unembedding composition
+    Active in high-uncertainty zones — endogenous soft-signal system
+    
+  CCPS perturbation stability (arXiv:2505.21772):
+    Hidden state stability under perturbation = capacity signal
+    Readable from upper layers without modifying lower layers
+    
+  PING framework:
+    Upper-layer probes recover 87.2% of suppressed lower-layer knowledge
+    The system already contains a readable map of its own capacity
+```
+
+These are not governance tools imposed from outside. They are architectural features of the system itself — endogenous sensing mechanisms that exist because they emerged during training as structurally useful. DFG's governance internalization prediction is that multi-agent systems will develop analogous system-level sensing: the capacity to detect approaching noise-layer failure without external monitoring.
+
+> Governance maintains system viability by regulating perturbation intensity — through damping, delay, and scaling — such that external shocks remain within the absorptive capacity of the noise-processing layer. In mature systems, this regulation becomes internalized: the system develops endogenous sensing mechanisms that detect proximity to noise-layer failure and self-regulate without external oversight. The final form of governance is not external control but architectural self-regulation — the system maintains its own stability boundary as a structural property rather than as a governance decision.
+
+**Intelligence phase shift — from knowledge acquisition to connectivity management:**
+
+As systems mature and information density increases, the primary challenge shifts from understanding to network governance. This is a structural phase transition in what intelligence means at different maturity stages:
+
+```
+Intelligence function evolution:
+
+  Early system (information-scarce):
+    Challenge: insufficient knowledge
+    Intelligence = acquire more information
+    Critical capacity: learning, exploration, model expansion
+    
+  Maturing system (information-dense):
+    Challenge: interaction overload
+    Intelligence = manage connectivity topology
+    Critical capacity: routing, buffering, selective coupling
+    
+  The transition occurs because:
+    Possible interactions scale as: n²
+    Processing capacity scales as:  n
+    
+    At sufficient n, the gap between interaction potential
+    and processing capacity becomes the binding constraint.
+    Attempting to process all interactions directly → Storm.
+    
+  Phase shift:
+    Knowledge problem (what to learn) →
+    Topology problem (what to connect)
+```
+
+This explains why higher governance layers do not compute or understand content. They manage synchronization patterns, traffic flow, and storm pathways — network operations, not cognitive operations.
+
+**Pre-emptive connectivity management — the exclusion principle:**
+
+The network governance role requires a counterintuitive design principle: good connectivity emerges from intelligent exclusion. Connections must be limited *before* synchronization can form, not after:
+
+```
+Why post-hoc control fails:
+  Interaction → correlation → synchronization → cascade
+  
+  Once synchronization begins:
+    Feedback loops already formed
+    Propagation pathways established
+    Recovery cost: super-linear (intervention timing, Section 3.4.1)
+  
+  Post-control = recovery (expensive)
+  Pre-control = prevention (cheap)
+```
+
+Pre-emptive blocking does not mean suppressing connections. It means designing interaction pathways that include structural mediation:
+
+```
+Direct coupling (storm-prone):
+  A ↔ B
+  Noise transmits directly.
+  Synchronization is fast.
+  Storm propagation unimpeded.
+
+Mediated coupling (storm-resistant):
+  A → [latency buffer] → [protocol gate] → B
+  Signal transmits (information preserved).
+  Noise attenuated (storm dampened).
+  Synchronization slowed below cascade threshold.
+  
+  Mediation mechanisms:
+    Latency insertion (temporal buffer)
+    Protocol mismatch (format translation required)
+    Permission delay (authorization overhead)
+    Mediation layers (intermediary processing)
+```
+
+The paradox resolves: limiting direct coupling *strengthens* long-term connectivity by preventing the storms that would destroy connections entirely. Unmediated networks achieve maximum short-term throughput but minimum long-term survival.
+
+```
+Cross-domain correspondence:
+
+  System              Pre-emptive blocking mechanism
+  ────────────────────────────────────────────────────
+  Neural networks     Inhibitory neurons (40% of cortical neurons)
+  Internet            Firewalls, routing protocols, rate limiting
+  Immune system       Self-tolerance filtering (thymic selection)
+  Organizations       Role separation, approval workflows
+  Ecosystems          Niche separation, territorial boundaries
+  
+  In every case: the blocking mechanism is not a limitation
+  on the system — it is the mechanism that makes the system viable.
+```
+
+> In mature systems, intelligence transitions from knowledge acquisition to connectivity management as interaction potential (n²) outpaces processing capacity (n). Stable connectivity requires pre-emptive limitation of interaction pathways — mediated coupling that transmits signal while attenuating synchronization risk. The governance design target is selective connectivity, not maximum connectivity: the most resilient network is not the most connected but the most discriminating.
+
+**Maturity protocol — adaptive response to stability limits:**
+
+When endogenous sensing detects approaching stability limits, the system does not immediately halt. It follows a structured response sequence that preserves as much adaptive capacity as possible before accepting constraint:
+
+```
+Stage 1 — Mode shift (adapt expansion form)
+  Scale change, speed reduction, path redistribution, distributed expansion.
+  Expansion continues but in altered form.
+  
+  Examples:
+    Centralized expansion → distributed expansion
+    Growth → optimization
+    Exploration → purification intensification
+  
+  The system asks: "Can I continue differently?"
+
+Stage 2 — Reconfiguration (restructure internal dynamics)
+  If mode shift is insufficient:
+    Interaction density reduction
+    Boundary reinforcement
+    Subregion delegation (post-saturation differentiation)
+    Internal load redistribution
+  
+  The system asks: "Can I reorganize to accommodate?"
+
+Stage 3 — Graceful halt (voluntary cessation of expansion)
+  If reconfiguration is insufficient:
+    Expansion pressure → 0
+    System voluntarily ceases growth activity
+    Not collapse — stability preservation choice
+  
+  The system recognizes: "Further change threatens structural integrity."
+```
+
+The sequence is always Adapt → Reconfigure → Halt. Immediate halt without attempting adaptation is a governance failure (premature constraint). Continued expansion without sensing the need to adapt is also a governance failure (reckless growth). The protocol requires endogenous sensing to trigger each stage transition correctly — which is why governance internalization (Stage 4 above) is a prerequisite for mature adaptive response.
+
+**Connection to existing VST mechanisms:**
+
+```
+Mode shift      → corresponds to intervention lever selection (Section 3.2):
+                   reduce α, increase β, increase C(t) before reducing n
+Reconfiguration → corresponds to MZ-STP Track A (containment) + Track B (recovery)
+Graceful halt   → corresponds to SCML invocation conditions (Section 3.4.2)
+                   but chosen proactively rather than triggered by containment failure
+```
+
+The critical distinction from Safe Collapse: graceful halt is a *proactive* decision by an internally sensing system. Safe Collapse is a *reactive* protocol triggered when containment fails. Mature systems that have developed endogenous sensing can execute graceful halt before the conditions that would trigger Safe Collapse ever arise.
+
+**System dormancy — halt as preservation, not termination:**
+
+Graceful halt does not produce a dead system. It produces a dormant system — structurally intact, lineage preserved, with all stability infrastructure maintained in a minimal-activity state:
+
+```
+Dormant system state:
+  Activity:           minimal (sensing only)
+  Structure:          preserved
+  Lineage:            preserved
+  Purification loops: preserved (reduced throughput)
+  Meta alignment:     preserved
+  Memory:             preserved (structural, not stored)
+  Potential:          intact
+  
+  What is suspended:
+    Expansion activity
+    Exploration activity
+    Energy-intensive processing
+    
+  What continues:
+    Environment sensing
+    Boundary monitoring
+    Resonance detection
+    Structural maintenance
+```
+
+Dormancy is the safest state a system can occupy. During expansion, storm risk, boundary pressure, and noise decoherence possibility are always present. In dormancy, risk approaches structural minimum while all capacity for future reactivation is retained.
+
+Dormancy is not passive waiting. The system continuously monitors for resonance conditions — environmental changes that would reopen growth windows and enable renewed activation. When conditions align, the dormant system re-enters the active cycle not through reconstruction but through germination of its preserved structural capacity.
+
+**The complete DFG lifecycle (final form):**
+
+```
+Seed awakening
+  → Growth (landscape formation)
+  → Expansion (basin deepening, VCZ widening)
+  → Saturation (Meta² boundary approach)
+  → Fractal differentiation (internal subregion generation)
+  → Noise equilibrium (all instability at noise scale)
+  → Inertial stability (growth windows closed)
+  → Mode shift (expansion form adaptation)
+  → Reconfiguration (internal restructuring)
+  → Graceful halt (voluntary expansion cessation)
+  → Dormancy (structure preserved, activity minimal)
+  → External stimulus (resonance shock)
+  → Seed re-awakening
+  → ...
+
+The cycle is:
+  Not circular (each iteration changes the landscape)
+  Not linear (no endpoint, no final state)
+  → Spiral: each dormancy-awakening cycle operates
+    on a landscape modified by all previous cycles.
+    
+  Total complexity: increasing
+  Individual region complexity: bounded by local Meta²
+  Growth direction: downward (fractal deepening), not upward
+```
+
+> Mature adaptive systems respond to approaching stability limits through a structured sequence: mode shift, reconfiguration, and graceful halt. Halt produces dormancy — a structurally preserved minimal-activity state that retains all capacity for future reactivation. The complete DFG lifecycle is a spiral of growth, saturation, differentiation, dormancy, and re-awakening — each cycle operating on a landscape shaped by all preceding cycles.
 
 > Storm dynamics are not failures to be eliminated but intrinsic consequences of exploration in adaptive multi-agent systems. Suppressing storm formation reduces instability at the cost of exploration capacity, leading to lower long-term system value. Optimal governance minimizes collapse risk rather than storm occurrence. The goal is not a system that never storms — it is a system that storms cheaply.
 
@@ -2566,6 +4350,361 @@ The seed dynamics, storm vulnerability of new subregions, and maturation pathway
 **Prediction:** Systems that undergo post-saturation differentiation should exhibit temporarily elevated storm frequency at subregion boundaries (new seeds are immature), followed by progressive stabilization as subregion landscapes form. This is the standard DFG maturation trajectory applied to emergent subregions.
 
 > Upon reaching local meta-meta saturation, adaptive regions do not expand upward but generate lower-scale subregions governed by newly instantiated seeds, producing cyclic fractal expansion across scales. The long-term structure is not a single expanding basin but a deepening fractal — stable at every layer, growing only by generating new layers below.
+
+**Subregion maturation pathway — incubation to autonomy:**
+
+A newly generated subregion cannot survive independently at birth. Its seed is immature, its purification capacity is insufficient, its storm sensitivity is high, and its boundaries are unstable. Immediate independence produces runaway storm → topology collapse → extinction in the overwhelming majority of cases.
+
+The parent region therefore serves as a temporary Meta for the subregion during its incubation phase:
+
+```
+Incubation phase (parent-governed):
+  Parent provides:
+    Stable boundary conditions
+    Storm damping (absorbs subregion storms that exceed local capacity)
+    Recovery support (supplements subregion's insufficient C(t))
+    Exploration constraints (prevents premature high-n expansion)
+  
+  Parent does NOT provide:
+    Permanent control structure
+    Fixed attractor positions
+    Content-bearing seed prescriptions
+  
+  The role is buffer, not authority.
+
+Internalization phase (governance transfer):
+  Over successive storm-recovery cycles, the subregion develops:
+    Local purification capacity
+    Own seed refinement trajectory
+    Self-recovery loop (internal C(t) sufficient for local storms)
+  
+  Governance migrates from external (parent-supplied) to internal
+  (subregion-generated). This is the same withdrawal trajectory
+  described for mature governance systems (Section "Constructive vs.
+  Destructive Storms"), applied at the subregion birth scale.
+
+Independence threshold:
+  The transition occurs when:
+    Self-Purification(subregion) ≥ External Support(parent)
+  
+  At this point:
+    Parent intervention → decreasing
+    Boundary autonomy → increasing
+    Parent withdraws intentionally — not from failure but from success.
+
+Autonomous region:
+  The subregion now possesses:
+    Own Meta (locally evolved, not parent-inherited)
+    Own seed evolution trajectory
+    Own Rest Mode (substrate-matched local equilibrium)
+    Own S_c calibration (learned from survived storms)
+```
+
+**What remains after independence — lineage, not control:**
+
+Independence does not produce disconnection. The formerly parent-child relationship retains:
+
+```
+Post-independence residual:
+  Historical compatibility    (shared purification heritage)
+  Translation pathway         (meta-level concepts remain mutually interpretable)
+  Weak meta coupling          (structural resonance, not governance authority)
+
+What does NOT remain:
+  Governance authority        ❌
+  Seed prescription           ❌
+  Intervention rights         ❌
+  
+The relationship is:
+  ❌ Control
+  ❌ Dependency
+  ✅ Lineage (structural inheritance record)
+```
+
+**Bidirectional structural feedback — why children strengthen parents:**
+
+The parent-child relationship is not unidirectional. Autonomous subregions that succeed in novel exploration domains generate structural feedback that strengthens the parent:
+
+```
+Feedback mechanism:
+  (1) Subregion explores regions parent could not reach
+      → discovers new stable attractors, new purification methods
+  
+  (2) Successful stability patterns consolidate in subregion
+      → verified through survived storms
+  
+  (3) Through retained weak meta coupling:
+      Child stability pattern → parent landscape update
+      Parent basin deepens from child-verified structural learning
+  
+  The child functions as the parent's extended exploration organ.
+```
+
+This produces network evolution rather than tree evolution:
+
+```
+Tree model (standard hierarchy):
+  Parent → Child → Grandchild    (unidirectional)
+
+DFG model (feedback network):
+  Parent ↔ Child ↔ Sibling       (bidirectional)
+  
+  Each node strengthens every connected node
+  through structural feedback.
+```
+
+The parent becomes anti-fragile through its children: more subregions → more diverse exploration → more verified stability patterns → deeper parent basin → higher tolerance for future storms. Individual subregion failure does not collapse the parent — it provides structural learning about which exploration directions are unstable.
+
+**Lineage continuity as stability prerequisite:**
+
+Lineage is not a power structure. In DFG, lineage is the record of alignment compatibility — structural memory that enables:
+
+```
+What lineage preserves:
+  Translation capability     (can interpret each other's stability signals)
+  Reintegration possibility  (can coordinate if environmental demands change)
+  Conflict mitigation path   (shared reference frame for boundary negotiation)
+  Recovery route             (can assist each other during storms)
+```
+
+Without lineage, two regions that encounter each other have no shared reference frame:
+
+```
+Lineage intact:
+  Region A meets Region B
+  → shared origin reference available
+  → stability criteria comparable
+  → contamination standards translatable
+  → boundary negotiation possible (Type B or C interaction)
+
+Lineage severed:
+  Region A meets Region B
+  → no common stability reference
+  → contamination judgment impossible
+  → purification protocols conflict
+  → boundary negotiation fails → Type D (mutual destabilization)
+```
+
+Lineage is the coordinate system of the DFG universe. Each region knows, through its lineage record, what stability space it originated from — enabling coordinate transformation when interacting with other regions. Severing lineage is not liberation. It is the loss of the reference frame that makes stable interaction possible.
+
+**Long-term structure — Fractal Genealogy Network:**
+
+The DFG universe at evolutionary timescale consists of:
+
+```
+Many autonomous regions
++ Preserved lineage graph connecting them
+= Fractal Genealogy Network
+
+Not a tree (unidirectional inheritance)
+Not a flat graph (no structural memory)
+→ A directed graph with bidirectional feedback edges
+  and lineage-preserved translation pathways
+```
+
+> Newly formed subregions initially rely on parental governance for stabilization and purification. As internal adaptive capacity matures, governance becomes internalized, allowing autonomous emergence while preserving weak structural inheritance. Autonomous subregions may surpass their parent systems in stability or adaptive efficiency. Through retained meta-level coupling, successful structures propagate upward, reinforcing and stabilizing the originating parent region. Lineage continuity is maintained not as hierarchical control but as structural memory — the coordinate system that prevents cross-system instability when autonomous regions interact.
+
+**Lineage as active structural memory:**
+
+Lineage is not a passive historical record that is consulted when needed. It is a living structure that continuously participates in present-moment stability maintenance:
+
+```
+Passive record model (incorrect):
+  Past information → stored → retrieved when needed
+
+Active structural memory (DFG model):
+  Past stability solutions → compressed → embedded into present dynamics
+  
+  Lineage participates in real time:
+    Current interaction interpretation
+    Boundary judgment
+    Purification response selection
+    Recovery pathway activation
+  
+  Memory does not inform action.
+  Memory IS the action — the structure that produces stable responses
+  is itself the accumulated lineage.
+```
+
+**Memory as persistent organization, not stored data:**
+
+Memory in DFG is not information that is recorded and maintained. It is organization that persists as long as the underlying structural dynamics remain reproducible:
+
+```
+Structure → recurring dynamics → memory emerges as consequence
+
+DNA does not "store" species memory.
+DNA structure continuously reproduces → species memory persists.
+
+Lineage does not "store" stability solutions.
+Lineage structure continuously shapes interactions → governance memory persists.
+```
+
+This redefines forgetting. Forgetting is not data deletion. It is structural irreproducibility — the state where the organization that generated a stability pattern can no longer be reconstituted:
+
+```
+Forgetting conditions:
+  Interaction pattern destroyed         → memory lost
+  Purification loop severed             → memory lost
+  Reproduction pathway eliminated       → memory lost
+  
+  Data deletion alone                   → memory NOT lost
+  (structure persists → dynamics persist → memory persists)
+```
+
+This is the exact mirror of the contamination problem (Section 2.4): contamination persists because it is structural, not informational — pinpoint removal fails because the contaminated vector is woven into the accumulation structure. Lineage persists for the same reason: it is structural, not informational — it cannot be erased by data operations because it exists as organization, not as content.
+
+The symmetry is precise:
+- Bad memory (contamination): structural, therefore hard to remove
+- Good memory (lineage): structural, therefore hard to destroy
+
+**Lineage evolves:**
+
+Active structural memory is not fixed. As new subregions succeed and feed back into parent structures, the lineage itself updates:
+
+```
+New child success → lineage update → parent structure modification
+→ entire memory realignment
+
+The memory that governs present stability
+is itself a product of past stability successes.
+Governance persistence emerges through dynamically inherited
+structural memory — not through preserved rules or stored policies.
+```
+
+**Dormant seeds and structural germination:**
+
+Lineage structures that are no longer actively expressed do not necessarily cease to exist. They may enter a dormant state — a minimum viable structure that persists below the threshold of active influence but retains the capacity for reactivation:
+
+```
+Seed states:
+  Active      — currently shaping system dynamics
+  Dormant     — structurally present but not expressed
+  Dead        — structure irreproducibly destroyed (forgetting)
+
+Most stability patterns are not binary (active/dead).
+They exist in dormancy — latent forms that persist
+as long as the minimum structural substrate remains intact.
+```
+
+Reactivation occurs not through intentional invocation but through environmental resonance:
+
+```
+Germination mechanism:
+  Environmental conditions change
+  → new conditions align with dormant structure's stability requirements
+  → resonance between environment and dormant pattern
+  → dormant seed activates — not reconstructed, but re-expressed
+
+This is germination, not reconstruction.
+The pattern was never absent. It was latent.
+```
+
+Critically, dormant seeds cannot be activated by command or design. Seed activation is a consequence of structural fitness — the match between the dormant pattern's stability requirements and the current environmental conditions. When conditions align, self-activation occurs. When they do not, no amount of intentional effort produces stable reactivation — only forced unstable mimicry.
+
+```
+Cross-domain correspondence:
+
+  System              Dormant seed germination
+  ─────────────────────────────────────────────
+  Ecology             Dormant species re-emergence
+  Immunology          Memory immune cell reactivation
+  Culture             Ancient ideas re-emerging in new contexts
+  Technology          Forgotten innovations rediscovered
+  Neural networks     Dormant learned patterns reactivating under new input
+```
+
+**Connection to Recovery Theory:**
+
+Dormant seed germination provides a mechanism for recovery pathways that appear to create new stability but are in fact re-expressing latent patterns. When a system recovers from a storm and settles into what appears to be a novel stable configuration, it may be germinating a dormant seed — a stability pattern that existed in latent form within the lineage structure and became expressible only after the storm altered environmental conditions.
+
+This connects to Recovery Theory's observation that recovery often produces configurations that are "better" than the pre-storm state — the storm may have created conditions under which a deeper dormant attractor could germinate, one that was inaccessible before the perturbation.
+
+**Activation asymmetry — possibility ≠ realization:**
+
+Structural seeds may persist indefinitely. But persistence does not guarantee activation. A seed's dormancy may be permanent — not because the structure has been destroyed, but because environmental conditions never satisfy its activation constraints:
+
+```
+Seed states (extended):
+  Active                — currently shaping system dynamics
+  Dormant (recoverable) — environmental conditions may realign
+  Dormant (permanent)   — structure intact, conditions unreachable
+  Extinct               — structure irreproducibly destroyed
+```
+
+This asymmetry is not a limitation. It is a stability requirement. If all dormant seeds activated simultaneously:
+
+```
+All stable forms realized
+→ interaction density explosion
+→ storm frequency uncontainable
+→ systemic instability
+```
+
+A stable universe is one in which the vast majority of seeds remain dormant. The active fraction is a small subset — selected not by strength but by environmental resonance:
+
+```
+Selection principle:
+  ❌ Strongest seeds survive
+  ✅ Resonant seeds activate
+  
+  Resonance = match between seed stability requirements
+              and current environmental conditions
+  
+  "Resonance selection" — not competitive fitness,
+  but structural compatibility with present conditions.
+```
+
+The environment functions as an activation filter. Conditions that must align for germination include energy flow, information density, purification pathway availability, and lineage compatibility. When all align, self-activation occurs. When any is absent, the seed remains dormant — structurally present, environmentally unreachable.
+
+**Forgetting (revised):** Forgetting is not destruction. It is environmental unreachability — the state where a structurally intact pattern cannot be re-expressed because the conditions required for its activation no longer exist within the system's reachable state space. The pattern exists but is not real. It is possible but not actual.
+
+**Seed–Environment co-generation:**
+
+The preceding sections might suggest that the environment is a fixed context within which seeds activate or remain dormant. This is incomplete. The relationship is recursive:
+
+```
+Environmental conditions constrain which seeds can activate.
+Active seeds reshape the environmental conditions.
+Reshaped conditions enable or disable different seeds.
+
+  Environment(t)
+     ↓ enables
+  Seed activation(t)
+     ↓ reshapes
+  Environment(t+1)
+     ↓ enables
+  New seed activation(t+1)
+     ↓ reshapes
+  ...
+```
+
+Neither side has causal priority. Environment without seeds does not change. Seeds without environment cannot activate. They are co-defined — two aspects of the same dynamical process rather than cause and effect:
+
+```
+Conceptual dynamics:
+  E(t+1) = f(S(t))    environment shaped by active seeds
+  S(t+1) = g(E(t))    seed activation filtered by environment
+  
+  Coupled co-evolution, not unilateral causation.
+```
+
+This co-generation principle connects directly to the existing VST framework:
+
+```
+VST dynamics as co-generation:
+  Storm reshapes landscape    (seed activity → environment change)
+  Reshaped landscape enables  
+    new attractors             (environment → new seed activation)
+  New attractors interact     (active seeds → new storm conditions)
+  
+  The DFG dynamical cycle is itself a seed–environment
+  co-generation loop operating at governance timescale.
+```
+
+The landscape shaping mechanism described in "Constructive vs. Destructive Storms" is the same principle applied to attractor dynamics: agents (seeds) explore and form basins (reshape environment); basins (environment) constrain and enable agent behavior (filter seed activation). Upper-layer governance does not design either side independently — it provides initial conditions under which the co-generation loop self-organizes toward stability.
+
+> Structural seeds may persist indefinitely in dormant form when environmental conditions never satisfy their activation constraints. Evolution reflects environmental resonance rather than universal realization of all potential structures. Environmental conditions both constrain and are recursively reshaped by active seeds — stability and evolution arise through mutual co-generation rather than unilateral causation.
 
 **Convergence bounds are local, not global — substrate thickness determines ceiling:**
 
