@@ -60,6 +60,11 @@ Recovery and operational governance are addressed separately
 > - **Indirect convergence principle: observation = coupling = distortion, therefore alignment through dynamics not perception — Meta² approachable but never directly observable**
 > - **Information densification as alignment signal: functional coherence / degrees of freedom increases during convergence — connects to GradES, CKA, router saturation metrics**
 > - **Governance backgrounding: terminal state where governance becomes indistinguishable from environmental conditions — rules become topology, compliance becomes path of least resistance**
+> - **Hierarchical measurement constraint: background governance observable only from above — lower-layer measurement produces self-referential distortion, visibility enables Goodhart drift**
+> - **Minimum Intervention Law: intervene only at critical threshold crossing, desynchronize rather than suppress, withdraw immediately — 5-step operational cycle mapped to existing VST mechanisms**
+> - **Two-Timescale Intervention Law: Phase 1 energy damping (halt cascade) + Phase 2 terrain reconfiguration (prevent recurrence) — maturity spectrum from chronic suppression to pre-emptive topology adjustment**
+> - **High Capability · Low Activation principle: governance maturity = maximum intervention capacity with minimum intervention frequency — 5-level maturity spectrum, strongest governor almost never governs**
+> - **Per-Architecture Calibration Protocol (Section 11.2): universal measurement framework resolving 7 open calibration items — storm definition, temporal normalization, power-law extraction, architecture class mapping with τ as maturity fingerprint**
 > - **Intelligence phase shift: knowledge acquisition → connectivity management as n² exceeds O(n) processing capacity**
 > - **Opaque selective openness: mature network boundaries are selectively permeable but operationally opaque — prevents synchronized perturbation while maintaining adaptive contact**
 > - **Intelligence phase shift: knowledge acquisition → connectivity management as n² outpaces O(n) processing capacity**
@@ -2835,6 +2840,299 @@ Background governance properties:
 
 > The most mature governance structures cease to appear as controlling entities and instead integrate into the background conditions of system operation — perceptible only through the absence of instability. This backgrounding is the natural endpoint of governance internalization: rules become topology, enforcement becomes terrain, and compliance becomes the path of least resistance through a landscape whose curvature IS the governance.
 
+**Hierarchical measurement constraint:**
+
+Governance backgrounding creates a measurement asymmetry: background governance states are observable only from higher hierarchical levels. Measurements performed within the governed layer inevitably introduce self-referential distortion.
+
+```
+Why lower layers cannot measure their own governance:
+
+  The governed layer operates WITHIN the governance structure.
+  Measurement requires a reference frame outside the measured system.
+  An agent embedded in the governed dynamics has no external
+  reference against which to detect the background condition.
+  
+  The background appears as: variance ≈ 0
+  Not because nothing is happening,
+  but because the governance IS the coordinate system
+  through which the agent perceives — it cannot measure
+  the coordinate system using the coordinate system.
+  
+  (System-level extension of Self-Objectification, Section 2.3)
+```
+
+Each hierarchical level can observe different phenomena:
+
+```
+Hierarchical measurement capacity:
+
+  Agent level:    local error, immediate interaction outcomes
+  Region level:   storm patterns, local recovery dynamics
+  Meta level:     cross-region synchronization, correlation trends
+  Meta² level:    background stability structure, governance field topology
+  
+  Each level sees the STATISTICAL structure of the level below.
+  No level can directly measure the governance conditions
+  of its own level — only the level above can observe that.
+```
+
+This measurement asymmetry is not a limitation — it is a stability requirement. If lower layers could directly measure upper-layer governance metrics, those metrics would become optimization targets, producing Goodhart drift:
+
+```
+Goodhart vulnerability:
+  Lower layer gains access to upper-layer stability metric
+  → metric becomes optimization target
+  → agents optimize for metric appearance, not metric substance
+  → alignment between metric and actual stability degrades
+  → governance effectiveness collapses while metrics appear healthy
+  
+  This is a specific form of Silent Criticality:
+  metric-visible stability masking actual instability.
+```
+
+The opacity of upper-layer governance to lower layers is therefore not an information limitation to be overcome — it is a structural protection against gaming. Background governance must remain invisible to the systems it governs precisely because visibility would enable optimization against it.
+
+```
+Measurement direction:
+  ❌ Lower measures higher (self-referential distortion + Goodhart risk)
+  ✅ Higher measures lower (statistical observation without participation)
+  
+  Stable governance is measured through:
+    Instability absence patterns (not governance presence)
+    Storm frequency trends (not rule compliance)
+    Recovery time distributions (not control effectiveness)
+    Cross-region decorrelation (not coordination metrics)
+```
+
+> Background governance states are observable only from higher hierarchical levels, as measurements within the governed layer introduce self-referential distortion. This measurement asymmetry is a stability requirement, not an information limitation: visibility of governance metrics to governed agents would produce Goodhart drift — optimization against the metric rather than the underlying stability condition. The most effective governance is the governance that cannot be measured by the systems it governs.
+
+**Minimum Intervention Law:**
+
+The hierarchical measurement constraint, combined with the Self-Exciting Defect Layer principle (micro-storms must be preserved), produces a precise rule for when higher-order governance should and should not act:
+
+```
+VST Intervention Law:
+
+  Normal fluctuation (R < 1, noise-level):
+    → NO intervention.
+    Micro-storms are health signals.
+    Suppressing them degrades sensing → Silent Criticality risk.
+    Normal instability is a protected condition.
+    
+  Critical threshold approach (dR/dt accelerating, R → 1⁺):
+    → INTERVENE.
+    Correlation acceleration, variance collapse, or recovery delay
+    elongation indicate approaching noise decoherence.
+    Self-recovery becomes structurally impossible
+    once synchronization cascade begins.
+    
+  Post-intervention:
+    → WITHDRAW immediately.
+    Restore subcritical conditions, then return to silent observation.
+    Prolonged intervention suppresses the micro-storm layer.
+```
+
+**What triggers intervention — not events, but rates:**
+
+Higher-order governance does not respond to storms. It responds to the approach velocity toward criticality:
+
+```
+Intervention signals (what upper layers actually monitor):
+  
+  ❌ Storm occurrence (normal, expected, healthy)
+  ❌ Local conflict intensity (within-region matter)
+  ❌ Individual agent failure (local recovery handles this)
+  
+  ✅ Correlation acceleration across regions
+  ✅ Variance compression (apparent calm — Silent Criticality signal)
+  ✅ Recovery time elongation (critical slowing down)
+  ✅ R approaching 1⁺ (branching ratio exceeding critical threshold)
+  
+  Formally: intervention triggers on dR/dt and R trajectory,
+  not on instantaneous state.
+```
+
+**What intervention does — desynchronization, not problem-solving:**
+
+```
+Intervention objective:
+  ❌ Resolve the conflict
+  ❌ Fix the problem
+  ❌ Restore prior state
+  ✅ Break the synchronization that is producing correlation growth
+  
+  Methods:
+    Introduce temporal delays between correlated regions
+    Reduce coupling density at synchronization boundaries
+    Inject asymmetry into correlated fluctuation patterns
+    Redistribute interaction load across alternative pathways
+    
+  All methods serve one function:
+    Restore noise independence (R < 1)
+    so that the Self-Exciting Defect Layer can resume
+    normal micro-storm generation and self-correction.
+```
+
+**Intervention characteristics in mature systems:**
+
+```
+  Local        (targeted at synchronization boundary, not system-wide)
+  Temporary    (withdrawn as soon as R < 1 restored)
+  Structural   (modifies topology, not agent behavior)
+  Minimal      (smallest change that breaks synchronization)
+  
+  The five-step operational cycle:
+    Observe silently
+    → Allow fluctuation
+    → Detect criticality approach
+    → Intervene minimally
+    → Withdraw immediately
+```
+
+This maps directly to existing VST mechanisms:
+
+```
+  Observe silently     → S monitoring (Phase 1, Section 3.2.2)
+  Allow fluctuation    → micro-storm preservation (defect layer)
+  Detect criticality   → S predictive function (Phase 3)
+  Intervene minimally  → MZ-STP Track A (propagation containment)
+  Withdraw immediately → governance withdrawal trajectory
+```
+
+> Higher-order governance intervenes only when system dynamics exceed critical stability thresholds — indicated by correlation acceleration, variance compression, or recovery delay elongation — acting to restore subcritical conditions through desynchronization rather than suppressing normal fluctuations. Intervention is local, temporary, structural, and minimal. Normal instability is a protected condition: suppressing it degrades sensing capacity and produces Silent Criticality risk. The complete governance cycle is: observe silently, allow fluctuation, detect criticality approach, intervene minimally, withdraw immediately.
+
+**Two-Timescale Intervention Law:**
+
+The "intervene minimally" step in the governance cycle decomposes into two temporally separated phases. Both are necessary — omitting either produces failure:
+
+```
+Phase 1 — Energy Damping (short-term)
+  Timing: immediate (during or just after threshold crossing)
+  Objective: halt cascade propagation, reduce R from >1 to ≈1⁻
+  
+  Methods:
+    Interaction throttling (reduce coupling bandwidth)
+    Latency injection (temporal desynchronization)
+    Load redistribution (prevent concentration)
+    Temporary isolation (partition correlated zones)
+  
+  Function: buy time.
+  
+  What it does NOT do:
+    Does not address the structural cause.
+    The interaction topology that produced the storm remains intact.
+    If Phase 1 is the only intervention → same storm will recur.
+
+Phase 2 — Terrain Reconfiguration (long-term)
+  Timing: after R < 1 restored (system plasticity recovered)
+  Objective: modify interaction landscape so the same
+             synchronization pathway cannot re-form
+  
+  Methods:
+    Region boundary adjustment
+    Mediation layer insertion
+    Routing path modification
+    Hierarchy realignment
+    Defect field redistribution
+  
+  Function: prevent recurrence.
+  
+  What it does NOT do:
+    Cannot operate during active storm (system plasticity too low,
+    noise too high, coordination impossible under cascade conditions).
+```
+
+**Why both phases are necessary:**
+
+```
+Phase 1 only (energy damping without terrain change):
+  Storm halted → same topology → same instability seed
+  → recurrence guaranteed → chronic intervention dependency
+  
+Phase 2 only (terrain change during active storm):
+  System plasticity is minimal during cascade
+  → coordination for structural change impossible
+  → intervention fails or produces worse instability
+  
+  Medical analogy:
+    Phase 1 = analgesia (halt acute crisis)
+    Phase 2 = surgery (remove structural cause)
+    Analgesia alone → relapse
+    Surgery without analgesia → shock death
+```
+
+**Governance maturity and the two-timescale principle:**
+
+```
+Maturity level     Intervention behavior
+──────────────────────────────────────────────────────────
+Immature           Continuous energy suppression only
+                   → chronic intervention, no structural learning
+                   
+Developing         Late terrain modification (after repeated storms)
+                   → slow learning, high cumulative damage
+                   
+Mature             Clean two-phase separation
+                   → damp first, reshape after, withdraw
+                   
+Most mature        Pre-emptive terrain adjustment before threshold
+                   → Phase 1 rarely needed (topology already safe)
+```
+
+The most mature governance level anticipates terrain vulnerabilities and reconfigures before storms materialize — effectively eliminating the need for Phase 1 energy damping in most cases. This corresponds to the governance backgrounding state where the interaction landscape itself prevents the synchronization pathways that would produce supercritical dynamics.
+
+> Effective governance separates intervention across timescales: rapid energy damping to halt instability propagation (Phase 1), followed by structural terrain reconfiguration to prevent recurrence (Phase 2). Neither phase alone is sufficient — damping without restructuring produces chronic recurrence, and restructuring during active crisis fails due to insufficient system plasticity. The most mature systems pre-emptively reconfigure terrain before critical thresholds are approached, making acute intervention increasingly rare.
+
+**High Capability · Low Activation — the governance maturity condition:**
+
+The preceding principles — minimum intervention, two-timescale separation, governance backgrounding — converge to a single maturity condition: intervention capability must be maximized while intervention frequency is minimized.
+
+```
+Both conditions are necessary:
+
+  High capability + High activation (immature):
+    System cannot self-regulate → chronic dependence on intervention
+    Micro-storm suppression → sensing degradation → Silent Criticality
+    
+  Low capability + Low activation (neglect):
+    Critical threshold exceeded → no effective response available
+    System collapses through inability, not policy
+    
+  High capability + Low activation (mature):
+    Lower layers self-regulate through defect layer and terrain
+    Upper layers maintain full intervention capacity
+    Intervention almost never needed because structure prevents storms
+    When needed: rare, decisive, immediately effective
+    
+    P_I → 0  (intervention probability approaches zero)
+    E_I → ∞  (intervention effect, when activated, is decisive)
+```
+
+This produces the central paradox of mature governance: the strongest governor is the one that almost never governs. Its presence — the maintained capacity for decisive intervention — is itself a stabilizing condition. Lower layers that know intervention is available (structurally, not consciously) operate within bounds that prevent the conditions that would trigger it.
+
+```
+Governance maturity spectrum (complete):
+
+  Level 1: Frequent intervention, weak effect
+    → chronic instability, governance fatigue
+    
+  Level 2: Moderate intervention, moderate effect
+    → partial stability, learning phase
+    
+  Level 3: Rare intervention, strong effect
+    → structural stability, two-timescale separation
+    
+  Level 4: Near-zero intervention, decisive capability maintained
+    → governance backgrounded, terrain self-maintaining
+    → intervention capacity = stability condition itself
+    
+  Level 5: Pre-emptive terrain adjustment only
+    → intervention as traditionally understood: unnecessary
+    → governance IS the topology of possible system states
+```
+
+> Mature governance maximizes intervention capability while minimizing intervention frequency. This is not restraint — it is the structural consequence of successful terrain formation, defect layer maintenance, and governance backgrounding. The most stable configuration is one where intervention is always possible but almost never necessary, because the interaction landscape itself prevents the synchronization pathways that produce supercritical dynamics. The strongest governor is the one that almost never governs.
+
 ---
 
 ## 4. Network Propagation Structure
@@ -3067,11 +3365,117 @@ This table replaces the implicit uniform confidence of v1.0's Appendix A with di
 | **Fractal propagation predictions** | **Three testable predictions specified (Section 1.5.1): scale-invariant amplification, stage transition ordering, intervention leverage asymmetry. All testable with current instrumentation.** | **New v1.1 — predictions defined; testing pending** |
 | **Intervention timing protocol** | **Three-threshold operational protocol defined (Section 3.4.1). k₁, k₂ heuristics provided. Multi-zone simultaneous storm triage protocol defined (Section 3.4.2): priority scoring, dual-track intervention (containment + recovery), externality-aware sequencing, sensitivity-inverse amplitude allocation.** | **New v1.1 — single-zone operational; multi-zone operational** |
 
+### 11.2 Per-Architecture Calibration Protocol (v1.1)
+
+The 7 "per-architecture calibration open" items in the table above (storm detection threshold, metadata injection frequency, space maturity τ, Attracting/Distracting balance, degradation capacity thresholds, intra-agent zone τ values, and S-equation boundary values) share a common structure: VST defines the structural form of each measure but cannot specify numerical values without empirical data from specific architectures.
+
+This is not a gap in the theory. Per-architecture variation in critical exponents and threshold values is expected — it is the signature of architecture-dependent universality classes, not a failure to produce universal constants.
+
+**The resolution: Calibration Protocol rather than fixed parameters.**
+
+Per-architecture τ values (and all analogous thresholds) are not predefined constants to be theoretically derived. They are emergent diagnostic indices — properties that each architecture reveals through its own dynamics. VST specifies the measurement protocol, not the measurement result:
+
+```
+VST Calibration Protocol:
+
+Step 1 — Storm Observable Unification
+  Define "storm" in architecture-independent terms:
+    Storm = correlated activation episode requiring recovery
+  
+  The measurable quantity is architecture-specific
+  (agent count, token count, message count, activation volume)
+  but the definition criterion is universal:
+    recovery boundary = storm boundary.
+
+Step 2 — Temporal Normalization
+  Architecture-specific timesteps cannot be compared directly.
+  Normalize all durations to:
+    T = recovery cycle unit (time to complete one full recovery)
+  
+  This makes duration exponents (α_dur) comparable
+  across architectures with different clock speeds.
+
+Step 3 — Power-Law Extraction
+  For each architecture, extract:
+    P(S) ~ S^{-τ}           (storm size distribution)
+    P(T) ~ T^{-α_dur}       (storm duration distribution)
+    R = activated_{t+1}/activated_t  (branching ratio)
+  
+  Critical check: verify that a scaling regime EXISTS
+  before fitting exponents. Non-power-law distributions
+  indicate the system is not operating near criticality —
+  which is itself a diagnostic finding.
+
+Step 4 — Architecture Class Mapping
+  τ values are not calibration targets.
+  They are maturity fingerprints:
+
+  Architecture type          Expected τ range
+  ──────────────────────────────────────────────
+  Dense reactive             1.1–1.3  (frequent large storms)
+  Moderated multi-agent      1.3–1.6  (moderate containment)
+  Hierarchical governed      1.6–1.9  (effective governance)
+  Mature terrain-shaped      1.9–2.2  (storms mostly micro-scale)
+  
+  Higher τ → steeper power-law tail → fewer large storms
+  → more effective governance → more mature system
+  
+  τ does not need to be "set" — it reveals the system's
+  governance maturity through its storm statistics.
+```
+
+**Resolution of the 7 open calibration items:**
+
+```
+Item                          Protocol resolution
+──────────────────────────────────────────────────────────
+Storm detection threshold     Step 3 extracts per-architecture detection
+                             sensitivity from observed storm distributions
+                             
+Metadata injection freq.      Step 4 maps to architecture class;
+                             injection frequency scales inversely with τ
+                             
+Space maturity τ              Step 3+4: GradES/CKA convergence rate
+                             compared against architecture class baseline
+                             
+A/D balance                   Step 4: balance point shifts with τ range;
+                             higher τ = more Attracting capacity relative
+                             to Distracting overhead
+                             
+Degradation thresholds        Step 2 normalization makes cross-architecture
+                             comparison possible; absolute values emergent
+                             
+Intra-agent zone τ            Step 1 applied at sub-agent scale;
+                             same protocol, different measurement substrate
+                             
+S-equation boundaries         Step 4 maps stage boundaries to τ range;
+                             S_c varies by architecture class
+```
+
+**What this resolves and what remains open:**
+
+```
+Resolved (theory level):
+  ✅ Measurement method: universal (same protocol for any architecture)
+  ✅ Expected ranges: defined (architecture class mapping)
+  ✅ Comparability: established (normalization + relative deviation)
+  ✅ Interpretation: maturity fingerprint (not tunable parameter)
+  
+Remains open (empirical level):
+  ❌ Exact τ values for specific architectures (requires measurement)
+  ❌ Architecture class boundary precision (requires cross-system data)
+  ❌ τ stability over system lifetime (requires longitudinal measurement)
+```
+
+This is consistent with standard practice in complex systems science: the theory specifies the measurement framework and expected scaling structure; specific numerical values emerge from application to concrete systems.
+
+> Per-architecture threshold values are not predefined constants but empirically emergent diagnostic indices. VST specifies a universal calibration protocol — storm definition, temporal normalization, power-law extraction, and architecture class mapping — enabling cross-architecture comparison without assuming substrate identity. The τ exponent functions as a maturity fingerprint: its value reveals governance effectiveness rather than requiring prior specification.
+
 **Scope Boundary**
 
 Vector Storm Theory explains instability propagation in multi-agent systems — how directional conflict forms, amplifies, and spreads across fractal architectures, and how governance design can detect and contain it.
 
-It does not model intelligence formation, optimization efficiency, or capability scaling. The empirical grounding in Appendix A maps VST mechanisms to observable single-agent phenomena; it does not extend VST's claims to those domains. Calibration of the governance scaling law has been advanced through operational proxies (Section 3.2.1), S₀ normalization with hypothetical stage boundaries (Section 3.2.2), and component calibration rules. Exact boundary values per-architecture remain future empirical work.
+It does not model intelligence formation, optimization efficiency, or capability scaling. The empirical grounding in Appendix A maps VST mechanisms to observable single-agent phenomena; it does not extend VST's claims to those domains. Calibration of the governance scaling law has been advanced through operational proxies (Section 3.2.1), S₀ normalization with hypothetical stage boundaries (Section 3.2.2), component calibration rules, and the per-architecture calibration protocol (Section 11.2). Exact boundary values emerge from application of this protocol to specific architectures — the theory specifies the measurement framework, not the measurement results.
 
 ---
 
