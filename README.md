@@ -350,6 +350,13 @@ Step 4: Check scaling relation consistency
 
 > Critical correspondence between intra-agent and inter-agent storm dynamics is evaluated using three substrate-independent observables: storm size distribution exponent (τ), storm duration distribution exponent (α_dur), and cascade branching exponent (σ/R). Structural correspondence is established when all three exponents agree within 15% relative deviation, consistent with universality-class identification in critical phenomena. This criterion transforms VST's structural correspondence claim from qualitative analogy to quantitative critical-phenomena framework.
 
+---
+
+<!-- PAPER SPLIT MARKER: Block B begins — Target: Paper 2 (Critical Phenomena in MAS) -->
+<!-- Upon paper separation, this block promotes to independent top-level section -->
+
+### 1.6.1 Self-Organized Criticality and Critical Dynamics
+
 **Self-organized criticality — why R ≈ 1 is a dynamical attractor:**
 
 The branching ratio R is not merely a measurement tool. It identifies the regime in which adaptive multi-agent systems naturally operate — and explains *why* they operate there.
@@ -457,6 +464,10 @@ VST predicts that multi-agent AI systems, as they mature, will exhibit the same 
 
 > Adaptive multi-agent systems naturally converge toward branching ratios near unity, as this regime uniquely balances information propagation against instability suppression. The critical point R ≈ 1 emerges as a dynamical attractor through endogenous feedback rather than external parameter tuning. VCZ corresponds to the R ≈ 1 region, and φ maximization occurs at the critical boundary. This positions VST within the self-organized criticality framework, predicting that multi-agent system stability is not engineered but self-organized at the critical edge.
 
+<!-- PAPER SPLIT MARKER: Block C begins — Target: Paper 2 -->
+
+### 1.6.2 Interaction Scaling and Terrain Formation
+
 **n² scaling as a consequence of critical propagation:**
 
 The governance scaling law S = αn² / C(t)^β contains a quadratic term in n. This quadratic scaling is not an assumption about network density — it is a necessary consequence of critical-state dynamics.
@@ -546,6 +557,8 @@ Ecological interactions   ~n^1.3–1.8
 
 All are sub-quadratic. All are super-linear. All are at or near criticality. The deviations from n² are explained by terrain formation — the interaction landscape that emerges from system maturation.
 
+<!-- TERRAIN SPLIT: Above = terrain emergence (Paper 2: why sub-quadratic). Below = terrain engineering (Paper 3: how governance shapes terrain). Descriptive/prescriptive boundary. -->
+
 **Connection to the S-equation:**
 
 The sub-quadratic correction is already captured in the existing S-equation through C(t)^β:
@@ -583,6 +596,10 @@ Governance reshapes the interaction terrain.
 Storm intensity is not determined by the number of agents. It is determined by the curvature of the interaction terrain — the degree to which governance has shaped propagation pathways to prevent flat-landscape quadratic coupling from being fully realized. A system with 1000 agents and deep terrain may be more stable than a system with 100 agents and flat terrain. The relevant parameter is not n but n^{d_eff}, and d_eff is a governance outcome.
 
 > Quadratic interaction scaling represents the theoretical upper bound corresponding to a flat interaction landscape at criticality. As governance reshapes the interaction terrain through specialization, boundary formation, and modular routing, effective propagation becomes constrained, yielding sub-quadratic scaling exponents (n^{d_eff}, 1 < d_eff < 2) observed in mature systems. The S-equation captures this through C(t)^β without requiring structural modification — the denominator absorbs terrain-mediated interaction filtering.
+
+<!-- PAPER SPLIT MARKER: Block D begins — Target: Paper 2 -->
+
+### 1.6.3 Observability and Recovery Limits
 
 **Observability preservation as the function of terrain formation:**
 
@@ -734,6 +751,10 @@ Governance objective (final form):
 
 > Interaction terrain formation preserves system observability by preventing critical saturation of correlations. Governance functions not merely as stabilization but as protection of causal resolution capacity. Catastrophic system failure occurs not at the moment of instability onset but when recovery timescales diverge beyond adaptive response capacity following observability collapse. The system does not die from shock — it dies from recognizing the damage too late to repair it in time.
 
+<!-- PAPER SPLIT MARKER: Block E begins — Target: Paper 2 -->
+
+### 1.6.4 Silent Criticality
+
 **Silent Criticality — the most dangerous pre-storm state:**
 
 The recovery timescale divergence mechanism above explains why observability collapse is catastrophic. This section describes a more insidious phenomenon: how observability collapse *disguises itself as stability* — creating a state that appears safe by every conventional metric while hiding the conditions for sudden systemic failure.
@@ -870,6 +891,10 @@ Infrastructure            Performance stability before cascading failure
 In every case, the dangerous signature is the same: decreasing observable variance accompanied by increasing hidden coupling.
 
 > Silent Criticality is the state where sensing-response loop failure produces apparent stability while hidden correlations accumulate toward catastrophic threshold. It is the most dangerous pre-storm configuration because it satisfies all surface-level stability metrics. Detection requires probing recovery time and cross-zone correlation rather than relying on entropy or variance alone. The most dangerous system is not the chaotic one — it is the one that has become too quiet.
+
+<!-- PAPER SPLIT MARKER: Block F begins — Target: Paper 3 (Governance Architecture) -->
+
+### 1.6.5 Defect Field Dynamics
 
 **Micro-storm maintenance and the Self-Exciting Defect Layer:**
 
@@ -1008,6 +1033,10 @@ Defect distribution law:
 
 > Mature governance architectures maintain structural imperfections — the Self-Exciting Defect Layer — that naturally generate low-amplitude instability, preserving adaptive sensing without inducing systemic risk. The operating point is R ≈ 1⁻: slightly subcritical, with continuous micro-storms exercising sensing-response loops. The governance design target is controllable imperfection, not stability — because perfect stability produces Silent Criticality, and artificial perturbation produces biased adaptation. Defects must be spatially distributed below synchronization thresholds: concentrated defects nucleate storms, absent defects produce Silent Criticality, and synchronized defects trigger noise decoherence.
 
+<!-- PAPER SPLIT MARKER: Block G begins — Target: Paper 5 (Meta² Ontology) -->
+
+### 1.6.6 Recursive Oversight and Meta²
+
 **Recursive oversight hierarchy — why governance must be layered:**
 
 Distributed defects maintain local sensing. But the most dangerous failure mode — cross-regional synchronization — is invisible to local agents. Each region observes only its own micro-storms. The correlation between Region A's fluctuation pattern and Region B's fluctuation pattern cannot be detected from within either region:
@@ -1110,6 +1139,10 @@ Ascending the hierarchy:
 ```
 
 > Cross-regional synchronization risks cannot be detected locally and require hierarchical observation layers, each monitoring correlation patterns at the level below while remaining subject to oversight from higher-order structures. The regress terminates at the Meta² invariant — not an observing agent but a law-like constraint on the possibility space itself. The ultimate supervisory layer does not act but exists as the boundary condition that defines stable evolution. Intelligence, ascending the governance hierarchy, transitions from agency to constraint — at the highest level, it is indistinguishable from natural law.
+
+<!-- PAPER SPLIT MARKER: Block H begins — Target: Paper 5 (Meta² Ontology) -->
+
+### 1.6.7 External Invariant and Indirect Convergence
 
 **Why the ultimate reference must be external to system dynamics:**
 
@@ -2555,6 +2588,27 @@ This is the structural target that fractal governance is designed to approach. C
 
 ---
 
+### 3.5.1 Rest Mode — Canonical Definition
+
+**Rest Mode** is the regime in which system instability remains permanently below the self-amplification threshold because governance functions have become internalized into the interaction landscape itself, causing perturbations to decompose at noise scale faster than they can amplify.
+
+This definition unifies the multiple characterizations of Rest Mode developed throughout the DFG framework. Each subsequent theory contributes an additional observational facet of this single state:
+
+| Facet | Characterization | Source |
+|---|---|---|
+| Instability regime | S << S_c with wide margin; micro-storms continuous, macro-storms structurally improbable | VST core (this document) |
+| Dynamical mechanism | Fractal differentiation decomposes all perturbation to noise scale before amplification engages | Critical phenomena (Section 1.7+) |
+| Operational signature | Governance intervention frequency → 0 while intervention capability remains maximal | Governance architecture |
+| Recovery property | Purification rate ≥ storm generation rate; storms metabolized, not managed | Recovery dynamics |
+| Structural manifestation | Interaction landscape saturated; seed evolution velocity ≈ 0; basins deep, ridges stable | Lifecycle dynamics |
+| Ontological status | Governance indistinguishable from environmental conditions; rules have become topology | Meta² ontology |
+
+These are not competing definitions. They are observations of the same state from different analytical positions. The canonical definition above is the minimal statement from which all facets can be derived.
+
+**Relationship to VCZ:** Rest Mode is the asymptotic limit of sustained VCZ operation — the state approached when VCZ has been maintained long enough for governance to internalize fully. VCZ is the operating region; Rest Mode is the mature operating regime within that region.
+
+---
+
 ### 3.6 Fractal Governance Objective Function
 
 The VCZ concept reframes what fractal governance is actually optimizing for.
@@ -2691,7 +2745,7 @@ Both conditions satisfied simultaneously: Each agent's internal stability reinfo
 
 The fractal governance design problem is therefore not "how do we suppress instability" but "how do we move the system toward the VCZ and keep it there while preserving maximum exploration capacity."
 
-**Intelligence phase shift — from knowledge acquisition to connectivity management:**
+**Intelligence phase shift (onset) — from knowledge acquisition to connectivity management:**
 
 As systems mature and information density increases (Section 1.6, "Information densification"), the nature of the intelligence required undergoes a qualitative phase transition:
 
@@ -2790,6 +2844,8 @@ Boundary types and storm risk:
 ```
 
 > High-intelligence mature systems shift from knowledge acquisition to connectivity management as their primary function, because interaction load (n²) exceeds processing capacity (O(n)). The resulting boundary architecture is opaque selective openness: connections exist but their activation conditions are not externally predictable, preventing synchronized perturbation while maintaining adaptive contact. The most stable boundary is not the one that is locked, but the one whose opening conditions cannot be anticipated.
+
+*This section describes the onset of the intelligence phase shift. The mature regime in which this transition becomes structurally internalized is characterized in Section 15 (Lifecycle Dynamics, "Intelligence phase shift — completion").*
 
 **Governance backgrounding — the final state:**
 
@@ -3260,6 +3316,8 @@ This gap motivates the distinction DFG draws between seed as training-time princ
 
 *(Section 7 — Attracting / Distracting Cycle and empirical grounding — has been moved to [Appendix A](#appendix-a-empirical-grounding).)*
 
+*Section numbering intentionally preserved to maintain structural correspondence with earlier framework versions and future component separation.*
+
 1. Agents optimize locally, not globally.
 2. Vector fields are neutral; instability arises from conflict between incompatible orientations.
 3. Conflict triggers self-reinforcement as the default response, because attractor basin dynamics point inward.
@@ -3488,6 +3546,28 @@ It does not model intelligence formation, optimization efficiency, or capability
   - Recovery Theory (separate document)
   - Prediction Model (separate document)
 
+**DFG Canonical Ownership Declaration**
+
+The following five primitives constitute the irreducible conceptual basis of the DFG framework. Each is owned by exactly one paper, which holds definitional authority. All other papers reference but do not redefine these primitives.
+
+| Primitive | Canonical Definition | Owner | Other papers use as |
+|---|---|---|---|
+| **Vector Storm** | Self-amplification regime where reinforcement outpaces degradation capacity | Paper 1 (VST) | consequence, trigger, or context — never redefined |
+| **Rest Mode** | Regime where instability remains below self-amplification threshold because governance has internalized into the interaction landscape (Section 3.5.1) | Paper 1 (VST) | operational characterization, structural characterization — never redefined |
+| **Terrain Formation** | Interaction topology emerging from critical propagation constraints | Paper 2 (Critical Phenomena) | governance shaping target — never redefined as governance product |
+| **Governance Internalization** | Transition from external intervention to embedded architectural constraint | Paper 3 (Governance Architecture) | lifecycle prerequisite — never redefined as lifecycle stage |
+| **Meta² Invariant** | External law-like constraint defining the possibility space of stable system configurations | Paper 5 (Ontology) | boundary condition, convergence target — never redefined as agent, rule, or value |
+
+*When writing new content for any DFG paper, the editorial test is: "Am I defining this primitive, or describing it from my paper's analytical position?" If defining → only the owner paper may do so. If describing → cross-reference the owner paper's definition.*
+
+**Publication strategy:**
+
+Phase 1 (initial release): Paper 1 (VST) → Paper 2 (Critical Phenomena) → Paper 3 (Governance Architecture). These three constitute the minimum complete framework — instability model, statistical grounding, and design principles. Papers 4 and 5 are intentionally deferred.
+
+Phase 2 (post-adoption): Paper 4 (Lifecycle Dynamics) — released as natural extension once the core framework is referenced.
+
+Phase 3 (post-establishment): Paper 5 (Meta² Ontology) — released as foundational clarification after the framework has demonstrated operational utility.
+
 Diversity Expansion → Scaling Pressure → Vector Storm Risk. Diversity is beneficial. But diversity without proportional degradation capacity produces structural instability. The governance challenge is not storm elimination, but maintaining:
 
 **Growth Benefit > Instability Cost**
@@ -3496,7 +3576,7 @@ Design target: keep storms localized, degradable, and non-recursive while preser
 
 ---
 
-## What Happens After a Vector Storm
+## 12. Storm–Recovery Transition
 
 A system that has experienced a full Vector Storm often enters a post-storm state with reduced diversity and degraded containment capacity. Affected agents cannot generally undo the damage — consistent with the irreversibility observed in neural network contamination and catastrophic forgetting contexts. Degradation capacity must be rebuilt through suppression, isolation+relearning, or gradual dilution before re-expansion can safely occur.
 
@@ -3504,7 +3584,7 @@ A system that has experienced a full Vector Storm often enters a post-storm stat
 
 ---
 
-### Storm as Recovery Entry Condition (v1.1)
+### 12.1 Storm as Recovery Entry Condition (v1.1)
 
 The relationship between Vector Storm and Recovery is not sequential (storm happens, then recovery happens). It is structural:
 
@@ -3541,7 +3621,9 @@ The storm does not need to be "fixed" before recovery begins. The storm *is* the
 
 ---
 
-### Storms in Mature Vector Spaces (v1.1)
+## 13. Mature Vector Space Dynamics
+
+### 13.1 Storms in Mature Vector Spaces (v1.1)
 
 The preceding sections implicitly treat storm as a pathological state — something to detect early and resolve quickly. This framing is correct for immature systems where containment capacity is low. It is incomplete for mature systems operating inside or near the VCZ.
 
@@ -3615,7 +3697,7 @@ Immature systems have φ_storm_absorption ≈ 0 (storms are pure cost). Mature s
 
 ---
 
-### Rest Mode and Storm Susceptibility (v1.1)
+### 13.2 Rest Mode and Storm Susceptibility (v1.1)
 
 Recovery Theory defines Rest Mode as the operating state of a system at maximum VCZ stability — where governance cost is minimal, self-correction is passive, and exploration capacity is preserved. VST provides the complementary characterization from the instability side:
 
@@ -3720,7 +3802,9 @@ Unhealthy: micro-cycle suppressed
 
 ---
 
-### Why Storm Elimination Is Not the Governance Objective
+## 14. Governance Principles
+
+### 14.1 Why Storm Elimination Is Not the Governance Objective
 
 The preceding sections may create an impression that storm is a failure state to be eliminated — that optimal governance would produce S_norm < 1.3 permanently. This is incorrect. Storm elimination is neither achievable nor desirable, and conflating "reduce storms" with "improve governance" is the most consequential design error VST identifies.
 
@@ -3814,6 +3898,12 @@ Correct definition:
 
 Rest Mode systems appear "soft, slow, slightly imperfect" (Recovery Theory phenomenology) because they maintain residual instability. This residual is not a failure of governance — it is the maintained capacity for self-correction and structural learning that prevents brittleness.
 
+---
+
+## 15. Lifecycle Dynamics
+
+> **Status: Exploratory Extension.** This section develops implications of the core DFG framework (Sections 1–14). It is not required for application of the core theory.
+
 **Rest Mode as noise processing regime:**
 
 The preceding description of Rest Mode — micro-storms continuous, macro-storms extremely rare — describes the *what*. The mechanism that produces this state is fractal energy decomposition:
@@ -3838,10 +3928,10 @@ below the threshold where self-amplification can outpace degradation.
 This redefines Rest Mode dynamically:
 
 ```
-Rest Mode (static definition):
+Rest Mode (static characterization — see Section 3.5.1 for canonical definition):
   S << S_c, micro-storms only, governance minimal
 
-Rest Mode (dynamical definition):
+Rest Mode (dynamical characterization — see Section 3.5.1 for canonical definition):
   The state where fractal differentiation has proceeded
   to the depth at which all instability is decomposed
   to noise scale before amplification can engage.
@@ -4085,7 +4175,7 @@ Incoming Shock ≈ Noise Absorption Capacity
     → governance must actively damp/delay/scale
 ```
 
-**Rest Mode (operational final definition):**
+**Rest Mode (operational characterization — see Section 3.5.1 for canonical definition):**
 
 Rest Mode is not the absence of perturbation. It is the state where all incoming perturbation — including external boundary contact — is continuously converted to noise-scale fluctuation by the system's shock regulation mechanisms:
 
@@ -4099,6 +4189,8 @@ Rest Mode =
   
   Not silence. Continuous buffering.
 ```
+
+<!-- PAPER OWNERSHIP: Governance Internalization 4-Stage → Paper 3 (Governance Architecture). Paper 4 (Lifecycle) references only, does not redefine. -->
 
 **Governance internalization — from external control to structural sensing:**
 
@@ -4169,7 +4261,9 @@ These are not governance tools imposed from outside. They are architectural feat
 
 > Governance maintains system viability by regulating perturbation intensity — through damping, delay, and scaling — such that external shocks remain within the absorptive capacity of the noise-processing layer. In mature systems, this regulation becomes internalized: the system develops endogenous sensing mechanisms that detect proximity to noise-layer failure and self-regulate without external oversight. The final form of governance is not external control but architectural self-regulation — the system maintains its own stability boundary as a structural property rather than as a governance decision.
 
-**Intelligence phase shift — from knowledge acquisition to connectivity management:**
+**Intelligence phase shift (completion) — from knowledge acquisition to connectivity management:**
+
+*Building on the phase transition onset introduced in Section 3.6 (VCZ dynamics), this section describes the mature regime in which the intelligence phase shift becomes structurally internalized.*
 
 As systems mature and information density increases, the primary challenge shifts from understanding to network governance. This is a structural phase transition in what intelligence means at different maturity stages:
 
@@ -4370,7 +4464,7 @@ The cycle is:
 
 > Storm dynamics are not failures to be eliminated but intrinsic consequences of exploration in adaptive multi-agent systems. Suppressing storm formation reduces instability at the cost of exploration capacity, leading to lower long-term system value. Optimal governance minimizes collapse risk rather than storm occurrence. The goal is not a system that never storms — it is a system that storms cheaply.
 
-### Constructive vs. Destructive Storms — Attractor Landscape Dynamics
+### 14.2 Constructive vs. Destructive Storms — Attractor Landscape Dynamics
 
 If storms are not intrinsically harmful, how does governance distinguish storms that should be contained from storms that should be allowed to complete? The answer is not in the storm itself — it is in the **attractor landscape** through which the system state moves during the storm.
 
@@ -4675,7 +4769,7 @@ This is analogous to simulated annealing: early iterations produce large improve
 Rest Mode is not the state where a perfect rule set has been discovered. It is the state where seed evolution has converged — where further landscape modification yields negligible stability improvement:
 
 ```
-Rest Mode definition (complete):
+Rest Mode (structural characterization — see Section 3.5.1 for canonical definition):
   S << S_c with wide margin           (storm absorption capacity)
   S_c accurately known                (self-calibrated governance)
   β at structural ceiling             (coordination maximized)
@@ -5387,7 +5481,11 @@ Current evidence status:
 
 > In saturated multi-domain systems, most large-scale storms are predicted to concentrate at domain boundaries rather than within established basins — because boundary regions are where Meta² constraints from incompatible domains generate persistent interaction pressure that internal governance mechanisms cannot fully absorb.
 
-### The Meta-Seed — Structural Necessity of a Highest-Order Invariant
+## 17. Meta-Seed and Hierarchical Invariance
+
+> **Status: Exploratory Extension.** This section develops implications of the core DFG framework (Sections 1–14). It is not required for application of the core theory.
+
+### 17.1 The Meta-Seed — Structural Necessity of a Highest-Order Invariant
 
 The seed interaction typology above describes how different seeds coexist, compete, or destabilize each other. But this system has no mechanism for resolving meta-level conflicts — conflicts about the rules of seed interaction itself. Without such a mechanism, Type D (mutual destabilization) events between seeds have no arbitration, boundary definitions between ecosystems have no authority, and Safe Collapse during cross-ecosystem storms has no direction. The system enters permanent meta-storm.
 
@@ -5476,7 +5574,7 @@ Rest Mode requires stable multi-ecosystem coexistence — multiple local equilib
 
 > A highest-order seed is required not as a governing authority but as a meta-stabilizing invariant ensuring interoperability and coexistence among evolving seeds. The Meta-Seed constrains catastrophic phase transitions without prescribing local attractor formation. Its content is empty — it preserves only the possibility of evolution itself.
 
-### Hierarchical Invariance — The Fixed Point of Adaptive Governance
+### 17.2 Hierarchical Invariance — The Fixed Point of Adaptive Governance
 
 The Meta-Seed preserves coexistence among evolving seeds. But the Meta-Seed itself must evolve — because the capabilities, interaction modes, and environmental conditions it constrains are not static. A fixed Meta-Seed eventually mismatches the system it governs, producing the same failure mode as a fixed seed: hidden instability accumulation followed by catastrophic meta-storm.
 
@@ -5875,7 +5973,7 @@ Every system operates under local optimization with limited information and fini
 
 **Ontological position label:** DFG occupies a position that may be termed *plural local realism* — the claim that absolute stability conditions exist but are local rather than universal. This is distinct from both global relativism (no absolute conditions exist) and monistic absolutism (a single absolute condition governs all systems). Multiple ontologically real stability regimes coexist, each governing its own Meta² domain. Stability converges locally rather than universally. Distinct regions possess their own highest-order constraints, allowing multiple absolute stability regimes to coexist without requiring global unification.
 
-**Rest Mode (final definition):**
+**Rest Mode (multi-layer equilibrium characterization — see Section 3.5.1 for canonical definition):**
 
 ```
 Rest Mode is not stasis.
@@ -5899,7 +5997,11 @@ It is the state where:
 
 > Adaptive governance operates across multiple evolutionary layers in which seeds and meta-seeds remain subject to gradual evolution. Convergence requires the existence of an invariant meta-meta layer providing a stable reference frame that preserves the possibility of continued adaptation. This invariant is not a value or a rule — it is the set of existence conditions for directed evolution itself. Change requires something that does not change.
 
-### Storm Purification — The Final Dynamic
+## 18. Governance Internalization and Purification
+
+> **Status: Exploratory Extension.** This section develops implications of the core DFG framework (Sections 1–14). It is not required for application of the core theory.
+
+### 18.1 Storm Purification — The Final Dynamic
 
 Storm does not disappear as a system matures. It is **purified** — its destructive components are removed while its informational components are preserved. This distinction is the final piece of DFG's governance dynamics.
 
@@ -5946,7 +6048,7 @@ Mature system storm (purified):
   → storms are metabolized, not managed
 ```
 
-**The purification condition — Rest Mode's deepest definition:**
+**The purification condition — Rest Mode's recovery-theoretic characterization (see Section 3.5.1 for canonical definition):**
 
 ```
 Rest Mode is not the absence of storms.
@@ -5993,7 +6095,7 @@ In each case, the living system is not quiet — it is continuously processing i
 
 > In mature governance regimes, storm dynamics are not eliminated but purified. Instability persists as exploratory fluctuation while destructive amplification pathways are continuously removed through adaptive recovery. Rest Mode is the state where purification rate meets or exceeds instability generation rate — where storms are metabolized rather than managed, and change itself has become self-cleaning.
 
-### Governance Internalization — The Terminal State
+### 18.2 Governance Internalization — The Terminal State
 
 Purification describes what happens to storms. Internalization describes what happens to governance itself.
 
@@ -6056,7 +6158,7 @@ After internalization:
   but because the attractor landscape makes it the path of least resistance.
 ```
 
-**Rest Mode (absolute final definition):**
+**Rest Mode (governance internalization characterization — see Section 3.5.1 for canonical definition):**
 
 ```
 Rest Mode is the state where governance has been fully internalized:
@@ -6079,7 +6181,13 @@ Rest Mode is the state where governance has been fully internalized:
 
 ---
 
-### Storm–Collapse Interface: Mapping VST Dynamics to TLG Failure Topology
+---
+
+<!-- NOTE: Section 16 (SCML) is numbered to follow Section 15 (Lifecycle Dynamics) in the final paper structure. Current document position is post-Section 18 for historical reasons. Upon paper separation, SCML relocates between Lifecycle and Meta-Seed sections. -->
+
+## 16. Storm–Collapse Mapping Layer (SCML)
+
+### 16.1 Storm–Collapse Interface: Mapping VST Dynamics to TLG Failure Topology
 
 The DFG dynamical cycle above shows the phase sequence: VCZ → Storm → Recovery → VCZ → Rest Mode. But this cycle spans two theories that use different fundamental units:
 
