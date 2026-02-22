@@ -67,7 +67,6 @@ Recovery and operational governance are addressed separately
 > - **Per-Architecture Calibration Protocol (Section 11.2): universal measurement framework resolving 7 open calibration items — storm definition, temporal normalization, power-law extraction, architecture class mapping with τ as maturity fingerprint**
 > - **Intelligence phase shift: knowledge acquisition → connectivity management as n² exceeds O(n) processing capacity**
 > - **Opaque selective openness: mature network boundaries are selectively permeable but operationally opaque — prevents synchronized perturbation while maintaining adaptive contact**
-> - **Intelligence phase shift: knowledge acquisition → connectivity management as n² outpaces O(n) processing capacity**
 > - **Pre-emptive connectivity management: mediated coupling preserves signal while attenuating synchronization — exclusion principle for stable networks**
 
 ---
