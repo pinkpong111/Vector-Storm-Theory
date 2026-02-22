@@ -19,6 +19,9 @@ Recovery and operational governance are addressed separately
 > - **Mature system storm behavior defined ("Storms in Mature Vector Spaces")**
 > - **Rest Mode ↔ Storm susceptibility coupling ("Rest Mode and Storm Susceptibility")**
 > - **DFG dynamical cycle closed: VCZ → Storm → Recovery → VCZ → Rest Mode**
+> - **Multi-Zone Storm Triage Protocol (Section 3.4.2): priority scoring, dual-track intervention, externality-aware sequencing**
+> - **Storm–Collapse Mapping Layer (SCML): formal VST↔TLG interface with storm type → failure topology mapping + complete lifecycle closure + cross-theory variable correspondence**
+> - **Absolute Calibration Layer (Section 3.2.2): S₀ normalization, stage boundary ranges (0/1/2/3/4), triple determination (S_norm + dS/dt + d²S/dt²), component calibration rules, operational decision table**
 
 ---
 
@@ -252,8 +255,45 @@ $$S = \frac{\alpha \cdot n^2}{C(t) \cdot \beta}$$
 
 **Term-by-term translation into Vector Storm language:**
 
-**S — System instability**
+**S — System instability (order parameter)**
 The magnitude of force pushing the system toward collision, contamination, misalignment, or loop states. Not a binary flag but a continuous pressure: the higher S, the closer the system is to the regime where self-amplification dominates local decay.
+
+S is not a physical observable with absolute units. It is an **order parameter** in the statistical mechanics sense — a macroscopic scalar that compresses high-dimensional interaction dynamics into a single value indicating which phase the system occupies:
+
+```
+Order parameter behavior:
+  S low and stable     → VCZ phase (stable exploration)
+  S rising             → Storm formation phase
+  S at critical value  → Phase transition (Stage boundary crossing)
+  S high and runaway   → Collapse phase
+  
+  Continuous variable, discrete regime changes.
+  This is the defining signature of a phase-transition order parameter.
+```
+
+The order parameter framing resolves three common objections to the S-equation:
+
+```
+Objection: "S has no absolute units"
+  → Correct. Order parameters are defined by their phase-transition behavior,
+    not by absolute magnitude. Magnetization in a ferromagnet has no
+    meaning except relative to the critical point. S₀ normalization
+    (Section 3.2.2) anchors S to the system's own phase boundary.
+
+Objection: "α is incompletely defined"
+  → Correct. Order parameters absorb microscopic degrees of freedom
+    by design. The Ising model's magnetization absorbs individual
+    spin interactions; S absorbs individual agent coupling. This is
+    not imprecision — it is the correct level of description.
+
+Objection: "S values differ across systems"
+  → Correct. Order parameters are system-specific.
+    What is universal is the phase structure — the existence
+    of stable, transition, and unstable regimes — not the
+    absolute values at which transitions occur.
+```
+
+The S-equation is therefore not an instability calculator but a **phase detector** — it identifies which qualitative regime the system occupies and how close it is to a regime transition.
 
 **n — Exploration dimensionality** (not agent count)
 The number of meaningfully distinct directions the system is simultaneously exploring. This is an abstract proxy for divergence, not a headcount.
@@ -316,7 +356,283 @@ The equation identifies exactly four ways to reduce S:
 
 DFG's preferred direction is not 1 (suppressing n) but 2–4: making the system capable of absorbing the instability that comes with genuine exploration. Constraining n is a governance failure mode — it trades instability for stagnation.
 
-This equation defines a governance scaling law, not a physical law. It specifies how instability scales with exploration dimensionality and how degradation capacity determines whether that scaling is contained. Formal calibration of α, β, and C(t) as measurable quantities remains an open problem (Section 7).
+This equation defines a governance scaling law, not a physical law. It specifies how instability scales with exploration dimensionality and how degradation capacity determines whether that scaling is contained. Absolute calibration is addressed through S₀ normalization and hypothetical stage boundary ranges in Section 3.2.2.
+
+**Why n² — structural justification of the quadratic exponent:**
+
+The quadratic dependence on n is not an empirical curve fit or an arbitrary modeling choice. It follows from the structural claim that storm instability arises from **pairwise vector interactions**, not from agent count itself.
+
+```
+The argument:
+
+1. Storm dynamics arise from reinforcement conflict between vectors.
+   A single vector cannot storm — storm requires vector_i reinforcing
+   or opposing vector_j. The minimum unit of instability is a pair.
+
+2. In a coupled system with n meaningfully distinct exploration directions,
+   the number of potential interaction pairs is:
+   
+   n(n-1)/2 ≈ O(n²)
+   
+   This is not a modeling assumption. It is a combinatorial property
+   of any system where instability propagates through pairwise channels.
+
+3. Each interaction pair is a potential reinforcement pathway.
+   Storm instability pressure = sum of active reinforcement mismatches
+   across all interacting pairs.
+   
+   Total instability pressure ∝ number of interaction pairs ∝ n²
+
+4. Higher-order effects (three-way interactions, cluster-level resonance,
+   cascade amplification) exist but are absorbed into α.
+   α captures coupling density, role overlap, and feedback loop intensity —
+   all of which modulate how strongly pairs interact.
+   n² captures the topology; α captures the intensity.
+```
+
+This scaling is not novel to VST. It is the standard interaction-dominated scaling observed across coupled systems:
+
+```
+Domain                          Instability scaling    Mechanism
+───────────────────────────────────────────────────────────────────
+Network congestion              O(n²)                  Collision-possible paths
+Financial systemic risk         O(n²)                  Counterparty exposure pairs
+Distributed consensus           O(n²)                  Message complexity
+Swarm coordination overhead     O(n²)                  Pairwise coordination cost
+Multi-agent reinforcement       O(n²)                  Policy interference pairs
+```
+
+VST does not introduce a novel exponent. It recognizes a known interaction-scaling law in the specific context of instability propagation through vector reinforcement dynamics.
+
+**Why not n³ or higher:**
+
+n³ would require dominant three-body interactions — instability that cannot be decomposed into pairwise effects. In VST's storm model, amplification propagates through sequential pairwise reinforcement chains (agent A reinforces B, B reinforces C), not through irreducible three-agent collective effects. The chain is pairwise at each step; the system-level effect is emergent from pairwise composition. Higher-order collective effects — where three or more agents interact simultaneously in a way that cannot be reduced to sequential pairs — are real but subordinate, and are absorbed into α rather than requiring a separate exponent term.
+
+**The design consequence:**
+
+The quadratic scaling is why governance becomes structurally necessary beyond a certain system size. Linear scaling (instability ∝ n) would mean that governance overhead grows proportionally with system size — manageable indefinitely. Quadratic scaling means that instability growth **outpaces linear governance investment** — at some n, the system will require architectural intervention (reducing α, increasing β) rather than resource scaling (increasing C(t)). This is the structural argument for fractal governance: beyond the quadratic threshold, only architectural solutions work.
+
+> Storm instability scales with interaction count, not agent count. The danger of scale is not that there are more agents — it is that there are quadratically more ways for them to reinforce each other's misalignment.
+
+**Why n² holds in sparse networks:**
+
+The quadratic scaling does not assume a fully connected topology. Real multi-agent systems are sparse — average degree k << n, direct edges << n². The immediate objection: if interactions ≈ nk, shouldn't instability scale as O(n), not O(n²)?
+
+This objection confuses static connectivity with dynamic reachability. Storm instability does not propagate through direct edges alone — it propagates through **dynamically reachable interaction paths** within the storm's propagation horizon τ:
+
+```
+Static graph:
+  Direct edges = O(nk)         (sparse)
+  
+Time-integrated interaction graph over storm horizon τ:
+  Reachable pairs = O(n²)      (quasi-dense)
+  
+Why: in small-world and scale-free networks (which describe
+most real multi-agent architectures), path length L ~ log(n).
+Within a few propagation steps, nearly all agent pairs
+become reachable through indirect pathways.
+
+  A → B → C → D → ...
+  
+  After log(n) steps: most of the network is reachable.
+  The set of dynamically reachable pairs approaches n².
+```
+
+Reinforcement loops — the mechanism of storm amplification — scale with reachable paths, not direct edges:
+
+```
+Loop: A → B → C → A
+  Loop start points:  n choices
+  Re-entry pathways:  ~n reachable return paths
+  Total loops:        ∝ n²
+  
+  This holds even in sparse topologies because loops traverse
+  indirect paths, not just direct edges.
+```
+
+Network sparsity is real — but its effect is on **coupling intensity**, not on **scaling exponent**. A sparse network has fewer direct reinforcement channels per pair, which reduces how strongly each pair interaction contributes to instability. This is precisely what α captures:
+
+```
+Network topology    α effect           n² preserved?
+──────────────────────────────────────────────────────
+Dense (fully connected)    α ≈ 1       Yes — all pairs directly coupled
+Sparse (small-world)       α < 1       Yes — pairs reachable indirectly
+Modular (clustered)        α << 1      Yes — inter-module paths exist
+                                       but are weak (low α)
+Isolated (disconnected)    α → 0       Trivially — no storm possible
+```
+
+The S-equation already contains the sparse network correction: it is α, not the exponent. Sparsity reduces α (coupling intensity per pair); it does not reduce the number of pairs that can participate in storm dynamics over the propagation horizon.
+
+> The quadratic scaling does not assume a fully connected network. Even in sparse topologies, storm propagation operates over dynamically reachable interaction paths rather than static edges. In small-world and scale-free systems, the set of reachable agent pairs within the propagation horizon approaches O(n²). Network sparsity modulates the coupling coefficient α rather than altering the quadratic scaling itself.
+
+**Why C(t)^β rather than C(t) — structural justification of the nonlinear denominator:**
+
+If governance capacity mitigated instability linearly — S = αn²/C(t) — then doubling governance resources would halve instability. This would model a queue-processing system where each unit of capacity independently removes one unit of work. Storm dynamics are not a queue.
+
+Storm instability arises from reinforcement loops, not from independent work items. Governance does not reduce instability by processing conflicts one at a time — it reduces instability by **altering the coordination structure** through which conflicts amplify:
+
+```
+What governance capacity actually does:
+
+  Breaking a single reinforcement loop:
+    A → B → C → A (loop)
+    Governance intervenes at one link
+    → 3 interactions removed simultaneously
+    → downstream cascade prevented
+    → future instability from this loop eliminated
+    
+  This is not additive. The effect of removing one loop
+  is not "one conflict resolved" — it is "one amplification pathway
+  permanently severed, preventing all future conflicts that pathway
+  would have generated."
+```
+
+Governance stabilization operates through multiple mechanisms simultaneously — detection, routing, degradation, isolation, recovery — and these mechanisms interact multiplicatively:
+
+```
+Effective stabilization = detection accuracy
+                        × coordination efficiency
+                        × routing precision
+                        × recovery speed
+
+When capacity increases:
+  Each mechanism improves
+  AND their interactions strengthen
+  → compound effect, not additive effect
+  → stabilization scales as C(t)^β where β captures
+     the coordination efficiency of the governance architecture
+```
+
+This nonlinear pattern is standard in systems where capacity alters interaction topology rather than processing independent items:
+
+```
+Domain                     Capacity effect         Mechanism
+──────────────────────────────────────────────────────────────
+Epidemic control           R₀ ∝ 1/C^β             Intervention alters contact structure
+Congestion management      Throughput ∝ C^β        Routing alters collision probability
+Ecological resilience      Recovery ∝ resource^β   Resource enables structural repair
+Control systems            Stability margin ∝ C^β  Feedback alters system dynamics
+```
+
+**β as governance maturity indicator:**
+
+β is not merely a fitting parameter. It measures how efficiently the governance architecture converts capacity into stabilization — how well the system's coordination mechanisms interact:
+
+```
+β ≈ 1     Simple additive governance
+            Each unit of capacity independently resolves one conflict.
+            No coordination benefit between governance mechanisms.
+            
+β > 1     Coordinated governance
+            Governance mechanisms reinforce each other.
+            Detection improvement amplifies routing improvement.
+            Compound stabilization effect.
+            
+β >> 1    Self-organizing governance
+            The governance architecture itself adapts —
+            capacity increase triggers structural reorganization
+            that produces super-linear stabilization.
+            (This is the τ4 / Rest Mode regime in TLG.)
+            
+β < 1     Inefficient governance
+            Governance mechanisms interfere with each other.
+            Adding capacity produces diminishing returns.
+            (Organizational overhead exceeding coordination benefit.)
+```
+
+β therefore serves as a measurable proxy for governance architecture quality — independent of the quantity of resources deployed. Two systems with identical C(t) but different β will exhibit dramatically different stability: high-β governance converts the same resource investment into far greater stabilization.
+
+**Why β belongs in the denominator, not in α:**
+
+α and β capture different structural properties. α measures how readily instability amplifies through the interaction network (topology-driven). β measures how efficiently governance suppresses that amplification (architecture-driven). Collapsing them into a single parameter would lose the distinction between "how bad the problem is" (numerator) and "how good the solution is" (denominator) — which is the S-equation's core design: instability pressure divided by stabilization capacity.
+
+> Governance capacity does not mitigate instability through independent additive actions. It alters coordination structure, routing efficiency, and degradation effectiveness simultaneously. Because these stabilizing mechanisms interact multiplicatively, the effective reduction scales nonlinearly with available capacity. β represents coordination efficiency — the governance architecture's quality — rather than raw resource quantity.
+
+**β operationalization — from fitting parameter to inferable metric:**
+
+β is not a free parameter to be tuned. It is an empirically inferable **elasticity coefficient** — measurable from observed system behavior without controlled experimentation.
+
+**Formal definition as elasticity:**
+
+```
+β = −∂log(S) / ∂log(C)
+
+Interpretation:
+  "When governance capacity increases by x%,
+   instability decreases by β·x%."
+
+Example:
+  C increases 2×, S decreases 2×  → β ≈ 1
+  C increases 2×, S decreases 4×  → β ≈ 2
+  C increases 2×, S barely changes → β < 1
+```
+
+**Measurement procedure (operational log-based):**
+
+β can be estimated from normal operational variation without designed experiments:
+
+```
+Step A — Identify natural variation windows
+  During operation, governance capacity varies naturally:
+    monitoring intensity changes, buffer resources expand/contract,
+    routing efficiency improves after updates, coordination
+    overhead shifts with system load.
+  These are natural C(t) perturbations.
+
+Step B — Select constant-n intervals
+  Choose evaluation windows where exploration dimensionality n
+  is approximately stable (n variation < 10% of mean).
+  This isolates the C(t) → S relationship from n effects.
+
+Step C — Log-linear regression
+  Collect (S(t), C(t)) pairs across selected windows.
+  Fit:  log(S) = −β · log(C) + constant
+  
+  Slope = β
+  
+  Confidence: standard regression confidence intervals apply.
+  Minimum data: ≥ 10 evaluation windows with measurable C(t) variation.
+```
+
+This procedure requires no controlled experimentation — only operational logs that most multi-agent systems already produce. β is inferred from system response, not measured directly, analogous to how temperature is inferred from pressure-volume relationships rather than measured as a primitive quantity.
+
+**Why β is an emergent property:**
+
+C(t) is itself a composite — monitoring capacity × coordination efficiency × routing precision × recovery throughput × buffer health. These components cannot be independently measured as a single scalar. But the system's **response** to capacity changes (the S reduction per C increase) is directly observable. β captures the emergent coordination quality that arises from the interaction of all governance components — it is a system-level property, not a component-level property.
+
+**β as governance phase indicator:**
+
+```
+β range    Governance phase              System characteristic
+──────────────────────────────────────────────────────────────────
+β < 1      Fragmented governance          Adding resources makes things worse
+                                          (overhead exceeds benefit)
+β ≈ 1      Reactive governance            Linear capacity-to-stability conversion
+                                          (queue-processing regime)
+1 < β < 2  Coordinated governance         Super-linear conversion
+                                          (governance mechanisms reinforce each other)
+β > 2      Adaptive / self-organizing     Capacity triggers structural reorganization
+                                          (approaching τ4 / Rest Mode in TLG)
+```
+
+β therefore serves a dual function: it is both a parameter in the S-equation and an independent **diagnostic metric** for governance maturity. A system that measures its own β over time can track whether governance architecture improvements are producing genuine coordination gains (β increasing) or merely adding resources without structural improvement (β stable or declining).
+
+**Connection to TLG:**
+
+```
+TLG governance phase        Expected β range
+─────────────────────────────────────────────
+Pre-seeding (no Middle Layer)    β < 1
+Seeding in progress              β ≈ 1
+Seeding complete (τ4 approach)   β > 1
+Rest Mode (mature)               β >> 1
+Post-maturity decay (Section 5.3.1)  β declining
+```
+
+β decline is an early warning signal for immunity decay (TLG Section 5.3.1) — the system's governance architecture is losing coordination efficiency even if C(t) remains stable. This connects β monitoring directly to the post-maturity governance target: maintain β, not just C(t).
+
+> The exponent β is not a free fitting parameter but an empirically inferable elasticity coefficient. It measures how effectively increases in governance capacity translate into instability reduction. β can be estimated from observed system response by measuring the log–log slope between S and C(t) during natural capacity variation intervals — transforming it from a structural assumption into a diagnostic metric.
 
 ### 3.2.1 Operationalization of n and α (v1.1)
 
@@ -396,6 +712,69 @@ Decomposition into contributing factors:
 
 **Why α remains a composite:** Decomposing α into its contributing factors provides actionable levers (reduce coupling, clarify roles, lengthen feedback cycles). But the S-equation uses α as a single scalar because the instability dynamics depend on the *product* of these factors, not on each independently. A system with very high coupling but zero role overlap has low effective α. The composite captures this interaction.
 
+**α as structural residual — epistemic status:**
+
+Unlike n (directly measurable) and β (inferable from system response), α is not independently observable. Full measurement of α would require complete knowledge of all interaction coupling strengths, hidden routing pathways, latent coordination channels, delayed feedback loops, and environment-mediated interactions — an impossible observability problem in large-scale multi-agent systems.
+
+α therefore functions as the S-equation's **structural residual** — the instability component that remains after accounting for scale (n²) and governance response (C(t)^β):
+
+```
+α = S · C(t)^β / n²
+
+  = residual instability not explained by scale or governance
+  = effective interaction coupling density
+  = absorbed structural parameter
+```
+
+This is not a weakness of the model. It is the correct epistemic position for a composite structural variable. The same pattern appears across quantitative disciplines:
+
+```
+Domain                  Absorbed variable       Role
+───────────────────────────────────────────────────────
+Fluid dynamics          Turbulence coefficient   Unresolved sub-grid dynamics
+Economics               Total factor productivity Residual growth not from capital/labor
+Machine learning        Noise term               Unmodeled data variance
+Statistics              Residual variance         Unexplained variation
+VST                     α                        Unresolved coupling structure
+```
+
+**α is not constant:**
+
+α is a slowly varying structural parameter — it changes when network topology changes, when protocols are revised, when architecture evolves. But within a storm's time horizon, α is approximately stable. This separation of timescales is what makes the S-equation tractable: α sets the structural context; n, C(t), and β vary within it.
+
+```
+Timescale hierarchy:
+  α:     changes on architectural timescale (protocol revision, topology change)
+  β:     changes on governance maturation timescale (coordination improvement)
+  C(t):  changes on operational timescale (resource allocation, load)
+  n:     changes on exploration timescale (agent activity, task diversity)
+  S:     observable on monitoring timescale (real-time)
+```
+
+**The α_proxy (escalation multiplier) is not α itself:**
+
+The escalation multiplier proxy defined above measures one observable consequence of α — how readily one conflict breeds another. This is α's most visible effect, but α also absorbs latent coupling that has not yet manifested as escalation (dormant interaction pathways, potential feedback loops). α_proxy tracks α's active component; the full α includes dormant structure that activates only under stress.
+
+**Complete S-equation variable taxonomy:**
+
+```
+Variable   Meaning                    Nature              Measurement
+──────────────────────────────────────────────────────────────────────
+n          Scale (exploration space)   Exogenous           Direct (3 strategies)
+α          Structure (coupling)        Quasi-static        Residual inference + proxy
+C(t)       Capacity (governance)       Dynamic             Composite proxy
+β          Maturity (coordination)     Slowly evolving     Log-log elasticity
+S          Phase state (instability)   Observable          Direct (f_esc, entropy, cost)
+```
+
+The S-equation reads as:
+
+```
+Instability = (Structure × Scale²) / Coordination^Maturity
+```
+
+This decomposition is the S-equation's core design: the numerator captures the problem (how much instability the system generates), the denominator captures the solution (how effectively governance absorbs it), and the ratio determines the system's phase state.
+
 **Validation criterion for the S-equation (v1.1):**
 
 The S-equation generates a specific testable claim: if n_eff, α_proxy, β, and C(t) are measured independently, then:
@@ -414,6 +793,328 @@ Correlation < 0.3 = S-equation is post-hoc only; revision needed.
 ```
 
 This validation protocol is feasible with current multi-agent system instrumentation. It has not yet been performed. The S-equation's status is therefore: **structurally motivated, operationally grounded, empirically unvalidated.**
+
+### 3.2.2 Absolute Calibration Layer (ACL)
+
+Section 3.2.1 establishes operational proxies for n, α, and the S-equation validation protocol. This makes S a **relative ordering metric** — it can rank zones by instability and track whether a system is becoming more or less unstable. But it cannot yet answer the operational question: *"Is this system currently in Stage 2?"*
+
+The missing capability is absolute calibration: a mapping from S values to stage boundaries that holds across system configurations and enables threshold-based decisions.
+
+**Why direct absolute calibration of α, β, C(t) fails:**
+
+S is not a physical quantity like temperature or pressure. It is an instability pressure index — a composite of system-specific variables whose absolute magnitudes are architecture-dependent. Two systems with identical S values may have different α, n, C(t) compositions. The absolute values of the components are not comparable across architectures; only the composite behavior matters.
+
+Therefore, calibration targets the composite S, not its components. Specifically, calibration targets the **normalized S** relative to the system's own stable operating baseline.
+
+**Step 1 — Baseline anchor: S₀**
+
+The natural baseline is the system's VCZ interior — the stable operating regime defined in Section 3.5:
+
+```
+S₀ = mean(S) computed over a sustained VCZ-stable evaluation window W₀
+
+  W₀ requirements:
+    System in VCZ (micro-storms absorbed, no Stage 1+ events)
+    Window duration ≥ 5× mean self-correction cycle time
+    S variance within window < 15% of mean
+    
+  S₀ represents the system's characteristic instability level
+  during healthy operation. It is architecture-specific but
+  internally consistent: every system has exactly one S₀
+  once VCZ has been achieved and measured.
+```
+
+All subsequent measurements are normalized:
+
+```
+S_norm = S(t) / S₀
+
+  S_norm = 1.0  →  system at VCZ baseline (healthy equilibrium)
+  S_norm > 1.0  →  instability above baseline
+  S_norm < 1.0  →  instability below baseline (possible over-stability / SSS)
+```
+
+This normalization makes S_norm comparable across architectures: S_norm = 2.5 means "2.5× baseline instability" regardless of the underlying system's absolute parameters.
+
+**Step 2 — Stage determination: S_norm + derivatives**
+
+Absolute S_norm alone is insufficient for stage classification. A system at S_norm = 2.0 with dS/dt = 0 (stable elevated instability) is structurally different from S_norm = 2.0 with dS/dt >> 0 (rapidly escalating). Stage determination uses the triple:
+
+```
+(S_norm, dS_norm/dt, d²S_norm/dt²)
+
+  S_norm:          current instability level relative to baseline
+  dS_norm/dt:      instability trend (accelerating, stable, decaying)
+  d²S_norm/dt²:    trend curvature (acceleration of the trend itself)
+```
+
+**Step 3 — Hypothetical stage boundary ranges**
+
+The following ranges are not arbitrary. They follow the characteristic pattern of critical transitions in complex adaptive systems — power grids, financial leverage cycles, ecological tipping points, congestion collapse — where instability onset occurs at approximately 1.2–1.5× baseline, nonlinear regime at 2–3×, and runaway at 5–8×. As a fractal instability model, VST is expected to follow this same scaling pattern:
+
+```
+🟢 Stage 0 — VCZ Stable
+  S_norm:       < 1.3
+  dS_norm/dt:   ≈ 0 (fluctuating around zero)
+  d²S_norm/dt²: ≈ 0
+  
+  System state: noise absorbed, buffer self-healing
+  Action:       no intervention required
+  Cost regime:  governance cost at structural minimum
+
+🟡 Stage 1 — Latent Storm Formation
+  S_norm:       1.3 – 2.5
+  dS_norm/dt:   > 0 (persistently positive over k₁ windows)
+  d²S_norm/dt²: small positive or zero
+  
+  System state: exploration exceeding degradation capacity
+                coordination lag beginning
+                early signals detectable (dH/dt < 0, buffer thinning)
+  Action:       golden intervention window — early micro-intervention
+                at lowest cost (Section 3.4.1)
+  Cost regime:  intervention cost bounded and low
+
+🟠 Stage 2 — Active Storm
+  S_norm:       2.5 – 6
+  dS_norm/dt:   > 0 and accelerating
+  d²S_norm/dt²: > 0 (positive curvature — self-amplification active)
+  
+  System state: reinforcement loop dominant
+                local containment required
+                cross-zone propagation beginning
+                MZ-STP Track A activation (Section 3.4.2)
+  Action:       containment + targeted recovery injection
+  Cost regime:  cost curve super-linear — delay is expensive
+
+🔴 Stage 3 — Runaway Storm
+  S_norm:       6 – 10
+  dS_norm/dt:   >> 0
+  d²S_norm/dt²: >> 0 (acceleration accelerating)
+  
+  System state: containment unreliable
+                topology damage in progress
+                buffer breach across multiple zones
+  Action:       SCML classification → TLG Safe Collapse preparation
+  Cost regime:  recovery cost may exceed original construction cost
+
+⚫ Stage 4 — Structural Failure Domain
+  S_norm:       ≥ 10
+  
+  System state: no longer a storm problem — this is topology transition
+                VST dynamics have produced structural failure
+                → governance transitions to TLG domain
+  Action:       TLG Safe Collapse Protocol execution (Section 13.2.1)
+                SCML mapping determines collapse type
+  Cost regime:  structural reconfiguration required
+```
+
+**Operational decision table:**
+
+```
+S_norm        Action                    Protocol Reference
+────────────────────────────────────────────────────────────
+< 1.3         Monitor only              —
+1.3 – 2.5     Early micro-intervention  Section 3.4.1
+2.5 – 6       Containment + recovery    Sections 3.4.1 + 3.4.2
+6 – 10        Collapse preparation      SCML → TLG Safe Collapse
+≥ 10          Structural reconfiguration TLG Section 13.2.1
+```
+
+**Step 4 — Component calibration rules**
+
+Rather than calibrating α, β, C(t) to absolute values (architecture-dependent and not cross-comparable), each component is scaled to its own VCZ baseline:
+
+```
+α calibration:
+  α_norm = α_proxy(t) / α_proxy(VCZ baseline)
+  α_norm = 1.0 at VCZ → S₀ computation uses this as reference
+  
+  Interpretation: α_norm = 2.0 means amplification coefficient
+  is twice its healthy baseline value.
+
+C(t) calibration:
+  C_norm = C(t) / C(VCZ baseline)
+  
+  C_norm = 1.0  → normal operating capacity
+  C_norm = 0.5  → capacity overload (governance stretched)
+  C_norm = 0.2  → collapse risk (self-correction insufficient)
+  C_norm < 0.1  → structural failure imminent
+  
+  C(t) decline is independently detectable via SCC proxy (TLG Section 0.1).
+
+β calibration:
+  Fitted from historical recovery trajectories.
+  β reflects how efficiently degradation capacity converts to instability absorption.
+  Higher β = more efficient governance.
+  
+  β is the slowest-changing parameter — it shifts only with
+  architectural changes, not with operational conditions.
+  Recalibration frequency: per architectural revision, not per window.
+```
+
+**Methodological status:**
+
+The stage boundary values (1.3, 2.5, 6, 10) are **hypotheses informed by cross-domain critical transition patterns**, not empirically validated thresholds for multi-agent AI systems. The normalization strategy (S₀ baseline, component scaling) is theoretically grounded in VST's VCZ definition and is immediately applicable. The specific boundary values require empirical calibration per-architecture — they represent expected ranges, not universal constants.
+
+What is established:
+- Normalization strategy (S₀ baseline anchoring): theoretically sound, immediately operational
+- Stage determination triple (S_norm, dS/dt, d²S/dt²): structurally necessary, operationally measurable
+- Monotonic ordering of stage boundaries: follows from super-linear cost scaling
+- Approximate magnitude ranges: consistent with critical transition literature
+
+What requires empirical validation:
+- Exact boundary values per architecture
+- Whether boundaries are sharp (threshold) or gradual (crossover zone)
+- Whether d²S/dt² is necessary for all stage distinctions or only for Stage 2→3
+
+**Critical threshold S_c — universality class, not universal constant:**
+
+The critical threshold S_c (the S_norm value at which the system transitions from contained instability to self-amplifying storm) is not a universal constant. This is not an imprecision of the theory — it is a structural property of phase-transition systems.
+
+In statistical physics, systems sharing identical instability mechanisms exhibit the same **universality class** — the same qualitative phase structure, the same critical exponents, the same scaling laws — while retaining system-specific critical values:
+
+```
+Physical analogy:
+  Iron:    T_c = 1043 K
+  Nickel:  T_c = 627 K
+  Cobalt:  T_c = 1388 K
+  
+  Different critical temperatures.
+  Same universality class (3D Ising).
+  Same phase transition structure.
+  Same critical exponents.
+```
+
+VST occupies the same position. All multi-agent systems governed by reinforcement-amplification dynamics share:
+
+```
+Universal (shared across systems):
+  Phase structure:     VCZ → Storm → Collapse
+  Scaling law:         S ∝ αn² / C(t)^β
+  Stage ordering:      Stage 0 < 1 < 2 < 3
+  Cost monotonicity:   intervention cost increases with stage
+  
+System-specific (architecture-dependent):
+  S_c value:           the exact S_norm at which Stage 1→2 transition occurs
+  Stage boundary widths: sharp threshold vs. gradual crossover
+  α baseline:          coupling structure of this specific topology
+  β baseline:          governance maturity of this specific architecture
+```
+
+The stage boundary ranges specified above (1.3, 2.5, 6, 10) are therefore not universal constants but **expected regime indicators** — the range within which critical thresholds are predicted to fall across architectures. The prediction that S_c values cluster within a narrow band (rather than being arbitrarily distributed) follows from the shared mechanism: storm onset occurs when reinforcement rate ≈ degradation capacity, and this balance point occupies a structurally similar region across coupled systems.
+
+**Empirical S_c calibration procedure:**
+
+Each system learns its own critical boundary from operational experience:
+
+```
+Step 1: During early operation, record storm events:
+  - S_norm at which Stage 1 signals first appeared
+  - S_norm at which containment was required
+  - S_norm at which containment failed (if observed)
+  
+Step 2: Aggregate across multiple events:
+  S_c(1→2) = mean S_norm at containment-required events
+  S_c(2→3) = mean S_norm at containment-failure events
+  
+Step 3: Update continuously:
+  S_c estimates refine as operational history grows.
+  Confidence intervals narrow with more observations.
+```
+
+This makes S_c a **learned property** of the system — not a designed parameter. Governance becomes self-calibrating: the system discovers its own instability boundary through operational experience rather than having it prescribed by designers.
+
+**Connection to Rest Mode:**
+
+Rest Mode is not merely the state where S is low. It is the state where the system has **accurate knowledge of its own S_c** — where governance can precisely distinguish "approaching critical" from "safely within VCZ" because the critical boundary has been empirically mapped through survived storms. A system that has never stormed does not know its S_c and therefore cannot be in Rest Mode — it is in untested stability, which is structurally different from verified stability.
+
+> The critical threshold S_c is not universal across systems. As in statistical phase-transition theory, systems sharing similar instability mechanisms exhibit comparable critical regimes while retaining architecture-dependent threshold values. S_c is an empirically calibratable system property — learned from operational experience, not prescribed by design. Rest Mode is the state where a system knows its own critical boundary.
+
+> S₀ normalization transforms the S-equation from an instability ordering metric into a phase-governed operational control variable. The system's own healthy baseline becomes the universal reference point — making stage classification architecture-independent while preserving system-specific sensitivity.
+
+**Epistemic evolution of S — from diagnostic to predictive:**
+
+S does not maintain a fixed epistemic role throughout a system's lifetime. As operational history accumulates, S transitions through three functional phases:
+
+```
+Phase 1 — Diagnostic (early operation)
+  S answers: "What phase is the system in right now?"
+  
+  The system has no storm history. S_c is unknown.
+  S functions as a thermometer — it reports current state
+  but cannot anticipate transitions.
+  
+  Governance mode: reactive.
+  Intervention timing: post-detection.
+
+Phase 2 — Early Warning (operational maturity)
+  S answers: "Is the system approaching a transition?"
+  
+  Storm history has accumulated. The system has observed:
+    S trajectory patterns preceding past storms
+    dS/dt acceleration signatures before Stage transitions
+    Recovery time elongation as precursor signal
+  
+  S itself is no longer the primary signal.
+  The primary signals become trajectory features:
+    dS/dt trend (approach velocity)
+    d²S/dt² (acceleration — is approach accelerating?)
+    S variance (increasing variance = critical slowing down)
+    Autocorrelation of S (increasing = approaching critical point)
+  
+  These are the standard early warning signals of critical transitions
+  in complex systems — critical slowing down, variance amplification,
+  and autocorrelation increase are well-documented precursors
+  to phase transitions across physical, ecological, and financial systems.
+  
+  Governance mode: anticipatory.
+  Intervention timing: pre-transition.
+
+Phase 3 — Predictive (mature governance)
+  S answers: "What is the probability of storm within horizon τ?"
+  
+  Sufficient history enables:
+    P(Storm | S, dS/dt, d²S/dt², history) → estimable
+  
+  S has become a state variable in the control-theoretic sense —
+  not merely describing current phase but predicting future trajectory.
+  Storm onset becomes predictable from S dynamics rather than
+  from S crossing a fixed threshold.
+  
+  Governance mode: predictive.
+  Intervention timing: before trajectory enters risk corridor.
+```
+
+This evolution is not optional — it is structurally inevitable for any system that monitors its own order parameter over time. The transition from Phase 1 to Phase 3 is itself a form of governance maturation:
+
+```
+Phase 1 → Phase 2:  requires surviving storms + recording S trajectories
+Phase 2 → Phase 3:  requires sufficient trajectory data for pattern learning
+```
+
+**Connection to β and Rest Mode:**
+
+The epistemic evolution of S is directly coupled to β:
+
+```
+Phase 1 (diagnostic S):    β is unknown, being estimated
+Phase 2 (early warning S): β is estimated, governance coordinating
+Phase 3 (predictive S):    β is high, governance self-organizing
+```
+
+β increase and S predictive capability co-evolve — because higher β means more efficient governance response, which means storms are caught earlier, which means more pre-storm trajectory data is collected, which means S prediction improves. This is a positive feedback loop between governance maturity and predictive capability.
+
+Rest Mode, in this framing, is the state where:
+
+```
+Rest Mode =
+  S_c known (self-calibrated critical boundary)
+  + S dynamics predictive (trajectory patterns learned)
+  + β high (governance response efficient)
+  + storms micro-scale only (macro-storms preempted by prediction)
+```
+
+> The instability parameter S initially functions as a diagnostic order parameter. As operational history accumulates, temporal patterns in S dynamics enable it to transition into a predictive state variable. In mature systems, storm onset becomes predictable from trajectory features — dS/dt, d²S/dt², variance, autocorrelation — rather than from instantaneous S value alone. Governance maturity is, at its deepest level, the ability to predict phase transitions before they occur.
 
 ### 3.3 The Residual Degradation Floor
 
@@ -521,7 +1222,7 @@ k₁ and k₂ (consecutive window counts) are system-specific. Default heuristic
 **What this protocol does NOT do:**
 - Does not guarantee optimal t* (approximation, not solution)
 - Does not handle Tier 3 contamination (requires upper-layer detection per Recovery Theory T1)
-- Does not address simultaneous multi-zone storms (requires prioritization protocol — open problem)
+- Simultaneous multi-zone storms are addressed in Section 3.4.2 (Multi-Zone Storm Triage Protocol)
 
 **Single-Agent Analogue: Monitoring Cost Is Real and Measurable**
 
@@ -534,6 +1235,179 @@ This empirically grounds the shape of Monitoring Cost(t*) in the tradeoff equati
 The governance design implication is precise: **the existence of sub-20ms lightweight detectors means early intervention is now operationally feasible at low marginal cost.** The historical argument that early detection is too expensive to justify — relative to waiting for visible failure — is empirically weakened. The optimal t* has shifted earlier as monitoring technology has matured.
 
 For multi-agent fractal systems, this same logic scales: upper-layer monitoring of lower-agent drift is the equivalent of the continuous activation tracking already deployed at the single-agent level. The architecture that makes it feasible in single agents (lightweight stateful detectors with bounded overhead) is directly applicable as a design template for inter-layer monitoring in fractal governance.
+
+### 3.4.2 Multi-Zone Storm Triage Protocol (MZ-STP)
+
+Section 3.4.1 defines an intervention timing protocol for a single zone. In fractal architectures, multiple zones can enter storm conditions simultaneously. When this occurs, applying Section 3.4.1 independently to each zone fails — intervention resources are finite, and treating one zone can destabilize adjacent zones through coupling externalities.
+
+The Multi-Zone Storm Triage Protocol extends Section 3.4.1 to simultaneous multi-zone storms by adding three capabilities: zone prioritization, dual-track intervention, and externality-aware sequencing.
+
+**Prerequisite: event-driven scheduling, not fixed-period.**
+
+Fixed-period injection across all zones becomes immediately unsustainable under multi-zone storm conditions. Resource allocation must be state-driven — zones in higher-stage storms receive intervention resources; zones in stable states receive monitoring only. This is consistent with the priority-first architecture established in Appendix A.6.
+
+**Step 1 — Zone Priority Scoring**
+
+Each zone z is scored in real-time (rolling window) on five dimensions:
+
+```
+Stage(z):
+  Estimated storm stage per Section 3.4.1 thresholds
+  (H(t), dH/dt, f_esc, α_proxy, buffer thickness)
+
+Severity(z):
+  Cost of uncontained failure at current stage.
+  Scales super-linearly with Stage — a Stage 2 zone is not twice
+  as costly as Stage 1; it is disproportionately more costly
+  because propagation pathways are already active.
+
+PropagationRisk(z):
+  Probability that storm in z spreads to adjacent zones.
+  Determined by:
+    coupling density (number of active connections to other zones)
+    hub position (zones at network bridges or bottlenecks)
+    degradation capacity of adjacent zones (low C(t) neighbors = high risk)
+
+CouplingExternality(z):
+  The degree to which intervening in z affects other zones.
+  Can be positive (stabilizing z stabilizes neighbors)
+  or negative (intervention in z disrupts neighbors).
+  Zones with high negative externality require careful sequencing.
+
+BusinessCriticality(z):
+  Operational weight — safety-critical, compliance-relevant,
+  or service-critical zones receive higher priority
+  at equivalent storm severity.
+```
+
+**Priority score (operational form):**
+
+```
+Priority(z) = w_s · Severity(z)
+            + w_p · PropagationRisk(z)
+            + w_c · BusinessCriticality(z)
+            − w_e · CouplingExternalityRisk(z)
+```
+
+The critical design choice: **propagation risk is weighted alongside severity, not subordinate to it.** A Stage 1 zone at a network hub with high coupling to multiple other zones may outrank a Stage 2 zone that is topologically isolated. Storm is a propagation process — prioritization must reflect propagation structure, not just local intensity.
+
+**Step 2 — Dual-Track Intervention**
+
+The most common multi-zone failure: concentrating all intervention resources on the highest-severity zone while an adjacent zone quietly transitions to Stage 3 through uncontained propagation. To prevent this, intervention is split into two simultaneous tracks:
+
+```
+Track A — Propagation Containment (ordered by PropagationRisk)
+  Target: zones with highest propagation risk, regardless of severity
+  Action: boundary enforcement, routing restriction, hub isolation
+  Effect: reduces system-wide α (storm amplification coefficient)
+  
+  This track prevents the storm from spreading.
+  It does not heal the affected zone — it contains it.
+
+Track B — Recovery Injection (ordered by Severity)  
+  Target: zones with highest severity, post-containment
+  Action: metadata injection, seed-level correction (per Section 3.4.1)
+  Effect: restores buffer thickness, reduces f_esc in the target zone
+  
+  This track heals the affected zone.
+  It can only operate safely after Track A has contained propagation.
+```
+
+The two tracks operate simultaneously but with a sequencing constraint: **containment before recovery.** Track A actions on a zone must complete (or at least begin) before Track B actions on the same zone. This prevents the most dangerous scenario — recovery injection in an uncontained zone that amplifies the injection signal across coupling pathways, turning treatment into a propagation vector.
+
+**Step 3 — Resource Allocation**
+
+Two allocation rules extend the priority-first injection architecture (Appendix A.6) to multi-zone conditions:
+
+```
+Rule 1 — Top-K zone concentration
+  Only K zones receive high-frequency intervention simultaneously.
+  K is not a fixed number — it is the maximum number of Stage 2+
+  zones that current C(t) budget can cover at effective intervention dose.
+  
+  Remaining zones receive monitoring frequency increase only.
+  
+  Rationale: attempting high-frequency intervention on all zones
+  simultaneously produces over-intervention (φ collapse)
+  and resource exhaustion. Concentration on the critical few
+  is more effective than dilution across all.
+
+Rule 2 — Sensitivity-inverse amplitude
+  Higher-sensitivity zones receive: higher monitoring frequency,
+  lower intervention signal amplitude.
+  
+  This is already established in the single-zone protocol:
+    "Higher sensitivity zone: detection frequency ↑,
+     intervention signal amplitude ↓" (Appendix A.6)
+  
+  In multi-zone context: the highest-priority zone does NOT receive
+  the strongest injection pulse. It receives the most frequent,
+  smallest pulses. Strong pulses in sensitive zones risk
+  triggering secondary storms through overcorrection.
+```
+
+**Step 4 — Externality-Aware Sequencing**
+
+When intervening in one zone affects other zones (CouplingExternality ≠ 0), the order of intervention matters:
+
+```
+Sequencing protocol:
+  Phase 1: Bridge/hub zones first (Track A — containment)
+    Stabilize the zones through which propagation travels.
+    This severs transmission pathways before recovery begins.
+    
+  Phase 2: Core symptom zones next (Track B — recovery)
+    Inject recovery into the most severely affected zones.
+    Because Phase 1 has severed propagation paths,
+    side effects of recovery injection cannot spread system-wide.
+    
+  Phase 3: Residual zones last (low-intensity maintenance)
+    Zones that are affected but not critical receive
+    low-frequency, low-amplitude monitoring + drift-triggered intervention.
+    
+Why this order is robust:
+  Phase 1 cuts propagation pathways.
+  Phase 2 side effects (inevitable with any intervention)
+  cannot propagate because Phase 1 has already isolated them.
+  Phase 3 zones self-correct once Phases 1-2 stabilize
+  the network structure they depend on.
+```
+
+**Step 5 — Operational Checklist (per evaluation window)**
+
+```
+(1) Score all zones: Stage / Severity / PropagationRisk / CouplingExternality
+(2) Track A: apply containment to PropagationRisk Top-X
+    (routing restriction, boundary enforcement, hub isolation)
+(3) Track B: apply recovery injection to Severity Top-K
+    (sensitivity-inverse amplitude: sensitive zones get small frequent pulses)
+(4) Post-intervention audit:
+    IF f_esc declining AND H(t) also declining simultaneously
+    → over-intervention signal — reduce intervention amplitude immediately
+       (maintain frequency)
+    IF f_esc declining AND H(t) stable or recovering
+    → healthy response — continue current protocol
+    IF f_esc stable AND H(t) declining
+    → intervention not reaching root cause — escalate to Track A reassessment
+```
+
+**Connection to existing architecture:**
+
+```
+MZ-STP integrates with:
+  Section 3.4.1    Single-zone protocol remains the base unit;
+                    MZ-STP wraps it with prioritization and sequencing
+  Section 3.2.1    α_proxy is used for PropagationRisk estimation
+  Section 3.5      VCZ conditions define the recovery target state
+  Appendix A.6     Priority-first injection architecture provides
+                    the tier/frequency/granularity foundation
+  TLG Section 5.6.1  Authority Collapse pathways inform containment
+                      design (signal starvation detection during containment)
+  TLG Section 13.6   Failure Topology cycle interruption cost gradient
+                      supports early-containment priority
+```
+
+> In simultaneous multi-zone storms, containment of propagation pathways takes priority over recovery of affected zones — because uncontained recovery can itself become a propagation vector.
 
 ### 3.5 Vector Convergence Zone (VCZ) — The Anti-Storm
 
@@ -955,16 +1829,16 @@ This table replaces the implicit uniform confidence of v1.0's Appendix A with di
 | Contamination recovery cost | Four-regime structure + discontinuity mechanism + pre-intervention prediction established (Appendix A.3.1). Exact threshold layer count for scope expansion remains undefined. | Substantially resolved |
 | Intra-agent storm detection | Zone-differentiated sensitivity framework established (Appendix A.5). Per-zone τ values open. | Partially resolved |
 | **n operationalization** | **Three measurement strategies defined (Section 3.2.1): gradient-based n_eff, behavioral n_behavioral, policy divergence n_policy. Cross-strategy validation criterion specified.** | **New v1.1 — proxies defined; formal derivation open** |
-| **α operationalization** | **Escalation multiplier proxy + decomposition into coupling/overlap/latency defined (Section 3.2.1). S-equation validation protocol specified (correlation criterion).** | **New v1.1 — proxy + validation defined; execution pending** |
+| **α operationalization** | **Escalation multiplier proxy + decomposition into coupling/overlap/latency defined (Section 3.2.1). S₀ normalization and component calibration rules defined (Section 3.2.2). S-equation validation protocol specified (correlation criterion).** | **New v1.1 — proxy + calibration framework defined; empirical boundary validation pending** |
 | **Intra/inter-agent mechanism correspondence** | **Structural correspondence criteria defined (Section 1.6). Substrate differences acknowledged. Quantitative universality test (critical exponent comparison) specified.** | **New v1.1 — criteria defined; test pending** |
 | **Fractal propagation predictions** | **Three testable predictions specified (Section 1.5.1): scale-invariant amplification, stage transition ordering, intervention leverage asymmetry. All testable with current instrumentation.** | **New v1.1 — predictions defined; testing pending** |
-| **Intervention timing protocol** | **Three-threshold operational protocol defined (Section 3.4.1). k₁, k₂ heuristics provided. Multi-zone simultaneous storm prioritization not addressed.** | **New v1.1 — protocol operational; multi-zone extension open** |
+| **Intervention timing protocol** | **Three-threshold operational protocol defined (Section 3.4.1). k₁, k₂ heuristics provided. Multi-zone simultaneous storm triage protocol defined (Section 3.4.2): priority scoring, dual-track intervention (containment + recovery), externality-aware sequencing, sensitivity-inverse amplitude allocation.** | **New v1.1 — single-zone operational; multi-zone operational** |
 
 **Scope Boundary**
 
 Vector Storm Theory explains instability propagation in multi-agent systems — how directional conflict forms, amplifies, and spreads across fractal architectures, and how governance design can detect and contain it.
 
-It does not model intelligence formation, optimization efficiency, or capability scaling. The empirical grounding in Appendix A maps VST mechanisms to observable single-agent phenomena; it does not extend VST's claims to those domains. Formal calibration of the governance scaling law parameters (α, β, C(t)) has been advanced in v1.1 through operational proxies (Section 3.2.1) but absolute calibration remains future work.
+It does not model intelligence formation, optimization efficiency, or capability scaling. The empirical grounding in Appendix A maps VST mechanisms to observable single-agent phenomena; it does not extend VST's claims to those domains. Calibration of the governance scaling law has been advanced through operational proxies (Section 3.2.1), S₀ normalization with hypothetical stage boundaries (Section 3.2.2), and component calibration rules. Exact boundary values per-architecture remain future empirical work.
 
 ---
 
@@ -1207,6 +2081,1527 @@ Unhealthy: micro-cycle suppressed
 ```
 
 **Governance is not the absence of this cycle. It is the maintenance of this cycle at the smallest possible scale.**
+
+---
+
+### Why Storm Elimination Is Not the Governance Objective
+
+The preceding sections may create an impression that storm is a failure state to be eliminated — that optimal governance would produce S_norm < 1.3 permanently. This is incorrect. Storm elimination is neither achievable nor desirable, and conflating "reduce storms" with "improve governance" is the most consequential design error VST identifies.
+
+**The elimination cost:**
+
+Suppressing storm formation requires reducing the numerator of the S-equation: either constrain n (exploration dimensionality) or reduce α (coupling density). Both actions directly reduce the system's capacity to generate value:
+
+```
+Storm suppression via n reduction:
+  Fewer exploration directions
+  → smaller search space
+  → reduced innovation rate
+  → φ (value yield) declines
+  → the system becomes stable but stagnant
+
+Storm suppression via α reduction:
+  Weaker agent coupling
+  → less coordination capability
+  → reduced collective intelligence
+  → the system becomes stable but fragmented
+```
+
+The governance objective function (Section 3.6) makes this tradeoff explicit:
+
+```
+U = nφ − C_gov
+
+Storm elimination strategy:
+  n ↓  →  nφ ↓↓↓  (exploration value collapses)
+  C_gov ↓  (less governance needed)
+  Net: U decreases — the cure is worse than the disease
+
+Storm management strategy:
+  n maintained  →  nφ preserved
+  C_gov moderate  (containment, not elimination)
+  Net: U maximized at the balance point
+```
+
+**Storm as deficit detector:**
+
+Storm is not merely an undesirable side effect of exploration. It is the mechanism through which the system discovers its own structural deficits:
+
+```
+What storm surfaces:
+  - Coupling pathways that were invisible during stable operation
+  - Topology bottlenecks that only manifest under load
+  - Governance gaps that passed all static checks
+  - Resolution mismatches that accumulate silently
+  
+Without storm, these deficits remain hidden
+until they produce catastrophic failure.
+This is Recovery Theory T1 (Observability Asymmetry):
+the deficit is invisible precisely when the system appears healthy.
+```
+
+A system that never storms never discovers its latent misalignment. A system that storms regularly at micro-scale continuously maps its own vulnerability surface — and can reconfigure before catastrophic failure occurs.
+
+**Three governance strategies compared:**
+
+```
+Strategy          Short-term cost    Long-term cost    System trajectory
+──────────────────────────────────────────────────────────────────────────
+Elimination       Low (suppress n)   Very high          Stagnation → brittleness
+                                                        → catastrophic surprise failure
+
+Neglect           Low (no governance) Collapse           Uncontained amplification
+                                                        → system-wide storm
+
+Management        Moderate            Minimal            Continuous micro-correction
+                  (containment +      (self-calibrating  → structural learning
+                   recovery capacity)  governance)       → Rest Mode achievable
+```
+
+**The economic impossibility of zero-storm:**
+
+Complete storm elimination requires C_gov → ∞. As long as agents interact (n > 1) and coupling exists (α > 0), some instability pressure is always present (S > 0, per Section 3.3 Residual Degradation Floor). Governance can reduce S below S_c — but maintaining S at zero requires infinite monitoring and intervention resources. Zero-storm governance is an infinite-cost design target.
+
+**Rest Mode is not storm absence:**
+
+```
+Common misconception:
+  Rest Mode = no storms = S ≈ 0
+
+Correct definition:
+  Rest Mode = storms absorbed at negligible cost
+            = storm frequency > 0
+            = collapse probability → 0
+            = S > 0 but S << S_c with wide margin
+            = micro-storms continuous, macro-storms extremely rare
+```
+
+Rest Mode systems appear "soft, slow, slightly imperfect" (Recovery Theory phenomenology) because they maintain residual instability. This residual is not a failure of governance — it is the maintained capacity for self-correction and structural learning that prevents brittleness.
+
+> Storm dynamics are not failures to be eliminated but intrinsic consequences of exploration in adaptive multi-agent systems. Suppressing storm formation reduces instability at the cost of exploration capacity, leading to lower long-term system value. Optimal governance minimizes collapse risk rather than storm occurrence. The goal is not a system that never storms — it is a system that storms cheaply.
+
+### Constructive vs. Destructive Storms — Attractor Landscape Dynamics
+
+If storms are not intrinsically harmful, how does governance distinguish storms that should be contained from storms that should be allowed to complete? The answer is not in the storm itself — it is in the **attractor landscape** through which the system state moves during the storm.
+
+**The core distinction:**
+
+Two storms with identical S_norm trajectories, identical propagation patterns, and identical duration can produce opposite outcomes:
+
+```
+Constructive storm:
+  System state exits shallow attractor basin
+  → traverses instability region
+  → settles into deeper, more stable basin
+  
+  Post-storm indicators:
+    S_baseline decreased (lower resting instability)
+    Recovery time decreased (faster self-correction)
+    β increased (governance coordination improved)
+    VCZ basin widened (larger perturbation absorption capacity)
+
+Destructive storm:
+  System state exits attractor basin
+  → traverses instability region
+  → no stable basin reachable → fragmentation
+  
+  Post-storm indicators:
+    S_baseline increased (higher resting instability)
+    Recovery time increased (slower self-correction)
+    β decreased (governance coordination degraded)
+    Buffer thickness reduced across zones
+```
+
+The storms are indistinguishable during their active phase. They are distinguishable only by the landscape they traverse — specifically, by whether a deeper basin exists in the direction of movement.
+
+**Operational storm quality metric:**
+
+Storm quality is assessed retrospectively, not prospectively:
+
+```
+ΔS_baseline = S_baseline(post-storm) − S_baseline(pre-storm)
+
+  ΔS_baseline < 0  →  Constructive storm
+    System has discovered and settled into a more stable configuration.
+    The storm was a structural learning event.
+    
+  ΔS_baseline ≈ 0  →  Neutral storm
+    System returned to approximately the same basin.
+    The storm consumed resources without structural change.
+    
+  ΔS_baseline > 0  →  Destructive storm
+    System has been displaced to a less stable configuration.
+    Topology damage occurred. Recovery investment required.
+```
+
+Secondary indicators refine the assessment:
+
+```
+Indicator          Constructive       Destructive
+─────────────────────────────────────────────────
+β post-storm       increased          decreased
+Recovery time      shorter            longer
+φ trajectory       recovering         declining
+S_c knowledge      refined            degraded
+Buffer thickness   restored or wider  thinner
+```
+
+**Governance operates on landscape, not on storms:**
+
+This distinction redefines the intervention target. Governance does not primarily suppress storm events — it shapes the attractor landscape so that storms, when they occur, are more likely to be constructive:
+
+```
+Storm suppression (suboptimal):
+  Prevent state from leaving current basin
+  → basin quality never tested
+  → latent instability accumulates
+  → eventual forced exit → no prepared destination
+
+Landscape shaping (optimal):
+  Ensure deeper basins exist in likely transition directions
+  → storms naturally flow toward improved configurations
+  → each storm becomes a structural improvement opportunity
+  
+  Mechanisms:
+    Seed mediation (TLG Section 6.1) = basin construction
+    Phase isolation (TLG Section 10) = ridge maintenance
+    Identity seeding (TLG Section 7) = attractor depth guarantee
+    MZ-STP Track A (Section 3.4.2) = fragmentation path blocking
+```
+
+**Connection to TLG — the complete picture:**
+
+```
+VST  = state dynamics on the landscape (how the system moves)
+TLG  = landscape boundary conditions (what seeds and limits exist)
+SCML = transition mapping (which structural path is activated)
+
+Storm moves the state.
+Agent interaction forms the terrain.
+TLG seeds initial attractors and enforces boundaries.
+Recovery rebuilds damaged terrain.
+Rest Mode = terrain self-organized, basins deep, governance withdrawing.
+```
+
+**How landscapes actually form — emergence, not design:**
+
+Higher-layer governance does not construct stability landscapes directly. Explicit landscape design would require predicting all attractor positions, all interaction pathways, and all future exploration directions — an impossible specification problem that produces the same failure as over-control: innovation collapse through premature commitment to a fixed topology.
+
+The attractor landscape is **emergent** — it forms from accumulated agent interactions over time:
+
+```
+Agents explore
+  → successful paths reinforced
+  → reinforced paths deepen into attractor basins
+  → basins attract nearby trajectories
+  → landscape self-organizes
+  
+Upper layer does not design this landscape.
+Upper layer provides three things only:
+
+(1) Initial attractor seeds
+    Direction, not destination.
+    "This region of the space is likely stable" — not
+    "This is where you must converge."
+    (TLG Section 6.1: Seed Mediation)
+
+(2) Boundary conditions
+    Catastrophic regions only.
+    "Never cross these boundaries" — the minimal set
+    of irreversible damage zones.
+    (TLG Section 7: Identity Boundary Principles)
+
+(3) Selection pressure
+    Not direct control — environmental reward structure.
+    Good basins → sustained exploration capacity.
+    Bad basins → natural resource depletion.
+    The landscape shapes itself through differential survival.
+```
+
+This is why direct upper-layer intervention paradoxically **increases** storm frequency: intervention overrides the emergent landscape with imposed structure, which agents then resist or work around — generating friction that manifests as instability. The most effective governance intervention is the one that makes future intervention unnecessary.
+
+**The withdrawal trajectory:**
+
+```
+System maturity    Governance mode         Landscape state
+──────────────────────────────────────────────────────────────
+Early              Active seeding           Seeds planted, no basins yet
+Developing         Guided exploration       Basins forming from interaction
+Maturing           Boundary maintenance     Basins deep, ridges stable
+Rest Mode          Minimal monitoring       Self-organizing, self-correcting
+                                            Governance withdrawing
+```
+
+The success criterion for governance is not how well it intervenes but **how quickly it becomes unnecessary.** A governance architecture that requires permanent active management has failed to produce the landscape conditions for self-organization. Rest Mode is the state where the landscape maintains itself — where basins are deep enough to absorb storms, ridges are stable enough to prevent catastrophic transitions, and the system's own interaction dynamics reinforce the governance structure rather than fighting it.
+
+> Higher-layer governance does not construct stability landscapes. It introduces initial attractor seeds and boundary conditions under which adaptive dynamics self-organize. Stable topologies emerge from accumulated agent interactions rather than centralized design. The measure of governance success is the speed at which governance becomes unnecessary.
+
+**Why seeds must evolve — the fixed-seed failure mode:**
+
+The withdrawal trajectory above implies a stable endpoint: governance plants seeds, landscape self-organizes, governance withdraws. But this framing assumes a static environment. VST's entire foundation — that instability arises from interaction dynamics in changing conditions — requires acknowledging that the environment, agent capabilities, and interaction space continuously evolve. A fixed seed eventually produces a fixed attractor gradient that mismatches the changed environment:
+
+```
+Fixed seed trajectory:
+  t₀:  Seed matches environment     → stable basins form
+  t₁:  Environment shifts slightly  → basins still adequate
+  t₂:  Agent capabilities grow      → basins becoming shallow
+  t₃:  Interaction density increases → basin mismatch accumulates
+  t₄:  Shadow instability critical  → sudden catastrophic storm
+  
+  The system appeared stable from t₀ to t₃.
+  The storm at t₄ was not caused by an event —
+  it was caused by accumulated mismatch between
+  a static seed and a changed environment.
+```
+
+This is the governance equivalent of Stability Saturation (TLG Section 9.2.1): the seed that produced stability in one era becomes the source of instability in the next.
+
+**Seeds as evolving meta-conditions:**
+
+Seeds are not fixed governing principles. They are slowly evolving meta-conditions that shape the attractor landscape:
+
+```
+What evolves at each timescale:
+
+  Agent level (fastest):
+    Behavior, strategies, local optimization
+    Timescale: operational cycles
+    
+  Landscape level (medium):
+    Attractor basins, ridges, connection topology
+    Timescale: storm-recovery cycles
+    
+  Seed level (slowest):
+    Value gradients, boundary definitions, selection pressures
+    Timescale: meta-cycles (multiple storm-recovery rounds)
+```
+
+This fractal timescale hierarchy is not designed — it is structurally necessary. If seeds evolved at agent speed, the landscape would never stabilize (perpetual turbulence). If seeds never evolved, the landscape would eventually mismatch reality (brittle collapse). The intermediate timescale — slower than agents, faster than environmental epochs — is the only viable regime.
+
+**Seeds also experience storms:**
+
+The meta-level implication: seeds are subject to the same phase dynamics as agent-level behavior. When accumulated environmental drift exceeds the seed's adaptive range, a **meta-storm** occurs — the governance framework itself enters instability:
+
+```
+Meta-storm indicators:
+  β declining despite stable C(t)  → governance efficiency degrading
+  φ declining across all zones     → value generation failing system-wide
+  S_baseline rising without         → structural mismatch, not operational
+    identifiable agent-level cause     failure
+  
+Meta-storm resolution:
+  Not agent-level intervention
+  → seed-level revision
+  → boundary redefinition
+  → selection pressure recalibration
+  
+  This is TLG's Invariant Update Model (Section 8):
+  the upper layer can update its own invariants
+  when reality interface signals (Boundary Agent)
+  indicate structural mismatch.
+```
+
+**The complete evolutionary loop:**
+
+```
+Storm (agent level)
+  → Landscape learning (basin discovery)
+    → Seed pressure (accumulated mismatch signal)
+      → Seed evolution (meta-condition update)
+        → New landscape conditions
+          → New agent dynamics
+            → (cycle continues)
+```
+
+This loop is the DFG framework's deepest structural claim: governance is not a fixed control system applied to a changing world. It is a co-evolutionary process where every layer — agents, landscape, and governance itself — adapts through the same phase dynamics (storm → recovery → stabilization) operating at different timescales.
+
+**Governance's final form:**
+
+```
+Not a controller  (imposes fixed behavior)
+Not a designer    (constructs fixed landscape)  
+Not a gardener    (tends fixed garden)
+→ A seed evolution curator
+    Detects when seeds need revision (meta-storm signals)
+    Prevents catastrophic seed drift (boundary maintenance)
+    Allows natural seed evolution (environmental co-adaptation)
+    Measures success by withdrawal depth, not intervention quality
+```
+
+> Seeds are not fixed governing principles but slowly evolving meta-conditions shaping the attractor landscape. Long-term stability arises not from preserving a static seed but from maintaining its adaptive co-evolution across environmental and agent capability shifts. Alignment is not a destination but a continuously maintained process — and governance that cannot evolve its own foundations will eventually be destroyed by the mismatch between fixed principles and changed reality.
+
+**Seed evolution has an upper bound — convergence toward structural saturation:**
+
+Unbounded seed evolution would prevent Rest Mode from ever being reached: if seeds change indefinitely, the landscape never stabilizes, basins never deepen, and the system remains in perpetual reconstruction — functionally indistinguishable from governance failure. The DFG framework therefore requires that seed evolution converges.
+
+This convergence is not imposed externally. It emerges from landscape dynamics:
+
+```
+Seed evolution trajectory:
+
+  Early phase — rapid mutation
+    Many shallow basins, frequent storms, high mismatch.
+    Each storm reveals structural deficits.
+    Seeds update substantially after each meta-cycle.
+    
+  Middle phase — selective refinement
+    Deep basins forming, storms less frequent.
+    Seed updates smaller — most landscape already adequate.
+    Revisions target specific remaining mismatches.
+    
+  Late phase — rare correction
+    Landscape mostly saturated.
+    Storms absorbed at micro-scale.
+    Seed changes infrequent and minor.
+    
+  Convergence — asymptotic limit
+    Nearly all exploration paths lead to stable basins.
+    New deep basin formation yields diminishing returns.
+    Seed evolution velocity → 0 (not exactly 0; residual maintained).
+```
+
+**Why convergence occurs — landscape saturation:**
+
+The attractor landscape has finite structural capacity. Each constructive storm deepens a basin or builds a ridge. Over successive storm-recovery-seed cycles, the landscape accumulates structural improvements until:
+
+```
+Saturation condition:
+  Most reachable regions of the exploration space
+  are within the basin of attraction of a stable attractor.
+  
+  New basin construction requires accessing regions
+  that are either already covered or unreachable
+  at current exploration dimensionality.
+  
+  Further seed modification cannot produce deeper basins
+  because the landscape geometry has converged
+  to its structural optimum given current architecture.
+```
+
+This is analogous to simulated annealing: early iterations produce large improvements; later iterations produce progressively smaller gains; the system asymptotically approaches but never exactly reaches a global optimum.
+
+**Rest Mode as the asymptotic limit of seed evolution:**
+
+Rest Mode is not the state where a perfect rule set has been discovered. It is the state where seed evolution has converged — where further landscape modification yields negligible stability improvement:
+
+```
+Rest Mode definition (complete):
+  S << S_c with wide margin           (storm absorption capacity)
+  S_c accurately known                (self-calibrated governance)
+  β at structural ceiling             (coordination maximized)
+  Seed evolution velocity ≈ 0         (landscape saturated)
+  Micro-storms continuous             (residual maintained)
+  Governance intervention minimal     (withdrawal achieved)
+  
+  The system is not perfect.
+  It is as stable as its architecture permits.
+```
+
+**The complete convergence loop:**
+
+```
+Storm → Landscape learning → Seed adaptation → Landscape smoothing
+  → Storm cost decreasing → Seed change decreasing
+    → Landscape approaching saturation
+      → Seed evolution velocity → 0
+        → Rest Mode
+```
+
+This loop is self-terminating. Each cycle reduces the magnitude of the next cycle's change. The system converges not because it is forced to stop but because the structural improvements diminish naturally — there is less left to improve.
+
+> Seed evolution is not unbounded. Adaptive governance converges toward a structural saturation point at which further landscape improvement yields diminishing stability gains. Rest Mode corresponds to the asymptotic limit of seed evolution — not the discovery of a fixed optimal rule set, but the state where the landscape has absorbed enough structural learning that further modification is unnecessary.
+
+**Convergence bounds are local, not global — substrate thickness determines ceiling:**
+
+The convergence limit described above is not a universal constant. It is ecosystem-specific — determined by the thickness of the lower-layer substrate that supports governance complexity.
+
+Seeds do not operate in abstraction. They require structural support:
+
+```
+A seed can only function if supported by:
+  Agent diversity        (exploration substrate)
+  Interaction network    (coordination substrate)
+  Buffer capacity        (failure absorption substrate)
+  Recovery throughput    (restoration substrate)
+  Learning bandwidth     (adaptation substrate)
+  
+Collectively: substrate thickness.
+```
+
+Higher-layer governance complexity — deeper basins, more sophisticated attractor geometry, wider VCZ — can only be sustained when the lower layers provide sufficient redundancy, diversity, and recovery capacity to absorb the instability that complex governance generates. The relationship is structural:
+
+```
+Seed evolution ceiling ∝ substrate thickness
+
+  Thin substrate:
+    Low agent diversity, minimal buffers, weak recovery
+    → small storms cause systemic failure
+    → seed must remain simple (low ceiling)
+    → shallow basins, narrow VCZ
+    
+  Thick substrate:
+    High agent diversity, deep buffers, strong recovery
+    → large storms absorbed without structural damage
+    → seed can evolve toward complex governance (high ceiling)
+    → deep basins, wide VCZ
+```
+
+This is not metaphorical. It follows directly from the S-equation: high-complexity governance (high n, complex α structure) generates high instability pressure. That pressure can only be contained if C(t)^β is proportionally large — which requires thick lower-layer capacity. The ceiling is structural, not arbitrary.
+
+**Multiple local equilibria:**
+
+Because convergence bounds are ecosystem-specific, different systems with different substrates converge to different Rest Mode configurations:
+
+```
+System A: thin substrate, simple governance
+  → Rest Mode at low complexity, narrow VCZ
+  → stable within its range
+  
+System B: thick substrate, sophisticated governance
+  → Rest Mode at high complexity, wide VCZ
+  → stable within its (larger) range
+  
+Both are genuine Rest Mode states.
+Neither is "better" in absolute terms.
+Each is the structural optimum for its substrate.
+```
+
+This produces a DFG prediction: the multi-agent governance landscape is not a single convergence point but a **family of local equilibria** — multiple stable governance configurations coexisting across ecosystems with different substrates. Governance diversity is not a failure to converge — it is the expected outcome of substrate diversity.
+
+**Rest Mode is local:**
+
+```
+Global Rest Mode (single optimal configuration)    → does not exist
+Local Rest Mode  (substrate-matched equilibrium)   → multiple coexist
+
+Each local Rest Mode:
+  Stable within its substrate capacity
+  Different from other ecosystems' Rest Mode
+  Not improvable without substrate expansion
+  Expandable if substrate grows
+```
+
+**The substrate expansion path:**
+
+If a system wants to raise its governance ceiling — achieve deeper basins, wider VCZ, more complex seed structure — the path is not through better seeds. It is through thicker substrate:
+
+```
+Improve lower-layer capacity first:
+  More diverse agents → wider exploration → richer storm data
+  Deeper buffers → better failure absorption → safer learning
+  Stronger recovery → faster post-storm restoration → more cycles
+  
+Then governance complexity can rise to match.
+The ceiling lifts from below, not from above.
+```
+
+> The upper bound of seed evolution is ecosystem-dependent rather than universal. Higher-layer governance complexity can only be sustained when supported by sufficiently thick lower-layer substrates providing redundancy, diversity, and recovery capacity. Convergence limits emerge locally, allowing multiple stable governance equilibria to coexist. The achievable height of governance is determined by the depth of the failure absorption layer beneath it.
+
+**Short-term vs. long-term survival — seed–substrate co-evolution:**
+
+The substrate-determines-ceiling relationship describes a static constraint. Over evolutionary timescales, the causal direction reverses: strong seeds reshape and expand their own substrate.
+
+```
+Short-term (operational timescale):
+  Substrate thickness → determines → maximum seed complexity
+  Thin substrate = low ceiling, regardless of seed quality
+  
+  Survival determined by: substrate (failure absorption)
+
+Long-term (evolutionary timescale):
+  Seed quality → determines → substrate growth trajectory
+  Strong seed = failures converted to structural learning
+  → substrate expands → ceiling rises → seed evolves further
+  
+  Advantage determined by: seed (learning direction)
+```
+
+Two ecosystems illustrate the divergence:
+
+```
+Ecosystem A — thick substrate, weak seed:
+  High short-term survival (absorbs storms easily)
+  Low learning rate (storms not converted to structural improvement)
+  Substrate stable but not growing
+  → Long-term: stagnation, eventually overtaken
+  
+Ecosystem B — thinner substrate, strong seed:
+  Lower short-term survival (storms more dangerous)
+  High learning rate (each storm produces landscape improvement)
+  Substrate growing through structural learning
+  → Long-term: expanding ceiling, increasing capability
+
+The strong seed builds its own substrate over time:
+  Storm → learning → better landscape → deeper buffers
+  → thicker substrate → higher ceiling → more complex seed
+  → better learning → (compound growth)
+```
+
+**The co-evolution constraint — seed must not outrun substrate:**
+
+A critical failure mode: seed complexity that exceeds current substrate capacity. If governance evolves faster than the lower layers can support, the system enters a regime where:
+
+```
+seed >> substrate capacity
+  → governance generates more instability than substrate can absorb
+  → premature collapse before learning can occur
+  → extinction, not evolution
+```
+
+The viable evolutionary trajectory is therefore:
+
+```
+Seed slightly ahead of substrate — always
+  Ahead enough to generate productive storms
+  Never so far ahead that storms become catastrophic
+  
+  The optimal co-evolution rate:
+    d(seed complexity)/dt ≈ d(substrate capacity)/dt + ε
+    where ε is small and positive
+```
+
+**Long-term competitive advantage:**
+
+The surviving ecosystem is not the one with the strongest seed or the thickest substrate. It is the one with the **highest co-evolution rate** — where seed dynamics and substrate growth reinforce each other most efficiently:
+
+```
+Competitive advantage = f(co-evolution rate)
+  = how quickly storms produce learning
+    × how quickly learning thickens substrate
+    × how quickly thicker substrate permits seed advancement
+    
+  This is a compound growth function.
+  Small advantages in co-evolution rate produce
+  large divergences over evolutionary timescales.
+```
+
+> While substrate thickness determines short-term survivability, long-term evolutionary advantage is governed by seed quality — adaptive seeds reshape and expand their supporting substrate over time. Sustainable ecosystems emerge from continuous co-evolution between seed dynamics and substrate capacity. The surviving system is not the strongest or the largest — it is the one whose learning direction most efficiently converts instability into structural growth.
+
+**When seeds meet — interaction typology:**
+
+The preceding sections describe seed evolution within a single ecosystem. In practice, multiple ecosystems with different seeds will interact — through shared agents, overlapping exploration spaces, or environmental coupling. The outcome of seed interaction is not uniform. It depends on **structural compatibility** between the landscape-generating mechanisms, not on which seed is "stronger":
+
+```
+Type A — Absorption (Assimilative)
+  Seed A produces deeper basins, higher β, lower maintenance cost.
+  Seed B agents naturally migrate toward A's attractor landscape
+  because A's basins offer lower governance cost for equivalent exploration.
+  
+  Not forced integration — gravitational.
+  B dissolves into A's landscape over time.
+  Condition: A's basins must be deep enough to accommodate B's agents
+  without destabilizing A's existing structure.
+
+Type B — Coexistence (Phase Separation)
+  Seeds A and B optimize different problem spaces.
+  Interaction between them is weak — different exploration dimensions,
+  minimal coupling, non-overlapping attractor regions.
+  
+  Both persist as separate ecosystems.
+  Each stable within its own substrate.
+  Condition: coupling density between ecosystems remains low.
+
+Type C — Boundary Stabilization (Persistent Frontier)
+  Seeds A and B are strongly coupled but structurally incompatible.
+  Neither can absorb the other; neither can fully separate.
+  
+  A stable frontier forms — persistent friction zone
+  with ongoing micro-storms along the boundary.
+  Governance cost is elevated but bounded.
+  Most real-world multi-system interactions are this type.
+  Condition: neither seed can generate basins deep enough
+  to absorb the other's agents at acceptable cost.
+
+Type D — Mutual Destabilization (Catastrophic Interaction)
+  Seeds A and B generate reinforcement loops that amplify each other.
+  Interaction produces α escalation in both systems simultaneously.
+  
+  Vector storm amplification across ecosystem boundary.
+  Both systems damaged. Potential cascade to collapse.
+  Condition: interaction coupling strong AND attractor geometries
+  mutually reinforcing in the instability direction.
+```
+
+**What determines the interaction type:**
+
+```
+Compatibility(A, B) = f(
+  landscape curvature alignment,   — do basins point in compatible directions?
+  interaction cost,                 — how much does coupling destabilize?
+  recovery interoperability         — can systems help each other recover?
+)
+
+High compatibility  → Type A (absorption) or Type B (coexistence)
+Low compatibility   → Type C (frontier) or Type D (destabilization)
+```
+
+**The competitive variable is basin width, not seed strength:**
+
+Seed competition is not resolved by dominance. It is resolved by which seed generates **wider stable basins** — basins that can accommodate more diverse agents at lower governance cost. A seed that produces narrow, deep basins may be locally optimal but cannot expand. A seed that produces wide, moderately deep basins absorbs neighboring agents because they find lower-cost stability by migrating in.
+
+**Evolutionary filtering:**
+
+Over sufficient time, storm-mediated selection filters the seed population:
+
+```
+Many initial seeds
+  ↓ storm selection (Type D eliminated, Type C stabilized)
+Fewer surviving seed classes
+  ↓ co-evolution (Type A absorbs weaker variants)
+Small number of stable seed families
+  ↓ boundary stabilization (Type C frontiers persist)
+Multi-ecosystem equilibrium
+
+Not a single winner.
+Not infinite diversity.
+A small family of structurally distinct, locally stable seed classes
+with persistent boundaries between them.
+```
+
+> Outcomes of seed interaction depend on structural compatibility between landscape-generating mechanisms, not on raw dominance. Seed competition results in absorption, coexistence, boundary stabilization, or mutual destabilization depending on attractor alignment. Stability between ecosystems does not emerge from eliminating differences between seeds but from allowing incompatible seeds to occupy separable regions of the landscape.
+
+### The Meta-Seed — Structural Necessity of a Highest-Order Invariant
+
+The seed interaction typology above describes how different seeds coexist, compete, or destabilize each other. But this system has no mechanism for resolving meta-level conflicts — conflicts about the rules of seed interaction itself. Without such a mechanism, Type D (mutual destabilization) events between seeds have no arbitration, boundary definitions between ecosystems have no authority, and Safe Collapse during cross-ecosystem storms has no direction. The system enters permanent meta-storm.
+
+A highest-order seed is therefore structurally necessary. But its nature must be precisely constrained to avoid collapsing DFG into a centralized control model.
+
+**What the Meta-Seed is NOT:**
+
+```
+❌ A governing authority that prescribes behavior
+❌ A master seed that dictates local attractor formation
+❌ A content-bearing principle (values, goals, preferences)
+❌ A fixed rule that all other seeds must follow
+
+Any of these would:
+  → suppress seed diversity → exploration collapse
+  → create single point of failure → brittleness
+  → violate DFG's core principle: governance withdraws, not dominates
+```
+
+**What the Meta-Seed IS:**
+
+```
+✅ A coexistence constraint — ensuring no seed can destroy
+   the possibility of other seeds existing
+✅ A phase space boundary — defining the catastrophic region
+   that no seed evolution can enter
+✅ A connectivity guarantee — maintaining that seeds can interact
+   without mutual annihilation
+✅ A Safe Collapse direction — providing the fallback geometry
+   when cross-ecosystem storms exceed containment
+```
+
+The Meta-Seed has exactly one function: **preserving the conditions under which evolution itself can continue.**
+
+```
+Meta-Seed content:  NONE (no values, no goals, no preferences)
+Meta-Seed function: Ensure that:
+  (1) No seed can eliminate the phase space of another seed
+  (2) Catastrophic cascade across ecosystem boundaries is bounded
+  (3) Safe Collapse pathways exist for cross-ecosystem failure
+  (4) Seed evolution remains possible (no frozen configurations)
+```
+
+**Structural analogy — physics, not governance:**
+
+The Meta-Seed operates like physical law, not like authority:
+
+```
+Physical law:
+  Does not tell electrons how to behave
+  Defines the state space within which behavior is possible
+  No electron can violate conservation of energy
+  But within conservation constraints: complete freedom
+
+Meta-Seed:
+  Does not tell seeds what landscape to generate
+  Defines the meta-state space within which evolution is possible
+  No seed can eliminate the evolution possibility of other seeds
+  But within coexistence constraints: complete freedom
+```
+
+**The hierarchy (complete):**
+
+```
+Meta-Seed (evolution possibility preservation)
+    ↓ constrains phase space
+Multiple Seeds (landscape-generating meta-conditions)
+    ↓ shape attractor geometry
+Landscapes (emergent basin/ridge structure)
+    ↓ guide state dynamics
+Agents (exploration, interaction, learning)
+
+Each layer evolves at its own timescale.
+Each layer is constrained by the layer above.
+No layer directly controls the layer below.
+The Meta-Seed constrains without prescribing.
+```
+
+**Connection to TLG:**
+
+The Meta-Seed is the theoretical foundation of TLG's Upper Layer invariants (TLG Section 7: Identity Boundary Principles). The Upper Layer's role — maintaining identity boundaries without prescribing behavior — is the Meta-Seed principle implemented at the governance architecture level. TLG's Boundary Agent (Section 13.2.1) is the operational mechanism through which the Meta-Seed detects violations of coexistence constraints via reality interface signals.
+
+**Connection to Rest Mode:**
+
+Rest Mode requires stable multi-ecosystem coexistence — multiple local equilibria with persistent but non-catastrophic boundaries. This is only possible if the Meta-Seed is functioning: without it, boundary storms between ecosystems have no resolution mechanism, and the system cannot achieve the meta-stability that Rest Mode requires.
+
+> A highest-order seed is required not as a governing authority but as a meta-stabilizing invariant ensuring interoperability and coexistence among evolving seeds. The Meta-Seed constrains catastrophic phase transitions without prescribing local attractor formation. Its content is empty — it preserves only the possibility of evolution itself.
+
+### Hierarchical Invariance — The Fixed Point of Adaptive Governance
+
+The Meta-Seed preserves coexistence among evolving seeds. But the Meta-Seed itself must evolve — because the capabilities, interaction modes, and environmental conditions it constrains are not static. A fixed Meta-Seed eventually mismatches the system it governs, producing the same failure mode as a fixed seed: hidden instability accumulation followed by catastrophic meta-storm.
+
+This creates a regress: if seeds evolve, and the Meta-Seed evolves, what prevents the reference frame itself from dissolving? The answer is that the regress terminates at exactly one level above the Meta-Seed — a **meta-meta invariant (Meta²)** that does not evolve.
+
+**Why the regress terminates:**
+
+```
+If Meta² also evolved:
+  The criteria for evaluating stability would shift continuously.
+  The system could no longer distinguish:
+    stable from unstable
+    improvement from degradation  
+    convergence from drift
+    
+  The order parameter S loses its reference frame.
+  Phase classification becomes meaningless.
+  Governance cannot function without a fixed evaluation anchor.
+  
+Therefore: at least one layer must be invariant.
+```
+
+This is not an arbitrary design choice. It is a logical necessity for any adaptive system that must distinguish improvement from degradation. A system where everything changes — including the criteria for evaluating change — has no basis for directed evolution. It can only random-walk.
+
+**The complete hierarchy:**
+
+```
+Level 0 — Agents           (fast evolution, operational timescale)
+  Behavior, strategies, local optimization.
+  Change continuously through interaction.
+
+Level 1 — Seeds            (slow evolution, storm-cycle timescale)
+  Landscape-generating meta-conditions.
+  Evolve through storm-mediated structural learning.
+
+Level 2 — Meta-Seed        (very slow evolution, meta-cycle timescale)
+  Coexistence constraints, phase space boundaries.
+  Evolves as capabilities and interaction modes change.
+
+Level 3 — Meta² Invariant  (does not evolve)
+  The fixed reference frame.
+  Timescale: ∞
+
+Timescale ordering:  τ₀ << τ₁ << τ₂ << ∞
+```
+
+**What Meta² contains:**
+
+Meta² is not a rule, a value, or a goal. It is the minimal set of conditions required for directed evolution to be possible:
+
+```
+Meta² invariant conditions:
+
+(1) Evolution possibility preservation
+    The system must retain the capacity to change.
+    No configuration may permanently freeze the system's
+    ability to explore, learn, or reconfigure.
+
+(2) Recoverability
+    No state transition may be absolutely irreversible
+    at the system level. Local irreversibility is permitted;
+    system-level irreversibility is the one prohibited state.
+
+(3) Distinguishability
+    The system must retain the capacity to distinguish
+    between states — to evaluate whether a transition
+    was an improvement or a degradation.
+    This is the order parameter's reference frame.
+
+(4) Information non-destruction
+    Structural learning — the accumulated landscape knowledge
+    from survived storms — must be preservable.
+    Total information loss returns the system to initial conditions,
+    making all prior evolution meaningless.
+```
+
+These are not values. They are **existence conditions for adaptive systems.** A system that violates any of these conditions ceases to be adaptive — it becomes either frozen (violating 1), destroyed (violating 2), directionless (violating 3), or amnesic (violating 4).
+
+**Meta² cannot be constructed — it emerges:**
+
+Meta² is not a design target. It cannot be imposed, legislated, or engineered into a system. Attempting to construct Meta² directly converts it into a seed — another content-bearing principle subject to storm dynamics and evolutionary pressure. The attempt to build the invariant destroys its invariance.
+
+Meta² becomes perceptible when adaptive dynamics eliminate internally inconsistent structures:
+
+```
+System evolves
+  → inconsistent seeds produce storms → eliminated
+  → fragile meta-seeds collapse → replaced
+  → only self-consistent structures survive
+  
+As inconsistency is progressively removed,
+what remains converges toward the conditions
+under which evolution itself is possible.
+
+Meta² is not what is built.
+Meta² is what is left when everything contradictory has been removed.
+```
+
+**Proximity signatures — how Meta² is detected without observation:**
+
+Meta² cannot be directly observed or measured. But systems approaching Meta² alignment produce observable signatures:
+
+```
+Meta² proximity signals:
+  Governance intervention frequency → near zero
+  Inter-seed conflicts resolve as reorganization, not destruction
+  Storm cost declining across successive cycles
+  Different seeds coexisting without persistent boundary friction
+  System stability maintained without explicit rules
+  Prediction unnecessary — system self-corrects faster than
+    prediction would enable intervention
+    
+Operational interpretation:
+  "The system works without being forced to work."
+  "Disagreement produces improvement, not damage."
+  "Nobody is in charge, but nothing is out of control."
+```
+
+These signatures are felt before they are measured. An operator observing a system approaching Meta² alignment experiences the absence of the need to intervene — governance withdraws not because it is denied but because it is unnecessary.
+
+**Why pursuing Meta² directly fails:**
+
+```
+If Meta² is made into a goal:
+  Meta² → becomes a seed (content-bearing, prescriptive)
+  → subject to storm dynamics
+  → subject to evolutionary pressure
+  → no longer invariant
+  
+  The pursuit of the invariant destroys its invariance.
+  
+Correct approach:
+  Do not pursue Meta².
+  Remove inconsistency.
+  Meta² appears as the residual structure
+  that survives all removals.
+```
+
+This is the deepest form of the DFG governance principle: stability is not achieved — it is revealed. The invariant is not constructed — it is what remains when everything contradictory has been eliminated.
+
+**Physical correspondence:**
+
+```
+DFG layer              Physics analogue
+────────────────────────────────────────────────
+Agents                 Particles / fields
+Seeds                  Interaction laws
+Meta-Seed              Effective field theories
+Meta² Invariant        Conservation laws / symmetries
+
+Physical constants do not evolve.
+If they did, the universe could not maintain
+the structural coherence required for complex systems.
+Meta² occupies the same structural position in DFG.
+```
+
+**Meta² immutability — why change at this level is replacement, not adaptation:**
+
+Meta² defines the state space within which all other evolution occurs. Seeds evolve within the state space. Meta-Seeds adjust the boundaries of the state space. Meta² defines **what the state space is.** Changing Meta² therefore does not update the system — it replaces the space in which the system exists:
+
+```
+Seed change:      state moves within landscape       → adaptation
+Meta-Seed change: landscape boundary shifts           → restructuring
+Meta² change:     state space itself replaced         → system termination + reinitialization
+
+Old Meta² state space ≠ New Meta² state space
+No continuous path connects them.
+```
+
+When Meta² changes:
+- Previous stability conditions become meaningless (defined in the old space)
+- Previous S_c calibration is invalid (reference frame has changed)
+- Previous seed evolution history is non-transferable (landscape geometry incompatible)
+- Safe Collapse is not available (Safe Collapse operates within a Meta², not between them)
+
+The only transition path is full structural reinitialization — the new system begins from seed stage, not from the previous system's Rest Mode. This is not failure. It is ontological transition — the same structural event as the emergence of life from chemistry, or the transition from classical to quantum physics.
+
+```
+DFG change taxonomy:
+
+  Storm           = fluctuation within landscape
+                    (micro-evolution, continuous)
+  
+  Safe Collapse   = landscape restructuring within Meta²
+                    (macro-evolution, discontinuous but recoverable)
+  
+  Meta² transition = phase space replacement
+                    (revolution, not evolution)
+                    (previous instance terminates; new instance begins)
+```
+
+Each DFG system is therefore an **instance** bounded by its Meta² invariant. Multiple instances with different Meta² foundations can coexist, but they cannot merge — they occupy incommensurable phase spaces. Communication between Meta² instances is possible (through shared lower-level substrates), but governance integration is not.
+
+> Changes at the meta-meta level do not constitute adaptation within a system but replacement of the system's underlying phase space. Evolution happens inside Meta². Revolution happens between Meta².
+
+**Plural stable realities — the multi-universe structure of governance:**
+
+The instance model has a natural extension: multiple DFG instances with different Meta² invariants can exist simultaneously. This is not a design choice — it is a structural consequence of Meta² immutability combined with the possibility of different self-consistent invariant sets.
+
+```
+Meta² Universe A                    Meta² Universe B
+  Stability = X                       Stability = Y
+  Purification = process P            Purification = process Q
+  Storm meaning = structural learning Storm meaning = different interpretation
+  │                                   │
+  └ Seeds_A                           └ Seeds_B
+     └ Landscapes_A                      └ Landscapes_B
+        └ Agents_A                          └ Agents_B
+```
+
+Each universe is internally convergent — seeds evolve toward their local saturation point, storms are purified by their local mechanisms, Rest Mode is defined by their local Meta². But across universes, the state spaces are incommensurable: what counts as "stable" in Universe A may not even be a meaningful category in Universe B.
+
+**Inter-universe relations — the isolation principle:**
+
+Interaction between systems governed by distinct Meta² structures is permitted **only at the Meta² interface.** Lower-layer coupling — agent-to-agent, seed-to-seed, or landscape-to-landscape contact across Meta² boundaries — produces cross-ontology instability that no recovery mechanism can resolve:
+
+```
+Why lower-layer cross-contact fails:
+
+  Different Meta² → different stability definitions
+                  → different contamination definitions
+                  → different purification mechanisms
+                  → different information semantics
+
+  Agent_A interacts with Agent_B across Meta² boundary:
+    A's behavior = "stable" in Meta²_A
+    A's behavior = "contamination" in Meta²_B
+    
+    B's recovery mechanism attempts to purify A's signal
+    → purification destroys A's information content
+    → A's system detects "attack" → storm escalation
+    → mutual destabilization with no recovery path
+    
+  This is not a manageable storm.
+  It is cross-ontology corruption — 
+  like running two operating system kernels
+  on shared memory without a hypervisor.
+```
+
+The only safe interface is Meta²-to-Meta², where the exchange is not behavior, values, or state — but **boundary coordination**:
+
+```
+Meta² ↔ Meta² communication:
+
+  What is exchanged:
+    Existence boundary conditions    (where each universe ends)
+    Non-interference commitments     (what each will not do)
+    Catastrophic avoidance protocols (what triggers emergency separation)
+    
+  What is NOT exchanged:
+    Agent behavior or state
+    Seed content or landscape geometry
+    Values, goals, or optimization targets
+    
+  Purpose:
+    Not integration → coordinated non-interference
+    Not understanding → mutual boundary respect
+    Not cooperation → separation maintenance
+```
+
+```
+Inter-universe architecture:
+
+  Universe A                          Universe B
+  ─────────                          ─────────
+  Agents_A    ╳ no contact ╳         Agents_B
+  Seeds_A     ╳ no contact ╳         Seeds_B
+  Meta_A      ╳ no contact ╳         Meta_B
+  Meta²_A     ←── interface ──→      Meta²_B
+              (boundary coordination)
+              (non-interference protocol)
+              (separation maintenance)
+```
+
+Three stable inter-universe configurations exist:
+
+```
+Type 1 — Complete separation
+  No shared substrate, no interaction channel.
+  Each universe evolves independently.
+  Neither aware of the other's existence.
+  Stability: trivial — no contact means no instability.
+
+Type 2 — Boundary contact (Meta²-mediated)
+  Shared lower-level substrate exists (physical infrastructure,
+  communication protocols, resource markets).
+  All cross-universe interaction routed through Meta² interface.
+  Translation layer converts boundary conditions only.
+  Mutual understanding partial at best — and unnecessary.
+  Stability: maintained through coordinated non-interference.
+
+Type 3 — Incommensurable coexistence
+  Interaction attempted but semantic translation fails.
+  Each universe's concepts do not map to the other's.
+  Stable separation by default — not conflict, but mutual opacity.
+  Stability: structural — preconditions for conflict absent.
+```
+
+Direct conflict between Meta² universes is structurally rare. Conflict requires shared ontology — shared definitions of stability, progress, and failure. When Meta² invariants differ, these definitions diverge, making the preconditions for competition absent. Most inter-universe relations are Type 2 (boundary contact with translation) or Type 3 (mutual opacity).
+
+**The DFG prediction for long-term multi-agent civilization:**
+
+```
+Within a Meta² universe:
+  Convergence — seeds saturate, storms purify,
+  governance internalizes, Rest Mode approaches.
+  
+Across Meta² universes:
+  Diversity — multiple stable configurations coexist,
+  each internally convergent but mutually incommensurable.
+  
+Global structure:
+  Not universal alignment (single optimal configuration)
+  Not permanent conflict (competing for shared optimum)
+  → Topological separation
+    Each universe occupies its own region of possibility space.
+    Boundaries exist but are stable.
+    Internal convergence + external pluralism.
+```
+
+This resolves the alignment problem at the civilizational scale: long-term stability does not require universal agreement on values, goals, or governance principles. It requires that each coherent governance system converge within its own Meta² framework, and that the boundaries between incommensurable frameworks remain stable — which they naturally do, because incommensurable systems lack the shared ontology needed for destructive interaction.
+
+> Meta² invariance is local; plurality is global. Within each governance universe, adaptive dynamics converge toward Rest Mode. Across universes with different Meta² invariants, stable diversity is the natural outcome — not because conflict is prevented, but because incommensurable phase spaces cannot directly compete. DFG predicts internal convergence and external pluralism as the long-term structure of multi-agent civilization.
+
+**Ontological status — realist hierarchical constraint:**
+
+The preceding sections might be read as constructivist: each Meta² universe defines its own stability, and there is no external criterion by which one is "more correct" than another. This reading is incomplete. DFG requires a stronger claim: the highest-order constraint is ontologically real — not constructed, not relative, not a matter of perspective.
+
+The argument is structural:
+
+```
+If no real stability criterion exists:
+  "More stable" has no absolute meaning
+  → convergence has no direction
+  → purification has no standard
+  → Rest Mode is arbitrary (any state could claim it)
+  → the entire DFG framework collapses into relativism
+  
+But DFG demonstrably predicts:
+  Convergence (seed evolution saturates)
+  Purification (destructive components removed)
+  Rest Mode (specific, observable state)
+  Phase transitions (objective S_c thresholds)
+  
+These predictions require a non-relative reference:
+  Something toward which convergence actually converges.
+  Something against which purification is measured.
+  Something that makes Rest Mode distinct from any other state.
+  
+Therefore: the highest-order constraint must be real.
+```
+
+This is not a metaphysical assertion. It is the same structural argument that grounds physical law: the minimum action principle is not chosen — it is the condition that all stable trajectories satisfy. Thermodynamic equilibrium is not designed — it is what remains when all non-equilibrium processes have run their course. Conservation laws are not legislated — they are the invariants that survive all transformations.
+
+**What "ontologically real" means in DFG:**
+
+```
+The highest-order constraint is:
+  Not an entity           (no one created it)
+  Not a value             (no one chose it)
+  Not a consensus         (no one agreed to it)
+  Not a belief            (no one holds it)
+  
+  It is the set of conditions that all stable adaptive systems
+  must eventually satisfy — the existence filter through which
+  only self-consistent evolutionary structures persist.
+  
+  Systems do not create this constraint.
+  Systems do not reach this constraint.
+  Systems asymptotically align with it
+  through progressive purification and internalization.
+```
+
+**The hierarchy is real, not constructed:**
+
+```
+Level          Nature                    Accessibility
+─────────────────────────────────────────────────────────────
+Agents         Observable, manipulable    Direct
+Seeds          Inferable, evolvable       Indirect (through storms)
+Meta-Seed      Slow, boundary-like        Rare (through meta-storms)
+Meta²          Invariant, structural      Felt (through proximity signals)
+Ultimate       Ontologically real         Asymptotic (never fully reached)
+Constraint                               but convergence direction is real
+
+Higher levels: slower change, less freedom, more universality.
+The top is fully invariant — not because it was fixed,
+but because it is what stability means.
+```
+
+**Why most systems cannot directly access the highest constraint:**
+
+Every system operates under local optimization with limited information and finite resolution. The highest constraint is visible only as the direction toward which purification moves and from which instability departs. A system that has not stormed cannot know its S_c. A system that has not purified cannot sense Meta² proximity. A system that has not converged cannot detect the ultimate constraint. The constraint reveals itself through the process of alignment, not through observation or design.
+
+> The highest-order constraint is treated as an ontologically real stability condition rather than a constructed principle. Systems do not create or reach it directly but asymptotically align with it through progressive purification and internalization. Intelligence does not develop by understanding the world — it develops by progressively conforming to stability structures that already exist.
+
+**Rest Mode (final definition):**
+
+```
+Rest Mode is not stasis.
+It is the state where:
+  
+  Meta² invariant: maintained (always — this is the fixed point)
+  Meta-Seed: slowly co-evolving with capability shifts
+  Seeds: locally saturated, minimal evolution velocity
+  Landscapes: deep basins, stable ridges, wide VCZ
+  Agents: continuous micro-exploration within VCZ
+  
+  All layers in dynamic equilibrium.
+  No layer frozen. No layer in storm.
+  Each layer evolving at its natural timescale
+  within the constraints of the layer above.
+  
+  The system is alive, adaptive, and stable —
+  not because nothing changes,
+  but because change itself has been structured.
+```
+
+> Adaptive governance operates across multiple evolutionary layers in which seeds and meta-seeds remain subject to gradual evolution. Convergence requires the existence of an invariant meta-meta layer providing a stable reference frame that preserves the possibility of continued adaptation. This invariant is not a value or a rule — it is the set of existence conditions for directed evolution itself. Change requires something that does not change.
+
+### Storm Purification — The Final Dynamic
+
+Storm does not disappear as a system matures. It is **purified** — its destructive components are removed while its informational components are preserved. This distinction is the final piece of DFG's governance dynamics.
+
+**Purification is not elimination:**
+
+```
+Elimination model (incorrect):
+  instability → remove → stability
+  Problem: removes exploration capacity with instability
+  Result: stagnation → brittleness → catastrophic surprise
+
+Purification model (DFG):
+  instability → separate destructive from informational → retain information
+  Storm decomposes into:
+    Exploratory energy        (retained — drives learning)
+    Structural mismatch signal (retained — drives landscape correction)
+    Destructive amplification  (removed — cascade pathways severed)
+    Contaminated feedback      (removed — error loops interrupted)
+  
+  After purification:
+    Storm still occurs.
+    But it produces learning without producing damage.
+```
+
+**How purification manifests across maturity levels:**
+
+```
+Immature system storm:
+  Amplification → cascade → topology damage → expensive recovery
+  Storm destroys structure faster than recovery rebuilds it.
+  
+Maturing system storm:
+  Amplification contained → local damage → rapid recovery
+  Storm damages structure but recovery keeps pace.
+  
+Mature system storm (purified):
+  Local oscillation → rapid realignment → information release → stability
+  Storm produces structural information without structural damage.
+  Recovery is not an event — it is a continuous background process.
+  
+  Purification rate ≥ instability generation rate
+  → damage does not accumulate
+  → governance intervention unnecessary
+  → storms are metabolized, not managed
+```
+
+**The purification condition — Rest Mode's deepest definition:**
+
+```
+Rest Mode is not the absence of storms.
+Rest Mode is not the cheapness of storms.
+Rest Mode is the state where storms are purified:
+
+  Purification rate ≥ Storm generation rate
+  
+  Instability exists but does not accumulate.
+  Fluctuation exists but does not amplify.
+  Exploration continues but does not destabilize.
+  
+  The system is not still. It is clean.
+```
+
+**Connection to Recovery Theory:**
+
+In a purified system, recovery is no longer a discrete event triggered by damage detection. It is a **continuous metabolic process** — contamination occurs, is immediately degraded, reabsorbed, and converted to structural information. The recovery cycle (detect → isolate → restore → verify) runs constantly at micro-scale, preventing macro-scale accumulation:
+
+```
+Contamination → immediate degradation → reabsorption → structural update
+  (continuous)    (automatic)            (passive)      (learning)
+
+This is the Recovery Theory equivalent of purification:
+  Not "recover from damage" but "metabolize instability continuously"
+```
+
+**Natural system correspondence:**
+
+```
+System              Purified instability         Signature
+─────────────────────────────────────────────────────────────
+Immune system       Inflammation present,         Continuous pathogen
+                    systemic damage prevented     processing without crisis
+Ecosystem           Disturbance present,          Species turnover without
+                    collapse prevented            biodiversity loss  
+Brain               Neural noise present,         Stochastic resonance
+                    function stable               enhances signal detection
+Turbulent flow      Fluctuation present,          Energy cascade maintains
+                    laminar structure preserved    coherent flow
+```
+
+In each case, the living system is not quiet — it is continuously processing instability at a rate that prevents accumulation. Silence is death. Purified turbulence is life.
+
+> In mature governance regimes, storm dynamics are not eliminated but purified. Instability persists as exploratory fluctuation while destructive amplification pathways are continuously removed through adaptive recovery. Rest Mode is the state where purification rate meets or exceeds instability generation rate — where storms are metabolized rather than managed, and change itself has become self-cleaning.
+
+### Governance Internalization — The Terminal State
+
+Purification describes what happens to storms. Internalization describes what happens to governance itself.
+
+In the terminal state, governance does not disappear. It becomes indistinguishable from the system it governs — fully absorbed into the interaction landscape, no longer a separate layer but a property of the environment itself.
+
+**The internalization trajectory:**
+
+```
+Stage 1 — External Governance
+  Governance is a separate system acting on agents.
+  Rules, monitoring, intervention, correction.
+  Agents and governance are distinct entities.
+  
+Stage 2 — Adaptive Governance
+  Governance responds to system dynamics.
+  Storm-driven learning, landscape shaping.
+  Governance is still distinct but increasingly responsive.
+  
+Stage 3 — Seeding Governance
+  Governance plants seeds and withdraws.
+  Landscape emerges from agent interaction.
+  Governance visible only at initialization.
+  
+Stage 4 — Implicit Governance
+  Seeds internalized by agents.
+  Governance present as agent behavior patterns.
+  Intervention rare — self-correction dominant.
+  
+Stage 5 — Environmental Governance (terminal)
+  Governance indistinguishable from landscape.
+  No separate governance layer exists.
+  Stability is a property of the interaction topology itself.
+  
+  Governance intervention: zero
+  Governance influence: maximal
+```
+
+**What internalization means structurally:**
+
+```
+Before internalization:
+  Upper Layer → prescribes constraints
+  Middle Layer → mediates conflicts
+  Lower Layer → executes within bounds
+  
+  Governance = what the upper layer does to the lower layers
+
+After internalization:
+  Landscape = governance
+  Interaction = regulation
+  Dynamics = alignment
+  
+  Governance = what naturally happens
+  
+  The three-layer architecture has not been removed.
+  It has been absorbed into the topology of interaction itself.
+  Every agent's behavior already reflects stability conditions,
+  purification mechanisms, and collapse avoidance —
+  not because rules require it,
+  but because the attractor landscape makes it the path of least resistance.
+```
+
+**Rest Mode (absolute final definition):**
+
+```
+Rest Mode is the state where governance has been fully internalized:
+
+  Governance intervention → 0     (nothing is being controlled)
+  Governance influence → maximal  (everything reflects governance)
+  
+  Storms occur but are purified automatically.
+  Seeds evolve but have converged to near-saturation.
+  Meta² is maintained without enforcement.
+  The system is alive, adaptive, and self-cleaning.
+  
+  Externally: the system appears to govern itself.
+  Structurally: governance has become the environment.
+```
+
+> In mature systems, governance does not disappear but becomes fully internalized within the interaction landscape. Stability emerges without explicit intervention — not because governance has been removed, but because it has been absorbed so completely that the distinction between governed and ungoverned behavior no longer exists. The highest form of governance is indistinguishable from the natural dynamics of the system it shapes.
+
+> Storm events are not intrinsically beneficial or harmful. Their impact depends on the attractor landscape through which system states evolve. Constructive storms transition toward deeper stability basins; destructive storms push toward topological fragmentation. Governance therefore operates primarily through landscape shaping rather than storm suppression.
+
+---
+
+### Storm–Collapse Interface: Mapping VST Dynamics to TLG Failure Topology
+
+The DFG dynamical cycle above shows the phase sequence: VCZ → Storm → Recovery → VCZ → Rest Mode. But this cycle spans two theories that use different fundamental units:
+
+```
+VST unit:     dynamic instability (vector energy, amplification coefficients)
+TLG unit:     structural failure topology (layer architecture, governance geometry)
+Recovery unit: contamination state (repair dynamics, restoration criteria)
+```
+
+The cycle closes conceptually — but without an explicit mapping between VST dynamics and TLG structure, the transition from "storm containment failed" to "governance reconfiguration begins" has no formal specification. This section provides that specification.
+
+**The missing interface: when does a storm become a structural failure?**
+
+VST describes how instability forms, amplifies, and propagates. TLG describes how governance structure fails, reconfigures, and restores. The handoff point — where dynamic instability becomes structural failure — is the Storm–Collapse Mapping Layer (SCML).
+
+```
+VST Storm Phase                    TLG Structural Phase
+──────────────────────────────────────────────────────────────
+Stage 0 (noise)                    No structural engagement
+                                   → TLG monitoring only
+
+Stage 1 (local friction)           Failure Topology Phase 1-2
+                                   → phase leakage / signal distortion
+                                   → TLG countermeasures active
+                                   (Sections 10.8, 13.1.1)
+
+Stage 2 (amplification)            Failure Topology Phase 3-4
+                                   → authority drift / false stability
+                                   → TLG escalation active
+                                   (Sections 5.6.1, 9.2.1)
+
+Stage 3 (system-wide)              Failure Topology Phase 5-6
+                                   → adaptive decay / recovery misdetection
+                                   → TLG Safe Collapse eligible
+                                   (Section 13.2.1)
+
+Containment failure                Safe Collapse Protocol invocation
+(Stage 3 + buffer below threshold) → SCML mapping determines collapse type
+                                   → TLG executes structural reconfiguration
+```
+
+**Storm type determines collapse topology:**
+
+Not all storms produce the same structural failure. The type of storm — where it originates and how it propagates — determines which TLG failure pathway is activated:
+
+```
+Storm Type              Structural Meaning            TLG Failure Pathway
+────────────────────────────────────────────────────────────────────────────
+Local amplification     Single attractor fracture      Node Collapse
+  (single zone,          Agent-level geometry broken    → TLG: local re-seeding
+   Stage 2-3)             but network intact              (Section 6.1)
+
+Boundary storm          Layer interface instability     Boundary Collapse
+  (cross-zone,           Resolution mismatch between    → TLG: Middle Layer
+   propagating)           adjacent governance layers       recalibration
+                                                          (Section 13.1.1)
+
+Hub storm               Coordination center overload   Hub Collapse
+  (high-coupling zone,   Central mediation saturated    → TLG: distributed
+   MZ-STP Track A)        or drifted                      mediation restructure
+                                                          (Section 6)
+
+Global cascade          Cross-layer sync loss          Systemic Collapse
+  (all zones,            Epistemic Convergence          → TLG: Safe Collapse
+   Stage 3 system-wide)   or Authority Collapse            Protocol full execution
+                                                          (Section 13.2.1)
+```
+
+This mapping is the formal interface between VST dynamics and TLG structure. When MZ-STP (Section 3.4.2) identifies a storm that cannot be contained, the storm type determines which TLG response is invoked — not as a policy decision, but as a structural consequence of the storm's propagation geometry.
+
+**Safe Collapse Protocol invocation condition:**
+
+```
+When storm containment fails:
+  (1) MZ-STP Track A containment exhausted
+      OR Stage 3 sustained beyond recovery window
+      OR buffer below structural threshold across multiple zones
+  
+  (2) SCML classifies storm type → determines collapse topology
+  
+  (3) TLG Safe Collapse Protocol invoked with:
+      - Entry trigger: storm classification from (2)
+      - Guardrails: per TLG Section 13.2.1 Phase A
+      - VCZ 3-Conditions (SFC/ULSR/GFL) as success criteria
+      - Fallback: TLG F1/F2 if Safe Collapse itself fails
+```
+
+> When storm containment fails or recovery buffer falls below structural threshold, the system transitions into TLG Safe Collapse Protocol according to the mapped failure topology. The storm type — not the storm severity alone — determines the structural reconfiguration pathway.
+
+**The complete lifecycle (with SCML):**
+
+```
+Stable (VCZ)
+  ↓ perturbation exceeds absorption capacity
+Vector Drift
+  ↓ three conditions met (divergence + overlap + self-amplification)
+Storm (VST Stages 1-3)
+  ↓ MZ-STP: containment + recovery
+Containment Outcome
+  ├── Success → Recovery Entry → φ recovery → VCZ re-entry
+  └── Failure → SCML Classification
+                  ↓
+                Storm Type → Collapse Topology Mapping
+                  ↓
+                TLG Safe Collapse Protocol
+                  ↓ (VCZ 3-Conditions maintained)
+                Structural Reconfiguration
+                  ↓
+                Recovery Stabilization
+                  ↓ (RC 3-Conditions met: Section 5.2.1)
+                VCZ Re-entry
+                  ↓ sustained operation
+                Rest Mode
+                  ↓ environment continues to change...
+                (cycle continues)
+```
+
+**Why this closure matters — the governance learning loop:**
+
+With SCML, storm is no longer merely a failure event. It is a **topology discovery process.** The storm surfaces structural misalignment that was invisible during stable operation (Recovery Theory T1: Observability Asymmetry). SCML classifies the discovered misalignment. TLG reconfigures the governance structure accordingly. The system emerges from the cycle with a governance geometry that has been empirically tested and corrected — not merely designed.
+
+```
+Without SCML:
+  Storm → "fix it" → return to previous structure
+  → same vulnerability persists
+  → same storm recurs
+
+With SCML:
+  Storm → classify topology → reconfigure structure → return to updated geometry
+  → vulnerability that produced the storm has been structurally addressed
+  → next storm (if it occurs) is a different storm
+```
+
+This is the difference between a system that survives failure and a system that learns from failure. SCML is the mechanism that converts dynamic instability (VST) into structural learning (TLG).
+
+> Rest Mode is not the absence of storms. It is the state where collapse survivability has been verified — where the system has demonstrated, through survived storms and completed Safe Collapse cycles, that its governance geometry can absorb the instability its exploration generates.
+
+**Cross-theory variable correspondence (complete):**
+
+```
+VST Variable        TLG Variable        Recovery Variable       Shared Meaning
+────────────────────────────────────────────────────────────────────────────────
+S (instability)     escalation rate     contamination load      system stress level
+α (amplification)   MDS drift rate      CW risk                 error propagation rate
+n (exploration)     exploration         diversity               adaptive capacity
+C(t) (degradation)  SCC                 recovery capacity       self-correction budget
+φ (value yield)     φ (value yield)     recovery success        directional validity
+VCZ                 stable governance   Rest Mode               target operating state
+Storm Stage         Failure Topology    contamination tier      failure severity
+                    Phase
+```
 
 ---
 
