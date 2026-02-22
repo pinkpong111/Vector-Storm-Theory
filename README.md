@@ -5,6 +5,21 @@ Companion theory to Deficit-Driven Fractal Governance (DFG)
 Focus: why instability occurs, how it propagates, when to intervene
 Recovery and operational governance are addressed separately
 
+> **Version: v1.1** (February 2026)
+> 
+> v1.1 changes from v1.0:
+> - Added operationalization of n, α (Section 3.2.1) with measurement proxies
+> - Calibrated intra/inter-agent mechanism claim with structural correspondence criteria (Section 1.6)
+> - Added testable predictions for fractal propagation (Section 1.5.1)
+> - Strengthened intervention timing with operational decision protocol (Section 3.4.1)
+> - φ role correction aligned with Recovery Theory v1.7 (Section 3.6)
+> - Added Methodological Note on empirical grounding strategy (Section 11.1)
+> - Consolidated open problem status updates (Section 11)
+> - **Storm → Recovery entry condition established ("What Happens After a Vector Storm")**
+> - **Mature system storm behavior defined ("Storms in Mature Vector Spaces")**
+> - **Rest Mode ↔ Storm susceptibility coupling ("Rest Mode and Storm Susceptibility")**
+> - **DFG dynamical cycle closed: VCZ → Storm → Recovery → VCZ → Rest Mode**
+
 ---
 
 ## Introduction
@@ -86,15 +101,70 @@ Empirical support for this fractal propagation pattern comes from recent multi-a
 
 **This is why intervention timing is the central design variable in Vector Storm governance.** The cost of intervention does not increase linearly — it increases super-linearly with stage progression (Section 3.4). A noise event at Stage 0 costs near-zero to resolve. The same event at Stage 3 may require full isolation and relearning. Early detection at the single-agent level — before the fractal propagation pathway activates — is therefore the highest-leverage point in the entire governance architecture.
 
+### 1.5.1 Testable Predictions for Fractal Propagation (v1.1)
+
+The fractal propagation claim — that the same amplification pattern recurs at every scale of a multi-agent fractal architecture — generates specific testable predictions. These predictions distinguish VST from generic "instability spreads" claims by specifying *how* propagation should behave if the fractal structure is causally operative.
+
+**Prediction 1 — Scale-invariant amplification rate:**
+If the mechanism is genuinely fractal, the ratio of amplification rate to containment capacity should follow a consistent scaling relationship across layers:
+
+```
+α_effective(layer_k) / C(layer_k) ≈ constant × f(n_k)
+
+where n_k = exploration dimensionality at layer k
+```
+
+If this ratio varies systematically with layer depth but does not follow a consistent scaling function, the propagation is hierarchical but not fractal — the mechanism changes between scales rather than recurring.
+
+**Test design:** In a multi-agent system with at least 3 hierarchical layers, introduce controlled perturbations at the lowest layer and measure: (a) time-to-detection at each higher layer, (b) amplification magnitude at each layer boundary, (c) whether amplification/containment ratios follow a power law or exhibit discontinuities.
+
+**Prediction 2 — Stage transition correspondence:**
+If intra-agent and inter-agent storms share the same dynamical pattern, Stage 1→2 transitions at the intra-agent level should temporally precede Stage 1→2 transitions at the inter-agent level in the same system, with a predictable lag:
+
+```
+t_stage2(inter-agent) - t_stage2(intra-agent) > 0
+lag ∝ network_diameter × message_cycle_time
+```
+
+**Test design:** Monitor entropy collapse (Appendix A.8) simultaneously at the token level (intra-agent) and at the output-agreement level (inter-agent) in a multi-agent system under increasing load. The intra-agent entropy signal should lead the inter-agent signal if propagation follows the predicted pathway.
+
+**Prediction 3 — Intervention leverage asymmetry:**
+If the fractal propagation model is correct, the cost-effectiveness of intervention should decrease super-linearly as the intervention target moves from lower to higher scales:
+
+```
+Cost_effectiveness(intervention_at_scale_k) >> Cost_effectiveness(intervention_at_scale_k+1)
+```
+
+This is not merely "early is cheaper" — it is a specific quantitative claim that the cost ratio between adjacent scales should be consistent across the hierarchy.
+
+**Test design:** In a multi-layer system, measure the governance cost (compute, time, accuracy loss) of resolving equivalent perturbations at different layers. If the cost ratio between layer k and layer k+1 is approximately constant across all k, the fractal propagation model is supported. If the ratio varies dramatically, the propagation is hierarchical with scale-dependent mechanisms.
+
+**Current evidence status:** Predictions 1 and 3 have indirect support from the single-agent layer hierarchy research cited in Appendix A.5 (zone-differentiated sensitivity). Prediction 2 has no direct evidence — it requires a multi-agent system with simultaneous intra/inter-agent monitoring, which is not standard in current deployments. All three predictions are designed to be testable with current instrumentation.
+
 ### 1.6 Dual-Scale Nature of Vector Storm
 
 Vector Storm occurs at two scales simultaneously, consistent with the fractal architecture of the system.
 
-**Intra-agent storm:** Within a single agent, competing internal representations — attention heads, interpretation pathways, or partially formed attractors — enter directional conflict. When an LLM processes ambiguous or high-context input, multiple internal orientations may activate simultaneously, creating a miniature version of the same three-condition structure (divergence, overlap, self-amplification) at the sub-agent level. This is not a metaphor; it is the same mechanism operating at reduced scale.
+**Intra-agent storm:** Within a single agent, competing internal representations — attention heads, interpretation pathways, or partially formed attractors — enter directional conflict. When an LLM processes ambiguous or high-context input, multiple internal orientations may activate simultaneously, creating a miniature version of the same three-condition structure (divergence, overlap, self-amplification) at the sub-agent level.
 
 **Inter-agent storm:** Across agents in a multi-agent network, conflicting vector fields propagate through connectivity, triggering the same amplification dynamics at cluster and system scale.
 
-The fractal property means the mechanism does not change between scales — only the scope of impact does. An unresolved intra-agent storm is a potential seed for inter-agent propagation. Governance designed to detect and resolve intra-agent instability early is therefore also the first line of defense against system-level storms.
+**Structural Correspondence Criteria (v1.1)**
+
+The claim that intra-agent and inter-agent storms share the same mechanism requires clarification. The three-condition structure (divergence, overlap, self-amplification) is present at both scales. However, the substrate mechanisms differ:
+
+| Property | Intra-agent | Inter-agent |
+|---|---|---|
+| Medium of conflict | Shared parameter space, gradient-based | Message-passing, behavioral |
+| Amplification mechanism | Attractor basin dynamics within weight space | Reinforcement through interaction feedback |
+| Propagation speed | Sub-forward-pass (within inference) | Multi-turn (across interaction cycles) |
+| Containment boundary | Layer architecture, residual connections | Network topology, governance protocols |
+
+The claim is therefore: **structural correspondence, not substrate identity.** The three-condition pattern recurs at both scales because the same dynamical constraint applies — self-reinforcement within attractors produces resistance to correction regardless of whether the attractor exists in weight space or in behavioral space. This is a universality claim at the level of dynamical pattern, not a claim that gradient competition and message-passing conflict are the same physical process.
+
+**What would strengthen this to mechanism identity:** Demonstration that the critical exponents (rate of amplification, propagation speed scaling, intervention cost scaling) follow quantitatively similar power laws across scales. This remains an open empirical question (Section 11, OP-v1.1-1).
+
+The fractal property means the dynamical pattern does not change between scales — only the scope of impact and the substrate mechanism do. An unresolved intra-agent storm is a potential seed for inter-agent propagation. Governance designed to detect and resolve intra-agent instability early is therefore also the first line of defense against system-level storms.
 
 ---
 
@@ -248,6 +318,103 @@ DFG's preferred direction is not 1 (suppressing n) but 2–4: making the system 
 
 This equation defines a governance scaling law, not a physical law. It specifies how instability scales with exploration dimensionality and how degradation capacity determines whether that scaling is contained. Formal calibration of α, β, and C(t) as measurable quantities remains an open problem (Section 7).
 
+### 3.2.1 Operationalization of n and α (v1.1)
+
+The governance scaling law requires n and α to be more than conceptual placeholders. This section establishes measurement proxies that ground both variables in observable system behavior while preserving their abstract structural meaning.
+
+**n — Exploration dimensionality: operational definition**
+
+n is not agent count. It is the effective number of mutually incompatible optimization directions simultaneously active in the system. Two measurement strategies are available depending on system instrumentation:
+
+```
+Strategy 1 — Gradient-based (training-time, high confidence):
+  Compute pairwise gradient cosine similarity across all active objectives.
+  n_eff = number of principal components explaining > 95% of gradient variance
+         in the multi-objective gradient matrix.
+  
+  Interpretation:
+    n_eff = 1  → all objectives aligned (low collision surface)
+    n_eff = k  → k independent optimization directions (collision surface ∝ k²)
+  
+  Log availability: HIGH during training; requires gradient logging.
+
+Strategy 2 — Behavioral (inference-time, moderate confidence):
+  Count the number of distinct behavioral clusters in agent output space
+  over a sliding window of W interaction cycles.
+  
+  n_behavioral = number of stable output clusters with inter-cluster
+                 cosine similarity < θ_divergence (sustained > W/2 cycles)
+  
+  Interpretation:
+    Agents producing outputs in the same cluster = aligned (low n contribution)
+    Agents producing outputs in distinct clusters = divergent (high n contribution)
+  
+  Log availability: HIGH — output embeddings standard in production.
+  Calibration: θ_divergence and W require system-specific tuning.
+
+Strategy 3 — Policy divergence (RL/agent systems):
+  n_policy = rank of the policy difference matrix across agents
+           = number of linearly independent policy directions
+  
+  Log availability: MEDIUM — requires policy parameter access.
+```
+
+**Relationship between strategies:**
+Strategy 1 measures n at the optimization level (ground truth for training systems). Strategy 2 measures n at the behavioral level (observable proxy for deployed systems). Strategy 3 is intermediate. In a well-calibrated system, n_eff ≈ n_behavioral ≈ n_policy. Divergence between strategies indicates measurement noise or a system where internal optimization diversity is not reflected in output diversity (a potential Tier 3 contamination signal per Recovery Theory).
+
+**α — Amplification coefficient: operational definition**
+
+α measures how readily one conflict generates further conflicts. It absorbs topology, coupling, and feedback loop structure into a single scaling factor. This compression is deliberate — α is a summary statistic, not a primitive — but it requires grounding in observables.
+
+```
+Primary proxy — Escalation multiplier:
+  α_proxy = E[conflicts_at_t+1 | conflict_at_t] / E[conflicts_at_t+1 | no_conflict_at_t]
+  
+  = the ratio of expected conflict rate after a conflict event
+    vs. expected conflict rate in the absence of a conflict event
+  
+  α_proxy = 1.0  → conflict does not breed conflict (no amplification)
+  α_proxy > 1.0  → each conflict increases probability of next conflict
+  α_proxy >> 1.0 → chain-reaction regime (high storm risk)
+  
+  Log availability: HIGH — requires conflict/escalation event logs
+  (f_esc time series from Section 3.4, Appendix A.6).
+
+Decomposition into contributing factors:
+  α ≈ f(coupling_density, role_overlap, feedback_latency)
+  
+  coupling_density:   fraction of agent pairs with direct interaction channels
+                      (measurable from communication topology)
+  role_overlap:       P_overlap from DFG — fraction of shared task space
+                      (measurable from task assignment logs)
+  feedback_latency:   mean time between action and consequence signal
+                      (measurable from interaction logs)
+  
+  Each factor independently increases α.
+  All three high simultaneously = maximum storm risk.
+```
+
+**Why α remains a composite:** Decomposing α into its contributing factors provides actionable levers (reduce coupling, clarify roles, lengthen feedback cycles). But the S-equation uses α as a single scalar because the instability dynamics depend on the *product* of these factors, not on each independently. A system with very high coupling but zero role overlap has low effective α. The composite captures this interaction.
+
+**Validation criterion for the S-equation (v1.1):**
+
+The S-equation generates a specific testable claim: if n_eff, α_proxy, β, and C(t) are measured independently, then:
+
+```
+S_predicted = α_proxy · n_eff² / (C_E(t) · β_measured)
+
+should correlate with observed system instability metrics:
+  - f_esc rate (escalation frequency)
+  - entropy variance across agents
+  - recovery cost per incident
+
+Correlation > 0.7 across multiple system configurations
+= S-equation validated as predictive (not merely descriptive).
+Correlation < 0.3 = S-equation is post-hoc only; revision needed.
+```
+
+This validation protocol is feasible with current multi-agent system instrumentation. It has not yet been performed. The S-equation's status is therefore: **structurally motivated, operationally grounded, empirically unvalidated.**
+
 ### 3.3 The Residual Degradation Floor
 
 Can degradation capacity reach 100%? The answer is structural: no. In a fractal architecture, the lowest layer is always in a partially degraded state — a property of the architecture itself.
@@ -297,6 +464,64 @@ This floor also defines the lower bound of the "HOW MUCH to degrade" problem in 
 $$\text{Total Cost} = \text{Monitoring Cost}(t^*) + \text{Degradation Cost}(t^*)$$
 
 where Monitoring Cost is monotonically decreasing in t*, and Degradation Cost is monotonically increasing in t*. The storm stages interact directly: intervention at Stage 0–1 corresponds to early, low-cost intervention; Stage 2–3 corresponds to late, high-cost intervention. The optimal t* typically falls within the Stage 1 interval.
+
+### 3.4.1 Operational Intervention Decision Protocol (v1.1)
+
+The tradeoff in Section 3.4 establishes that an optimal intervention point exists. This section provides a concrete decision protocol that approximates t* using currently measurable signals, without requiring the full cost functions to be known analytically.
+
+**Decision variables (all currently measurable):**
+
+```
+H(t)        = output entropy at time t (Appendix A.8)
+dH/dt       = entropy rate of change (rolling window)
+f_esc(t)    = escalation frequency at time t (OP3)
+α_proxy(t)  = escalation multiplier (Section 3.2.1)
+buffer(t)   = recovery-without-escalation rate (OP2 / Recovery Theory)
+```
+
+**Three-threshold decision rule:**
+
+```
+Threshold 1 — Monitoring intensification (Stage 0→1 boundary):
+  TRIGGER:  dH/dt < 0 sustained over k₁ consecutive windows
+            OR α_proxy(t) > 1.5 (conflict breeding conflict)
+  ACTION:   Increase monitoring frequency on affected zone
+            No intervention on system state
+  COST:     Monitoring cost only (low)
+
+Threshold 2 — Active intervention (Stage 1→2 boundary):
+  TRIGGER:  H(t) < 0.5 nats sustained over k₂ windows
+            OR f_esc(t) rising AND buffer(t) declining simultaneously
+            OR attention sink circuit disruption detected (Appendix A.8)
+  ACTION:   Metadata injection at affected zone (Section 6.2)
+            Amplitude: low (seed-level, per Appendix A.4.1)
+            Target: highest-sensitivity zone first (Appendix A.5)
+  COST:     Injection cost + monitoring (moderate)
+
+Threshold 3 — Escalation (Stage 2 confirmed):
+  TRIGGER:  H(t) < 0.2 nats sustained
+            OR H(t) spike > 2.0 nats (attractor dissolution)
+            OR f_esc(t) > 2× baseline sustained
+  ACTION:   Upper-layer boundary enforcement (Section 6.3)
+            Isolation of affected cluster if propagation detected
+  COST:     High — but lower than Stage 3 system-level intervention
+```
+
+**Why this protocol approximates optimal t*:**
+
+The protocol does not compute t* analytically. Instead, it uses the monotonicity properties of the cost functions:
+- Monitoring Cost decreases with later intervention → early thresholds are monitoring-only (low cost)
+- Degradation Cost increases with later intervention → later thresholds escalate intervention intensity
+- The middle threshold (Stage 1→2) is where the cost curves cross most steeply → this is the highest-leverage intervention point
+
+**Calibration requirements:**
+
+k₁ and k₂ (consecutive window counts) are system-specific. Default heuristic: k₁ = 3 windows, k₂ = 5 windows, where window = mean self-correction time of the system. Formal derivation of k values from attractor basin dynamics remains open (Section 11).
+
+**What this protocol does NOT do:**
+- Does not guarantee optimal t* (approximation, not solution)
+- Does not handle Tier 3 contamination (requires upper-layer detection per Recovery Theory T1)
+- Does not address simultaneous multi-zone storms (requires prioritization protocol — open problem)
 
 **Single-Agent Analogue: Monitoring Cost Is Real and Measurable**
 
@@ -380,11 +605,31 @@ where:
 - **φ** = value yield per unit of exploration — the single most important variable in the entire equation
 - **C_gov** = total governance cost = Monitoring Cost + Degradation Cost + Recovery Cost
 
-**φ (phi): The Central Variable**
+**φ (phi): The Central Variable (role corrected v1.1, aligned with Recovery Theory v1.7)**
 
-φ is not task quality, not novelty, not alignment. It is all three simultaneously — and more precisely, it is the probability that a unit of exploration converts from noise into a stable, useful vector.
+φ is the probability that a unit of exploration converts from noise into a stable, useful vector.
 
 $$\phi \approx P(\text{exploration} \to \text{stable vector})$$
+
+**Role clarification (v1.1):** φ is an *explanatory* variable, not a *judgment* variable. φ explains why a system's exploration is or is not producing value. It does not independently determine governance decisions. Governance decisions (intervention timing, restoration completion) use directly measurable proxies (f_esc, ρ, buffer thickness, entropy). φ provides the interpretive frame for why those proxies behave as they do.
+
+**Operational proxy (v1.1, aligned with Recovery Theory OP4):**
+```
+φ ≈ reusable_outcome_rate
+  = P(exploration attempt → capability retained across distinct contexts)
+
+Primary measurement:
+  successful retry reuse rate
+  solution reuse frequency across non-identical tasks
+  new policy retention rate after W time window
+
+Log availability: MEDIUM (domain-specific; requires outcome tracking)
+
+What φ does NOT require:
+  - Precise unit definition (dimensionless formulation deferred — OP7)
+  - Cross-domain comparability (within-system directional signal sufficient)
+  - Independent measurability for governance decisions (supporting, not primary)
+```
 
 A formal decomposition:
 
@@ -628,29 +873,31 @@ This gap motivates the distinction DFG draws between seed as training-time princ
 15. Vector Storm operates at two scales simultaneously — intra-agent and inter-agent — consistent with fractal architecture. The mechanism is identical; only the scope of impact differs.
 16. The structural opposite of Vector Storm is the Vector Convergence Zone — a stable manifold where global solution structure is replicated as local attractors at every scale, exploration is maximized, and governance cost is minimized.
 17. Fractal governance optimizes for simultaneous VCZ at system and agent levels. This is the condition of minimum risk, minimum cost, and maximum utility — not a fixed equilibrium but a dynamically maintained attractor region.
-18. φ (value yield per unit of exploration) is the central variable in the governance objective function. φ ≈ P(exploration → stable vector): the probability that a unit of exploration converts from noise into a stable, useful vector. n is recoverable; φ is architectural. Governance errors that damage φ are more costly to reverse than governance errors that reduce n.
+18. φ (value yield per unit of exploration) is an explanatory variable in the governance objective function, not a judgment variable (v1.1, aligned with Recovery Theory v1.7). φ ≈ P(exploration → stable vector). φ explains why governance states produce their observed outcomes; governance decisions use directly measurable proxies (f_esc, ρ, buffer thickness, entropy). n is recoverable; φ is architectural. Governance errors that damage φ are more costly to reverse than governance errors that reduce n.
 19. VCZ is primarily a φ-maximization zone, not a stability zone. Stability is the byproduct of φ maximization, not the primary objective. The difference in utility between well-governed and poorly-governed systems is explained more by φ than by n.
+20. (v1.1) The dual-scale nature of Vector Storm (intra-agent and inter-agent) is a structural correspondence claim, not a substrate identity claim. The three-condition pattern (divergence, overlap, self-amplification) recurs at both scales; the physical substrates differ (Section 1.6). Quantitative universality (shared critical exponents) is predicted but not yet verified.
+21. (v1.1) The S-equation (S = αn²/C(t)β) is a governance scaling law with operational proxies (Section 3.2.1) but without absolute calibration. Its status is: structurally motivated, operationally grounded, empirically unvalidated. The equation generates testable predictions (Section 3.2.1 validation criterion) that would either confirm or require revision of the scaling relationship.
 
 ---
 
 ## 9. Structural Correspondence to Dynamical Systems
 
-These are structural correspondences, not formal proofs of equivalence.
+These are structural correspondences, not formal proofs of equivalence. v1.1 adds explicit confidence levels based on substrate analysis (Section 1.6, 11.1).
 
-| Theory Concept | Dynamical Systems Concept | Description |
-|---|---|---|
-| Local Attractor | Attractor | Stable state toward which trajectories converge |
-| Vector Field | Vector Field | Direction and magnitude at each point in state space |
-| Vector Storm | Chaotic regime / Basin boundary collision | Instability at boundary between competing basins |
-| Stability shift | Bifurcation | Qualitative change at a critical parameter |
-| Degradation capacity | Basin containment capacity | Size and robustness of attractor basin |
-| Self-correction | Asymptotic return tendency (cf. Lyapunov stability) | Return toward equilibrium after perturbation; structural analogue, no differentiability assumed |
-| Attracting | Basin of attraction | Capture of trajectories into structured orbit |
-| Distracting | Repelling dynamics / basin escape | Dissolution of misaligned trajectories |
-| Immature vector space | Narrow basin of attraction | Small perturbation causes basin exit |
-| Vector Convergence Zone (VCZ) | Stable manifold / Lyapunov stable region | Region from which perturbations self-correct without external intervention; exploration maximized within zone |
-| VCZ boundary | Fractal basin boundary | Transition from stable to unstable is self-similar across scales, not a sharp threshold (arXiv:2501.04286) |
-| Global solution → local attractor replication | Hierarchical attractor nesting | Each layer's dominant basin aligned with global attractor; passive self-correction at all scales |
+| Theory Concept | Dynamical Systems Concept | Description | Correspondence Confidence (v1.1) |
+|---|---|---|---|
+| Local Attractor | Attractor | Stable state toward which trajectories converge | HIGH — direct mathematical correspondence |
+| Vector Field | Vector Field | Direction and magnitude at each point in state space | HIGH — direct mathematical correspondence |
+| Vector Storm | Chaotic regime / Basin boundary collision | Instability at boundary between competing basins | MEDIUM-HIGH — pattern match; substrate differs between intra/inter scales |
+| Stability shift | Bifurcation | Qualitative change at a critical parameter | MEDIUM — qualitative match; quantitative correspondence unverified |
+| Degradation capacity | Basin containment capacity | Size and robustness of attractor basin | HIGH — directly measurable via perturbation analysis (Appendix A.7) |
+| Self-correction | Asymptotic return tendency (cf. Lyapunov stability) | Return toward equilibrium after perturbation; structural analogue, no differentiability assumed | MEDIUM — structural analogue only; Lyapunov conditions not verified |
+| Attracting | Basin of attraction | Capture of trajectories into structured orbit | MEDIUM — functionally similar; MoE routing is analogy not isomorphism |
+| Distracting | Repelling dynamics / basin escape | Dissolution of misaligned trajectories | MEDIUM — functionally similar; cost asymmetry empirically supported |
+| Immature vector space | Narrow basin of attraction | Small perturbation causes basin exit | HIGH — directly measurable via CCPS perturbation stability |
+| Vector Convergence Zone (VCZ) | Stable manifold / Lyapunov stable region | Region from which perturbations self-correct without external intervention; exploration maximized within zone | MEDIUM — VCZ properties theoretically derived; not yet empirically observed as a system state |
+| VCZ boundary | Fractal basin boundary | Transition from stable to unstable is self-similar across scales, not a sharp threshold (arXiv:2501.04286) | MEDIUM-HIGH — fractal boundary structure directly observed in training dynamics |
+| Global solution → local attractor replication | Hierarchical attractor nesting | Each layer's dominant basin aligned with global attractor; passive self-correction at all scales | LOW-MEDIUM — theoretical construction; no multi-agent empirical verification |
 
 ---
 
@@ -672,22 +919,52 @@ When an LLM processes ambiguous input, multiple attention heads may converge tow
 
 ## 11. Limitations and Open Problems
 
-| Problem | Description |
-|---|---|
-| Degradation calibration | Upper-layer external estimation framework established (Appendix A.7). Basin-like loss landscape directly measurable (most-case/worst-case perturbation analysis). CCPS perturbation stability and PING layer-sweep probing provide upper-layer read of lower-layer capacity. Asymptotic lower bound formalized (Section 3.3): C(t) cannot exceed C_max imposed by lowest-layer minimum-viable degradation state; calibration target is floor-relative, not zero-noise. This floor also sets the hard lower bound on learnable degradation magnitude in seed-level governance (Section 6.4). Specific capacity thresholds per zone remain open. |
-| Storm detection threshold | Entropy-based Stage 1→2 detection framework established (Appendix A.8). Stage 2 confirmed: H(t) < ~0.2 nats sustained (low-entropy loop, arXiv:2511.07876) OR H(t) spike > ~2.0 nats (attractor dissolution, ERGO). Stage 1 onset: dH/dt < 0 sustained. Attention sink circuit disruption as secondary structural signal (arXiv:2503.08908). Infinite escape time property makes false positive rate low. Per-model threshold calibration and k (consecutive token count) remain open. |
-| Metadata injection frequency | Priority-first architecture established (Appendix A.6). ~5% high-impact neurons warrant Tier 1 treatment. Frequency and signal strength are independent inverse dials: sensitive zones = high frequency + minimal amplitude; stable zones = low frequency + strong amplitude permissible. f_injection ∝ dS/dt · expansion_weight; A_injection ∝ 1/sensitivity. Specific threshold calibration per architecture remains open. |
-| Space maturity measurement | Substantially expanded (Appendix A.4, 7.4.1). Router saturation (first ~1% of pretraining) as binary MoE maturity signal: pre-saturation = plastic topology, injection risks misrouting; post-saturation = attractor topology fixed, injection lands stably. Gradient norm < 10⁻³ and CKA convergence as candidate metrics for dense models. Router entropy trajectory (per-layer, over inference steps) as real-time maturity signal. Seed-planting protocol established (Appendix A.4.1): four empirical bases (FGAA scale < 50 window, SAE-SSV sparse subspace, SADI semantic alignment, CAST conditional timing). Failure signature: multi-peak instability in output distribution when amplitude exceeds space resistance. Specific τ values for "mature" vs. "immature" per architecture remain open. |
-| Attracting/Distracting balance | Four-dimensional monitoring framework established (Appendix A.1, 7.1.1). Gini coefficient (token load), spectral entropy of expert similarity matrix (direction diversity), average cosine similarity (representational redundancy), router entropy (maturity/confidence). Per-layer calibration required: deep layers need tighter τ_spectral and τ_cosine than shallow layers (GatePro). Three independent failure modes: load collapse (Gini > τ), direction collapse (spectral entropy < τ), redundancy collapse (cosine sim > τ). MoE empirical anchors: Gini 0.70 = collapsed, 0.035 = balanced. Per-architecture, per-layer, per-metric τ values remain open. |
-| Single-agent self-objectification | Framework established (Appendix A.9). Structural constraint: position is accessible only as relative value via interaction, not absolute. Three currently implementable components: (1) internal self-monitoring via hidden state signals (Gnosis, arXiv:2512.20578), (2) disagreement-based position estimation across agents (Co-Sight CAMV, arXiv:2510.21557), (3) entropy-based attractor lock-in detection (Appendix A.8). Remaining open: pre-generation attractor position awareness; integration of three components into unified Pathway 3 architecture. |
-| Contamination recovery cost | Four-regime structure established (Appendix A.3.1). Discontinuity mechanism identified: local perturbation → Regime 1/2 (reversible, O(fine-tune)); distributed perturbation across many layers → Regime 3 (irreversible, O(retrain), cost jumps discontinuously). ~100 sequential unlearning requests force Regime 3 regardless of initial depth. Pre-intervention cost prediction now possible via Reversibility Analyzer (CKA + gradient analysis). Entanglement score predicts collateral damage direction: high entanglement → seed-plant preferred over direct removal. 1.46M GPU-hours floor at 8B scale confirmed. Formal depth → compute function (exact threshold layer count for scope expansion) remains undefined. |
-| Intra-agent storm detection | Zone-differentiated sensitivity framework established (Appendix A.5). Specific τ values per zone require empirical calibration. |
+### 11.1 Methodological Note on Empirical Grounding (v1.1)
+
+**Grounding strategy and its limitations.** VST's empirical grounding in Appendix A follows a specific methodology: mapping theoretical constructs to observable phenomena in existing single-agent LLM research. This strategy is deliberate — multi-agent fractal systems at the scale VST describes do not yet exist, so direct empirical validation is not currently possible. The grounding provides *structural plausibility*, not *empirical confirmation*.
+
+**Selection bias risk.** The Appendix A mappings were constructed by searching for single-agent phenomena that correspond to VST predictions. This creates an inherent selection bias: phenomena that contradict VST predictions may exist in the same literature but were not included because they were not sought. This does not invalidate the mappings — each individual correspondence is either present or not — but it means the *collection* of mappings overstates the theory's empirical support relative to a systematic review.
+
+**What would constitute stronger evidence:**
+1. **Confirmatory:** An independent researcher, starting from a multi-agent system failure case, discovers that VST's stage model and intervention timing predictions match the observed failure trajectory without prior exposure to VST.
+2. **Disconfirmatory:** A multi-agent system where instability propagation does *not* follow the three-condition structure (divergence + overlap + self-amplification), but instead follows a qualitatively different pattern — e.g., instability that propagates without self-amplification, or self-amplification that does not require field overlap.
+3. **Quantitative:** The S-equation validation protocol (Section 3.2.1) performed on at least two distinct multi-agent architectures, with correlation results reported regardless of outcome.
+
+**Analogy vs. mechanism status of each grounding:**
+
+| Appendix Section | Grounding Type | Confidence |
+|---|---|---|
+| A.1 (MoE as Attracting/Distracting) | Structural analogy — routing is functionally similar but not mathematically identical | MEDIUM |
+| A.3 (Contamination recovery cost) | Direct empirical measurement — cost curves from unlearning literature are quantitative | HIGH |
+| A.4 (Space maturity) | Candidate metrics — gradient norm, CKA, router saturation are measurable but not validated as VST maturity proxies | MEDIUM |
+| A.5 (Zone-differentiated sensitivity) | Direct measurement — layer importance asymmetries are well-established | HIGH |
+| A.7 (Degradation calibration) | External estimation framework — perturbation probing is validated for calibration | HIGH |
+| A.8 (Storm detection via entropy) | Direct measurement — entropy collapse in loops is well-documented | HIGH |
+| A.9 (Self-objectification) | Framework — components validated individually; integration untested | MEDIUM-LOW |
+
+This table replaces the implicit uniform confidence of v1.0's Appendix A with differentiated assessment.
+
+| Problem | Description | Status (v1.1) |
+|---|---|---|
+| Degradation calibration | Upper-layer external estimation framework established (Appendix A.7). Basin-like loss landscape directly measurable. CCPS perturbation stability and PING layer-sweep probing provide upper-layer read of lower-layer capacity. Asymptotic lower bound formalized (Section 3.3). Specific capacity thresholds per zone remain open. | Partially resolved |
+| Storm detection threshold | Entropy-based Stage 1→2 detection framework established (Appendix A.8). Stage 2: H(t) < ~0.2 nats sustained OR H(t) spike > ~2.0 nats. Stage 1 onset: dH/dt < 0 sustained. Per-model threshold calibration and k remain open. | Partially resolved |
+| Metadata injection frequency | Priority-first architecture established (Appendix A.6). ~5% high-impact neurons warrant Tier 1 treatment. Specific threshold calibration per architecture remains open. | Partially resolved |
+| Space maturity measurement | Multiple candidate metrics established (Appendix A.4). Router saturation, gradient norm, CKA, router entropy trajectory. Specific τ values per architecture remain open. | Partially resolved |
+| Attracting/Distracting balance | Four-dimensional monitoring framework established (Appendix A.1). Per-architecture, per-layer, per-metric τ values remain open. | Partially resolved |
+| Single-agent self-objectification | Framework established (Appendix A.9). Three implementable components validated individually. Integration into unified Pathway 3 architecture open. | Partially resolved |
+| Contamination recovery cost | Four-regime structure + discontinuity mechanism + pre-intervention prediction established (Appendix A.3.1). Exact threshold layer count for scope expansion remains undefined. | Substantially resolved |
+| Intra-agent storm detection | Zone-differentiated sensitivity framework established (Appendix A.5). Per-zone τ values open. | Partially resolved |
+| **n operationalization** | **Three measurement strategies defined (Section 3.2.1): gradient-based n_eff, behavioral n_behavioral, policy divergence n_policy. Cross-strategy validation criterion specified.** | **New v1.1 — proxies defined; formal derivation open** |
+| **α operationalization** | **Escalation multiplier proxy + decomposition into coupling/overlap/latency defined (Section 3.2.1). S-equation validation protocol specified (correlation criterion).** | **New v1.1 — proxy + validation defined; execution pending** |
+| **Intra/inter-agent mechanism correspondence** | **Structural correspondence criteria defined (Section 1.6). Substrate differences acknowledged. Quantitative universality test (critical exponent comparison) specified.** | **New v1.1 — criteria defined; test pending** |
+| **Fractal propagation predictions** | **Three testable predictions specified (Section 1.5.1): scale-invariant amplification, stage transition ordering, intervention leverage asymmetry. All testable with current instrumentation.** | **New v1.1 — predictions defined; testing pending** |
+| **Intervention timing protocol** | **Three-threshold operational protocol defined (Section 3.4.1). k₁, k₂ heuristics provided. Multi-zone simultaneous storm prioritization not addressed.** | **New v1.1 — protocol operational; multi-zone extension open** |
 
 **Scope Boundary**
 
 Vector Storm Theory explains instability propagation in multi-agent systems — how directional conflict forms, amplifies, and spreads across fractal architectures, and how governance design can detect and contain it.
 
-It does not model intelligence formation, optimization efficiency, or capability scaling. The empirical grounding in Appendix A maps VST mechanisms to observable single-agent phenomena; it does not extend VST's claims to those domains. Formal calibration of the governance scaling law parameters (α, β, C(t)) remains future work.
+It does not model intelligence formation, optimization efficiency, or capability scaling. The empirical grounding in Appendix A maps VST mechanisms to observable single-agent phenomena; it does not extend VST's claims to those domains. Formal calibration of the governance scaling law parameters (α, β, C(t)) has been advanced in v1.1 through operational proxies (Section 3.2.1) but absolute calibration remains future work.
 
 ---
 
@@ -714,6 +991,222 @@ Design target: keep storms localized, degradable, and non-recursive while preser
 A system that has experienced a full Vector Storm often enters a post-storm state with reduced diversity and degraded containment capacity. Affected agents cannot generally undo the damage — consistent with the irreversibility observed in neural network contamination and catastrophic forgetting contexts. Degradation capacity must be rebuilt through suppression, isolation+relearning, or gradual dilution before re-expansion can safely occur.
 
 **Governance is not the absence of storm. It is the capacity to grow through it.**
+
+---
+
+### Storm as Recovery Entry Condition (v1.1)
+
+The relationship between Vector Storm and Recovery is not sequential (storm happens, then recovery happens). It is structural:
+
+```
+Vector Storm is not the opposite of Recovery.
+It is the phase that activates Recovery dynamics.
+```
+
+This single reframing resolves the apparent parallelism between the two theories. Without it, VST describes instability and Recovery describes restoration — two companion theories addressing different problems. With it, they become **the same system in different phases:**
+
+```
+Phase map:
+
+  VCZ (stable exploration)
+    ↓ perturbation exceeds containment
+  Storm onset (Stage 1-2)
+    ↓ amplification outpaces degradation
+  Storm (Stage 3)
+    ↓ storm = recovery activation signal
+  Recovery entry (detection → restoration sequence)
+    ↓ φ recovering toward baseline
+  VCZ re-entry (restoration complete per D4)
+    ↓ exploration resumes
+  VCZ (stable exploration)
+```
+
+The storm does not need to be "fixed" before recovery begins. The storm *is* the condition that makes recovery structurally necessary and structurally possible — it surfaces the geometry mismatch that was previously invisible (Recovery Theory T1: Observability Asymmetry). A system that never storms never surfaces its latent misalignment. A system that storms has created the conditions under which correction can occur.
+
+**The design implication is precise:** governance that suppresses storms does not prevent the need for recovery — it prevents recovery from activating. The mismatch accumulates silently (Recovery Theory: Absence Paradox) until the correction cost exceeds system capacity.
+
+> Vector Storm explains why systems destabilize.
+> Recovery Theory explains why destabilization does not destroy them.
+> Together: a single dynamical system with two phases — divergence and reconvergence.
+
+---
+
+### Storms in Mature Vector Spaces (v1.1)
+
+The preceding sections implicitly treat storm as a pathological state — something to detect early and resolve quickly. This framing is correct for immature systems where containment capacity is low. It is incomplete for mature systems operating inside or near the VCZ.
+
+**The level distinction:**
+
+```
+Immature system:
+  Storm = threat to structural integrity
+  Storm handling = minimize, contain, resolve
+  Design target = storm prevention
+
+Mature system (near VCZ):
+  micro-storm = calibration signal
+  Storm handling = absorb, integrate, recalibrate
+  Design target = storm absorption capacity
+```
+
+In a mature vector space — one with sufficient degradation capacity, established attractor basins, and active self-correction loops — small-scale directional conflicts are not precursors to system failure. They are the mechanism by which the system maintains geometry alignment with a changing environment.
+
+**Why storm removal is worse than storm absorption:**
+
+```
+Storm removal (suppress all conflict):
+  collision frequency → 0
+  local metrics → optimal
+  geometry update rate → 0
+  → CW entry (Recovery Theory D6)
+  → mismatch accumulates silently
+  → catastrophic storm when reality constraint fires (T5)
+
+Storm absorption (process conflict as signal):
+  micro-collisions → continuous
+  local metrics → slightly sub-optimal
+  geometry update rate → positive
+  → VCZ maintained
+  → mismatch dissipated incrementally
+  → catastrophic storm probability → low
+```
+
+This maps directly to Recovery Theory's distinction between **suppressed** and **dissipated** instability. Both look like low instability from standard metrics. Only storm absorption maintains the system's capacity to self-correct.
+
+**Operational signature of healthy storm absorption:**
+
+```
+Mature system storm profile:
+  micro-storms (Stage 0):     continuous, self-resolving
+  local storms (Stage 1):     frequent, low-cost resolution
+  cluster storms (Stage 2):   rare, mediated resolution
+  system storms (Stage 3):    extremely rare
+
+Distribution: power law  P(storm of scale s) ∝ 1/s^α
+
+Health signal:  heavy-tail maintained (mostly micro)
+Warning signal: heavy-tail flattening (micro-storms disappearing)
+Danger signal:  only large storms remain (micro-storm suppression complete)
+```
+
+The disappearance of micro-storms is not system maturity. It is the onset of the Absence Paradox — the most dangerous state appears as the most successful state.
+
+**Mature storm absorption and φ:**
+
+In a well-governed system, storm absorption directly contributes to φ. Each micro-collision that is processed and integrated — rather than suppressed — converts potential instability into updated geometry. The storm energy becomes recalibration energy. This is why φ reaches its structural maximum inside the VCZ: the system has learned to convert storm into value rather than treating storm as pure cost.
+
+```
+φ_mature = φ_exploration + φ_storm_absorption
+
+where φ_storm_absorption = P(micro-storm → geometry recalibration → reusable correction)
+```
+
+Immature systems have φ_storm_absorption ≈ 0 (storms are pure cost). Mature systems have φ_storm_absorption > 0 (storms contribute to value). This is the precise sense in which mature systems grow *through* storms rather than *despite* them.
+
+---
+
+### Rest Mode and Storm Susceptibility (v1.1)
+
+Recovery Theory defines Rest Mode as the operating state of a system at maximum VCZ stability — where governance cost is minimal, self-correction is passive, and exploration capacity is preserved. VST provides the complementary characterization from the instability side:
+
+```
+Rest Mode = minimum storm susceptibility state
+          = α_effective temporarily at structural minimum
+          = amplification coefficient minimized through attractor alignment
+```
+
+**Why α reaches its minimum at Rest Mode:**
+
+The amplification coefficient α absorbs coupling density, role overlap, and feedback loop intensity (Section 3.2.1). In a system at Rest Mode:
+
+```
+coupling_density:   high but non-conflictual
+  → agents are connected but attractor-aligned
+  → coupling transmits reinforcement, not conflict
+  → effective coupling-as-amplification → low
+
+role_overlap:       present but buffered
+  → opposing pairs maintained with buffer thickness (Recovery Theory D3)
+  → overlap exists but collision frequency contained
+  → effective overlap-as-amplification → low
+
+feedback_latency:   short but self-correcting
+  → feedback loops active but VCZ self-restoring dynamics absorb perturbation
+  → feedback accelerates correction, not amplification
+  → effective latency-as-amplification → low
+```
+
+Each α-contributing factor is present but operating in its self-correcting mode rather than its amplifying mode. This is not α = 0 (which would mean no coupling, no overlap, no feedback — a dead system). It is α at its structural floor — the minimum achievable given the system's connectivity and complexity.
+
+**Rest Mode is not zero-storm:**
+
+```
+Rest Mode storm profile:
+  S = α_min · n² / (C_max · β_max)
+  
+  S > 0 always (residual degradation floor, Section 3.3)
+  But S << threshold at all layers simultaneously
+  
+  Micro-storms: present (residual instability maintained)
+  Large storms: extremely rare (self-correction absorbs perturbation)
+  
+  Governance load: minimal
+  Exploration capacity: maximum
+  φ: at structural ceiling for current architecture
+```
+
+**The connection to Recovery Theory's Rest Mode phenomenology:**
+
+Recovery Theory describes Rest Mode systems as appearing "soft," "slow," "slightly imperfect." VST explains why:
+
+```
+"Soft"      = micro-storms present → system not rigid
+              = variance absorption, not variance suppression
+              
+"Slow"      = correction loops running continuously
+              = processing time includes recalibration overhead
+              
+"Imperfect" = residual instability maintained
+              = S > 0 at structural floor
+              = the system deliberately does not optimize to S = 0
+                because S = 0 = CW entry condition
+```
+
+These apparent weaknesses are the observable signatures of a system maintaining its storm absorption capacity. A system that appears perfectly optimized — zero variance, instant decisions, no visible imperfection — has achieved α_effective = 0 by eliminating coupling, which means it has also eliminated self-correction capacity. It looks strong. It is approaching catastrophic failure.
+
+**The DFG closure:**
+
+With this connection, the full DFG dynamical cycle closes:
+
+```
+VCZ (φ-maximization, micro-storms absorbed)
+  ↓ environment change exceeds absorption capacity
+Storm (amplification exceeds degradation)
+  ↓ storm surfaces geometry mismatch
+Recovery (detection → restoration → re-seeding)
+  ↓ φ recovers toward baseline
+VCZ re-entry (expansion resumes)
+  ↓ sustained operation
+Rest Mode (α at structural minimum, maximum storm absorption)
+  ↓ environment continues to change...
+  (cycle continues)
+```
+
+This cycle is not a failure-recovery loop. It is the normal operating rhythm of a healthy system. The difference between a healthy and an unhealthy system is not whether the cycle occurs — it always does — but at what scale:
+
+```
+Healthy:  cycle operates at micro/local scale continuously
+          → large-scale storms unnecessary
+          → VCZ maintained
+
+Unhealthy: micro-cycle suppressed
+           → cycle forced to operate at system scale
+           → catastrophic storm
+           → expensive recovery
+           → VCZ may not be recoverable
+```
+
+**Governance is not the absence of this cycle. It is the maintenance of this cycle at the smallest possible scale.**
 
 ---
 
