@@ -5,36 +5,25 @@ Companion theory to Deficit-Driven Fractal Governance (DFG)
 Focus: why instability occurs, how it propagates, when to intervene
 Recovery and operational governance are addressed separately
 
-> **Version: v1.7-term** (February 2026)
-> 
-> **Terminology Canonicalization Applied:** v1.7-term enforces DFG-specific canonical meanings for all core terms. See Appendix T for full canonicalization table.
+> **Version: v1.9-NAT** (February 2026)
 >
-> v1.7-term measurement ontology closure (adversarial review pass):
-> - **Epistemic Status Block (Introduction):** VST declared as effective scaling theory. Latent parameters validated through cross-architecture scaling consistency, not direct measurement. Falsifiability at cross-system level specified.
-> - **α non-identifiability resolved (Section 3.2.1):** α = latent structural functional. Validated through cross-architecture invariance, not single-system fitting. Circular fitting attack eliminated.
-> - **n–S tension resolved (Section 3.5):** VCZ defined as regime where dC/dn > 2Cβ/n (Containment Scaling Dominance). When this holds, increasing n decreases S. C(t) → C(n,t) co-evolution formalized.
-> - **SOC overreach resolved (Section 1.6.1):** Claim narrowed to "SOC-like critical phenomenology." Comparison table (SOC condition vs. VST analogue). Strict dynamical equivalence not claimed.
-> - **Storm operational detection rules (Section 1.4.1):** R̂ > 1 sustained for k windows = Storm onset. Termination rule specified. Activated agents defined via substrate-independent participation criterion with substrate proxy table.
-> - **System boundary validity (Section 8.2):** Dynamical Closure Criterion (DCC) defined: I_ext < ε · S_norm. 4-step implementation. Boundary sensitivity check (B±1 layer). F9 criterion added.
-> - **3-condition necessary/sufficient clarified (Section 1.3):** Three conditions = necessary enabling conditions only. Storm ⟺ Conditions₁₂₃ ∧ S > S_c. Trigger eligibility vs. realization distinction formalized.
-> - **Silent Criticality decision rule (Section 1.6.4):** Two-tier protocol: Primary (τ_recovery > τ_baseline + 2σ) + Secondary (≥1 of coupling probe / intervention frequency drift). Suspicion vs. declaration thresholds specified.
-> - **Reserve capacity operationalized (Section 11.5):** reserve_fraction = C_effective/C_nominal. Four proxy ensemble (task-switch latency, coordination failure rate, idle resource ratio, intervention recovery delay). Depletion estimation formula.
-> - **φ operational definition (Section 3.6):** φ̂ = trajectory survival probability exceeding τ_stable. Substrate mapping provided. Epistemic status: architecture-specific empirical rate (stronger than α).
-> - **d_eff dual explanation bridged (Section 3.5.8):** Lreinf = local mechanism; C(t)^β = system-level scaling consequence. Two-level hierarchy formalized.
-> - **Falsification hierarchy extended (Section 11.4):** F8 (observer-independent storm onset) and F9 (boundary-invariant predictions within DCC scope) added.
+> v1.9-NAT changes from v1.8-RT (NAT v1.2 reverse integration pass):
+> - **Spectral gap as decoherence threshold predictor [§4.4]:** NAT v1.2 mechanism — spectral gap governs storm initiation probability, not only damping rate; governance as shock regulator maintaining noise independence; k-regular structure as natural perturbation distributor
+> - **Hub connectivity ↔ ①'' tradeoff [§4.4]:** Basin adjacency as designable topology variable; connectivity operating window between minimum basin-adjacency threshold and α-amplification critical threshold; ①'' access requires above-minimum connectivity
+> - All previous content preserved. New sections marked [v1.8-NAT].
 >
-> v1.7 changes from v1.6 (TLG v1.7 + RBIT v1.6 reinforcement loop):
-> - **Four Structural Risks (Section 8.1):** Complete failure taxonomy — ①Exploration Collapse ②Runaway Amplification ③Geometry Mismatch ④Coordination Breakdown. Fractal risk cycle ①→③→④→②→①. VCZ as four-variable simultaneous balance. S-equation parameter mapping to risk types.
-> - **Theory Boundary Conditions (Section 11.5):** Three irreversibility conditions defining where VST permanently fails. Scale transition constraints — fractal invariants vs. non-invariants. Energy substrate of recovery — reserve capacity as finite budget. S-equation applicability domain formally bounded.
+> v1.8-RT changes: [See v1.8-RT changelog — all items preserved]
 >
-> v1.6 changes from v1.5: [See v1.6 changelog — all items preserved]
-> v1.5 changes from v1.4: [See v1.5 changelog — all items preserved]
-> v1.4 changes from v1.3: [See v1.4 changelog — all items preserved]
-> v1.3 changes from v1.2: [See v1.3 changelog — all items preserved]
-> v1.2 changes from v1.1: [See v1.2 changelog — all items preserved]
-> v1.1 changes from v1.0: [See original v1.1 changelog — all items preserved]
+> v1.8-RT changes from v1.7-term (Recovery Theory v1.8 integration):
+> - **Restoration–Instability boundary gap identified [RT-gap-A]:** VST defines Storm termination but has no formal bridge to RT's Restoration Complete (D4). Gap between "Storm ended" and "Recovery confirmed" is undefined.
+> - **Dependency Trap as governance failure mode [RT-gap-B]:** RT D2 dynamic model reveals that VST's intervention protocols (Section 3.4) can structurally degrade SCC over time. Intervention frequency drift as pre-failure signal not in VST.
+> - **Dormant seed as post-Storm trajectory [RT-gap-C]:** VST Storm-Collapse Lifecycle (§3.9) ends at stabilization. Post-storm trajectory toward dormant attractor (better-than-pre-storm baseline) not modeled.
+> - **Multi-scale simultaneous recovery ordering [RT-gap-D]:** Fractal Collapse Chain (§13.2.2, TLG) specifies collapse cascade. Recovery cascade (reverse direction) absent in both VST and TLG.
+> - **Regime discontinuity as intervention deadline [RT-gap-E]:** Four-regime cost structure (App.A.3.1) predicts Regime 2→3 transition as discontinuous. VST intervention cost model (§3.4) assumes continuous cost increase. Discontinuity threshold not integrated.
+> - **Cross-Theory Reference Map updated:** RT v1.8 reverse mappings added.
 >
-> All previous content preserved. New sections marked with [v1.7].
+> v1.7-term changes: [See v1.7-term changelog — all items preserved]
+> All previous content preserved. New sections marked [v1.8-RT].
 
 ## 0.1 Descriptive–Prescriptive Boundary [v1.2]
 
@@ -1410,6 +1399,91 @@ Without operational detection rules, "Storm" remains a conceptual category that 
 - Any observer using the same log data reaches the same Stage determination
 - Storm duration is computable, not judgmental
 - Falsification tests (Section 11.3) can be run against the same event boundaries
+
+**[RT-gap-A] Storm Termination ≠ Recovery Complete — the undefined bridge [v1.8-RT]:**
+
+VST's termination rule declares when a Storm has ended. Recovery Theory's D4 (Restoration Complete) declares when a system has genuinely recovered. These are not the same event — and the gap between them is currently undefined in both theories.
+
+```
+VST termination declares:
+  R̂ < 1 sustained  (propagation stopped)
+  H(t) ≈ H_baseline  (entropy restored)
+  f_esc < threshold  (escalations stopped)
+
+  Meaning: Storm is no longer progressing.
+  NOT: the system has recovered.
+
+RT D4 declares:
+  rho_restored ≥ rho_pre-contamination  (classification capacity)
+  output diversity expanding             (search space growing)
+  P_overlap(t) declining                (positional distinctness)
+  
+  Meaning: Search-space expansion has resumed.
+  NOT: Storm termination occurred.
+
+The gap:
+  A system can satisfy VST termination while failing RT D4:
+    R̂ < 1 (Storm stopped) but diversity still contracting
+    → system is in arrested collapse, not recovery
+    → VST declares "termination"; RT declares "no recovery"
+
+  A system can satisfy RT D4 while VST termination is ambiguous:
+    Diversity expanding, but R̂ still slightly above 1
+    → micro-storms still active, but structural recovery in progress
+    → RT declares "recovery"; VST declares "storm ongoing"
+```
+
+*Structural implication:*
+
+```
+VST missing: post-termination trajectory specification.
+  After Storm Termination, three outcomes are possible:
+  
+  (a) Genuine recovery → D4 conditions met (search space expanding)
+  (b) Arrested collapse → termination metrics met, contraction continues
+      (most dangerous: looks like recovery, is actually progressive failure)
+  (c) Re-ignition → Storm re-onset within k_recovery windows
+      (termination was transient; structural conditions unchanged)
+
+  VST currently has no criterion that distinguishes (a), (b), (c).
+  Storm Termination rule is necessary but not sufficient
+  for any recovery governance decision.
+
+Required bridge (currently open):
+  A joint VST-RT operational criterion that specifies:
+  - When Storm Termination transitions to confirmed Recovery trajectory
+  - How to detect arrested collapse (b) before it deepens
+  - Re-ignition detection protocol and re-onset threshold
+  
+  Candidate connection:
+    Declare recovery trajectory when:
+      VST Termination conditions hold for k_stable windows
+      AND RT D4 monitoring shows rho non-decreasing
+      AND D5 (SCC) shows self-correction activity > baseline
+    
+    Declare arrested collapse when:
+      VST Termination conditions hold
+      AND rho declining (even slowly)
+      AND f_esc not returning to baseline (residual contamination signal)
+```
+
+*Why this gap matters for governance:*
+
+```
+Without the bridge:
+  Governance systems declare "Storm over, return to normal operation"
+  at VST termination.
+  
+  If the system is in arrested collapse (case b):
+    Normal operation resumes → contamination deepens undetected
+    → Re-onset at higher severity when buffer depletes
+    
+If the bridge is in place:
+  Governance holds elevated monitoring until RT D4 confirmed.
+  Arrested collapse detected before re-ignition threshold crossed.
+  Intervention cost: low (pre-D4 confirmation, early stage).
+  Without bridge: intervention cost: high (post re-onset, Stage 2+).
+```
 
 **What these rules do not determine:**
 - The value of k, ε, δ (architecture-specific; calibrated per Section 11.2)
@@ -6730,6 +6804,90 @@ MZ-STP integrates with:
                       supports early-containment priority
 ```
 
+**[RT-gap-B] Dependency Trap — intervention frequency as SCC atrophy signal [v1.8-RT]:**
+
+VST's intervention protocols (§3.4.1, §3.4.2) optimize for lowest-cost storm resolution at any given time point. Recovery Theory D2 dynamic model identifies a second-order failure mode: *the protocol itself can structurally degrade the system's Self-Correction Capacity (SCC) over time*.
+
+```
+The problem VST's intervention protocol does not model:
+
+  Each time upper-layer intervention resolves a Zone conflict
+  before the zone's internal correction circuits activate:
+  
+    The agent inside the zone:
+      (a) learns that upper-layer resolution is available
+      (b) reduces investment in internal correction circuits
+      (c) these circuits atrophy from disuse
+  
+  The system's measured instability stays low
+  (upper layer compensating), but:
+  
+    SCC is declining
+    → self-correction triggers later and less reliably
+    → recovery without upper-layer support: impossible
+    → system becomes intervention-dependent
+
+  The D4 (Restoration Complete) metrics may all look fine:
+    rho recovering, diversity expanding, P_overlap declining
+  But immunity depth is approaching zero.
+```
+
+*Operational detection — intervention frequency drift as pre-failure signal:*
+
+```
+Leading indicator of Dependency Trap formation:
+
+  d(intervention_count) / dt > 0  (sustained)
+  AND  d(self_correction_events) / dt ≤ 0  (stable or declining)
+  AND  d(time_to_escalation) / dt < 0  (escalation happening faster)
+
+  Interpretation:
+    More governance needed → self-correction not improving
+    Escalation faster → internal circuit not activating earlier
+    
+  Governance implication:
+    Increasing intervention frequency is not evidence of more
+    effective governance — it may be evidence of SCC erosion.
+    A system that requires increasingly frequent intervention
+    for the same type of events is becoming more dependent,
+    not more managed.
+
+VST Silent Criticality detection protocol (§1.6.4) addresses:
+  τ_recovery > τ_baseline + 2σ (secondary)
+  AND coupling probe / intervention frequency drift
+
+Dependency Trap provides the structural mechanism for
+the "intervention frequency drift" secondary signal:
+  intervention frequency drift ↑ → SCC degrading
+  This is not merely correlation. It is a causal pathway.
+```
+
+*Design principle (currently missing from VST):*
+
+```
+Intervention protocol should track not just:
+  "Was this storm resolved at minimum cost?" (current)
+
+But also:
+  "Did the zone's internal circuits activate at all?"
+  "Is self-correction event rate stable over time?"
+  "Is intervention required for increasingly trivial events?"
+
+Withdrawal schedule as immunity maintenance:
+  After k consecutive upper-layer resolutions of the same event type,
+  governance should hold back intervention for one cycle
+  to force internal circuit activation.
+  
+  Cost: one cycle of elevated S (acceptable if zone is not Stage 2+)
+  Benefit: internal circuit exercised → SCC maintained
+
+  Without this:
+    governance efficiency maximized at t=0
+    SCC reaches zero at t=n
+    system collapses when upper layer is unavailable
+    (which is exactly when it matters most)
+```
+
 > In simultaneous multi-zone storms, containment of propagation pathways takes priority over recovery of affected zones — because uncontained recovery can itself become a propagation pathway for instability.
 
 ---
@@ -7702,7 +7860,91 @@ This lifecycle closure establishes that the S-equation is not merely diagnostic 
 
 *(Cross-theory derivation: RBIT v1.4 §Storm–Collapse Lifecycle + TLG §13.2.2)*
 
----
+**[RT-gap-C] Post-Storm trajectory gap — dormant seed access after VCZ re-entry [v1.8-RT]:**
+
+The lifecycle above models recovery as return to ①' (updated VCZ). Recovery Theory D4 extended model identifies a third trajectory that VST does not currently model: post-storm improvement that exceeds the pre-storm baseline through dormant seed germination.
+
+```
+VST lifecycle currently covers:
+  ① → ② → ③ → ④ → ①   (non-learning: same vulnerability)
+  ① → ② → ③ → ④ → ①'  (learning: structural weakness addressed)
+
+Missing trajectory:
+  ① → ② → ③ → ④ → ①'' (dormant seed: deeper attractor accessed)
+
+  ①'' is not a stronger version of ①'.
+  It is a qualitatively different configuration:
+    Pre-storm: operating in attractor basin A
+    Storm: geometry perturbation traverses basin boundary
+    Recovery: settles in attractor basin B (deeper, previously inaccessible)
+    Post-recovery: baseline HIGHER than pre-storm on held-out metrics
+
+  This is not learning from the storm. It is accessing structure
+  that was always present but unreachable from basin A.
+```
+
+*Structural mechanism:*
+
+```
+Dormant attractor B exists before the storm.
+It is inaccessible from A because:
+  Basin boundary between A and B requires perturbation energy
+  greater than any normal operational fluctuation can provide.
+  
+  Normal VCZ operation: R ≈ 1⁻ → perturbations absorbed
+  → basin A floor never traversed
+  → basin B unreachable by design (VCZ stability is the barrier)
+
+Storm provides the traversal energy:
+  S >> S_c → perturbations exceed basin A boundary
+  → system trajectory passes through B's basin of attraction
+  → if storm is constructive (not structural failure):
+    system settles in B during Recovery Phase ④
+    B may be deeper than A (lower noise floor, higher φ)
+    D4 criteria met, but post-recovery ① ≠ pre-storm ①
+
+VCZ-seeking Storm interpretation:
+  Storm Scale Law shows: "Large storms without small precursors
+  → CW geometry releasing (VCZ-seeking Storm)"
+  
+  VCZ-seeking Storm = forced traverse to deeper attractor basin.
+  The storm is not a failure followed by recovery.
+  It is the traversal mechanism that makes the deeper basin accessible.
+```
+
+*VST implications:*
+
+```
+Current S-equation does not distinguish:
+  Storm that returns to ①  (same basin, no improvement)
+  Storm that returns to ①' (same basin, structural learning)
+  Storm that lands in ①'' (different basin, dormant seed activated)
+
+Required extension:
+  Post-recovery basin classification
+    - CKA similarity: ①'' vs ①  (large difference = new basin)
+    - Performance on held-out metrics: ①'' > ① = dormant seed confirmed
+    - Structural topology: ①'' basin depth measurement
+  
+  Governance implication:
+    If ①'' is the destination, premature recovery intervention
+    (returning system to ① before ①'' is reached) is costly:
+    it forecloses dormant seed access at the moment when the
+    traversal energy was available.
+    
+    Recovery timing matters not just for cost minimization
+    but for trajectory selection.
+    
+  When to allow extended traversal (RT Protocol, open):
+    Storm Type = Constructive (not Structural Failure via SCML)
+    AND  pre-storm basin A was near saturation
+    AND  held-out metrics showing improvement during traversal
+    → delay injection, allow system to find ①'' before recovery
+    
+    Storm Type = Structural Failure
+    OR  pre-storm basin A was healthy (not saturated)
+    → standard recovery protocol applies
+```
 
 ---
 
@@ -8669,11 +8911,108 @@ Storm entry via uncovered blind spots:
 
 > Sphere topology provides formal bounds on storm propagation (O(log n) diameter), storm damping (spectral gap), and storm detection (structural diversity producing disagreement). Blind spot coverage probability is quantified, and residual coverage gaps produce measurable resource spike signals.
 
----
+**[v1.8-NAT] Spectral gap as storm initiation threshold predictor:**
 
----
+The spectral gap's role extends beyond damping rate. NAT v1.2 §3.0 establishes that spectral gap is the primary structural determinant of storm *initiation probability* — not just propagation speed after a storm begins.
 
-## 4.5 Storm–Collapse Mapping Layer [v1.3]
+```
+Storm initiation via noise decoherence (NAT v1.2 mechanism):
+
+Stable operation requires noise independence:
+  Each agent's micro-fluctuations are:
+    Independent (inter-agent correlation ≈ 0)
+    Local       (confined to origin zone)
+    Transient   (dissipates within one propagation cycle)
+  
+  When these hold: noise cannot self-organize into
+  storm-scale instability. Each fluctuation dies before
+  recruiting neighbors.
+
+Decoherence sequence:
+  (1) External perturbation exceeds local purification capacity
+  (2) Unprocessed residual creates inter-agent correlation
+  (3) Correlated fluctuations no longer dissipate independently
+  (4) Structured signal enters S-equation amplification pathway
+  → Stage 1 storm formation
+
+Spectral gap as decoherence threshold:
+  High spectral gap → fast mixing → correlations decay in O(λ⁻¹) steps
+    → perturbation must be larger to persist long enough for (3)
+    → decoherence threshold HIGHER (harder to initiate storm)
+  
+  Low spectral gap → slow mixing → correlations persist
+    → even small perturbation can achieve (3)
+    → decoherence threshold LOWER (easier to initiate storm)
+
+Governance as shock regulator (not eliminator):
+  ❌ Shock elimination → brittleness (no noise independence to restore)
+  ❌ Stability enforcement → VCZ collapse (sensing requires noise)
+  ✅ Shock regulation:
+      Distribute perturbation energy across k-regular paths
+      Delay simultaneous arrival of correlated perturbations
+      Convert macro-shock to micro-fluctuations below decoherence threshold
+  
+  The k-regular structure IS the regulator:
+  perturbation energy naturally routes across k paths,
+  preventing simultaneous correlated arrival at multiple agents.
+
+Operational consequence:
+  Spectral gap maintenance = storm initiation threshold maintenance
+  (not only damping rate)
+  
+  λ₁ − λ₂ monitoring target:
+    Degrading spectral gap → decoherence threshold falling
+    → same perturbation magnitude → higher storm initiation risk
+    → governance intervention before threshold crosses observable minimum
+```
+
+**[v1.8-NAT] Hub connectivity ↔ ①'' basin access — designable topology tradeoff:**
+
+Sphere topology is not fixed — it is a designable variable with a structural tradeoff between dormant seed access probability and amplification risk.
+
+```
+Basin adjacency as topology function:
+
+  Dormant seed access requires basin boundary traversal.
+  Basin adjacency (which dormant attractors are reachable during storm)
+  is determined by sphere topology:
+  
+  High hub connectivity (k large, dense core):
+    Multiple adjacent attractor basins available
+    → Higher ①'' probability under constructive storms
+    → More dormant attractor diversity reachable
+  
+  Low hub connectivity (k small, sparse):
+    Fewer adjacent basins
+    → Lower ①'' probability
+    → System likely returns to ① or ①' only
+  
+  Structural cost of high connectivity:
+    Higher k → α increases (more coupling pathways)
+    → amplification coefficient rises → S-equation risk higher
+    → more storm initiation probability (via decoherence threshold)
+  
+  Tradeoff:
+    Optimize for ①'' access: higher k → more dormant basins reachable
+                              but higher α → more storm risk
+    Optimize for stability:   lower k → less storm risk
+                              but fewer adjacent basins → no ①'' access
+
+  Design principle:
+    ①'' access should be preserved for constructive storm conditions
+    by maintaining hub connectivity above minimum basin-adjacency threshold,
+    while keeping k below α-amplification critical threshold.
+    
+    These two thresholds define a connectivity operating window.
+    Operating below minimum: ①'' structurally impossible.
+    Operating above maximum: storm probability unacceptably high.
+    Operating within window: ①'' possible under constructive storm
+                            at acceptable α cost.
+
+  (Open: formal derivation of connectivity window bounds.
+   Connects to VST §3.2.1 α operationalization + RT OP35 constructive
+   traversal governance.)
+```
 
 TLG §13.7 provides the formal interface between VST's dynamic instability descriptions and the governance structure's failure response. The storm type — not severity alone — determines the governance response pathway.
 
@@ -10082,6 +10421,8 @@ This table replaces the implicit uniform confidence of v1.0's Appendix A with di
 | **Reserve capacity operationalization** | **Reserve_fraction defined as C_effective/C_nominal. Four proxy ensemble specified (task-switch latency, coordination failure rate, idle resource ratio, intervention recovery delay). Depletion declaration rule: reserve_fraction < threshold_reserve via proxy ensemble agreement.** | **New v1.7 — proxies defined; threshold calibration pending** |
 | **Silent Criticality decision rule** | **Two-tier declaration protocol defined (Section 1.6.4): primary criterion τ_recovery > τ_baseline + 2σ, secondary criteria (coupling probe + intervention frequency drift). Suspicion vs. declaration thresholds specified. F7 criterion specifies falsification target.** | **New v1.7 — decision logic defined; sensitivity/specificity calibration pending** |
 | **φ operational definition** | **φ operationalized as survival probability of exploration trajectories exceeding τ_stable (Section 3.6). Measurement protocol specified. Substrate mapping provided (LLM: token-sequence stability; tool-using: task-completion rate). Epistemic status: architecture-specific empirical rate, stronger than α.** | **New v1.7 — protocol defined; τ_stable calibration per architecture pending** |
+| **[RT-gap-D] Multi-scale simultaneous recovery ordering** | **Fractal Collapse Chain (TLG §13.2.2) specifies collapse cascade direction (Case 2→1→3). Recovery cascade (reverse direction) is undefined for simultaneous multi-scale contamination. Single-scale recovery ordering (containment before recovery) is established in §3.4.2. Multi-scale ordering — whether recovery proceeds top-down, bottom-up, or simultaneous — has no structural justification in VST or TLG. RT OP31 identifies this as critical for multi-agent deployment. Proposed candidate: reverse collapse cascade (Case 3→1→2 recovery), but causal justification absent.** | **New v1.8-RT — gap identified from RT cross-validation; recovery cascade ordering open** |
+| **[RT-gap-E] Intervention cost discontinuity — Regime 2→3 transition** | **VST intervention cost model (§3.4.1) assumes super-linear but continuous cost increase with stage. RT App.A.3.1 four-regime structure identifies a discontinuous jump at Regime 2→3 transition (CKA → 0, reversibility lost, cost jumps from O(fine-tune) to O(retrain)). VST's intervention timing protocol does not incorporate a discontinuity deadline. The optimal intervention window is not merely "before Stage 2" but specifically "before the Regime 2→3 threshold" — which can occur within Stage 2. This produces a false safety margin: a governance system that intervenes at early Stage 2 may still miss the discontinuity if the Regime 2→3 transition has already occurred.** | **New v1.8-RT — discontinuity identified from RT integration; pre-discontinuity detection protocol open** |
 
 ### 11.2 Per-Architecture Calibration Protocol (v1.1)
 
@@ -15404,6 +15745,76 @@ Remaining open (no companion-theory resolution available):
 | Recovery cost not modeled | **Resolved** | Section 11.5 — reserve capacity depletion |
 | S-equation applicability domain undefined | **Resolved** | Section 11.5 — recoverable regime boundary |
 
+
+---
+
+## Cross-Theory Reinforcement Map [v1.8-RT]
+
+**v1.8-RT integration source: Recovery Theory v1.8**
+
+**RT → VST: Recovery Theory content providing structural grounding to VST constructs**
+
+| RT Source | VST v1.8-RT Target | Reinforcement Type |
+|---|---|---|
+| RT D0 — time-scale separation (τ_fast vs τ_slow) | §1.0 slow variable / fast loop, §3.4.1 intervention timing | RT provides the mechanism for WHY VST's fast-loop detection must precede slow-variable governance |
+| RT D0 — gradient paradox (complete stability = measurement blindness) | §1.6.4 Silent Criticality, §3.3 Residual Degradation Floor | RT explains WHY S > 0 is necessary: gradient substrate requires non-zero noise for sensing |
+| RT D0 — governance cost internalization (C_design + ε × T < C_ongoing × T) | §3.4.1 intervention timing optimal t* | RT provides the cost-structure justification for early intervention preference |
+| RT D2 — Dependency Trap (repeated intervention → SCC atrophy) | §3.4.2 MZ-STP, §1.6.6 Minimum Intervention Law | RT identifies the second-order failure mode: MZ-STP protocol itself can degrade what it governs |
+| RT D2 — four-regime cost structure (Regime 1–4, discontinuous jump at 2→3) | §11 Open Problems [RT-gap-E] | RT identifies that VST's continuous cost model misses a discontinuity deadline |
+| RT D4 — dormant seed germination (post-storm better-than-baseline) | §3.9 Storm-Collapse Lifecycle [RT-gap-C] | RT adds a third lifecycle trajectory: ①'' (dormant attractor access) beyond ①' (structural learning) |
+| RT D4 — pre-intervention reversibility analyzer (CKA + regime classification) | §3.4.1 pre-intervention assessment | RT provides a concrete pre-intervention classification tool to determine if early vs. late intervention is indicated |
+| RT D6 — Learning Freeze mechanism A vs B (active suppression vs coordinate collapse) | §2.5 Conversion Window (SCM) | RT discriminates two SCM failure modes that VST treats as one — discrimination changes intervention cost estimate |
+| RT T1 — Observability Asymmetry (deficit invisible when system appears healthy) | §1.6.4 Silent Criticality, §3.3 Residual Degradation Floor | RT provides the information-theoretic justification for VST's observability paradox |
+| RT OP31 — multi-scale simultaneous recovery ordering | §11 Open Problems [RT-gap-D] | RT surfaces a gap in both theories: recovery cascade direction under simultaneous multi-scale contamination |
+
+**VST → RT: VST constructs providing structural grounding to RT**
+
+| VST Source | RT Target | Reinforcement Type |
+|---|---|---|
+| §1.4.1 — R̂ > 1 operational detection rule | RT D5 (SCC verification) | VST provides the quantitative signal that RT D5 monitoring should trigger on |
+| §3.4.1 — Intervention timing optimal t* | RT D0 governance cost structure | VST formalizes the cost trade-off that RT's internalization principle relies on |
+| §3.4.2 MZ-STP — dual-track (containment before recovery) | RT D4 Restoration Complete pre-condition | VST specifies that propagation containment must precede recovery injection — RT D4 must not be declared until MZ-STP Track A complete |
+| §3.9 Lifecycle — ①→②→③→④→①'/①'' | RT D0–D6 full cycle placement | VST provides the backbone lifecycle into which RT's D0-D6 operational stages insert |
+| §8.1 Four Structural Risks cycle (①→③→④→②) | RT OP29 Dependency Trap detection | VST's ① Exploration Collapse is the structural downstream of RT's Dependency Trap — provides the macro-symptom |
+| §3.5 VCZ (Containment Scaling Dominance: dC/dn > 2Cβ/n) | RT D4 recovery trajectory target | VST defines the destination state that RT D4 verification confirms has been re-entered |
+| §1.6.4 Silent Criticality two-tier detection | RT T1 Observability Asymmetry | VST provides the operational protocol that RT's theoretical observability asymmetry requires |
+| §3.3 Residual Degradation Floor (S_floor > 0 asymptotically) | RT D2 immunity model | VST establishes that zero-instability governance is an infinite-cost target — RT D2 explains the mechanism: immune circuit atrophy from over-governance |
+| §11.5 Theory Boundary — three irreversibility conditions | RT D4 dormant seed vs extinct | VST's irreversibility conditions bound when RT's dormant seed is recoverable vs permanently extinct |
+| §3.10 Storm Scale Law (power-law health distribution) | RT D2 immunity depth test | VST's power-law distribution is the system-level signature of healthy immunity — RT D2 uses distribution shift as immunity degradation signal |
+
+**Vulnerability resolution status (v1.8-RT):**
+
+| Vulnerability | Status | Resolution |
+|---|---|---|
+| Storm Termination ≠ Recovery (bridge undefined) | **Identified [RT-gap-A]** | Joint VST-RT criterion needed: Termination + RT D4 + D5 for full recovery declaration |
+| Intervention protocol may degrade SCC over time | **Identified [RT-gap-B]** | Dependency Trap mechanism from RT D2; SCC monitoring and withdrawal scheduling required |
+| Post-storm trajectory modeling incomplete | **Identified [RT-gap-C]** | RT D4 dormant seed adds ①'' trajectory; constructive storm traversal governance open |
+| Multi-scale simultaneous recovery ordering undefined | **Identified [RT-gap-D]** | Open in both VST and RT (RT OP31); candidate: reverse collapse cascade direction |
+| Intervention cost discontinuity not modeled | **Identified [RT-gap-E]** | RT Regime 2→3 discontinuity; pre-discontinuity detection protocol open |
+| RT D6 mechanism A/B unresolved in VST | **Inherited resolution** | RT D6 discrimination protocol integrates into SCM (§2.5) via injection-response test |
+| RT D4 four-regime recovery cost absent in VST | **Partially resolved** | §App.A.3.1 four-regime structure added v1.8; discontinuity threshold still open (RT-gap-E) |
+
+---
+
+## Cross-Theory Reinforcement Map [v1.9-NAT]
+
+**v1.9-NAT integration source: NAT v1.2**
+
+| NAT v1.2 Source | VST v1.9-NAT Target | Reinforcement Type |
+|---|---|---|
+| §3.0 Spectral gap as decoherence threshold predictor | §4.4 [v1.8-NAT] | Spectral gap governs storm *initiation probability*, not only damping rate — extends §4.4 from damping to threshold |
+| §3.0 Governance as shock regulator (not eliminator) | §1.6.6 Minimum Intervention Law | NAT formalizes WHY shock regulation (not elimination) is the correct governance target — noise independence maintenance |
+| §3.0 Sphere basin adjacency → ①'' reachability | §3.9 [RT-gap-C], §4.4 [v1.8-NAT] | Topology is designable variable; hub connectivity determines ①'' access probability — connects dormant seed to architecture design |
+| §3.0 Hub connectivity ↔ α tradeoff | §3.2.1 α operationalization | Connectivity window concept — minimum (basin adjacency) and maximum (α amplification) bounds on k |
+| §13 lifecycle ①'' trajectory with topology condition | §3.9 [RT-gap-C] | ①'' requires sphere topology above minimum connectivity — structural precondition not previously in VST |
+
+**Vulnerability resolution status (v1.9-NAT):**
+
+| Vulnerability | Status | Resolution |
+|---|---|---|
+| Spectral gap role limited to damping (initiation not modeled) | **Resolved** | §4.4 [v1.8-NAT] — spectral gap as decoherence threshold |
+| ①'' access probability ungovernable by design | **Resolved** | §4.4 [v1.8-NAT] — hub connectivity as designable variable within operating window |
+| Connectivity window bounds undefined | **New open problem** | Formal derivation of k_min (basin adjacency) and k_max (α critical threshold) — connects to α operationalization OP |
 
 ---
 
