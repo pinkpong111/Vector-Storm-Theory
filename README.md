@@ -5,9 +5,12 @@ Companion theory to Deficit-Driven Fractal Governance (DFG)
 Focus: why instability occurs, how it propagates, when to intervene
 Recovery and operational governance are addressed separately
 
-> **Version: v1.9-NAT** (February 2026)
+> **Version: v1.9-NAT-R** (February 2026)
 >
-> v1.9-NAT changes from v1.8-RT (NAT v1.2 reverse integration pass):
+> v1.9-NAT-R changes from v1.9-NAT (symbol consolidation pass):
+> - **[Fix 4] R = 1 vs R ≈ 1⁻ anchor definition added to §VCZ:** canonical four-state usage rule (R=1 / R≈1⁻ / R>1 / R<<1) with operational semantics. Resolves reader confusion about minus superscript significance.
+>
+> v1.9-NAT changes: [See v1.9-NAT changelog — all items preserved]
 > - **Spectral gap as decoherence threshold predictor [§4.4]:** NAT v1.2 mechanism — spectral gap governs storm initiation probability, not only damping rate; governance as shock regulator maintaining noise independence; k-regular structure as natural perturbation distributor
 > - **Hub connectivity ↔ ①'' tradeoff [§4.4]:** Basin adjacency as designable topology variable; connectivity operating window between minimum basin-adjacency threshold and α-amplification critical threshold; ①'' access requires above-minimum connectivity
 > - All previous content preserved. New sections marked [v1.8-NAT].
@@ -520,6 +523,29 @@ The equilibrium state is the same structural regime at every scale: the mutual-r
 **VCZ two-aspect definition — resolving the dual condition [v1.8]:**
 
 The VCZ is characterized by two conditions that appear independently in different sections: the dynamical condition (R ≈ 1⁻) and the structural condition (dC/dn > 2βC/n, Containment Scaling Dominance). These are not two separate VCZ definitions or two independent requirements. They are two observational cross-sections of the same operating regime.
+
+**R = 1 vs R ≈ 1⁻ — canonical distinction [v1.9-NAT]:**
+
+```
+R = 1     Theoretical criticality boundary (SOC attractor in idealized systems).
+           Reference threshold only. Not a sustainable operating point.
+           Appears in: stage boundary definitions, falsification criteria.
+
+R ≈ 1⁻    VCZ operating target — "slightly subcritical."
+           Operational meaning: R held just below unity so that
+           micro-storms dissipate locally (subcritical) while
+           sensing and adaptation remain active (near-critical).
+           The minus superscript is not decoration. It specifies
+           the subcritical side of criticality — as opposed to:
+
+R ≈ 1⁺    Storm onset. Supercritical side. NOT a VCZ state.
+
+Usage rule throughout DFG:
+  R = 1   → criticality boundary (theoretical reference point only)
+  R ≈ 1⁻  → VCZ operating target (operational prescription)
+  R > 1   → storm regime
+  R << 1  → over-damping / Silent Criticality risk
+```
 
 ```
 Dynamical aspect (R ≈ 1⁻):
