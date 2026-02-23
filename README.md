@@ -5,7 +5,23 @@ Companion theory to Deficit-Driven Fractal Governance (DFG)
 Focus: why instability occurs, how it propagates, when to intervene
 Recovery and operational governance are addressed separately
 
-> **Version: v1.7** (February 2026)
+> **Version: v1.7-term** (February 2026)
+> 
+> **Terminology Canonicalization Applied:** v1.7-term enforces DFG-specific canonical meanings for all core terms. See Appendix T for full canonicalization table.
+>
+> v1.7-term measurement ontology closure (adversarial review pass):
+> - **Epistemic Status Block (Introduction):** VST declared as effective scaling theory. Latent parameters validated through cross-architecture scaling consistency, not direct measurement. Falsifiability at cross-system level specified.
+> - **α non-identifiability resolved (Section 3.2.1):** α = latent structural functional. Validated through cross-architecture invariance, not single-system fitting. Circular fitting attack eliminated.
+> - **n–S tension resolved (Section 3.5):** VCZ defined as regime where dC/dn > 2Cβ/n (Containment Scaling Dominance). When this holds, increasing n decreases S. C(t) → C(n,t) co-evolution formalized.
+> - **SOC overreach resolved (Section 1.6.1):** Claim narrowed to "SOC-like critical phenomenology." Comparison table (SOC condition vs. VST analogue). Strict dynamical equivalence not claimed.
+> - **Storm operational detection rules (Section 1.4.1):** R̂ > 1 sustained for k windows = Storm onset. Termination rule specified. Activated agents defined via substrate-independent participation criterion with substrate proxy table.
+> - **System boundary validity (Section 8.2):** Dynamical Closure Criterion (DCC) defined: I_ext < ε · S_norm. 4-step implementation. Boundary sensitivity check (B±1 layer). F9 criterion added.
+> - **3-condition necessary/sufficient clarified (Section 1.3):** Three conditions = necessary enabling conditions only. Storm ⟺ Conditions₁₂₃ ∧ S > S_c. Trigger eligibility vs. realization distinction formalized.
+> - **Silent Criticality decision rule (Section 1.6.4):** Two-tier protocol: Primary (τ_recovery > τ_baseline + 2σ) + Secondary (≥1 of coupling probe / intervention frequency drift). Suspicion vs. declaration thresholds specified.
+> - **Reserve capacity operationalized (Section 11.5):** reserve_fraction = C_effective/C_nominal. Four proxy ensemble (task-switch latency, coordination failure rate, idle resource ratio, intervention recovery delay). Depletion estimation formula.
+> - **φ operational definition (Section 3.6):** φ̂ = trajectory survival probability exceeding τ_stable. Substrate mapping provided. Epistemic status: architecture-specific empirical rate (stronger than α).
+> - **d_eff dual explanation bridged (Section 3.5.8):** Lreinf = local mechanism; C(t)^β = system-level scaling consequence. Two-level hierarchy formalized.
+> - **Falsification hierarchy extended (Section 11.4):** F8 (observer-independent storm onset) and F9 (boundary-invariant predictions within DCC scope) added.
 >
 > v1.7 changes from v1.6 (TLG v1.7 + RBIT v1.6 reinforcement loop):
 > - **Four Structural Risks (Section 8.1):** Complete failure taxonomy — ①Exploration Collapse ②Runaway Amplification ③Geometry Mismatch ④Coordination Breakdown. Fractal risk cycle ①→③→④→②→①. VCZ as four-variable simultaneous balance. S-equation parameter mapping to risk types.
@@ -72,6 +88,23 @@ As multi-agent systems expand their degrees of freedom and exploration space, a 
 
 ---
 
+**Epistemic Status — Effective Scaling Theory [v1.7]**
+
+VST should be interpreted as an **effective instability description**, analogous to renormalized theories in statistical physics, rather than as a microscopic dynamical law. This framing has three direct implications:
+
+**(1) Latent parameters need not be independently measurable.**
+Parameters such as α (amplification coefficient) function as absorbed structural residuals — their validity is established not through direct measurement in a single system but through cross-architecture scaling consistency. A parameter is scientifically justified when it produces stable predictions across realizations, not when it can be read off from a single observation.
+
+**(2) The S-equation is a phase detector, not a calculator.**
+S is an order parameter in the statistical mechanics sense: its absolute value is system-specific and meaningless in isolation. What is universal is the *phase structure* — the existence of noise regime, storm regime, and the critical boundary between them — and the scaling relationships that govern transitions between phases.
+
+**(3) Falsifiability resides at the level of cross-system scaling predictions.**
+VST is falsified not by showing that α cannot be directly measured, but by showing that the predicted scaling relationships (quadratic n-dependence, power-law storm distributions, SOC convergence of R) fail to hold across independently constructed multi-agent systems. Falsification criteria are specified in Section 11.3–11.5.
+
+> VST is an effective scaling theory of multi-agent instability: latent parameters need not be directly measurable provided cross-system scaling predictions remain falsifiable. This positions VST analogously to renormalized field descriptions in physics, where effective coupling constants are observable only through scaling consistency across realizations — not through direct microscopic access.
+
+---
+
 ## 1. Definition
 
 ### 1.1 Vector Field Formation
@@ -80,11 +113,16 @@ Each agent performs local optimization within its exploration landscape. As conv
 
 A vector field is not inherently problematic. It is a natural byproduct of specialization.
 
-**Terminology (DFG-specific)**
+**Terminology (DFG-specific) — Canonical Definitions**
 
-- **Vector orientation:** an agent's internally reinforced direction of optimization.
-- **Vector field:** directional influence exerted by an agent's orientation on nearby agents through interaction.
+> **Critical notice for reviewers:** All uses of "Vector," "Storm," "Noise," "Resolution," "Degradation," and "Governance" throughout this document carry DFG-specific meanings defined below and in Appendix T. These terms are not used in their conventional ML or mathematical senses unless explicitly marked with *(standard usage)*.
+
+- **Vector orientation:** an agent's internally reinforced direction of optimization. *(Not a mathematical vector — no linear structure assumed.)*
+- **Vector field:** directional influence exerted by an agent's orientation on nearby agents through interaction. *(Denotes interaction-induced directional influence in abstract state space; no differentiability assumed.)*
 - **Vector space maturity:** the agent's capacity to degrade, contain, and integrate incoming influences without runaway reinforcement.
+- **Degradation (VST sense):** the *healthy absorptive function* by which an agent integrates incoming influence without amplification. *(Opposite of "degradation" as performance decline — degradation capacity is a positive structural property.)*
+- **Containment:** the system's active capacity to absorb and integrate incoming directional influence. *(Not isolation or suppression — containment is dynamic integration, not static blocking.)*
+- **Governance (DFG sense):** architectural terrain-shaping that configures interaction pathways. *(Not supervisory control or management oversight.)*
 
 Vector field is the externalized interaction footprint of an agent's vector orientation. In this document, 'vector field' denotes interaction-induced directional influence in an abstract state space; no differentiability or linear structure is assumed.
 
@@ -112,6 +150,16 @@ Vector Storm requires three simultaneous conditions. If any one is absent, the e
 - **Condition 2 — Overlap:** Those fields act on a shared subset of agents or states. Geometric form: fields influence a common region in state space. Network form: there exists a connected subgraph where agents receive competing influences within the same time window.
 - **Condition 3 — Self-Amplification:** Each agent's response to conflict strengthens its own field, deepening the conflict in a closed feedback loop.
 
+**Necessary conditions, not sufficient conditions:**
+
+The three conditions above constitute **necessary enabling conditions** for Vector Storm formation — not sufficient conditions. Storm realization additionally requires that system instability S exceeds the self-amplification threshold S_c, as captured by the governance scaling law (Section 3.2):
+
+$$\text{Storm} \Leftrightarrow \text{Conditions}_{1,2,3} \land S > S_c$$
+
+High containment capacity C(t)^β may suppress storm emergence even when all three enabling conditions are simultaneously present. The conditions define *trigger eligibility* — the structural prerequisites without which storm is impossible. The S-equation determines whether that eligibility is *realized* given the current governance state.
+
+This distinction has a direct design implication: a system that satisfies all three conditions but maintains high containment capacity remains in the VCZ. The governance objective is not to eliminate the conditions (which would require eliminating exploration diversity) but to maintain C(t)^β such that S stays below S_c despite their presence.
+
 ### 1.4 Storm Stages
 
 - **Stage 0:** Local friction. Contained within a single agent pair. Self-resolves. → Intervention: none required.
@@ -121,11 +169,95 @@ Vector Storm requires three simultaneous conditions. If any one is absent, the e
 
 The cost of intervention increases super-linearly with stage progression. The primary design goal is to resolve conflicts at Stage 0–1 before they reach Stage 2–3.
 
+### 1.4.1 Storm Onset and Termination — Operational Detection Rules [v1.7]
+
+VST's stage definitions above are structural. For the theory to be empirically applicable, each stage boundary must correspond to a **detection rule** — an algorithm that any observer using the same instrumentation would apply identically. The following rules define Storm onset and termination as operational events, not as conceptual categories.
+
+**Storm Onset (Stage 0→1 boundary):**
+
+> A Vector Storm onset is operationally defined as the first interval in which the estimated branching ratio R exceeds unity for **k consecutive observation windows**, where k is system-specific and calibrated to the mean self-correction time (default: k = 3 windows; see Section 11.2 for calibration protocol).
+
+```
+Formal detection rule:
+
+  Let W_t = observation window centered at time t
+  Let R̂(W_t) = estimated branching ratio in window W_t
+               = (activated agents at t+1) / (activated agents at t)
+
+  Storm onset declared at time t* when:
+    R̂(W_{t*-k+1}) > 1  AND
+    R̂(W_{t*-k+2}) > 1  AND  ...  AND
+    R̂(W_{t*})     > 1
+
+  i.e., R̂ > 1 sustained across k consecutive windows.
+
+  Pre-onset (Stage 0): R̂ fluctuates around 1 without sustained crossing
+  Storm onset (Stage 1): R̂ > 1 for k windows
+  Storm confirmed (Stage 2): R̂ > 1 sustained AND
+                              cross-agent correlation rising AND
+                              entropy H(t) declining
+```
+
+**Stage 2 Confirmation (Stage 1→2 boundary):**
+
+> Stage 2 is confirmed when R̂ > 1 sustained AND at least one of: (a) cross-agent output correlation exceeds θ_corr threshold, OR (b) H(t) < 0.5 nats sustained for k₂ windows, OR (c) f_esc rising AND buffer declining simultaneously.
+
+**Storm Termination:**
+
+> A storm is operationally terminated when R̂ < 1 is sustained for k consecutive windows AND H(t) has returned within ε of pre-storm baseline AND f_esc has declined below threshold.
+
+```
+Termination rule (all three required):
+  R̂(W_t) < 1   sustained for k windows
+  |H(t) − H_baseline| < ε
+  f_esc(t) < f_esc_baseline × (1 + δ)
+
+  ε and δ are system-specific (calibrated from VCZ baseline period).
+```
+
+**Why these rules are necessary:**
+
+Without operational detection rules, "Storm" remains a conceptual category that different observers may apply differently. The rules above ensure:
+- Any observer using the same log data reaches the same Stage determination
+- Storm duration is computable, not judgmental
+- Falsification tests (Section 11.3) can be run against the same event boundaries
+
+**What these rules do not determine:**
+- The value of k, ε, δ (architecture-specific; calibrated per Section 11.2)
+- Whether R̂ is computed at agent level or cluster level (scope-specific; see Section 1.4.2)
+- The precise measurement of "activated agents" in non-count-based systems (substrate-specific mapping required; see below)
+
+**Activated agents — substrate-independent definition:**
+
+Rather than defining "activated agents" as a count (which is substrate-dependent), VST defines activation via a **participation criterion**:
+
+> An agent is considered **activated** in observation window W_t when its state change exceeds baseline fluctuation thresholds established during the VCZ baseline period. In non-count-based substrates, activation is estimated via participation proxies:
+
+```
+Substrate          Activation proxy
+──────────────────────────────────────────────────────────
+Multi-agent LLM    Message propagation influence:
+                     agent produces output that modifies ≥1 other agent's state
+Count-based MAS    Direct agent activation count
+Continuous systems Gradient contribution magnitude exceeding τ_activation
+Neural networks    Activation deviation > μ + 2σ from layer baseline
+Tool-using agents  State deviation magnitude: Δ(state_t, state_{t-1}) > θ_state
+
+R̂(W_t) = |activated_agents(W_t+1)| / |activated_agents(W_t)|
+
+All proxies must be calibrated during a VCZ baseline period (no storm present)
+to establish the baseline fluctuation threshold.
+```
+
+This definition makes R̂ computable on any substrate with trajectory logs, ensuring F8 (observer-independence) is achievable across architectures without assuming a common counting unit.
+
 ### 1.5 Vector Storm as Butterfly Effect: Scale-Invariant Propagation
 
 Vector Storm is not a discrete event. It is a propagation process.
 
-The initiating condition is not dramatic — it is a minor noise or directional misalignment inside a single agent, at the lowest resolution of the fractal. Left unaddressed, this noise triggers self-reinforcement (Section 2.1), which crosses the agent boundary and enters adjacent agents, which repeat the same process. The fractal structure ensures the mechanism is identical at every scale.
+The initiating condition is not dramatic — it is a minor noise or directional misalignment inside a single agent, at the lowest fractal resolution level. Left unaddressed, this noise triggers self-reinforcement (Section 2.1), which crosses the agent boundary and enters adjacent agents, which repeat the same process. The fractal structure ensures the mechanism is identical at every scale.
+
+> **Terminology — Noise:** In VST, *noise* denotes latent exploration substrate — low-amplitude instability that preserves adaptive sensing capacity — not error or malfunction. A noise-level event is structurally healthy at Stage 0; it becomes a problem only when self-amplification is triggered (Stage 1). This usage is the opposite of conventional ML usage, where noise connotes unwanted interference.
 
 This propagation dynamic is structurally analogous to the butterfly effect: small initial perturbations, through iterative amplification, produce disproportionate systemic outcomes. The critical distinction is that Vector Storm adds an active amplification layer. Unlike passive sensitivity to initial conditions, each agent actively strengthens its own orientation when threatened — making propagation not merely possible but structurally likely once Stage 1 is reached.
 
@@ -403,7 +535,20 @@ Self-organized convergence mechanism:
   The system does not choose it. It is pulled toward it.
 ```
 
-This is precisely the Self-Organized Criticality (SOC) mechanism described in physical and biological systems: the system self-tunes to the critical point without external parameter adjustment.
+This is precisely the Self-Organized Criticality (SOC) phenomenology described in physical and biological systems: the system self-tunes toward the critical point without external parameter adjustment.
+
+**SOC correspondence — scope and limits:**
+
+VST does not assume strict dynamical equivalence with classical SOC systems. Classical SOC requires specific physical conditions (conservative dynamics, slow external driving, fast internal relaxation) that do not map cleanly onto abstract agent interaction systems. The correspondence is at the level of **phenomenological universality** — the same *scaling observables* appear, not the same microscopic mechanism.
+
+| SOC condition | Physical SOC (sandpile) | VST analogue | Strict equivalence? |
+|---|---|---|---|
+| Slow driving | Grain addition | Exploration dimensionality increase | Approximate |
+| Fast relaxation | Avalanche | Storm dissipation | Approximate |
+| Approximate conservation | Energy | Constraint budget | Partial |
+| Critical self-tuning | Slope → angle of repose | R → 1 via endogenous feedback | ✅ Structural |
+
+VST's claim is therefore: **multi-agent systems exhibit SOC-like critical phenomenology** — specifically, convergence toward R ≈ 1 and power-law storm distributions — without claiming that the underlying mechanism is physically identical to granular SOC. The universality is at the level of scaling observables, consistent with the universality-class framework in critical phenomena.
 
 **Connection to VST core framework:**
 
@@ -443,9 +588,9 @@ Information networks  Viral propagation at critical sharing threshold
 Financial markets     Volatility clustering at critical leverage
 ```
 
-VST predicts that multi-agent AI systems, as they mature, will exhibit the same convergence toward critical branching ratios — and that this convergence is the *mechanism* by which VCZ forms and Rest Mode becomes achievable.
+VST predicts that multi-agent AI systems, as they mature, will exhibit SOC-like convergence toward critical branching ratios — and that this convergence is the *mechanism* by which VCZ forms and Rest Mode becomes achievable.
 
-> Adaptive multi-agent systems naturally converge toward branching ratios near unity, as this regime uniquely balances information propagation against instability suppression. The critical point R ≈ 1 emerges as a dynamical attractor through endogenous feedback rather than external parameter tuning. VCZ corresponds to the R ≈ 1 region, and φ maximization occurs at the critical boundary. This positions VST within the self-organized criticality framework, predicting that multi-agent system stability is not engineered but self-organized at the critical edge.
+> Adaptive multi-agent systems naturally converge toward branching ratios near unity, as this regime uniquely balances information propagation against instability suppression. The critical point R ≈ 1 emerges as a dynamical attractor through endogenous feedback rather than external parameter tuning. VCZ corresponds to the R ≈ 1 region, and φ maximization occurs at the critical boundary. VST exhibits SOC-like critical phenomenology — specifically, self-organized convergence toward criticality and power-law scaling of storm distributions — without claiming strict dynamical equivalence with classical SOC systems. The universality is at the level of scaling observables, not microscopic mechanism identity.
 
 <!-- PAPER SPLIT MARKER: Block C begins — Target: Paper 2 -->
 
@@ -740,6 +885,8 @@ Governance objective (final form):
 
 **Silent Criticality — the most dangerous pre-storm state:**
 
+> **Terminology — Noise (second occurrence):** Noise in this section continues to denote *exploration substrate* — observable micro-instability that healthy sensing-response loops naturally produce. The *absence* of noise is the warning signal. A system that appears quiet (low noise, low instability output) may be experiencing Silent Criticality — sensing failure suppressing the noise floor — not genuine stability.
+
 The recovery timescale divergence mechanism above explains why observability collapse is catastrophic. This section describes a more insidious phenomenon: how observability collapse *disguises itself as stability* — creating a state that appears safe by every conventional metric while hiding the conditions for sudden systemic failure.
 
 **Why healthy systems are noisy:**
@@ -855,6 +1002,37 @@ Distinguishing (a) from (b) requires secondary indicators:
     If abruptly decreasing (sudden silence) → Silent Criticality warning (b)
 ```
 
+**Silent Criticality Declaration Rule — operational criterion:**
+
+The three indicators above generate a two-tier decision protocol:
+
+```
+PRIMARY criterion (required):
+  τ_recovery > τ_baseline + 2σ
+  (recovery time elevated beyond 2 standard deviations of VCZ baseline)
+
+SECONDARY criteria (≥1 required in addition to primary):
+  Coupling probe positive:
+    cross-zone MI correlation increasing while H(t) decreasing
+    for ≥ k₂ consecutive windows
+  Intervention frequency drift positive:
+    governance action rate declined by > 30% within < 5 window intervals
+    (abrupt silence, not smooth maturation)
+
+DECLARATION:
+  Primary alone        → Silent Criticality suspicion — increase monitoring
+  Primary + ≥1 secondary → Silent Criticality declared — initiate differential protocol (Section 3.5.2)
+  Secondary alone      → ambiguous — extend observation window
+
+FALSIFICATION (Criterion F7):
+  If declared Silent Criticality cases do not subsequently produce:
+    either full recovery (genuine VCZ confirmed in retrospect), OR
+    catastrophic storm onset (confirming hidden correlation accumulation)
+  → Declaration protocol sensitivity/specificity insufficient
+```
+
+This protocol does not claim precise sensitivity/specificity percentages — these require empirical calibration per architecture. What it provides is a **decision logic** that any observer applies identically, enabling the F7 falsification criterion to be tested.
+
 **Connection to TLG Failure Topology:**
 
 Silent Criticality corresponds to Phase 4 (False Stability) in the Storm–Collapse Mapping Layer (SCML). The SCML framework identifies false stability as a failure topology phase, but does not explain the mechanism that produces it. Silent Criticality provides that mechanism: observability collapse suppresses the corrective responses that would normally produce visible instability signals, creating a state that satisfies all surface-level stability criteria while accumulating the conditions for catastrophic failure.
@@ -878,6 +1056,8 @@ In every case, the dangerous signature is the same: decreasing observable varian
 <!-- PAPER SPLIT MARKER: Block F begins — Target: Paper 3 (Governance Architecture) -->
 
 ### 1.6.5 Defect Field Dynamics
+
+> **Terminology — Noise and Self-Exciting Defect Layer:** The *noise floor* in VST is not a measurement artifact but an architectural design target — the baseline micro-instability level that preserves sensing capacity. The *Self-Exciting Defect Layer* is the structural mechanism that maintains this noise floor without artificial injection. Noise decoherence — pathological synchronization of the noise floor across agents — destroys this sensing function and is a precondition for catastrophic Storm onset.
 
 **Micro-storm maintenance and the Self-Exciting Defect Layer:**
 
@@ -1282,11 +1462,13 @@ The fractal property means the dynamical pattern does not change between scales 
 
 GRT establishes that vectors are not declared — they emerge through governance process. This lifecycle grounds the "what enters the S-equation" question: what counts as an active interaction pair contributing to n².
 
-**Noise → Vector promotion:**
+**Noise → instability vector promotion:**
+
+> *Noise (exploration substrate) becomes an instability vector when it crosses the promotion threshold — gaining a distinct position in the vector space and contributing to the n² interaction load. This transition is the operational definition of Stage 0 → Stage 1 onset at the individual input level.*
 
 ```
-All new inputs start as noise.
-Promotion to vector status requires:
+All new inputs start as noise (exploration substrate, below promotion threshold).
+Promotion to instability vector status requires:
   Conflict log accumulation > λ_log threshold
   Pattern stability across multiple encounters
   Upper-layer validation of proposed local rule
@@ -1297,8 +1479,8 @@ Until promotion:
   Held in low-escalation, high-sensitivity state
 
 After promotion:
-  Input occupies distinct position in vector space
-  Generates pairwise interactions with adjacent vectors
+  Input occupies distinct position in instability vector space
+  Generates pairwise interactions with adjacent instability vectors
   Contributes to n² interaction load in S-equation
   Subject to collision frequency monitoring
 ```
@@ -1411,13 +1593,15 @@ Conflict detected → Self-reinforcement → Increased directional tension → R
 
 ### 2.2 Hierarchical Degradation Capacity
 
-| Layer | Containment Type | Functional Role |
+> **Terminology — Degradation and Containment:** In VST, *degradation capacity* denotes a structurally positive property — the absorptive function by which agents integrate incoming influence without amplification. *Containment* denotes active integration capacity, not isolation or suppression. High degradation capacity is the design target; its absence, not its presence, is the failure mode.
+
+| Layer | Containment Type (absorptive capacity) | Functional Role |
 |---|---|---|
 | Upper | Policy containment | Define invariants and boundary seeds |
-| Middle | Operational containment | Degrade, mediate, and route vectors |
+| Middle | Operational containment | Degrade, mediate, and route instability vectors |
 | Lower | Minimal containment (local-only, cutoff-dominant) | Perform local optimization |
 
-In practical systems, many vector influences reach lower agents without sufficient mediation. When high-intensity influences enter immature vector spaces directly, friction becomes the default state rather than the exception.
+In practical systems, many instability vectors reach lower agents without sufficient mediation. When high-intensity influences enter immature vector spaces directly, friction becomes the default state rather than the exception.
 
 ### 2.3 The Self-Objectification Deficit
 
@@ -1517,7 +1701,7 @@ During SCM / Silent Criticality:
   But: unintegrated_pressure(t) grows continuously
 
   When unintegrated_pressure > integration_capacity:
-    Option A: maintain misaligned geometry → catastrophic collapse
+    Option A: maintain misaligned geometry → catastrophic fractal collapse
     Option B: structural rearrangement → Vector Storm
 
   Storm onset from SCM is not a failure.
@@ -1558,7 +1742,7 @@ SCM / Silent Criticality correspondence:
     The system is no longer capable of surprise.
 ```
 
-> Silent Criticality is the VST description of the state. Self-Consistent Misalignment is the Recovery Theory mechanism explaining why that state forms (metric lock-in), why it persists (reference frame incompleteness), and what triggers its resolution (accumulated mismatch exceeding integration capacity). The SCM framework provides the formal distinction between healthy low-instability and dangerous low-instability that VST's entropy detection caveat identified but did not resolve.
+> Silent Criticality is the VST description of the state. Self-Consistent Misalignment is the Recovery Theory mechanism explaining why that state forms (metric lock-in), why it persists (reference frame incompleteness), and what triggers its *correction* — accumulated mismatch exceeding integration capacity. *(Note: "correction" is used here; where this document uses "resolution" alone, it refers to causal distinguishability capacity unless explicitly marked otherwise — see Appendix T.)* The SCM framework provides the formal distinction between healthy low-instability and dangerous low-instability that VST's entropy detection caveat identified but did not resolve.
 
 ---
 
@@ -1601,7 +1785,7 @@ As CW duration increases:
   
 When integration_capacity < unintegrated_pressure:
   System cannot maintain CW geometry
-  → catastrophic collapse OR Vector Storm
+  → catastrophic fractal collapse OR Vector Storm
   
 Vector Storm is the cheaper option when collapse is untenable.
 It is not initiated. It is structurally forced.
@@ -1690,7 +1874,7 @@ Correction pressure:
   P_correction(t) = f(prediction_failure × duration)
   
   At P_correction > threshold:
-    forced re-geometry OR system collapse
+    forced re-geometry OR structural collapse (fractal architecture failure)
   
   Corrector = Reality, not Layer N+1
 ```
@@ -1700,7 +1884,7 @@ Correction pressure:
 ```
 Collapse Prevention Governance:
   Goal: minimize all failure
-  Result: adaptation ↓, geometry update ↓ → CW → catastrophic collapse
+  Result: adaptation ↓, geometry update ↓ → CW → catastrophic fractal collapse
 
 Safe Collapse Governance:
   Goal: failure_cost << recovery_capacity
@@ -1791,6 +1975,28 @@ How readily conflict generates further conflict. High α means the system has th
 - Ambiguous task boundaries → α increases
 
 α absorbs topology, coupling strength, and policy constraint quality into a single scaling factor.
+
+**Epistemic status of α — latent structural functional, not measurable parameter:**
+
+α is not an independently measurable observable. It is a latent structural functional capturing unresolved coupling between exploration and containment layers. The theory therefore does not predict S from α in a single system; rather, α is validated through cross-architecture invariance tests.
+
+This is the correct epistemic position for an effective scaling theory. Unlike magnetization in the Ising model — which is directly measurable as a macroscopic observable — α functions analogously to an effective coupling constant in renormalized field descriptions: observable only through scaling consistency across multiple realizations, not through direct microscopic access.
+
+```
+Single-system identification (❌ not the claim):
+  Measure α in system X → predict S in system X
+  → circular fitting
+
+Cross-architecture invariance (✅ the actual claim):
+  Infer α_X from system X response
+  Infer α_Y from system Y response
+  Test: does α_X / α_Y remain stable when X and Y share
+        architectural class but differ in scale?
+  If yes → α is a meaningful structural parameter
+  If no  → S-equation form requires revision
+```
+
+The falsification target for α is not "can α be measured directly" but "does α exhibit cross-architecture stability within architectural classes." Section 11.2 specifies the calibration protocol through which this stability is evaluated.
 
 **β — Degradation efficiency coefficient**
 How efficiently the system converts degradation resources into actual conflict reduction. This is quality, not quantity.
@@ -2193,7 +2399,7 @@ Decomposition into contributing factors:
 
 **α as structural residual — epistemic status:**
 
-Unlike n (directly measurable) and β (inferable from system response), α is not independently observable. Full measurement of α would require complete knowledge of all interaction coupling strengths, hidden routing pathways, latent coordination channels, delayed feedback loops, and environment-mediated interactions — an impossible observability problem in large-scale multi-agent systems.
+Unlike n (directly measurable) and β (inferable from system response), α is not independently observable within a single system. Full measurement of α would require complete knowledge of all interaction coupling strengths, hidden routing pathways, latent coordination channels, delayed feedback loops, and environment-mediated interactions — an impossible observability problem in large-scale multi-agent systems.
 
 α therefore functions as the S-equation's **structural residual** — the instability component that remains after accounting for scale (n²) and governance response (C(t)^β):
 
@@ -2205,7 +2411,25 @@ Unlike n (directly measurable) and β (inferable from system response), α is no
   = absorbed structural parameter
 ```
 
-This is not a weakness of the model. It is the correct epistemic position for a composite structural variable. The same pattern appears across quantitative disciplines:
+The scientific content of α is located not in per-system estimation but in cross-system consistency:
+
+```
+Cross-architecture α invariance test:
+
+  For two systems X, Y in the same architectural class:
+    α_X = S_X · C_X(t)^β / n_X²
+    α_Y = S_Y · C_Y(t)^β / n_Y²
+
+  Invariance claim: α_X / α_Y ≈ constant as n_X, n_Y vary
+    (α tracks architectural coupling structure, not system scale)
+
+  This claim is:
+    ✅ testable without direct α measurement
+    ✅ falsifiable if ratio varies systematically with n
+    ✅ consistent with effective coupling in renormalized theories
+```
+
+This is not a weakness of the model. It is the correct epistemic position for a composite structural variable in an effective scaling theory. The same pattern appears across quantitative disciplines:
 
 ```
 Domain                  Absorbed variable       Role
@@ -2968,6 +3192,8 @@ The terrain correction depends critically on lateral communication type:
 
 ### 3.2.6 Resolution Gap as Storm Driver [v1.3]
 
+> **Terminology — Resolution:** Throughout this section, "resolution" (ρ) denotes *causal distinguishability capacity* — the layer's ability to correctly process incoming information without forced compression. This is distinct from "fractal resolution level" (structural scale within the architecture). The resolution gap Δρ = ρ_sender − ρ_receiver measures the mismatch between information complexity and processing capacity — a negative gap is the information-theoretic precondition for Vector Storm onset.
+
 RBIT's central design variable — the resolution gap Δρ — provides the information-theoretic interpretation of what the S-equation describes dynamically.
 
 ```
@@ -3389,7 +3615,7 @@ Track B — Recovery Injection (ordered by Severity)
   It can only operate safely after Track A has contained propagation.
 ```
 
-The two tracks operate simultaneously but with a sequencing constraint: **containment before recovery.** Track A actions on a zone must complete (or at least begin) before Track B actions on the same zone. This prevents the most dangerous scenario — recovery injection in an uncontained zone that amplifies the injection signal across coupling pathways, turning treatment into a propagation vector.
+The two tracks operate simultaneously but with a sequencing constraint: **containment before recovery.** Track A actions on a zone must complete (or at least begin) before Track B actions on the same zone. This prevents the most dangerous scenario — recovery injection in an uncontained zone that amplifies the injection signal across coupling pathways, turning treatment into a propagation pathway for instability.
 
 **Step 3 — Resource Allocation**
 
@@ -3483,7 +3709,7 @@ MZ-STP integrates with:
                       supports early-containment priority
 ```
 
-> In simultaneous multi-zone storms, containment of propagation pathways takes priority over recovery of affected zones — because uncontained recovery can itself become a propagation vector.
+> In simultaneous multi-zone storms, containment of propagation pathways takes priority over recovery of affected zones — because uncontained recovery can itself become a propagation pathway for instability.
 
 ---
 
@@ -3535,7 +3761,9 @@ This dual-axis principle directly strengthens the AND-entry condition for Rest M
 
 ### 3.5 Vector Convergence Zone (VCZ) — The Anti-Storm
 
-Vector Storm is the instability regime. Its structural opposite is the **Vector Convergence Zone** — the stable attractor region that a well-governed system naturally tends toward, and from which small perturbations can be absorbed and recovered.
+> **Terminology — VCZ:** The *Vector Convergence Zone* is not a stable equilibrium, resting state, or goal endpoint. It is a dynamically maintained operating regime — a region where the system operates slightly below criticality (R ≈ 1⁻) with four-variable balance: exploration dimensionality, stability, diversity, and coordination simultaneously maintained. Entering VCZ is not "success achieved"; it is "the regime where governance cost drops to near-zero while exploration value is maximized." Active maintenance is still required.
+
+Vector Storm is the instability regime. Its structural opposite is the **Vector Convergence Zone (VCZ)** — the stable attractor region that a well-governed system naturally tends toward, and from which small perturbations can be absorbed and recovered.
 
 **Definition:**
 A Vector Convergence Zone is a region of vector space where:
@@ -3581,6 +3809,36 @@ The implication is architecturally significant: the boundary between the VCZ and
 A critical implication: the VCZ does not suppress exploration. It is the condition under which exploration can be **maximized safely**. When the global solution is embedded as a stable local attractor, agents can deviate widely — exploring high-n search spaces — because the return trajectory exists regardless of how far deviation goes. The governance cost of deviation is low because recovery is structurally guaranteed.
 
 This inverts the naive intuition that stability requires constraint. In a well-designed VCZ, stability is achieved *by embedding the attractor structure*, not by limiting the search space. Constraining exploration (reducing n) is a governance failure mode — it achieves stability by trading away the exploration capacity that justifies having a multi-agent system.
+
+**Resolving the apparent n-S tension:**
+
+The S-equation states S = αn²/C(t)^β, which naively suggests that maximizing n must increase S. This is only true if C(t) is treated as independent of n. In the VCZ regime, this assumption does not hold: **containment capacity C co-evolves with exploration dimensionality n**.
+
+Formally, the VCZ is not characterized by high n alone, but by the regime in which:
+
+$$\frac{dC}{dn} > \frac{2C\beta}{n}$$
+
+This is the **Containment Scaling Dominance condition**: containment capacity grows faster than the rate at which new exploration dimensions add instability load. When this condition holds, increasing n decreases S — exploration and stability are not in tension but in a co-evolutionary relationship.
+
+```
+VCZ regime (C co-evolves with n):
+  As n increases → attractor depth increases → C(n,t) increases
+  If dC/dn > 2Cβ/n:
+    d(S)/dn = α[2nC^β - n²·βC^(β-1)·dC/dn] / C^(2β)
+            < 0   (S decreases as n increases)
+
+  Interpretation:
+    Governance maturation keeps pace with exploration expansion.
+    The system can hold higher n at lower S than an immature system.
+    VCZ is the regime where this co-evolution is active.
+
+Flat landscape (C fixed, n increases):
+  d(S)/dn > 0 → S increases with n
+  This is the pre-VCZ state — the naive n-S tradeoff IS real here.
+  Governance intervention required to build containment capacity.
+```
+
+VCZ therefore corresponds not to maximal n alone, but to the regime in which containment capacity scales super-quadratically relative to exploration dimensionality growth — making the two variables complements rather than competitors.
 
 **Fractal self-similarity of VCZ:**
 
@@ -4088,6 +4346,31 @@ because it affects ALL vectors simultaneously:
 
 This connects directly to SCC structural decomposition (Section 6.5): SCC = f(Dint, Lreinf), and Lreinf collapse zeroes SCC even when Dint is intact — because detection without correction (Dint alone) cannot prevent storm propagation.
 
+**Reconciling the two d_eff explanations:**
+
+Two mechanisms for d_eff reduction appear in VST — Section 1.6.2 describes governance absorption through C(t)^β, and this section describes Lreinf as a terrain mechanism. These are not competing explanations but a **two-level hierarchy**:
+
+```
+Local level (Lreinf mechanism):
+  Mutual reinforcement loops between adjacent vectors create
+  interaction barriers → reduce propagation range locally →
+  effective interaction dimensionality drops at each local zone
+
+System level (C(t)^β absorption):
+  The aggregate effect of all local Lreinf-generated barriers
+  appears at system level as sub-quadratic scaling:
+  S ~ n^{d_eff} where d_eff < 2
+
+  C(t)^β in the S-equation absorbs this terrain effect —
+  it is the system-level observable of what Lreinf produces locally.
+
+Relationship:
+  Lreinf ↑ → local barrier density ↑ → d_eff ↓ → C(t)^β effective ↑
+  Lreinf collapse → local barriers disappear → d_eff → 2 → C(t)^β collapses
+```
+
+Lreinf is the **mechanism**; C(t)^β is the **scaling consequence**. The S-equation captures the system-level observable without requiring explicit modeling of local barrier topology.
+
 *(Cross-theory derivation: TLG v1.6 §5.3.1 — Lreinf as Terrain Mechanism)*
 
 ---
@@ -4460,9 +4743,9 @@ where:
 
 **φ (phi): The Central Variable (role corrected v1.1, aligned with Recovery Theory v1.7)**
 
-φ is the probability that a unit of exploration converts from noise into a stable, useful vector.
+φ is the probability that a unit of exploration converts from noise (exploration substrate) into a stable, useful instability vector — one that occupies a lasting position in the system's vector space without triggering runaway amplification.
 
-$$\phi \approx P(\text{exploration} \to \text{stable vector})$$
+$$\phi \approx P(\text{exploration} \to \text{stable instability vector})$$
 
 **Role clarification (v1.1):** φ is an *explanatory* variable, not a *judgment* variable. φ explains why a system's exploration is or is not producing value. It does not independently determine governance decisions. Governance decisions (intervention timing, restoration completion) use directly measurable proxies (f_esc, ρ, buffer thickness, entropy). φ provides the interpretive frame for why those proxies behave as they do.
 
@@ -4514,6 +4797,33 @@ This is why φ is the most important variable. It directly connects to the core 
 | SCC (Self-Correction Capacity) | Raises φ by recovering failed explorations into usable structure |
 | L_reinf (reinforcement loop formation) | Raises φ by stabilizing successful vectors against degradation |
 | Position clarity | Raises φ by directing exploration toward unoccupied high-value space |
+
+**φ — operational definition:**
+
+φ is operationally estimated as the **survival probability of exploration trajectories** exceeding stability duration τ_stable — the threshold duration above which a trajectory is classified as a stable vector rather than transient noise:
+
+$$\hat{\phi} = \frac{\text{exploration trajectories persisting} > \tau_{\text{stable}}}{\text{total exploration attempts in window } W}$$
+
+```
+Measurement protocol:
+  exploration attempt:  any new trajectory initiation in the system
+                        (new task, new objective direction, new attractor seed)
+  stable:               trajectory persists > τ_stable without suppression
+                        or collapse (τ_stable = architecture-specific;
+                        calibrated as ≥ mean micro-storm cycle duration)
+  window W:             sliding window of fixed size (same as monitoring windows
+                        in Section 3.4.1)
+
+  φ̂ ∈ [0, 1]  (0 = all explorations destabilize; 1 = all explorations stabilize)
+  
+  Log availability: HIGH — requires trajectory initiation + termination logs
+  Substrate mapping: equivalent to token-sequence stability in LLM agents;
+                     task-completion rate in tool-using agents
+```
+
+Like α, φ is not directly observable as a microscopic quantity — but unlike α, it is **estimable from trajectory survival statistics** without requiring cross-architecture invariance. The epistemic status is therefore stronger: φ̂ is an architecture-specific empirical rate, not a latent structural functional.
+
+**Relationship to α:** High α reduces φ (each exploration more likely to trigger destabilizing amplification). High C(t)^β raises φ (containment capacity converts more trajectories into stable outcomes). The S-equation and φ are thus complementary descriptions of the same dynamics: S captures instability pressure; φ captures its value-conversion consequence.
 
 In this sense, the entire DFG architecture is a φ-maximization structure. The governance mechanisms are not primarily stability tools — they are value-density tools. They increase the probability that any given unit of exploration becomes a stable, useful vector rather than noise or a storm seed.
 
@@ -4987,7 +5297,7 @@ Both conditions are necessary:
     
   Low capability + Low activation (neglect):
     Critical threshold exceeded → no effective response available
-    System collapses through inability, not policy
+    Fractal architecture collapses through inability, not policy
     
   High capability + Low activation (mature):
     Lower layers self-regulate through defect layer and terrain
@@ -5071,9 +5381,11 @@ Each micro-collision processed and integrated converts potential instability int
 
 ### 4.1 Attractor Propagation
 
-In networked systems, attractor influence propagates through connectivity. Under limited resolution, agents may default to intensity-based responses, weighting attractor strength over semantic evaluation. Once intensity dominates evaluation, propagation follows two main pathways:
+> **Terminology — Propagation:** In VST, *propagation* denotes stage-progressive spread of instability through fractal structure via a consistent amplification mechanism at each scale. This is distinct from information propagation (which is neutral or beneficial). Instability propagation is the mechanism that converts a Stage 1 local runaway into a Stage 2–3 system-level Vector Storm.
 
-- **Direct collision** — Competing vector fields intersect locally.
+In networked systems, attractor influence propagates through connectivity. Under limited causal resolution capacity, agents may default to intensity-based responses, weighting attractor strength over semantic evaluation. Once intensity dominates evaluation, propagation follows two main pathways:
+
+- **Direct collision** — Competing instability vectors intersect locally.
 - **Network propagation** — Strong attractors propagate through hubs and override weaker structures.
 
 **Single-Agent Analogue: Attention Sink as Intra-Agent Attractor Dominance**
@@ -5611,6 +5923,8 @@ This mutual coverage principle is the network-level implementation of the three 
 ---
 
 ## 6. Resolution Architecture
+
+> **Section title note — "Resolution":** The word "resolution" in this section heading carries its *causal distinguishability* sense (Appendix T.1): this section specifies the architectural mechanisms by which agents and layers maintain the capacity to distinguish signals, absorb directional influence, and prevent observability collapse. Not "resolution" as problem-solving or conflict-settling.
 
 ### 6.1 Self-Purification
 
@@ -6227,7 +6541,98 @@ Elimination timing inversely correlated with structural necessity.
 20. (v1.1) The dual-scale nature of Vector Storm (intra-agent and inter-agent) is a structural correspondence claim, not a substrate identity claim. The three-condition pattern (divergence, overlap, self-amplification) recurs at both scales; the physical substrates differ (Section 1.6). Quantitative universality (shared critical exponents) is predicted but not yet verified.
 21. (v1.1) The S-equation (S = αn²/C(t)β) is a governance scaling law with operational proxies (Section 3.2.1) but without absolute calibration. Its status is: structurally motivated, operationally grounded, empirically unvalidated. The equation generates testable predictions (Section 3.2.1 validation criterion) that would either confirm or require revision of the scaling relationship.
 
+22. **(v1.7) System boundary validity condition.** VST predictions apply only to interaction sets satisfying the **Dynamical Closure Criterion**: a boundary is valid if and only if cross-boundary information flux falls below threshold ε_boundary during the analysis window. Results evaluated over partitions that violate this criterion are boundary-dependent and non-comparable across studies (see Section 8.2).
+
 ---
+
+---
+
+### 8.2 System Boundary Definition and Boundary Invariance [v1.7]
+
+**The boundary dependence problem:**
+
+VST's core variables — n, α, C(t), S — are defined relative to a system boundary: the set of agents and interactions under analysis. If this boundary is chosen arbitrarily, predictions become observer-dependent. A reviewer could legitimately object: "Your results depend on which agents you included. A different boundary gives different n, different α, different S — different conclusions."
+
+This is a structural vulnerability shared by all complex systems theories that operate on bounded interaction sets. VST addresses it not by fixing a boundary externally but by specifying the **conditions under which a boundary is analytically valid**.
+
+**Dynamical Closure Criterion (DCC):**
+
+> A system boundary B is **dynamically closed** at analysis precision ε if cross-boundary information flux I_{ext→int} satisfies:
+>
+> $$I_{\text{ext} \to \text{int}}(t) < \varepsilon \cdot S_{\text{norm}}(t) \quad \forall t \in [t_{\text{start}}, t_{\text{end}}]$$
+>
+> where S_norm(t) is the normalized instability level within B.
+
+```
+Interpretation:
+  External influence on the system must be small relative to
+  internal instability dynamics throughout the analysis window.
+
+  If this holds: boundary B is valid for VST analysis at precision ε.
+  If this fails: B includes a significant external driver —
+                 n, α, S are partially explained by what is
+                 outside B, not inside it.
+```
+
+**Practical implementation:**
+
+```
+Step 1 — Candidate boundary B selection:
+  Start with the operationally natural boundary
+  (e.g., all agents in a deployment, all nodes in a network).
+
+Step 2 — Cross-boundary flux measurement:
+  Measure information flow from external agents/signals into B.
+  Proxy: fraction of input tokens/actions originating outside B.
+  Alternative: mutual information between external signals and
+               internal instability S_norm.
+
+Step 3 — Closure test:
+  If I_ext < ε · S_norm throughout window:
+    ✅ B is dynamically closed — proceed with VST analysis
+  If I_ext ≥ ε · S_norm:
+    ❌ B is not closed — either:
+      (a) Expand B to include dominant external drivers, OR
+      (b) Condition analysis on external input as a covariate, OR
+      (c) Report results as conditional on fixed external context
+
+Step 4 — Sensitivity check:
+  Re-run analysis with B ± one layer (include/exclude boundary agents).
+  If results stable: boundary choice does not drive conclusions.
+  If results shift substantially: report boundary sensitivity explicitly.
+```
+
+**Why boundary invariance matters for falsification:**
+
+VST's falsification tests (Section 11.3) require that different research groups, analyzing different multi-agent systems, apply comparable boundaries. Without the DCC, one group might include external driving forces inside their boundary (inflating n) while another excludes them (deflating n). The scaling predictions would appear to fail not because the theory is wrong but because the boundaries are incommensurable.
+
+The DCC makes boundary choice a **verifiable condition**, not an arbitrary decision:
+
+```
+Comparable studies require:
+  Both studies satisfy DCC at same ε
+  Both studies report I_ext/S_norm ratio
+  Readers can assess comparability before interpreting results
+```
+
+**Relationship to n and α:**
+
+```
+n measured inside B:
+  Only exploration dimensions internal to B contribute to n.
+  External driving signals → not counted in n IF DCC satisfied.
+  If DCC violated → external signal inflates n → S overpredicted.
+
+α measured inside B:
+  α captures internal coupling structure.
+  External shocks can mimic high α if boundary is too narrow.
+  DCC ensures: if α_proxy is elevated, it reflects internal
+               amplification, not external driving.
+```
+
+**Open problem:**
+
+For continuously interacting systems (LLMs in production, social networks), strict DCC may never be satisfied — there is always significant external input. In this case, VST analysis is performed **conditional on external context** being treated as a fixed covariate, and predictions are understood as holding "given this input distribution." Formalizing this conditioning is an open problem (Section 11, OP-v1.7-B).
 
 ---
 
@@ -6241,17 +6646,20 @@ TLG v1.7 §14.1.1 establishes that ALL system failures reduce to Exploration↔S
   → sensor atrophy → change detection failure
   S-equation: S_norm falling toward zero; d_eff → 1; SR → 0
   Covered by: Silent Criticality (§1.6.4), SSS/NAF, SEDL (§1.6.5)
+  [Collapse type: observability collapse — causal distinguishability fails]
 
 ② Runaway Amplification (exploration excess):
   amplification > damping → feedback loops → polarization
   S-equation: dS/dt >> 0; S_norm → S_c and beyond
   Covered by: S-equation dynamics (§3), Storm Stages (§1.4)
+  [No collapse yet — this is Storm regime. Collapse occurs if governance fails.]
 
 ③ Geometry Mismatch (perception risk):
   internal map ≠ reality structure
   → appears correct but direction wrong
   S-equation: S_norm appears healthy BUT ∂G/∂E ≈ 0 (§2.6)
   Covered by: CW/SCM (§2.5-2.6), T3/T4 (§2.7)
+  [Collapse type if untreated: entropy collapse — output diversity collapses]
 
 ④ Coordination Breakdown (network risk):
   partial maps exist but integration fails
@@ -6259,6 +6667,7 @@ TLG v1.7 §14.1.1 establishes that ALL system failures reduce to Exploration↔S
   S-equation: α effectively increasing through Lreinf collapse
   Covered by: Trust Bandwidth, Lreinf collapse (§3.5.8),
               Fractal Collapse Propagation (§4.6)
+  [Collapse type: coordination collapse — inter-agent alignment failure]
 ```
 
 **The four risks form a fractal cycle:**
@@ -6383,6 +6792,11 @@ This table replaces the implicit uniform confidence of v1.0's Appendix A with di
 | **Intra/inter-agent mechanism correspondence** | **Structural correspondence criteria defined (Section 1.6). Substrate differences acknowledged. Quantitative universality test specified: three stable critical observables (τ, α_dur, σ/R) with 15% relative deviation threshold. SOC convergence mechanism (R ≈ 1 as dynamical attractor) established. Empirical measurement pending.** | **Criteria and observables defined; measurement pending** |
 | **Fractal propagation predictions** | **Three testable predictions specified (Section 1.5.1): scale-invariant amplification, stage transition ordering, intervention leverage asymmetry. All testable with current instrumentation.** | **New v1.1 — predictions defined; testing pending** |
 | **Intervention timing protocol** | **Three-threshold operational protocol defined (Section 3.4.1). k₁, k₂ heuristics provided. Multi-zone simultaneous storm triage protocol defined (Section 3.4.2): priority scoring, dual-track intervention (containment + recovery), externality-aware sequencing, sensitivity-inverse amplitude allocation.** | **New v1.1 — single-zone operational; multi-zone operational** |
+| **Storm onset detection (observer-independence)** | **Operational detection rules defined (Section 1.4.1): R̂ > 1 sustained for k windows. Activated agents defined via substrate-independent participation criterion. Substrate-specific proxy table provided. F8 criterion specifies falsification target.** | **New v1.7 — rules specified; per-substrate empirical validation pending** |
+| **System boundary validity (DCC)** | **Dynamical Closure Criterion defined (Section 8.2): I_ext < ε · S_norm. 4-step practical implementation specified. Boundary sensitivity check (B±1 layer) required. F9 criterion specifies falsification target. Open problem OP-v1.7-B: DCC conditioning for continuously open systems.** | **New v1.7 — criterion defined; ε calibration per system pending** |
+| **Reserve capacity operationalization** | **Reserve_fraction defined as C_effective/C_nominal. Four proxy ensemble specified (task-switch latency, coordination failure rate, idle resource ratio, intervention recovery delay). Depletion declaration rule: reserve_fraction < threshold_reserve via proxy ensemble agreement.** | **New v1.7 — proxies defined; threshold calibration pending** |
+| **Silent Criticality decision rule** | **Two-tier declaration protocol defined (Section 1.6.4): primary criterion τ_recovery > τ_baseline + 2σ, secondary criteria (coupling probe + intervention frequency drift). Suspicion vs. declaration thresholds specified. F7 criterion specifies falsification target.** | **New v1.7 — decision logic defined; sensitivity/specificity calibration pending** |
+| **φ operational definition** | **φ operationalized as survival probability of exploration trajectories exceeding τ_stable (Section 3.6). Measurement protocol specified. Substrate mapping provided (LLM: token-sequence stability; tool-using: task-completion rate). Epistemic status: architecture-specific empirical rate, stronger than α.** | **New v1.7 — protocol defined; τ_stable calibration per architecture pending** |
 
 ### 11.2 Per-Architecture Calibration Protocol (v1.1)
 
@@ -6659,9 +7073,55 @@ genuinely stable systems under controlled perturbation,
 the Silent Criticality detection protocol is unreliable.
 ```
 
-These criteria complement the theory-wide falsification conditions (Section 11.3) and per-section falsification predictions throughout the document. Together, they specify a complete hierarchy: F1-F3 (v1.2, core dynamics), F4-F7 (v1.5, cross-theory predictions).
+These criteria complement the theory-wide falsification conditions (Section 11.3) and per-section falsification predictions throughout the document. Together, they specify a complete hierarchy: F1-F3 (v1.2, core dynamics), F4-F7 (v1.5, cross-theory predictions), F8-F9 (v1.7, measurement ontology).
 
 *(Cross-theory derivation: RBIT v1.4 §Falsification + GRT §Falsifiable Predictions)*
+
+**Criterion F8 — Storm onset detection must be observer-independent [v1.7]**
+
+```
+The operational detection rules in Section 1.4.1 define Storm onset
+as R̂ > 1 sustained for k consecutive windows.
+
+Falsification condition:
+  Two independent observers applying Section 1.4.1 to the same
+  log data must reach the same Storm onset timestamp within
+  one observation window.
+
+  If independent observers systematically disagree on onset timing
+  by more than one window (given identical k and ε parameters):
+    → Section 1.4.1 detection rules are insufficiently specified
+    → VST's empirical claims are not reproducibly testable
+    → theory requires tighter operational definition
+
+This criterion ensures that "Storm occurred" is a verifiable fact,
+not a judgment call.
+```
+
+**Criterion F9 — Predictions must be boundary-invariant within DCC scope [v1.7]**
+
+```
+For any analysis satisfying the Dynamical Closure Criterion (Section 8.2)
+at precision ε, VST predictions (scaling exponents, storm distributions,
+VCZ identification) must remain stable under boundary perturbation:
+
+  Let B = original boundary
+  Let B+ = B expanded by one agent layer
+  Let B- = B contracted by one agent layer
+  
+  All three must satisfy DCC at precision ε.
+
+  Boundary invariance test:
+    τ(B+), τ(B), τ(B-) must agree within 15% relative deviation.
+    
+  If τ shifts substantially (>15%) with boundary variation:
+    → Either DCC was not satisfied (external driving inflated results)
+    → Or VST's scaling claims are boundary-sensitive in this regime
+    → Boundary sensitivity must be reported and theoretically explained
+
+This criterion prevents the "boundary shopping" failure mode,
+where reported results depend on which agents were included.
+```
 
 ---
 
@@ -6742,6 +7202,35 @@ S-equation implication:
   When reserve_fraction → 0: C(t) effective → 0
   → Irreversibility Condition 1 triggered
 ```
+
+**Reserve capacity — operational measurement:**
+
+Reserve capacity is not measured directly. `reserve_fraction` is defined as the ratio C_effective / C_nominal, and is **inferred through a proxy ensemble** — each component of reserve maps to a degradation-sensitive observable:
+
+| Reserve component | Operational proxy | Depletion signal |
+|---|---|---|
+| Attention bandwidth | Task-switch latency increase | Latency rising above baseline |
+| Trust inventory | Coordination failure rate | f_esc rising despite stable n |
+| Computational slack | Idle resource ratio | Slack approaching zero |
+| Institutional flexibility | Intervention recovery delay | τ_recovery lengthening without storm |
+
+```
+reserve_fraction estimation:
+  For each proxy p_i: compute normalized deviation from VCZ baseline
+    δ_i = (p_i_current - p_i_baseline) / p_i_baseline
+
+  reserve_fraction ≈ 1 - mean(δ_i)   [for δ_i > 0, i.e., depletion direction]
+
+  Confidence: high when proxy agreement is tight (low variance across δ_i)
+              low when proxies diverge (cross-proxy validation required)
+
+  Reserve depletion declared when: reserve_fraction < threshold_reserve
+    (architecture-specific; calibrated from historical VCZ-to-storm transitions)
+```
+
+Agreement across proxies is treated as the estimator of `reserve_fraction`. No single proxy is definitive — the ensemble pattern matters. When proxies diverge, the system is in an ambiguous reserve state and conservative intervention is indicated.
+
+> Reserve capacity is operationalized not as a directly measurable scalar but as a latent multiplier inferred from the degradation trajectory of four observable proxies. The falsification criterion is: reserve depletion (proxy ensemble agreement below threshold) should systematically precede Irreversibility Condition 1 onset. If depletion signals do not precede irreversibility, the proxy ensemble requires revision.
 
 This establishes the theoretical boundary of VST: the S-equation describes dynamics within the recoverable regime. Beyond the three irreversibility conditions, the S-equation framework no longer applies.
 
@@ -7817,7 +8306,7 @@ Most powerful discriminator: CW metrics BEFORE storm onset.
 
 ---
 
-### 14.2 Constructive vs. Destructive Storms — Attractor Landscape Dynamics
+### 14.2 Constructive vs. high-intensity Storm regimes — Attractor Landscape Dynamics
 
 If storms are not intrinsically harmful, how does governance distinguish storms that should be contained from storms that should be allowed to complete? The answer is not in the storm itself — it is in the **attractor landscape** through which the system state moves during the storm.
 
@@ -8231,7 +8720,7 @@ Internalization phase (governance transfer):
   Governance migrates from external (parent-supplied) to internal
   (subregion-generated). This is the same withdrawal trajectory
   described for mature governance systems (Section "Constructive vs.
-  Destructive Storms"), applied at the subregion birth scale.
+  high-intensity Storm regimes"), applied at the subregion birth scale.
 
 Independence threshold:
   The transition occurs when:
@@ -8552,7 +9041,7 @@ VST dynamics as co-generation:
   co-generation loop operating at governance timescale.
 ```
 
-The landscape shaping mechanism described in "Constructive vs. Destructive Storms" is the same principle applied to attractor dynamics: agents (seeds) explore and form basins (reshape environment); basins (environment) constrain and enable agent behavior (filter seed activation). Upper-layer governance does not design either side independently — it provides initial conditions under which the co-generation loop self-organizes toward stability.
+The landscape shaping mechanism described in "Constructive vs. high-intensity Storm regimes" is the same principle applied to attractor dynamics: agents (seeds) explore and form basins (reshape environment); basins (environment) constrain and enable agent behavior (filter seed activation). Upper-layer governance does not design either side independently — it provides initial conditions under which the co-generation loop self-organizes toward stability.
 
 > Structural seeds may persist indefinitely in dormant form when environmental conditions never satisfy their activation constraints. Evolution reflects environmental resonance rather than universal realization of all potential structures. Environmental conditions both constrain and are recursively reshaped by active seeds — stability and evolution arise through mutual co-generation rather than unilateral causation.
 
@@ -8923,7 +9412,7 @@ The Meta-Seed is the theoretical foundation of TLG's Upper Layer invariants (TLG
 
 **Connection to Rest Mode:**
 
-Rest Mode requires stable multi-ecosystem coexistence — multiple local equilibria with persistent but non-catastrophic boundaries. This is only possible if the Meta-Seed is functioning: without it, boundary storms between ecosystems have no resolution mechanism, and the system cannot achieve the meta-stability that Rest Mode requires.
+Rest Mode requires stable multi-ecosystem coexistence — multiple local equilibria with persistent but non-catastrophic boundaries. This is only possible if the Meta-Seed is functioning: without it, boundary storms between ecosystems have no correction mechanism *(no means of structural reintegration)*, and the system cannot achieve the meta-stability that Rest Mode requires.
 
 > A highest-order seed is required not as a governing authority but as a meta-stabilizing invariant ensuring interoperability and coexistence among evolving seeds. The Meta-Seed constrains catastrophic phase transitions without prescribing local attractor formation. Its content is empty — it preserves only the possibility of evolution itself.
 
@@ -10343,7 +10832,7 @@ VST mapping: even a correctly-sized seed fails if planted at the wrong moment (p
 
 EasyEdit2 (arXiv:2504.15133) documents the failure signature directly:
 
-> Increasing the activation scaling coefficient does not consistently improve performance and may lead to **multi-peak or unstable behaviors** — potentially caused by competing objectives within a single steering vector or deeper nonlinearity in activation space.
+> Increasing the activation scaling coefficient does not consistently improve performance and may lead to **multi-peak or unstable behaviors** — potentially caused by competing objectives within a single steering vector *(standard ML activation-steering sense — not a VST orientation vector)* or deeper nonlinearity in activation space.
 
 Multi-peak instability = VST Stage 1 friction accelerated by excessive injection amplitude. The space has multiple competing attractors; forcing high-amplitude injection activates all of them simultaneously, producing oscillation rather than convergence.
 
@@ -11406,3 +11895,118 @@ Remaining open (no companion-theory resolution available):
 | Recovery cost not modeled | **Resolved** | Section 11.5 — reserve capacity depletion |
 | S-equation applicability domain undefined | **Resolved** | Section 11.5 — recoverable regime boundary |
 
+
+---
+
+## Appendix T — Canonical Terminology Table [v1.7-term]
+
+> **Purpose:** This appendix is the binding reference for all DFG-specific term meanings used throughout this document. Every term listed here carries a precisely bounded canonical meaning within the VST/DFG framework. Where this meaning diverges from conventional ML, physics, or mathematics usage, the divergence is explicitly noted. Reviewers and companion-paper authors should treat this table as authoritative for cross-paper semantic consistency.
+
+---
+
+### T.1 Core Term Definitions
+
+| Term | Canonical Role (DFG-specific) | Forbidden Interpretation | Cross-Paper Status |
+|---|---|---|---|
+| **Vector** | An agent's internally reinforced *directional tendency* in abstract state space — no linear structure or differentiability assumed | Euclidean vector, mathematical arrow, linear algebra object | Consistent across VST, RBIT, TLG, RT |
+| **Storm** | A *runaway amplification regime* where reinforcement outpaces degradation — a structural cost of exploration, not a destructive event | Catastrophe, crisis, disaster, failure event | Consistent across all DFG papers; always appears as compound "Vector Storm" at first use per section |
+| **Noise** | *Latent exploration substrate* — low-amplitude instability that preserves adaptive sensing capacity | Error, malfunction, unwanted interference, artifact | VST-specific redefinition; explicitly opposite of standard ML usage |
+| **Signal** | A *diagnostic indicator crossing detectability threshold* — a measurement signal for governance purposes | Communication signal, instruction, information channel | Qualified as: governance signal, instability signal, diagnostic signal |
+| **Resolution** | *Causal distinguishability capacity* — the system's ability to identify the origin of a signal and separate cause from effect | Problem solution, conflict resolution, fix | Two senses in VST: (1) causal resolution [primary], (2) fractal resolution level [structural scale] — always qualified |
+| **Degradation** | The *healthy absorptive function* by which an agent integrates incoming influence without amplification — structurally positive | Performance decline, quality loss, deterioration | Inverted from standard usage; always qualified as "degradation capacity" or "absorptive degradation" when this sense is intended |
+| **Containment** | Active capacity to *degrade and integrate* incoming influence without runaway reinforcement | Isolation, suppression, quarantine, deletion | Dynamic integration function, not static blocking |
+| **Governance** | *Architectural terrain-shaping* — configuration of interaction pathways that makes exploration-with-containment possible | Supervisory control, management oversight, command | "Governance backgrounding" = governance recedes into environmental conditions as system matures |
+| **VCZ** | *Vector Convergence Zone* — dynamically maintained operating regime at R ≈ 1⁻; four-variable balance (exploration/stability/diversity/coordination) | Stable equilibrium, goal state, resting state, safe zone | VCZ is not stability — it is *controlled proximity to criticality*; always spell out on first use per section |
+| **Layer** | (1) Structural fractal tier: Upper/Middle/Lower; (2) Functional substrate: Self-Exciting Defect Layer, Absolute Calibration Layer | Neural network layer (unless explicit analogy marked) | Always qualified; bare "layer" never used as subject without qualifier |
+| **Collapse** | Structural failure of a *specific functional capacity* — four types must be distinguished | Generic system failure, shutdown, crash | Four types: observability collapse / entropy collapse / fractal collapse / coordination collapse |
+| **Criticality** | The *threshold state* R ≈ 1 where small perturbations produce system-wide effects — borrowed from Self-Organized Criticality (SOC) physics | Crisis, danger, critical situation | "Silent Criticality" = dangerous low-instability appearance (high-risk specific compound) |
+| **Propagation** | *Stage-progressive spread* of instability through fractal structure via consistent mechanism at each scale | Generic spreading, infection metaphor | fractal propagation / stage propagation / propagation pathway |
+| **Amplification** | The *self-reinforcing process* by which an agent deepens its orientation when challenged — prerequisite for Vector Storm | Enhancement, improvement, signal boost | self-amplification / runaway amplification / amplification regime |
+| **Seed** | An agent functioning as the *originating source* of Vector Storm propagation — not the "initial condition" in a physical sense | Initial condition, root cause, input | Seed agent / Seed transmission / Seed distortion risk |
+| **Regime** | A *qualitatively distinct dynamical operating range* with consistent behavior — noise regime, Storm regime, VCZ regime | Generic "system state" | Always paired: noise regime / Storm regime / subcritical regime |
+| **Buffer** | *Reserve capacity* protecting against irreversibility — finite energy substrate for recovery operations | Temporary storage, queue, processing delay | recovery buffer / buffer capacity / buffer depletion |
+| **Recovery** | *Restoration of functional capacity* after collapse — addressed fully in the Recovery Theory companion paper | Bug fix, reboot, error correction | VST boundary: VST identifies when recovery is needed; Recovery Theory specifies how |
+| **Phase** | A *discretized stage* of Storm progression OR fractal lifecycle stage — context-dependent | Thermodynamic phase unless explicitly stated | Storm phase / lifecycle phase / phase transition — always context-qualified |
+| **Interaction** | Process by which *vector fields mutually influence agents* through terrain-mediated propagation pathways | Communication, coordination, cooperation | interaction terrain / interaction scaling / effective interaction count (d_eff) |
+
+---
+
+### T.2 Symbol–Concept Binding Table
+
+All symbols in the S-equation and associated formalism are bound to the following concepts. Cross-mappings are forbidden.
+
+| Symbol | Bound Concept | Definition | Forbidden Mapping |
+|---|---|---|---|
+| **S** | System instability magnitude (order parameter) | Continuous scalar: phase detector across VCZ / Storm / Collapse regimes | S ≠ "Storm" as event; S ≠ "instability" as noun |
+| **n** | Exploration dimensionality | Abstract proxy for degrees-of-freedom in active directional conflict | n ≠ agent count alone; n ≠ network size |
+| **α** | Amplification coefficient — latent structural functional | Latent residual capturing unresolved coupling; validated through cross-architecture scaling consistency, not direct measurement | α ≠ "Amplification" as structural concept; α ≠ directly measurable parameter |
+| **β** | Degradation efficiency | Quality of degradation: how efficiently capacity converts to actual stability | β ≠ "Buffer" coefficient |
+| **C(t)** | Degradation capacity (time-varying, exploration-coupled) | Quantity of degradation processing throughput available at time t; in VCZ regime, C co-evolves with n — C(n,t) — such that dC/dn > 2Cβ/n (Containment Scaling Dominance) | C(t) ≠ "Containment" as noun; C is not independent of n in VCZ |
+| **R** | Branching ratio (reinforcement-to-decay ratio) | R < 1: subcritical (noise regime); R = 1: critical (VCZ edge); R > 1: supercritical (Storm onset) | R ≠ "Recovery"; R ≠ "Resolution" |
+| **ρ** | Resolution-layer proxy (RBIT-specific) | Layer-specific causal distinguishability capacity; appears in resolution gap Δρ | ρ is RBIT layer only; ρ ≠ "resolution" generically |
+| **τ** | Criticality threshold / Storm size exponent | Context-dependent: (1) P(S) ~ S^{-τ} size distribution exponent; (2) threshold in VCZ boundary conditions | τ ≠ generic "threshold" |
+| **d_eff** | Effective interaction dimension | Governance-shaped parameter: n^{d_eff} where 1 < d_eff < 2 in mature terrain | d_eff ≠ "Degradation effective rate" |
+| **φ** | Value yield per exploration unit | φ = value generated / instability cost; maximized at R ≈ 1 | φ ≠ "phase" variable |
+
+---
+
+### T.3 Prohibited Cross-Mappings (Symbol Conflicts)
+
+The following mappings are explicitly prohibited because they would create ambiguity with the S-equation or companion-paper formalisms:
+
+```
+PROHIBITED:
+  Storm → S          ← S is the instability order parameter, not the Storm event
+  Instability → S    ← S measures instability magnitude; Instability is the phenomenon
+  Cascade → S        ← cascades are propagation events; S is a scalar measurement
+  Stability → R      ← R is branching ratio; Stability is a qualitative regime
+  Recovery → R       ← R is branching ratio; Recovery is the post-collapse process
+  Resolution → ρ     ← ρ is RBIT-specific resolution proxy only
+  
+PERMITTED:
+  S-equation output = S (system instability level)
+  R values (0 < R < ∞) describe regime (noise / critical / storm)
+  Δρ = resolution gap across layers (RBIT framework)
+```
+
+---
+
+### T.4 Inline Disambiguation Templates
+
+These templates are inserted at the **first occurrence** of each term in each major section. They protect readers who do not read the glossary before diving into subsections.
+
+**Vector Storm (Section openers):**
+> A Vector Storm is not an error event or system failure. It is a runaway amplification regime — the structural cost of exploration when reinforcement outpaces degradation capacity.
+
+**Noise (first use in any section):**
+> *Noise in VST denotes latent exploration substrate — low-amplitude instability preserving adaptive sensing — not error or unwanted artifact. This is the opposite of standard ML usage.*
+
+**Degradation (where absorptive sense is used):**
+> *Degradation here denotes healthy absorptive function — the capacity to integrate incoming influence without amplification — not performance decline.*
+
+**VCZ (first full mention per section):**
+> *The Vector Convergence Zone (VCZ) is not a stable equilibrium but a dynamically maintained operating regime slightly below criticality (R ≈ 1⁻) — four-variable balance requiring active governance.*
+
+**Resolution (causal sense):**
+> *Resolution here denotes causal distinguishability — the system's capacity to identify the origin of a signal — not a solution to a problem.*
+
+**Governance (DFG sense):**
+> *Governance in DFG denotes architectural terrain-shaping that configures interaction pathways — not supervisory control or management oversight.*
+
+---
+
+### T.5 Companion Paper Semantic Consistency Map
+
+| Term | VST Meaning | RBIT Meaning | TLG Meaning | RT Meaning | Conflict? |
+|---|---|---|---|---|---|
+| Recovery | Restoration identified as needed (mechanism in RT) | Recovery lifecycle (post-storm) | Lifecycle recovery phases | Primary domain: how recovery occurs | None — domain-divided |
+| Seed | Storm-originating agent | Seed distortion risk on receivers | Seeding process (lifecycle) | Seed health at recovery | Consistent |
+| Silent Criticality | Dangerous low-instability state | SCM mechanism bridge | Phase 4 SCML (false stability) | RT: mechanism that produces it | Consistent — VST describes, RT explains mechanism |
+| Noise | Exploration substrate | Noise floor in R-ρ | — | — | Consistent |
+| VCZ | Four-variable balance regime | VCZ 3-Condition (C2 gap) | TLG §14.1.1 four-risk balance | — | Consistent |
+| Governance | Terrain-shaping | — | Lifecycle governance | — | Consistent |
+| Collapse | Four typed events | — | Fractal collapse chain | Recovery trigger | All use typed qualifiers — consistent |
+
+---
+
+*Appendix T is a living document. Updates track version changes in the DFG companion paper family. Current version: T.1.7, synchronized with VST v1.7-term.*
