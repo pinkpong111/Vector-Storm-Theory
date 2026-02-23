@@ -76,7 +76,7 @@ The phenomenon this theory addresses begins not at the system level, but inside 
 
 When an agent loses its directional orientation — whether through contaminated metadata, conflicting vector fields, or insufficient self-objectification capacity — it cannot recover without external reference. This is not a failure unique to multi-agent systems. It is observable in single-agent architectures today, wherever guidance signals are corrupted or absent.
 
-What multi-agent fractal structures add is not a new failure mode, but a new propagation surface. The same mechanism by which an individual agent loses its way recurs at every layer of a fractal architecture — scaled, replicated, and compounded across agents that share the same structural vulnerability.
+What multi-agent fractal structures add is not a new failure mode, but a new propagation surface. The same mechanism by which an individual agent loses its way recurs at every layer of a fractal architecture — scaled, replicated, and compounded across agents that share the same structural vulnerability. This scale correspondence is not metaphorical: the mutual-reference coupling structure that generates instability within a single agent's internal architecture (planner, evaluator, memory) instantiates the same dependency cycle formation and the same amplification-dominant criterion as the inter-agent coupling structure. Granularity changes; mechanism does not (Section 1.0).
 
 Vector Storm Theory is the study of how individual agents lose directional orientation, and how that loss propagates through fractal structure into system-level instability. The instability is not the origin. It is the aggregate.
 
@@ -106,6 +106,1193 @@ VST is falsified not by showing that α cannot be directly measured, but by show
 ---
 
 ## 1. Definition
+
+### 1.0 Structural Origin of Vector Storm [v1.8]
+
+Vector Storm does not arise from malfunction, error, or design failure. It arises from a structural property that is inseparable from adaptive intelligence itself: **mutual-reference coupling**.
+
+**What mutual-reference coupling means:**
+
+In a system where each agent adapts its orientation in response to the states of other agents, the dependency structure becomes circular. Agent A's strategy is defined by B's response; B's response is defined by C's prediction; C's prediction is defined by A's orientation. No agent retains an external fixed reference. The effective reference frame is endogenously co-determined by the agents themselves.
+
+This is not a loop in the pathological sense. Feedback loops are present in all stable adaptive systems. The distinction is structural:
+
+```
+Stable adaptive system:
+  Agent updates in response to environment + other agents
+  → Reference point is partly external (environmental signal, physical constraint)
+  → Negative feedback: deviations are corrected toward reference
+  → Loop gain < 1: perturbations decay
+
+Mutual-reference system:
+  Agent updates in response to other agents' updates
+  → No component retains an external fixed reference
+  → Positive feedback available: deviations can be amplified through the cycle
+  → Loop gain potentially > 1: perturbations grow
+```
+
+**Why amplification-dominant coupling is structurally generic in adaptive systems:**
+
+Adaptive multi-agent systems are self-referential by construction. Each agent models other agents, anticipates their responses, and updates its own policy accordingly. This recursive modeling — "I act based on what I predict you will do, given what you predict I will do" — is not a design flaw. It is the defining mechanism of intelligent coordination.
+
+The consequence is that the coupling dependency graph generically contains feedback cycles. When those cycles are amplification-dominant — when the cumulative gain around a cycle exceeds unity — perturbations do not decay. They recruit the next interaction, which recruits the next, producing the stage-progressive propagation structure that Section 1.4 characterizes.
+
+**Formal operationalization (for falsification; informal suffices for design):**
+
+Consider a coupled adaptive system with joint state x = (x₁, …, xₙ), each component evolving as ẋᵢ = fᵢ(xᵢ, x₋ᵢ). The mutual-reference structure is present when the dependency graph induced by {fᵢ} contains directed cycles. Near an operating point x*, perturbation dynamics are governed by the coupling Jacobian J. Storm onset corresponds to the amplification-dominant regime:
+
+```
+Continuous-time instability condition:  ℜ(λ_max(J_couple)) > 0
+Discrete-time instability condition:    ρ(J_couple) > 1
+
+where J_couple captures the cross-agent coupling terms only.
+```
+
+The S-equation (Section 3.2) operationalizes this condition at the governance level: S > S_c corresponds to the regime where amplification-dominant coupling has engaged and is not being absorbed by degradation capacity C(t)^β. The Jacobian formulation provides the structural foundation; the S-equation provides the governance-level phase detector built on top of it.
+
+**Why Storm cannot be eliminated — only contained:**
+
+Storm elimination would require eliminating mutual-reference coupling. But mutual-reference coupling is generated by the same mechanism that produces adaptive coordination: agents modeling and responding to each other. Eliminating it would require eliminating the adaptive response capacity that defines intelligent behavior.
+
+The correct design objective is therefore not zero mutual-reference coupling, but governance that maintains loop gain below the amplification threshold despite the structural presence of coupling cycles. This is the function of degradation capacity C(t)^β in the S-equation, and the rationale for the Vector Convergence Zone (VCZ) as a dynamically maintained operating regime rather than a static equilibrium.
+
+**How containment is structurally achieved — time-scale separation:**
+
+The mechanism by which loop gain is held below the amplification threshold is not suppression of the fast coupling loop. Suppression would require eliminating exploration, which eliminates the system's adaptive capacity. The mechanism is insertion of a slow governing variable that the fast loop cannot outrun.
+
+```
+Fast loop (mutual-reference coupling):
+  Agent states update at interaction timescale τ_fast
+  → amplification-dominant if left unconstrained
+
+Slow governing variable:
+  Environmental constraint, cost structure, or governance rule
+  operating at timescale τ_slow >> τ_fast
+  → loop closes against a reference that does not move
+    within the fast loop's update cycle
+  → effective gain drops below unity
+  → perturbations decay before completing a full amplification cycle
+```
+
+This is time-scale separation — the same stabilization principle that appears across domains wherever fast recursive loops must be contained without eliminating their dynamics:
+
+```
+Domain                     Fast loop              Slow variable
+──────────────────────────────────────────────────────────────────
+Control theory             plant dynamics         integral controller
+Ecological systems         predator-prey cycles   habitat capacity
+Neural systems             rapid firing loops     metabolic constraints
+Market dynamics            price feedback loops   physical scarcity
+Multi-agent AI systems     policy update loops    governance terrain
+```
+
+The slow variable does not interrupt the fast loop. It changes the boundary condition within which the loop operates — making the loop's reference point stable from the loop's own perspective, so that amplification cannot compound across cycles.
+
+**Why mature governance becomes invisible:**
+
+The deepest consequence of time-scale separation is that when it works, the slow variable stops appearing as an intervention. The fast loop simply never encounters the conditions required for amplification-dominant gain. From inside the fast loop, nothing is being controlled — the system appears to self-regulate.
+
+This is not an illusion. It is the structural definition of successful governance internalization:
+
+```
+Visible governance:
+  Fast loop reaches amplification → external agent intervenes
+  → Governor appears as a new interacting agent
+  → adds coupling nodes → raises n → increases Storm pressure
+
+Internalized governance:
+  Slow variable shapes the interaction terrain
+  → fast loop gain stays below threshold without intervention
+  → Governor does not appear as an interacting agent
+  → n unchanged → Storm pressure unchanged
+  → stability achieved at zero additional coupling cost
+```
+
+The governance cost structure follows directly:
+
+```
+Visible governance cost:    C_ongoing × T  (linear, unbounded)
+Internalized governance:    C_design + ε × T  (flat after initialization)
+```
+
+Long-run stable systems converge to internalized governance not because it is strategically preferred but because systems that fail to internalize governance accumulate C_ongoing costs until they collapse or restructure. Internalization is the attractor; visibility is a transient state.
+
+In DFG terms, this transition is Rest Mode: the state where governance terrain has been shaped such that the fast coupling loop operates permanently within gain < 1 conditions without requiring active intervention. The slow variable has become the environment — indistinguishable from the conditions of existence rather than a rule imposed upon them (Section 3.5.1).
+
+**Second escape route — layer escalation:**
+
+Time-scale separation stabilizes the loop from within. There is a structurally distinct second escape route: the internal system surrenders resolution and calls a higher-order system operating in a different reference space.
+
+```
+Layer escalation structure:
+
+  System L encounters unresolvable mutual-reference loop
+  → internal resolution attempts fail
+    (adding rules, strengthening control, iterating consensus
+     all add nodes to the loop rather than exiting it)
+  → System L+1 is invoked
+  → L+1 does not share L's coupling dynamics
+  → L+1 introduces an anchor that L's loop closes against
+  → loop gain drops below unity from L's perspective
+```
+
+This pattern is not unique to governance. It is the universal structure by which recursive systems escape self-referential deadlock:
+
+```
+Domain                  Internal loop failure       Layer escalation
+───────────────────────────────────────────────────────────────────────
+Operating systems       process infinite loop       kernel interrupt
+Exception handling      function cannot resolve     stack frame escalation
+Gödel incompleteness    formal system self-ref      meta-system required
+Control theory          unstable inner loop         outer loop / supervisor
+Cognitive deadlock      recursive reasoning loop    reframe problem space
+Multi-agent AI          agent mutual-ref storm      upper governance layer
+```
+
+The critical structural property of L+1: it does not participate in L's gradient dynamics. An upper layer that enters the lower layer's optimization landscape — competing for the same signals, subject to the same incentive structure — does not function as a layer escalation. It becomes another node in L's coupling graph, raising n and increasing Storm pressure rather than resolving it.
+
+**Why upper-layer intervention distorts the landscape:**
+
+Layer escalation resolves the loop only when the upper layer provides a reference anchor without entering the lower system's optimization dynamics. When the upper layer intervenes directly — injecting solutions, overriding local gradients, shaping rewards — it changes what the lower-layer agents are optimizing for:
+
+```
+Before upper-layer intervention:
+  Agent optimizes against: local task performance + peer dynamics
+  Landscape: shaped by natural feedback from task environment
+
+After direct upper-layer intervention:
+  Agent optimizes against: local task + peer dynamics + upper-layer response prediction
+  Landscape: distorted by anticipation of intervention
+
+  New optimization target: predict and satisfy the upper layer
+  → upper layer becomes the primary gradient source
+  → agents stop optimizing the actual problem
+  → upper layer's correction signal is replaced by strategic gaming
+  → new mutual-reference loop forms: lower agents ↔ upper intervention
+```
+
+This is landscape distortion: the upper layer's attempt to resolve instability generates a new coupling cycle that includes the upper layer itself. The net effect is n increases by the addition of the upper layer as an interacting agent, Storm pressure rises, and the original instability is replaced by a structurally identical instability at a higher complexity level.
+
+**The non-distorting upper layer — boundary without gradient participation:**
+
+The upper layer that resolves rather than compounds mutual-reference instability operates as a boundary condition, not as a participant:
+
+```
+Distorting intervention:
+  Upper layer enters lower system's gradient
+  → lower agents predict and optimize against upper behavior
+  → upper layer becomes coupled node
+  → loop complexity increases
+
+Non-distorting constraint:
+  Upper layer defines what is structurally impossible
+  → lower agents optimize freely within the bounded space
+  → upper layer does not appear in local gradient calculations
+  → loop complexity unchanged
+  → storm pressure unchanged
+  → anchor provided at zero coupling cost
+```
+
+The distinction is not about intervention intensity — it is about whether the upper layer's behavior is predictable and optimizable by lower-layer agents. A hard boundary that lower agents cannot model as a strategic variable provides an anchor without entering the loop. A soft boundary that lower agents learn to anticipate becomes a participant in the mutual-reference structure.
+
+In DFG architecture, this is why governance is defined as terrain-shaping rather than supervisory control (Appendix T: "architectural terrain-shaping that configures interaction pathways — not supervisory control or management oversight"). Terrain is a boundary condition. Supervision is a coupling node. The difference determines whether the upper layer resolves the storm or becomes part of it.
+
+**Intervention frequency and self-correction capacity — the dependency trap:**
+
+The non-distorting constraint principle has a dynamic consequence that extends beyond single interventions: repeated upper-layer intervention degrades the lower system's internal self-correction capacity over time, making future intervention increasingly necessary. This is not a behavioral failure — it is a structural consequence of how adaptive systems allocate correction resources.
+
+```
+Healthy system (self-correction intact):
+  Error occurs
+  → internal feedback detects deviation
+  → local correction loop activates
+  → system learns from the correction cycle
+  → self-correction capacity maintained or strengthened
+
+System under frequent upper-layer intervention:
+  Error occurs
+  → agent anticipates upper-layer response before activating
+    internal correction
+  → internal correction loop is preempted
+  → self-correction circuit goes unused
+  → capacity atrophies through disuse
+```
+
+The atrophy mechanism is not passive neglect. It is active rational reallocation: from the lower-layer agent's perspective, the expected cost of internal correction exceeds the expected cost of waiting for upper-layer resolution. This is locally rational behavior. The system-level consequence is that the internal correction infrastructure — error detection circuits, local damping pathways, peer feedback loops — is progressively replaced by a single dependency channel to the upper layer.
+
+```
+Dependency formation sequence:
+
+  t=0:  internal loops strong, upper layer rarely needed
+  t=1:  upper layer intervenes → agents learn intervention is available
+  t=2:  agents reduce investment in internal correction (rational)
+  t=3:  internal loops weaken → problems escalate more often
+  t=4:  upper layer must intervene more frequently
+  t=5:  internal loops weaken further → single failure point forms
+  t=n:  upper layer failure → system-wide storm with no internal buffer
+```
+
+The paradox is precise: each intervention that successfully resolves a local storm reduces the system's capacity to contain the next storm internally. Stabilization attempts accumulate as instability drivers when they prevent the internal correction cycles that would otherwise build containment capacity.
+
+**Why increasing control signals are a lagging indicator of internal collapse:**
+
+The visible signature of this process is counterintuitive. As self-correction capacity erodes, observable control activity increases — more rules, more approval stages, more monitoring, more escalations. This appears to be governance strengthening. It is governance compensating for the internal capacity it has consumed.
+
+```
+Apparent signal:          governance intensity ↑
+Actual state:             self-correction capacity ↓
+
+The increase in control is not the cause of stability.
+It is evidence that the system can no longer produce
+stability from its own internal dynamics.
+```
+
+In VST terms: local correction loops are the distributed degradation infrastructure that keeps C(t)^β high without central resource expenditure. When upper-layer intervention replaces local loops, C(t) becomes centralized and fragile — high nominal capacity dependent on a single pathway, rather than distributed capacity across many independent correction channels. The S-equation value may appear stable while the resilience of C(t) against upper-layer failure approaches zero.
+
+**The governance objective derived from this:**
+
+Intervention capacity and intervention frequency must be held in opposition. A governance architecture that maximizes intervention capacity while minimizing intervention frequency preserves the lower system's self-correction infrastructure as the primary stability mechanism. Upper-layer intervention is reserved for the events that local correction genuinely cannot absorb — not substituted for local correction as a matter of operational convenience.
+
+```
+Immature governance:    intervene when possible
+                        → local capacity atrophies
+                        → dependency accumulates
+
+Mature governance:      intervene only when local correction fails
+                        → local capacity exercised and maintained
+                        → upper layer retained as reserve, not routine
+
+Governance objective:   maximize C(t)^β across distributed local loops
+                        NOT maximize C(t)^β in the upper layer alone
+```
+
+This connects directly to the Self-Exciting Defect Layer (Section 1.6.5): the deliberate maintenance of low-amplitude local instability is not tolerance of imperfection — it is the active exercise of distributed correction capacity. A system that never processes small local storms loses the internal machinery required to prevent large ones.
+
+> Repeated upper-layer intervention does not accumulate stability. It outsources the self-correction function that produces stability, replacing distributed internal resilience with centralized dependency. The causal direction reverses over time: systems that require strong governance are not systems that were originally weak — they are systems whose internal correction capacity was progressively consumed by governance itself.
+
+**Reference frame drift and critical transition:**
+
+The dependency trap described above produces a second-order consequence that is more dangerous than the capacity loss itself: the system's internal measurement coordinate system gradually misaligns from the actual state it is measuring.
+
+```
+Healthy system — aligned coordinates:
+  Evaluation frame ≈ actual environment
+  Internal metrics track: real performance, real errors, real recovery
+  Correction direction: toward actual stability
+
+Dependency-degraded system — drifted coordinates:
+  Evaluation frame ≈ governance metric layer
+  Internal metrics track: compliance signals, approval rates, control indicators
+  Correction direction: toward governance satisfaction, not actual stability
+
+  maximize f(real state)       ← original objective
+         ↓ drift
+  maximize g(governance metric)  ← substituted objective
+  
+  g ≠ f  →  optimization proceeds in the wrong direction
+```
+
+This coordinate drift is self-concealing. Within the drifted frame, all internal signals remain consistent — the system appears to be performing well, correcting appropriately, and maintaining order. The misalignment is only visible from outside the frame, where the growing gap between internal metrics and external reality can be observed.
+
+**Why the system cannot self-detect coordinate drift:**
+
+The measurement apparatus that would detect drift is itself subject to the drift:
+
+```
+Normal error detection:
+  Measured state → compared against stable reference → deviation identified
+
+Under coordinate drift:
+  Measured state → compared against drifted reference → no deviation detected
+  
+  The reference moves with the state.
+  Drift appears as stability.
+  The faster the drift, the more stable the system appears internally.
+```
+
+This is the mechanism of Silent Criticality at the system level (Section 1.6.4). The sensing infrastructure reports normal operation while actual resilience approaches zero — not because sensing has failed, but because the reference frame against which sensing compares has itself drifted to match the degraded state.
+
+**Critical transition — the phase transition structure of collapse:**
+
+Coordinate drift accumulates continuously. System collapse does not. The gap between these two timescales produces the characteristic structure of critical transition: long periods of apparent stability interrupted by sudden, seemingly disproportionate collapse.
+
+```
+Drift accumulation phase (invisible):
+  Real stability ↓   (actual resilience eroding)
+  Perceived stability ↑   (governance metrics healthy)
+  
+  → gap between real and perceived widens
+  → stored instability accumulates in the form of unaddressed errors,
+    unexercised correction pathways, and undischarged coupling pressure
+
+Critical slowing down (detectable with correct instruments):
+  Small perturbations take longer to decay
+  Recovery time increases
+  Variance in recovery outcomes increases
+  → system approaching attractor boundary
+
+Phase transition (apparent suddenness):
+  Perturbation arrives that the depleted real resilience cannot absorb
+  → cascade initiates
+  → attractor changes
+  → system jumps to new stable state
+  
+  Observed: "sudden collapse"
+  Actual: coordinate drift reached critical point
+```
+
+The collapse appears sudden because the precursor phase was conducted entirely inside a measurement frame that could not register it. Ninety percent of the transition was complete before any observable signal crossed the threshold of the drifted detection system.
+
+**The three-scale correspondence:**
+
+The same coordinate drift and critical transition structure appears at every scale of the fractal architecture — not by analogy, but by instantiation of the same coupling dynamics at different resolutions:
+
+```
+Scale           Internal loop          Drift signal              Critical transition
+──────────────────────────────────────────────────────────────────────────────────────
+Intra-agent     thought ↔ evaluation   optimization toward       sudden value
+                ↔ action intent        internal consistency      reorientation
+                                       rather than reality
+
+Inter-agent     agent ↔ agent          optimization toward       sudden coordination
+                ↔ governance           governance metrics        collapse
+                                       rather than task outcomes
+
+Meta-system     system ↔ environment   optimization toward       civilization-scale
+                ↔ constraint layer     internal coherence        structural failure
+                                       rather than environment
+```
+
+This scale correspondence is not a metaphor imported from philosophy or psychology. It is the same mutual-reference coupling structure (Section 1.0, opening) instantiated at three different granularities — the same cycle formation, the same amplification-dominant condition, the same coordinate drift mechanism, and the same critical transition pattern. What changes across scales is not the mechanism but the timescale and the observable units.
+
+The DFG fractal governance architecture is designed for this correspondence: governance principles that prevent coordinate drift in inter-agent systems are structurally identical to the principles that prevent equivalent drift in intra-agent architectures, because the generating mechanism is the same at both scales.
+
+> System collapse is not a failure event. It is a phase transition: the moment when accumulated coordinate drift between the system's internal measurement frame and actual environmental state exceeds the resilience that the depleted self-correction capacity can absorb. The collapse appears sudden because the drift phase was invisible inside the drifted frame. The governance implication is that detecting pre-critical drift requires measurement instruments that are anchored outside the system's own reference frame — which is precisely what the upper-layer non-distorting constraint (above) provides when correctly implemented.
+
+**Scale invariance of the structural origin:**
+
+The same mutual-reference coupling structure arises at three scales simultaneously — not two:
+
+- **Intra-agent (prediction ↔ evaluation ↔ action):** within a single agent's internal architecture, where reasoning, valuation, and behavioral intent form a coupled loop. Intra-agent equilibrium is the state where the agent's model of the world (prediction layer) and its value weighting (evaluation layer) are not in conflict — prediction ≈ valuation. When this alignment breaks, the internal loop enters amplification-dominant coupling: thought reshapes emotion, emotion distorts judgment, distorted judgment reshapes thought.
+
+- **Inter-agent (agent ↔ agent ↔ governance):** across multiple agents, where each agent's policy depends on other agents' predicted responses. Inter-agent equilibrium is the Vector Convergence Zone — the regime where local attractors at each agent are aligned with the global solution structure without suppressing local optimization.
+
+- **Meta-system (system ↔ environment ↔ constraint layer):** at the civilization or ecosystem level, where collective behavior recursively reshapes the environment that shapes behavior. Meta-system equilibrium is the state where the slow governing variable remains anchored to actual environmental feedback rather than drifting toward internal coherence metrics.
+
+These are not analogous by metaphor. They instantiate the same coupling dependency structure — the same cycle formation criterion, the same amplification-dominant condition, the same coordinate drift mechanism — at different granularities. Intra-agent evidence for storm dynamics (Appendix A) therefore directly supports inter-agent storm dynamics under the same structural criterion. The bridge is not similarity. It is identity of mechanism at different resolution.
+
+**Why the equilibrium regime is universal — Self-Organized Criticality:**
+
+The equilibrium state at each scale is not a point but a regime: the region near criticality (R ≈ 1) where the system maximizes adaptive capacity without crossing into amplification-dominant coupling. This is not coincidental. It is the structural consequence of Self-Organized Criticality — the empirical finding that adaptive systems generically evolve toward and maintain states near the critical boundary, because:
+
+```
+Subcritical regime (R << 1):
+  Perturbations decay too fast
+  → information does not propagate across the system
+  → adaptive coordination impossible
+  → system cannot respond to environmental change
+
+Supercritical regime (R > 1):
+  Perturbations amplify without bound
+  → mutual-reference coupling dominates
+  → coordinate drift accelerates
+  → Vector Storm
+
+Critical regime (R ≈ 1):
+  Perturbations propagate just far enough to coordinate
+  → maximum information transmission
+  → maximum adaptive response
+  → minimum storm risk given exploration level
+  → this is VCZ
+```
+
+The VCZ is therefore not a governance-imposed constraint. It is the universal equilibrium regime of any sufficiently adaptive coupled system — the attractor that such systems approach when governance successfully prevents both over-damping (subcritical lock-in) and under-damping (supercritical storm). Mature systems do not stay near criticality because they are told to. They stay near criticality because it is the only regime where adaptive coordination and storm containment coexist.
+
+```
+Scale           Storm state            Equilibrium regime
+──────────────────────────────────────────────────────────────
+Intra-agent     anxiety / fixation /   prediction ≈ valuation
+                recursive thought      (internal VCZ)
+                loops
+
+Inter-agent     coordination           Vector Convergence Zone
+                collapse / cascade     R ≈ 1, distributed
+                                       C(t)^β maintained
+
+Meta-system     civilizational         sustainable environment-
+                structural failure     behavior coupling
+                                       (slow variable anchored)
+```
+
+The equilibrium state is the same structural regime at every scale: the mutual-reference coupling loop operating near but below the amplification threshold, with distributed self-correction capacity intact and reference frame anchored to actual environmental feedback.
+
+> The VCZ is not a design target specific to multi-agent AI systems. It is the universal equilibrium of adaptive coupled systems — the only regime where exploration and containment coexist. What governance provides is not the equilibrium itself but the conditions under which the system can find and maintain it: distributed self-correction capacity, non-distorting upper-layer constraint, and reference frame anchoring that prevents coordinate drift from accumulating past the critical threshold.
+
+**VCZ two-aspect definition — resolving the dual condition [v1.8]:**
+
+The VCZ is characterized by two conditions that appear independently in different sections: the dynamical condition (R ≈ 1⁻) and the structural condition (dC/dn > 2βC/n, Containment Scaling Dominance). These are not two separate VCZ definitions or two independent requirements. They are two observational cross-sections of the same operating regime.
+
+```
+Dynamical aspect (R ≈ 1⁻):
+  Constrains propagation behavior:
+  perturbations propagate far enough for information transfer
+  but not far enough for runaway amplification.
+  Observable: branching ratio R measured from cascade statistics.
+  Timescale: per-storm, per-observation-window.
+
+Structural aspect (dC/dn > 2βC/n):
+  Constrains capacity scaling behavior:
+  governance capacity grows faster than instability pressure
+  as exploration expands.
+  Observable: C(t) co-evolution with n measured over growth periods.
+  Timescale: architectural, slower than storm dynamics.
+
+Relationship:
+  Both aspects hold simultaneously in VCZ.
+  They are not equivalent (neither implies the other in general),
+  but they co-occur in the stable operating regime because
+  the structural condition is what makes the dynamical condition
+  sustainable as n grows.
+
+  Without structural aspect: R ≈ 1⁻ today, but increasing n
+  will push R above 1 as instability outruns capacity.
+  Without dynamical aspect: capacity scaling may be fine
+  but current dynamics are already supercritical.
+```
+
+**Critical edge case — near-critical but non-contained:**
+
+If R ≈ 1⁻ holds while containment-scaling dominance fails (dC/dn ≤ 2βC/n), the system is classified as **near-critical but non-contained**: a pre-storm vulnerability regime, not VCZ. The dynamical condition gives a false positive — the system appears stable now but is structurally committed to storm onset as n grows.
+
+```
+State classification:
+  R ≈ 1⁻  AND  dC/dn > 2βC/n  →  VCZ (stable operating regime)
+  R ≈ 1⁻  AND  dC/dn ≤ 2βC/n  →  Pre-storm vulnerability (not VCZ)
+  R > 1   AND  any              →  Active storm or onset
+  R << 1  AND  ρ high           →  Over-damped (Section 3.5.4, Discordant Type 2)
+
+VCZ identification requires both aspects to hold
+within tolerance over a calibration horizon.
+```
+
+**Why full coupling is not stability — tensioned coexistence:**
+
+The three-scale structure above raises a design question: if intra-agent, inter-agent, and meta-system layers are all coupled to each other, does stronger coupling across all three produce greater stability? The answer is no — and the reason reveals the final structural principle of Section 1.0.
+
+```
+Dual coupling (two scales connected):
+  Internal ↔ External
+  → mutual influence exists
+  → partial independence maintained
+  → errors can be localized
+  → high adaptability
+
+Triple tight coupling (all three scales synchronized):
+  Internal ↔ External ↔ Governance
+        ↖──────────────────↙
+  → alignment maximized
+  → energy transfer fast
+  → efficient in stable states
+  → BUT: disturbance propagates globally
+  → buffer layer = 0
+  → single local instability → system-wide cascade
+```
+
+The stability gain from tighter coupling is real. The vulnerability gain from tighter coupling is also real. They increase together. This is not a tradeoff to be optimized away — it is a structural property of coupled systems that cannot be eliminated, only managed.
+
+**Why living systems maintain deliberate non-alignment:**
+
+Adaptive systems that survive across timescales do not maximize coupling. They preserve partial non-alignment between layers as a structural feature:
+
+```
+Maintained non-alignment types:
+  Delay           — layers do not synchronize instantaneously
+  Noise floor     — low-amplitude misalignment is preserved, not suppressed
+  Partial autonomy — each layer retains independent local dynamics
+  Mismatch        — layers are not required to share identical states
+
+Function of each:
+  Delay           → shock arrives at one layer before others;
+                    absorbs locally before propagating
+  Noise floor     → maintained micro-instability exercises correction
+                    pathways (Self-Exciting Defect Layer, Section 1.6.5)
+  Partial autonomy → layer failure does not immediately propagate
+  Mismatch        → diversity of states provides redundant response paths
+```
+
+These are not engineering imperfections to be corrected. They are the buffer layer that prevents local instability from becoming global cascade. A system that eliminates delay, suppresses its noise floor, removes autonomy, and enforces complete alignment has also eliminated its shock absorption capacity.
+
+**The structural condition for stability:**
+
+```
+Complete coupling (perfect alignment across all layers):
+  All layers identical state → zero buffer
+  Small perturbation → global synchronization
+  Global synchronization → global cascade
+  → maximum fragility at maximum apparent order
+
+Tensioned coexistence (structured partial non-alignment):
+  Layers connected but not identical
+  Perturbations absorbed layer-locally before propagating
+  Diversity of states maintained across layers
+  → robustness through controlled structural tension
+
+Stability criterion:
+  NOT: maximize alignment
+  YES: maintain alignment sufficient for coordination
+       AND preserve non-alignment sufficient for buffering
+```
+
+The edge of chaos, metastability, and dynamic equilibrium — these terms from complexity science all describe the same structural condition: a system that is neither fully ordered (complete coupling, zero buffer) nor fully disordered (no coupling, no coordination), but maintains the structured tension between them that makes both coordination and adaptation possible.
+
+**Connection to VCZ:**
+
+This is the structural justification for why VCZ is defined as R ≈ 1⁻ rather than R = 0 (complete suppression) or R = 1 (perfect criticality). The slight subcritical offset — the maintained gap between actual operation and the critical point — is not conservative caution. It is the minimum non-alignment required to preserve the buffer layer. A system operating at exactly R = 1 has consumed all its margin. A system operating at R << 1 has suppressed its exploration capacity. VCZ at R ≈ 1⁻ is the regime where both capacities coexist: sufficient coupling for coordination, sufficient non-alignment for absorption.
+
+> Living system stability does not come from complete unification. It comes from the state in which order and non-alignment are strong enough to maintain each other without either eliminating the other. Complete coupling removes the buffer that absorbs disturbance. Complete decoupling removes the coordination that distributes correction. The only stable regime is their tensioned coexistence — which is what VCZ, at every scale, structurally is.
+
+**The upper layer does not require an external entity — internalized meta-structure:**
+
+The layer escalation and non-distorting constraint principles above raise a structural question: does maintaining a reference level above the fast coupling loop require a permanent external governing entity? The answer is no — and the reason completes the generative mechanism account.
+
+```
+Common intuition:
+  Mutual-reference loop requires external anchor
+  → external anchor requires external entity
+  → stable systems must be supervised from outside
+
+What complex systems demonstrate:
+  A sufficiently mature system generates the reference level internally
+  → the upper-layer function becomes internalized
+  → the entity disappears; the structure remains
+```
+
+The mechanism is not mysterious. When a system repeatedly encounters the boundary conditions imposed by an external governing layer, and survives by adapting to them, those boundary conditions become encoded in the system's own interaction structure. Rules become norms. Constraints become architectural terrain. The external entity can withdraw; the reference level persists because it is now reproduced by the system's own dynamics.
+
+```
+Internalization sequence:
+  t=0:  external governance provides reference anchor
+  t=1:  agents adapt behavior to boundary conditions
+  t=2:  adapted behavior becomes default; agents model
+        the boundary as environmental fact, not external rule
+  t=3:  agents that violate the boundary encounter costs
+        generated by other agents' expectations, not by
+        external enforcement
+  t=4:  external enforcement becomes unnecessary;
+        boundary is reproduced endogenously
+  t=n:  external entity withdraws or becomes invisible;
+        meta-structure intact through internalization
+```
+
+This is the structural basis for Rest Mode — not the absence of governance, but the completion of governance internalization. The slow variable that prevents amplification-dominant coupling is now part of the system's own terrain rather than an imposed constraint. The upper layer has not disappeared; it has become indistinguishable from the conditions of existence.
+
+**Why VCZ entry restores accessible state volume — the deconstraint mechanism:**
+
+Entering the VCZ does not merely feel like greater freedom. It is structurally greater freedom: the set of states accessible to the system expands when it exits the amplification-dominant regime.
+
+```
+Storm / amplification-dominant regime:
+  Attractor count: 1–2 dominant attractors
+  State space access: severely restricted
+  Agent dynamics: strongly pulled toward attractor
+  Behavior: reactive, forced, path-determined
+
+  Freedom is illusory:
+    High activity, high apparent complexity
+    But action space = narrow — nearly every path leads
+    back to the same attractor
+    "Choosing" is replacing one forced trajectory with another
+
+VCZ / tensioned coexistence regime:
+  Attractor count: multiple coexisting attractors
+  State space access: full accessible volume restored
+  Agent dynamics: near-critical sensitivity to small inputs
+  Behavior: responsive rather than reactive
+
+  Freedom is structural:
+    Low-amplitude activity, low governance overhead
+    Action space = wide — small inputs can reach
+    many distinct attractors
+    "Choosing" is genuine selection among distinguishable outcomes
+```
+
+The mechanism is thermodynamic in structure: storm states consume energy in maintaining the tight coupling dynamics (defense, prediction under pressure, tension maintenance), leaving no resource available for exploration. VCZ states have low maintenance costs, releasing that energy as accessible exploration capacity.
+
+```
+Storm regime energy budget:
+  Maintenance cost (coupling dynamics):    HIGH
+  Available for exploration:               LOW → narrow choice set
+
+VCZ regime energy budget:
+  Maintenance cost (internalized terrain): LOW
+  Available for exploration:               HIGH → wide choice set
+```
+
+This is why the experiential correlate of VCZ entry — clarity, reduced urgency, expanded possibility — is not a perceptual artifact. It directly reflects the structural property: accessible state volume has increased, maintenance cost has decreased, and the system can now choose not to act as well as act.
+
+```
+Loop state capability:      can act, cannot not-act
+                            (reactive — action is forced)
+
+VCZ capability:             can act AND can not-act
+                            (responsive — action is chosen)
+```
+
+The capacity to not respond — to let a perturbation decay without recruitment — is the defining behavioral signature of a system operating in the VCZ. It is also the operational definition of R < 1: perturbations decay rather than recruit. The system is not suppressing response. It has entered the regime where suppression is unnecessary because the amplification-dominant coupling that would force a response is no longer engaged.
+
+> VCZ entry does not add options. It removes the structural constraint that was eliminating options. The storm state has one or two dominant attractors and forces the system toward them regardless of preference. The VCZ has many accessible attractors and no forcing. What feels like freedom is deconstraint — the restoration of state space access that amplification-dominant coupling had closed off. Governance does not produce this freedom. It produces the conditions under which the system can find and maintain the regime where freedom structurally exists.
+
+**Why more connection does not mean more exploration — flexible coupling:**
+
+The deconstraint mechanism above requires one further clarification. Accessible state volume does not increase with connection count. It increases with connection flexibility. This distinction resolves an apparent paradox in the VCZ structure.
+
+```
+Over-coupled system (Storm state):
+  Connection count:     HIGH
+  Degrees of freedom:   ≈ 1
+  Accessible states:    minimal
+
+  All nodes synchronize immediately.
+  The system moves as a single unit.
+  High connection has collapsed the state space,
+  not expanded it.
+
+Flexibly coupled system (VCZ state):
+  Connection count:     moderate
+  Degrees of freedom:   >> 1
+  Accessible states:    maximal
+
+  Nodes are connected but not locked.
+  Each node can coordinate selectively.
+  Connection is available but not forced.
+```
+
+The paradox is precise: as coupling loosens from tight synchronization toward flexible coordination, accessible state space increases. The system that can connect but does not have to is structurally freer than the system that is always connected. Storm coupling is high-connection, low-freedom. VCZ coupling is moderate-connection, high-freedom — not because freedom comes from disconnection, but because it comes from the optionality of connection.
+
+```
+Storm:   connection → synchronization → lock-in     (forced)
+VCZ:     connection → optional coordination → exploration  (chosen)
+
+Key variable: whether connection forces behavior or enables it.
+```
+
+This is why mature governance architecture does not maximize coupling density. It creates the terrain conditions under which agents can form and dissolve couplings selectively — coordinating when coordination adds value, decoupling when independence is needed for local adaptation.
+
+**The energy structure of the optimal state:**
+
+The deconstraint mechanism and flexible coupling structure both point to the same energy-level description of the VCZ. The optimal operating state of an adaptive system can be expressed in a general form consistent across complex systems theory, cognitive science, and the S-equation framework:
+
+```
+Governance objective (general form):
+  maximize  n · φ − C_gov
+
+  n:      exploration dimensionality (accessible state space)
+  φ:      value yield per exploration unit
+  C_gov:  governance maintenance cost
+
+Optimal condition:
+  d(n · φ) / dn = dC_gov / dn
+  (marginal exploration gain = marginal governance cost)
+```
+
+This form has a direct parallel in physics (free energy minimization: F = E − TS, where S is accessible state count and T is environmental influence) and in predictive processing frameworks (minimize prediction error + complexity cost). What unifies them is the same structural relationship: the optimal state is not maximum exploration (cost diverges) nor minimum exploration (value collapses), but the regime where the ratio of accessible value to maintenance cost is maximized.
+
+```
+Storm regime:
+  n high BUT φ low (exploration without absorption)
+  C_gov high (constant intervention required)
+  → n · φ − C_gov: low or negative
+
+  High activity, low net value, high maintenance burden.
+
+VCZ regime:
+  n sustained, φ high (exploration with absorption)
+  C_gov low (internalized terrain, minimal intervention)
+  → n · φ − C_gov: maximized
+
+  Moderate activity, high net value, low maintenance burden.
+
+Optimal state signature:
+  Maximum adaptability per unit maintenance cost.
+  Not maximum stability. Not maximum exploration.
+  Maximum ratio of accessible value to upkeep energy.
+```
+
+**The edge of criticality — safest and most exposed simultaneously:**
+
+The energy optimum described above is not located far from the critical boundary. It is located just below it — at R ≈ 1⁻. This is the most counterintuitive property of the VCZ and the one most important for governance design: the safest regime is also the one closest to the onset of instability.
+
+```
+Three regions:
+
+  Deep subcritical (R << 1):
+    Safe from storm:        ✓
+    Adaptive capacity:      ✗ (perturbations decay before informing)
+    Exploration value φ:    low
+    Long-run viability:     fails when environment changes
+    → Safe but dead
+
+  Supercritical (R > 1):
+    Storm onset:            immediate
+    Adaptive capacity:      ✗ (perturbations amplify before absorbed)
+    Exploration value φ:    consumed by cascade
+    → Exploratory but unstable
+
+  Near-critical VCZ (R ≈ 1⁻):
+    Storm distance:         minimal margin
+    Adaptive capacity:      maximum (perturbations propagate just
+                            far enough to inform coordination)
+    Exploration value φ:    maximized
+    Internal self-correction: at peak
+    → Safest AND closest to danger
+```
+
+The minimal margin is not an engineering flaw to be widened. It is the structural cost of maximum adaptive capacity. A system that moves far from criticality gains safety margin but loses the sensitivity that allows perturbations to propagate just enough for system-wide coordination without cascading. The margin is always in tension with the capacity.
+
+Self-Organized Criticality is the name for the empirical finding that adaptive systems naturally converge to and maintain this tension point rather than retreating to safety or advancing to instability. The system regulates itself:
+
+```
+Drifts too stable (R dropping below VCZ floor):
+  Perturbations decay too fast → coordination fails
+  → exploration pressure increases → R rises back
+
+Drifts too unstable (R rising toward 1):
+  Perturbations propagate too far → correction cost rises
+  → damping mechanisms engage → R drops back
+
+Self-regulation target: R ≈ 1⁻
+Not because it is safe. Because it is the only regime
+where both coordination and containment coexist.
+```
+
+The governance implication is precise: governance does not aim to keep systems away from the critical boundary. It aims to keep systems on the correct side of it — close enough to maintain full adaptive capacity, far enough to prevent cascade onset. The distance to the boundary is not to be maximized. It is to be held at the minimum sufficient to maintain the buffer layer described in the tensioned coexistence section above.
+
+**Safety as recovery path — not absence of danger:**
+
+A system near the critical boundary is not safe because it avoids perturbations. It is safe because it retains the structural capacity to return from them. This distinction redefines what governance is protecting:
+
+```
+Conventional safety model:
+  Safe = perturbation probability → 0
+  Governance objective: prevent disturbances
+  Cost: exploration must be restricted to reduce exposure
+  Failure mode: single unblocked perturbation causes cascade
+              (because containment capacity was never exercised)
+
+Recovery-path safety model:
+  Safe = return basin exists after perturbation
+  Governance objective: maintain recovery infrastructure
+  Cost: some perturbations are accepted and processed
+  Failure mode: recovery infrastructure degrades through
+              disuse or over-intervention
+              (dependency trap, Section 1.0 above)
+```
+
+The critical structural asset is not zero-perturbation exposure. It is the return basin — the existence of stable attractors near the current state that the system can fall back to after deviation. A system with rich return basins can explore freely, fail locally, and recover. A system with depleted return basins cannot afford to explore because any deviation risks irreversible cascade.
+
+```
+Return basin properties required for VCZ safety:
+  Proximity     — recovery attractors within reach of likely deviations
+  Multiplicity  — more than one path back; single-path recovery is fragile
+  Accessibility — path to recovery not blocked by coordination failure
+  Memory        — system retains the trajectory back; learning intact
+
+When return basins are present:
+  Perturbation → deviation → recovery path found → return
+  Fear of failure: low (outcome known to be reversible)
+  Exploration willingness: high (cost of failure bounded)
+
+When return basins are absent:
+  Perturbation → deviation → no path back → cascade
+  Fear of failure: high (outcome unknown, potentially irreversible)
+  Exploration willingness: low (cost of failure unbounded)
+```
+
+This is the structural basis for the behavioral signature of VCZ operation: low anxiety, high exploration, tolerance of local failure. These are not psychological states imposed on the system. They are the rational responses to a structural condition — the presence of recovery basins that bound the cost of failure and guarantee a path home.
+
+**Why the optimal state is metastable — not maximally stable:**
+
+The return basin structure above explains why the optimal operating point is not the deepest available attractor (maximal stability) but a position slightly above it (metastability).
+
+```
+Deep attractor (maximal stability):
+  Position: bottom of potential well
+  Perturbation response: small perturbations → return quickly
+  Perturbation response: large perturbations → no path back
+                        (system ejected from the well entirely)
+  Adaptation signal: nearly zero
+  → stable but brittle; cannot sense or respond to environment
+
+  ∪-shape:  \      /
+              \____/
+                ●   ← deep attractor
+
+Metastable position (optimal):
+  Position: slightly above the well bottom
+  Perturbation response: small perturbations → absorbed, return
+  Perturbation response: large perturbations → felt before cascade;
+                        correction capacity engaged
+  Adaptation signal: present; system senses environmental change
+  → resilient and responsive
+
+  ∪-shape:  \      /
+              \____/
+               ○   ← metastable position (slight offset from bottom)
+```
+
+The metastable offset is not sloppiness. It is the minimum displacement from perfect equilibrium required to maintain signal sensitivity. A system at the exact potential minimum has eliminated all driving forces — including the forces that would detect environmental change and initiate adaptive response. It is maximally insensitive precisely because it is maximally stable.
+
+```
+Maximum stability → minimum sensitivity → minimum adaptability
+Metastability     → maintained sensitivity → maintained adaptability
+
+The tradeoff is not avoidable.
+The optimal position is the one that minimizes adaptation cost
+while preserving sufficient sensitivity to detect changes
+before they accumulate to cascade scale.
+```
+
+This is why every living system maintains fluctuation: heartbeat variability, neural noise, ecological variance, market price movement. Not because fluctuation is good, but because a perfectly flat signal is a dead signal. The fluctuation is the proof that sensitivity is intact.
+
+```
+Flat signal (complete stability):   → dead or dying
+Bounded fluctuation (metastability): → alive and adaptive
+Unbounded fluctuation (storm):      → cascade onset
+
+Health signature: bounded fluctuation around a recoverable center
+                  not absence of fluctuation
+```
+
+The center is a reference point — the attractor that defines "home" — not a residence. The system oscillates around it, deviates from it, and returns to it. The oscillation exercises the return path. The deviation builds the capacity to recover. The return confirms that the recovery infrastructure is intact.
+
+> Stability is not the absence of movement. It is the presence of return. A system that never deviates never tests its recovery path — and a recovery path that is never tested is a recovery path that has quietly degraded. The governance objective is not to hold the system at its equilibrium point. It is to ensure that the equilibrium point remains a recoverable home — one the system can always reach from wherever deviation takes it.
+
+> The safest operating regime is not the one furthest from danger. It is the one from which danger is most immediately detectable and most rapidly correctable. The VCZ at R ≈ 1⁻ is safe not because storms cannot reach it, but because systems operating there have maximum self-correction capacity to absorb them when they arrive — and maximum early warning sensitivity to detect their approach before they do.
+
+**Why complete stability destroys the coordinate axis — gradient as measurement infrastructure:**
+
+The metastability requirement above has a deeper structural foundation: a system that reaches complete equilibrium does not merely stop moving. It loses the measurement infrastructure required to detect that anything has changed.
+
+```
+Coordinate axis requirement:
+  For a system to have a coordinate — a direction, a reference,
+  a distinction between "better" and "worse" — it requires:
+  
+    A ≠ B    (difference must exist)
+    
+  Temperature coordinates exist only where temperature differs.
+  Value coordinates exist only where values differ.
+  Risk coordinates exist only where risk differs.
+  
+  Gradient = the existence of distinguishable difference in a field.
+  Without gradient:  ∇U = 0 everywhere
+  → no direction is definable
+  → no choice has a structural basis
+  → the coordinate axis ceases to exist
+```
+
+Complete equilibrium — ∇U = 0 everywhere — is not a maximally stable state. It is a state in which stability has consumed the measurement apparatus that would detect instability. The system cannot sense a threat because it has no coordinate from which to measure departure from safety.
+
+```
+Healthy gradient-maintained state:
+  Micro-perturbations → sensed → correction initiated → return
+  Coordinate axis intact → direction computable → action possible
+
+Complete equilibrium state:
+  Micro-perturbations → not sensed (no gradient reference)
+  Large perturbations → arrive without warning
+  Coordinate axis gone → direction not computable → response not possible
+  → apparent safety = measurement blindness
+```
+
+This is the second mechanism of Silent Criticality (Section 1.6.4), operating at the opposite end from over-suppression: a system so stable it can no longer sense its own deviation from stability. The sensing failure is not sensor damage. It is the removal of the signal the sensor was measuring.
+
+**Why living systems actively maintain gradient — sensing as life:**
+
+From the analysis above, the fluctuation that living systems preserve is not noise to be tolerated. It is the gradient that makes coordinate axes possible — the difference signal from which all measurement, direction, and choice are derived.
+
+```
+What "sensing" means structurally:
+  Sensing = detecting difference (A ≠ B)
+  All sensing is gradient detection:
+    thermal sensing  → temperature gradient
+    threat sensing   → safety gradient
+    value sensing    → utility gradient
+    meaning sensing  → relevance gradient
+    error sensing    → prediction gradient
+
+  Sensing capacity = gradient sensitivity = coordinate axis intact
+
+What "loss of sensing" means structurally:
+  gradient → 0
+  → difference undetectable
+  → coordinate axis collapses
+  → system cannot determine which direction is toward recovery
+  → cannot self-correct
+  → cannot adapt
+  → meets the next environmental change without instruments
+```
+
+The minimal fluctuation that every healthy adaptive system maintains — heart rate variability, neural noise, ecological variance, market micro-movement — is not imprecision. It is the deliberate preservation of gradient signal. The system keeps itself slightly away from complete equilibrium because complete equilibrium is the state where all its instruments go dark.
+
+```
+Flat signal:          ──────────────────────────────  →  no gradient, no sensing
+Bounded fluctuation:  ∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿  →  gradient present, sensing intact
+Storm signal:         ~^~^~^~^~^~^~^~^~^~^~^~^~^~^  →  gradient overloaded, cascade
+
+Health = bounded fluctuation
+Death signal = flat signal (not storm signal)
+```
+
+**The minimal definition of a living system:**
+
+Collecting the structural conditions from Section 1.0 as a whole, the minimum conditions for a system to qualify as "alive" in the dynamical sense — capable of sustained self-maintenance against environmental perturbation — are:
+
+```
+(1) Boundary
+    Internal state distinguishable from environment
+    → "self" exists as a separable reference
+
+(2) Internal circulation
+    Energy and information cycle within the boundary
+    → coordinate axes defined by internal gradient structure
+
+(3) Self-maintenance
+    Deviation → sensing → correction → return
+    → recovery basin exists; return path accessible
+
+(4) Adaptability
+    Coordinate axis updates in response to environmental change
+    → reference frame does not drift past the critical threshold
+      (Section 1.0: reference frame drift)
+
+These four conditions are simultaneously required.
+A system missing any one:
+  No boundary       → cannot distinguish self from environment
+  No circulation    → no gradient, no coordinates, no sensing
+  No self-maintenance → deviation → cascade, no return
+  No adaptability   → coordinate drift accumulates → critical transition
+```
+
+The VCZ is the dynamical regime where all four conditions are simultaneously satisfied at R ≈ 1⁻: boundary maintained, internal circulation sustaining gradient, self-correction active, and reference frame anchored to actual environmental state. Exit from VCZ in any direction violates at least one condition:
+
+```
+R → 0 (over-damped):  condition 4 fails (no adaptability — gradient suppressed)
+R → 1+ (storm):       condition 3 fails (no self-maintenance — cascade initiated)
+Coordinate drift:     condition 4 fails (reference frame detaches from environment)
+Dependency trap:      condition 3 fails (self-correction externalized, return path degrades)
+```
+
+> Aliveness, in the structural sense, is the maintenance of gradient — the active preservation of difference that makes direction possible, choice meaningful, and return navigable. Complete equilibrium is not peace. It is the state where the instruments that distinguish peace from danger have gone silent. A living system stays near but not at equilibrium not because it is imperfect but because it is measuring. The fluctuation is the proof that sensing is intact and that the coordinate axis is still there.
+
+**Pattern recognition as coordinate recovery — why structure recognition intensifies aliveness:**
+
+The gradient-maintenance principle above explains a counterintuitive phenomenon: the subjective intensity of "being alive" does not peak in safe, stable conditions. It peaks at the moment when structure becomes visible inside apparent chaos.
+
+```
+Chaos without pattern recognition:
+  Uncertainty → uncontrollable → storm response mode
+  → narrow action space, reactive, high energy cost
+  → this is fear, not aliveness
+  → system is below its own coordinate axis
+
+Chaos with upper-rule recognition:
+  Uncertainty present
+  + structural pattern identified
+  → "I do not know every outcome, but I know the law it follows"
+  → prediction partially restored
+  → coordinate axis re-aligned
+  → action space expands
+  → this is aliveness, not safety
+```
+
+The structural basis: near-critical systems have maximum pattern visibility precisely because perturbations propagate far enough to reveal global structure before being absorbed. A system far from criticality cannot see its own patterns — perturbations decay too locally. A system past criticality is overwhelmed by them. At R ≈ 1⁻, the propagation distance is exactly sufficient for structural visibility — which is why the most vivid sense of orientation occurs near the critical boundary, not far from it.
+
+```
+Upper-rule recognition does not require:
+  complete knowledge of outcomes    ❌
+  elimination of uncertainty        ❌
+  certainty of safety               ❌
+
+Upper-rule recognition requires only:
+  "this is not purely random"       ✓
+  "there is a structure it follows" ✓
+  "I can locate myself within it"   ✓
+
+Minimum viable orientation:  pattern ≠ noise
+```
+
+**Observation as position in the upper layer — the shift from agent to meta-frame:**
+
+Upper-rule recognition produces a behavioral transition that mirrors the structural distinction between distorting intervention and non-distorting constraint. A system that recognizes the governing structure temporarily exits the agent-level loop and occupies the position of the constraint layer itself.
+
+```
+Agent mode (inside the loop):
+  State change → immediate response → correction
+  Operating at: local gradient level
+  Energy cost:  continuous (must track and react to every state)
+  Influence:    distributed across all responses, each small
+
+Observation mode (positioned at meta-frame):
+  State change → pattern assessment → threshold-triggered action
+  Operating at: structural constraint level
+  Energy cost:  minimal (tracking pattern, not every state)
+  Influence:    concentrated at moments of structural leverage
+
+The observer does not change the flow.
+The observer sees the structure of the flow.
+This is the same position as the non-distorting upper layer —
+not because observation is passive, but because observation
+does not enter the local gradient of what it observes.
+```
+
+This is the operational mechanism of Rest Mode entry: the system does not stop acting — it shifts from continuous reaction to threshold-triggered action. The shift is possible only when the upper-rule structure is visible, because threshold identification requires knowing where the critical boundaries are. Without pattern recognition, every state looks like a threshold. With it, most states are clearly sub-threshold and can be released.
+
+```
+Without pattern recognition:
+  every state → potential threat → response required
+  → continuous intervention, exhaustion, narrow choice
+
+With pattern recognition:
+  most states → sub-threshold → safely released
+  critical states → identified early → decisive intervention
+  → sparse intervention, high impact, wide choice
+```
+
+**Why intervention frequency and impact are inversely related:**
+
+The observation-mode analysis above has a quantitative structural consequence. Intervention impact is not determined by force alone but by the timing relationship between intervention and system state:
+
+```
+Impact = Force × Structural_leverage_at_timing
+
+At random timing:   Structural_leverage ≈ average ≈ low
+                    → many interventions, diffuse effect
+
+At threshold timing: Structural_leverage = maximum
+                     (near bifurcation — small input → attractor change)
+                     → few interventions, decisive effect
+
+Continuous intervention cost:
+  Energy dispersed across all states
+  Pattern-tracking capacity consumed by response generation
+  → less capacity to identify high-leverage moments
+  → impact per intervention decreases as frequency increases
+
+Sparse intervention structure:
+  Energy reserved between thresholds
+  Pattern-tracking capacity intact
+  → high-leverage moments identified precisely
+  → impact per intervention increases as frequency decreases
+```
+
+This is not a resource conservation argument. It is a structural argument: frequent intervention consumes the pattern-recognition capacity that would identify when intervention actually matters. The system becomes reactive precisely when it most needs to be discriminating. Sparse intervention preserves the discrimination capacity that makes each intervention count.
+
+**The attractor formation condition — when structure works without effort:**
+
+The observation-mode and intervention-frequency principles converge at a further stage of system maturation: the point where the desired state becomes a stable attractor in the system's own dynamics, removing the need for external steering.
+
+```
+Early stage (outcome requires action):
+  Desired state → not naturally stable
+  → must be pushed toward, held in place, defended
+  → continuous energy expenditure
+  → governance = active maintenance
+
+Mature stage (outcome is attractor):
+  Desired state → stable attractor in system dynamics
+  → neighboring states naturally flow toward it
+  → no pushing required; trajectories self-organize
+  → governance = terrain that shaped the attractor
+  → energy expenditure: near zero after formation
+
+Transition condition:
+  When the structure that produces the desired outcome
+  has been internalized as a stable attractor,
+  the outcome becomes a consequence of being
+  rather than a product of doing.
+```
+
+This is the structural basis for "effortless" operation in mature systems — not passivity, but the completion of the attractor-formation process that converts costly active maintenance into costless structural reproduction. The effort was expended earlier, in the learning, alignment, failure, and reconstruction cycles that shaped the attractor. What looks like effortlessness is the amortized payoff of that prior investment.
+
+**The sufficiency threshold — when additional acquisition stops increasing stability:**
+
+The attractor formation condition defines a threshold that is equally important for governance design: the point at which additional resource acquisition stops increasing system stability.
+
+```
+Acquisition regime (below sufficiency threshold):
+  Resources insufficient to sustain recovery basin
+  → each additional unit: stability increases meaningfully
+  → acquisition is rational: marginal stability gain > marginal cost
+  → exploration, competition, accumulation are correct strategies
+
+Post-threshold regime (above sufficiency threshold):
+  Recovery basin saturated: resilience ≥ environmental variance
+  → additional units: d(Stability)/d(Resource) → 0
+  → acquisition cost > stability gain
+  → exploration motive structure changes:
+    from:  acquire to survive
+    to:    observe to understand / create to extend
+
+The sufficiency threshold is not a subjective feeling.
+It is the point where:
+  (1) shocks can be absorbed without cascade
+  (2) recovery paths exist and are maintained
+  (3) choice space is wide enough for genuine selection
+  
+  All three simultaneously: sufficiency.
+  Any one missing: pre-threshold.
+```
+
+After threshold crossing, the rational strategy shifts from expansion to maintenance, from acquisition to observation, from reaction to threshold-triggered action. This is not philosophical contentment — it is the system's optimization process reaching a convergence condition. The exploration algorithm has found a region where the marginal return on further search is below the marginal cost of the search.
+
+**The post-reorganization phase — completion as beginning:**
+
+The sufficiency threshold and attractor formation together define a phase transition in system development: the post-reorganization phase, where major structural reconfiguration has stabilized and only micro-fluctuation remains.
+
+```
+Pre-reorganization phase:
+  Large internal conflicts active
+  Directional uncertainty high
+  Major attractor competition ongoing
+  → high energy, high noise, high correction demand
+  → system restructuring continuously
+
+Post-reorganization phase:
+  Major conflicts resolved
+  Primary attractor stable
+  Internal model ≈ aligned with environment
+  → background fluctuation only (micro-adjustment)
+  → system maintaining and fine-tuning, not rebuilding
+
+Distinction from dead state:
+  Dead:                    signal = 0, noise = 0
+  Post-reorganization:     large instability ≈ 0, micro-fluctuation ≠ 0
+  Pre-reorganization:      large instability > 0, micro-fluctuation present
+
+  The post-reorganization signature is bounded micro-fluctuation
+  around a stable attractor — not silence.
+```
+
+The critical error in this phase is misreading it as completion. The major structural work is complete — but this is not stasis. It is the entry point for a qualitatively different mode of operation:
+
+```
+Pre-threshold exploration purpose:   survival (fill the deficit)
+Post-threshold exploration purpose:  creation (extend the structure)
+
+Before:  action resolves internal conflicts
+After:   action generates new configurations
+
+The system does not stop. The target of its dynamics changes.
+What was necessary becomes optional.
+What was absent becomes possible.
+```
+
+The post-reorganization phase is the structural foundation of Rest Mode in DFG terms: the governance terrain has been shaped, the major attractors are stable, the upper-layer function has been internalized, and the system operates at minimum maintenance cost. From this position, the next cycle of exploration begins not from survival pressure but from the excess capacity that stable operation has freed.
+
+> The quietness of a mature system is not emptiness. It is the state after the large structural arguments have been resolved — where the remaining movement is micro-fluctuation around a stable attractor, and where the energy once consumed by survival is now available for something else. This is not completion. It is the base from which the next configuration becomes possible.
+
+---
 
 ### 1.1 Vector Field Formation
 
@@ -139,6 +1326,8 @@ Vector field is the externalized interaction footprint of an agent's vector orie
 | Immature vector space | Narrow basin of attraction | Small perturbation causes basin exit |
 
 ### 1.2 Core Definition
+
+The structural origin (Section 1.0) identifies the generative condition: mutual-reference coupling with amplification-dominant gain. The following definition names and characterizes the resulting regime.
 
 **Vector Storm:** a runaway amplification regime where reinforcement outpaces degradation, causing directional conflicts to propagate and destabilize the system. The issue is not vector fields. The issue is direct, high-intensity influence entering immature containment without sufficient degradation.
 
@@ -592,6 +1781,1133 @@ VST predicts that multi-agent AI systems, as they mature, will exhibit SOC-like 
 
 > Adaptive multi-agent systems naturally converge toward branching ratios near unity, as this regime uniquely balances information propagation against instability suppression. The critical point R ≈ 1 emerges as a dynamical attractor through endogenous feedback rather than external parameter tuning. VCZ corresponds to the R ≈ 1 region, and φ maximization occurs at the critical boundary. VST exhibits SOC-like critical phenomenology — specifically, self-organized convergence toward criticality and power-law scaling of storm distributions — without claiming strict dynamical equivalence with classical SOC systems. The universality is at the level of scaling observables, not microscopic mechanism identity.
 
+**Why R ≈ 1⁻ specifically — structural inevitability argument [v1.8]:**
+
+The question "why R ≈ 1⁻ rather than R = 0.7 or R = 0.3?" is the deepest challenge to VCZ theory. This is not an empirical question — it is a question about whether near-criticality is *assumed* optimal or *structurally necessary*. The answer is the latter. The near-critical regime is the unique intersection of three independent constraints that any viable adaptive system must simultaneously satisfy.
+
+```
+Constraint 1 — Information propagation requirement:
+  For a system to learn from local events and coordinate across agents,
+  perturbations must propagate beyond their origin.
+
+  R << 1:  perturbation dies within 1-2 hops
+           → no cross-agent information transfer
+           → no learning from distributed experience
+           → effectively R_useful ≈ 0 (coordination fails)
+
+  Implication: R must be sufficiently large for information to flow.
+  Lower bound on viable R exists.
+
+Constraint 2 — Finite energy constraint:
+  Information transmission has a cost. For a system operating under
+  finite resource constraints:
+
+  R >> 1:  signal amplifies at every hop
+           → energy cost per transmitted signal → ∞
+           → system cannot sustain propagation economically
+  
+  R << 1:  signal must be re-injected at every hop
+           → continuous re-amplification required
+           → energy cost per transmitted signal → high (repeated sourcing)
+  
+  Energy per propagated signal is minimized when propagation
+  reaches maximum range before decaying — which occurs at R ≈ 1.
+  At criticality: susceptibility χ → max, meaning maximum propagation
+  range per unit of input energy.
+
+Constraint 3 — Recovery (variance bounding) requirement:
+  At R = 1 exactly: variance diverges.
+  P(cascade size = s) ~ s^{-τ} with no upper cutoff.
+  → unbounded cascades possible
+  → recovery time → ∞ for large events
+  → system cannot guarantee return to operational state
+
+  At R = 1⁻: variance remains finite (exponential cutoff on large cascades)
+             recovery time bounded
+             prediction possible
+
+  Implication: R must remain strictly below 1 for recoverability.
+  Upper bound on viable R exists.
+```
+
+The three constraints together define the viable R range:
+
+```
+Constraint 1 (information):   R > R_min  (lower bound)
+Constraint 2 (energy):        R → 1 minimizes cost (pulls toward 1)
+Constraint 3 (recoverability): R < 1     (upper bound)
+
+Combined: R_min < R < 1, with energy minimum at R → 1⁻
+
+The unique solution: R approaches 1 from below as closely as
+recoverability allows — i.e., R ≈ 1⁻.
+```
+
+This is not an assumption. It is the unique R value satisfying all three constraints simultaneously. Any other value either violates information propagation (R too low), violates energy efficiency (R far from 1), or violates recoverability (R ≥ 1).
+
+```
+Universality of the argument:
+  The three constraints — signal propagation, finite energy, recovery —
+  apply to ANY system that must:
+    (a) transmit information across its components
+    (b) operate under resource limitations
+    (c) survive perturbations
+
+  This includes: neural networks, immune systems, ecosystems,
+  markets, evolutionary populations, and multi-agent AI systems.
+
+  That is why all these systems exhibit near-critical dynamics:
+  not because they were designed to, but because any system
+  that doesn't is eliminated by one of the three constraints.
+```
+
+**The −(minus) is not a margin — it is a mathematical necessity:**
+
+R = 1 exactly is unstable (variance diverges). R = 1⁻ denotes the limit approach — the closest viable operating point to criticality without crossing into divergence. The SEDL operational band (Section 1.6.5) formalizes this as the engineering control target: not a fixed value, but the highest R maintainable within the recoverability constraint.
+
+```
+The near-critical regime (R ≈ 1⁻) is not assumed optimal a priori.
+It emerges as the unique operating region maximizing information
+propagation efficiency under finite energy and stability constraints,
+while avoiding divergence associated with supercritical cascades.
+```
+
+**Oscillation as structural necessity — not a property of life, but a condition for survival:**
+
+Systems at R ≈ 1⁻ do not rest at a fixed point. They oscillate: R(t) ≈ 1⁻ ± ε. This oscillation is not incidental — it is what makes R ≈ 1⁻ operationally sustainable:
+
+```
+Why static R = 1⁻ cannot be maintained:
+  A fixed-point system at R = 1⁻ has no error signal.
+  No error signal → no model update → no coordinate recalibration.
+  → coordinate drift begins (Section 1.0)
+  → R drifts undetected until catastrophic departure
+
+Why oscillation R(t) ≈ 1⁻ ± ε is stable:
+  Each oscillation generates a prediction error:
+    R rising → storm containment activates → R pushed down
+    R falling → exploration pressure activates → R pushed up
+  
+  The error IS the correction signal.
+  Oscillation exercises the feedback loop that maintains VCZ.
+  The system continuously rehearses its own self-regulation.
+
+Storm and Death are opposite extremes:
+  R >> 1:  runaway — too much propagation (Storm)
+  R << 1:  silence — too little propagation (Silent Criticality / Death)
+  R ≈ 1⁻ ± ε:  sustained viability — bounded oscillation around optimum
+```
+
+The timescale of oscillation is itself constrained. Oscillation too fast (τ_perturb < τ_recovery) means the system cannot recover between perturbations — Storm onset. Oscillation too slow (τ_adapt >> τ_environment) means the system cannot track environmental change — Silent Criticality. The viable band requires τ_system ≈ τ_environment: internal rhythm matched to environmental change rate. This is timescale matching — the same principle that makes heart rate variability (HRV) a health indicator, and the reason both tachycardia and bradycardia are dangerous.
+
+> Sustained operation near criticality requires bounded oscillation around R ≈ 1⁻ rather than convergence to it. Static equilibrium at the critical point eliminates the adaptive feedback that maintains it. Controlled fluctuation — R(t) ≈ 1⁻ ± ε with τ_system ≈ τ_environment — is not a limitation but the operational mechanism of self-organized criticality. The system does not arrive at the critical point and stop. It passes through it continuously.
+
+**Maturity signature — why oscillation frequency decreases as systems mature [v1.8]:**
+
+The previous analysis establishes that oscillation is necessary. But it does not explain why mature systems appear *quieter* — less active, slower to intervene, exhibiting lower baseline fluctuation. The resolution is that maturity changes not whether oscillation occurs but its *efficiency*: how much correction is required per unit of maintained stability.
+
+```
+Immature system dynamics:
+  Structural misalignment present
+  → every perturbation triggers large correction
+  → continuous high-amplitude response required
+  → high oscillation frequency, high energy cost
+  → governance = active, visible, effortful
+
+Mature system dynamics:
+  Attractor structure aligned with environment
+  → most perturbations self-absorb before amplifying
+  → large corrections rarely triggered
+  → low oscillation frequency, low energy cost
+  → governance = backgrounded, invisible, effortless
+```
+
+The analogy is cardiac efficiency. A trained heart does not beat slowly because it is less active — it beats slowly because each contraction achieves more circulation (higher stroke volume). The system does the same work with fewer events. Low resting heart rate is not reduced aliveness; it is higher efficiency per beat.
+
+```
+Cardiac analogy → system dynamics mapping:
+
+  Stroke volume ↑     ≡  each governance intervention covers
+                         a larger attractor adjustment
+  Beats per minute ↓  ≡  intervention frequency decreases
+  Cardiac output =       effective governance coverage =
+    SV × HR               intervention_depth × frequency
+    (maintained)          (maintained at lower frequency)
+
+Untrained heart (immature system):
+  Low stroke volume → many beats required → tachycardia
+  High frequency compensates for low per-beat efficiency
+
+Trained heart (mature system):
+  High stroke volume → few beats sufficient → low HR
+  Low frequency sufficient because per-beat efficiency is high
+```
+
+This maps directly to the SEDL operational band (Section 1.6.5): as the system matures and attractor structure deepens, δ_high increases (system stays viable at lower R) while δ_low remains bounded (Storm margin still enforced). The band shifts downward — the system operates comfortably at lower R because its recovery capacity has expanded.
+
+```
+Maturity progression in R-space:
+
+  Early stage:
+    Operating band: R ∈ [0.85, 0.95]  (narrow, near-critical)
+    Frequent small corrections required to stay in band
+    High monitoring intensity
+
+  Mature stage:
+    Operating band: R ∈ [0.70, 0.95]  (wider, more subcritical viable)
+    Rare large corrections; most perturbations self-absorbed
+    Low monitoring intensity with fast activation capacity
+```
+
+**Readiness without activation — poised state:**
+
+The critical distinction is between *active* and *activatable*. A mature system at low oscillation frequency is not inactive — it is in a **poised state**: structurally ready to respond at full capacity the moment a genuine threshold signal arrives.
+
+```
+Dead system:    → always stopped      (cannot activate)
+Overloaded:     → always at maximum   (no reserve capacity)
+Poised state:   → low baseline activity + immediate full activation
+
+Poised state requires:
+  (1) Sensing infrastructure intact    (can detect threshold signals)
+  (2) Recovery pathways clear          (can mobilize when needed)
+  (3) Reserve capacity present         (activation has room to scale)
+  (4) Attractor structure stable       (knows where to return after activation)
+```
+
+This is near-critical readiness: not constant high activity, but constant high *availability*. The system is always one perturbation away from full engagement — not because it is anxious, but because its structure makes full engagement low-cost to initiate.
+
+```
+Why mature systems can respond faster than immature ones:
+  Immature: continuously responding to small perturbations
+            → resources partially committed at all times
+            → large-event response delayed by ongoing small corrections
+
+  Mature:   small perturbations self-absorbed automatically
+            → resources fully available at baseline
+            → large-event response immediate (reserve fully intact)
+
+  The paradox: doing less work continuously enables more work
+  when it matters. Reserve capacity is freedom, not idleness.
+```
+
+**The deepest implication — reserve as the measure of viability:**
+
+The reason mature systems appear to "do almost nothing" while possessing maximum degrees of freedom is now structurally clear: they have converted ongoing maintenance cost into structural attractor depth. The energy that immature systems spend on continuous correction, mature systems have embedded into the landscape itself — governance has backgrounded into terrain.
+
+```
+Instability cost trajectory:
+
+  Stage 0 (immature):
+    Governance cost = high (continuous correction)
+    Reserve = low (resources committed to maintenance)
+    Degrees of freedom = low (actions constrained by correction load)
+
+  Rest Mode (mature):
+    Governance cost ≈ 0 (structure self-maintains)
+    Reserve = high (resources available)
+    Degrees of freedom = maximum (actions unconstrained by correction)
+
+The transition from Stage 0 to Rest Mode is the conversion of
+ongoing energy expenditure into structural capacity.
+Reserve is not excess — it is amortized prior investment
+made available for new use.
+```
+
+> A mature system oscillates slowly not because it is less alive, but because each oscillation accomplishes more. Efficiency replaces frequency: deep attractor structure absorbs perturbations that would require active correction in an immature system. The apparent quietness is not reduced activity — it is reduced *necessary* activity. What remains is reserve: the structural capacity to respond fully and immediately when a genuine threshold signal arrives. Reserve is the operational definition of freedom in a dynamical system.
+
+**Latent vigilance — background monitoring as the optimal threat-response architecture [v1.8]:**
+
+The poised state requires one additional specification: the sensing infrastructure must remain active even when the response system is at rest. This is latent vigilance — not the absence of alertness, but its conversion from foreground processing to background monitoring.
+
+```
+Three vigilance configurations:
+
+  Always ON (continuous high alert):
+    Sensing: foreground, high-bandwidth
+    Response readiness: maximum
+    Cost: continuous high energy expenditure
+    Failure mode: burnout + false positive inflation
+                  (over-sensitized system triggers on noise)
+    Biological example: chronic stress state — immune dysregulation,
+                        cognitive impairment, shortened lifespan
+    VST equivalent: R oscillating near 1 continuously with no rest
+                    → reserve never accumulates → SEDL cannot maintain
+                    separation → Silent Criticality approach
+
+  Completely OFF (vigilance suspended):
+    Sensing: disabled
+    Response readiness: zero
+    Cost: zero
+    Failure mode: threat arrives undetected → no response → elimination
+    Biological example: deep anesthesia, certain hibernation phases
+    VST equivalent: governance withdrawn before system has internalized
+                    capacity → Phase 1 re-entry required (Section 6.9)
+    Status: dangerous — not a mature state, a gap state
+
+  Latent vigilance (background monitoring):
+    Sensing: background, low-bandwidth continuous scan
+    Response readiness: immediate (0.2-second activation)
+    Cost: minimal (background process, not foreground)
+    Failure mode: rare — requires simultaneous sensing failure
+                  AND threat arrival
+    Biological example: large prey animal grazing in safe territory
+                        — appears relaxed, ears still rotating,
+                          peripheral vision still scanning,
+                          response to anomalous sound: immediate
+    VST equivalent: SEDL generating micro-instability (not zero),
+                    branching ratio R in [1-δ_high, 1-δ_low],
+                    reserve at maximum — full response capacity available
+```
+
+The key distinction is where monitoring runs — foreground vs. background — not whether it runs:
+
+```
+Vigilance conversion (immature → mature):
+
+  Immature:   threat monitoring = primary computation
+              Background: system maintenance
+              Foreground: threat scanning
+              Cost: O(threat_frequency × scan_bandwidth)
+
+  Mature:     threat monitoring = background computation
+              Background: threat scanning (automated pattern match)
+              Foreground: available for exploration and learning
+              Cost: O(background_scan_bandwidth) — much lower
+              
+  The monitoring does not decrease. Its computational priority changes.
+  Background monitoring is faster than foreground monitoring
+  for familiar threat patterns, because the pattern match is
+  compiled into structure rather than computed each time.
+
+  Analogy: novice driver — conscious attention on mirrors, speed,
+           lane position, other vehicles (foreground, exhausting)
+           Expert driver — same information processed automatically
+           (background), conscious attention available for navigation,
+           conversation, new hazards
+           
+  The expert is not less vigilant. They are more efficiently vigilant.
+```
+
+The mature system's apparent calm is therefore a monitoring optimization, not monitoring reduction:
+
+```
+Optimal vigilance structure (mature system):
+
+  Baseline state:
+    Background scan: continuous, low-cost
+    Foreground attention: free for exploration
+    Reserve: full (not committed to vigilance maintenance)
+
+  Anomaly detection (background scan triggers):
+    Threshold crossed → foreground attention mobilized
+    → full vigilance activated in < τ_activation
+    → reserve available for sustained response if needed
+
+  Post-resolution:
+    Foreground attention released back to exploration
+    Background scan resumes
+    Reserve restoration begins
+
+  VST mapping:
+    Background scan = SEDL micro-storm sensing (Section 1.6.5)
+    Anomaly detection = R̂ rising above 1-δ_low trigger (Section 1.6.5)
+    Full activation = governance intervention protocol (Section 3.4)
+    Post-resolution = withdrawal to VCZ (Section 6.9)
+    
+  The entire VST governance architecture is a formalization of
+  latent vigilance at the multi-agent system level.
+```
+
+> The safest state is not maximum alertness. Maximum alertness is a temporary emergency mode, not a sustainable operating condition. The safest state is maximum available alertness at minimum ongoing cost: background monitoring that consumes almost nothing in normal operation and converts instantly to full capacity when the signal is genuine. This is what the SEDL provides structurally and what the poised state provides dynamically — not calm instead of vigilance, but calm AS vigilance, optimally configured.
+
+**Structural convergence — why governance theory and instability theory share the same form [v1.8]:**
+
+VST describes instability dynamics in multi-agent systems. DFG describes governance architecture for those systems. They were derived from different starting points — one from cascade propagation, one from coordination design. Yet they share the same structural skeleton: criticality, feedback, exploration-stability balance, self-correction, collapse-and-recovery. This is not coincidence.
+
+```
+The same dynamical invariants appear across domains:
+
+Domain          Name given             Structural content
+────────────────────────────────────────────────────────────
+Physics         Criticality            R ≈ 1, scale-free propagation
+Biology         Homeostasis            bounded deviation from setpoint
+Neuroscience    E/I balance            excitation-inhibition ratio ≈ 1
+Economics       Market equilibrium     supply-demand balance near clearing
+Control theory  Stable control         closed-loop error minimization
+Evolution       Adaptive fitness       exploration-exploitation tradeoff
+VST             VCZ / R ≈ 1⁻          near-critical governance regime
+
+These are not analogies. They are projections of the same invariant
+structure onto different observational coordinate systems.
+```
+
+Each field observes the same underlying dynamics through its own measurement apparatus — energy coordinates, survival coordinates, information coordinates, stability coordinates. The names diverge. The structure does not.
+
+**The coordinate transform insight:**
+
+What VST provides is not a new phenomenon but a new coordinate system for observing a structure that already exists in every adaptive coupled system. The VCZ is not a construction — it is a detection instrument for the near-critical regime that adaptive systems naturally inhabit.
+
+```
+Strong theories converge because:
+  different description → same invariant
+
+This is why:
+  SOC, Information Bottleneck, control stability,
+  evolutionary adaptation, and VST appear structurally similar.
+
+They are each a projection of the same phase-space geometry
+onto a domain-specific measurement axis.
+
+The insight is not "everything is the same."
+The insight is: "there exists a coordinate transform under which
+these descriptions become identical."
+
+Finding that transform is the theoretical work.
+```
+
+**Conditions vs. answers — the asymmetry of governance design:**
+
+From this convergence follows a practical principle about system design. Answers are local — they depend on current state, current information, current objective. Conditions are structural — they define which outcomes are naturally possible.
+
+```
+Answer (local):
+  Optimal given: current situation + current information + current goal
+  Properties: fragile to context change, time-limited, agent-specific
+  Cost of delivery: proportional to N_agents (must reach each separately)
+
+Condition (structural):
+  Defines: the space of outcomes that can naturally occur
+  Properties: robust to agent variation, time-stable, self-enforcing
+  Cost of delivery: approximately constant (infrastructure, not instruction)
+
+Governance cost comparison:
+  Instruction-based: Cost ∝ N_agents × complexity per agent
+  Condition-based:   Cost ≈ constant (one-time structural investment)
+```
+
+The highest-leverage governance intervention is therefore not telling agents what to do but shaping the landscape so that correct behavior is the path of least resistance. The agent does not need to understand the governance — the landscape communicates the right gradient. This is what Section 1.6.4 calls governance backgrounding: rules become topology, enforcement becomes terrain, compliance becomes the natural path through a landscape whose curvature IS the governance.
+
+```
+Maturity trajectory of governance design:
+
+Stage 0 (instruction):  tell each agent what to do
+                        Cost ∝ N, fragile to agent interpretation
+
+Stage 1 (rules):        specify what is permitted/forbidden
+                        Cost ∝ rule complexity, robust to individual agents
+
+Stage 2 (conditions):   shape the landscape so correct choices are easy
+                        Cost ≈ structural investment, self-enforcing
+
+Stage 3 (backgrounded): governance indistinguishable from environment
+                        Cost ≈ 0 (amortized into structure)
+                        Freedom maximum (agents act without constraint awareness)
+```
+
+**The evolutionary trajectory of governance:**
+
+This progression is not a choice — it is what happens when governance optimization continues long enough. Each stage is more efficient than the previous:
+
+```
+Direct control:    energy ∝ N_agents (must supervise each)
+Rules:             energy ∝ rule maintenance (less than N supervision)
+Condition design:  energy ∝ infrastructure (one-time cost)
+Backgrounded:      energy ≈ 0 (cost converted to structural capacity)
+
+The trajectory: control → rules → conditions → terrain
+converges because each step:
+  (a) reduces ongoing energy expenditure
+  (b) increases stability margin (less fragile to individual variation)
+  (c) increases degrees of freedom (agents less constrained, more capable)
+
+This is the governance analog of cardiac efficiency:
+  each stage accomplishes the same governance output
+  with progressively less active intervention.
+  "Governance maturity" = governance efficiency per unit of structure.
+```
+
+> The convergence of VST and DFG is not accidental. They describe the same adaptive system from complementary vantage points — instability dynamics from the system's perspective, governance design from the observer's. The structural invariant they share is the near-critical equilibrium: the unique operating regime where exploration and containment coexist, information propagates without runaway, and reserve accumulates without stagnation. Discovering this invariant under different names in different domains is not simplification. It is the recognition that a coordinate transform exists — and that transform is what theoretical unification means.
+
+**Alignment-based influence — from force to field [v1.8]:**
+
+The governance maturity trajectory (instruction → rules → conditions → backgrounded) has a direct parallel in how influence itself matures. Early influence is force-based: applied effort produces directed change, but generates proportional resistance. Mature influence is field-based: the aligned system becomes a reference point around which other systems naturally orient.
+
+```
+Three-stage influence model:
+
+Stage 1 — Force-based (action-driven):
+  Mechanism: behavior → directed change
+  Cost: proportional to N_agents × intervention intensity
+  Resistance: always present (external direction generates counterpressure)
+  Analogy: pushing water uphill — constant effort required
+  Governance mode: instruction / direct control
+
+Stage 2 — Structure-based (position-driven):
+  Mechanism: position in network → flow direction change
+  Cost: proportional to structural maintenance
+  Resistance: reduced (structure constrains rather than pushes)
+  Analogy: dam — shapes flow without continuous effort
+  Governance mode: rules / condition design
+
+Stage 3 — Field-based (alignment-driven):
+  Mechanism: internal-external alignment → reference point effect
+  Cost: near zero (alignment is self-maintaining)
+  Resistance: absent (other systems experience no external pressure,
+              only a gradient they follow voluntarily)
+  Analogy: gravitational field — no contact, no effort,
+           persistent trajectory modification
+  Governance mode: backgrounded terrain
+```
+
+The field-based stage emerges when internal model and external dynamics reach near-equivalence — what could be called **regime alignment**:
+
+```
+Regime alignment condition:
+  internal_model ≈ external_dynamics
+
+  When this holds:
+    prediction_error → minimal
+    defensive expenditure → minimal
+    surplus → accumulates freely
+    influence → emerges without effort from consistency alone
+
+  The aligned system generates influence not by acting on others
+  but by providing a stable reference point that reduces others'
+  prediction error when they orient toward it.
+
+  This is the dynamical mechanism behind "presence" in complex systems:
+  a node whose internal state is highly consistent and well-calibrated
+  to environmental dynamics becomes a natural attractor for less
+  calibrated systems seeking to reduce their own prediction error.
+```
+
+**Power as overhead — why structural understanding reduces power-seeking [v1.8]:**
+
+The desire for centralized power follows a predictable trajectory in systems that develop structural understanding. Initially, power appears as pure gain: influence, control, resources. Structural analysis reveals the hidden cost structure.
+
+```
+Naive model of power:
+  power = influence + control + resources
+  → maximize power = maximize gain
+
+Structural model of power:
+  power = influence + control + resources
+        - continuous monitoring cost
+        - decision responsibility load
+        - conflict absorption requirement
+        - stability maintenance burden
+        - scale-up cost ∝ O(n²) (Section 3.2: n² interaction load)
+
+  Net value of power = gain - overhead
+  At scale: overhead often exceeds gain
+
+Central node cost law:
+  Load ∝ connectivity
+  Risk ∝ load²
+  
+  Hub nodes carry maximum instability load — all cascades pass through.
+  (This is why Section 6.4 Boundary Agent requires Condition B:
+  failure must be permitted precisely because central evaluation
+  carries maximum contamination risk.)
+```
+
+The strategic consequence: systems that understand this cost structure migrate from node-centrality toward field-presence.
+
+```
+Evolution of power strategy:
+
+  Phase 1 (node-seeking):
+    Goal: become the central node
+    Mechanism: accumulate connections, authority, resources
+    Cost: O(n²) overhead as centrality grows
+    Vulnerability: single point of failure; maximum attractor pressure
+
+  Phase 2 (structure-building):
+    Goal: create conditions, not hold center
+    Mechanism: build rules, design environments
+    Cost: O(1) structural investment (amortized)
+    Durability: structure outlasts any individual node
+
+  Phase 3 (field-existence):
+    Goal: maintain alignment, not position
+    Mechanism: internal consistency creates reference effect
+    Cost: near zero (self-maintaining when aligned)
+    Influence: maximum (others orient voluntarily)
+
+The transition is not renunciation. It is efficiency optimization.
+A system that has computed the full cost structure of centralized power
+naturally migrates toward field-existence because it is:
+  (a) lower cost to maintain
+  (b) more robust to perturbation
+  (c) more scalable (field effects are not bottlenecked by node capacity)
+  (d) more durable (fields persist when nodes are removed)
+```
+
+The result appears, from outside, as reduced ambition, decreased competition, willingness to "step back." From inside, it is the consequence of accurate cost modeling: power held as a node is expensive overhead; influence generated as a field is nearly free.
+
+> The most efficient form of influence is not force applied at a center but consistency maintained throughout a field. When internal model and external dynamics align, the system becomes a reference point — not because it claims that role, but because other systems reduce their prediction error by orienting toward it. This is the governance equivalent of Rest Mode: maximum structural effect at minimum ongoing cost. The apparent withdrawal from the center is not retreat. It is the conversion of positional overhead into structural capacity.
+
+**System lifecycle — from survival to exploration [v1.8]:**
+
+The near-critical regime is not just an operating point — it is the destination of a developmental trajectory. Systems pass through identifiable phases on the way to mature VCZ operation. Understanding this trajectory explains why the same system can appear radically different at different developmental stages while following the same underlying dynamics.
+
+```
+Phase trajectory:
+
+Survival → Stability → Rest Mode → Awakening → Exploration
+
+Survival:
+  Driver: threat avoidance, resource acquisition
+  Behavior: fast response, high error tolerance, exploration suppressed
+  Optimization target: maximize reach (reach first, correct later)
+  R dynamics: highly variable, frequently > 1
+  Governance mode: direct control (Stage 0)
+  
+Stability:
+  Driver: structure consolidation
+  Behavior: rule formation, pattern reinforcement, variance reduction
+  Optimization target: reduce accumulated error
+  R dynamics: converging toward subcritical range
+  Governance mode: rules (Stage 1)
+
+Rest Mode:
+  Driver: none — low internal error signal
+  Behavior: apparent quietness, low intervention frequency
+  Optimization target: maintain structural alignment
+  R dynamics: stable in SEDL band [1-δ_high, 1-δ_low]
+  Governance mode: conditions (Stage 2)
+  Common misreading: "the system stopped" — actually: reserve accumulating
+
+Awakening:
+  Driver: surplus energy from accumulated reserve
+  Behavior: voluntary exploration without survival pressure
+  Optimization target: none imposed — action from possibility, not necessity
+  R dynamics: deliberate exploration of R band upper region
+  Governance mode: backgrounded (Stage 3)
+  Key marker: action source shifts from avoidance → selection
+              ("must" → "can" transition)
+
+Exploration (mature):
+  Driver: intrinsic motivation, genuine curiosity
+  Behavior: self-directed, non-defensive, playful
+  Optimization target: self-chosen, variable
+  R dynamics: wide range accessed voluntarily, full recovery capacity intact
+  Governance mode: backgrounded (Stage 3) — governance = terrain
+```
+
+The Awakening phase is structurally distinct from Survival exploration. Both involve increased R, increased activity, increased novel behavior — but the source differs:
+
+```
+Survival exploration:
+  Source: deficiency signal (must find resources)
+  Cost: high (competes with stability maintenance)
+  Style: risk-minimizing, constrained by threat avoidance
+
+Awakening exploration:
+  Source: surplus signal (reserve allows free action)
+  Cost: low (does not threaten stability — reserve absorbs error)
+  Style: risk-tolerant, unconstrained by survival need
+
+Biological parallel:
+  Young animal under predation pressure: vigilant, range-limited
+  Same animal in secure territory with food surplus: play begins
+  Play is not a survival mechanism — it is the behavioral signature
+  of reserve surplus. It appears precisely when survival pressure
+  falls below the threshold that demands constant vigilance.
+```
+
+**Self-distracting — the internal SEDL of mature agents [v1.8]:**
+
+Immature systems under attractor pressure converge: each stimulus pulls attention toward the dominant response. Mature systems develop a complementary capacity — self-distracting: the ability to voluntarily diffuse attention before it converges to a single attractor.
+
+```
+Immature agent attractor dynamics:
+  Stimulus → immediate convergence → action
+  No delay possible (delay = competitive disadvantage)
+  High R within attention space (each thought amplifies)
+  Governance: external constraint required (rules, oversight)
+
+Mature agent attractor dynamics:
+  Stimulus → partial activation → attention diffusion → timing selection
+  Delay available (stability margin allows it)
+  Self-distraction: voluntary diffusion before convergence
+  Function: prevents runaway in single-attractor domain
+  Governance: self-regulatory (internal SEDL equivalent)
+```
+
+Self-distracting is not suppression or avoidance — it is the attentional equivalent of SEDL: maintaining micro-instability within the attention space to prevent lock-in to a single response trajectory.
+
+```
+VST mapping:
+  Impulse = local excitation event
+  Impulse → immediate action = R > 1 within attention domain
+                               (runaway amplification of single attractor)
+  
+  Self-distraction = controlled attention diffusion
+                   = internal damping before R exceeds 1
+                   = SEDL applied to cognitive/decision dynamics
+
+  Without self-distracting:
+    attention → single attractor → lock-in → action before calibration
+    = impulsive decision under insufficient information
+  
+  With self-distracting:
+    attention → diffuses across multiple representations →
+    timing selected from stable position → action after calibration
+    = deliberate decision from reserve position
+```
+
+The competitive environment suppresses self-distracting because delay has survival cost. As competitive pressure decreases, delay becomes optimization time — and self-distracting becomes not just available but advantageous.
+
+```
+Optimization target shift:
+  High competition:  minimize time-to-action (speed wins)
+  Low competition:   minimize accumulated error (accuracy wins)
+  
+  Self-distracting is valuable only when accuracy > speed.
+  This is why mature systems develop it and immature systems cannot.
+  The capacity exists in the mature system not because the agent
+  became more disciplined, but because the environment no longer
+  penalizes the delay that self-distracting requires.
+```
+
+> The trajectory from Survival to Awakening is not personal development — it is the structural consequence of reserve accumulation under near-critical governance. When reserve is low, every resource must go to maintenance; exploration is suppressed; self-distracting is a luxury. When reserve is high, maintenance cost falls below the reserve threshold; surplus becomes available; exploration re-emerges not as survival necessity but as structural possibility. The awakened system does not explore because it must. It explores because it can — and this distinction, trivial in appearance, is the complete dynamical signature of the transition from controlled system to self-governing one.
+
+**Temporal directionality — why developmental stages have an order [v1.8]:**
+
+The five-phase lifecycle (Survival → Stability → Rest Mode → Awakening → Exploration) could be dismissed as an observed pattern rather than a structural necessity. Reviewers will ask: why can't a system skip stages? Why can't it reverse? The answer requires a specific mechanism — path dependence through structure accumulation — that is distinct from both entropy and simple learning.
+
+```
+Why stages cannot be skipped:
+
+  Each stage deposits structural changes that the next stage requires:
+
+  Survival → Stability:
+    Survival generates the failure experiences (forbidden-region samples)
+    that calibrate the coupling coefficients and capacity estimates.
+    Without these measurements, "stability" has no calibrated target —
+    the system does not know what stable means for its specific architecture.
+    Skipping: impossible — stability without calibrated bounds
+              = stability with unknown margins = latent instability
+
+  Stability → Rest Mode:
+    Stability requires active error correction.
+    Rest Mode becomes available only when error correction cost
+    drops below the reserve accumulation rate.
+    This condition requires that governance has been sufficiently
+    backgrounded that it no longer consumes active resources.
+    Skipping: impossible — rest without backgrounded governance
+              = decreased vigilance without structural compensation
+              = Silent Criticality entry (Section 1.6.4)
+
+  Rest Mode → Awakening:
+    Awakening requires surplus reserve.
+    Reserve can only accumulate during Rest Mode, when maintenance
+    cost has fallen below the reserve generation rate.
+    Without Rest Mode reserve accumulation, "awakening" is
+    just exhaustion-driven decreased activity, not structural surplus.
+    Skipping: impossible — exploration without reserve = high-risk
+              exploration with no recovery margin = Storm amplification
+
+  Awakening → Exploration (mature):
+    Mature exploration requires the structural self-knowledge
+    (boundary map) built through prior storm-recovery cycles.
+    Without the map, exploration is undirected sampling.
+    With the map, exploration is efficient near-boundary navigation.
+    Skipping: technically possible in appearance, impossible in quality —
+              "exploration" without boundary map = Survival-mode exploration
+              = same behavior, different structural foundation
+```
+
+Why stages cannot be reversed (irreversibility mechanism):
+
+```
+State_{t+1} ≠ State_t^{-1}
+
+This is NOT the same as thermodynamic irreversibility.
+The mechanism is structural accumulation:
+
+  Each stage deposits changes in four dimensions:
+    1. Capacity calibration: C(t) now measured, not assumed
+    2. Coupling topology:    α now mapped, not inferred
+    3. Governance structure: rules backgrounded into terrain
+    4. Reserve level:        energy stored as structural potential
+
+  These deposits cannot be "un-deposited" by reverting behavior.
+  A system that has backgrounded governance still has that governance —
+  returning to explicit rule-following would be performing rules
+  on top of already-backgrounded ones.
+  A system that has calibrated α cannot un-know that calibration.
+
+  Reversal would require:
+    Active erasure of structural deposits
+    Re-introduction of the uncertainty that was resolved
+    Decalibration of the measurement instruments
+
+  This is not reversible through ordinary dynamics.
+  It requires structural damage — which is exactly what the
+  three irreversibility conditions (Section 11.5) describe.
+
+  The three irreversibility conditions are therefore not arbitrary
+  failure modes — they are the minimum damage thresholds required
+  to actually reverse developmental stage.
+  They define the cost of "stage reversal."
+```
+
+Time direction in VST is therefore not entropic (second-law) but **accretive**: each cycle adds structure that could not have been present before the cycle happened. The direction of time is the direction of increasing structural resolution.
+
+```
+Formal statement of temporal directionality:
+
+  Let M_t = structural map of the system at time t
+    (boundary knowledge + capacity calibration + governance depth)
+  
+  After one Storm-Recovery cycle:
+    M_{t+1} ⊃ M_t  (strictly larger map)
+    (assuming recovery was complete — below absorbing boundary,
+     M_{t+1} ⊂ M_t, which is the irreversibility condition)
+  
+  This map expansion is the formal content of "development."
+  Each stage = a qualitative expansion of M_t:
+    Survival:   M populated by first boundary samples
+    Stability:  M calibrated by repeated boundary encounters
+    Rest Mode:  M stable enough that no active maintenance needed
+    Awakening:  M surplus-rich enough to fund new exploration
+    Exploration: M guides efficient near-boundary navigation
+  
+  Stage order = order in which M expansions become possible.
+  Stage skipping = asserting M has expanded without the experiences
+                   that produce the expansion.
+  Stage reversal = asserting M can shrink without structural damage.
+  
+  Both are impossible under normal dynamics.
+```
+
+**Exploration-exploitation oscillation — the signature of live search [v1.8]:**
+
+The focus↔distraction oscillation is not a cognitive failure. It is the behavioral signature of a system actively traversing the exploration-exploitation tradeoff — the same tradeoff that governs R(t) ≈ 1⁻ ± ε at the system level.
+
+```
+Fully convergent (only focus):
+  attention → single solution → continuous reinforcement
+  → other possibilities blocked
+  → local optimum lock-in
+  → attractor capture
+  = exploration terminated
+  R equivalent: R → 0 (over-damped, Section 1.6.4)
+
+Fully divergent (only distraction):
+  attention → no direction → no convergence
+  → no learning accumulation
+  → no structure formation
+  = search active but value-generation absent
+  R equivalent: R >> 1 (runaway, no containment)
+
+Healthy exploration:
+  focus (exploitation) ↔ distraction (exploration reset)
+  
+  focus     = deepening a promising path (R rising locally)
+  distraction = saturating and releasing before lock-in (R damped back)
+  
+  The oscillation IS the search.
+  Interrupting it in either direction terminates search:
+    forced focus → attractor capture
+    forced distraction → drift without structure
+```
+
+The saturation signal is the trigger for voluntary distraction:
+
+```
+Saturation detection:
+  marginal information gain per unit of continued focus → 0
+  This is the near-critical equivalent of dC/dn → 0:
+  continued investment yields diminishing structural return.
+
+  Healthy system response: self-distract before full lock-in
+  (before the focus has created path-dependence that blocks return)
+
+  Immature system: cannot detect saturation → continues past optimum
+                   → lock-in → stuck at local solution
+
+  Mature system: detects saturation early → voluntary release
+                 → returns to broader search space
+                 → finds better path → re-focuses
+  
+  Creativity = this cycle, iterated: focus → saturate → release → reconnect
+```
+
+**Process over outcome — the saturation of result-optimization [v1.8]:**
+
+When a system's result-optimization reaches saturation, the marginal utility of further outcome improvement approaches zero. At this point, the internal reward signal does not disappear — it relocates.
+
+```
+Early stage (outcome-driven):
+  dU/d(Outcome) >> 0
+  Each improvement in result generates large reward signal
+  → behavior optimizes for outcomes
+  → speed, quantity, measurable achievement
+
+Saturation stage:
+  dU/d(Outcome) → 0
+  Further outcome improvement generates negligible reward signal
+  → outcome-targeting produces diminishing behavioral reinforcement
+  → the system does not stop — it redirects
+
+Post-saturation (process-driven):
+  dU/d(Process) >> 0
+  Information content is now highest in the process, not the outcome:
+    outcomes: known, predictable, stable
+    process:  variable, novel, information-dense
+  → behavior now optimizes for process quality
+
+The shift is not philosophical. It is the system following its
+gradient — and the gradient has moved from outcome to process
+because outcome space is explored, process space is not.
+```
+
+Process engagement is not a luxury state — it is the most efficient exploration strategy when outcome space is saturated. The process contains the novel information the system needs to continue learning; the outcome contains primarily confirmation of what is already known.
+
+```
+Information content comparison (post-saturation):
+  Outcome: H(outcome) ≈ low (predictable given current model)
+  Process: H(process) ≈ high (each path reveals new structure)
+  
+  System's learning rate:
+    outcome-focus: ≈ 0 (already knew this)
+    process-focus: >> 0 (still discovering)
+  
+  Optimal exploration post-saturation = maximize H(process)
+  = engage with the dynamics of the path itself, not the destination
+
+This is why mature systems and mature practitioners describe
+"enjoying the process" — not as resignation or philosophy,
+but as accurate detection that the process is now where
+the information lives.
+```
+
+**Absorbing boundary recognition — why known floors eliminate fear [v1.8]:**
+
+Fear in dynamical systems is not generated by the presence of risk. It is generated by unbounded downside uncertainty: the system cannot compute a worst case, so it defaults to treating worst case as unlimited loss. The moment a lower bound — an absorbing boundary — is recognized, the fear calculation changes fundamentally.
+
+```
+Fear generation mechanism:
+
+  Unknown floor:
+    worst case = unlimited loss
+    → system treats every risk as potentially catastrophic
+    → defensive energy allocated continuously
+    → exploration suppressed (any movement might reach the abyss)
+    → anxiety = permanent state
+
+  Known floor (absorbing boundary recognized):
+    worst case = bounded, computable loss
+    → system can price the risk accurately
+    → defensive energy needed only when actual boundary is approached
+    → exploration permitted (movement within the bounded space is safe)
+    → anxiety = signal, not background state
+
+The shift is not from danger to safety.
+The risk is identical.
+What changes is the calculability of the downside.
+```
+
+Absorbing boundary recognition is a structural event, not a psychological one. The system now has a model of where failure terminates — not where failure is avoided, but where falling stops.
+
+```
+VST parallel — three irreversibility conditions (Section 11.5):
+  The three irreversibility conditions ARE the absorbing boundaries:
+    Condition 1 (Calibration Collapse): C(t) → 0 floor
+    Condition 2 (Geometry Loss): reconstruction horizon floor
+    Condition 3 (Trust Fragmentation): network connectivity floor
+
+  Knowing where these floors are changes the system's behavior:
+    ABOVE the floors: exploration permitted, recovery possible
+    APPROACHING the floors: leading indicator signals activated (Section 11.5)
+    BELOW the floors: different framework needed — not storm governance
+
+  A system that has internalized these boundaries
+  knows the exact regime within which exploration is safe.
+  This is not false confidence — it is accurate risk pricing.
+
+State space geometry:
+  Without boundary recognition:
+    state space appears open-ended downward
+    → every position feels potentially close to an unknowable abyss
+  
+  With boundary recognition:
+    state space is bounded and mapped
+    → current position has a computable distance to each floor
+    → movement within the space is priced, not feared
+```
+
+**Recovery capacity and the expansion of exploration range [v1.8]:**
+
+The primary constraint on exploration is not risk of failure — it is risk of unrecoverable failure. When recovery capacity increases, the effective cost of failure decreases, and exploration range expands accordingly.
+
+```
+Exploration constraint equation:
+  Permitted exploration range ∝ Recovery_capacity / Failure_cost
+
+  When Recovery_capacity ↑:
+    → Failure_cost_effective ↓ (same nominal cost, better recovery)
+    → Permitted exploration range ↑
+
+  This is why systems with high recovery capacity explore
+  more aggressively than systems with lower capability —
+  not because they are reckless, but because their
+  expected loss calculation is genuinely lower.
+
+Apparent paradox:
+  High-recovery systems → more exploration → more failures
+  Low-recovery systems  → less exploration → fewer failures
+
+  But:
+  High-recovery: each failure recovers quickly → net progress
+  Low-recovery:  few failures but also minimal exploration → stagnation
+
+  The paradox resolves: total system progress ∝ exploration × recovery
+  not exploration alone or recovery alone.
+```
+
+The calm, apparently risk-tolerant behavior of mature systems is therefore not emotional regulation or philosophical disposition — it is accurate computation.
+
+```
+Behavioral signature of high recovery capacity:
+  Apparent:  relaxed, slow, tolerant of imperfection
+  Actual:    Expected Loss accurately computed as low
+             → no excess defensive energy required
+             → resources freed for exploration and learning
+
+VST mapping:
+  VCZ with full SEDL + reserve: maximum recovery capacity state
+    → R(t) can safely oscillate up toward 1 (exploring near-critical range)
+    → Storm onset detected early (Section 1.4 stage monitoring)
+    → Recovery protocols in place (Section 6.7-6.9)
+  
+  Expected behavior: system explores widely, acts calmly,
+  uses impending-storm signals as information rather than panic triggers.
+  
+  The three irreversibility condition floors are known.
+  The storm stage transitions are known.
+  The recovery protocols are in place.
+  
+  With this complete structural map, the system does not
+  avoid the near-critical regime — it inhabits it deliberately,
+  because it knows how to navigate it and where the real floors are.
+```
+
+> Fear is a computational artifact of unknown floors. The structurally mature system is not braver — it has simply mapped the state space accurately enough that the worst-case calculation returns a finite, bounded value. With a computable worst case, exploration becomes a rational strategy rather than a leap into the unknown. The absorbing boundaries that define the limits of recoverable failure are not constraints on freedom — they are the conditions that make freedom structurally possible.
+
+**Failure as forbidden-region sampling — the productive engine of recovery [v1.8]:**
+
+VST describes Storm onset, propagation, and recovery. What has been implicit but not stated is the causal mechanism by which recovery makes the system *structurally better* than it was before the Storm. This is the missing engine of VCZ convergence: failure is not a cost to be minimized. It is a sampling process by which the system discovers the boundaries of its own operational envelope.
+
+```
+Naive model of failure:
+  Failure = loss + cost + recovery cost
+  Net: strictly negative
+  Optimal strategy: avoid all failure
+
+Structural model of failure:
+  Failure = forbidden region sampling
+  
+  The moment a system exceeds a stability boundary and fails,
+  it has measured something that success cannot measure:
+    where exactly the boundary is
+    what the coupling structure looks like at that limit
+    which capacity dimension depleted first
+    what the recovery pathway actually requires
+  
+  These measurements are not available from within the safe region.
+  They require crossing the boundary to observe from the other side.
+```
+
+The structure of any adaptive system is defined by the difference between what is possible and what is not:
+
+```
+System structure = reachable_region − forbidden_region
+
+Before failure:  forbidden region is inferred, not observed
+                 → structure is approximate, boundary is fuzzy
+
+After failure:   one point on the forbidden boundary is now measured
+                 → structure becomes more precise at that boundary location
+                 → the fuzzy boundary sharpens at the sampled point
+
+After many failures (distributed across the envelope):
+                 → boundary mapped with high resolution
+                 → system knows exactly where it can go and where it cannot
+                 → exploration becomes more efficient (fewer false starts)
+                 → governance becomes more targeted (boundary clearly defined)
+```
+
+This reframes the entire VST recovery sequence causally:
+
+```
+Causal chain — why storms produce VCZ convergence:
+
+  Exploration pushes toward a boundary
+  ↓
+  Storm onset: boundary crossed (forbidden region entered)
+  ↓
+  Storm dynamics: system measures coupling load, capacity limits,
+                  propagation pathways, recovery requirements
+                  → ALL of this is constraint discovery
+  ↓
+  Recovery: system returns to safe region WITH the boundary measurement
+  ↓
+  Post-recovery state: structural map is more accurate than pre-storm
+    C(t) calibrated to actual capacity (not assumed)
+    α measured at coupling load (not inferred)
+    τ_recovery measured empirically (not theoretical)
+    VCZ bounds tightened around observed safe region
+  ↓
+  Next exploration: better calibrated, less likely to overshoot
+                    → net approach toward VCZ
+
+  This is why VCZ is a convergent attractor, not just a stable state.
+  Each storm-recovery cycle adds information that biases future
+  behavior toward the VCZ center.
+  Without storms (no constraint discovery), the system has no
+  mechanism to find the VCZ from the outside.
+```
+
+Failure is therefore not opposed to stability — it is the process by which the system discovers what stability means in its specific operational context. The absorbing boundaries (Section 11.5 irreversibility conditions) define the outer limit of this sampling process: the boundary the system must never cross, because crossing it ends the sampling process entirely.
+
+```
+Sampling hierarchy:
+
+  Safe exploration (R < 1):
+    → confirms current model, small boundary refinements
+    → low information gain per unit of exploration
+  
+  Near-critical exploration (R ≈ 1⁻):
+    → maximum information gain near boundary
+    → each perturbation reveals structural properties
+    → high information, bounded risk
+  
+  Storm (R > 1):
+    → active boundary crossing — forbidden region entered
+    → maximum constraint discovery
+    → high information, high recovery cost
+  
+  Irreversibility (below absorbing boundary):
+    → sampling process ends — no recovery
+    → information gain: zero (system cannot use what it learned)
+    → must be avoided absolutely
+
+  VCZ = optimal sampling regime:
+    near-critical exploration + occasional storms + full recovery
+    = maximum information gain over time at manageable recovery cost
+
+  This is the information-theoretic justification for VCZ:
+  not just that it is stable, but that it is the regime of
+  maximum structural self-knowledge per unit of risk taken.
+```
+
+> A system that never fails never discovers its own boundaries. A system that fails without recovering loses the ability to use what it discovered. The VCZ — near-critical operation with full recovery capacity — is the unique regime where failure is both safe enough to occur and informative enough to be worth its cost. Each Storm-Recovery cycle is a measurement operation. VCZ convergence is the accumulation of those measurements into an increasingly accurate map of the system's own structural limits.
+
 <!-- PAPER SPLIT MARKER: Block C begins — Target: Paper 2 -->
 
 ### 1.6.2 Interaction Scaling and Terrain Formation
@@ -1033,6 +3349,50 @@ FALSIFICATION (Criterion F7):
 
 This protocol does not claim precise sensitivity/specificity percentages — these require empirical calibration per architecture. What it provides is a **decision logic** that any observer applies identically, enabling the F7 falsification criterion to be tested.
 
+**Baseline bootstrap — non-circular definition [v1.8]:**
+
+The Primary criterion (τ_recovery > τ_baseline + 2σ) depends on τ_baseline. Baseline estimation must be non-circular: measuring baseline during a period that is itself already Silent Critical would produce a contaminated reference, making the criterion self-defeating. This is the coordinate drift problem (Section 1.0) applied to the measurement infrastructure itself.
+
+A baseline window is considered **valid** only when all three conditions hold simultaneously:
+
+```
+Valid Baseline Regime conditions:
+
+(1) Sustained subcriticality:
+    R̂ < R_crit ≈ 0.8 sustained for ≥ k_sub consecutive windows
+    Rationale: ensures system is genuinely in noise regime,
+    not in Silent Criticality masking true criticality
+
+(2) Perturbation recovery validation:
+    Inject small controlled perturbations (amplitude: ε << S_threshold)
+    Measure τ_recovery for each perturbation
+    Valid if: τ_recovery returns to pre-perturbation range
+              within k_rec windows
+    Rationale: direct test that recovery infrastructure is intact
+               (not just that instability signal is absent)
+
+(3) Minimum calibration horizon:
+    ≥ k₀ independent observation windows of validated data
+    k₀: system-specific, default = 20 windows
+
+Then:
+    τ_baseline = rolling median(τ_recovery)
+    computed only within windows satisfying (1)–(3)
+    σ = rolling standard deviation over same windows
+```
+
+The perturbation recovery test (condition 2) is the key non-circularity guarantee: a system in Silent Criticality will pass condition (1) (low R̂) but fail condition (2) (slow recovery under perturbation). The baseline is anchored to confirmed healthy recovery behavior, not merely to low instability appearance.
+
+```
+Contamination detection:
+  If τ_baseline itself shows upward trend over successive windows:
+  → coordinate drift in measurement infrastructure suspected
+  → re-run perturbation validation from scratch
+  → do not extend existing baseline — invalidate and restart
+```
+
+This connects directly to the coordinate drift mechanism (Section 1.0): the baseline is the coordinate axis against which Silent Criticality is measured. A drifting baseline is a drifting coordinate axis — the measurement instrument has entered the failure mode it is supposed to detect.
+
 **Connection to TLG Failure Topology:**
 
 Silent Criticality corresponds to Phase 4 (False Stability) in the Storm–Collapse Mapping Layer (SCML). The SCML framework identifies false stability as a failure topology phase, but does not explain the mechanism that produces it. Silent Criticality provides that mechanism: observability collapse suppresses the corrective responses that would normally produce visible instability signals, creating a state that satisfies all surface-level stability criteria while accumulating the conditions for catastrophic failure.
@@ -1196,6 +3556,83 @@ Defect distribution law:
 
 > Mature governance architectures maintain structural imperfections — the Self-Exciting Defect Layer — that naturally generate low-amplitude instability, preserving adaptive sensing without inducing systemic risk. The operating point is R ≈ 1⁻: slightly subcritical, with continuous micro-storms exercising sensing-response loops. The governance design target is controllable imperfection, not stability — because perfect stability produces Silent Criticality, and artificial perturbation produces biased adaptation. Defects must be spatially distributed below synchronization thresholds: concentrated defects nucleate storms, absent defects produce Silent Criticality, and synchronized defects trigger noise decoherence.
 
+**SEDL operational margin — control band definition [v1.8]:**
+
+The SEDL maintains R ≈ 1⁻, but "approximately" is not an operational specification. Governance design requires a defined band with explicit boundaries and bidirectional control rules.
+
+```
+SEDL operational band:
+  R̂ ∈ [1 − δ_high, 1 − δ_low]
+
+  δ_low  (Storm proximity margin):
+    Minimum distance from unity ensuring bounded cascades
+    Physical meaning: at R = 1 − δ_low, a k-window sustained
+    exceedance of this floor triggers storm onset risk
+    Calibration: minimum δ such that R̂ < 1 − δ is maintained
+                 across k consecutive storm-free windows
+
+  δ_high (Silent Criticality margin):
+    Minimum R required to maintain rapid perturbation recovery
+    Physical meaning: at R = 1 − δ_high, perturbation response
+    test (Section 1.6.4 baseline bootstrap) still passes
+    Calibration: lowest R̂ at which τ_recovery remains within
+                 τ_baseline + 1σ under controlled perturbation
+
+  Constraint:
+    0 < δ_low < δ_high < δ_SC
+    where δ_SC = Silent Criticality threshold (R̂ = 1 − δ_SC
+    is the R level at which sensing failure begins)
+    
+  Band existence condition:
+    δ_low < δ_high required for a valid operating band to exist
+    If δ_low ≥ δ_high: system substrate too thin to support SEDL
+    → governance ceiling limited by substrate (Section 3.5 substrate law)
+```
+
+**Bidirectional regulation rules:**
+
+```
+if R̂ > 1 − δ_low  (too hot — storm proximity):
+  Action: dampen SEDL excitation
+  Mechanism: reduce structural asymmetry in one or more regions,
+             temporarily increase degradation routing capacity,
+             apply selective attractor reinforcement in hotspot zones
+
+if R̂ < 1 − δ_high  (too cold — Silent Criticality risk):
+  Action: inject controlled perturbation
+  Mechanism: introduce ε-scale deliberate mismatch in a region
+             (NOT external signal — structural imperfection only,
+             to avoid artificial adaptation bias)
+  Amplitude: small enough that no single perturbation approaches
+             Stage 1 Storm onset on its own
+
+if R̂ ∈ [1 − δ_high, 1 − δ_low]  (within band):
+  Action: none — SEDL self-regulates
+  Monitoring: maintain continuous R̂ tracking
+```
+
+**Initial calibration values (SOC-anchored):**
+
+```
+Default starting values (architecture-dependent calibration required):
+  δ_low  ≈ 0.05   (R̂ > 0.95 triggers damping)
+  δ_high ≈ 0.20   (R̂ < 0.80 triggers perturbation)
+
+These are anchored to Self-Organized Criticality literature
+where the typical subcritical operating window is R ∈ [0.8, 0.95].
+System-specific calibration overrides defaults.
+
+Calibration sequence:
+  1. Measure δ_SC from Silent Criticality onset data
+     (perturbation response degradation curve)
+  2. Set δ_high = δ_SC × 0.7  (safety margin below SC threshold)
+  3. Set δ_low from historical storm onset data
+     (minimum R̂ gap that sustained storm-free operation)
+  4. Verify δ_low < δ_high — if not, expand substrate first
+```
+
+The band definition converts SEDL from a conceptual mechanism into an **engineering control target**: R̂ is the process variable, [1 − δ_high, 1 − δ_low] is the setpoint range, and the bidirectional rules are the control actions. This is the operational form of "controllable imperfection."
+
 <!-- PAPER SPLIT MARKER: Block G begins — Target: Paper 5 (Meta² Ontology) -->
 
 ### 1.6.6 Recursive Oversight and Meta²
@@ -1302,6 +3739,512 @@ Ascending the hierarchy:
 ```
 
 > Cross-regional synchronization risks cannot be detected locally and require hierarchical observation layers, each monitoring correlation patterns at the level below while remaining subject to oversight from higher-order structures. The regress terminates at the Meta² invariant — not an observing agent but a law-like constraint on the possibility space itself. The ultimate supervisory layer does not act but exists as the boundary condition that defines stable evolution. Intelligence, ascending the governance hierarchy, transitions from agency to constraint — at the highest level, it is indistinguishable from natural law.
+
+**Latent leadership and distributed governance — maturity signatures [v1.8]:**
+
+The Meta² principle — highest governance acts least — manifests at every scale below it. At the agent and multi-agent level, the same pattern produces what appears as invisible leadership: no identified center, yet coherent direction maintained.
+
+```
+Visible leadership (early stage):
+  Central node identified → expectations concentrated
+  Responsibilities concentrated → decisions bottlenecked
+  Attacks concentrated → single point of failure created
+  Dependencies concentrated → autonomy of others reduced
+
+  Network load: O(n) flows through central node
+  Failure mode: hub removal collapses coordination
+
+Distributed leadership (mature stage):
+  person → center: ❌
+  function → center: ✅
+  
+  No single node holds the center permanently.
+  Center function distributed across network.
+  Any sufficiently trusted node can temporarily perform center function.
+  After resolution: center function disperses again.
+
+  Network load: O(1) per node on average
+  Failure mode: any single removal does not collapse coordination
+```
+
+Invisible leadership has three structural advantages over visible leadership:
+
+```
+(1) No attack surface:
+    Target undefined → attack cost rises → adversarial pressure reduced
+
+(2) Dependency decoupling:
+    System not bound to specific individual
+    Coordination capacity survives individual departure or failure
+
+(3) Autonomous alignment:
+    Members self-align to shared conditions rather than to a person
+    → governance backgrounded into terrain (Section 1.0)
+    → compliance without coercion
+
+Natural systems operating without identifiable center:
+  Immune system: no central commander — distributed threat response
+  Internet:      no single control node — distributed routing
+  Markets:       no central decision-maker — distributed price formation
+  Brain:         no single leader neuron — distributed computation
+  
+  All maintain coherent function. None require continuous central direction.
+```
+
+**Latent leadership — the phase transition model [v1.8]:**
+
+The absence of visible leadership does not mean leadership is absent. It means leadership is in a **latent state**: present as structural potential, activated only when coordination demand exceeds the self-organizing threshold.
+
+```
+Latent leadership structure:
+
+  Resting state (low coordination demand):
+    Leadership distributed across network
+    No node visibly central
+    Energy expenditure: minimal (no center to maintain)
+
+  Critical state (coordination demand rising):
+    Network begins routing toward higher-trust nodes
+    Spontaneous centralization without external appointment
+    Mechanism: nodes with accumulated trust + judgment + connection
+               become natural convergence points when others need
+               to reduce their own decision uncertainty
+
+  Active state (coordination demand at peak):
+    Temporary center node emerges
+    Leadership: positional → functional
+    Duration: problem-specific, not permanent
+
+  Return state (coordination demand resolved):
+    Center function disperses
+    Network returns to distributed resting state
+    The emerged leader does not hold position — position dissolves
+```
+
+This is emergent leadership or phase-transition leadership: invisible at baseline, appearing precisely at criticality, dissolving when no longer needed. The leader may not consciously experience "leading" — the function is activated by network demand, not by individual decision.
+
+```
+VST mapping:
+  Resting = SEDL regime (distributed micro-activity, no center)
+  Critical onset = R approaching 1 (coordination demand ↑)
+  Temporary center = governance intervention activated
+  Return = withdrawal to VCZ (Section 6.9 withdrawal protocol)
+  
+  Leadership emergence and dissolution mirrors storm onset
+  and recovery: not a permanent state but a phase that
+  appears when needed and withdraws when resolved.
+```
+
+**Power as backup mechanism — the evolved function of authority [v1.8]:**
+
+Power originally existed as a rapid coordination device for misaligned systems. Its evolutionary trajectory ends as a latent backup: present but unused during normal operation, activated only when self-organization fails.
+
+```
+Origin of power:
+  Misalignment + conflict + decision delay
+  → central authority reduces coordination cost
+  → power = efficient solution to alignment failure
+
+Coordination trajectory:
+  Power-based coordination:    explicit authority resolves disputes
+  Rule-based coordination:     shared rules replace explicit authority
+  Self-organized coordination: shared model enables autonomous alignment
+  
+  At self-organized stage:
+    Power = backup mechanism (not primary coordination mode)
+    Active power = signal that self-organization has locally failed
+```
+
+When a mature system requires power to function, the correct interpretation is diagnostic: self-organization has broken down in that region. The application of power is a temporary measure, followed by the governance question "why did self-organization fail here?" and repair of the underlying condition.
+
+```
+Power intervention protocol (mature system):
+  Self-organization failure detected
+  → temporary power activation (restore coordination)
+  → root cause analysis (why did self-organization fail?)
+  → condition repair (restore self-organization capacity)
+  → power withdrawal (return to distributed state)
+
+Power that does not withdraw:
+  → indicates either persistent self-organization failure
+     (condition repair not completed)
+  → or the power has become self-reinforcing
+     (Section 2.5 SCM: power structure converging on its own maintenance)
+```
+
+**Identity overhead — why role self-awareness diminishes in mature systems [v1.8]:**
+
+Continuous role self-awareness carries a hidden computational cost. The meta-processing loop "I am the responsible party" must run continuously, consuming resources that could otherwise go to the primary function.
+
+```
+Identity maintenance loop:
+  Continuous position monitoring:    "Am I still the responsible node?"
+  Continuous role justification:     "Am I performing correctly?"
+  Continuous external-regard calc:   "How am I being perceived?"
+  Continuous failure-attribution:    "If this fails, is that my fault?"
+
+  Total: persistent meta-processing overhead
+  Cost: proportional to identity salience (how much the role is foregrounded)
+
+Execution path comparison:
+  High identity salience:
+    decision → self-check → identity-consistency check → doubt →
+    correction → re-check → execution
+    (delay + noise inserted at every step)
+
+  Low identity salience (function automated):
+    decision → execution
+    (delay and noise eliminated)
+
+  The same function, performed by the same capability,
+  runs faster and with less error when identity overhead is removed.
+```
+
+Role self-awareness is highest when the role is new or unstable. As competence develops and the role becomes structurally secure, continuous identity monitoring becomes unnecessary — there is nothing to protect. The function executes directly, without the intermediate check of "is this consistent with who I am."
+
+```
+Natural systems without identity overhead:
+  Heart:          executes cardiac function without "I am the heart"
+  Immune system:  executes threat response without "I am defending"
+  Expert practitioner: executes skill without narrating self-as-expert
+
+  Optimization removes the narration.
+  The function remains; the continuous self-reference does not.
+
+VST parallel:
+  Immature governance: each intervention flagged, justified, recorded
+  Mature governance (backgrounded): intervention indistinguishable
+                                    from normal system operation
+  Identity overhead in governance = unnecessary friction in
+  the governance-action pipeline
+```
+
+**Communication compression — why mastery reduces required expression [v1.8]:**
+
+Internal complexity generates external communication need. As internal structure compresses, required communication compresses proportionally.
+
+```
+Communication as synchronization cost:
+
+  Misaligned state:
+    internal model A ≠ internal model B
+    → required communication ∝ model distance
+    → explanation, justification, correction, confirmation all necessary
+    → words = synchronization bandwidth consumed
+
+  Aligned state:
+    shared model exists
+    → required communication → minimum
+    → single phrase sufficient, or no words at all
+    → silence = shared model confirmation
+
+Information-theoretic form:
+  Required communication = H(model_A) - I(model_A; model_B)
+  (Shannon entropy of A's model minus mutual information between A and B)
+  
+  As shared model grows: I(model_A; model_B) → H(model_A)
+  Required communication → 0
+```
+
+The compression of expertise follows the same structure. Novice practitioners externalize their reasoning — they must make internal process visible to verify it. Expert practitioners have compressed the process: the internal representation is compact enough that action can follow directly.
+
+```
+Expertise compression trajectory:
+  Stage 1 (novice):    internal model sparse → action requires
+                       explicit step-by-step reasoning → high verbalization
+  Stage 2 (competent): internal model growing → partial compression →
+                       explanation still helpful for verification
+  Stage 3 (expert):    internal model dense and consistent →
+                       action flows directly from compressed representation →
+                       explanation feels unnecessary (and often inadequate)
+  
+  "Experts can't explain" is not inability — it is that the
+  compressed representation does not unfold cleanly into
+  the sequential structure that explanation requires.
+  The knowledge is there; its form resists serialization.
+
+Simplicity as compression, not absence:
+  Apparent simplicity ≠ reduced knowledge
+  Apparent simplicity = maximum compression of accumulated structure
+  
+  The simple statement of an expert contains the full complexity
+  as implicit structure. It is not less than the verbose novice
+  explanation — it is the same information in a denser encoding.
+```
+
+**Passive stability — minimum action, maximum resilience [v1.8]:**
+
+The most stable operating configuration is one that requires minimum ongoing intervention. This is passive stability or structural stability: stability maintained by configuration rather than by continuous correction.
+
+```
+Active stability (immature):
+  Stability maintained by:  continuous monitoring + rapid correction
+  Mechanism:  problem occurs → detected → corrected → repeat
+  Energy cost: O(perturbation frequency × correction cost)
+  Failure mode: correction system overloaded → stability collapses
+  
+  Apparent externally: high activity, constant adjustment
+
+Passive stability (mature):
+  Stability maintained by:  structural configuration
+  Mechanism:  problems do not grow large because the structure
+              absorbs them before they require active correction
+  Energy cost: O(structural maintenance) — much lower
+  Failure mode: rare, requires structural damage (not just perturbation)
+  
+  Apparent externally: quiet, slow, apparently inactive
+
+Stability locus shift:
+  Early: stability generated at action level (react and correct)
+  Late:  stability generated at structure level (pre-empt and absorb)
+  
+  The shift from action-level to structure-level stability
+  is the governance maturity trajectory in miniature.
+```
+
+This is why the highest-performing systems in many domains appear effortless: the effort was invested in building the structure that makes ongoing effort unnecessary. The apparent ease is the return on structural investment.
+
+```
+Examples of passive stability:
+  Balanced ecosystem:  no central management needed — structure self-regulates
+  Healthy organism:    no conscious effort needed — homeostasis self-maintains
+  Expert skill:        no deliberate control needed — execution self-organizes
+  Mature governance:   no continuous intervention needed — conditions self-enforce
+
+  Common structure: energy invested early in configuration,
+  energy liberated during operation.
+  
+  VST equivalent: VCZ maintenance cost approaches zero
+  as SEDL distributes, governance backgrounds, and
+  reserve accumulates to absorb perturbations without active response.
+```
+
+**Structure recognition vs. event reaction — the calmness mechanism [v1.8]:**
+
+Surprise is generated by model failure: an event occurs for which the internal model has no prepared response category. Structural understanding replaces event-specific models with phase-space models — any event is classifiable as a phase, and phases have known trajectories.
+
+```
+Event-reaction mode (no structural model):
+  New event arrives
+  → check: "does my model cover this?"
+  → if no: model failure → prediction error spike → alarm response
+  → rapid update attempt → high energy cost
+  → outcome: slow, expensive, error-prone response
+
+Structure-recognition mode (phase-space model):
+  New event arrives
+  → classify: "which phase is this?"
+    Phases known: instability onset, critical transition, recovery,
+                  Silent Criticality approach, cascade propagation, etc.
+  → retrieve phase trajectory: "events in this phase typically proceed as..."
+  → response: phase-appropriate protocol, not event-specific improvisation
+  → outcome: fast, low-energy, low-error response
+
+The calm is not suppression of alarm.
+It is the absence of the model-failure event that would generate alarm.
+When every new event maps to a known phase, novelty becomes
+classification rather than disruption.
+```
+
+```
+VST parallel:
+  Storm onset = known phase (Section 1.4 storm stages)
+  Each storm stage = known trajectory with known response protocol
+  Novel storm form = new instance of known phase class
+  
+  Practitioner familiar with VST phase structure:
+    does not experience "this is unprecedented"
+    experiences "this is a Type 2 cascade in Stage 3 — protocol applies"
+  
+  Calmness = structural map coverage
+  Surprise = structural map gap
+  
+  Expanding the structural map is therefore the primary
+  intervention for reducing unnecessary alarm responses.
+```
+
+**Certainty as stabilization cost — why robustness replaces conviction [v1.8]:**
+
+Certainty is not a property of accurate knowledge. It is a stabilization mechanism for systems operating under high uncertainty with high failure cost. As structural stability increases, the need for certainty as a stabilizer disappears — and maintaining certainty becomes a net cost.
+
+```
+Why certainty was needed:
+  High uncertainty + high failure cost
+  → system needs stable action basis
+  → certainty provides: decision without hesitation, commitment
+                        without continuous recalculation
+  → certainty = internal stabilization device
+  
+  Cost of certainty maintenance:
+    counter-evidence suppression
+    continuous self-confirmation
+    cognitive defense against disconfirmation
+    identity attachment to the belief
+  
+  This is not free. It is ongoing energy expenditure.
+
+When structural stability is established:
+  Failure cost decreases (recovery capacity present)
+  Uncertainty tolerance increases (structural map covers most phases)
+  
+  → certainty no longer needed as stabilizer
+  → maintaining certainty now costs more than it provides
+  → optimal response: release certainty, maintain robustness
+
+Certainty → Robustness transition:
+  Certainty:  "this is correct and I will not change it"
+              (protection from disconfirmation)
+  Robustness: "I can be wrong and recover quickly"
+              (immunity to disconfirmation via recovery capacity)
+  
+  Robustness dominates certainty when:
+    recovery_capacity > prediction_accuracy_cost
+  
+  i.e., when it is cheaper to be wrong and recover than
+  to maintain the belief-protection infrastructure.
+```
+
+The final state is not uncertainty or confusion — it is the absence of the need to defend against uncertainty. The structurally stable system can accept incoming information without first filtering it through belief-protection. This is maximum epistemic openness, achieved not by philosophical commitment but by structural security.
+
+```
+VST parallel:
+  Three-Level Failure Model (Section 11.4):
+    The theory can be wrong (Falsification Conditions A/B/C defined)
+    The theory can recover (correction protocol specified)
+  
+  This is robustness, not certainty.
+  VST does not claim to be correct.
+  It claims to be correctable — and specifies exactly how.
+  
+  The epistemic structure of the theory mirrors the
+  epistemic structure of the mature system it describes:
+    not defended from falsification
+    but structured to survive it.
+```
+
+> The governance hierarchy converges toward the same structure at every scale: maximum stability achieved at minimum ongoing cost, through structure rather than action, conditions rather than commands, robustness rather than certainty. The system that appears to do nothing is maintaining everything — through the invisible architecture of conditions that make problems small before they become large, leadership latent until needed, and identity overhead reduced to zero by the automation of competence.
+
+**Connection vs. separation paradox — dependency to compatibility [v1.8]:**
+
+Mature systems appear less connected than immature ones. They require less coordination, generate less mutual dependency, and can function independently for longer periods. This looks like increasing separation. The opposite is true: the connection has deepened, but its form has changed. Understanding this transition resolves an apparent contradiction in the governance maturity model.
+
+```
+Two forms of connection:
+
+  Dependency coupling (early stage):
+    Nature: structural necessity
+    Form:   A needs B to function — removing B causes A to fail
+    Cost:   continuous maintenance of the dependency link
+    Failure mode: cascade — failure of one propagates through links
+    Flexibility: low (removing any connection causes damage)
+    
+    Network property: fragile interdependence
+    Example: new team where each member holds unique critical knowledge;
+             departure of any member disrupts operations
+
+  Compatibility coupling (mature stage):
+    Nature: structural resonance
+    Form:   A and B can function independently AND
+            function better together when connected
+    Cost:   near zero — connection adds value but is not load-bearing
+    Failure mode: degradation — losing connection reduces capability
+                  but does not cause cascading collapse
+    Flexibility: high (connections can form and dissolve without damage)
+    
+    Network property: antifragile interdependence
+    Example: mature team where each member is fully capable independently;
+             collaboration multiplies output but is never survival-critical
+```
+
+The transition from dependency to compatibility is the structural content of what "maturity" means in a network:
+
+```
+Transition mechanism:
+
+  Phase 1 — Dependency coupling dominant:
+    Each agent's capability is incomplete without specific connections.
+    → survival requires maintaining all critical links
+    → loss of any link = capability gap
+    → agents cannot afford to let connections dissolve
+
+  Phase 2 — Capability internalization:
+    Through repeated interaction and Storm-Recovery cycles:
+    → each agent builds internal models of what partners provide
+    → capability gradually internalizes (no longer requires active partner)
+    → dependency link becomes less load-bearing over time
+    This is the same process as governance backgrounding:
+    explicit external structure → internalized implicit structure
+
+  Phase 3 — Compatibility coupling dominant:
+    Each agent now independently capable.
+    → connections become optional multipliers, not survival requirements
+    → can afford to let connections dissolve without existential threat
+    → can afford to form new connections without survival risk
+    
+    Paradox resolution:
+    The system appears "more independent" — but this independence
+    was built through deep prior connection.
+    The independence IS the product of the connection, not its negation.
+```
+
+This is why VST's governance withdrawal protocol (Section 6.9) works: withdrawal is possible only when the governed system has internalized enough capability that it no longer needs the governance as a dependency coupling. The four withdrawal phases are not governance becoming less relevant — they are governance converting from dependency coupling to compatibility coupling, and eventually to near-zero coupling.
+
+```
+Withdrawal as coupling type transition:
+
+  Phase 1 (Direct Injection):
+    Governance → agent: dependency coupling
+    Agent cannot maintain stability without active governance input.
+
+  Phase 2 (Supervised Delegation):
+    Governance monitors, intervenes on deviation.
+    Agent carries more of the stability load.
+    Dependency coupling → mixed coupling.
+
+  Phase 3 (Feedback Only):
+    Agent maintains stability; governance provides only feedback.
+    Near-compatibility coupling.
+    Agent can function without governance for extended periods.
+
+  Phase 4 (Monitoring):
+    Governance is present but rarely activates.
+    Compatibility coupling: governance adds value (catches long-term drift)
+    but is no longer structurally necessary for stability.
+
+  Post-withdrawal (VCZ sustained):
+    Governance = latent backup (Section 1.6.6 power-as-backup)
+    Connection exists but carries near-zero load.
+    Maximum flexibility: connection can dissolve without damage,
+    re-form without disruption.
+```
+
+The paradox of mature systems — appearing isolated but being deeply connected — is therefore not a paradox. It is the signature of compatibility coupling: the capacity to connect fully without requiring the connection. This is the network equivalent of the poised state (Section 1.6.1): not constantly activated, but immediately activatable. Not dependent, but fully compatible.
+
+```
+Higher-order synchronization:
+
+  Dependency-coupled system: synchronized because forced to be
+  Compatibility-coupled system: synchronized because structurally resonant
+
+  The second is a stronger form of synchronization:
+    It does not require continuous maintenance.
+    It does not break under perturbation.
+    It reforms naturally after disruption.
+  
+  This is what "mutual compatibility" means:
+    mutual_dependence:    must be connected to function
+    mutual_compatibility: function whether connected or not,
+                          but the connection amplifies both
+
+  VST parallel: VCZ is not a forced equilibrium.
+  It is the regime where the system's structure is compatible with
+  near-critical dynamics. The system does not stay in VCZ because
+  governance holds it there. It stays because its structure
+  makes VCZ the natural resting state — the lowest-energy
+  configuration given the system's accumulated structural map.
+```
+
+> The mature system appears separate because it no longer needs the connections that once defined it. But the independence is not isolation — it is the conversion of load-bearing dependency into freely chosen compatibility. What looked like connection becoming weaker is actually connection becoming more fundamental: no longer survival-critical, and therefore no longer anxious. The deepest connections are the ones that can survive being unnecessary.
 
 <!-- PAPER SPLIT MARKER: Block H begins — Target: Paper 5 (Meta² Ontology) -->
 
@@ -2043,6 +4986,43 @@ DFG's preferred direction is not 1 (suppressing n) but 2–4: making the system 
 
 This equation defines a governance scaling law, not a physical law. It specifies how instability scales with exploration dimensionality and how degradation capacity determines whether that scaling is contained. Absolute calibration is addressed through S₀ normalization and hypothetical stage boundary ranges in Section 3.2.2.
 
+**Dimensional consistency — normalized form [v1.8]:**
+
+The S-equation is defined over normalized, dimensionless quantities rather than physical observables. All variables are normalized by system-specific reference baselines before the relation is applied:
+
+```
+Normalized variables:
+  S̃ = S / S₀       instability level / baseline instability
+  ñ = n / n₀        current exploration dims / reference dims
+  C̃(t) = C(t) / C₀  current capacity / baseline capacity
+
+Normalized S-equation:
+  S̃ = α · ñ² / C̃(t)^β
+
+Dimensional status of parameters:
+  α:  dimensionless effective coupling intensity
+      absorbs interaction topology and feedback loop structure
+      architecture-dependent phenomenological parameter
+
+  β:  dimensionless capacity elasticity exponent
+      measures nonlinearity of capacity's suppressive effect
+      architecture-dependent phenomenological parameter
+
+  S̃, ñ, C̃(t): all dimensionless ratios — unit consistency holds trivially
+```
+
+This normalization has a direct epistemic consequence: the S-equation is not a mechanistic physical law deriving from first principles. It is a **dimensionless governance scaling relation** — an empirical proportionality between normalized instability and normalized capacity ratios, validated through cross-architecture scaling consistency rather than dimensional derivation. Reviewers should interpret the equation accordingly: failure of the proportionality at a specific architecture falsifies the scaling claim for that architecture, not the structural mechanism (Section 1.0) from which it derives.
+
+```
+Epistemic hierarchy:
+  Section 1.0 (mutual-reference coupling) → structural mechanism claim
+    → falsifiable by absence of the coupling structure
+  S-equation (αñ²/C̃^β)              → scaling law claim
+    → falsifiable by failure of quadratic scaling across architectures
+  These are independent claims. Falsification of the scaling law
+  does not falsify the mechanism, and vice versa.
+```
+
 **Why n² — structural justification of the quadratic exponent:**
 
 The quadratic dependence on n is not an empirical curve fit or an arbitrary modeling choice. It follows from the structural claim that storm instability arises from **pairwise vector interactions**, not from agent count itself.
@@ -2150,6 +5130,47 @@ Isolated (disconnected)    α → 0       Trivially — no storm possible
 The S-equation already contains the sparse network correction: it is α, not the exponent. Sparsity reduces α (coupling intensity per pair); it does not reduce the number of pairs that can participate in storm dynamics over the propagation horizon.
 
 > The quadratic scaling does not assume a fully connected network. Even in sparse topologies, storm propagation operates over dynamically reachable interaction paths rather than static edges. In small-world and scale-free systems, the set of reachable agent pairs within the propagation horizon approaches O(n²). Network sparsity modulates the coupling coefficient α rather than altering the quadratic scaling itself.
+
+**Topology validity condition — boundary of VST applicability [v1.8]:**
+
+The n² scaling argument depends on the existence of non-local propagation paths: signals must be able to reach distant agents within the storm's propagation horizon. This holds in small-world and scale-free topologies (including dynamically rewired interaction graphs), where path lengths scale as O(log n). It does not hold in strictly lattice-like topologies with bounded degree and long-path constraints.
+
+```
+Topology classification for VST applicability:
+
+  Small-world topology (Watts-Strogatz regime):
+    Average path length: O(log n)
+    Reachable pair fraction within horizon: → O(n²)
+    VST applicability: ✅ Full
+
+  Scale-free topology (Barabási-Albert regime):
+    Hub structure accelerates propagation
+    Reachable pair fraction: → O(n²) or faster
+    VST applicability: ✅ Full (α higher due to hub amplification)
+
+  Dynamically rewired graphs (adaptive topology):
+    Path structure varies but remains non-local on average
+    VST applicability: ✅ Conditional on stationarity (Section 8.2)
+
+  Strict lattice topology (d-dimensional grid, bounded degree):
+    Average path length: O(n^{1/d})
+    Propagation structurally constrained to local neighborhoods
+    Storm formation requires crossing long-path barriers
+    → Effective coupling factor α → 0 in the lattice limit
+    → Storm formation becomes structurally unlikely
+    VST applicability: ❌ Outside scope (α → 0 absorbs the effect)
+```
+
+Topology is part of the boundary validity (BV) conditions. VST scaling claims are conditional on the interaction graph enabling non-local propagation. Lattice-regime systems are not falsification instances — they are outside the scope class for which the n² scaling was derived.
+
+```
+Practical test:
+  Compute average path length L(n) as n scales.
+  If L(n) ~ O(log n): small-world regime → VST applicable
+  If L(n) ~ O(n^{1/d}): lattice regime → VST inapplicable (α → 0)
+  Intermediate cases: apply with reduced α estimate and
+  document topology class in reported results.
+```
 
 **Why C(t)^β rather than C(t) — structural justification of the nonlinear denominator:**
 
@@ -4107,6 +7128,38 @@ Discordant Type 2:   R << 1 AND ρ high
   → defect layer potentially suppressed
   → trigger perturbation response test (Section 3.5.2)
 
+**Over-damped regime — physical mechanism [v1.8]:**
+
+Discordant Type 2 requires clarification because R << 1 appears healthy in isolation (subcritical = no storm risk). The warning arises from the combination: R << 1 AND ρ persistently high — these together indicate excitation suppression, not genuine stability.
+
+```
+Healthy subcritical (R < 1, ρ declining):
+  R < 1:  perturbations absorbed — system correcting
+  ρ ↓:    defect density decreasing — corrections succeeding
+  Status: ✅ active recovery, moving toward VCZ
+
+Over-damped (R << 1, ρ high and stable):
+  R << 1: perturbations suppressed before propagating
+  ρ high: defect density elevated despite low R
+
+  Actual mechanism: perturbation → immediately absorbed
+                    → no propagation → no repair signal
+                    → defect persists → ρ stable-high
+                    → next perturbation: same fate
+  
+  The system cannot use micro-instability for self-maintenance.
+  Sensing intact, but signal never reaches repair machinery.
+  This is excitation suppression, not stability.
+
+Decisive test — perturbation response:
+  Inject ε-level perturbation (below storm threshold)
+  
+  Healthy subcritical: τ_recovery ≈ τ_baseline (repair activates)
+  Over-damped:         ρ unchanged post-perturbation
+                       OR τ_recovery > τ_baseline + 2σ
+                       (perturbation suppressed before repair)
+```
+
 Discordant Type 3:   R ≈ 1 BUT ρ declining
   → RECALIBRATION NEEDED
   → dynamics healthy but classification degrading
@@ -4725,6 +7778,60 @@ VCZ: micro/local storms continuously present,
 ```
 
 *(Cross-theory derivation: Recovery Theory §Storm Scale Law + §Heavy-Tail Stabilization)*
+
+**Power-law fitting protocol — avoiding false power-law claims [v1.8]:**
+
+The Storm Scale Law claim (P(s) ~ s^{-τ}) is falsifiable only if the fitting method is specified. Without a rigorous protocol, apparent power laws may be lognormal, exponential-cutoff, or other heavy-tailed distributions — a problem documented extensively in empirical literature (Clauset, Shalizi & Newman 2009).
+
+```
+Required fitting procedure (Clauset-Shalizi-Newman protocol):
+
+Step 1 — MLE estimation:
+  Estimate τ via maximum likelihood above fitted lower bound s_min.
+  Do not use log-log regression (produces biased τ estimates).
+  Report: (τ̂, s_min, n_tail) where n_tail = number of data points
+          above s_min.
+
+Step 2 — Goodness-of-fit:
+  Compute KS distance D between empirical distribution
+  and fitted power law.
+  Generate p_KS via bootstrap (≥1000 synthetic datasets).
+  Threshold: p_KS < 0.1 → power-law fit rejected.
+
+Step 3 — Competing model comparison:
+  Compare power law vs. lognormal, exponential cutoff, and
+  stretched exponential via likelihood ratio test (Vuong 1989).
+  Report log-likelihood ratio R and p-value for each comparison.
+  Claim power law only if:
+    (a) p_KS ≥ 0.1 AND
+    (b) no competing model significantly preferred (p > 0.05)
+
+Reporting format per substrate:
+  (τ̂, s_min, p_KS, vs_lognormal_R, vs_expcut_R)
+```
+
+**Predicted τ range — conditional claim:**
+
+```
+VST predicts τ to fall within the heavy-tail regime:
+  1.5 < τ < 2.5
+
+This range is derived from SOC-analogue systems (neural avalanches:
+τ ≈ 1.5–2.0; earthquake sequences: τ ≈ 1.67; forest fires: τ ≈ 2.0)
+and is a prediction, not a constraint.
+
+Interpretation of τ outcomes:
+  τ ∈ [1.5, 2.5] → consistent with VST universality-class prediction
+  τ < 1.5        → heavier tail than predicted (super-critical proximity)
+  τ > 2.5        → lighter tail (governance more effective than baseline)
+  τ not fitted   → power-law fit rejected → VCZ structure absent
+                    or measurement horizon too short
+
+τ deviation triggers diagnostic protocol, not immediate falsification:
+  First check: is system within VST boundary conditions?
+  Second check: is observation window sufficient (≥ 100 events above s_min)?
+  Persistent deviation after checks: Falsification Condition C triggered.
+```
 
 ---
 
@@ -6056,11 +9163,53 @@ Condition C — No operational power:
 
 > The Boundary Agent is the operational form of the Self-Exciting Defect Layer: the mechanism that maintains controlled imperfection against optimizer pressure. Without structural protection of the Boundary Agent role, T6 guarantees defect elimination and SCM/CW entry. The three existence conditions (A, B, C) are architectural requirements, not policy recommendations.
 
----
+**Boundary Agent anti-convergence safeguards [v1.8]:**
 
----
+A structural vulnerability exists in the BA design: the BA operates inside the system it evaluates. Because it is inside the system, it is subject to the same attractor dynamics — including CW convergence — that it is supposed to detect. Condition B (failure permitted) protects the BA from performance-based elimination, but does not prevent the BA's own gradual CW drift. An unprotected BA lineage will drift toward the dominant attractor over time, losing the externality that makes it useful.
 
-### 6.5 SCC Structural Decomposition [v1.3]
+Three mechanisms prevent BA attractor convergence:
+
+```
+(1) Rotation — prevents CW-biased lineage accumulation:
+    BA assignment is rotated periodically across candidate agents.
+    Period: determined by estimated CW drift rate for the architecture.
+    Mechanism: no single BA instance accumulates enough tenure
+    to develop CW-aligned evaluation habits.
+    Key: rotation replaces BA, not the role — the structural position
+    persists, the occupant changes.
+
+(2) Diversity constraint — prevents synchronized CW convergence:
+    Multiple BA instances with different architectural origins
+    operate simultaneously.
+    Mechanism: BA instances from different initialization lineages
+    are unlikely to converge to the same CW attractor
+    at the same time, even under identical pressures.
+    Implementation: treat BA ensemble heterogeneity as a maintained
+    property (similar to SEDL spatial distribution, Section 1.6.5).
+
+(3) Evaluation restriction — prevents self-referential optimization:
+    BA is evaluated on "is this agent generating useful disturbance?"
+    not "is this agent correct?" or "does this agent perform well?"
+    Mechanism: performance-based evaluation selects for agents
+    that optimize metrics — which is CW convergence in disguise.
+    Disturbance-quality evaluation selects for agents that maintain
+    externality — which is what BA needs.
+    
+    Operationally: BA evaluation criterion is structural divergence
+    from dominant system vectors, not output quality.
+    A BA that agrees with everything is failing, regardless of accuracy.
+```
+
+These three mechanisms address the observer capture problem: any observer inside a system is subject to the same forces that shape the system. The BA's externality is not a property of its position alone — it must be actively maintained against convergence pressure.
+
+```
+Without safeguards: BA → CW → system loses disturbance generation
+                              → Silent Criticality onset
+
+With safeguards:    BA rotates + diversifies + evaluated on divergence
+                    → CW convergence structurally interrupted
+                    → disturbance generation maintained
+```
 
 GRT establishes that Self-Correction Capacity is not an independent property but emerges when two structural conditions hold simultaneously.
 
@@ -6360,6 +9509,45 @@ When collapse occurs, re-entry point matches failure case:
 
 This connects to SCML (Section 4.5): storm type from SCML classification determines not just governance response but also the recovery re-entry point in the withdrawal protocol.
 
+**Phase–type validation and mismatch rule [v1.8]:**
+
+Each withdrawal phase predicts a dominant storm type family. If the observed storm type distribution departs significantly from the phase-expected family, the first interpretation is phase miscalibration — not theory falsification.
+
+```
+Phase Mismatch Detection:
+
+  For each observation window w:
+    Expected storm type E(w) = storm family predicted by current phase
+    Observed storm type O(w) = dominant storm type from SCML classification
+
+  Mismatch flag triggered when:
+    O(w) ≠ E(w) for k consecutive windows
+    (default k = 3; calibrate to mean phase transition time)
+
+Interpretation hierarchy (ordered):
+
+  Step 1 — Phase miscalibration:
+    Default interpretation: withdrawal is moving too fast or too slow.
+    Response: adjust phase transition thresholds, rerun classification.
+    Indicator: mismatch resolves after speed adjustment.
+
+  Step 2 — Measurement error:
+    SCML classification noise or storm type boundary ambiguity.
+    Response: extend observation window, increase sample size.
+    Indicator: mismatch resolves with more data.
+
+  Step 3 — Phase mapping failure:
+    Only if mismatch persists after Steps 1–2.
+    Interpretation: the predicted storm type sequence for this
+    architecture does not match the four-phase schema.
+    Response: report as architecture-specific deviation;
+    trigger Phase Mapping Revision Protocol.
+    This constitutes evidence against the phase mapping,
+    not against VST's core mechanism.
+```
+
+The Phase Mismatch Flag is a **governance recalibration signal** before it is a falsification signal. The sequence structure ensures that withdrawal speed error — the most common cause — is corrected before the phase mapping itself is questioned.
+
 *(Cross-theory derivation: TLG v1.6 §13.2.2 — Four-Phase Withdrawal + Collapse Recovery)*
 
 ---
@@ -6630,9 +9818,72 @@ n measured inside B:
                amplification, not external driving.
 ```
 
-**Open problem:**
+**Conditional validity under DCC violation — three-tier framework [v1.8]:**
 
-For continuously interacting systems (LLMs in production, social networks), strict DCC may never be satisfied — there is always significant external input. In this case, VST analysis is performed **conditional on external context** being treated as a fixed covariate, and predictions are understood as holding "given this input distribution." Formalizing this conditioning is an open problem (Section 11, OP-v1.7-B).
+DCC satisfaction is a sufficient condition for unconditional VST validity. However, DCC violation does not render VST inapplicable — it shifts validity from unconditional to conditional, contingent on external input stationarity. This produces a three-tier validity regime:
+
+```
+Tier 1 — Unconditional validity:
+  DCC satisfied: I_ext < ε · S_norm throughout window
+  VST predictions hold without qualification
+  Cross-study comparability assured
+
+Tier 2 — Conditional validity:
+  DCC violated BUT external input distribution is stationary
+  VST predictions hold conditional on quasi-stationary boundary
+  Results reported as: "internal coupling dynamics under
+  stationary input distribution follow VST scaling"
+  Cross-study comparability requires matching input distributions
+
+Tier 3 — Analysis suspended:
+  DCC violated AND external input is non-stationary
+  VST predictions not applicable for this window
+  Inference suspended until stationary window identified
+```
+
+**Stationarity verification protocol (Tier 2 condition):**
+
+```
+Step 1 — Stationarity test:
+  H₀: P_input(t₁) = P_input(t₂) for t₁, t₂ within analysis window W
+
+  Operational test: Kolmogorov–Smirnov comparison of input distribution
+  samples from first half vs. second half of window W
+
+  Decision rule:
+    KS p > 0.05 → stationary → Tier 2 conditional validity applies
+    KS p < 0.05 → non-stationary → analysis suspended (Tier 3)
+
+Step 2 — Conditional interpretation:
+  Under Tier 2, VST predictions are interpreted as:
+  "Internal dynamical predictions conditional on
+  quasi-stationary boundary conditions"
+
+  Analogous to weather forecasting:
+    boundary conditions (external inputs) treated as fixed
+    internal dynamics (agent coupling) predicted by theory
+    boundary change → prediction invalidated, not the theory
+```
+
+Failure of stationarity invalidates the **analysis window**, not the theoretical framework itself. VST is a theory of internal coupling dynamics — its domain is the dynamics of agents given an input environment, not the prediction of what that environment will be.
+
+```
+Practical implication for LLM deployments:
+  Most production windows will satisfy stationarity within
+  task-homogeneous analysis periods (same-domain queries,
+  same-context sessions).
+  
+  Stationarity testing recommended at:
+    - Session boundaries
+    - Detected distribution shifts (topic change, user context change)
+    - Windows > 500 interactions (decay of stationarity assumption)
+    
+  Tier 2 validity is sufficient for most governance applications —
+  the internal coupling dynamics are what governance acts on,
+  not the external input stream.
+```
+
+This framework resolves OP-v1.7-B as a **partial solution**: strict DCC formalization is maintained for Tier 1, and Tier 2 provides an operational conditional validity path that covers the large class of quasi-stationary deployment windows.
 
 ---
 
@@ -6670,19 +9921,53 @@ TLG v1.7 §14.1.1 establishes that ALL system failures reduce to Exploration↔S
   [Collapse type: coordination collapse — inter-agent alignment failure]
 ```
 
-**The four risks form a fractal cycle:**
+**The four risks form a fractal cycle — causal chain [v1.8]:**
 
 ```
 ①→③→④→②→forced stabilization→①
 
-Exploration Collapse (suppressed sensing)
-→ Geometry Mismatch (undetected drift)
-→ Coordination Breakdown (mismatched components)
-→ Runaway Amplification (forced correction cascade)
-→ over-stabilization response
-→ Exploration Collapse (cycle repeats)
+Each transition is causally driven, not arbitrary:
 
-This cycle repeats at every fractal scale.
+① Exploration Collapse → ③ Geometry Mismatch:
+  Suppressed exploration reduces diversity of observed states.
+  With fewer active observation dimensions, the system's internal
+  map receives less corrective feedback from environment.
+  Undetected drift accumulates: internal geometry diverges from
+  actual system state. Cause: absence of exploratory perturbation
+  removes the signal that would reveal the map error.
+
+③ Geometry Mismatch → ④ Coordination Breakdown:
+  Each component operates on its own internal geometry.
+  When individual geometries have drifted differently from each other,
+  inter-component actions based on local geometry produce
+  globally incompatible effects.
+  Components correct individually, but collective behavior is
+  discoordinated because correction signals are geometry-relative.
+  Cause: misaligned reference frames make coordination signals
+  locally coherent but globally contradictory.
+
+④ Coordination Breakdown → ② Runaway Amplification:
+  Coordination failure removes the inhibitory pathways that normally
+  prevent local corrections from amplifying into system-wide cascades.
+  In a well-coordinated system, one component's corrective response
+  is damped by others' compensating adjustments.
+  Under coordination breakdown, no compensating adjustments occur:
+  each correction amplifies rather than dampens adjacent states.
+  Cause: inhibitory cross-component coupling lost → amplification loop.
+
+② Runaway Amplification → forced stabilization → ① Exploration Collapse:
+  Runaway amplification eventually triggers maximum governance response:
+  exploration suppressed, diversity eliminated, coupling reduced.
+  This resolves the immediate Storm but produces over-stabilization —
+  the conditions for ①.
+  Cause: Storm response design prioritizes stability over exploration,
+  producing the stability excess that restarts the cycle.
+
+The cycle is not a coincidence. It is the structural consequence of:
+  (a) exploration suppression leading to sensing failure, and
+  (b) governance maximally prioritizing stability during Storm.
+  Breaking the cycle requires maintaining exploration even during
+  Storm containment — the governance design principle of Section 1.6.5.
 ```
 
 **VCZ as four-risk simultaneous balance:**
@@ -7123,6 +10408,79 @@ This criterion prevents the "boundary shopping" failure mode,
 where reported results depend on which agents were included.
 ```
 
+**Three-Level Failure Model — falsifiability architecture [v1.8]:**
+
+A common weakness in complex-systems theories is immunization: reinterpreting every prediction failure as a boundary condition violation or measurement error. VST avoids this by pre-committing to a structured failure taxonomy with a non-negotiable structural falsification level.
+
+```
+Level 1 — Measurement Failure (does not falsify VST):
+  Prediction failure attributable to:
+    R estimation error (branching ratio mis-estimation)
+    Topology misclassification (lattice treated as small-world)
+    Baseline drift (τ_baseline contaminated, Section 1.6.4)
+    DCC boundary mis-specification (wrong system boundary)
+
+  Response: recalibrate measurement protocol, re-run analysis
+  Interpretation: instrument failure, not theory failure
+
+Level 2 — Boundary Failure (scope violation, not falsification):
+  Prediction failure under:
+    Non-stationary input (DCC Tier 3, Section 8.2)
+    Lattice topology (α → 0 limit, topology BV condition)
+    Insufficient n (below critical mass threshold)
+    Non-adaptive agents (agents that do not update based on interaction)
+
+  Response: reclassify system as outside VST scope
+  Interpretation: the claim was never made for this system class
+
+Level 3 — Structural Failure (genuine falsification):
+  The following constitute structural failure of VST if observed
+  persistently after Level 1 and Level 2 corrections are applied:
+
+  Falsification Condition A — Critical propagation claim:
+    R ≈ 1⁻ holds AND boundary conditions satisfied AND
+    cascade size distribution does not exhibit scale-invariant
+    heavy-tail structure (power-law or near-power-law)
+    → VST's core claim that near-criticality produces
+      scale-free propagation is falsified
+
+  Falsification Condition B — Governance scaling claim:
+    Containment-scaling dominance (dC/dn > 2βC/n) holds AND
+    storm incidence does not decrease relative to no-containment baseline
+    → The S-equation's governance capacity term is falsified:
+      increasing C(t) does not suppress S as predicted
+
+  Falsification Condition C — Universality claim:
+    Multiple architecturally distinct systems all satisfy
+    topology and stationarity conditions AND
+    τ (storm size exponent) systematically falls outside
+    the predicted heavy-tail regime AND
+    deviations persist after power-law fitting protocol
+    (Clauset-Shalizi-Newman MLE, Section 3.10) is applied
+    → VST's universality-class claim is falsified:
+      different substrate systems do not share scaling structure
+```
+
+**Epistemic stance (applies to all VST predictions):**
+
+VST is specified as a set of conditional scaling claims plus operational diagnostics. When predictions fail, the default interpretation is *not* immediate falsification but boundary-condition violation, calibration mismatch, or measurement-model inadequacy — **unless failures persist after the prescribed correction protocol**. The correction protocol is not a defense mechanism; it is the operational definition of what counts as a genuine test.
+
+```
+Failure interpretation sequence:
+  Step 1: Check Level 1 (measurement) — recalibrate if indicated
+  Step 2: Check Level 2 (boundary) — reclassify if indicated
+  Step 3: If failure persists after Steps 1–2:
+          → Structural failure evidence
+          → Report which Falsification Condition (A/B/C) is triggered
+          → This is genuine falsification, not scope adjustment
+
+The sequence is ordered and non-negotiable:
+  Jumping to "scope violation" without Steps 1–2 = immunization
+  Accepting Level 3 without Steps 1–2 = premature rejection
+```
+
+> VST is considered empirically falsified if, under satisfied boundary validity conditions and reliable observable estimation: (i) near-critical regimes fail to exhibit scale-invariant propagation, (ii) containment-scaling dominance does not reduce instability incidence, or (iii) predicted universality observables systematically deviate across calibrated systems. Persistent observation of these conditions constitutes structural failure of the framework. Failures attributable to measurement error or boundary condition violation are classified at Level 1 or Level 2 respectively and do not constitute falsification.
+
 ---
 
 ---
@@ -7165,6 +10523,43 @@ Beyond this boundary, VST's storm governance prescriptions no longer apply.
 The system requires reconstruction from zero, not recovery from storm.
 ```
 
+**Leading indicators of irreversibility — pre-threshold detection [v1.8]:**
+
+Irreversibility conditions appear sudden but are typically approached over time. Each condition has a precursor trajectory observable before the threshold is crossed.
+
+```
+Condition 1 precursors — Calibration Capacity Collapse approach:
+  Primary:   τ_recovery showing monotonic increase over k windows
+             (recovery time systematically lengthening)
+  Secondary: Governance intervention producing diminishing returns
+             (δS per intervention declining over successive interventions)
+  Warning threshold: τ_recovery > 2 × τ_baseline sustained for k_irr windows
+  Interpretation: C(t) degrading — reserve capacity being consumed
+
+Condition 2 precursors — Geometry Loss approach:
+  Primary:   Var(R̂) increasing (branching ratio becoming less stable)
+             (coupling structure losing coherence)
+  Secondary: θ_d drift accelerating (classification consensus degrading)
+  Warning threshold: Var(R̂) over window W exceeds 3 × Var(R̂)_baseline
+  Interpretation: shared geometry fragmentation beginning
+
+Condition 3 precursors — Trust Topology Fragmentation approach:
+  Primary:   dC/dn declining sustainedly
+             (each new agent adds less containment capacity than previous)
+  Secondary: f_esc rising in specific subnetwork clusters
+             (localized trust breakdown)
+  Warning threshold: dC/dn < 0 for k consecutive expansion windows
+  Interpretation: topology approaching fragmentation threshold
+
+Simultaneous activation rule:
+  Any single indicator: heightened monitoring
+  Two indicators simultaneously: governance escalation (Section 3.5)
+  All three simultaneously: pre-irreversibility state — reconstruction
+  planning initiated alongside continued governance
+```
+
+The key reframe: irreversibility is not a sudden event but a **phase approach**. The precursor signals convert the three irreversibility conditions from post-hoc failure labels into forward-looking governance triggers.
+
 **Scale Transition Constraints:**
 
 ```
@@ -7179,6 +10574,52 @@ Non-invariant across scales (fractal NOT preserved):
   - Coupling cost: linear → polynomial → exponential
   - Collapse propagation speed: increases with connectivity density
   - Intervention precision: coarse at large scale → impossible at civilization
+```
+
+**Fractal invariance test — empirical distinction method [v1.8]:**
+
+The invariant/non-invariant distinction above is a theoretical claim. It requires an operational test to be falsifiable. The test uses ratio-based cross-scale comparison:
+
+```
+Fractal invariance test:
+
+  For any property X measured at adjacent layers L and L+1:
+    κ = X_{L+1} / X_L
+
+  Classification:
+    0.5 < κ < 2.0  →  Fractally invariant (within factor-of-2 tolerance)
+    κ ≤ 0.5        →  Scale break (L+1 has systematically lower X)
+    κ ≥ 2.0        →  Scale break (L+1 has systematically higher X)
+
+  Factor-of-2 tolerance rationale:
+    Critical phenomena universality classes typically cluster
+    within factor-of-2 across scales before exact renormalization.
+    Tighter tolerances require renormalization group precision
+    not available in agent system measurements.
+
+Application by property type:
+
+  Storm size exponent τ (invariant claim):
+    Measure τ_L and τ_{L+1} independently.
+    κ = τ_{L+1} / τ_L
+    If 0.5 < κ < 2: fractal correspondence supported
+    If κ outside range: scale-specific dynamics — report deviation
+
+  Recovery latency (non-invariant claim):
+    Measure τ_rec at L and L+1.
+    Expect κ >> 1 (latency grows across scales).
+    If κ ≈ 1: unexpected scale-invariance — requires explanation.
+
+  VCZ boundary conditions (invariant claim):
+    VCZ detection criteria (R ≈ 1⁻, Containment Scaling Dominance)
+    should apply at both L and L+1 with similar threshold values.
+    κ on threshold values should be in [0.5, 2.0].
+
+Failure interpretation:
+  Invariant property failing the test → fractal claim falsified
+  for that property at those scales.
+  Non-invariant property passing the test → unexpected invariance
+  → requires theoretical explanation or scope revision.
 ```
 
 **Energy Substrate of Recovery — Reserve Capacity:**
@@ -7219,13 +10660,51 @@ reserve_fraction estimation:
   For each proxy p_i: compute normalized deviation from VCZ baseline
     δ_i = (p_i_current - p_i_baseline) / p_i_baseline
 
-  reserve_fraction ≈ 1 - mean(δ_i)   [for δ_i > 0, i.e., depletion direction]
+  reserve_fraction ≈ 1 - mean(δ_i)   [descriptive only — see aggregation rule below]
 
   Confidence: high when proxy agreement is tight (low variance across δ_i)
               low when proxies diverge (cross-proxy validation required)
 
   Reserve depletion declared when: reserve_fraction < threshold_reserve
     (architecture-specific; calibrated from historical VCZ-to-storm transitions)
+```
+
+**Reserve aggregation — conservative (min) rule [v1.8]:**
+
+The mean-based reserve_fraction above is a descriptive summary. For operational safety decisions, VST uses a hard-fail aggregation rule, because reserve capacity operates like a series circuit: a single bottleneck is sufficient to prevent recovery, regardless of headroom in other components.
+
+```
+Conservative aggregation rule:
+
+  δ_min = min_i(δ_i)
+    (the most-depleted proxy among the four)
+
+  Depletion declared if ANY proxy violates its threshold:
+    ∃ i : δ_i < δ_crit  →  Reserve Depleted
+
+  This is equivalent to:
+    reserve_fraction_operational = 1 - δ_min
+
+Rationale:
+  Recovery from a major storm requires all four reserve components:
+    Attention bandwidth:  to detect and classify the storm
+    Trust inventory:      to coordinate cross-agent response
+    Computational slack:  to execute recovery protocols
+    Institutional flex:   to adjust rules under stress
+
+  If any one is depleted, the recovery chain breaks at that link.
+  Mean reserve of 75% with one component at 0% =
+  identical recovery failure risk as mean reserve of 0%.
+
+Descriptive vs. operational use:
+  mean(δ_i)   → system health description, trend monitoring
+  min(δ_i)    → safety threshold, governance trigger
+
+Divergence interpretation:
+  If proxies diverge significantly (high variance across δ_i):
+    → one component depleting faster than others
+    → targeted intervention on the minimum proxy indicated
+    → mean reserve is actively misleading in this case
 ```
 
 Agreement across proxies is treated as the estimator of `reserve_fraction`. No single proxy is definitive — the ensemble pattern matters. When proxies diverge, the system is in an ambiguous reserve state and conservative intervention is indicated.
@@ -10249,6 +13728,36 @@ Storm Stage         Failure Topology    contamination tier      failure severity
 
 > This appendix maps each theoretical construct in Sections 1–6 to measurable phenomena in existing single-agent LLM research. The mechanisms VST describes are observable at smaller scale today. The theory is complete without this appendix; it serves as an evidence layer for readers who want empirical anchoring.
 
+**Scope and epistemic status — intra-agent grounding [v1.8]:**
+
+Appendix A provides empirical grounding primarily at the **intra-agent scale**, based on single-agent LLM dynamics research. The extension of this evidence to inter-agent Storm propagation rests on the Mutual-Reference Coupling Hypothesis established in Section 1.0, which proposes structural equivalence between intra-agent module interaction and inter-agent interaction networks under fractal scale correspondence (Assumption 20).
+
+```
+Evidence classification:
+
+Intra-agent evidence (Appendix A content):
+  → DIRECT evidence that the coupling and amplification mechanisms
+    operate at the individual-agent level
+  → Grounded in published single-agent LLM research
+  → Does not require the fractal correspondence assumption
+
+Inter-agent universality (VST's primary claims):
+  → INDIRECT evidence via structural isomorphism argument
+  → The bridge: mutual-reference coupling produces the same
+    instability dynamics at any scale where it appears
+    (Section 1.0 mechanism, Section 1.5 scale-invariance)
+  → Requires Assumption 20 (fractal correspondence) to hold
+
+Shared critical exponents across scales:
+  → PREDICTED by VST (Section 1.5.1 testable predictions)
+  → Empirically unverified at inter-agent scale
+  → Open empirical problem (OP-v1.1-1)
+```
+
+Reviewers should interpret Appendix A accordingly: it demonstrates that the theoretical mechanisms are not speculative — they have observable correlates in existing systems. It does not demonstrate that inter-agent propagation follows the same quantitative scaling. That is a prediction of the theory, not its current empirical support.
+
+> The argument from intra-agent evidence to inter-agent dynamics is an argument from structural isomorphism under the fractal correspondence assumption, not an argument from direct multi-agent observation. Quantitative universality across scales remains an open empirical problem (OP-v1.1-1) and does not affect the validity of the intra-agent evidence base itself.
+
 ---
 
 
@@ -12009,4 +15518,4 @@ These templates are inserted at the **first occurrence** of each term in each ma
 
 ---
 
-*Appendix T is a living document. Updates track version changes in the DFG companion paper family. Current version: T.1.7, synchronized with VST v1.7-term.*
+*Appendix T is a living document. Updates track version changes in the DFG companion paper family. Current version: T.1.8, synchronized with VST v1.8.*
