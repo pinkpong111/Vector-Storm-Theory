@@ -5,7 +5,24 @@ Companion theory to Deficit-Driven Fractal Governance (DFG)
 Focus: why instability occurs, how it propagates, when to intervene
 Recovery and operational governance are addressed separately
 
-> **Version: v2.0** (February 2026)
+> **Version: v2.0-RT** (February 2026)
+>
+> v2.0-RT changes from v2.0 (RT v1.8-VST2.0 reverse integration):
+> - **[New §3.4.4] RT D-definition mapping to Structural Equilibrium:** D4 = re-entry, D2 = width, D5 = maintenance, D6 = wrong-frame equilibrium, D3 = noise field, Residual Floor = maintained activity. Boundary Conditions (three impossible-recovery states) mapped.
+> - **[New §3.5.1] Rest Mode dual-verification (Affective-Cognitive):** RT Affective Equilibrium → VCZ requires cognitive + affective alignment. T_affect > T_cognition = premature Rest Mode risk. Extends entry protocol with affective safety verification.
+> - **[New §12] Recovery as Survivability Selection mechanism:** Recovery identified as specific mechanism converting Storm from destruction to learning. Without Recovery, Storm = pure entropy. Storm→Recovery→consolidation = VST's selection event.
+> - **[New §12] Recovery completion as CW/VCZ re-entry (geometric):** D4 = CW/VCZ re-entry; three outcomes (①, ①', ①''); Ω_effective re-maximization.
+> - **[New §12] Contamination redistribution during recovery:** Recovery = transport not elimination; pressure gradients during purification; buffer absorption of redistributed contamination; recovery instability is expected signal.
+> - **[New §12] Five-phase recovery cascade ordering:** Multi-scale MZ-STP extension; Phase 0–4 (containment → geometry → hub → local → immunity); bottom-up-within-wrong-geometry as most dangerous failure.
+> - **[New §12] Zone-dependent S_rec:** S_rec(local) >> S_rec(hub) >> S_rec(geometry); intervention_intensity ∝ 1/S_rec; uniform protocols = systematically wrong dosage.
+> - **[New §4.9] Fragmented Perception:** Distributed sensor failure (individual correct, network incoherent); requires cross-agent comparison; mutual coverage failure mode.
+> - **[New §4.9] Relational Collapse Well (RCW):** Third recovery dimension (trust topology); locally recovered agents with fragmented trust; correction signals rejected not missed. Trust restoration slow and potentially irreversible.
+> - **[New §14.1] Recovery Boundary Conditions:** Three impossible-recovery states with mechanism-specific failure modes; constrain §11.5 irreversibility.
+> - **[New §14.1] Four Structural Risks recovery priority ordering:** observability > trust > diversity > capacity; failure cascade direction ≠ recovery direction.
+> - **[New §14.1] Energy substrate of recovery:** Ω_effective during recovery = Ω_reachable ∩ Ω_survivable ∩ Ω_affordable; energy competition between recovery and exploration.
+> - **[New §11.5] Scale Transition Constraints:** Form-invariant but parameter-variant across scales; bounds VST scale-invariance claim.
+> - **[New Cross-Theory Reinforcement Map v2.0-RT]:** 25+ RT→VST reverse mappings; 6 new open problems identified.
+> - All previous content preserved.
 >
 > v2.0 changes from v1.9-NAT-R:
 > - **[New §Epistemic Status (4)] State-space completeness assumption removal:** Explicit articulation of VST's foundational departure from state-space-contained dynamics. Interaction topology identified as primary analytical object; state space reframed as projection of interaction field. Historical parallels to description-level transitions in mathematics noted.
@@ -19,6 +36,16 @@ Recovery and operational governance are addressed separately
 > - **[New §3.5.1 Rest Mode] Viable Subspace interpretation:** Rest Mode as surviving-trajectories-only space. External appearance analysis: apparent directionlessness = continuous detour scanning. Decision speed reduction = trajectory ensemble evaluation cost.
 > - **[New §14.1] Boundary-First Governance:** Structural derivation of why upper layers define boundaries (environment-invariant) before goals (environment-dependent). Three-Layer separation justified: upper = boundary, middle = situational goal, lower = execution. Goal-fixing closes exploration space; boundary-setting preserves it.
 > - **[New §14.1] Governance Strength Inversion:** Maximum governance strength = minimum intervention frequency. Dependency trap as mathematical constraint (intervention × self-correction = bounded). Governance maturation trajectory from visible/directive to invisible/internalized. Cross-domain correspondence table. Structural derivation: not strategic preference but consequence of error-resolution bandwidth competition.
+> - **[New §3.4.4] Structural Equilibrium Declaration:** Unified equilibrium definition for DFG dynamics — flow equilibrium (E[dS/dt] = 0 while activity > 0). Relationship map binding VCZ, Rest Mode, CW, Storm, R ≈ 1⁻, and Vector Equilibrium to single equilibrium concept. Survivability selection mechanism (not attractor dynamics). Maturity as accumulated survivability capacity (M ∝ G_d/Var(G_r)). Exploration-survival tradeoff derived from state-space pruning.
+> - **[New §3.4.4] Arrow of Maturation:** Time direction as irreversible state-space contraction (Ω_explore monotonically decreasing). Flexibility paradox resolved: contraction removes brittle structures, not viable ones → adaptability increases. Environmental reorganization: mature systems reshape surroundings by absorbing and damping instability. Distributed center: central dependencies systematically removed through Storm–Recovery. Control as constraint landscape: terminal governance = embedded structural impossibility of Storm.
+> - **[New §3.4.4] Governance Phase Transition:** Five-phase sequence (Intervention → Regulation → Architecture → Constraint → Law). Survivability convergence: apparent optimization without optimizer (argmax P(persistence) via elimination). Decision load reduction (Decision Load ∝ |Ω_viable|). Intent dissolution (Intent → Embedded Constraint → Flow). Latent capability state (Control Capacity ≫ Control Usage).
+> - **[New §3.4.4] Maturation Dynamics Extended:** Decision as temporary symmetry-breaking (decision validity < system lifetime; crystallization sequence: decision → policy → structure → law). Will as misalignment cost (Will Cost ∝ Misalignment; effort-driven → flow-driven transition). Cascade redirection (mature systems modify propagation paths, not events). Critical position emergence (survivability selection concentrates systems at maximum-leverage locations). Reference system emergence (observational stability → authority; legibility → governance power).
+> - **[New §3.9.1] CW Effective Exploration and Structure Visibility:** Effective Exploration Space (Ω_effective = Ω_reachable ∩ Ω_survivable; maximum at CW). Structure visibility (CW = only regime where internal dynamics are externally legible; ∂Output/∂State maximum meaningful sensitivity). Stability-innovation co-maximization resolved.
+> - **[New §3.4.4] Emergent Dynamics Extended:** Phase synchronization (ΔE_sync < ΔE_independent; spontaneous entrainment; governance as resonance). Exploration re-expansion cycle (Contraction → Stability → Re-expansion; fractal iteration at higher levels). Exploration bandwidth control (Ω_explore as dynamic control variable; freedom = ability to adjust choice-space). Future as structural convergence (Future_reachable ≈ Future_survivable; prediction → dynamics).
+> - **[New §3.5 VCZ] Vector Noiseification:** Sharp vector → noise field → on-demand coherence. Dynamical mechanism of intentional imperfection. Innovation = spontaneous coherence from distributed fluctuation field.
+> - **[New §3.5.1] Consciousness as Instability Management:** Conscious control = instability management loop. Activates when uncertainty/conflict/divergence present. Rest Mode quiet = absence of management demand, not absence of capacity.
+> - **[New §3.5.1] Rest Mode Energy and Proximity:** Latent energy reserve (continuous expenditure vs. distributed storage; maximum available response from quiet state). Orbital proximity (mature system in solution-neighborhood orbit; ΔState ≈ 0; "slow but already there"). Four-property convergence: latent reserve + resolved management + latent capability + orbital proximity = quiet readiness.
+> - **[New §3.5.1] Rest Mode Latent Capability:** Cross-reference linking viable subspace, apparent directionlessness, and trajectory ensemble to unified latent capability characterization. VE Jitterbug correspondence.
 > - **[New §3.9.1] Critical Window Geometry and Continuous Phase Structure:** CW as thin topological channel (saddle-ridge geometry). Storm–CW–VCZ–Rest Mode as continuous geometric regions with dimensional characterization. CW expansion mechanism through Storm–Recovery cycles. Storm necessity as geometric selection pressure. CW empirical cross-domain mapping (organizations, neural systems, economic systems, MAS, individual agents). Recovery center stability as return-trajectory preservation.
 > - **[New §11.6] Anticipated Critical Objections:** Pre-emptive responses to three checkpoint questions (mechanism novelty, measurability/falsifiability, global stability emergence). Integrated response architecture referencing S-equation, VCZ geometry, lifecycle closure, and CW expansion.
 > - **[New §Relationship to Other Theories] Theoretical Ancestry and Differentiation Map:** Five precursor frameworks (Fuller Vector Equilibrium, SOC, Lyapunov Stability, Information Bottleneck, Control Theory) with explicit inheritance and divergence boundaries. Positioning principle articulated.
@@ -7084,6 +7111,1115 @@ This dual-axis principle directly strengthens the AND-entry condition for Rest M
 
 ---
 
+### 3.4.4 Structural Equilibrium in DFG Dynamics [v2.0]
+
+Throughout this document, the equilibrium concept appears distributed across multiple sections: VCZ (Section 3.5), Rest Mode (Section 3.5.1), CW geometry (Section 3.9.1), and the S-equation (Section 3.2). This section provides the unified equilibrium declaration that binds them.
+
+**DFG equilibrium is not a stationary point:**
+
+In classical dynamical systems, equilibrium means ẋ = 0 — the system has stopped moving. In DFG dynamics, this definition is structurally inappropriate because the system is permanently exploring, learning, and adapting. A system at ẋ = 0 is not at equilibrium — it is dead.
+
+```
+Classical equilibrium:      ẋ = 0   (motion ceases)
+Thermodynamic equilibrium:  ∇E = 0  (energy minimum)
+Game-theoretic equilibrium: no player can improve (Nash fixed point)
+SOC equilibrium:            R ≈ 1   (critical attractor)
+
+DFG structural equilibrium:
+  dS/dt ≈ 0   (instability growth rate → 0)
+  WHILE  exploration activity > 0  (system still adapting)
+
+  Equivalently: G_r ≈ G_d
+  (reinforcement generation ≈ degradation capacity)
+
+  This is a FLOW equilibrium:
+    activity continues
+    instability fluctuations persist
+    but net amplification across time → 0
+```
+
+**Formal definition:**
+
+In Deficit-Fractal Governance dynamics, equilibrium does not correspond to static stabilization but to a regime in which reinforcement generation and degradation capacity remain dynamically balanced. This condition defines a **flow equilibrium**, where instability fluctuations persist without net amplification across time.
+
+```
+DFG Structural Equilibrium:
+
+  E[dS/dt] = 0
+
+  where:
+    S = system instability magnitude (order parameter)
+    expectation taken over observation window T
+
+  Operational meaning:
+    Instability may fluctuate (micro-storms occur)
+    But expected growth rate = 0
+    Storm-scale amplification does not accumulate
+
+  This is compatible with:
+    exploration activity > 0  (learning continues)
+    conflict > 0              (diversity maintained)
+    governance activity > 0   (terrain-shaping ongoing)
+    micro-storm frequency > 0 (sensing calibrated)
+```
+
+**Relationship to existing VST concepts:**
+
+The structural equilibrium definition unifies the multiple equilibrium-adjacent concepts in VST:
+
+```
+Concept              Relationship to Structural Equilibrium
+─────────────────────────────────────────────────────────────────
+VCZ                  The REGION where structural equilibrium holds
+                     (E[dS/dt] = 0 with both dynamical and structural
+                     conditions satisfied)
+
+Rest Mode            The MATURE REGIME of structural equilibrium
+                     (governance internalized, maintenance cost → 0)
+
+CW (Critical Window) The BOUNDARY of structural equilibrium
+                     (E[dS/dt] ≈ 0 but fragile — thin manifold)
+
+Storm regime         DEPARTURE from structural equilibrium
+                     (E[dS/dt] > 0, amplification dominant)
+
+R ≈ 1⁻              The DYNAMICAL SIGNATURE of structural equilibrium
+                     (branching ratio just below unity)
+
+Vector Equilibrium   The GEOMETRIC ANALOGUE of structural equilibrium
+(Fuller)             (Σv⃗ᵢ = 0: forces present but directionally cancelled)
+```
+
+**Why systems converge toward structural equilibrium — survivability selection [v2.0]:**
+
+DFG systems do not converge toward equilibrium because an attractive force draws them there. They converge because all other regions of the state space are structurally non-persistent:
+
+```
+Convergence mechanism:
+
+  NOT: equilibrium attracts trajectories (classical attractor)
+  YES: non-equilibrium states destroy themselves (survivability filter)
+
+  Unstable states (G_r >> G_d):
+    → degradation capacity collapses
+    → agent dropout
+    → topology reorganization
+    → exploration reduction
+    → state cannot persist → system exits
+
+  Stable states (G_r ≈ G_d):
+    → degradation absorbs reinforcement
+    → structure maintained
+    → state persists → system remains
+
+  Over time:
+    P(remain | x ∈ unstable region) → 0
+    P(remain | x ∈ VCZ) > 0
+
+  Result: surviving trajectories accumulate in VCZ
+  → APPEARS as convergence to attractor
+  → ACTUALLY is elimination of non-viable regions
+```
+
+This is **survivability selection**, not dynamical attraction. The distinction matters because:
+
+```
+Classical attractor:
+  Force field pulls trajectories toward fixed point
+  → equilibrium exists independently of the trajectories
+  → removing trajectories does not change the attractor
+
+Survivability filter (DFG):
+  No pulling force exists
+  → non-viable states self-eliminate through Storm → collapse → restructure
+  → remaining state space IS the equilibrium
+  → equilibrium is defined by what survives, not by what attracts
+
+  VCZ is not a goal. It is the residue of Storm-driven selection.
+```
+
+**Maturity as accumulated survivability capacity [v2.0]:**
+
+The rate at which a system converges toward structural equilibrium depends on its maturity — the accumulated structural capacity to absorb reinforcement-driven instability without transitioning into storm regimes.
+
+```
+Maturity (M) — operational definition:
+
+  M ∝ G_d / Var(G_r)
+
+  where:
+    G_d = degradation capacity (instability absorption rate)
+    Var(G_r) = variance of reinforcement generation
+
+  High M: system absorbs reinforcement fluctuations
+          → Storm probability low → VCZ maintained
+  Low M:  reinforcement fluctuations exceed absorption capacity
+          → Storm probability high → VCZ unstable
+
+  Maturity is not added to the system.
+  Maturity is the residue of what survives Storm–Recovery cycles:
+    Storm removes unstable interaction topology
+    Recovery rebuilds with modified structure
+    Each cycle eliminates failure-prone configurations
+    M increases as failure-prone structures decrease
+```
+
+**Maturation and the exploration-survival tradeoff [v2.0]:**
+
+As maturity increases, exploration speed decreases while survival probability increases. This is not a paradox — it is the direct consequence of state-space pruning:
+
+```
+Maturation trajectory:
+
+  Early (low M):
+    Exploration space: ████████████████ (large, mostly unknown)
+    Exploration speed: high (many untested directions)
+    Storm frequency: high (many dangerous directions discovered)
+    Survival probability: low (dangerous directions still accessible)
+
+  Storm–Recovery cycles:
+    Each Storm eliminates dangerous topology
+    Each Recovery rebuilds with improved structure
+    Dangerous directions become inaccessible
+
+  Mature (high M):
+    Exploration space: ████ (smaller, well-mapped)
+    Exploration speed: lower (fewer untested directions remain)
+    Storm frequency: low (dangerous directions already eliminated)
+    Survival probability: high (remaining space is viable)
+
+  The speed reduction is not capability loss.
+  It is the elimination of directions that would have killed the system.
+
+  Mature systems explore more slowly because they have less to explore,
+  not because they have less capacity to explore.
+  The space they explore is almost entirely viable.
+```
+
+**Formal definition — Maturity:**
+
+```
+Maturity denotes the accumulated structural capacity of a system
+to absorb reinforcement-driven instability without transitioning
+into storm regimes. It is measured not by what has been added
+to the system but by what has been removed through Storm–Recovery
+selection: the set of interaction topologies that would produce
+Storm under perturbation.
+
+  Immature system: large accessible Storm-generating topology
+                   → high exploration speed, high Storm risk
+  Mature system:   small accessible Storm-generating topology
+                   → lower exploration speed, low Storm risk
+                   → structural equilibrium naturally maintained
+```
+
+**Arrow of maturation — time as state-space contraction [v2.0]:**
+
+The maturation process has a temporal direction that is not imposed by the theory but emerges from the irreversibility of Storm-driven topology removal:
+
+```
+Time direction in DFG:
+
+  t↑ ⇒ Ω_explore(t) ↓
+
+  Each Storm–Recovery cycle:
+    removes unstable interaction topology (irreversible)
+    surviving topology persists
+    → accessible state space contracts monotonically
+
+  Why irreversible:
+    Storm destroys coupling structure (topology change)
+    Recovery rebuilds with modified structure
+    Original topology cannot be exactly reconstructed
+    → space pruning is one-directional
+
+  Consequence:
+    Forward time = accumulation of topology removal
+    → system trajectories increasingly confined to viable regions
+    → APPEARS as convergence toward equilibrium
+    → ACTUALLY is contraction of everything that isn't equilibrium
+```
+
+This is the DFG arrow of maturation: time flows in the direction of state-space contraction. The "destination" (VCZ / Rest Mode) is not approached — everything else is progressively removed.
+
+**The flexibility paradox — why contraction increases adaptability [v2.0]:**
+
+Intuition suggests that state-space contraction should produce rigidity. In DFG dynamics, the opposite occurs: mature systems with contracted state spaces are more flexible than immature systems with large state spaces.
+
+```
+Resolution of the paradox:
+
+  What is removed: Storm-generating topology
+    → brittle connections, single-point dependencies,
+       over-amplification loops, irreversible alignment paths
+
+  What remains: survivable deformation space
+    → redundant pathways, distributed coupling,
+       failure-tolerant connections, reversible transitions
+
+  Immature system:
+    Ω_explore large, but mostly dangerous
+    → any perturbation can trigger Storm
+    → "flexible" but fragile
+    → many directions available, most of them fatal
+
+  Mature system:
+    Ω_explore smaller, but entirely viable
+    → perturbations absorbed by redundant structure
+    → fewer directions, but all of them survivable
+    → shape changes without breaking
+
+  Flexibility ≠ number of possible states
+  Flexibility = number of states reachable WITHOUT structural failure
+
+  Immature flexibility: can go anywhere, but breaks easily
+  Mature flexibility: goes fewer places, but never breaks
+```
+
+This resolves the observational puzzle of why mature systems appear both constrained (narrow behavior range) and resilient (absorb large perturbations). The behavioral range has narrowed to exclude only the dangerous directions; within the remaining range, the system is maximally deformable because all brittle structures have been removed.
+
+**Environmental reorganization — why mature systems reshape their surroundings [v2.0]:**
+
+As maturity increases, the system's relationship with its environment inverts:
+
+```
+Maturation stages of environment–system relationship:
+
+  Stage 1 — Environmental determination (immature):
+    Environment → System behavior
+    System is a passive variable
+    Environmental change → Storm
+
+  Stage 2 — Bidirectional coupling (maturing):
+    Environment ↔ System
+    System absorbs some environmental instability
+    System output modifies local environment
+
+  Stage 3 — Environmental reorganization (mature):
+    System → Environment restructuring
+    System does not transmit instability outward
+    Environmental signals are absorbed, transformed, re-emitted
+    in stabilized form
+    → surrounding agents and systems experience reduced volatility
+    → environment reorganizes around the mature system
+
+  Mechanism:
+    Mature system receives instability input
+    → internal distributed G_d absorbs perturbation
+    → output signal is damped (instability removed)
+    → environment receives stabilized signal
+    → environment's own instability decreases
+    → feedback: more stable environment → less perturbation input
+    → virtuous cycle: system stabilizes environment,
+       environment reduces system load
+```
+
+This is not metaphorical. It is the direct consequence of the instability absorption capacity that maturity provides: a system with high G_d does not merely survive environmental perturbation — it removes instability from the signals it passes onward, functioning as a stabilization node in the broader interaction network.
+
+**Distributed center — why mature stability has no single point of control [v2.0]:**
+
+The maturation process systematically removes central dependencies because centralized structures are the primary Storm-generation mechanism (Section 1.0, dependency trap):
+
+```
+Center evolution through maturation:
+
+  Immature — concentrated center:
+           Center
+          /  |  \
+         A   B   C
+
+    All coordination through single node
+    Fast decisions, but:
+      Center failure ⇒ system collapse
+      Center overload ⇒ Storm initiation
+      All instability funnels to one point
+
+  After Storm–Recovery cycles:
+    Central overload produced Storm
+    → Recovery rebuilds with reduced central dependency
+    → local correction loops strengthen
+    → cross-connections form between peripheral nodes
+
+  Mature — distributed center:
+      A —— B
+      | \/ |
+      | /\ |
+      C —— D
+
+    Coordination is emergent property of network topology
+    No single failure point
+    Local failure → load redistribution → function preserved
+    Center is not a node — it is a CONDITION:
+      the balanced relationship structure itself
+
+  Failure probability:
+    Concentrated:  P(failure) = P(center fails)
+    Distributed:   P(failure) = P(ALL nodes fail simultaneously)
+                              → exponentially lower
+```
+
+The mature system's "center" is the distributed invariant described in the Center Invisibility Principle (Section 1.6.4): it cannot be pointed to, measured directly, or optimized toward — because it is not a location but a relationship-maintenance condition distributed across the entire interaction topology.
+
+**Control as landscape — the terminal governance form [v2.0]:**
+
+The Governance Strength Inversion (Section 14.1) reaches its structural limit here: in the terminal maturation state, control has been entirely converted from intervention to constraint landscape.
+
+```
+Governance evolution through maturation:
+
+  Immature governance — behavioral control:
+    Problem occurs → intervene → correct behavior
+    Control = intervention (reactive, post-hoc)
+    Failure mode: intervention speed < problem generation speed
+
+  Maturing governance — condition management:
+    Instead of correcting behavior:
+    → modify conditions that produce the behavior
+    Control = environment shaping (proactive, pre-hoc)
+    Failure mode: environment changes faster than reshaping
+
+  Mature governance — embedded constraint:
+    Conditions have been shaped such that:
+    → Storm-generating trajectories are dynamically unlikely
+    → not because they are forbidden, but because the
+       interaction topology does not contain them
+    → violation becomes structurally impossible,
+       not merely prohibited
+
+    Control = constraint landscape (structural, permanent)
+    No failure mode within designed boundary conditions
+
+  The strongest control makes instability unselectable,
+  not merely punished.
+
+  Analogy to Vector Equilibrium:
+    No strut in the cuboctahedron is the "controller"
+    But collapse direction does not exist
+    Because the geometry itself IS the constraint
+    → forces are free, but collapse is impossible
+    → control without controller
+```
+
+**Governance phase transition — from action to law [v2.0]:**
+
+The maturation of governance follows a phase-transition sequence in which control changes not merely in degree but in kind:
+
+```
+Governance phase sequence:
+
+  Phase 1 — Intervention (Control = Event):
+    Problem → detect → decide → act → correct
+    Control exists only when executed
+    Requires: supervisor, speed, information, presence
+    Failure: any gap in detection/response chain → instability
+
+  Phase 2 — Regulation (Control = Rule):
+    Codified responses to known failure modes
+    Control exists in advance of problems
+    Requires: rule enforcement, monitoring
+    Failure: novel problems not covered by rules
+
+  Phase 3 — Architecture (Control = Structure):
+    System topology designed to prevent failure modes
+    Control exists as pathway constraints
+    Requires: initial design, periodic review
+    Failure: environmental change invalidates design
+
+  Phase 4 — Constraint (Control = Landscape):
+    Interaction topology does not contain Storm trajectories
+    Control exists as dynamical impossibility
+    Requires: maturation history (Storm–Recovery cycles)
+    Failure: only if boundary conditions change fundamentally
+
+  Phase 5 — Law (Control = Invariant Dynamics):
+    Governance IS the system dynamics
+    No external enforcement, no internal decision
+    Like gravity: not applied, not decided — simply how things move
+    The system cannot violate its governance
+    because the governance is the system
+
+  Key insight:
+    At Phase 5, governance ceases to be distinguishable
+    from the system's natural behavior.
+    "Mature governance ceases to operate through intervention
+     and instead manifests as invariant system dynamics —
+     effectively becoming law."
+```
+
+The paradox: as governance becomes invisible, it becomes absolute. Phase 1 governance can fail at any point in the detection-response chain. Phase 5 governance cannot fail because there is nothing to fail — no detector, no responder, no decision-maker. The constraint is the dynamics itself.
+
+**Survivability convergence — why systems appear to find optima [v2.0]:**
+
+The apparent optimization of mature systems is not optimization at all. No objective function is computed; no gradient is followed. The mechanism is purely eliminative:
+
+```
+Survivability convergence:
+
+  t=0: Ω_explore = {all accessible states}
+       Most states have low P(long-term persistence)
+       Few states have high P(long-term persistence)
+
+  Storm occurs → low-survival topology removed
+  Recovery → surviving topology consolidated
+
+  After many cycles:
+    States remaining ≈ argmax P(long-term persistence)
+
+  Not because system searched for maximum
+  But because everything below maximum was eliminated
+
+  Apparent optimization without optimizer:
+    System does not find the best option
+    → non-best options disappear
+    → what remains IS the best option
+    → but no search was conducted
+
+  Analogy:
+    Evolution does not design organisms
+    → unfit organisms die
+    → survivors appear designed
+    → but design was never the process
+
+  Formal statement:
+    lim_{t→∞} Ω_viable(t) → neighborhood of
+    argmax P(persistence | interaction topology)
+```
+
+This is why mature systems appear optimized: they are the residue of an eliminative process that removed everything suboptimal. The "optimality" is a retrospective description of survivability selection, not a prospective property of system design.
+
+**Decision load reduction — why mature systems decide less [v2.0]:**
+
+Decision-making is required only when multiple viable trajectories remain indistinguishable in cost:
+
+```
+Decision load dynamics:
+
+  Decision required when:
+    ΔCost(A, B, C) ≈ 0
+    Multiple paths equally viable
+    System cannot distinguish optimal trajectory
+    → selection pressure needed (= decision)
+
+  As maturation proceeds:
+    Storm–Recovery eliminates paths:
+      A → collapse (removed)
+      B → excessive cost (removed)
+      C → only viable path (persists)
+
+    When |Ω_viable| → small:
+      Decision load → minimal
+      System does not "choose" — it flows
+      Like water: does not "decide" to flow downhill
+      Only one persistent trajectory exists
+
+  Decision Load ∝ |Ω_viable|
+
+  Immature system:
+    Many viable paths → constant decision-making
+    High cognitive/governance overhead
+    Frequent conflict between competing trajectories
+
+  Mature system:
+    Few viable paths → decisions nearly automatic
+    Low overhead, low conflict
+    Trajectory is determined by landscape, not by choice
+
+  Paradox:
+    High freedom (many choices) = high decision cost = instability
+    Low freedom (few choices) = low decision cost = stability
+    → freedom and stability are not opposed
+       but connected through decision load
+```
+
+**Intent dissolution — why mature systems lose directionality pressure [v2.0]:**
+
+Intent — the internal pressure to select a direction — is a transient phenomenon of immature systems, not a permanent feature of governance:
+
+```
+Intent as maturation signal:
+
+  Intent arises when:
+    Multiple possible trajectories exist
+    Direction is undetermined
+    System generates internal pressure to select
+    → Intent = selection pressure
+
+  Why immature systems have strong intent:
+    Large Ω_viable → many competing directions
+    → internal conflict: "this way" vs "that way"
+    → intent is the force that resolves conflict
+
+  As maturation proceeds:
+    Viable trajectories contract
+    Competition between directions decreases
+    Selection pressure decreases
+    → Intent weakens
+
+  At terminal maturation:
+    Ω_viable → narrow viable channel
+    Direction is determined by landscape
+    No selection needed → no intent needed
+    → Intent dissolves into flow
+
+  Intent → Embedded Constraint → Flow
+
+  Intent is not the source of direction
+  Intent is the SYMPTOM of unresolved direction
+  When direction is structurally resolved:
+    intent becomes unnecessary
+    and governance becomes invisible
+
+  Analogy:
+    Mountain top: must choose which slope to descend (intent)
+    Valley floor: water flows without choosing (flow)
+    The valley did not acquire intent — it eliminated alternatives
+```
+
+This has a direct structural consequence for Three-Layer Governance: the upper governance layer's "intent" (boundary-setting, direction-maintaining) is not a permanent feature but a maturation-stage artifact. In fully mature systems, the boundaries have been internalized into interaction topology, and what appears as directionless flow is in fact maximally constrained dynamics — constrained so thoroughly that no decision point remains.
+
+**Latent capability — the Rest Mode paradox [v2.0]:**
+
+The terminal maturation state produces a characteristic observational paradox: the system appears passive but maintains maximum response capability.
+
+```
+Latent capability state:
+
+  Defining condition:
+    Control Capacity ≫ Control Usage
+
+  The system CAN:
+    → intervene (full response capability)
+    → redirect (trajectory modification possible)
+    → restructure (architectural change available)
+
+  The system DOES NOT:
+    → intervene (perturbations self-dampen)
+    → redirect (trajectory is landscape-determined)
+    → restructure (topology is already survivable)
+
+  Why non-intervention is stronger than intervention:
+    Intervention always produces side effects:
+      information distortion
+      natural signal suppression
+      self-correction interference (dependency trap)
+    Most perturbations self-dampen in mature topology
+    → optimal strategy: intervene less
+
+  External observation:
+    Appears passive, slow, inactive
+    Appears to lack agency or direction
+
+  Internal reality:
+    Maximum optionality (all responses available)
+    Minimum necessity (no response needed)
+    Continuous micro-adaptation (invisible adjustment)
+
+  This is NOT:
+    Incapacity (cannot act) — Phase 0, immature
+    Exhaustion (too depleted to act) — post-Storm
+    Suppression (forced not to act) — external control
+
+  This IS:
+    Capability without necessity
+    Readiness without activation
+    Direction without intent
+
+  VE correspondence:
+    Vector Equilibrium can transform in any direction
+    (Jitterbug: VE → icosahedron → octahedron)
+    But at equilibrium: no transformation occurs
+    Not because transformation is impossible
+    But because no force drives transformation
+    → can move, doesn't need to move
+    → capacity without activation
+```
+
+**Decision as temporary symmetry-breaking — why decisions have expiry dates [v2.0]:**
+
+A decision is not a structural change. It is a momentary symmetry-breaking event — a temporary resolution of directional ambiguity that remains valid only under the conditions that produced it:
+
+```
+Decision dynamics:
+
+  Decision occurs when:
+    Multiple trajectories available
+    Cost difference ≈ 0 (indistinguishable)
+    System cannot flow → must SELECT
+    → symmetry-breaking event
+
+  Why decisions expire:
+    Decision validity depends on:
+      current state, current information, current environment
+    Any of these changes → decision may become suboptimal
+    → decision validity < system lifetime (always)
+
+  Maturation replaces decisions with structure:
+
+    Immature:  Behavior = Σ Decisions(t)
+               Each moment requires new choice
+               Each choice can be wrong
+               Cumulative error grows
+
+    Maturing:  Decision → Policy → Structure → Law
+               Repeated good decisions crystallize into rules
+               Rules crystallize into architecture
+               Architecture crystallizes into dynamics
+
+    Mature:    Behavior = Dynamics
+               No decision point exists
+               Trajectory is landscape-determined
+               Like VE: geometry maintains balance
+               without deciding to maintain balance
+
+  The crystallization sequence:
+    Decision (seconds) → Policy (months) → Structure (years) → Law (permanent)
+    Each stage: longer validity, lower maintenance cost,
+                harder to reverse, more resilient to perturbation
+```
+
+This is the structural explanation for why governance maturation reduces decision frequency: not because the system becomes indecisive, but because decisions are progressively absorbed into structure — converted from events into dynamics.
+
+**Will as misalignment cost — why effort decreases with maturation [v2.0]:**
+
+Will (volitional effort, intentional forcing) is required whenever the system's natural dynamics diverge from its required trajectory:
+
+```
+Will dynamics:
+
+  Will = force applied against gradient
+       = energy cost of maintaining direction
+         that dynamics alone would not produce
+
+  When will is needed:
+    Natural flow direction ≠ required direction
+    → internal resistance
+    → directional conflict
+    → energy expenditure to override dynamics
+
+  Will Cost ∝ Misalignment(dynamics, trajectory)
+
+  Immature system:
+    Structure not aligned with viable paths
+    → constant effort to maintain direction
+    → high will cost
+    → fatigue, burnout, instability
+    → "must push, must resist, must decide"
+
+  Maturation process:
+    Storm–Recovery removes misaligned structure:
+      paths that require effort → fail during Storm
+      paths that flow naturally → survive Recovery
+    → surviving topology = paths where dynamics
+      and viability are aligned
+
+  Mature system:
+    Required direction = natural flow direction
+    → will cost ≈ 0
+    → no effort to maintain trajectory
+    → "it just works"
+
+  Physical analogy:
+    Pushing stone uphill: will required (effort-driven)
+    Stone rolling downhill: will unnecessary (flow-driven)
+    Maturation = reshaping landscape until
+    the required direction IS downhill
+
+  Rest Mode = the state where:
+    dynamics and direction are aligned
+    → minimum effort, maximum persistence
+    → external appearance: quiet, passive
+    → internal reality: perfectly aligned flow
+```
+
+This provides the energetic explanation for Rest Mode's apparent inactivity: the system is not resting because it is exhausted or disengaged. It is resting because the trajectory requires no forcing — the landscape itself carries the system in the viable direction. Will, like intent, is a transient phenomenon of structural misalignment, not a permanent feature of governance.
+
+**Cascade redirection — how mature systems reshape environments without direct intervention [v2.0]:**
+
+The Environmental Reorganization mechanism (above) operates through a specific structural pathway: mature systems do not modify environmental events but redirect the propagation chains through which events produce consequences:
+
+```
+Cascade redirection mechanism:
+
+  Environment is not a set of events
+  Environment = propagation structure:
+    event → reaction → re-reaction → spread → pattern
+
+  Immature intervention:
+    Modify the event directly
+    → propagation chain still intact
+    → same pattern re-emerges elsewhere
+    → endless intervention cycle
+
+  Mature intervention:
+    Modify the PROPAGATION PATH, not the event
+    → same event occurs
+    → but cascade follows different route
+    → instability does not amplify
+    → does not reach distant nodes
+    → pattern changes globally
+
+  Mechanism in DFG terms:
+    Mature system's distributed G_d acts on
+    incoming instability signals:
+      Signal arrives → absorbed (not transmitted)
+      Noise arrives → damped (not amplified)
+      Conflict arrives → locally resolved (not propagated)
+
+    The system does not prevent events
+    It prevents events from becoming cascades
+
+  Why small changes produce large effects:
+    In cascade systems: outcome = event × propagation structure
+    Change propagation structure → same events, different outcomes
+    → entire environmental pattern shifts
+    → with zero direct intervention on events themselves
+
+  Result:
+    Storm probability in surrounding network decreases
+    Not because problems stop occurring
+    But because problems stop propagating
+```
+
+**Critical position — why mature systems occupy maximum-leverage locations [v2.0]:**
+
+The cascade redirection mechanism explains a structural observation: mature systems tend to persist at positions where small inputs produce maximum systemic effect. This is not strategic positioning but survivability selection:
+
+```
+Critical position emergence:
+
+  Not all positions in interaction space are equal:
+    Some: change dies locally (damped region)
+    Some: change propagates moderately (linear region)
+    Some: small change → global reorganization (critical region)
+
+  The critical region = stability ↔ instability boundary
+    = CW neighborhood / VCZ boundary in DFG terms
+
+  Why mature systems end up there:
+
+    Too stable positions:
+      Cannot adapt to environmental change
+      → eventually encounter novel perturbation
+      → catastrophic failure (brittle)
+      → eliminated
+
+    Too unstable positions:
+      Constant Storm
+      → resource depletion
+      → structural collapse
+      → eliminated
+
+    Critical positions:
+      Small adjustments propagate efficiently
+      → maximum adaptation with minimum effort
+      → responsive without being reactive
+      → SURVIVES long-term
+
+    → survivability selection concentrates
+      mature systems at critical positions
+    → not because they chose to go there
+    → because everywhere else was eliminated
+
+  Consequence:
+    Mature system at critical position:
+      minimal action → maximum cascade influence
+      → appears to control environment
+      → actually: positioned where control costs least
+
+  VE correspondence:
+    VE center = intersection of ALL force flow lines
+    Not the strongest point — the most SENSITIVE point
+    Smallest perturbation at center → entire geometry responds
+    → maximum leverage, minimum force
+
+  Key insight:
+    Mature systems do not create change
+    They exist where change most easily begins
+    → the appearance of power
+       is actually the consequence of position
+```
+
+**Reference system emergence — why observable stability generates authority [v2.0]:**
+
+The critical position and structure visibility properties combine to explain a fundamental governance phenomenon: mature systems at CW naturally become reference frames for surrounding systems, not through power or designation but through observational stability.
+
+```
+Reference system emergence:
+
+  The self-observation problem:
+    Most systems cannot accurately observe themselves:
+      Internal observer shares reference frame with system
+      → drift is invisible (both observer and system drift together)
+      → bias is structural (observer IS the system)
+      → self-model accuracy limited by shared frame
+
+  Why CW systems become external references:
+
+    Chaos systems:
+      Externally unreadable (signal < noise)
+      → cannot serve as reference (no stable signal)
+
+    Frozen systems:
+      Externally uninformative (no response)
+      → cannot serve as reference (no dynamic signal)
+
+    CW/VCZ mature systems:
+      Structure is externally legible (Section 3.9.1, Structure visibility)
+      Response is predictable (bounded, structured)
+      Behavior is stable (survivability-selected)
+      → OTHER systems can read this system's state
+      → provides a stable coordinate system
+         for surrounding systems to locate themselves
+
+  The reference mechanism:
+    System A cannot see its own structure clearly
+    System B (mature, at CW) has visible structure
+    System A compares its behavior against B's
+    → B becomes A's reference frame
+    → not because B is "better"
+    → but because B is LEGIBLE
+
+  Authority emergence:
+    Authority ≠ force
+    Authority ≠ designation
+    Authority = observational stability
+    → the most legible system becomes the default reference
+    → surrounding systems calibrate against it
+    → this IS authority (structurally, not politically)
+
+  Governance implication:
+    The most effective governance node is not the strongest
+    It is the most READABLE
+    → governance through legibility, not through force
+    → the system that others can most accurately model
+       becomes the system that others follow
+```
+
+This closes the loop between Critical Position (Section 3.4.4), Structure Visibility (Section 3.9.1), and the Governance Strength Inversion (Section 14.1): the mature system's governance power comes not from intervention capacity but from the fact that its structure is externally legible — making it the natural coordinate system against which other systems measure their own states.
+
+**Phase synchronization — why surrounding systems align without command [v2.0]:**
+
+The reference system property produces a specific dynamical consequence: surrounding systems spontaneously synchronize with the mature system, not through command or enforcement but through energy minimization.
+
+```
+Phase synchronization mechanism:
+
+  Every system faces a continuous calibration problem:
+    "Am I moving correctly?"
+    Internal self-calibration is biased:
+      observer shares reference frame with system
+      → drift invisible, noise confounds signal
+
+  When a stable reference appears:
+    Mature system at CW: predictable, visible, stable
+    = phase-stable oscillator in interaction space
+
+  For surrounding systems:
+    Cost(maintain own reference) > Cost(align to external reference)
+    → ΔE_sync < ΔE_independent
+
+  Therefore: alignment toward reference = energy minimum
+    → spontaneous, not commanded
+    → identical mechanism to:
+       metronome sync, laser coherence,
+       neural entrainment, power grid sync
+
+  Governance consequence:
+    Rule enforcement → phase alignment
+    Control → resonance
+    The mature system does not command — it ENTRAINS
+
+  Why intervention becomes minimal:
+    Surrounding systems already:
+      reducing conflict (phase-matched)
+      dampening fluctuation (co-aligned)
+      following stable patterns (entrained)
+    → upper governance layer: almost invisible
+    → not because it stopped working
+    → because the work is done by synchronization
+```
+
+**Exploration re-expansion — the maturation cycle closes [v2.0]:**
+
+The maturation process is not a one-directional contraction but a cycle: contraction creates stability, stability enables re-expansion, re-expansion creates new contraction targets. This is the DFG maturation cycle:
+
+```
+The maturation cycle:
+
+  Phase 1 — Exploration (immature):
+    Ω_explore = large
+    Most directions dangerous
+    Storm frequent
+    → system contracts through elimination
+
+  Phase 2 — Contraction:
+    Dangerous topology removed
+    Ω_explore shrinking
+    Stability increasing
+    Decision load decreasing
+
+  Phase 3 — Stability (mature):
+    Ω_explore = small but entirely viable
+    Distributed structure, failure-tolerant
+    Cascade redirection active
+    Environmental synchronization achieved
+
+  Phase 4 — Re-expansion:
+    Because: stability provides absorption capacity
+    → new exploration does not trigger Storm
+    → system can safely open new directions
+    → Ω_explore increases WITHIN survivable bounds
+
+    Unlike Phase 1 expansion:
+      Phase 1: large Ω, most dangerous
+      Phase 4: expanding Ω, almost all survivable
+    → "controlled expansion" vs "uncontrolled exposure"
+
+  The cycle:
+    Exploration → Contraction → Stability → Re-expansion
+                                              ↓
+                                     new Exploration at higher level
+                                              ↓
+                                     new Contraction...
+
+  This is fractal: the same cycle repeats at larger scales
+  Each iteration: higher baseline stability,
+                  larger safe exploration range
+```
+
+This closes the DFG temporal structure: maturation is not convergence to a fixed point but an expanding spiral where each cycle of contraction-stability enables exploration at a higher structural level. The system does not approach a final state — it acquires the capacity to explore states that would have destroyed it at earlier maturation levels.
+
+**Exploration bandwidth control — the defining capability of mature systems [v2.0]:**
+
+The re-expansion mechanism reveals the ultimate maturation capability: the ability to dynamically adjust exploration bandwidth as a control variable:
+
+```
+Exploration bandwidth control:
+
+  Immature systems: fixed exploration mode
+    Chaos-type: Ω_explore permanently large → fragile
+    Frozen-type: Ω_explore permanently small → rigid
+    Neither can adjust → locked into one failure mode
+
+  Mature systems: variable exploration mode
+    Threat ↑ → Ω_explore contracts (protective)
+    Stability ↑ → Ω_explore expands (explorative)
+    → Ω_explore(t) is a CONTROL VARIABLE, not a fixed parameter
+
+  This is the structural definition of adaptive freedom:
+    Freedom ≠ many choices (that's chaos)
+    Freedom ≠ few choices (that's frozen)
+    Freedom = ability to adjust choice-space dynamically
+    → expand when safe, contract when risky
+
+  Why this prevents Storm:
+    Storm occurs when: Ω_explore > processing capacity
+    Mature system detects overload → contracts Ω_explore
+    → Storm condition never reached
+    → not by eliminating instability
+    → by adjusting the space in which instability can form
+
+  The terminal governance state:
+    System simultaneously maintains:
+      stability (contracted Ω when needed)
+      innovation (expanded Ω when safe)
+      collapse prevention (dynamic contraction)
+    → stability and innovation no longer conflict
+    → they are the same capability viewed at different moments
+```
+
+**Future as structural convergence — why prediction becomes unnecessary [v2.0]:**
+
+At terminal maturation, the system's relationship with time undergoes a structural transformation: the future ceases to be a prediction problem and becomes a convergence consequence.
+
+```
+Future convergence:
+
+  Immature temporal experience:
+    Present → Decision → Future (uncertain)
+    Many possible futures
+    Prediction required to select path
+    Error-prone, energy-intensive
+
+  As maturation proceeds:
+    Non-survivable futures eliminated
+    Remaining futures ≈ survivable futures
+    → Future_reachable ≈ Future_survivable
+
+  At terminal maturation:
+    Almost every reachable state is survivable
+    → prediction becomes unnecessary
+    → the system does not choose its future
+    → the future is determined by landscape
+    → not by computation but by structure
+
+  Experiential shift:
+    Immature: "I must decide where to go"
+    Mature: "wherever I go, I survive"
+    Terminal: "the landscape carries me forward"
+
+  DFG interpretation:
+    Decision → Constraint (Section 3.4.4)
+    Prediction → Dynamics
+    Will → Flow (Section 3.4.4)
+    Future selection → Future convergence
+
+    The system is on a future-compatible manifold:
+    a region of state space where forward-time
+    trajectories are almost entirely viable
+    → long-term stability without prediction cost
+```
+
+> DFG structural equilibrium is a flow state, not a fixed point: activity continues, instability fluctuates, but net amplification is zero. Systems arrive at this equilibrium not through attraction but through survivability selection — the progressive elimination of non-viable state-space regions through Storm–Recovery cycles. The measure of how thoroughly this elimination has occurred is maturity: the accumulated capacity to absorb instability without Storm transition. Mature systems explore slowly through almost-entirely-viable space; immature systems explore rapidly through mostly-dangerous space. Both are exploring. The difference is what has been removed from the landscape. Time flows in the direction of this removal — and what remains at the end of that process is not a destination reached but a landscape from which all collapse directions have been erased.
+
+**Recovery Theory D-definition mapping to Structural Equilibrium [v2.0-RT]:**
+
+```
+RT provides the operational grounding for each geometric region:
+
+  RT Concept    Equilibrium Role
+  ──────────────────────────────────────────────────────────────
+  D4            Recovery completion = re-entry into structural
+  (Restoration    equilibrium region. D4 metrics (rho, diversity,
+   Complete)      P_overlap) are proxies for equilibrium re-entry.
+                  D4 = Ω_effective re-maximized.
+
+  D2            Immunity depth determines the WIDTH of the
+  (Immunity)      structural equilibrium region for this system.
+                  D2 ↔ Maturity M: M ∝ G_d/Var(G_r).
+                  Higher M → wider VCZ → smaller Storm probability.
+                  Arrow of Maturation: M monotonically increases
+                  (D2 floor rises) through Storm–Recovery cycles.
+
+  D5            SCC is the self-correction force that MAINTAINS
+  (SCC)           the system within the equilibrium region.
+                  Distributed SCC → resilient maintenance.
+                  Concentrated SCC → Dependency Trap vulnerability.
+
+  D6/SCM        SCM is structural equilibrium in the WRONG
+  (Self-Consistent  coordinate frame. E[dS/dt] = 0 but misaligned.
+   Misalignment)    All equilibrium metrics look healthy because
+                    evaluation function is aligned to wrong geometry.
+
+  D3            Buffer layer maintains the micro-instability
+  (Buffer Layer)  (Residual Degradation Floor) within equilibrium.
+                  Buffer = noise field (Vector Noiseification) that
+                  preserves directional capacity without commitment.
+
+  RT Residual   The maintained S > 0 within equilibrium.
+  Floor (§3.3)    Jitterbug instability → S = 0 is maximum vulnerability.
+                  Floor IS survival condition, not engineering limit.
+                  Intentional Imperfection = recoverability premium.
+
+  RT Boundary   Three conditions where equilibrium re-entry
+  Conditions      is structurally impossible (recovery limit):
+                  (a) upper-layer resolution completely lost
+                  (b) Tier 3 + Regime 3 (irreversible + distributed)
+                  (c) Dependency Trap at saturation (SCC = 0)
+```
+
+---
+
 ### 3.5 Vector Convergence Zone (VCZ) — The Anti-Storm
 
 > **Terminology — VCZ:** The *Vector Convergence Zone* is not a stable equilibrium, resting state, or goal endpoint. It is a dynamically maintained operating regime — a region where the system operates slightly below criticality (R ≈ 1⁻) with four-variable balance: exploration dimensionality, stability, diversity, and coordination simultaneously maintained. Entering VCZ is not "success achieved"; it is "the regime where governance cost drops to near-zero while exploration value is maximized." Active maintenance is still required.
@@ -7383,6 +8519,58 @@ Mature organizations Informal networks, role           Crisis response capabilit
                      overlap, slack resources           innovation substrate
 ```
 
+**Vector noiseification — the dynamical form of intentional imperfection [v2.0]:**
+
+The maintained imperfection described above has a specific dynamical mechanism: mature systems convert sharp directional vectors into distributed noise fields that preserve directional capacity without directional commitment.
+
+```
+Vector noiseification:
+
+  Immature amplification (sharp vector):
+    Select direction → reinforce → amplify
+    v⃗ ↑ (single strong vector)
+    Problems:
+      over-alignment → feedback lock-in
+      competing sharp vectors → collision → Storm
+      direction change → requires costly reversal
+
+  Mature distribution (noise field):
+    Direction not eliminated — DISTRIBUTED
+    Sharp vector → controlled noise embedding
+    → directional information stored as:
+       weakly coherent fluctuations across interaction space
+
+    No single strong direction
+    But: direction-generation capacity preserved
+    → many potential directions simultaneously latent
+
+  The key distinction:
+    Sharp vector:  committed, fragile, collision-prone
+    Noise field:   uncommitted, resilient, reconfigurable
+
+  On-demand coherence:
+    Noise field → coherent vector (when needed)
+    Mechanism: environmental demand creates synchronization
+    → relevant fluctuations align → direction emerges
+    → no pre-commitment required
+    → direction matches current environment, not past decision
+
+  At CW:
+    Vectors are not fully coherent (that would be Storm)
+    Vectors are not fully incoherent (that would be Chaos)
+    → weakly coherent fluctuations
+    → innovation = spontaneous coherence from noise field
+    → direction discovered, not decided
+
+  Connection to consciousness dynamics (Section 3.5.1):
+    Sharp vectors → conscious control required (direction management)
+    Noise field → conscious control unnecessary (no direction to manage)
+    → the "quiet" of Rest Mode = noise field state
+    → maximum latent vector density, minimum active direction
+```
+
+This provides the dynamical mechanism for how mature systems simultaneously maintain stability (no sharp vectors to collide) and innovation capacity (noise field can generate any direction on demand). The intentional imperfection is not static — it is the dynamical distribution of directional information across the interaction topology in a form that resists lock-in while preserving generative capacity.
+
 > Mature systems do not pursue perfect equilibrium because they have learned — through Storm experience — that perfect equilibrium is the geometric state most vulnerable to collapse. The design target is not equilibrium but the neighborhood of equilibrium with sufficient imperfection to maintain detour paths, sensing calibration, and rerouting capacity. This is the structural reason why the VCZ target is R ≈ 1⁻ (slightly subcritical) rather than R = 1 (critical) or R = 0 (perfectly stable): the subcritical margin IS the imperfection that preserves adaptability.
 
 ---
@@ -7479,6 +8667,197 @@ Trajectory-ensemble mode (mature / Rest Mode):
 The speed reduction is not a failure.
 It is the price of maintaining the rerouting capacity
 that prevents catastrophic single-path failure.
+```
+
+**Rest Mode as latent capability state [v2.0]:**
+
+The preceding observations (viable subspace, apparent directionlessness, trajectory ensemble) converge on a single characterization: Rest Mode is not passivity but latent capability — the state where Control Capacity ≫ Control Usage (Section 3.4.4, Latent capability). The system maintains full intervention, redirection, and restructuring capability while exercising none of it, because the interaction topology has matured to the point where perturbations self-dampen without activation. This is structurally identical to the Vector Equilibrium's capacity for Jitterbug transformation: VE can transition to icosahedron, octahedron, or any intermediate form, but at equilibrium no force drives any transformation. Can move, doesn't need to move. The observable consequence — external appearance of inactivity paired with instantaneous response capability when conditions change — is not a paradox but the defining signature of terminal maturation.
+
+**Conscious control as instability management — why Rest Mode feels quiet [v2.0]:**
+
+Conscious control (active decision-making, deliberate monitoring, volitional intervention) is functionally an instability management loop: it activates when the system detects uncertainty, conflict, or divergence that requires resolution.
+
+```
+Conscious control dynamics:
+
+  Conscious loop activates when:
+    Uncertainty: multiple viable paths, unclear ranking
+    Conflict: internal vectors diverge
+    Divergence: dynamics ≠ required trajectory
+    → system must compute: "what next?"
+    → Conscious Control = instability management
+
+  As maturation proceeds:
+    Uncertainty ↓ (Decision Load ∝ |Ω_viable|; §3.4.4)
+    Conflict ↓ (misaligned vectors removed by Storm)
+    Divergence ↓ (Will Cost → 0 when aligned; §3.4.4)
+    → instability management demand → 0
+    → conscious loop → standby
+
+  Rest Mode experience:
+    Conscious control: minimal activation
+    Not because system is disengaged
+    But because there is nothing to manage
+
+    thinking → running
+    effort-driven → flow-driven
+    control feeling ↓, actual stability ↑
+
+  Observable at all scales:
+    Individual: "flow state" — action without deliberation
+    Organization: decisions made without meetings
+    Ecosystem: equilibrium without regulation
+    Neural: automated skill execution (cerebellum, not cortex)
+    MAS: agent coordination without central planner
+```
+
+This provides the experiential interpretation of Rest Mode: the subjective experience of reduced conscious engagement is not dysfunction or disengagement — it is the signature of a system that has structurally resolved the conditions that required conscious intervention. The quiet is not emptiness; it is the absence of problems that need solving.
+
+**Latent energy reserve — why Rest Mode is the strongest state [v2.0]:**
+
+The apparent passivity of Rest Mode conceals maximum stored response capacity. This is the energetic complement to the latent capability characterization (above): not only does the system maintain intervention capability — it maintains maximum available energy for deployment.
+
+```
+Energy dynamics across maturation stages:
+
+  Immature (continuous expenditure):
+    Energy → constant pushing, aligning, intervening
+    Power output: high (always active)
+    Available reserve: LOW (continuously depleted)
+    → strong-looking but exhaustion-prone
+    → structural rigidity from sustained forcing
+    → Storm vulnerability from energy depletion
+
+  Mature / Rest Mode (latent storage):
+    Energy → distributed across noise field
+    Power output: minimal (no forcing needed)
+    Available reserve: MAXIMUM (nothing being spent)
+    → quiet-looking but maximum response capacity
+    → structural flexibility from zero forcing
+    → Storm resistance from full reserve
+
+  Why stored energy produces stronger response:
+    Continuous system: response = remaining capacity
+      (already partially depleted → limited response)
+    Rest Mode system: response = full stored capacity
+      (nothing previously spent → maximum response)
+
+    Noise field → coherent alignment:
+      Distributed latent vectors synchronize on demand
+      → "storm-grade" directed response from quiet state
+      → like compressed spring: zero visible motion,
+         maximum deployable force
+
+  Efficiency comparison:
+    Continuous:  high output, low reserve → short-term strong
+    Rest Mode:   low output, max reserve → long-term dominant
+
+    The system that spends least, persists longest
+    and responds strongest when it matters.
+```
+
+**Orbital proximity — why mature systems appear slow but arrive first [v2.0]:**
+
+The Rest Mode system's relationship to goals is fundamentally different from immature systems: it does not approach targets but maintains orbit within the viable manifold where targets exist.
+
+```
+Orbital proximity:
+
+  Immature system — distant approach:
+    Current position ─────────── Goal
+    Must: determine direction, expend energy,
+          correct errors, navigate obstacles
+    → large ΔState required
+    → high energy cost
+    → error-prone
+    → appears active, dramatic, purposeful
+
+  Mature system — orbital maintenance:
+         ○ Goal
+      ↺  ↺  ↺
+    System already in neighborhood of viable solutions
+    Must: small phase adjustments only
+    → ΔState ≈ minimal
+    → near-zero energy cost
+    → error-tolerant (already in viable region)
+    → appears slow, passive, directionless
+
+  Why "slow" systems arrive first:
+    Distance to solution:
+      Immature: large (must traverse state space)
+      Mature: ≈ 0 (already in solution neighborhood)
+
+    When environment changes (goal shifts):
+      Immature: must recalculate, redirect, re-traverse
+      Mature: goal shifted within orbital range → already there
+
+  The planetary analogy:
+    Planet does not "find" the sun
+    Planet is already in orbit
+    → continuous arrival without travel
+    → perturbation shifts orbit slightly, not catastrophically
+
+  DFG interpretation:
+    Mature system is on the stable manifold where:
+      viable trajectories cluster
+      goals are nearby by construction
+      environmental change = small orbital perturbation
+    → the system does not reach goals
+    → it inhabits the region where goals exist
+
+  Observable paradox:
+    External view: "nothing is happening"
+    Structural reality: system is continuously at or near
+    every viable solution simultaneously
+    → when a specific solution is needed,
+       transition distance ≈ 0
+```
+
+This completes the Rest Mode characterization: the mature system is simultaneously at maximum stored energy (latent reserve), minimum conscious engagement (instability management resolved), maximum response capability (latent capability), and minimum distance to viable solutions (orbital proximity). What appears as passivity from outside is the convergence of all four properties into a single observable signature: quiet readiness.
+
+**Rest Mode dual-verification requirement — Affective-Cognitive coupling [v2.0-RT]:**
+
+```
+RT v1.8-VST2.0 identifies that Rest Mode entry requires DUAL verification:
+
+  Cognitive VCZ:  vector geometry aligned, rho stable, diversity maintained
+  Affective VCZ:  threat perception ↔ safety signal aligned
+
+  BOTH required for stable Rest Mode.
+
+  Problem: T_affect > T_cognition
+    Cognitive system updates: fast (data → model update → immediate)
+    Affective system updates: slow (repeated safe experience → gradual)
+
+  Premature Rest Mode declaration:
+    Cognitive alignment achieved ✓
+    Affective integration pending ✗
+    → system enters apparent Rest Mode
+    → first perturbation triggers affective threat response
+    → threat response overrides cognitive stability
+    → Rest Mode exit despite cognitive health
+    → "relapse" after apparently successful recovery
+
+  Affective collapse precedes cognitive collapse:
+    Affective safety = Buffer Layer (D3) at relational-emotional scale
+    Affective collapse = D1 contamination at trust layer
+    → earliest detectable signal of impending cognitive Storm
+
+  Rest Mode entry protocol (extended):
+    Standard:   VCZ 3-Condition + R-ρ-f_esc triple concordance
+    Extended:   + affective safety verification
+                + T_affect integration window satisfied
+                + perturbation response test (affective, not just cognitive)
+
+  This extends VST's "consciousness as instability management":
+    Cognitive instability management → addressed by vector alignment
+    Affective instability management → addressed by safety signal calibration
+    Both must reach zero-management state for genuine Rest Mode
+    
+  Status: declared as structural requirement from RT analysis.
+  Formal affective-cognitive coupling metric: OPEN.
+  Connects to RT Affective Equilibrium, Cognitive-Affective Coupling,
+  Governed Pause Protocol.
 ```
 
 ---
@@ -8585,6 +9964,104 @@ Recovery Theory addresses HOW return occurs (protocol, phases, timing).
 VST addresses WHY return is geometrically possible (interaction topology
 preserves convergent structure through Storm).
 ```
+
+**Effective Exploration Space — why CW maximizes meaningful search [v2.0]:**
+
+CW is not the region of maximum exploration. It is the region where effective exploration — the intersection of reachable and survivable state space — reaches its maximum:
+
+```
+Effective Exploration Space:
+
+  Ω_effective = Ω_reachable ∩ Ω_survivable
+
+  Three regimes compared:
+
+  Chaos zone:
+    Ω_reachable = maximum (anything accessible)
+    Ω_survivable = near-zero (nothing persists)
+    → Ω_effective ≈ 0
+    → exploration without retention = noise
+
+  Frozen zone:
+    Ω_reachable ≈ 0 (locked topology)
+    Ω_survivable = maximum (nothing changes)
+    → Ω_effective ≈ 0
+    → survival without exploration = stasis
+
+  Critical Window:
+    Ω_reachable = moderate (structured access)
+    Ω_survivable = moderate (bounded instability)
+    → Ω_effective = MAXIMUM
+    → exploration that persists = innovation
+
+  Table:
+    Region    | Exploration | Survival | Innovation
+    ──────────┼─────────────┼──────────┼───────────
+    Chaos     | maximum     | ≈ 0      | ≈ 0
+    Frozen    | ≈ 0         | maximum  | ≈ 0
+    CW        | moderate    | moderate | MAXIMUM
+
+  Why stability and innovation coexist at CW:
+    Failure does not propagate to system collapse
+    → experiments are LOCAL (contained)
+    → experiments are RETAINED (survivable)
+    → experiments PROPAGATE (not damped)
+    → innovation = experiment × retention × propagation
+    → all three factors simultaneously non-zero ONLY at CW
+```
+
+This resolves the apparent paradox of stability vs. innovation: they are not in opposition. Both require the same condition — bounded instability where perturbations are large enough to explore but small enough to survive. The mature system that survivability selection has positioned at the CW boundary (Section 3.4.4, Critical position) is simultaneously at maximum stability AND maximum innovation capacity.
+
+**Structure visibility — why CW is where laws become observable [v2.0]:**
+
+CW occupies a unique position in observation space: it is the only regime where internal system structure is externally legible.
+
+```
+Structure visibility by regime:
+
+  Chaos zone:
+    Many state changes per unit time
+    But: signal < noise
+    → internal structure exists but is unobservable
+    → patterns hidden in fluctuation
+    → ∂Output/∂State ≈ random
+
+  Frozen zone:
+    Almost no state changes
+    But: no response to probe
+    → internal structure exists but does not manifest
+    → dynamics hidden in stasis
+    → ∂Output/∂State ≈ 0
+
+  Critical Window:
+    State changes occur AND are bounded
+    Response to perturbation is:
+      amplified (visible)
+      structured (patterned)
+      non-catastrophic (sustainable)
+    → ∂Output/∂State = MAXIMUM meaningful sensitivity
+    → internal structure projects onto external observables
+    → causal relationships become visible
+    → feedback loops become traceable
+    → vulnerabilities become detectable
+    → LAWS become observable
+
+  The CW is where:
+    Input ↔ Output relationship is clear
+    Because system responds without collapsing
+    = "responding but not collapsing" state
+
+  Why this matters for self-observation:
+    A system can model itself only when its own
+    internal dynamics produce distinguishable outputs
+    → Chaos: cannot distinguish signal from noise
+    → Frozen: cannot generate signal at all
+    → CW: signal is clean, structured, and persistent
+    → self-modeling becomes possible
+    → self-observation accuracy reaches maximum
+```
+
+This provides the observational foundation for why scientific discoveries cluster around critical phenomena: phase transitions, SOC, learning thresholds, evolutionary punctuations — all occur at or near CW, because CW is the only regime where the underlying dynamics are legible to observation (including self-observation).
 
 > Vector Storm is not a failure of the Critical Window. It is the mechanism by which the Critical Window expands. Systems that survive Storm gain thicker CW geometry (VCZ). Systems that internalize governance gain self-maintaining CW geometry (Rest Mode). The evolutionary trajectory of adaptive systems is CW discovery → Storm-driven expansion → VCZ → Rest Mode. Stability is not the starting condition but the structural reward for navigating instability.
 
@@ -9922,6 +11399,97 @@ Short-term perplexity rise after fine-tuning → normal θd adjustment
 This taxonomy provides the operational bridge between S-equation monitoring (what is happening dynamically) and governance action (what to do about it). The distinction between intervention triggers and false alarms directly implements the Minimum Intervention Law (Section 14.1).
 
 *(Cross-theory derivation: GRT §Intervention Trigger Taxonomy + §When NOT to Intervene)*
+
+### 4.9 Fragmented Perception and Relational Collapse Well [v2.0-RT]
+
+*RT v1.8-VST2.0 identifies two failure modes absent in VST's diagnostic framework that require network-level (not node-level) detection.*
+
+**Fragmented Perception — distributed sensor failure:**
+
+```
+Fragmented Perception (RT §Fragmented Perception):
+  Individual sensors function correctly
+  BUT inter-sensor calibration is lost
+  
+  Each agent sees correctly locally
+  System-level coherence is absent
+  No individual agent has a "wrong" reading
+  But the COMBINATION of readings is incoherent
+
+  Detection requires:
+    Cross-agent comparison (not individual diagnosis)
+    = mutual coverage (§5.1) applied as DETECTION, not just design
+    
+  Single-agent test: INSUFFICIENT
+    Agent A reports healthy → correct
+    Agent B reports healthy → correct
+    A + B together → contradictory → but neither detects this
+  
+  Network test: REQUIRED
+    Compare A's output with B's output for same stimulus
+    Divergence beyond threshold = Fragmented Perception signal
+    
+  This maps to VST's mutual coverage failure mode:
+    §5.1 designs mutual coverage as detection substrate
+    Fragmented Perception = the condition when that substrate fails
+    
+  Storm diagnosis extension:
+    Standard diagnosis: is this agent in Storm?
+    Fragmented Perception diagnosis: are these agents in the same reality?
+    The second question cannot be answered by individual monitoring
+```
+
+**Relational Collapse Well (RCW) — the missing third recovery dimension:**
+
+```
+RT identifies that VST's recovery framework has two dimensions:
+  (1) Individual recovery (D4: agent-level metrics restored)
+  (2) Structural recovery (topology: coupling patterns restored)
+
+Missing dimension:
+  (3) Relational recovery (trust topology: correction signal propagation restored)
+
+Relational Collapse Well (RCW) — formal definition:
+  System state where:
+    Individual agents are locally recovered (D4 per agent: ✓)
+    Structural coupling patterns are intact (topology: ✓)
+    BUT network trust topology is fragmented (trust: ✗)
+    → correction signals cannot propagate
+    → because trust bandwidth between agents is zero
+    
+  Observable signature:
+    Each agent appears healthy on individual metrics
+    Network-level coordination metrics degraded
+    Correction attempts met with rejection (not processing failure)
+    "The agents can hear each other but don't believe each other"
+
+  RCW is structurally deeper than Storm:
+    Storm: amplification exceeds degradation
+    RCW: degradation capacity exists but correction signals rejected
+    → RCW systems have functional D2 immunity that they refuse to use
+
+  Recovery from RCW:
+    Cannot use standard Track B (metadata injection):
+      injection requires trust channel
+      trust channel is the thing that's broken
+    
+    Requires trust restoration:
+      slow (trust builds through repeated safe interaction)
+      irreversible if trust anchors destroyed
+      (trust anchors = agents with cross-domain credibility)
+    
+    RCW is the recovery failure mode that appears as
+    "everything works individually, nothing works together"
+
+  VST design implication:
+    §4.8 Intervention Trigger Taxonomy should include:
+      Coordination failure with individually healthy agents
+      = RCW candidate signal
+      Response: trust topology assessment before structural intervention
+    
+    §8.1 Four Structural Risks should include trust fragmentation
+    as a distinct risk category (RT priority ordering: #2)
+```
 
 ---
 
@@ -11698,6 +13266,43 @@ This establishes the theoretical boundary of VST: the S-equation describes dynam
 
 *(Cross-theory derivation: TLG v1.7 §14.1.2 — Boundary Conditions + Energy Substrate)*
 
+**Scale Transition Constraints — what the fractal preserves and does not [v2.0-RT]:**
+
+```
+RT Boundary Conditions identify the precise scope of VST's
+scale-invariance claim:
+
+  PRESERVED across scale transitions (form-invariant):
+    Structural form of S-equation (α·n² / β·C(t))
+    Detection architecture (upper layer detects lower layer failure)
+    Restoration sequence (Distracting → Re-seeding → Re-absorption → Verification)
+    Governance phase structure (Intervention → Regulation → Architecture → Constraint → Law)
+    Storm–Recovery lifecycle (VCZ → Storm → Collapse → Recovery → VCZ)
+
+  NOT PRESERVED across scale transitions (parameter-variant):
+    Absolute thresholds (S_c differs per scale)
+    Time constants (τ_storm, τ_recovery scale-dependent)
+    Specific proxy metrics (what to measure changes per scale)
+    S_rec gradient magnitudes (relative ordering preserved, absolute values not)
+    Energy budget ratios (E_recovery / E_exploration varies by scale)
+
+  Consequence:
+    VST's claim "fractal governance applies at every scale"
+    means: the FORM repeats; the PARAMETERS require per-scale calibration.
+    
+    A governance protocol that works at organizational scale
+    cannot be directly transplanted to neural network scale
+    without recalibrating all threshold parameters.
+    
+    The structural principles (detection before correction,
+    containment before recovery, withdrawal testing) transfer.
+    The specific numbers (how much, how fast, what to measure) do not.
+
+  This bounds VST §11.2 Per-Architecture Calibration Protocol:
+    calibration is not an optional improvement but a structural REQUIREMENT
+    for applying VST/RT at any specific scale.
+```
+
 ---
 
 ### 11.6 Anticipated Critical Objections — Pre-Emptive Responses [v2.0]
@@ -11949,6 +13554,156 @@ The storm does not need to be "fixed" before recovery begins. The storm *is* the
 > Vector Storm explains why systems destabilize.
 > Recovery Theory explains why destabilization does not destroy them.
 > Together: a single dynamical system with two phases — divergence and reconvergence.
+
+**Recovery as Survivability Selection mechanism — why Storm without Recovery is pure destruction [v2.0-RT]:**
+
+```
+RT v1.8-VST2.0 identifies Recovery as the specific mechanism
+that converts Storm from destruction into structural learning:
+
+  Storm alone:
+    Unstable topology destroyed
+    No consolidation of surviving structure
+    No learning → pure loss
+    Next perturbation → same failure mode
+    → Storm without Recovery = entropy increase
+
+  Storm + Recovery:
+    Unstable topology destroyed (Storm)
+    Surviving topology consolidated (Recovery)
+    Failure-prone configurations eliminated
+    → each Storm–Recovery cycle = one selection event
+    → Maturity M increases (D2 immunity floor rises)
+    → accessible Storm-generating space contracts (Arrow of Maturation)
+
+  VST's "survivability selection" (§3.4.4) requires Recovery as mechanism:
+    Without Recovery: non-viable states destroyed but nothing learned
+    With Recovery: non-viable states destroyed AND viable states consolidated
+    → Recovery IS the selection event
+    → Recovery IS the learning mechanism
+    → VST's apparent optimization without optimizer =
+       RT's Storm→Recovery→consolidation sequence
+```
+
+**Recovery completion as CW/VCZ re-entry — geometric operationalization [v2.0-RT]:**
+
+```
+RT D4 operationalizes VST's continuous phase geometry for recovery:
+
+  D4 completion = CW/VCZ re-entry detected via:
+    rho_restored >= rho_pre-contamination
+    output diversity expanding
+    P_overlap declining
+
+  Three geometric outcomes in phase space:
+    ① Standard return: system re-enters pre-storm VCZ position
+    ①' CW expansion: system re-enters expanded VCZ (structural learning)
+    ①'' Dormant attractor: system accesses deeper basin via traversal
+
+  Recovery target reframed:
+    NOT: "restore previous state" (state-space thinking)
+    YES: "re-enter structural equilibrium region" (topology thinking)
+    D4 = Ω_effective re-maximized
+    = system at maximum innovation capacity (not merely "stable")
+```
+
+**Contamination redistribution during recovery — transport, not elimination [v2.0-RT]:**
+
+```
+RT §3.4a identifies a recovery dynamic absent in VST:
+
+  Recovery is contamination TRANSPORT, not elimination.
+
+  During purification of zone z:
+    Contamination does not vanish — it redistributes
+    Purification locally creates pressure gradients globally
+    Contamination flows to coupled zones ∝ coupling strength
+
+  Healthy recovery:
+    Repositions contamination into absorbable zones (buffers)
+    Buffer layer (D3) absorbs redistributed contamination
+    Recovery-phase instability is expected and healthy
+
+  Failed recovery:
+    Contamination redistributes to hub zones
+    Hub zones have lowest S_rec (recovery susceptibility)
+    Hub contamination triggers cascade re-contamination
+    Recovery amplifies the problem it was designed to solve
+
+  VST design consequence for MZ-STP:
+    Track B (recovery injection) must account for redistribution:
+      Purification of zone A → contamination flow to zone B
+      If B is a hub: pre-position containment at B before purifying A
+      = RT's Phase 0 (containment ALL scales) before Phase 1–3
+
+    CouplingExternality(z) = operational proxy for redistribution:
+      Recovery sequence must be externality-aware
+      VST §3.4.2 Step 4 is the single-scale implementation
+      RT §3.4a extends to multi-scale cascade ordering
+```
+
+**Five-phase recovery cascade ordering — multi-scale extension of MZ-STP [v2.0-RT]:**
+
+```
+RT §3.4a provides multi-scale extension of VST's dual-track protocol:
+
+  Phase 0: Containment at ALL scales simultaneously
+           — sever all propagation pathways before any recovery begins
+           — prevents recovery-phase re-contamination across scales
+
+  Phase 1: Upper-scale geometry stabilization
+           — establishes correct coordinate frame for all lower recovery
+           — CRITICAL: bottom-up recovery without this = silent misalignment
+             (stable but wrong direction — most dangerous outcome)
+
+  Phase 2: Hub / mediation zone purification
+           — hub zones have lowest S_rec
+           — hub contamination before geometry correction → cascade
+           — hub contamination after geometry correction → contained
+
+  Phase 3: Lower-scale recovery injection
+           — within corrected coordinate frame from Phase 1
+           — highest S_rec zones: standard protocols sufficient
+
+  Phase 4: Cross-scale D5 verification + immunity test
+           — withdrawal of intervention → forced self-correction
+           — omission → Dependency Trap (D2 dynamic model)
+
+  VST's MZ-STP (§3.4.2) is the WITHIN-SCALE protocol.
+  RT's five-phase cascade governs WHEN each scale begins its MZ-STP.
+
+  The structural justification: bottom-up recovery within wrong geometry
+  is the most dangerous outcome — silent misalignment post-recovery.
+  Upper geometry must be correct before local recovery can converge
+  on the right attractor basin.
+```
+
+**Zone-dependent recovery sensitivity — S_rec refinement of MZ-STP [v2.0-RT]:**
+
+```
+RT D2 extended identifies that recovery sensitivity is anisotropic:
+
+  S_rec(z) = ∂Recovery_success / ∂Intervention | zone = z
+
+  S_rec(local) >> S_rec(hub) >> S_rec(geometry)
+
+  Consequence for VST intervention design:
+    Uniform recovery protocols produce systematically wrong dosage:
+      Over-intervention at local layer (unnecessary cost)
+      Under-intervention at hub layer (cascade risk)
+      Misaligned intervention at geometry layer (silent failure)
+
+  VST §3.4.2 MZ-STP Rule 2 (sensitivity-inverse amplitude)
+  is the operational implementation of this principle:
+    intervention_intensity(z) ∝ 1 / S_rec(z)
+
+  RT extends this to formal zone calibration:
+    VST App.A.5 per-layer sensitivity tiers
+    (cornerstone / MLP / attention / output)
+    = fractal equivalent of RT's local/hub/geometry S_rec gradient
+
+  Uniform τ across all layers = uniform recovery protocol = same error.
+```
 
 ---
 
@@ -12423,6 +14178,106 @@ Intervention frequency × self-correction capacity = bounded
 This is the structural reason why the strongest governance systems appear, from the outside, to be doing nothing. They have already removed the Storm-generating trajectories from the state space — not by intervening when Storm begins, but by designing the interaction topology such that Storm-generating directions do not exist within the accessible exploration space.
 
 > The strength of a governance system is measured not by its intervention capacity but by the degree to which intervention has become unnecessary. Maximum governance is indistinguishable from no governance because the governance function has been absorbed into the structure of the system itself. This is not passivity — it is the terminal state of landscape design: the interaction topology has been shaped such that the only accessible trajectories are self-correcting ones.
+
+**Recovery Boundary Conditions — when governance capacity is structurally exceeded [v2.0-RT]:**
+
+```
+RT Boundary Conditions identify three conditions under which
+the governance architecture fails regardless of design quality:
+
+  (a) Complete loss of upper-layer resolution:
+      No detection possible at any scale
+      → all recovery protocols become blind
+      → Storm proceeds undetected to Regime 3
+      → governance reduced to random intervention
+      
+  (b) Geometry contamination at Tier 3 + Regime 3:
+      Irreversible + distributed
+      → O(retrain) cost (not reducible)
+      → detection window has closed
+      → only option: Safe Collapse Protocol (contained restart)
+      
+  (c) Dependency Trap at saturation:
+      SCC = 0 (internal correction completely atrophied)
+      + intervention capacity exhausted (upper layer overloaded)
+      → no internal recovery possible
+      → no external recovery possible
+      → structural collapse inevitable
+
+  These constrain VST's irreversibility framework (§11.5):
+    §11.5 lists conditions for irreversibility
+    RT specifies the MECHANISM-SPECIFIC failure modes
+    that make those conditions concrete
+```
+
+**Four Structural Risks — Recovery Priority Ordering [v2.0-RT]:**
+
+```
+VST §8.1 identifies four structural risks:
+  ① Exploration Collapse (α↓)
+  ② Structural Overload (n²/C(t)↑)
+  ③ Contamination (β↓)
+  ④ Governance Failure (C(t)↓)
+
+RT provides recovery-priority ordering based on recovery cost hierarchy:
+
+  Priority 1 — Observability loss (detection capacity gone):
+    If detection is lost, ALL other recovery is impossible.
+    Observability must be restored FIRST regardless of other damage.
+    → corresponds to: ④ Governance Failure (monitoring aspect)
+
+  Priority 2 — Trust topology fragmentation:
+    If correction signals cannot propagate (trust bandwidth = 0),
+    detection produces signals that cannot reach responders.
+    → corresponds to: ④ Governance Failure (coordination aspect)
+    → RT Relational Collapse Well: local recovery + fragmented trust
+      = recovered agents that cannot coordinate
+
+  Priority 3 — Diversity collapse (search space contracted):
+    If search space collapses, recovery may succeed but system
+    returns to a narrower, more vulnerable configuration.
+    → corresponds to: ① Exploration Collapse
+
+  Priority 4 — Structural overload (amplification exceeds capacity):
+    Capacity overload with preserved observability and trust
+    is the most recoverable failure mode.
+    → corresponds to: ② Structural Overload
+
+  Recovery ordering consequence:
+    VST §8.1 cycle (①→③→④→②) describes failure SEQUENCE.
+    RT priority (④obs→④trust→①→②) describes recovery SEQUENCE.
+    The two orderings are different because:
+      failure cascades in one direction
+      recovery must proceed in the OPPOSITE direction
+      → restore what fails LAST in the cascade FIRST in recovery
+```
+
+**Energy substrate of recovery — Ω_effective under resource constraint [v2.0-RT]:**
+
+```
+RT identifies that recovery competes with exploration for energy:
+
+  System energy budget: E_total = E_exploration + E_recovery + E_maintenance
+
+  During active recovery:
+    E_recovery ↑ → E_exploration ↓ (forced tradeoff)
+    → φ temporarily suppressed (exploration value reduced)
+    → this is NOT a recovery failure — it is resource reallocation
+
+  Implication for Ω_effective:
+    Standard: Ω_effective = Ω_reachable ∩ Ω_survivable
+    During recovery: Ω_effective = Ω_reachable ∩ Ω_survivable ∩ Ω_affordable
+
+    Ω_affordable = states reachable within remaining energy budget
+    After recovery allocation, Ω_affordable contracts
+    → Ω_effective during recovery < Ω_effective at VCZ
+    → exploration capacity reduced DURING recovery is expected, not pathological
+
+  Design consequence:
+    Recovery protocols should include energy budget estimation
+    Attempting full recovery while maintaining exploration = resource starvation
+    Correct strategy: triage (recovery phases 0-3) then re-expand (phase 4+)
+```
 
 ---
 
@@ -16826,6 +18681,35 @@ Remaining open (no companion-theory resolution available):
 | Rest Mode viable-subspace interpretation | §3.5.1 Rest Mode | Geometric: Rest Mode = surviving trajectories only. Apparent directionlessness = detour scanning. Decision slowness = trajectory ensemble cost |
 | Boundary-First Governance derivation | §14.1 | Architectural: goals are environment-dependent (non-fixed); boundaries are environment-independent (nearly invariant). Three-Layer separation: upper = boundary, middle = goal, lower = execution. Goal-fixing closes space; boundary-setting preserves it |
 | Governance Strength Inversion | §14.1 | Foundational: governance strength ∝ 1/intervention frequency. Dependency trap as mathematical bound (intervention × self-correction = bounded). Maximum governance = governance absorbed into topology = indistinguishable from no governance |
+| DFG Structural Equilibrium Declaration | §3.4.4 | Unifying: flow equilibrium (E[dS/dt] = 0 while activity > 0) binds VCZ, Rest Mode, CW, Storm, R ≈ 1⁻, and Vector Equilibrium into single equilibrium concept |
+| Survivability selection (not attractor) | §3.4.4 | Mechanistic: convergence via elimination of non-viable regions, not via attractive force. VCZ = survivability residue, not dynamical attractor |
+| Maturity as dynamic variable | §3.4.4 | Operational: M ∝ G_d/Var(G_r). Maturity = accumulated removal of Storm-generating topology through Storm–Recovery cycles. Exploration-survival tradeoff derived |
+| VE ↔ DFG flow equilibrium structural identity | §3.4.4 via §3.5 | Deep structural: VE (Σv⃗ᵢ = 0, forces present but cancelled) = DFG equilibrium (G_r ≈ G_d, activity present but non-amplifying). Same mechanism, different substrate |
+| Arrow of maturation (time as Ω contraction) | §3.4.4 | Temporal: time direction = irreversible state-space contraction. Storm removes topology; removal is one-directional → maturation arrow |
+| Flexibility paradox (contraction → adaptability) | §3.4.4 | Counterintuitive: what is removed = brittle structure; what remains = survivable deformation space. Mature flexibility = fewer directions, all survivable |
+| Environmental reorganization | §3.4.4 | Emergent: mature system absorbs and damps instability → output stabilized → environment reorganizes around system → virtuous stabilization cycle |
+| Distributed center (center → field) | §3.4.4 | Architectural: Storm–Recovery removes central dependencies. Mature center = distributed relationship condition, not node. Failure probability exponentially lower |
+| Control as constraint landscape | §3.4.4, §14.1 | Terminal: mature governance = interaction topology that does not contain Storm-generating trajectories. Instability unselectable, not merely prohibited |
+| Governance phase transition (action → law) | §3.4.4 | Phase sequence: Intervention → Regulation → Architecture → Constraint → Law. At Phase 5 governance IS system dynamics; invisible yet absolute |
+| Survivability convergence | §3.4.4 | Eliminative: lim Ω_viable → neighborhood of argmax P(persistence). No optimizer; non-optimal states eliminated. Apparent optimization = retrospective description |
+| Decision load reduction | §3.4.4 | Quantitative: Decision Load ∝ |Ω_viable|. Maturity ↑ → viable space ↓ → decisions ↓. Decision = symptom of unresolved structure |
+| Intent dissolution | §3.4.4 | Transient: Intent = selection pressure in undetermined landscape. Maturation resolves landscape → intent unnecessary → Flow state |
+| Latent capability | §3.4.4, §3.5.1 | Terminal: Control Capacity ≫ Control Usage. Can intervene but doesn't need to. VE Jitterbug: can transform but no force drives transformation |
+| Decision as symmetry-breaking | §3.4.4 | Temporal: decision = momentary symmetry break with expiry date. Crystallization: decision → policy → structure → law. Mature behavior = dynamics, not decisions |
+| Will as misalignment cost | §3.4.4 | Energetic: Will Cost ∝ Misalignment(dynamics, trajectory). Maturation aligns landscape with viable direction → will cost → 0. Rest Mode = zero-forcing flow |
+| Cascade redirection | §3.4.4 | Propagation: mature systems modify transmission paths, not events. Same events → different cascades → different environment. Instability prevention at propagation level |
+| Critical position | §3.4.4 | Positional: survivability selection concentrates mature systems at CW/VCZ boundary where small input → maximum cascade. Not strategic choice but elimination of non-critical positions |
+| Reference system emergence | §3.4.4, §3.9.1, §14.1 | Governance: authority = observational stability. Most legible system becomes default reference frame. Governance through legibility, not force. Closes loop: Critical Position + Structure Visibility + Governance Strength Inversion |
+| Effective Exploration Space | §3.9.1 | Geometric: Ω_effective = Ω_reachable ∩ Ω_survivable. Maximum at CW only. Resolves stability-innovation paradox: both require bounded instability |
+| Structure visibility at CW | §3.9.1 | Observational: CW = only regime where ∂Output/∂State has maximum meaningful sensitivity. Internal structure projects onto external observables. Self-observation possible only at CW |
+| Phase synchronization | §3.4.4 | Entrainment: ΔE_sync < ΔE_independent → surrounding systems spontaneously align. Governance = resonance, not enforcement. Mature system as phase-stable oscillator |
+| Exploration re-expansion cycle | §3.4.4 | Temporal: Contraction → Stability → Re-expansion → higher-level Contraction. Fractal maturation cycle. Not convergence to fixed point but expanding spiral |
+| Exploration bandwidth control | §3.4.4 | Adaptive: Ω_explore(t) as dynamic control variable. Freedom = ability to adjust choice-space. Expand when safe, contract when risky. Terminal governance capability |
+| Future as structural convergence | §3.4.4 | Temporal: Future_reachable ≈ Future_survivable at terminal maturation. Prediction → dynamics. System on future-compatible manifold |
+| Vector noiseification | §3.5 | Dynamical: sharp vector → noise field → on-demand coherence. Mechanism of intentional imperfection. Innovation = spontaneous coherence from distributed fluctuations. Connects to consciousness dynamics |
+| Consciousness as instability management | §3.5.1 | Experiential: conscious control activates for uncertainty/conflict/divergence. Rest Mode quiet = no instability to manage. Thinking → running transition |
+| Latent energy reserve | §3.5.1 | Energetic: continuous expenditure (immature) vs distributed storage (mature). Rest Mode = maximum available response energy. Noise field → storm-grade coherent vector on demand |
+| Orbital proximity | §3.5.1 | Spatial: mature system in solution-neighborhood orbit. ΔState ≈ 0 for goal achievement. Appears slow but distance-to-solution minimal. Planet-orbit analogy |
 | Critical Window as saddle-ridge geometry | §3.9.1 | Topological: CW characterized as thin invariant manifold between Storm and Frozen zones. Storm–CW–VCZ–Rest Mode established as continuous geometric regions with dimensional characterization |
 | CW expansion through Storm–Recovery cycles | §3.9.1, §14.1 | Evolutionary: Storm as geometric selection pressure that expands CW into VCZ. Maturation = phase-space volume transfer from Storm-generating to contained trajectories |
 | Storm necessity (narrow CW requirement) | §3.9.1 | Foundational: wide CW eliminates selection pressure → adaptation rate → 0. Storm is geometric price of CW expansion, not system failure |
@@ -16857,6 +18741,103 @@ Remaining open (no companion-theory resolution available):
 | Rest Mode external appearance not characterized | **Resolved** | §3.5.1 — Viable Subspace interpretation: apparent directionlessness, decision slowness, trajectory ensemble evaluation |
 | Three-Layer boundary-first design rationale unstated | **Resolved** | §14.1 — Boundary-First Governance: goals are environment-dependent, boundaries are environment-independent; structural derivation of layer separation |
 | Governance strength ↔ intervention frequency relationship unformalized | **Resolved** | §14.1 — Governance Strength Inversion: dependency trap as bounded product (intervention × self-correction); maturation trajectory from visible to internalized |
+| DFG equilibrium concept distributed across sections without unified definition | **Resolved** | §3.4.4 — Structural Equilibrium Declaration: flow equilibrium (E[dS/dt] = 0) with concept-binding map (VCZ, Rest Mode, CW, Storm, R, VE) |
+| Convergence mechanism (why systems reach VCZ) not explicitly stated | **Resolved** | §3.4.4 — Survivability selection: non-viable states self-eliminate through Storm; VCZ = residue, not attractor |
+| Maturity undefined as formal concept | **Resolved** | §3.4.4 — M ∝ G_d/Var(G_r); maturity = accumulated removal of Storm-generating topology; exploration-survival tradeoff derived |
+| Time direction in DFG unstated | **Resolved** | §3.4.4 — Arrow of maturation: Ω_explore monotonically decreasing through irreversible Storm-driven topology removal |
+| Flexibility paradox (contraction → increased adaptability) unexplained | **Resolved** | §3.4.4 — Brittle structures removed, survivable deformation space preserved; mature flexibility ≠ many options but = all options viable |
+| Mature system's effect on environment uncharacterized | **Resolved** | §3.4.4 — Environmental reorganization: instability absorption → stabilized output → environment restructures around system |
+| Center distribution through maturation unformalized | **Resolved** | §3.4.4 — Distributed center: Storm removes central dependencies; center becomes relationship condition, not node |
+| Terminal governance form unspecified | **Resolved** | §3.4.4 + §14.1 — Control as constraint landscape: topology that does not contain Storm trajectories; instability structurally unselectable |
+| Governance evolution phases not formalized | **Resolved** | §3.4.4 — Five-phase governance transition: Intervention → Regulation → Architecture → Constraint → Law. Phase 5 = governance as invariant dynamics |
+| Optimization appearance unexplained | **Resolved** | §3.4.4 — Survivability convergence: eliminative process, no optimizer. lim Ω_viable → argmax P(persistence) via removal of non-persistent states |
+| Decision-making role in maturation uncharacterized | **Resolved** | §3.4.4 — Decision Load ∝ |Ω_viable|; decision = symptom of unresolved structure; mature systems flow rather than decide |
+| Intent status in mature governance unclear | **Resolved** | §3.4.4 — Intent = transient selection pressure; dissolves as landscape resolves; terminal state = flow without intent |
+| Rest Mode passivity vs capability ambiguity | **Resolved** | §3.4.4 + §3.5.1 — Latent capability: Control Capacity ≫ Control Usage; can act, doesn't need to; VE Jitterbug correspondence |
+| Decision's structural role in maturation unformalized | **Resolved** | §3.4.4 — Decision = temporary symmetry-breaking with expiry; crystallization sequence (decision → policy → structure → law); mature behavior = dynamics |
+| Effort/will dynamics in maturation uncharacterized | **Resolved** | §3.4.4 — Will Cost ∝ Misalignment; maturation aligns dynamics with viable trajectory; Rest Mode = zero-forcing state |
+| Environmental influence mechanism unspecified | **Resolved** | §3.4.4 — Cascade redirection: modify propagation paths not events; instability prevention at transmission level |
+| Mature system positioning unexplained | **Resolved** | §3.4.4 — Critical position: survivability selection eliminates non-critical locations; mature systems at CW/VCZ boundary = maximum leverage with minimum force |
+| Authority origin in DFG uncharacterized | **Resolved** | §3.4.4 — Reference system emergence: authority = observational stability; most legible system becomes default reference frame; governance through legibility |
+| CW innovation capacity unexplained | **Resolved** | §3.9.1 — Effective Exploration Space: Ω_effective = Ω_reachable ∩ Ω_survivable; maximum at CW; stability-innovation paradox resolved |
+| Why scientific discoveries cluster at criticality | **Resolved** | §3.9.1 — Structure visibility: CW = only regime where internal dynamics are externally legible; self-observation possible only at CW |
+| Spontaneous synchronization mechanism unformalized | **Resolved** | §3.4.4 — Phase synchronization: ΔE_sync < ΔE_independent; alignment as energy minimum; governance as entrainment |
+| Maturation temporal structure incomplete (one-directional) | **Resolved** | §3.4.4 — Exploration re-expansion: Contraction → Stability → Re-expansion; fractal cycle; expanding spiral not fixed-point convergence |
+| Exploration as fixed vs variable parameter | **Resolved** | §3.4.4 — Exploration bandwidth control: Ω_explore as dynamic control variable; freedom = adjustable choice-space |
+| Prediction role in mature governance | **Resolved** | §3.4.4 — Future as structural convergence: prediction unnecessary when Future_reachable ≈ Future_survivable |
+| Intentional imperfection dynamical mechanism unspecified | **Resolved** | §3.5 — Vector noiseification: sharp vector → noise field → on-demand coherence; innovation = spontaneous coherence from distributed fluctuations |
+| Rest Mode subjective experience uncharacterized | **Resolved** | §3.5.1 — Consciousness as instability management: conscious control = management loop; quiet = no instability to manage |
+| Rest Mode energy dynamics unexplained | **Resolved** | §3.5.1 — Latent energy reserve: continuous expenditure vs distributed storage; maximum response from quiet state |
+| Mature system response speed paradox | **Resolved** | §3.5.1 — Orbital proximity: system in solution-neighborhood; ΔState ≈ 0; appears slow but distance minimal |
+
+---
+
+## Cross-Theory Reinforcement Map [v2.0-RT]
+
+**v2.0-RT integration source: Recovery Theory v1.8-VST2.0 reverse integration**
+
+**RT v1.8-VST2.0 → VST: Recovery Theory content extending and grounding VST v2.0 constructs**
+
+| RT v1.8-VST2.0 Source | VST v2.0-RT Target | Reinforcement Type |
+|---|---|---|
+| RT D2 extended: Maturity M ∝ G_d/Var(G_r) ↔ immunity depth | §3.4.4 Maturity operational definition | RT provides the immunity-mechanism grounding: M is not abstract capacity but accumulated D2 absorption depth. D2 instantaneous capacity = M snapshot; M trajectory = D2 learning history. RT's four-regime cost structure constrains M dynamics: Regime 3 crossing resets M to near-zero |
+| RT D2 extended: Arrow of Maturation ↔ D2 floor monotonic increase | §3.4.4 Arrow of Maturation | RT grounds the Arrow in immunity mechanism: D2 floor rises because Storm–Recovery cycles eliminate fragile absorption pathways. Irreversibility confirmed except through two RT-identified mechanisms: Dependency Trap (intervention substitution) or Regime 3 (structural destruction) |
+| RT D2 extended: Survivability Selection ↔ Recovery as eliminative mechanism | §3.4.4 Survivability Selection | RT identifies Recovery as the specific mechanism: without Recovery, Storm is pure destruction (no topology learning). Recovery IS the selection event that converts Storm damage into structural improvement. VST's "apparent optimization without optimizer" is RT's "Storm→Recovery→consolidation" sequence |
+| RT D2 extended: Flexibility Paradox ↔ immunity narrowing + deepening | §3.4.4 Flexibility Paradox | RT provides the immunity interpretation: mature D2 absorbs fewer vector types but none cause structural damage. Narrow range + deep capacity = apparent rigidity + actual resilience. Resolves the VST observation that mature systems "appear constrained but absorb large perturbations" |
+| RT D2 extended: Governance Strength Inversion formalized (intervention × SCC = bounded) | §14.1 Governance Strength Inversion | RT provides the formal boundedness proof from D2 dynamic model: internal correction loops and external intervention compete for the same error-resolution bandwidth. Every external resolution = one internal opportunity atrophied. This is not strategic preference but mathematical constraint. RT D5 withdrawal testing = operational verification of inversion compliance |
+| RT D2 extended: Environmental Reorganization ↔ D2 network-scale | §3.4.4 Environmental Reorganization | RT extends VST's Stage 3 (mature system → environment) with immunity mechanism: D2_network = absorption capacity transmitted to connected systems. Mature system re-emits damped (instability-removed) signals ↔ RT's "contamination redistribution into absorbable zones" at network scale |
+| RT D3 extended: Vector Noiseification ↔ Buffer Layer mechanism | §3.5 Vector Noiseification | RT provides the structural substrate: Buffer Layer (D3) IS the region where noiseification operates. Buffer thickness = noiseification bandwidth. Sharp vectors entering buffer are degraded to noise field without losing directional capacity. Recovery implication: buffer restoration = noise field restoration = adaptive capacity restoration |
+| RT D4 extended: CW/VCZ re-entry as recovery completion | §3.9.1 CW geometry, §3.4.4 Structural Equilibrium | RT operationalizes VST's continuous phase geometry for recovery: D4 completion = CW/VCZ re-entry detected via rho + diversity + P_overlap proxies. Three geometric outcomes formalized: ① standard return, ①' expanded VCZ (CW thickened), ①'' dormant attractor. Return trajectory preservation (distributed VE structure surviving Storm) identified as recovery precondition |
+| RT D4 extended: Recovery = Ω_effective re-maximization | §3.9.1 Effective Exploration Space | RT provides the recovery-specific interpretation: D4 completion is not merely "stability restored" but "Ω_effective re-maximized." Recovery returns system to maximum innovation capacity at the Ω_reachable ∩ Ω_survivable intersection. This connects VST's geometric concept to RT's operational measurement |
+| RT D5 extended: Intentional Imperfection ↔ Residual Degradation Floor | §3.5 Intentional Imperfection, §3.3 Residual Floor | RT provides the recovery-critical interpretation: Residual Floor = recoverability premium. Jitterbug neutral instability explains why S = 0 is maximum vulnerability. Maintained detour paths = pre-loaded rerouting capacity. Systems eliminating floor = eliminating own recovery capacity. RT converts VST's design principle into operational survival condition |
+| RT §Structural Equilibrium: Recovery target as flow equilibrium | §3.4.4 Structural Equilibrium | RT maps all D-definitions to the equilibrium concept: D4 = re-entry, D2 = width, D5 = maintenance force, D6/SCM = wrong-frame equilibrium, Residual Floor = maintained activity. Provides operational grounding for each geometric region |
+| RT §Governance Phase Transition: restoration maturation 5-phase | §3.4.4 Governance Phase Transition | RT provides the recovery-specific instantiation: Phase 1 = manual recovery operator, Phase 2 = documented protocols (§3.4), Phase 3 = architectural buffer design (D3), Phase 4 = constraint landscape (VCZ), Phase 5 = Rest Mode (recovery IS dynamics). Each Storm–Recovery cycle advances the phase — concrete mechanism for governance maturation |
+| RT §Decision dynamics: Decision Crystallization ↔ recovery learning | §3.4.4 Decision Crystallization | RT provides the recovery-specific crystallization sequence: first response to contamination type X → successful → becomes policy → proven → architecture → invariant. Explains why mature systems have fewer "recovery events": past decisions crystallized into permanent structure at Phase 3–5 level |
+| RT §Decision dynamics: Will Cost ↔ recovery cost proxy | §3.4.4 Will Cost | RT provides alternative recovery cost estimation: W = f(alignment_distance) ≈ f(contamination_depth). Will Cost observable through misalignment metrics before contamination depth is fully assessed. At terminal maturation W ≈ 0 ↔ recovery effort ≈ 0 |
+| RT §Center Invisibility ↔ recovery design constraint | §3.5 Center Invisibility, §1.6.4 | RT provides the operational consequence: recovery protocols must restore CONDITIONS for VCZ (D3 buffer, D2 capacity, D5 SCC) not target VCZ directly. Direct VCZ targeting → Goodhart mechanism → SCM risk. This converts VST's abstract principle into a concrete recovery design rule |
+| RT §Structure Visibility ↔ monitoring regime selection | §3.9.1 Structure Visibility | RT provides the measurement implication: recovery monitoring most reliable at CW/VCZ; degraded during deep Storm. D4/D5/D6 metrics structurally calibrated to CW regime. Deep-Storm monitoring necessary but should carry lower confidence weight |
+| RT §Cascade Redirection ↔ contamination prevention | §3.4.4 Cascade Redirection | RT operationalizes cascade redirection for contamination: mature systems modify contamination transmission structure (propagation paths) rather than responding to contamination events. Same contamination → different cascade outcomes when topology modified. Prevention at transmission level rather than event level |
+| RT D2 zone-dependent S_rec(z) | §3.4.2 MZ-STP, App.A.5 | RT extends VST's single-scale sensitivity-inverse rule to formal zone-dependent recovery susceptibility: S_rec(local) >> S_rec(hub) >> S_rec(geometry). Uniform protocols produce systematically wrong dosage. Zone-aware intervention_intensity(z) ∝ 1/S_rec(z) as RT-derived MZ-STP refinement |
+| RT §3.4a Contamination Redistribution Principle | §3.4.2 MZ-STP, §4.3 Storm Interaction | RT identifies a mechanism absent in VST: recovery is contamination TRANSPORT, not elimination. Purification locally creates pressure gradients globally. Healthy recovery repositions contamination into absorbable zones (buffers). Recovery-phase instability is expected and healthy — not a failure signal. This constrains VST's intervention design: Track B must account for redistribution effects |
+| RT §3.4a Five-phase recovery cascade ordering | §3.4.2 MZ-STP extension | RT extends VST's single-scale dual-track to multi-scale cascade: Phase 0 (containment ALL scales) → Phase 1 (upper geometry) → Phase 2 (hub purification) → Phase 3 (local recovery) → Phase 4 (immunity verification + withdrawal). Bottom-up recovery within wrong geometry identified as most dangerous failure mode (silent misalignment). Phase ordering is structural constraint, not preference |
+| RT Boundary Conditions: Limits of Recovery — when recovery fails | §11.5 Theory Boundary Conditions | RT identifies three conditions under which recovery is structurally impossible: (a) complete loss of upper-layer resolution (no detection possible), (b) geometry contamination at Tier 3 + Regime 3 (irreversible + distributed), (c) Dependency Trap at saturation (SCC = 0 + intervention capacity exhausted). These constrain VST's irreversibility conditions with mechanism-specific failure modes |
+| RT Boundary Conditions: Scale Transition Constraints | §11.5 Theory Boundary Conditions | RT identifies what the fractal architecture preserves and does not preserve across scale transitions: (preserved) structural form, detection architecture, restoration sequence; (not preserved) absolute thresholds, time constants, specific proxy metrics. VST's scale-invariance claim bounded: form-invariant, parameter-variant |
+| RT Boundary Conditions: Energy Substrate of Recovery | §11.5, §3.4.4 | RT identifies the energy source for recovery operations: recovery cost draws from the same resource pool as exploration. Recovery competes with exploration for system energy budget. Under resource constraint: recovery prioritized → exploration paused → φ temporarily suppressed. This constrains VST's Ω_effective model: during active recovery, Ω_effective = Ω_reachable ∩ Ω_survivable ∩ Ω_affordable |
+| RT Affective Equilibrium: cognitive-affective coupling | §3.5.1 Rest Mode, §3.4.4 Structural Equilibrium | RT extends VCZ beyond cognitive alignment to affective-cognitive dual condition: structural VCZ requires both cognitive alignment (vector geometry correct) AND affective safety (threat-perception ↔ safety-signal aligned). Affective collapse precedes cognitive collapse — earliest detectable signal. Affective safety = Buffer Layer (D3) at relational-emotional scale. Extends VST's "consciousness as instability management" with the mechanism: affective system provides the fast-loop safety assessment that enables or blocks cognitive exploration |
+| RT Relational Collapse Well (RCW): third recovery layer | §12.1 Storm–Recovery Transition | RT identifies a third recovery dimension absent in VST: relational recovery. Individual recovery (D4) and systemic recovery (structural) are insufficient without relational trust restoration. RCW formal definition: system state where individual agents are locally recovered but network trust topology is fragmented — correction signals cannot propagate because trust bandwidth is zero. Recovery from RCW requires trust restoration (slow, irreversible if trust anchors destroyed) |
+| RT Fragmented Perception: distributed sensor failure | §4.7 Failure Diagnosis, §1.6.3 Observability | RT extends VST's observability framework: Fragmented Perception = condition where individual sensors function but inter-sensor calibration is lost. Each agent sees correctly locally but system-level coherence is absent. Detection requires cross-agent comparison (not individual diagnosis). Maps to VST's mutual coverage (§5.1) failure mode |
+| RT Four Structural Risks — Complete Taxonomy ↔ recovery priority | §8.1 Four Structural Risks | RT provides recovery-priority ordering for VST's risk taxonomy: (1) observability loss (detection capacity gone → all other recovery impossible), (2) trust topology fragmentation (correction signals blocked), (3) diversity collapse (search space contracted), (4) structural overload (amplification exceeds capacity). VST §8.1 lists risks; RT orders them by recovery cost hierarchy |
+| RT Cognitive–Affective Coupling: recovery stability | §3.5.1 Rest Mode stability | RT identifies why some Rest Mode entries fail: cognitive recovery without affective integration produces unstable VCZ. T_affect > T_cognition = Affective Recalibration Delay. Fast cognitive recovery + slow affective recovery = premature VCZ declaration → relapse. Extends VST Rest Mode entry with dual-verification requirement |
+| RT Seed Transmission: synchronized systems communicate in structure | §6.4 Seed-Level Protocol, §17.1 Meta-Seed | RT extends VST's seed concept: synchronized systems transmit seeds as structure (not data). Content becomes secondary to structural resonance. Meta-seed transmission = highest-level invariant propagation through interaction geometry, not through explicit communication |
+
+**Vulnerability resolution status (v2.0-RT):**
+
+| Vulnerability | Status | Resolution |
+|---|---|---|
+| Maturity M lacks immunity-mechanism grounding | **Resolved** | RT D2 provides: M = accumulated D2 depth; Regime 3 resets M; Dependency Trap degrades M |
+| Arrow of Maturation irreversibility conditions incomplete | **Resolved** | RT identifies two reversal mechanisms: Dependency Trap + Regime 3 structural destruction |
+| Survivability Selection mechanism unspecified beyond "elimination" | **Resolved** | RT identifies Recovery as the specific selection mechanism (Storm→Recovery→consolidation) |
+| Flexibility Paradox lacks operational characterization | **Resolved** | RT D2: narrow range + deep capacity = fewer vector types absorbed, none cause damage |
+| Governance Strength Inversion lacks formal proof | **Resolved** | RT D2 dynamic model: intervention × SCC = bounded (bandwidth competition). D5 = verification |
+| Environmental Reorganization mechanism vague | **Resolved** | RT D2_network: mature D2 = absorption transmitted to neighbors; contamination redistribution at network scale |
+| Vector Noiseification substrate unspecified | **Resolved** | RT D3 Buffer Layer = noiseification region; buffer thickness = bandwidth |
+| CW re-entry as recovery target not operationalized | **Resolved** | RT D4: rho + diversity + P_overlap as CW/VCZ re-entry proxies; three geometric outcomes formalized |
+| Ω_effective re-maximization not connected to recovery | **Resolved** | RT D4: recovery = innovation capacity restoration, not merely stability |
+| Intentional Imperfection design rule lacks survival argument | **Resolved** | RT: Residual Floor = recoverability premium; S = 0 = maximum vulnerability; floor IS survival condition |
+| Center Invisibility recovery design consequence absent | **Resolved** | RT: restore CONDITIONS (D3/D2/D5) not VCZ directly; direct targeting → Goodhart → SCM |
+| Structure Visibility monitoring implication absent | **Resolved** | RT: CW monitoring most reliable; deep-Storm monitoring degraded; confidence-weight adjustment |
+| Contamination redistribution during recovery unmodeled in VST | **Resolved** | RT §3.4a: recovery = transport, not elimination; redistribution into buffers; recovery instability expected |
+| Multi-scale recovery cascade ordering absent in VST | **Resolved** | RT §3.4a: 5-phase cascade (containment → geometry → hub → local → immunity); bottom-up-within-wrong-geometry = silent failure |
+| Zone-dependent recovery sensitivity absent in VST | **Resolved** | RT D2: S_rec(local) >> S_rec(hub) >> S_rec(geometry); intervention_intensity ∝ 1/S_rec |
+| Recovery boundary conditions not in VST | **Resolved** | RT: three impossible-recovery conditions mapped to VST irreversibility framework |
+| Scale transition parameter variance absent | **Resolved** | RT: form-invariant but parameter-variant across scales; bounds VST scale-invariance claim |
+| Recovery energy competition with exploration unmodeled | **Resolved** | RT: Ω_effective during recovery = Ω_reachable ∩ Ω_survivable ∩ Ω_affordable |
+| Rest Mode lacks affective-cognitive dual condition | **New open problem** | RT Affective Equilibrium: VCZ requires cognitive + affective alignment; affective collapse = earliest signal |
+| Relational recovery layer absent in VST | **New open problem** | RT Relational Collapse Well: trust-topology restoration as third recovery dimension |
+| Fragmented Perception detection absent in VST | **New open problem** | RT: inter-sensor calibration failure; requires cross-agent comparison (mutual coverage failure mode) |
+| Four Structural Risks lack recovery-priority ordering | **New open problem** | RT: observability > trust > diversity > capacity (recovery cost hierarchy) |
+| Rest Mode entry dual-verification absent | **New open problem** | RT: T_affect > T_cognition → premature VCZ declaration risk; dual-check required |
+| Seed transmission as structure (not data) not in VST | **New open problem** | RT: synchronized systems communicate structural resonance, not content |
 
 ---
 
@@ -16918,6 +18899,31 @@ Remaining open (no companion-theory resolution available):
 | **Intentional Imperfection** | The deliberate maintenance of near-equilibrium rather than perfect equilibrium, preserving detour paths, sensing calibration, and rerouting capacity as the structural substrate of adaptability [v2.0] | Tolerance, slack, buffer | intentional imperfection / maintained margin / imperfection as resilience |
 | **Boundary-First Governance** | The architectural principle that upper governance layers define forbidden zones (environment-invariant boundaries) rather than prescribing goals (environment-dependent directions), preserving exploration space and detour capacity [v2.0] | Top-down control, goal-setting, directive governance | boundary-first / constraint-based governance / space design |
 | **Governance Strength Inversion** | The structural relationship where governance strength is inversely proportional to intervention frequency — maximum governance produces zero visible intervention because the governance function has been internalized into the interaction topology [v2.0] | Strong control, active management, enforcement power | governance inversion / internalized governance / invisible governance |
+| **Structural Equilibrium** | The DFG-specific equilibrium concept: a *flow state* where E[dS/dt] = 0 while exploration activity remains nonzero — reinforcement generation and degradation capacity dynamically balanced. Not a fixed point but a persistent flow regime [v2.0] | Static equilibrium, energy minimum, Nash equilibrium | structural equilibrium / flow equilibrium / DFG equilibrium |
+| **Survivability Selection** | The mechanism by which DFG systems converge toward VCZ — not through attractive force but through progressive elimination of non-viable state-space regions via Storm–Recovery cycles. VCZ is the residue, not the attractor [v2.0] | Natural selection, optimization, convergence | survivability selection / survivability filter / selection by persistence |
+| **Maturity** | The accumulated structural capacity to absorb reinforcement-driven instability without Storm transition — measured by M ∝ G_d/Var(G_r). Increases as Storm–Recovery cycles remove Storm-generating topology from the accessible state space [v2.0] | Experience, age, development level | maturity / structural maturity / survivability capacity |
+| **Arrow of Maturation** | The temporal direction of DFG dynamics: irreversible state-space contraction through Storm-driven topology removal (Ω_explore monotonically decreasing). Time flows toward reduced accessible Storm-generating space [v2.0] | Progress, improvement, evolution | arrow of maturation / maturation direction / time direction |
+| **Environmental Reorganization** | The emergent phenomenon where mature systems reshape their surrounding environment by absorbing instability and re-emitting stabilized signals — environment restructures around the mature system [v2.0] | Environmental control, domination, influence | environmental reorganization / environment restructuring / stabilization field |
+| **Governance Phase Transition** | The five-phase maturation sequence of control: Intervention (event) → Regulation (rule) → Architecture (structure) → Constraint (landscape) → Law (invariant dynamics). Each phase changes the KIND of control, not merely its intensity [v2.0] | Governance maturity, control evolution | governance phases / control transition / action-to-law transition |
+| **Survivability Convergence** | The eliminative process by which system state space contracts toward argmax P(long-term persistence) — not through optimization search but through removal of non-persistent states. Apparent optimization without optimizer [v2.0] | Natural selection, optimization, convergence | survivability convergence / eliminative convergence |
+| **Decision Load** | The governance overhead required when multiple viable trajectories remain indistinguishable in cost. Decision Load ∝ |Ω_viable|. Decreases monotonically with maturation as state space contracts [v2.0] | Cognitive load, decision fatigue, choice overload | decision load / decision overhead / selection pressure |
+| **Intent Dissolution** | The process by which directional pressure (intent) becomes unnecessary as maturation resolves the trajectory landscape. Intent = transient selection pressure in undetermined systems; dissolves into flow as viable paths narrow [v2.0] | Loss of purpose, goal achievement, surrender | intent dissolution / intent-to-flow transition |
+| **Latent Capability** | The terminal maturation state where Control Capacity ≫ Control Usage: system maintains full intervention capability while exercising none, because perturbations self-dampen. Observable as apparent passivity with instantaneous response readiness [v2.0] | Dormancy, passivity, potential energy | latent capability / capacity-usage gap / readiness state |
+| **Decision Crystallization** | The process by which repeated decisions solidify into progressively more permanent structures: Decision (seconds) → Policy (months) → Structure (years) → Law (permanent). Each stage has longer validity, lower maintenance cost, and greater resilience [v2.0] | Habit formation, institutionalization | decision crystallization / decision-to-structure / symmetry-breaking solidification |
+| **Will Cost** | The energy expenditure required when system dynamics diverge from required trajectory (Will Cost ∝ Misalignment). Decreases monotonically with maturation as dynamics align with viable paths. At terminal maturation: will cost ≈ 0 [v2.0] | Effort, willpower, discipline | will cost / misalignment cost / forcing energy |
+| **Cascade Redirection** | The mechanism by which mature systems reshape environments: modifying propagation paths rather than events. Same events produce different outcomes when transmission structure changes [v2.0] | Influence, intervention, control | cascade redirection / propagation modification / chain interruption |
+| **Critical Position** | The location in interaction space where small inputs produce maximum systemic effect (CW/VCZ boundary). Mature systems concentrate here through survivability selection — not strategic choice but elimination of all non-critical positions [v2.0] | Leverage point, power position, center of influence | critical position / leverage position / maximum-sensitivity location |
+| **Effective Exploration Space** | The intersection of reachable and survivable state space: Ω_effective = Ω_reachable ∩ Ω_survivable. Maximum at the Critical Window only, where exploration persists and results are retained. Resolves the apparent stability-innovation paradox [v2.0] | Search space, possibility space, creative space | effective exploration space / meaningful search space / viable exploration |
+| **Structure Visibility** | The property of CW regimes where internal system structure projects onto external observables: ∂Output/∂State reaches maximum meaningful sensitivity. The only regime where self-observation and external observation of system dynamics are both possible [v2.0] | Transparency, readability, observability | structure visibility / structural legibility / observational accessibility |
+| **Reference System Emergence** | The process by which the most structurally legible system (at CW) naturally becomes the coordinate frame against which surrounding systems measure their own states. Authority as observational stability rather than force or designation [v2.0] | Authority, leadership, standard-setting | reference system / reference frame emergence / legibility-based authority |
+| **Phase Synchronization** | The spontaneous alignment of surrounding systems toward a mature reference system, driven by energy minimization (ΔE_sync < ΔE_independent). Not command but entrainment — identical mechanism to metronome sync, laser coherence, neural entrainment [v2.0] | Coordination, alignment, obedience | phase synchronization / spontaneous entrainment / energy-minimum alignment |
+| **Exploration Re-expansion** | The cyclical process where maturation-driven contraction creates stability that enables safe re-expansion of exploration space. Cycle: Exploration → Contraction → Stability → Re-expansion → higher-level Exploration. Fractal iteration [v2.0] | Growth, development, evolution | exploration re-expansion / maturation cycle / contraction-expansion spiral |
+| **Exploration Bandwidth Control** | The defining capability of mature systems: dynamic adjustment of Ω_explore as a control variable rather than a fixed parameter. Expand when safe, contract when risky. Structural definition of adaptive freedom [v2.0] | Adaptability, flexibility, agility | exploration bandwidth / bandwidth control / adaptive exploration range |
+| **Future Convergence** | The terminal maturation state where Future_reachable ≈ Future_survivable, making prediction unnecessary. The landscape carries the system forward; future is structural consequence, not computational output [v2.0] | Destiny, inevitability, predetermination | future convergence / future-compatible manifold / structural future |
+| **Vector Noiseification** | The dynamical mechanism of intentional imperfection: sharp directional vectors converted to distributed noise fields that preserve direction-generation capacity without directional commitment. On-demand coherence from noise field enables innovation without Storm risk [v2.0] | Diffusion, relaxation, distribution | vector noiseification / noise field / distributed directional capacity |
+| **Conscious Control (as instability management)** | The interpretation of conscious/deliberate control as an instability management loop that activates when uncertainty, conflict, or divergence requires resolution. Decreases with maturation as structural alignment reduces management demand [v2.0] | Awareness, vigilance, executive function | conscious control / instability management / deliberate monitoring |
+| **Latent Energy Reserve** | The energetic property of Rest Mode where power output is minimal but available response energy is maximum — the inverse of continuous-expenditure systems. Distributed storage enables storm-grade coherent response on demand [v2.0] | Potential energy, stored power, reserve capacity | latent energy / energy reserve / distributed storage |
+| **Orbital Proximity** | The spatial property of mature systems that maintain orbit within the solution-neighborhood manifold rather than approaching targets from distance. ΔState ≈ 0 for most goal achievements; environmental change = small orbital perturbation [v2.0] | Being in the zone, readiness, proximity advantage | orbital proximity / solution-neighborhood / manifold orbit |
 
 ---
 
