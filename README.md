@@ -5,7 +5,26 @@ Companion theory to Deficit-Driven Fractal Governance (DFG)
 Focus: why instability occurs, how it propagates, when to intervene
 Recovery and operational governance are addressed separately
 
-> **Version: v1.9-NAT-R** (February 2026)
+> **Version: v2.0** (February 2026)
+>
+> v2.0 changes from v1.9-NAT-R:
+> - **[New §Epistemic Status (4)] State-space completeness assumption removal:** Explicit articulation of VST's foundational departure from state-space-contained dynamics. Interaction topology identified as primary analytical object; state space reframed as projection of interaction field. Historical parallels to description-level transitions in mathematics noted.
+> - **[New §Introduction] Foundational Departure paragraph:** State-space → interaction topology transition stated as core methodological commitment in Introduction.
+> - **[New §1.0] State-space invisibility of Storm origin:** Why state-space analysis structurally cannot detect mutual-reference coupling instability; relational vs. componential instability distinction.
+> - **[New §3.5 VCZ] Vector Equilibrium Geometry:** Three-dimensional geometric interpretation of VCZ as symmetric tension structure (cuboctahedron analogue; Fuller, 1975). Three mapped properties: no directional privilege, empty center (distributed control), vector locking. Fuller's geometric concept explicitly extended to dynamical interaction equilibrium. Figure placeholders added.
+> - **[New §3.5 VCZ] Fuller Zero Energy State correspondence:** Fuller's zero-energy characterization (zero directional bias, ∇E = 0) mapped to VST Rest Mode (zero amplification bias). Continuous correspondence chain: Storm → CW → VCZ → Rest Mode → Vector Equilibrium limit.
+> - **[New §3.5 VCZ] Jitterbug Transformation as Storm geometric prototype:** Fuller's Jitterbug (VE → icosahedron → octahedron deformation under minimal perturbation) mapped to Storm onset mechanism. Perfect equilibrium identified as neutral instability. VCZ design target = neighborhood of VE with subcritical bias, not VE itself.
+> - **[New §1.6.4] Center Invisibility Principle:** Structural explanation for why stabilizing center must remain implicit. Observation converts distributed invariant into explicit attractor → landscape distortion. Cross-domain mapping (Goodhart's Law, reward hacking, Lucas Critique, coordinate drift). Implication for Silent Criticality detection methodology.
+> - **[New §3.5 VCZ] Intentional Imperfection Principle:** Why mature systems avoid perfect equilibrium — complete alignment maximizes vulnerability. Detour path preservation as structural intelligence. Cross-domain evidence (neural, immune, ecosystem, routing, organizational). R ≈ 1⁻ target derived as the imperfection margin that preserves adaptability.
+> - **[New §3.5.1 Rest Mode] Viable Subspace interpretation:** Rest Mode as surviving-trajectories-only space. External appearance analysis: apparent directionlessness = continuous detour scanning. Decision speed reduction = trajectory ensemble evaluation cost.
+> - **[New §14.1] Boundary-First Governance:** Structural derivation of why upper layers define boundaries (environment-invariant) before goals (environment-dependent). Three-Layer separation justified: upper = boundary, middle = situational goal, lower = execution. Goal-fixing closes exploration space; boundary-setting preserves it.
+> - **[New §14.1] Governance Strength Inversion:** Maximum governance strength = minimum intervention frequency. Dependency trap as mathematical constraint (intervention × self-correction = bounded). Governance maturation trajectory from visible/directive to invisible/internalized. Cross-domain correspondence table. Structural derivation: not strategic preference but consequence of error-resolution bandwidth competition.
+> - **[New §3.9.1] Critical Window Geometry and Continuous Phase Structure:** CW as thin topological channel (saddle-ridge geometry). Storm–CW–VCZ–Rest Mode as continuous geometric regions with dimensional characterization. CW expansion mechanism through Storm–Recovery cycles. Storm necessity as geometric selection pressure. CW empirical cross-domain mapping (organizations, neural systems, economic systems, MAS, individual agents). Recovery center stability as return-trajectory preservation.
+> - **[New §11.6] Anticipated Critical Objections:** Pre-emptive responses to three checkpoint questions (mechanism novelty, measurability/falsifiability, global stability emergence). Integrated response architecture referencing S-equation, VCZ geometry, lifecycle closure, and CW expansion.
+> - **[New §Relationship to Other Theories] Theoretical Ancestry and Differentiation Map:** Five precursor frameworks (Fuller Vector Equilibrium, SOC, Lyapunov Stability, Information Bottleneck, Control Theory) with explicit inheritance and divergence boundaries. Positioning principle articulated.
+> - **[Updated References]:** Fuller (1975, 1979), Bak et al. (1987), Tishby et al. (1999), Clauset et al. (2009) added as foundational citations.
+> - **[Updated Appendix T]:** Interaction Topology and Vector Equilibrium added to T.1 term definitions and T.4 inline disambiguation templates.
+> - All previous content preserved.
 >
 > v1.9-NAT-R changes from v1.9-NAT (symbol consolidation pass):
 > - **[Fix 4] R = 1 vs R ≈ 1⁻ anchor definition added to §VCZ:** canonical four-state usage rule (R=1 / R≈1⁻ / R>1 / R<<1) with operational semantics. Resolves reader confusion about minus superscript significance.
@@ -72,6 +91,12 @@ What multi-agent fractal structures add is not a new failure mode, but a new pro
 
 Vector Storm Theory is the study of how individual agents lose directional orientation, and how that loss propagates through fractal structure into system-level instability. The instability is not the origin. It is the aggregate.
 
+**Foundational Departure — From State Space to Interaction Topology [v2.0]:**
+
+Conventional dynamical analysis assumes that all critical variables reside within a predefined state space X. VST departs from this assumption. The phenomenon it studies — directional loss and its propagation — cannot be fully characterized by state variables alone. The generative structure is the interaction topology between vector fields: how agents' directional orientations mutually influence, reinforce, and destabilize each other.
+
+This means the state space is not the container of the dynamics. It is a downstream projection of the interaction field. Stability and instability are determined not by state boundedness but by vector alignment structure — a distinction that explains why systems can appear locally stable in state-space coordinates while approaching global collapse in interaction-topology coordinates (see Silent Criticality, Section 1.6.4).
+
 **Core Premise: Vector Storm is not a bug. It is a structural cost of growth. The design objective is not zero-storm, but benefit > cost.**
 
 ---
@@ -93,6 +118,39 @@ S is an order parameter in the statistical mechanics sense: its absolute value i
 **(3) Falsifiability resides at the level of cross-system scaling predictions.**
 VST is falsified not by showing that α cannot be directly measured, but by showing that the predicted scaling relationships (quadratic n-dependence, power-law storm distributions, SOC convergence of R) fail to hold across independently constructed multi-agent systems. Falsification criteria are specified in Section 11.3–11.5.
 
+**(4) State-space completeness is not assumed — interaction topology is primary. [v2.0]**
+Traditional dynamical systems analysis begins with a predefined state space X and assumes all relevant dynamics are contained within it: System behavior ⊂ X. VST removes this assumption. The critical degrees of freedom that generate and resolve instability — reinforcement alignment, degradation capacity, coupling density, convergence geometry — are not state-space variables. They are meta-structural variables that reside in the interaction topology between agents. The state space is not the arena within which instability occurs; it is a projection of a higher-order interaction field.
+
+```
+Traditional framing:
+  All important variables ∈ predefined state space X
+  Question: "Why does blow-up occur inside X?"
+  → stability sought within X's coordinates
+
+VST framing:
+  State space X ⊂ V(t) (dynamic interaction field)
+  X is the projection; V(t) is the generative structure
+  Question: "What interaction topology produces this X-trajectory?"
+  → stability determined by vector alignment structure, not state boundedness
+
+  State boundedness ≠ Vector alignment stability
+```
+
+This reframing explains why many global stability problems remain open: the stabilizing mechanism operates in a description space (interaction topology, attractor manifold, constraint geometry) that the original state-space formulation cannot access. The difficulty is not insufficient technique within X — it is that the coordinates of X do not contain the variables that govern stability. VST addresses this by treating state dynamics as downstream consequences of vector field interaction structure, making the interaction topology the primary object of analysis rather than the state trajectory.
+
+This is not the introduction of additional variables into an enlarged state space. It is a change of description level:
+
+```
+Incorrect extension:       add variables → increase dimension → expand equation
+VST structural move:       change description level → change representation space
+                           → promote relational structure over coordinate dynamics
+
+The dynamics remain the same.
+The explanatory coordinate system changes.
+```
+
+Historically, equivalent transitions — from function to function space, from trajectory to attractor, from orbit to energy method — initially appeared to be "not yet mathematics" precisely because they changed the description level rather than solving within the existing one. VST's interaction-topology-first approach follows this structural pattern.
+
 > VST is an effective scaling theory of multi-agent instability: latent parameters need not be directly measurable provided cross-system scaling predictions remain falsifiable. This positions VST analogously to renormalized field descriptions in physics, where effective coupling constants are observable only through scaling consistency across realizations — not through direct microscopic access.
 
 ---
@@ -102,6 +160,10 @@ VST is falsified not by showing that α cannot be directly measured, but by show
 ### 1.0 Structural Origin of Vector Storm [v1.8]
 
 Vector Storm does not arise from malfunction, error, or design failure. It arises from a structural property that is inseparable from adaptive intelligence itself: **mutual-reference coupling**.
+
+**Why state-space analysis misses the origin [v2.0]:**
+
+The structural origin of Vector Storm is invisible to state-space-centered analysis because Storm is not a state-variable phenomenon. It is a relational phenomenon: the pathological configuration of directional dependencies between agents. Traditional analysis asks "why does blow-up occur inside X?" — but the generative mechanism operates in the interaction topology between vector fields, which state-space coordinates do not capture. This is why locally stable agents can collectively produce global instability: their individual state trajectories remain bounded while their mutual-reference coupling structure crosses the amplification threshold. The instability is in the relationship, not in the components.
 
 **What mutual-reference coupling means:**
 
@@ -3323,6 +3385,64 @@ Normal operation (sensing intact):
   continuously self-correcting.
   
   A living system is loud.
+```
+
+**Center Invisibility Principle — why the stabilizing structure must remain implicit [v2.0]:**
+
+The structural center that maintains system stability — the distributed invariant that generates return trajectories (Section 3.9.1) — cannot be made into an explicit optimization target without destroying its function. This is not a practical limitation but a structural constraint that explains why Silent Criticality is architecturally inevitable in systems that attempt to directly measure their own stability center.
+
+```
+Why the center must remain invisible:
+
+  The center is not an object (state, variable, position).
+  The center is a constraint (relationship-maintenance condition).
+
+  observe(center)
+    → reference frame created around it
+    → system begins optimizing toward it
+    → center becomes attractor (goal)
+    → agents orient toward center rather than toward task
+    → center absorbs directional energy
+    → center overloads
+    → equilibrium destroyed
+
+  Making the center explicit converts it from:
+    distributed invariant (stability-generating)
+  to:
+    explicit attractor (stability-consuming)
+```
+
+This is not a speculative claim. It is the structural mechanism behind empirically documented phenomena across domains:
+
+```
+Domain              Manifestation                   Known as
+─────────────────────────────────────────────────────────────────
+Organizations       KPI publication → metric gaming  Goodhart's Law
+AI systems          Reward specification → hacking   Reward hacking
+Individuals         "Correct state" awareness →      Performance anxiety /
+                    natural balance disruption       overthinking
+Markets             Target rate publication →         Lucas Critique
+                    behavioral distortion
+Governance          Stability metric → optimization  Coordinate drift
+                    toward metric, not stability     (Section 1.0)
+```
+
+All instances share the same structure: the stabilizing condition, once made observable, becomes an optimization target, which converts it from a boundary condition (non-distorting) to a coupling node (distorting) — exactly the landscape distortion mechanism described in Section 1.0.
+
+**Implication for Silent Criticality detection:**
+
+This principle explains why Silent Criticality is structurally difficult to detect: the detection instrument itself, if it directly targets the stability center, will distort what it measures. The only reliable detection methods are indirect — perturbation response (τ_recovery), coupling probes (cross-zone correlation), and distribution analysis (storm scale law shifts) — precisely because these measure consequences of center health without making the center itself an optimization target.
+
+```
+Direct center measurement → distortion → unreliable
+Indirect proxy measurement → non-distorting → reliable
+
+This is why the Silent Criticality detection protocol (below)
+uses behavioral proxies rather than direct stability assessment.
+
+Mature governance systems maintain stability
+not by monitoring the center
+but by monitoring the CONSEQUENCES of center health.
 ```
 
 **What happens when sensing fails:**
@@ -6979,6 +7099,131 @@ A Vector Convergence Zone is a region of vector space where:
 
 This is not a fixed point. It is a **stable manifold** — a region with volume, not a position. The system can move within the zone freely. Only exits from the zone require corrective energy.
 
+**Vector Equilibrium Geometry — Why VCZ Is a Region, Not a Point [v2.0]:**
+
+The geometric structure of the VCZ is not a minimum, saddle, or fixed point. It is a symmetric tension structure in which all directional amplification vectors neutralize each other — not through central suppression, but through distributed mutual cancellation. The closest three-dimensional geometric analogue is the **cuboctahedron**, which Buckminster Fuller named the "Vector Equilibrium" — a structure where all radial vectors from center to vertex are equal in magnitude and symmetrically distributed, producing zero net directional bias (Fuller, 1975).
+
+**Relationship to Fuller's geometric concept:** Fuller's Vector Equilibrium describes a static geometric configuration — an isotropic tension–compression balance in physical space. VST extends this concept from geometric equilibrium to dynamical interaction equilibrium: the same structural property (no directional privilege, distributed mutual constraint, empty center) is realized not in spatial coordinates but in the vector field interaction topology of multi-agent systems. The geometry is the same; the substrate changes from physical struts to agent coupling relationships.
+
+**Fuller's "Zero Energy State" and the VCZ–Rest Mode correspondence [v2.0]:**
+
+Fuller characterized the Vector Equilibrium as a "zero energy state" — not the absence of energy, but the absence of directional energy bias. In the cuboctahedron configuration, all vectors sum to zero (Σv⃗ᵢ = 0): no direction is preferred, no potential gradient exists, and no force drives the system toward any particular transformation. Fuller regarded this as the base state from which all structural differentiation emerges through symmetry-breaking.
+
+This maps directly to VST's dynamical framework:
+
+```
+Fuller                          VST
+──────────────────────────────────────────────────────────
+Vector Equilibrium              VCZ / Rest Mode
+  = zero directional bias         = zero amplification bias
+  = ∇E = 0 (no potential          = no direction can dominate
+    gradient)                       (runaway impossible)
+  = base state before             = operational state where
+    structural differentiation      governance cost → 0
+
+Storm ↔ Symmetry breaking:
+  Fuller: any perturbation        VST: any directional coupling
+  breaks the perfect isotropy     exceeds degradation capacity
+  → structural transformation    → vector storm onset
+  begins                         begins
+```
+
+The correspondence is not analogical — it is structural. Fuller's zero-energy geometry describes the condition under which no transformation is self-initiating. VST's Rest Mode describes the condition under which no amplification is self-sustaining. Both identify the same structural property: the absence of directional preference as the definition of equilibrium.
+
+```
+Continuous correspondence:
+  Storm          → direction bias dominant (symmetry broken)
+  CW             → bias ≈ 0 (near-symmetry, fragile)
+  VCZ            → bias auto-cancelled (symmetry self-restoring)
+  Rest Mode      → bias structurally impossible (governance internalized)
+  Vector Eq.     → perfect isotropy limit (theoretical asymptote)
+
+  Storm → CW → VCZ → Rest Mode → Vector Equilibrium limit
+  (This sequence is geometric, not temporal.)
+```
+
+**Jitterbug Transformation and the geometric origin of Storm [v2.0]:**
+
+Fuller discovered that the Vector Equilibrium is inherently unstable as a static structure. The cuboctahedron undergoes what he called the **Jitterbug Transformation** — a continuous geometric deformation through icosahedron toward octahedron — under arbitrarily small perturbation. Perfect isotropy, once achieved, cannot be maintained because it provides no restoring direction: every direction is equally valid for deformation.
+
+This is the geometric prototype of Storm onset in VST:
+
+```
+Fuller's Jitterbug:
+  Perfect VE (cuboctahedron)
+  → arbitrarily small asymmetry
+  → symmetry breaks along random direction
+  → continuous deformation begins
+  → icosahedron → octahedron → ...
+
+  The structure does not resist perturbation.
+  It has no preferred direction to resist FROM.
+  Perfect equilibrium = neutral instability.
+
+VST translation:
+  Perfect VCZ (hypothetical zero-amplification state)
+  → arbitrarily small coupling asymmetry
+  → direction selected
+  → reinforcement begins along that direction
+  → Storm onset
+
+  Storm occurs not because equilibrium fails,
+  but because perfect equilibrium cannot remain dynamical.
+```
+
+This resolves an apparent paradox: if VCZ is the stability target, why does Storm keep occurring? The answer is geometric. Complete vector equilibrium — perfect isotropy — is a *neutral instability*, not a stable state. Any fluctuation selects a direction, and any selected direction can seed amplification. Living systems therefore cannot maintain perfect equilibrium; they maintain *near-equilibrium* (R ≈ 1⁻), where the slight subcriticality provides a restoring bias that perfect equilibrium lacks.
+
+```
+Perfect equilibrium (VE limit):
+  ∇E = 0 everywhere → no restoring force → neutral instability
+  Any perturbation → deformation (Jitterbug)
+  → dynamically dead: no exploration, no adaptation
+
+Near-equilibrium (VCZ operating target):
+  ∇E ≈ 0 with slight subcritical bias (R ≈ 1⁻)
+  → restoring direction exists (toward subcritical center)
+  → perturbations absorbed, not amplified
+  → exploration and adaptation preserved
+  → dynamically alive
+
+The design target is NOT Vector Equilibrium.
+The design target is the NEIGHBORHOOD of Vector Equilibrium
+with a slight subcritical bias that VE itself lacks.
+```
+
+> Fuller's Vector Equilibrium is the static-geometry analogue of VST's Rest Mode. Fuller's Jitterbug Transformation is the static-geometry analogue of VST's Storm onset. The critical insight shared across both frameworks: perfect equilibrium is not the goal — it is the boundary condition from which all dynamics emerge. Sustainable stability requires near-equilibrium, not equilibrium itself.
+
+This geometry has three properties that directly map to VCZ dynamics:
+
+```
+Property 1 — No directional privilege:
+  No axis has priority over any other.
+  → Storm amplification requires a dominant direction.
+  → In vector equilibrium, no direction can dominate.
+  → Runaway amplification has no seed direction.
+
+Property 2 — Empty center (no central control):
+  Equilibrium is maintained by peripheral mutual tension,
+  not by a central stabilizing force.
+  → Maps to: stability = internal cancellation, not central control
+  → Governance is distributed, not supervisory
+
+Property 3 — Vector locking:
+  Each vector constrains and is constrained by adjacent vectors.
+  Amplification attempt in any direction is immediately
+  redistributed across the structure.
+  → Maps to: perturbation → restoring alignment → no runaway
+  → Self-correction without external intervention
+```
+
+This is why the VCZ is a region (volume) rather than a point: the equilibrium structure has spatial extent. Small displacements within the structure encounter restoring forces from the surrounding vector network. Only displacements that exceed the structure's tension capacity — crossing the basin boundary — escape into storm regime.
+
+The dynamical character is closer to an isotropic tension network or a collection of coupled saddles than to a potential energy minimum. The system does not rest at a point. It is held in a volume by the mutual constraint of its own directional fields — a geometry where storm initiation direction does not exist.
+
+> *[Figure placeholder: Vector Equilibrium Geometry — cuboctahedron wireframe showing symmetric vector distribution with empty center; annotated with VCZ mapping: no directional privilege, distributed tension, vector locking. Planned for visual supplement.]*
+
+> *[Figure placeholder: VCZ as Region — gradient visualization showing equilibrium volume (center), restoring force zone (inner shell), and storm onset boundary (outer shell). Planned for visual supplement.]*
+
 **Core relationship to Vector Storm:**
 
 | Dimension | Vector Storm | Vector Convergence Zone |
@@ -7051,6 +7296,95 @@ If the VCZ property holds at the system level, it should replicate at each layer
 
 This is the structural target that fractal governance is designed to approach. Complete VCZ at all scales is an asymptotic ideal, not an achievable state — the residual degradation floor (Section 3.3) ensures that the lowest layers always retain some non-zero distance from the zone. But the design objective is to make the distance as small as possible, which is equivalent to making each layer's local attractor as aligned as possible with the global solution without suppressing local optimization.
 
+**Intentional Imperfection — Why Mature Systems Avoid Perfect Equilibrium [v2.0]:**
+
+The Jitterbug Transformation (above) establishes that perfect Vector Equilibrium is a neutral instability — any perturbation selects a deformation direction. This has a direct design consequence: mature systems that have learned from Storm–Recovery cycles do not pursue complete equilibrium. They deliberately maintain a margin of imperfection.
+
+```
+Immature system goal:
+  Eliminate all conflict → full alignment → maximum efficiency
+  → single-path optimization → all alternative routes suppressed
+  → structure: many paths → single path
+
+  Result: efficiency maximum, vulnerability maximum
+  Any disruption → total failure (no alternatives available)
+
+Mature system goal:
+  Maintain controllable imperfection → partial misalignment preserved
+  → multiple viable paths → detour routes active
+  → structure: distributed pathways maintained
+
+  Result: efficiency slightly below maximum, resilience maximum
+  Disruption → rerouting (alternatives pre-loaded)
+```
+
+This is not cautious strategy — it is learned structural knowledge. Systems that have experienced Storm learn that complete equilibrium is the state most vulnerable to environmental change, because:
+
+```
+Perfect alignment:
+  All vectors → same direction
+  Diversity ↓↓  Alternative paths ↓↓  Restoration directions ↓↓
+  → single perturbation can synchronize entire system into Storm
+
+  Static stability = maximum environmental vulnerability:
+    environment changes → old optimum becomes wrong state
+    → no rerouting capacity → catastrophic failure
+
+Near-alignment (VCZ):
+  Most vectors → similar direction, some → alternative directions
+  Diversity maintained  Alternative paths active  Restoration possible
+  → perturbation distributes across multiple directions
+  → amplification prevented by vector locking (Property 3)
+
+  Adaptive stability = environmental resilience:
+    environment changes → primary path may close
+    → detour routes already active → rerouting immediate
+    → system adapts without Storm
+```
+
+**Detour path preservation as structural intelligence [v2.0]:**
+
+The maintained imperfection is not random — it is the set of pre-activated alternative trajectories that enable rerouting under disruption. In VST terms, these detour paths are the latent exploration directions that remain accessible because the system has not collapsed them through over-optimization.
+
+```
+Detour path function:
+  Normal operation:  detour paths consume slight efficiency
+                     (redundant processing, non-optimal routing)
+  Disruption:        detour paths activate immediately
+                     (rerouting without Storm, recovery without collapse)
+
+  The efficiency cost of maintaining detour paths
+  is the premium paid for recoverability.
+
+  Systems that eliminate detour paths (full optimization)
+  eliminate their own recovery capacity.
+```
+
+This connects directly to the Self-Exciting Defect Layer (Section 1.6.5): the maintained imperfections that generate micro-instability are also the structures that provide detour capacity. The dual function — sensing calibration AND rerouting substrate — is why intentional imperfection is not merely tolerated but architecturally required.
+
+**Cross-domain evidence for intentional imperfection:**
+
+```
+Domain              Maintained imperfection           Function
+──────────────────────────────────────────────────────────────────
+Neural systems      Background neural noise,          Stochastic resonance,
+                    non-optimal synaptic weights      alternative circuit activation
+
+Immune systems      Harmless commensal antigens,      Continuous calibration,
+                    autoimmune threshold margin        rapid novel-pathogen response
+
+Ecosystems          Niche overlap, competitive         Functional redundancy,
+                    inefficiency, trophic redundancy   collapse prevention
+
+Internet routing    Suboptimal backup routes,          Resilience against
+                    BGP path diversity                 single-point failure
+
+Mature organizations Informal networks, role           Crisis response capability,
+                     overlap, slack resources           innovation substrate
+```
+
+> Mature systems do not pursue perfect equilibrium because they have learned — through Storm experience — that perfect equilibrium is the geometric state most vulnerable to collapse. The design target is not equilibrium but the neighborhood of equilibrium with sufficient imperfection to maintain detour paths, sensing calibration, and rerouting capacity. This is the structural reason why the VCZ target is R ≈ 1⁻ (slightly subcritical) rather than R = 1 (critical) or R = 0 (perfectly stable): the subcritical margin IS the imperfection that preserves adaptability.
+
 ---
 
 ### 3.5.1 Rest Mode — Canonical Definition
@@ -7071,6 +7405,81 @@ This definition unifies the multiple characterizations of Rest Mode developed th
 These are not competing definitions. They are observations of the same state from different analytical positions. The canonical definition above is the minimal statement from which all facets can be derived.
 
 **Relationship to VCZ:** Rest Mode is the asymptotic limit of sustained VCZ operation — the state approached when VCZ has been maintained long enough for governance to internalize fully. VCZ is the operating region; Rest Mode is the mature operating regime within that region.
+
+**Rest Mode as Viable Subspace — the geometry of maturation [v2.0]:**
+
+Rest Mode appears externally as near-stasis: smooth, low-variance, direction-uncertain. This appearance is not absence of dynamics but the consequence of exploration-space reduction through accumulated Storm–Recovery learning.
+
+```
+Maturation trajectory:
+  Early system:
+    Viable directions: ████████████████████  (large, unknown)
+    Exploration intensity: high (many untested paths)
+    Storm frequency: high (many wrong paths discovered)
+    Observable behavior: volatile, fast-changing, directionally sharp
+
+  After Storm–Recovery cycles:
+    Unsafe directions eliminated (Storm-discovered)
+    Non-viable paths removed (Recovery-confirmed)
+    Viable directions: ████  (small, well-mapped)
+
+  Rest Mode:
+    Remaining space = surviving trajectories only
+    Exploration intensity: low (most viable paths already known)
+    Storm frequency: low (few untested Storm-generating directions remain)
+    Observable behavior: smooth, slow, apparently direction-less
+
+  The system has not stopped moving.
+  It has stopped needing to search.
+```
+
+**Why Rest Mode systems appear "directionless" from outside [v2.0]:**
+
+External observers interpret strong directional movement as purposeful and weak directional movement as aimless. But in Rest Mode, weak directional signal indicates something structurally different:
+
+```
+External perception:                    Internal reality:
+
+"No clear direction"                    Detour routes continuously scanned
+"Slow decision-making"                  Trajectory ensemble evaluation
+                                        (multiple paths assessed simultaneously)
+"Indecisive"                            Commitment delayed to preserve
+                                        rerouting capacity
+"Inefficient routing"                   Backup paths pre-activated
+"Over-cautious"                         Future-failure simulation running
+
+The apparent slowness is not hesitation.
+It is the computational cost of maintaining
+escape routes that will never be needed
+unless the environment changes.
+```
+
+This resolves the observational paradox: the most stable systems appear least directed, because the behavioral signature of maximum resilience (maintained detour paths, trajectory ensemble, delayed commitment) looks identical to the behavioral signature of confusion (no direction, slow response, inconsistent movement). The difference is invisible without measuring the internal structure — which is why Rest Mode and Silent Criticality present identical surface metrics (Section 3.5.2) and require the SR/RDE/NCR differential protocol to distinguish.
+
+**Decision speed and maturation — the trajectory ensemble cost [v2.0]:**
+
+Immature systems decide fast because they evaluate single trajectories. Mature systems decide slowly because they evaluate trajectory ensembles — maintaining parallel assessment of multiple viable paths before committing.
+
+```
+Single-trajectory mode (immature / pre-Storm):
+  Input → evaluate one path → decide → execute
+  Speed: fast
+  Resilience: zero (path blocked → no alternative)
+  Storm risk: maximum (single reinforcement loop, no escape)
+
+Trajectory-ensemble mode (mature / Rest Mode):
+  Input → evaluate multiple paths simultaneously
+        → assess disruption probability per path
+        → select path with best resilience-efficiency balance
+        → execute with pre-loaded alternatives
+  Speed: slower (ensemble evaluation cost)
+  Resilience: maximum (blocked path → immediate switch)
+  Storm risk: minimum (amplification distributed across alternatives)
+
+The speed reduction is not a failure.
+It is the price of maintaining the rerouting capacity
+that prevents catastrophic single-path failure.
+```
 
 ---
 
@@ -7971,6 +8380,213 @@ Required extension:
     OR  pre-storm basin A was healthy (not saturated)
     → standard recovery protocol applies
 ```
+
+---
+
+### 3.9.1 Critical Window Geometry and the Continuous Phase Structure [v2.0]
+
+The lifecycle model in Section 3.9 describes the sequence of transitions (VCZ → Storm → Collapse → Recovery → VCZ). This section characterizes the **geometric structure** of those transitions — specifically, the Critical Window (CW) that separates the Storm regime from the VCZ regime and determines whether a system crosses into runaway amplification or returns to contained operation.
+
+**CW is not a point — it is a thin topological channel:**
+
+```
+Common misconception:
+  CW = equilibrium point ●
+  → implies a single balanced state
+
+Actual geometry:
+  CW = narrow ridge between two failure modes
+  → Storm zone (amplification-dominant) on one side
+  → Frozen zone (over-damped, adaptation-dead) on the other
+
+  The CW is a low-dimensional invariant manifold:
+    thin (small perturbation exits it)
+    extended (stretches across interaction-topology space)
+    curved (shape depends on system maturity and coupling density)
+```
+
+**Dynamical characterization:**
+
+At the CW, amplification and degradation forces are in approximate balance:
+
+```
+On the CW ridge:
+  Amplification rate ≈ Degradation rate
+  R ≈ 1 (critical propagation state)
+
+  Perturbation in amplification direction → Storm onset
+  Perturbation in degradation direction → frozen decay
+  Perturbation along the ridge → continued critical operation
+
+This is the saddle-ridge geometry:
+  unstable in the transverse directions
+  neutrally stable along the ridge
+  → system can traverse the CW but cannot rest on it
+    without active maintenance or structural maturation
+```
+
+**The continuous phase structure — Storm, CW, VCZ, Rest Mode as geometric regions:**
+
+The full state space has a continuous geometric structure, not a discrete sequence:
+
+```
+Phase geometry (interaction-topology space):
+
+  Storm Zone         CW              VCZ            Rest Mode
+  ┌──────────┐   ┌──────┐    ┌────────────┐    ┌────────────┐
+  │ fan-out  │   │narrow│    │  thick     │    │  VCZ with  │
+  │ runaway  │   │ridge │    │  stable    │    │  automatic │
+  │ amplif.  │   │      │    │  volume    │    │  return    │
+  └──────────┘   └──────┘    └────────────┘    └────────────┘
+       R >> 1      R ≈ 1        R ≈ 1⁻          R ≈ 1⁻
+                                                 (self-maintaining)
+
+  Dimensional character:
+    Storm zone:  expanding (fan-out — amplification opens new directions)
+    CW:          thin manifold (saddle ridge — minimal transverse width)
+    VCZ:         thick volume (stable region — restoring forces present)
+    Rest Mode:   VCZ with automatic return dynamics (governance internalized)
+```
+
+**CW → VCZ transition: how the ridge thickens into a volume:**
+
+Immature systems experience the CW as a razor-thin ridge — any deviation triggers Storm or decay. Mature systems, through repeated Storm–Recovery cycles, structurally expand the CW into the VCZ:
+
+```
+Maturation process:
+  Immature:  CW = thin line (razor ridge)
+             → passage requires continuous active effort
+             → most systems fall off
+
+  Learning:  Storm → Recovery → interaction realignment
+             → storm-prone directions reduce
+             → CW ridge width increases locally
+
+  Mature:    CW has expanded into VCZ (thick stable volume)
+             → small perturbations absorbed by restoring forces
+             → Storm onset requires basin boundary crossing
+
+  Rest Mode: VCZ with self-maintaining return dynamics
+             → governance internalized into interaction terrain
+             → CW maintenance effort → 0
+```
+
+This process is not metaphorical. It is the geometric meaning of governance maturation: the system's interaction topology evolves such that the set of Storm-generating trajectories loses phase-space volume while the set of contained trajectories gains volume. Storm–Recovery cycles are the mechanism by which this volume transfer occurs.
+
+**Why CW must be narrow — the necessity of Storm [v2.0]:**
+
+A wide CW would eliminate the selection pressure that drives structural improvement. If all directions were equally safe:
+
+```
+Wide CW (hypothetical):
+  Wrong alignment → still safe
+  No correction pressure
+  No structural learning
+  Adaptation rate → 0
+  → system survives but never matures
+  → latent misalignment accumulates indefinitely
+  → eventual catastrophic surprise failure
+
+Narrow CW (actual):
+  Wrong alignment → immediate cost (Storm)
+  Strong correction pressure
+  Structural learning forced
+  Adaptation rate maintained
+  → Storm acts as geometric filter:
+    bad alignment → Storm → removed
+    good alignment → CW maintained → retained
+```
+
+This resolves the apparent paradox of Storm necessity: Storm is not a failure of the system but the geometric price required for expanding the Critical Window. Without the selection pressure that Storm provides, the CW cannot thicken into VCZ, and Rest Mode is unreachable.
+
+```
+Evolutionary sequence:
+  Chaos → CW discovery → Storm-driven CW expansion → VCZ → Rest Mode
+
+  Each stage requires the previous:
+    CW discovery requires surviving Chaos
+    CW expansion requires Storm (selection pressure)
+    VCZ requires repeated Storm–Recovery learning
+    Rest Mode requires VCZ with internalized governance
+
+  Rest Mode is not a starting condition.
+  It is the structural reward for surviving Storm.
+```
+
+**CW in empirical domains — cross-scale correspondence:**
+
+The CW geometry appears across empirical domains at every scale of the fractal architecture, consistent with the scale invariance of mutual-reference coupling (Section 1.0):
+
+```
+Domain              CW manifestation                    Observable signature
+──────────────────────────────────────────────────────────────────────────────
+Organizations       Growth phase with high              Innovation rate ↑,
+                    conflict and high innovation        conflict rate ↑,
+                    (Series B–C startup, research       collapse risk ↑
+                    team pre-breakthrough)              simultaneously
+
+Neural systems      Brain operating near criticality    Maximum information
+                    (critical cognition state)          transfer, fatigue
+                                                       accumulation, sensory
+                                                       sensitivity elevated
+
+Economic systems    High-volatility growth periods      Liquidity present,
+                    (early-stage innovation booms)      innovation active,
+                                                       collapse probability
+                                                       non-negligible
+
+Multi-agent AI      Exploration-exploitation            Agent diversity
+                    boundary in adaptive MAS            maintained, conflict
+                                                       present, learning
+                                                       ongoing, Storm risk
+                                                       non-zero
+
+Individual agents   Breakthrough tension state          Direction sensed,
+                    ("about to see it clearly")         instability present,
+                                                       energy high, meaning
+                                                       generation active
+```
+
+All domains exhibit the same CW signature: **maximum information generation rate coinciding with maximum sensitivity to perturbation**. This is not coincidence — it is the structural consequence of operating at R ≈ 1, where perturbations propagate far enough for coordination but not far enough for runaway.
+
+**Recovery and center stability — why some systems strengthen through Storm [v2.0]:**
+
+The determining factor in whether Storm leads to maturation or collapse is not Storm intensity but the preservation of **return trajectory structure** — the existence of directional fields that reconverge toward the CW/VCZ after perturbation.
+
+```
+System with preserved return structure:
+  Storm → displacement from CW
+  → return trajectories intact
+  → system reconverges to CW (or expanded VCZ)
+  → Storm experience becomes structural learning
+
+System without return structure:
+  Storm → displacement from CW
+  → no return trajectories (center destabilized)
+  → system drifts into Chaos or Frozen zone
+  → Storm experience becomes structural damage
+
+The difference is not in what the Storm does to the system.
+It is in whether the system's interaction topology
+preserves the geometric structure that generates return.
+```
+
+This "center" is not a fixed point or central controller. It is the symmetric tension structure described in the Vector Equilibrium Geometry (Section 3.5): the distributed mutual constraint between vector fields that generates convergent direction without centralized control. A system whose Vector Equilibrium structure survives Storm retains the directional fields necessary to reconverge. A system whose equilibrium structure is destroyed by Storm has no geometry to return to.
+
+```
+Center stability ≠ rigidity
+Center stability = preservation of return-generating geometry
+
+  Stable center:   perturbation → restoring alignment → return
+  Unstable center: perturbation → no restoring field → drift
+  No center:       perturbation → unconstrained trajectory → collapse
+
+Recovery Theory addresses HOW return occurs (protocol, phases, timing).
+VST addresses WHY return is geometrically possible (interaction topology
+preserves convergent structure through Storm).
+```
+
+> Vector Storm is not a failure of the Critical Window. It is the mechanism by which the Critical Window expands. Systems that survive Storm gain thicker CW geometry (VCZ). Systems that internalize governance gain self-maintaining CW geometry (Rest Mode). The evolutionary trajectory of adaptive systems is CW discovery → Storm-driven expansion → VCZ → Rest Mode. Stability is not the starting condition but the structural reward for navigating instability.
 
 ---
 
@@ -11084,7 +11700,174 @@ This establishes the theoretical boundary of VST: the S-equation describes dynam
 
 ---
 
+### 11.6 Anticipated Critical Objections — Pre-Emptive Responses [v2.0]
+
+This section addresses three structural objections that any rigorous reviewer will raise against VST. These are not peripheral criticisms but checkpoint questions that determine whether a reviewer classifies VST as a serious theoretical candidate or a conceptual relabeling exercise. Pre-emptive treatment is provided because these objections target the theory's scientific status, not its details.
+
+**Objection 1: "How does Vector Storm differ from existing instability theories?"**
+
+The objection: nonlinear instability, cascading failure, chaos, SOC, and feedback runaway are all established frameworks. What is the new mechanism, as opposed to a new name?
+
+```
+Response — VST's specific contribution:
+
+  Existing frameworks model instability as:
+    SOC:              scalar avalanche dynamics (no direction)
+    Chaos:            sensitivity to initial conditions (trajectory-based)
+    Cascade failure:  sequential propagation (node-based)
+    Feedback runaway: gain > 1 in a loop (single-loop)
+
+  VST models instability as:
+    Structurally self-reinforcing DIRECTIONAL coupling
+    in a MULTI-SCALE fractal interaction topology
+    where the coupling structure itself is the instability variable
+    (not the state trajectory, not the node state, not a single loop)
+
+  Distinguishing test:
+    If removing directional structure from the model
+    (replacing vector fields with scalar quantities)
+    preserves all VST predictions → VST adds nothing over SOC
+    If directional structure is necessary for predictions → VST is distinct
+
+  VST's prediction that direction matters:
+    Two systems with identical scalar instability levels (same S)
+    but different vector alignment structures produce
+    qualitatively different Storm patterns (Section 4.3).
+    SOC cannot distinguish these; VST can.
+```
+
+Vector Storm is defined not by large fluctuations but by structurally self-reinforcing directional coupling — the topology of how amplification vectors align, not merely the magnitude of instability.
+
+**Objection 2: "Is this measurable? Is this falsifiable?"**
+
+The objection: without operational measurement criteria, the framework is conceptual philosophy rather than testable theory.
+
+```
+Response — VST's measurement architecture:
+
+  Primary measurable: Branching ratio R
+    R < 1: subcritical (noise regime) — perturbations decay
+    R ≈ 1: critical (VCZ edge) — perturbations propagate
+    R > 1: supercritical (Storm onset) — perturbations amplify
+    Measurement: cascade statistics in logged agent interactions
+    Protocol: Section 1.4.1 (operational detection rules)
+
+  Secondary measurables:
+    Storm size distribution exponent τ (Section 3.10)
+    Recovery time τ_recovery (Sections 11.5, A.3)
+    Containment capacity trajectory C(t) (Section 3.2)
+    Resolution gap Δρ (RBIT, Section 3.2.6)
+    Consistency index as α proxy (Section 3.2.8)
+
+  Falsification conditions (pre-committed):
+    F1–F3: core dynamics (Section 11.3)
+    F4–F7: cross-theory predictions (Section 11.4)
+    F8–F9: measurement ontology (Section 11.5)
+    Three-Level Failure Model: distinguishes measurement failure,
+    design failure, and structural falsification (Section 11.5)
+
+  Key falsification test:
+    If predicted scaling relationships (n² dependence, power-law
+    storm distributions, SOC convergence of R) fail across
+    independently constructed multi-agent systems → VST falsified
+```
+
+**Objection 3: "Why does global stability emerge naturally? Why don't systems always collapse?"**
+
+The objection: if the theory explains instability well, it must also explain why systems achieve and maintain stability — otherwise it is descriptive only.
+
+```
+Response — VST's stability mechanism:
+
+  Global stability emerges because governance modifies the
+  interaction landscape such that Storm-generating trajectories
+  lose phase-space volume.
+
+  Mechanism (three components):
+
+  (a) Time-scale separation (Section 1.0):
+      Slow governing variable provides reference anchor
+      → fast mutual-reference loop cannot outrun it
+      → effective gain drops below unity
+
+  (b) CW expansion through Storm–Recovery cycles (Section 3.9.1):
+      Each Storm that the system survives narrows the set
+      of Storm-generating directions in interaction space
+      → Critical Window thickens into VCZ
+      → perturbation absorption capacity increases
+
+  (c) Governance internalization (Section 3.5.1, Rest Mode):
+      Governance terrain-shaping becomes embedded in interaction
+      topology → fast loop operates within gain < 1 conditions
+      without requiring active intervention
+      → stability achieved at zero additional coupling cost
+
+  Combined effect:
+      Storm zone volume shrinks
+      VCZ volume expands
+      → probability of Storm onset decreases
+      → Rest Mode becomes achievable asymptote
+
+  This is not stability through suppression.
+  It is stability through geometric restructuring of
+  the interaction space itself.
+```
+
+These three objections share a common structure: they test whether VST provides mechanism (not just labels), measurement (not just concepts), and explanatory power (not just description). VST's answers reside not in any single section but in the integrated architecture of the S-equation, the VCZ geometry, the lifecycle closure (Section 3.9), and the CW expansion mechanism (Section 3.9.1).
+
+---
+
 ## Relationship to Other Theories
+
+**Theoretical Ancestry and Differentiation Map [v2.0]:**
+
+VST draws on and extends concepts from multiple established fields. The following map explicitly positions VST relative to five precursor frameworks, distinguishing what VST inherits from each and where it structurally diverges. This map is provided to prevent misclassification of VST as a relabeling of existing theories and to establish the specific contribution boundary.
+
+```
+Precursor                  What VST inherits               Where VST diverges
+─────────────────────────────────────────────────────────────────────────────────────
+① Vector Equilibrium       Isotropic tension geometry       Fuller: static geometric
+   (Fuller, 1975)          as stability structure            configuration in physical space
+                                                            VST: dynamical interaction
+                                                            equilibrium in agent coupling
+                                                            topology
+
+② Self-Organized           Systems converge toward          SOC: scalar avalanche dynamics
+   Criticality             criticality naturally             with no directional structure
+   (Bak et al., 1987)     R ≈ 1 as universal attractor     VST: directional vector
+                                                            reinforcement topology, with
+                                                            governance and intervention
+                                                            structure absent in SOC
+
+③ Lyapunov Stability       Basin structure as stability     Lyapunov: state-variable
+   (Lyapunov, 1892)        characterization                 boundedness in predefined X
+                                                            VST: interaction-field
+                                                            alignment stability — VCZ is
+                                                            not a Lyapunov basin (stability
+                                                            object differs: state vs.
+                                                            vector alignment)
+
+④ Information Bottleneck   Compression–utility tradeoff     IB: information compression
+   (Tishby et al., 1999)   in layered systems               optimality in channel coding
+                                                            VST: structural alignment
+                                                            capacity in interaction
+                                                            topology (RBIT handles the
+                                                            resolution layer explicitly)
+
+⑤ Control Theory /         Feedback instability,            Classical: gain > 1 in
+   Runaway Feedback         gain analysis, saturation        single-loop feedback circuits
+                                                            VST: topology-dependent
+                                                            amplification regime across
+                                                            fractal agent interaction
+                                                            layers — not single-loop
+                                                            but multi-scale coupled
+```
+
+**Key positioning principle:** VST is not a renaming of any single precursor. It occupies the intersection where these five frameworks leave gaps — specifically, the space where directional coupling topology, multi-scale fractal structure, and governance architecture interact. Each precursor addresses part of the phenomenon; none addresses the conjunction.
+
+> VST differs from SOC by modeling instability as directional vector reinforcement rather than scalar avalanche dynamics. VST differs from Lyapunov stability by analyzing interaction-field alignment rather than state-variable boundedness. VST differs from Information Bottleneck by concerning structural alignment capacity rather than information compression optimality. VST differs from classical control theory by treating amplification as a topology-dependent multi-scale regime rather than a single-loop gain condition.
+
+---
 
 **deficit-fractal-governance (parent framework)**
 
@@ -11445,6 +12228,201 @@ Correct definition:
 ```
 
 Rest Mode systems appear "soft, slow, slightly imperfect" (Recovery Theory phenomenology) because they maintain residual instability. This residual is not a failure of governance — it is the maintained capacity for self-correction and structural learning that prevents brittleness.
+
+**Boundary-First Governance — Why Upper Layers Define Constraints Before Goals [v2.0]:**
+
+The governance architecture at the highest layer does not prescribe direction. It defines the boundary of the forbidden zone — the region where system integrity is lost. This is not a strategic preference but a structural necessity derived from three properties of adaptive systems:
+
+```
+Property 1 — Goals are environment-dependent:
+  Goal validity depends on:
+    current environment state
+    resource availability
+    competitive structure
+    technological capability
+  All of these change.
+  → Goals are inherently non-fixed variables
+  → Fixing goals = fixing a moving target
+  → System optimizes for yesterday's environment
+
+Property 2 — Goal-fixing closes exploration space:
+  Prescribing direction:
+    deviation = error → suppressed
+    alternative paths = failure → eliminated
+    exploration = waste → reduced
+  Result: single-path optimization
+  → detour capacity eliminated
+  → Storm risk maximized (Section 3.5, Intentional Imperfection)
+
+Property 3 — Boundaries are environment-independent:
+  Forbidden conditions are nearly invariant:
+    structural collapse: forbidden regardless of environment
+    observability loss: forbidden regardless of environment
+    trust topology fragmentation: forbidden regardless of environment
+    resource exhaustion: forbidden regardless of environment
+  → Boundaries have much longer validity than goals
+  → Boundary-based governance survives environmental change
+```
+
+The governance design principle follows directly:
+
+```
+Goal-based governance:
+  Upper layer prescribes: "go here"
+  Result: direction fixed → space closed → detour paths eliminated
+          → Storm when environment invalidates goal
+
+Boundary-based governance:
+  Upper layer prescribes: "never go there"
+  Result: direction free → space open → detour paths preserved
+          → adaptation when environment changes
+
+  ████ forbidden ████
+     ← free exploration →
+  ████ forbidden ████
+
+  Direction emerges from exploration within bounded space.
+  Upper layer does not need to know the correct direction.
+  Upper layer only needs to know the catastrophic directions.
+```
+
+This is the structural reason why Three-Layer Governance separates the layers as it does:
+
+```
+Upper layer:   boundary definition (what is structurally forbidden)
+               → nearly environment-invariant
+               → changes on civilizational timescale
+
+Middle layer:  situational goal generation (what to pursue now)
+               → environment-dependent
+               → changes on operational timescale
+
+Lower layer:   execution and exploration (how to get there)
+               → task-dependent
+               → changes on interaction timescale
+
+Storm prevention through layer separation:
+  Upper layer never prescribes direction
+  → lower layers maintain exploration freedom
+  → detour paths preserved
+  → CW maintained
+  → Storm onset prevented at architectural level
+```
+
+> The deepest reason why upper governance defines boundaries rather than goals: goals are hypotheses about what the environment rewards now; boundaries are structural constraints on what destroys the system regardless of environment. A governance system built on goals must be rebuilt when the environment changes. A governance system built on boundaries survives environmental change because it never specified direction — only the space within which direction can be freely discovered.
+
+**Governance Strength Inversion — Why Maximum Governance Appears as Zero Intervention [v2.0]:**
+
+The preceding sections (Boundary-First Governance, Intentional Imperfection, Center Invisibility) converge on a single structural conclusion that inverts the intuitive relationship between governance strength and governance activity:
+
+```
+Intuitive assumption:
+  Strong governance = frequent intervention = visible control
+  Weak governance = rare intervention = system left alone
+
+Structural reality:
+  Strong governance = intervention unnecessary = structure self-correcting
+  Weak governance = intervention constant = structure dependent on controller
+
+  Governance strength ∝ 1 / intervention frequency
+```
+
+This inversion is not paradoxical — it follows directly from the dependency trap mechanism (Section 1.0):
+
+```
+Direct intervention governance (appears strong, structurally weak):
+
+  Problem → upper layer intervenes → problem resolved
+  → lower layer learns: "intervention available"
+  → lower layer reduces investment in internal correction (rational)
+  → internal correction capacity atrophies
+  → more problems escalate to upper layer
+  → upper layer must intervene more frequently
+  → single point of failure forms at upper layer
+
+  Observable: governance activity ↑ (appears strong)
+  Actual: self-correction capacity ↓ (structurally weakening)
+  Terminal state: upper layer failure → system-wide collapse
+                  (no distributed correction capacity remains)
+
+Landscape-design governance (appears passive, structurally strong):
+
+  Upper layer designs interaction terrain:
+    → forbidden zones defined (boundary conditions)
+    → exploration space preserved (detour paths maintained)
+    → micro-instability maintained (Self-Exciting Defect Layer)
+    → information flow channels open (observability preserved)
+
+  Problem → lower layer's internal correction loop activates
+  → problem resolved locally without escalation
+  → correction capacity exercised and strengthened
+  → future problems handled at lower cost
+  → upper layer intervention rarely needed
+
+  Observable: governance activity ↓ (appears passive)
+  Actual: self-correction capacity ↑ (structurally strengthening)
+  Terminal state: upper layer removed → system continues operating
+                  (distributed correction capacity fully functional)
+```
+
+**The observable signature of maximum governance strength:**
+
+The strongest possible governance state is the one that is indistinguishable from no governance at all — because the governance function has been fully internalized into the interaction topology (Section 3.5.1, Rest Mode). From outside, the system appears to self-regulate. From inside, no agent experiences governance as a constraint. The slow variable (Section 1.0) has become the environment itself.
+
+```
+Governance maturation trajectory:
+
+  Immature:   governance visible, active, directive
+              → system depends on governance for stability
+              → removal of governance → immediate Storm
+
+  Maturing:   governance less visible, terrain-shaping
+              → system partially self-correcting
+              → removal of governance → delayed Storm
+
+  Mature:     governance invisible, internalized
+              → system fully self-correcting within designed space
+              → removal of governance → no immediate effect
+              → governance IS the structure, not an agent within it
+
+Cross-domain correspondence:
+
+  Domain              Immature governance         Mature governance
+  ──────────────────────────────────────────────────────────────────
+  Internet            central routing control     distributed BGP
+  Ecosystems          managed reserves            self-sustaining biomes
+  Organizations       micromanagement             culture-driven autonomy
+  Immune systems      pharmaceutical intervention trained immune memory
+  Neural systems      conscious effort            automated skill
+  Multi-agent AI      active supervisor           internalized terrain
+```
+
+**Why this conclusion is structurally necessary (not merely strategic):**
+
+The inversion is not a governance preference — it is a mathematical consequence of the dependency trap:
+
+```
+Intervention frequency × self-correction capacity = bounded
+
+  If intervention ↑ → self-correction ↓ (capacity atrophy)
+  If intervention ↓ → self-correction ↑ (capacity exercise)
+
+  The product is bounded because:
+  internal correction loops and external intervention
+  compete for the same error-resolution bandwidth.
+  Every error resolved externally is an error
+  NOT resolved internally — and therefore an opportunity
+  for internal correction to atrophy.
+
+  Maximum governance strength = maximum self-correction capacity
+                              = minimum intervention frequency
+                              = governance that has eliminated the need
+                                for its own visible operation
+```
+
+This is the structural reason why the strongest governance systems appear, from the outside, to be doing nothing. They have already removed the Storm-generating trajectories from the state space — not by intervening when Storm begins, but by designing the interaction topology such that Storm-generating directions do not exist within the accessible exploration space.
+
+> The strength of a governance system is measured not by its intervention capacity but by the degree to which intervention has become unnecessary. Maximum governance is indistinguishable from no governance because the governance function has been absorbed into the structure of the system itself. This is not passivity — it is the terminal state of landscape design: the interaction topology has been shaped such that the only accessible trajectories are self-correcting ones.
 
 ---
 
@@ -15320,6 +16298,16 @@ What is currently achievable is **post-hoc self-monitoring + indirect position e
 
 ## References
 
+Fuller, R. B. (1975). Synergetics: Explorations in the Geometry of Thinking. Macmillan.
+
+Fuller, R. B. (1979). Synergetics 2: Explorations in the Geometry of Thinking. Macmillan.
+
+Bak, P., Tang, C., & Wiesenfeld, K. (1987). Self-organized criticality: An explanation of the 1/f noise. Physical Review Letters, 59(4), 381–384.
+
+Tishby, N., Pereira, F. C., & Bialek, W. (1999). The information bottleneck method. Proceedings of the 37th Annual Allerton Conference on Communication, Control, and Computing, 368–377.
+
+Clauset, A., Shalizi, C. R., & Newman, M. E. J. (2009). Power-law distributions in empirical data. SIAM Review, 51(4), 661–703.
+
 Arjovsky, M., & Bottou, L. (2017). Towards principled methods for training generative adversarial networks. arXiv preprint arXiv:1701.04862.
 
 Baumann, F., Lorenz-Spreen, P., Sokolov, I. M., & Starnini, M. (2020). Modeling echo chambers and polarization dynamics in social networks. Physical Review Letters, 124(4), 048301.
@@ -15822,6 +16810,56 @@ Remaining open (no companion-theory resolution available):
 
 ---
 
+## Cross-Theory Reinforcement Map [v2.0]
+
+**v2.0 integration source: State-Space Assumption Removal, Vector Equilibrium Geometry, Critical Window Geometry, Theoretical Ancestry Map, Reviewer Defense Architecture**
+
+| v2.0 Source | VST v2.0 Target | Reinforcement Type |
+|---|---|---|
+| State-space completeness assumption removal | §Epistemic Status (4), §Introduction, §1.0 | Foundational: interaction topology promoted to primary analytical object; state space demoted to projection. Resolves why state-space-centered global stability analysis structurally misses Storm origin |
+| X ⊂ V(t) framing (state as projection of interaction field) | §Epistemic Status (4) | Meta-structural variables (reinforcement alignment, coupling density, convergence geometry) identified as the actual degrees of freedom governing instability — not accessible from state-space coordinates |
+| Vector Equilibrium Geometry (cuboctahedron analogue, Fuller 1975) | §3.5 VCZ | Geometric: VCZ region-not-point explained through symmetric tension structure with three mapped properties (no directional privilege, empty center, vector locking). Fuller's geometric concept extended to dynamical interaction equilibrium |
+| Fuller Zero Energy State ↔ Rest Mode | §3.5 VCZ | Structural: Fuller's zero-directional-bias (∇E = 0) maps to VST's zero-amplification-bias (Rest Mode). Continuous chain: Storm → CW → VCZ → Rest Mode → VE limit |
+| Jitterbug Transformation ↔ Storm onset | §3.5 VCZ | Geometric origin: perfect equilibrium = neutral instability → any perturbation selects direction → amplification begins. VCZ target = VE neighborhood with subcritical bias, not VE itself |
+| Center Invisibility Principle | §1.6.4 Silent Criticality | Structural: observation converts distributed invariant to explicit attractor → landscape distortion (Goodhart's Law mechanism). Explains why Silent Criticality detection must use indirect proxies |
+| Intentional Imperfection Principle | §3.5 VCZ | Design: mature systems avoid perfect equilibrium because complete alignment maximizes environmental vulnerability. Detour path preservation = structural intelligence. R ≈ 1⁻ margin = adaptability preservation |
+| Rest Mode viable-subspace interpretation | §3.5.1 Rest Mode | Geometric: Rest Mode = surviving trajectories only. Apparent directionlessness = detour scanning. Decision slowness = trajectory ensemble cost |
+| Boundary-First Governance derivation | §14.1 | Architectural: goals are environment-dependent (non-fixed); boundaries are environment-independent (nearly invariant). Three-Layer separation: upper = boundary, middle = goal, lower = execution. Goal-fixing closes space; boundary-setting preserves it |
+| Governance Strength Inversion | §14.1 | Foundational: governance strength ∝ 1/intervention frequency. Dependency trap as mathematical bound (intervention × self-correction = bounded). Maximum governance = governance absorbed into topology = indistinguishable from no governance |
+| Critical Window as saddle-ridge geometry | §3.9.1 | Topological: CW characterized as thin invariant manifold between Storm and Frozen zones. Storm–CW–VCZ–Rest Mode established as continuous geometric regions with dimensional characterization |
+| CW expansion through Storm–Recovery cycles | §3.9.1, §14.1 | Evolutionary: Storm as geometric selection pressure that expands CW into VCZ. Maturation = phase-space volume transfer from Storm-generating to contained trajectories |
+| Storm necessity (narrow CW requirement) | §3.9.1 | Foundational: wide CW eliminates selection pressure → adaptation rate → 0. Storm is geometric price of CW expansion, not system failure |
+| CW empirical cross-domain mapping | §3.9.1 | Empirical: organizations, neural systems, economic systems, MAS, individual agents all exhibit CW signature (maximum information generation + maximum perturbation sensitivity) |
+| Recovery center stability as return-trajectory preservation | §3.9.1 | Structural: center stability = preservation of return-generating geometry in Vector Equilibrium structure. Connects VCZ geometry to Recovery Theory |
+| Description-level change vs variable addition | §Epistemic Status (4) | Methodological: distinguishes VST's structural move (change representation space) from naive extension (add variables to state space). Historical parallel to function→function-space, trajectory→attractor transitions |
+| Five precursor frameworks differentiation | §Relationship to Other Theories | Strategic: explicit inheritance/divergence map prevents reviewer misclassification as relabeling. Positioning at intersection of five framework gaps |
+| Three critical objections pre-empted | §11.6 | Defensive: mechanism novelty, measurability, and global stability emergence addressed with integrated response architecture |
+
+**Vulnerability resolution status (v2.0):**
+
+| Vulnerability | Status | Resolution |
+|---|---|---|
+| Implicit state-space completeness assumption unaddressed | **Resolved** | §Epistemic Status (4) — explicit removal and replacement with interaction-topology-first framing |
+| VCZ geometric structure underspecified (point vs region ambiguity) | **Resolved** | §3.5 Vector Equilibrium Geometry — cuboctahedron analogue with three-property mapping (Fuller 1975) |
+| Storm–CW–VCZ–Rest Mode continuous structure not articulated | **Resolved** | §3.9.1 — full geometric characterization as continuous phase regions with CW expansion mechanism |
+| Storm necessity not formally justified | **Resolved** | §3.9.1 — narrow CW as selection pressure requirement; wide CW → adaptation rate zero |
+| CW empirical grounding absent | **Resolved** | §3.9.1 — five-domain cross-scale mapping with observable signatures |
+| Recovery success/failure geometric explanation missing | **Resolved** | §3.9.1 — return-trajectory preservation via Vector Equilibrium structure |
+| Precursor framework differentiation unstated (re-labeling risk) | **Resolved** | §Relationship to Other Theories — five-framework ancestry/divergence map |
+| Reviewer checkpoint questions unanswered in text | **Resolved** | §11.6 — three objections with integrated response architecture |
+| Reader entry barrier: no spatial mental model before encountering formalism | **Partially resolved** | Figure placeholders added (Vector Equilibrium, VCZ Region, Storm vs Balanced Field, CW Ridge). Full resolution pending figure creation |
+| Historical positioning of description-level transition unstated | **Resolved** | §Epistemic Status (4) — parallel to renormalization, attractor theory, energy methods explicitly noted |
+| Fuller citation missing for Vector Equilibrium term | **Resolved** | §3.5 + References — Fuller (1975, 1979) cited with explicit geometric→dynamical extension framing |
+| VCZ relationship to Fuller's zero-energy characterization unstated | **Resolved** | §3.5 — Zero Energy State ↔ Rest Mode structural correspondence with continuous chain |
+| Storm onset geometric prototype absent | **Resolved** | §3.5 — Jitterbug Transformation mapped to Storm onset; perfect equilibrium = neutral instability; VCZ target = VE neighborhood |
+| Silent Criticality detection methodology lacks structural justification | **Resolved** | §1.6.4 — Center Invisibility Principle explains why indirect proxy measurement is structurally necessary |
+| Why systems avoid perfect equilibrium unexplained | **Resolved** | §3.5 — Intentional Imperfection Principle: complete alignment = maximum vulnerability; R ≈ 1⁻ margin = adaptability preservation |
+| Rest Mode external appearance not characterized | **Resolved** | §3.5.1 — Viable Subspace interpretation: apparent directionlessness, decision slowness, trajectory ensemble evaluation |
+| Three-Layer boundary-first design rationale unstated | **Resolved** | §14.1 — Boundary-First Governance: goals are environment-dependent, boundaries are environment-independent; structural derivation of layer separation |
+| Governance strength ↔ intervention frequency relationship unformalized | **Resolved** | §14.1 — Governance Strength Inversion: dependency trap as bounded product (intervention × self-correction); maturation trajectory from visible to internalized |
+
+---
+
 ## Cross-Theory Reinforcement Map [v1.9-NAT]
 
 **v1.9-NAT integration source: NAT v1.2**
@@ -15874,6 +16912,12 @@ Remaining open (no companion-theory resolution available):
 | **Recovery** | *Restoration of functional capacity* after collapse — addressed fully in the Recovery Theory companion paper | Bug fix, reboot, error correction | VST boundary: VST identifies when recovery is needed; Recovery Theory specifies how |
 | **Phase** | A *discretized stage* of Storm progression OR fractal lifecycle stage — context-dependent | Thermodynamic phase unless explicitly stated | Storm phase / lifecycle phase / phase transition — always context-qualified |
 | **Interaction** | Process by which *vector fields mutually influence agents* through terrain-mediated propagation pathways | Communication, coordination, cooperation | interaction terrain / interaction scaling / effective interaction count (d_eff) |
+| **Interaction Topology** | The *generative relational structure* between vector fields — the primary analytical object in VST; state space is treated as its downstream projection [v2.0] | Network topology, communication graph, adjacency matrix | interaction topology / coupling topology / topology-first analysis |
+| **Vector Equilibrium** | The *symmetric tension geometry* of VCZ where all directional amplification vectors neutralize through distributed mutual cancellation — not a point but a region [v2.0] | Static equilibrium, energy minimum, fixed point | vector equilibrium / equilibrium geometry / tension structure |
+| **Center Invisibility** | The structural constraint that the stabilizing distributed invariant cannot be made into an explicit optimization target without converting it from boundary condition to coupling node — destroying its function [v2.0] | Hidden variable, latent factor, unobservable | center invisibility / observation-distortion constraint / Goodhart mechanism |
+| **Intentional Imperfection** | The deliberate maintenance of near-equilibrium rather than perfect equilibrium, preserving detour paths, sensing calibration, and rerouting capacity as the structural substrate of adaptability [v2.0] | Tolerance, slack, buffer | intentional imperfection / maintained margin / imperfection as resilience |
+| **Boundary-First Governance** | The architectural principle that upper governance layers define forbidden zones (environment-invariant boundaries) rather than prescribing goals (environment-dependent directions), preserving exploration space and detour capacity [v2.0] | Top-down control, goal-setting, directive governance | boundary-first / constraint-based governance / space design |
+| **Governance Strength Inversion** | The structural relationship where governance strength is inversely proportional to intervention frequency — maximum governance produces zero visible intervention because the governance function has been internalized into the interaction topology [v2.0] | Strong control, active management, enforcement power | governance inversion / internalized governance / invisible governance |
 
 ---
 
@@ -15939,6 +16983,15 @@ These templates are inserted at the **first occurrence** of each term in each ma
 **Governance (DFG sense):**
 > *Governance in DFG denotes architectural terrain-shaping that configures interaction pathways — not supervisory control or management oversight.*
 
+**Interaction Topology (first use per section) [v2.0]:**
+> *Interaction topology denotes the generative relational structure between vector fields — the primary analytical object in VST. State space is treated as a downstream projection of this structure, not as the container of dynamics.*
+
+**Vector Equilibrium (first use per section) [v2.0]:**
+> *Vector Equilibrium denotes the symmetric tension geometry of VCZ where all directional amplification vectors neutralize through distributed mutual cancellation — a region maintained by peripheral tension, not central control.*
+
+**Center Invisibility (first use per section) [v2.0]:**
+> *Center Invisibility denotes the structural constraint that the stabilizing distributed invariant cannot be directly observed or optimized without converting it from a non-distorting boundary condition to a distorting coupling node — the reason Silent Criticality detection requires indirect proxy measurement.*
+
 ---
 
 ### T.5 Companion Paper Semantic Consistency Map
@@ -15955,4 +17008,4 @@ These templates are inserted at the **first occurrence** of each term in each ma
 
 ---
 
-*Appendix T is a living document. Updates track version changes in the DFG companion paper family. Current version: T.1.8, synchronized with VST v1.8.*
+*Appendix T is a living document. Updates track version changes in the DFG companion paper family. Current version: T.2.0, synchronized with VST v2.0.*
