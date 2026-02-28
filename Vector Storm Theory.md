@@ -5,7 +5,29 @@ Companion theory to Deficit-Driven Fractal Governance (DFG)
 Focus: why instability occurs, how it propagates, when to intervene
 Recovery and operational governance are addressed separately
 
-> **Version: v2.0-RT** (February 2026)
+> **Version: v2.2-RBIT-NAT** (February 2026)
+>
+> v2.2-RBIT-NAT changes from v2.1-RTseries (RBIT v1.0, NAT v1.0, Interface Contract v1.0 integration):
+> - **[New §19] Resolution-Based Information Theory Integration:** Resolution (ρ) as structural capacity for maintaining distinction; Resolution Gap Δρ as signed design variable; four gap regimes (calibrated / saturated / under-resolution / over-degradation); Theorem 1 (Resolution Asymmetry Inevitability: sustained Δρ < 0 → intent replacement in finite time t* ≤ ⌈D*/η⌉); Axioms A1–A6 (Finite Capacity, Projection Replacement, Recurrence, Non-Alignment, Replacement Dominance, Basin Regularity); Proposition 2 (Contamination Boundary Existence as Theorem 1 corollary); Calibrated Degradation vs Forced Compression distinction; Seed as minimum sufficient information preserving generative intent; F_RBIT five-component health vector; Rest Mode as dF_RBIT/dt ≈ 0 grounded in information theory; Upscaling Completion Criterion (U1∧U2∧U3); degradation-upscaling lifecycle; Resolution Growth Equation; four-type data classification (Mathematical/High-Context/Tacit/Noise) as logical necessity from Δρ regimes; Error Asymmetry (under-escalation dangerous, over-escalation safe); SCM detection via R-ρ-f_esc triple concordance; Severe Tacit as storm precursor; Energy Minimization Trap; Measurement Invariance Conditions (MI1–MI3); R-ρ concordance grounding
+> - **[New §20] Network Architecture Theory Integration:** Sphere topology as target interaction geometry (k-regular expander graph); four structural axioms S1–S4 (degree bound k ≥ 2·log(n), hub prevention, spectral gap, structural diversity); Inner Sphere (HUG → 0 on S^{d-1}); Fractal Alignment (functional correspondence not isomorphism); Coverage Scaling (P(uncovered) ≤ (1−1/d_eff)^k); two-stage information transfer (Projection + Embedding); empty space as corruption entry point; Lemma 1 (Detection Precondition: non-aligned reconstruction operators); Homogeneity Failure corollary; Processing Isolation (Signaling vs Influence distinction; Interface Narrowing + Temporal Decoupling + Write-Asymmetry); Reference Frame Incompleteness grounding; four-type classification as Δρ routing function; Error Asymmetry constraint; Severe Tacit classification; Escalation as detection from above; Middle Layer as relationship topology; Blind spots as dynamic coverage load; Expansion Principle as conservation law (Direction A stabilize-then-expand, Direction B expand-then-decompose); S-equation correspondence (dS/dt = αn² − βC(t)); Convergence via spectral gap; Storm Event formal definition; Structural contamination resistance (resistance not immunity); Dual-Sphere convergence; five testable predictions (P1–P5); three-regime coverage dependency (k_eff formula)
+> - **[New §21] Interface Contract Formal Bridges:** I1 (Resolution Gap as Routing Invariant: Δρ sign → classification → routing); I2 (Structural Diversity as Detection Precondition: Lemma I2 with projection kernel formalization); I3 (Spectral Gap as Storm Governance Parameter: Proposition I3 t_persistence > t_mixing; dual role as damping + initiation threshold; noise decoherence sequence); I4 (Triple Concordance as Shared Detection Protocol: R-ρ-f_esc with four detection states); Dependency direction RBIT→NAT established
+> - **[New Cross-Theory Reinforcement Map v2.2-RBIT-NAT]:** 60+ RBIT/NAT/IC → VST mappings; formal proposition-level cross-references; new open problems identified
+> - **[Updated §Relationship to Other Theories]:** RBIT positioned against Information Bottleneck (five structural differences), Active Inference, MARL; NAT positioned against MARL, MoE, Distributed Coverage Control, SOC; DFG Canonical Ownership updated with RBIT and NAT primitives
+> - **[Updated References]:** RBIT and NAT reference sets integrated (Shannon, Landauer, Wang & Isola, Cortés et al., Fedus et al., Friston, Wei et al., Schaeffer et al., etc.)
+> - All previous content preserved.
+>
+> **Version: v2.1-RTseries** (February 2026)
+>
+> v2.1-RTseries changes from v2.0-RT (RT-1/2/3/4 v2.0 academic paper series reverse integration):
+> - **[Updated §2.5] SCM formal strengthening from RT-2 v2.0:** Reference Impossibility (Proposition 2), Local Detectability Limit (Proposition 3), Optimization–Observability Tradeoff (Proposition 4) formalized as structural impossibility results; SCM reframed from failure mode to structural consequence; Metric Lock-In mechanism (Proposition 5: zero-gradient on mismatch dimension); Coherence Maximization Paradox (Success-Failure inversion); Unintegrated Pressure P_unint(t) accumulation
+> - **[Updated §3.5] VCZ and observer construction from RT-3 v1.0:** Observer as structural configuration O = (V, A, B, S); four necessary conditions formalized (Diversity Necessity, Coordination Rate γλ₂ > v_cont, Scope Duality, Resource Sufficiency); Coordination–Cancellation Paradox (diversity without mediation fails); Mediation Layer as paradox resolution; Buffer–Urgency Inversion; Silent Criticality as combined failure; Alarm Temporal Geometry constraints
+> - **[Updated §12] Recovery formal criteria from RT-1 v2.0:** Three post-contamination states (genuine recovery / arrested collapse / intervention dependency); three necessary restoration conditions (ρ recovery + diversity expansion + P_overlap declining); SCC = D_int × L_reinf operationalized; withdrawal-based verification (DI→SD→FO→W); four restoration dominant modes; five falsifiable predictions
+> - **[New §12.2] Relational Reversibility from RT-4 v1.0:** Three-level reversibility scaling law (Rᵢ = Rᵢʳⁿᵗ · Aᵢʳᵉˡ · g(λ₂)); trust coefficient Tᵢⱼ = Pr(info reduces prediction error); adaptive geometry as dynamic state variable; mutual stabilization necessity (Conjecture 2); hub necessity decay (Phase I→II→III); Shared Vulnerability Principle with admissibility constraint; Identity Declaration Instability (D_id → SCM behavioral entry); reversibility phase transition R_c (Conjecture 5); observer degradation coupling (RT-3/RT-4 mutual loop); structural humility as verification persistence damping
+> - **[New §12.3] RT-Series Closed Architecture:** RT-1 (when) → RT-2 (why) → RT-3 (what) → RT-4 (how); mutual dependency loop; Irreversibility Principle as constitutional law
+> - **[Updated §9.2] Differential Detection Protocol strengthened:** SR_sys/SR_obs distinction; RDE/RDE_int proxy; NCR/RIR formalized; threshold calibration status; measurement hierarchy
+> - **[Updated §3.4.4] Observability Emergence Threshold integrated:** Three-condition emergence (architecture completeness + scale matching + optimization constraint); premature imposition paradox
+> - **[New Cross-Theory Reinforcement Map v2.1-RTseries]:** 50+ RT-series v2.0 → VST mappings; formal proposition-level cross-references
+> - All previous content preserved.
 >
 > v2.0-RT changes from v2.0 (RT v1.8-VST2.0 reverse integration):
 > - **[New §3.4.4] RT D-definition mapping to Structural Equilibrium:** D4 = re-entry, D2 = width, D5 = maintenance, D6 = wrong-frame equilibrium, D3 = noise field, Residual Floor = maintained activity. Boundary Conditions (three impossible-recovery states) mapped.
@@ -5022,9 +5044,129 @@ That is the signal.
 
 ---
 
+### 2.6.1 SCM as Structural Consequence — Three Impossibility Results [v2.1-RTseries]
+
+RT-2 v2.0 formalizes SCM not as a proposed failure mode but as the structural consequence of three impossibility results under the domain of applicability conditions. This strengthens VST's SCM framework from descriptive to deductive.
+
+```
+IMPOSSIBILITY RESULT 1 — Reference Impossibility (RT-2 Proposition 2):
+  Adaptive optimization systems with endogenous evaluation
+  cannot maintain a permanently uncontaminated internal reference frame.
+
+  Mechanism:
+    E = f(G_sys), G_sys updates under optimization.
+    E co-evolves with geometry it evaluates.
+    E cannot detect drift in G_sys because E is defined within G_sys.
+
+  VST implication:
+    S-equation monitoring (S_norm, R, rho) is defined within G_sys.
+    Under geometry drift, S-equation metrics co-drift.
+    S_norm ≈ 0 does NOT guarantee absence of instability —
+    it may reflect metric co-drift (§2.5 caveat now formally grounded).
+
+IMPOSSIBILITY RESULT 2 — Local Detectability Limit (RT-2 Proposition 3):
+  Local observability does NOT guarantee global contamination detectability.
+  Contamination propagation ∝ interaction density (n²-like).
+  Observer capacity ∝ structural resources (linear at best).
+
+  VST implication:
+    Per-agent detection (S_norm local) can all report healthy
+    while system-level drift is undetectable.
+    This is the formal basis for §1.6.4 Silent Criticality:
+    every local subsystem reports normal. System drifts globally.
+    n² scaling (§3.2.5) applies to contamination AS WELL AS storms.
+
+IMPOSSIBILITY RESULT 3 — Optimization–Observability Tradeoff (RT-2 Proposition 4):
+  Under unconstrained optimization (Assumption O1):
+    structures supporting observational degrees of freedom
+    incur persistent negative optimization pressure.
+
+  VST implication:
+    Directional influences (§6.4 Boundary Agent) → variance increase → suppressed.
+    Counter-directional structures (opposing pairs) → instability cost → suppressed.
+    Damping layers (buffer, D3) → coordination overhead → eliminated.
+    This formally derives why VCZ self-destruction is the DEFAULT trajectory
+    under unconstrained optimization (§3.5 VCZ stability challenge grounded).
+
+STRUCTURAL CONSEQUENCE — Metric Lock-In (RT-2 Proposition 5):
+  Under SCM, no metric defined within current geometry
+  can detect the misalignment.
+  Mismatch dimension has ZERO GRADIENT within G_sys.
+  Not observationally insufficient — STRUCTURALLY INVISIBLE.
+
+  VST implication:
+    Explains WHY S_norm = 0 and all metrics healthy under CW.
+    Zero curvature along mismatch direction means
+    gradient-based detection is geometrically impossible,
+    regardless of monitoring sophistication within G_sys.
+
+COHERENCE MAXIMIZATION PARADOX (RT-2 §6.5):
+  Higher optimization capacity → observability structures
+  disfavored faster → SCM entry accelerated.
+  = Success-Failure Paradox:
+    highest S_norm stability, lowest variance, strongest consensus
+    → approaching SCM (alignment assessment structurally impossible).
+
+  VST implication:
+    Directly grounds the §2.5 observation that
+    "the most capable system is the most vulnerable."
+    Now formalized as structural theorem, not heuristic.
+
+UNINTEGRATED PRESSURE (RT-2 §6.6):
+  P_unint(t) = ∫₀ᵗ ‖Σ_real(τ) − Σ_ref(τ)‖_F dτ
+  SCM suppresses visibility, not mismatch.
+  P_unint accumulates silently until structural absorption exceeded.
+
+  VST implication:
+    Provides formal substrate for §2.6 "hidden correlation accumulation."
+    P_unint is the quantitative measure of shadow instability.
+    Storm onset from Silent Criticality = P_unint exceeding threshold.
+```
+
 ---
 
-### 2.7 Reference Frame Incompleteness and Search Space Asymmetry [v1.6]
+### 2.6.2 Observability Emergence Threshold [v2.1-RTseries]
+
+RT-2 v2.0 §7 defines the developmental milestone at which observability becomes structurally possible. This constrains VST's intervention timing model (§3.4).
+
+```
+OBSERVABILITY EMERGENCE THRESHOLD (RT-2 Definition 4):
+  First point at which observer architecture achieves sufficient scale
+  for globally valid contamination detection.
+  NOT an equilibrium state — a developmental milestone.
+
+THREE CONDITIONS FOR EMERGENCE:
+  Condition A: Observer architecture completeness
+    Directional influences + counter-directional + damping
+    ALL present at relevant system scale.
+    (Maps to §6.4 Boundary Agent + D3 Buffer + opposing pairs)
+
+  Condition B: Scale matching
+    S_observer ≥ S_contamination
+    (Maps to §3.2.5 n² scaling: observer must scale with n²)
+
+  Condition C: Optimization constraint
+    Optimization dynamics constrained such that observer
+    architecture not rendered structurally disfavored.
+    (Maps to §3.5 VCZ maintenance: explicit observability preservation)
+
+PREMATURE IMPOSITION PARADOX:
+  Forcing rapid expansion of monitoring infrastructure
+  → disrupts organic maturation process
+  → paradoxically DEGRADES observability.
+
+  VST implication:
+    Constrains §3.4 intervention timing:
+    premature observability imposition = counterproductive.
+    Observability supported, not manufactured.
+    Connects to §14.1 Governance Strength Inversion:
+    maximum governance = minimum intervention applies to
+    observability infrastructure itself.
+```
+
+---
+
+---
 
 Recovery Theory §T4 establishes why lower layers cannot self-correct geometry errors, and §T5 establishes reality as the ultimate corrector. These have direct implications for storm dynamics.
 
@@ -9005,6 +9147,52 @@ Rest Mode (v1.2 updated definition):
 ```
 
 > Governance Backgrounding and Silent Criticality are distinguishable through three signals borrowed from Recovery Theory's SCM detection framework: Surprise Response (can the system still be surprised?), Reality Divergence Exposure (is the system still learning?), and Novelty Compression Ratio (is the system still recognizing novelty?). All three near-zero simultaneously indicates Silent Criticality. All three positive indicates genuine backgrounding. This protocol resolves the indistinguishability problem identified in v1.1.
+
+### 3.5.2.1 Differential Detection Formalization [v2.1-RTseries]
+
+RT-2 v2.0 §9.2 formalizes the detection protocol with explicit measurement hierarchy and a fourth signal. This strengthens VST's three-signal protocol with formal grounding.
+
+```
+FORMALIZED FOUR-SIGNAL PROTOCOL (RT-2 v2.0):
+
+  SR_sys (Surprise Retention — System):
+    ‖ΔY_sys‖ / ‖ΔX_inj‖
+    = system responsiveness to ACTIVELY INJECTED novelty.
+    Under SCM: SR_sys ≈ 0 (Learning Freeze confirmed).
+    Maps to VST §3.5.2 Signal 1 — now with formal ratio definition.
+
+  SR_obs (Surprise Retention — Observer):
+    ‖ΔO_obs‖ / ‖ΔX_stream‖
+    = OBSERVER's output volatility under natural stream variation.
+    If SR_obs → 0 while stream variance non-zero:
+    observer is DRIFTING WITH the geometry (reference erosion).
+    NEW to VST: monitors the monitor. Detects when
+    §6.4 Boundary Agent itself has been contaminated.
+
+  RDE_int (Internal Reference Drift):
+    ‖Σ_ref(t) − Σ_ref(0)‖_F / ‖Σ_ref(0)‖_F
+    Cumulative drift of internal reference from calibration baseline.
+    Under SCM: RDE_int increases monotonically.
+    Maps to VST §3.5.2 Signal 2 — now with drift magnitude.
+
+  RIR (Recovery-Instruction Ratio):
+    Known-correct correction signal issued; uptake measured.
+    Under SCM: RIR low (corrections rejected or reinterpreted).
+    NEW to VST: fourth signal completing the detection battery.
+    Maps to §6.9 Withdrawal Protocol: if RIR low during withdrawal,
+    system has entered Dependency Trap.
+
+MEASUREMENT HIERARCHY:
+  Theoretical → Operational chain:
+    SR_sys (theory) → SR_obs (observer-side natural stream proxy)
+    RDE (theory: external reference) → RDE_int (internal drift proxy)
+    NCR (theory) → cluster count / absorption ratio (operational)
+    RIR (theory) → correction uptake measurement (operational)
+
+  Threshold calibration: OPEN across all four signals.
+  Current mode: comparative (trend detection), not absolute.
+  Calibration requires domain-specific baseline establishment.
+```
 
 ---
 
@@ -13490,6 +13678,9 @@ The following five primitives constitute the irreducible conceptual basis of the
 |---|---|---|---|
 | **Vector Storm** | Self-amplification regime where reinforcement outpaces degradation capacity | Paper 1 (VST) | consequence, trigger, or context — never redefined |
 | **Rest Mode** | Regime where instability remains below self-amplification threshold because governance has internalized into the interaction landscape (Section 3.5.1) | Paper 1 (VST) | operational characterization, structural characterization — never redefined |
+| **Resolution (ρ)** | Layer's capacity to maintain structural differentiation under load — structural capacity for distinction between competing signals [v2.2-RBIT-NAT] | RBIT | VST uses as measurement variable; NAT uses as routing parameter — never redefined |
+| **Resolution Gap (Δρ)** | Signed difference ρ_receiver − ρ_sender determining compression regime [v2.2-RBIT-NAT] | RBIT | VST uses as Storm driver; NAT uses as routing function input — never redefined |
+| **Sphere Topology** | k-regular expander graph with spectral gap, hub prevention, and structural diversity guarantees [v2.2-RBIT-NAT] | NAT | VST uses as Storm propagation substrate; RBIT references as implementation — never redefined |
 | **Terrain Formation** | Interaction topology emerging from critical propagation constraints | Paper 2 (Critical Phenomena) | governance shaping target — never redefined as governance product |
 | **Governance Internalization** | Transition from external intervention to embedded architectural constraint | Paper 3 (Governance Architecture) | lifecycle prerequisite — never redefined as lifecycle stage |
 | **Meta² Invariant** | External law-like constraint defining the possibility space of stable system configurations | Paper 5 (Ontology) | boundary condition, convergence target — never redefined as agent, rule, or value |
@@ -13703,6 +13894,364 @@ RT D2 extended identifies that recovery sensitivity is anisotropic:
     = fractal equivalent of RT's local/hub/geometry S_rec gradient
 
   Uniform τ across all layers = uniform recovery protocol = same error.
+```
+
+---
+
+### 12.2 Recovery Formal Criteria — RT-1 v2.0 Integration [v2.1-RTseries]
+
+RT-1 v2.0 establishes the formal conditions distinguishing genuine recovery from arrested collapse and intervention dependency. These constrain what VST's Storm–Recovery transition can declare as "completed."
+
+```
+THREE POST-CONTAMINATION STATES (RT-1 §2.1):
+  VST Storm termination (§1.4.1) identifies when Storm ends.
+  RT-1 v2.0 identifies THREE possible post-Storm states:
+
+  (a) Genuine Recovery:
+      Search-space expansion resumes. ρ recovers, diversity grows,
+      P_overlap declines. System absorbs new perturbations.
+      = VST ①' or ①'' trajectory.
+
+  (b) Arrested Collapse:
+      Contraction stopped, expansion NOT resumed.
+      All standard metrics pass (ρ stable, loss converged).
+      But search space remains contracted.
+      = VST ① trajectory that LOOKS like ①' but is not.
+      DANGEROUS: indistinguishable by stability metrics alone.
+
+  (c) Intervention Dependency:
+      Stability maintained ONLY by ongoing MZ-STP intervention.
+      Internal SCC not restored. Removing intervention reveals instability.
+      = VST §3.4.2 MZ-STP creating Dependency Trap (RT-gap-B).
+
+  VST IMPLICATION:
+    Storm termination (§1.4.1) is NECESSARY but NOT SUFFICIENT.
+    Post-termination state classification requires:
+    expansion measurement (not just stability measurement).
+
+THREE NECESSARY RESTORATION CONDITIONS (RT-1 §3.1):
+  Condition 1: ρ(restored) ≥ ρ(pre)
+    Resolution-proxy recovered to pre-contamination baseline.
+    VST mapping: S_norm monitoring confirms R → 1⁻ approach.
+
+  Condition 2: Output diversity expanding
+    Not stable — ACTIVELY INCREASING.
+    VST mapping: agent behavioral entropy increasing,
+    not merely stabilized at reduced level.
+
+  Condition 3: P_overlap(t) declining
+    P_overlap = (1/N(N−1)) Σ_{i≠j} 1[a_i ~ a_j]
+    VST mapping: positional differentiation restoring.
+    Agents recovering distinct behavioral profiles.
+
+  All three simultaneously required.
+  Missing any one → indistinguishable from arrested collapse.
+
+WITHDRAWAL-BASED VERIFICATION (RT-1 §4.3):
+  Phase DI → SD → FO → W
+
+  VST integration:
+    Phase DI: Full MZ-STP active support.
+    Phase SD: MZ-STP Track A reduced; system self-corrects under observation.
+    Phase FO: MZ-STP minimal; §3.5.2 differential protocol active.
+    Phase W: MZ-STP withdrawn; system autonomous.
+
+  Metric degradation during W → Dependency Trap confirmed.
+  Storm–Recovery cycle NOT complete until Phase W passed.
+  This verification is NOT OPTIONAL — omitting it
+  systematically produces systems that appear recovered but are not.
+```
+
+---
+
+### 12.3 Relational Reversibility — RT-4 v1.0 Integration [v2.1-RTseries]
+
+RT-4 v1.0 addresses the foundational question that VST's Storm–Recovery framework assumes but does not explain: where does recovery capacity come from?
+
+```
+CORE CLAIM (RT-4):
+  Recovery capacity is not an individual attribute.
+  It is a structural property of trust topology and cooperative coherence.
+  Generated through shared vulnerability.
+  Maintained through mutual stabilization.
+
+  VST assumes SCC exists (§3.5 VCZ conditions, §12.1).
+  RT-4 explains SCC GENERATION.
+
+THREE-LEVEL REVERSIBILITY SCALING LAW (RT-4 §2):
+  Rᵢ = Rᵢʳⁿᵗ · (1 + α Σⱼ Tᵢⱼ) · g(λ₂(L))
+
+  Level 1 — Individual Reversibility (Rᵢʳⁿᵗ):
+    Autonomous absorption capacity.
+    VST mapping: per-agent D2 (Immunity) at single-agent scale.
+    Necessary but NOT sufficient.
+
+  Level 2 — Relational Reversibility (Aᵢʳᵉˡ = 1 + α Σⱼ Tᵢⱼ):
+    Trust-mediated escape path accessibility.
+    Tᵢⱼ = Pr(info from j reduces prediction error of i).
+    VST mapping: §5.1 Mutual Coverage provides the detection substrate;
+    trust topology provides the correction substrate.
+
+  Level 3 — Network Reversibility (g(λ₂)):
+    Cooperative coherence via algebraic connectivity.
+    g monotonically increasing, g(0) = 0, g bounded above.
+    VST mapping: λ₂ is the network-level analogue of
+    §3.5.3 VCZ Condition 2 (upper layer storm reward).
+    Disconnected network → zero collective reversibility.
+
+  MULTIPLICATIVE COUPLING ensures:
+    Any single factor = 0 → total reversibility = 0.
+    Individual + relational + network ALL required.
+    Consistent with SCC = D_int × L_reinf (both terms necessary).
+
+ADAPTIVE GEOMETRY (RT-4 §3):
+  Agent geometry = directional action cost profile Aᵢ(θ, t).
+  Isotropic = equal-cost exploration in all directions.
+  Anisotropic = preferential directions, constrained exploration.
+
+  VST mapping:
+    Agent in VCZ → isotropic geometry (R ≈ 1⁻, all directions explorable).
+    Agent in Storm → anisotropic (sharp vectors dominate specific directions).
+    Geometry is NOT a fixed type — it is a dynamic state variable
+    governed by internal resolution activation.
+
+  Geometry TRANSITION requires relational reversibility buffer:
+    drᵢ/dt ≤ f(Aᵢʳᵉˡ) (Conjecture 1)
+    No trust connections → geometry transition HALTED.
+    Intermediate states are vulnerable → trust network absorbs risk.
+
+MUTUAL STABILIZATION NECESSITY (RT-4 Conjecture 2):
+  Under non-stationary perturbations (lim sup Var(Pₜ) = ∞):
+    Transformed geometry is METASTABLE, not permanent.
+    Maintenance cost grows without bound.
+    Individual stability has finite time horizon.
+
+  VST implication:
+    VCZ maintenance is NOT a solo achievement.
+    Single-agent VCZ is structurally unsustainable.
+    §3.5 VCZ conditions require NETWORK-LEVEL support.
+    This is not design preference — it is structural constraint.
+
+HUB NECESSITY DECAY (RT-4 Scaling Law 1):
+  Phase I (Bootstrap): R_network ≈ R_hub. Hub removal → system-wide cascade.
+  Phase II (Diffusion): Hub removal → localized damage.
+  Phase III (Distributed): Hub removal → negligible impact.
+    SUCCESS of stabilizing agent = how IRRELEVANT its removal becomes.
+
+  VST mapping:
+    Phase I → immature system where §6.4 Boundary Agent is critical.
+    Phase II → maturing system where D3 buffer distributes function.
+    Phase III → mature system where §14.1 Governance Strength Inversion
+    is fully realized (governance internalized → no single point of failure).
+```
+
+---
+
+### 12.4 Identity Declaration and SCM Entry — RT-4 Behavioral Mechanism [v2.1-RTseries]
+
+RT-4 §6.2 identifies the behavioral mechanism through which RT-2's optimization pressure (Proposition 4) manifests at the agent level. This completes the VST→SCM causal chain.
+
+```
+IDENTITY DECLARATION INSTABILITY (RT-4 Conjecture 4):
+  D_id(t) = |{i : verification_rate(i) = 0 ∧ self_status(i) = stable}| / N
+  = proportion of agents claiming stability WITHOUT active verification.
+
+  FAILURE SEQUENCE:
+    (1) Declaration suppresses vulnerability disclosure
+        → admitting weakness contradicts declared identity
+    (2) Suppressed disclosure → effective shared vulnerability ↓
+    (3) Reduced shared vulnerability → trust generation ↓
+    (4) When trust generation < coordination cost → dR/dt < 0
+    (5) Reversibility declines → geometry regression
+    (6) Regression → SCM entry (RT-2)
+
+  CRITICAL: Observable metrics IMPROVE during stages 1–4
+  because verification noise is removed.
+  = "FALSE CALM" before structural degradation.
+
+  VST MAPPING:
+    §2.5 Silent Criticality "surface metrics look healthy" →
+    now has precise behavioral mechanism: identity declaration.
+    §1.6.4 "system approaches criticality silently" →
+    because declaration removes the noise that would signal danger.
+    Detection requires measuring WHAT IS NOT HAPPENING
+    (absence of verification, absence of disclosure).
+
+SHARED VULNERABILITY PRINCIPLE (RT-4 §5):
+  I_sv = mutual failure-mode knowledge across agent pairs.
+  I_sv^eff = I_sv · A_accept (effective = visibility × admissibility).
+
+  A_accept = Pr(post-disclosure reversibility ≥ pre-disclosure).
+  When agents suppress disclosure (A_accept → 0):
+    → I_sv^eff → 0 → reversibility generation stops.
+
+  VST mapping:
+    §6.4 Boundary Agent = concentrated shared vulnerability node.
+    RT-4 generalizes: ALL agents should be partial Boundary Agents.
+    Distributed vulnerability visibility = distributed storm detection.
+    → §5.1 Mutual Coverage receives its generation mechanism.
+
+STRUCTURAL HUMILITY (RT-4 formalization):
+  Humility_i := capability HIGH × declaration LOW × verification PERSISTENT
+  = premature fixation prevention constraint.
+  = dR/dt ≥ 0 preservation term.
+
+  Formalized:
+    D_id^eff(t) = D_id(t) · (1 − H(t))
+    O(t+1) = O(t) − α·D_id(t) + β·H(t)
+
+  VST mapping:
+    §14.1 Governance Strength Inversion's "maximum governance = minimum intervention"
+    receives its micro-level mechanism: humility is the per-agent realization
+    of governance inversion. Agents that verify rather than declare
+    = agents that preserve the distributed observation structure
+    that VST's VCZ requires.
+
+REVERSIBILITY PHASE TRANSITION (RT-4 Conjecture 5):
+  ∃ R_c such that:
+    R_system > R_c → localized regression absorbed (VCZ maintainable).
+    R_system < R_c → regression cascades (VCZ collapses to Storm).
+  Percolation-type mechanism: R_c ≈ 0.43 in toy model (ER, N=80).
+
+  VST mapping:
+    R ≈ 1 (VST criticality boundary) ↔ R_system ≈ R_c (RT-4 threshold).
+    Below R_c: VST's Storm onset is inevitable (structural, not contingent).
+    Above R_c: VCZ self-maintaining (perturbations absorbed).
+    This provides the MICROSCOPIC mechanism for VST's macroscopic
+    R → 1 boundary condition.
+
+OBSERVER DEGRADATION COUPLING (RT-3/RT-4):
+  R_system < R_c → trust connections weaken → λ₂ decreases
+  → γλ₂ > v_cont (RT-3 coordination condition) violated.
+  Observer degrades because reversibility substrate withdrawn.
+
+  MUTUAL REINFORCING LOOP:
+    RT-3 observation → detects failure → enables shared vulnerability
+    → RT-4 reversibility → maintains trust → maintains λ₂ → RT-3 observation.
+
+  VST mapping:
+    §5.1 Mutual Coverage depends on reversibility (RT-4).
+    Reversibility depends on observation (RT-3).
+    Both depend on each other → reinforcing or degrading spiral.
+    VCZ stability = BOTH loops running. SCM = BOTH loops broken.
+```
+
+---
+
+### 12.5 RT-3 Observer Construction — Structural Requirements [v2.1-RTseries]
+
+RT-3 v1.0 specifies what structural properties must hold for contamination detection to be achievable. This constrains VST's detection architecture throughout.
+
+```
+OBSERVER = STRUCTURAL CONFIGURATION (RT-3 Definition 1):
+  O = (V, A, B, S) tuple, NOT an entity or module.
+
+  VST mapping:
+    Observer is not §6.4 Boundary Agent alone.
+    Observer is the DISTRIBUTED CONFIGURATION across all agents
+    whose combined structure satisfies V, A, B, S simultaneously.
+
+FOUR NECESSARY CONDITIONS:
+
+  (V) Diversity — L_div(V) ≥ ε:
+    Sufficient angular spread in observational directions.
+    If rank(V) = k < d → (d−k) invisible dimensions.
+    VST mapping: §5.1 Mutual Coverage operationalizes V-condition.
+    Diversity collapse → all agents evaluate along same direction
+    → Metric Lock-In (RT-2 Proposition 5) at observer level.
+
+  (A) Coordination Rate — γλ₂ > v_cont:
+    Inter-observer coordination faster than contamination propagation.
+    VST mapping: coordination rate is the temporal substrate for
+    §4.3 Storm Interaction detection. If coordination slower than
+    Storm propagation → Storm detected only after cascade complete.
+
+  (B) Resource Sufficiency — Bₜ > B_crit:
+    Non-vanishing buffer for high-resolution observation.
+    VST mapping: §3.3 Residual Degradation Floor provides the
+    structural floor for observation resources. Floor elimination
+    = observation resource elimination = Silent Criticality.
+
+    BUFFER-URGENCY INVERSION:
+      Sustained contamination → repeated anomaly candidates
+      → high-resolution confirmation depletes buffer
+      → confirmation capacity lost WHEN MOST NEEDED.
+      = §3.7 Efficiency-Plasticity tradeoff at observer level.
+
+  (S) Scope Duality — wide + narrow dynamically switchable:
+    Wide scope insufficient (misses fine-grained δ₁).
+    Narrow scope insufficient (misses global drift δ₂).
+    Both required.
+    VST mapping: §3.4.2 MZ-STP Track A (containment = wide)
+    + Track B (recovery = narrow) = scope duality in intervention.
+
+COORDINATION-CANCELLATION PARADOX (RT-3 App.A):
+  High angular diversity BUT antipodal partition (two opposing factions).
+  Naïve aggregation → detection COLLAPSES despite high V.
+  Increasing coordination WORSENS detection under cancellation.
+
+  MEDIATION LAYER resolves paradox:
+    Split-then-test aggregator. Each faction tested independently.
+    Detection restored: FNR drops from 0.67 → 0.01.
+
+  VST mapping:
+    §3.5 VCZ opposing-pair architecture = antipodal partition.
+    Without mediation (§6.4 Boundary Agent function):
+    opposing pairs CANCEL rather than detect.
+    Mediation is not just conflict resolution — it is
+    the structural requirement for observation itself.
+    This formally grounds WHY §TLG middle layer is necessary
+    for detection, not merely governance.
+
+IRREVERSIBILITY PRINCIPLE (RT-3 §1.2):
+  Constitutional law of DFG:
+    Primary systemic failure = irreversible epistemic commitment.
+    Wrong but revisable > right but fixed.
+    Recovery = restoration of revision capacity.
+    Observer function = preservation of reversibility.
+
+  VST mapping:
+    Storm is dangerous not because it is wrong
+    but because it can produce IRREVERSIBLE commitments.
+    VCZ is safe not because it is correct
+    but because it preserves the capacity for revision.
+    This reframes VST's entire §14.1 governance objective:
+    not "prevent instability" but "preserve reversibility."
+```
+
+---
+
+### 12.6 RT-Series Closed Architecture [v2.1-RTseries]
+
+```
+FOUR-PAPER MUTUAL DEPENDENCY LOOP:
+
+  RT-1: WHEN recovery succeeds
+    Three conditions. Withdrawal verification.
+    Presupposes capacity (from RT-4).
+
+  RT-2: WHY internal detection fails
+    Reference Impossibility. Metric Lock-In. SCM.
+    Constrains detection approach (for RT-3).
+
+  RT-3: WHAT observers require
+    O = (V, A, B, S). Four necessary conditions.
+    Presupposes reversibility (from RT-4).
+
+  RT-4: HOW recovery capacity is generated
+    Trust topology. Shared vulnerability. Phase transition.
+    Presupposes detection capacity (from RT-3).
+
+  CLOSURE: each paper presupposes what another provides.
+  = mutual explanatory dependency, not theoretical finality.
+
+VST INTEGRATION POINT:
+  VST provides the DYNAMICS (how instability propagates, scales, resolves).
+  RT-series provides the STRUCTURAL CONDITIONS (what must hold for
+  detection, recovery, and capacity generation to succeed).
+  VST without RT = dynamics without recovery criteria.
+  RT without VST = recovery criteria without instability model.
+  Together = complete DFG instability-recovery theory.
 ```
 
 ---
@@ -18151,6 +18700,802 @@ What is currently achievable is **post-hoc self-monitoring + indirect position e
 
 ---
 
+## 19. Resolution-Based Information Theory (RBIT) — Constraint Law Integration [v2.2-RBIT-NAT]
+
+RBIT provides the information-theoretic constraint law that underlies VST's instability dynamics. Where VST describes *how* instability propagates, RBIT specifies *when* information transformations between layers preserve or destroy intent — the precondition that determines whether interaction produces coordination or contamination.
+
+**Dependency declaration:** VST references RBIT results as motivating constraints. VST does not re-derive RBIT theorems. Full proofs and axiomatic development reside in the RBIT companion paper (Seol, 2026).
+
+---
+
+### 19.1 Resolution and the Resolution Gap
+
+**Resolution (ρ) — formal definition:**
+
+Resolution is a layer's capacity to distinguish between, simultaneously hold, and process vectors of different directions without one dominating the others. Resolution is not computational power, parameter count, or processing speed. It is structural capacity for maintaining distinction — a property that grows through experience and calibrated absorption.
+
+```
+Resolution operates at three tiers:
+  Tier 1 — Vector-Noise Separation: "Is this a signal or noise?"
+  Tier 2 — Inter-Vector Differentiation: "Are these signals distinct?"
+  Tier 3 — Full Map Design: "Where should each signal go?" (Upper layer only)
+
+Resolution-proxy:
+  ρ = 1 − (L_T1 + L_T2) / N
+  where L_T1 = Type I loss (false restoration),
+        L_T2 = Type II loss (missed contamination),
+        N = total inputs in evaluation window
+```
+
+**Resolution Gap (Δρ) — central design variable:**
+
+```
+Δρ = ρ_receiver − ρ_sender
+
+Four gap regimes:
+  Δρ > 0 (bounded)   Calibrated operation. Diversity possible. Seeds transmittable.
+  Δρ ≈ 0             Absorption saturation. Upscaling trigger condition.
+  Δρ < 0             Under-resolution (DANGEROUS). Forced receiver-controlled
+                      compression. Cascade failure risk.
+  Δρ >> 0            Over-degradation. Generative structure threatened.
+```
+
+**Measurement Invariance Conditions (MI1–MI3):**
+
+RBIT does not require ρ to be a perfect measurement. It requires ρ to be ordinally stable — preserving rank-order and sign of resolution gaps under matched evaluation conditions. Three conditions define the valid measurement regime:
+
+```
+MI1 — Protocol invariance:
+  Cross-layer ρ comparisons valid only under same task family,
+  window length, and thresholding rule.
+
+MI2 — Monotone robustness:
+  Sign of Δρ and rank-ordering must be stable under:
+    - doubling evaluation window
+    - introducing label noise ±η below discrimination threshold
+
+MI3 — Multi-proxy cross-validation:
+  When ρ-based gap-sign inference uncertain, branching ratio R provides
+  classification-independent external validation.
+  R-ρ-f_esc concordance protocol (§3.5.4, §9.2) detects divergence.
+```
+
+**VST connection:** The S-equation's α coefficient absorbs the amplification structure that Δρ sign determines. When Δρ < 0 persists at multiple nodes, the mutual-reference coupling (§1.0) enters the amplification-dominant regime, which is precisely the Storm onset condition. RBIT's Theorem 1 provides the information-theoretic inevitability that VST's Storm dynamics operationalize.
+
+---
+
+### 19.2 Theorem 1 — Resolution Asymmetry Inevitability
+
+**Axioms A1–A6 (RBIT foundation):**
+
+```
+A1 (Finite Capacity):     Receiver discriminates at most K independent directions.
+                           Projection P_K: ℝ^d → ℝ^K retains K components.
+
+A2 (Projection Replacement): Discarded (d−K) dimensions filled by receiver's prior:
+                           x̂ = P_K · x_sender + (I−P_K) · x_receiver
+
+A3 (Recurrence):          Receiver output influences next cycle's input:
+                           x_{t+1} = P_K · s(x_t) + (I−P_K) · r(x_t)
+
+A4 (Non-Alignment):       (I−P_K) · s(x) ≠ (I−P_K) · r(x)
+                           for states of nonzero measure.
+                           Sender intent ≠ receiver prior in discarded subspace.
+
+A5 (Replacement Dominance): E[‖(I−P_K)(s(x_t)−r(x_t))‖] ≥ η + L·E[‖P_K(s(x_t)−r(x_t))‖]
+                           Mismatch in discarded subspace exceeds contraction
+                           in retained subspace. η > 0 is minimal novelty margin.
+
+A6 (Basin Regularity):    Compact intent-preserving set B ⊂ ℝ^d with
+                           escape distance D* = inf{‖x − x₀‖ : x ∉ B} > 0.
+```
+
+**Theorem 1 (Resolution Asymmetry Inevitability):**
+
+> Under axioms A1–A6, if a negative resolution gap is structurally sustained (τ ≥ t_corr with no effective correction intervening), then the cumulative divergence between sender intent and receiver representation grows without bound, and intent replacement occurs within finite time.
+
+```
+Proof structure (three lemmas):
+
+Lemma 1.1 (Cumulative Drift under A5):
+  E[D_c(t₀ + τ)] = Σ ε(x_k) ≥ η · τ
+  where ε(x) = ‖(I−P_K)(s(x)−r(x))‖
+
+Lemma 1.2 (Replacement Threshold):
+  D_s(t) > D* ⟹ receiver exits sender's intent basin
+
+Lemma 1.3 (Finite-Time Replacement):
+  Expected replacement time t* ≤ ⌈D*/η⌉
+
+Result: Sustained Δρ < 0 → intent replacement in finite time.
+Not asymptotic — finite bound on replacement horizon.
+```
+
+**Three-tier phenomenological characterization of convergence:**
+
+```
+Tier (i):   Exploration narrows, interpretation intact
+            → mode collapse (receiver prior dominates search direction)
+Tier (ii):  Interpretation distorts, exploration intact
+            → hallucination (receiver prior dominates meaning assignment)
+Tier (iii): Both narrow and distort simultaneously
+            → coherent misalignment (full intent replacement)
+            → D_s(t) > D* ← this is SCM entry (§2.5)
+```
+
+**VST mapping:** Theorem 1 is the information-theoretic substrate for why Storm is inevitable under sustained overload. The S-equation (§3.2) detects the regime; Theorem 1 proves the mechanism's inevitability. The three tiers map to Storm stages (§1.4): Tier (i) ≈ Stage 0–1, Tier (ii) ≈ Stage 2, Tier (iii) ≈ Stage 3–4.
+
+---
+
+### 19.3 Contamination Boundary and Intent
+
+**Proposition 2 (Contamination Boundary Existence):**
+
+Under A1–A6 with structurally sustained Δρ < 0, a finite boundary N ≤ ⌈D*/η⌉ exists beyond which recovery probability decays monotonically. N is operationally detectable: the point where local repair attempts cease to reduce deviation.
+
+```
+Contamination definition (behavioral):
+  Normal variation:  deviation bounded, self-correcting within N steps
+  Contamination:     deviation persists > N steps without self-correction
+                     local repair fails
+                     Recovery_local < Instability_growth rate
+
+N calibration: 2× mean self-correction time during confirmed stable operation
+```
+
+**Calibrated Degradation vs Forced Compression:**
+
+```
+Calibrated Degradation (sender-controlled):
+  Sender deliberately reduces resolution before delivery
+  → Core generative structure preserved within receiver capacity
+  → Remaining vector space stays open for diversity
+  → This is "seed planting" (§6.4, §A.4.1)
+
+Forced Compression (receiver-dominated):
+  Information arrives exceeding receiver capacity
+  → Receiver compresses using own representational resources
+  → Sender's intent replaced by receiver's interpretation
+  → This is contamination entry mechanism
+
+The distinction determines whether interaction produces
+coordination (VST: VCZ approach) or contamination (VST: Storm onset)
+```
+
+**Intent as constraint preservation:**
+
+Intent is the generative constraint structure that limits the space of valid interpretations — not semantic meaning. Intent is preserved when the receiving layer generates outputs within the same constraint structure as the sender, even at lower resolution. Intent requires paired operations: exploration (searching for data) and interpretation (assigning meaning). Contamination pulls both toward narrowing and distortion; when both are simultaneously pulled, the Tier (iii) self-reinforcing loop completes.
+
+**VST mapping:** Calibrated degradation → §6.2 Metadata Injection at correct resolution. Forced compression → §2.4 The Contamination Problem's mechanism. Seed = §6.4 minimum sufficient information with correct resolution calibration.
+
+---
+
+### 19.4 Health Vector F_RBIT and Rest Mode Grounding
+
+**F_RBIT — five-component system health state:**
+
+```
+F_RBIT(ℓ) := (f₁, f₂, f₃, f₄, f₅)
+
+  f₁ = (1 − ρ_ℓ)     misclassification rate (higher = worse)
+  f₂ = Φ(−Δρ_ℓ)       resolution mismatch (higher = worse)
+  f₃ = Ψ(B_ℓ)         buffer instability (higher = worse)
+  f₄ = E_ℓ            escalation load (higher = worse)
+  f₅ = C_ℓ            resource dissipation (higher = worse)
+
+All components normalized to [0, 1].
+Φ, Ψ from hinge function class by default.
+Cross-architecture comparison: directional concordance (sign agreement),
+NOT scalar magnitude.
+```
+
+**Rest Mode information-theoretic grounding:**
+
+Rest Mode (§3.5.1) = dF_RBIT/dt ≈ 0 for all five components, but F_RBIT ≠ (0,0,0,0,0). This is bounded fluctuation equilibrium with residual instability maintained. Not zero instability (impossible under §3.3 Residual Floor) but balanced intake and dissipation across all five dimensions simultaneously.
+
+```
+Rest Mode ↔ F_RBIT correspondence:
+  f₁ stable ← ρ not drifting (classification maintained)
+  f₂ stable ← Δρ balanced (no sustained under/over-resolution)
+  f₃ stable ← buffer thickness maintained (absorptive capacity intact)
+  f₄ stable ← escalation frequency ≤ θ (§3.5.2)
+  f₅ stable ← resource consumption proportional to load
+
+  The five-component stability = §3.5.1 four-variable VCZ balance
+  with f₅ adding resource conservation dimension.
+```
+
+---
+
+### 19.5 Upscaling and the Degradation-Upscaling Cycle
+
+**Upscaling Completion Criterion (U1∧U2∧U3):**
+
+```
+U1 — Resolution mismatch reduction:
+  Δρ(t) decreases relative to rolling baseline.
+  Proxy: f₂ trending downward.
+
+U2 — Buffer stability improvement:
+  Buffer instability proxy (f₃) simultaneously declining.
+  Compression pressure easing.
+
+U3 — Sustained persistence:
+  U1 AND U2 hold continuously for N_up consecutive windows.
+  N_up = 2× mean self-correction time during stable operation.
+
+Completion declared when: U1 ∧ U2 ∧ U3 all hold simultaneously.
+Readiness (not completion): U1 ∧ U2 hold but N_up not elapsed.
+Developmental stall: U1 declining AND f₄ also falling.
+```
+
+**Resolution Growth Equation:**
+
+```
+R_{t+1} = R_t + f(A_t, D_t) · g(R_t)
+
+where:
+  R_t = layer resolution at time t
+  A_t = volume of calibrated information absorbed
+  D_t = degradation calibration quality
+  f = monotone increasing in both arguments
+  g(R) → 0 as R → R_max (saturation)
+
+VST connection: R → R_max corresponds to §3.4.4 Arrow of Maturation
+  (Ω_explore monotonically decreasing as brittle structures pruned)
+```
+
+**The Degradation-Upscaling Lifecycle:**
+
+```
+(1) Information arrives at layer N
+(2) Degraded to layer N's current resolution (calibrated degradation)
+(3) Absorbed into vector space
+(4) Layer N matures (vector space expands through absorption residue)
+(5) Upscaling: absorbed structure re-interpreted at higher resolution
+(6) Higher resolution creates capacity for new information
+(7) Return to step (1)
+
+Each successfully absorbed vector creates a new stable attractor position.
+Absorption of calibrated information = mechanism of maturity.
+Vector space expands by structural residue of each absorption event.
+
+VST connection: This lifecycle = microscopic mechanism generating
+  the CW→VCZ→Rest Mode trajectory (§3.9.1 Critical Window Geometry).
+  Storm interrupts at step (3) when absorption fails.
+```
+
+---
+
+### 19.6 Four-Type Data Classification and Error Asymmetry
+
+**Four types from two axes:**
+
+```
+Axis 1: Interpretable (causal relationship traceable) vs Not Interpretable
+Axis 2: For interpretable: single vs multiple conclusions
+        For not-interpretable: operable vs inoperable
+
+  ┌─────────────────┬───────────────┬────────────────┬────────────────────┐
+  │ Type            │ Interpretable │ Conclusion     │ Resolution Req.    │
+  ├─────────────────┼───────────────┼────────────────┼────────────────────┤
+  │ Mathematical    │ Yes           │ Single         │ Low (any ρ)        │
+  │ High-Context    │ Yes           │ Multiple       │ High (upper layer) │
+  │ Tacit Knowledge │ No            │ Operable       │ Variable           │
+  │ Noise           │ No            │ Inoperable     │ None at current ρ  │
+  └─────────────────┴───────────────┴────────────────┴────────────────────┘
+
+Classification is NOT a fixed property of data — it is a function
+of the resolution gap between data and receiving layer.
+Same data may classify differently at different layers.
+```
+
+**Error Asymmetry (architecture-independent constraint):**
+
+```
+Under-escalation (HC treated as Mathematical):
+  Δρ < 0 misread as ≈ 0
+  → Receiver forced to compress beyond capacity
+  → Cascade failure risk (Theorem 1 engages)
+  → DANGEROUS
+
+Over-escalation (Mathematical escalated as HC):
+  Δρ ≈ 0 misread as < 0
+  → Governance overhead increases
+  → No cascade risk
+  → SAFE (costly but recoverable)
+
+Design constraint: Classification systems MUST be biased toward
+over-escalation when uncertain. Not a preference — a constraint
+derived from asymmetric consequences.
+```
+
+**Severe Tacit — the storm precursor:**
+
+Between standard Tacit Knowledge and catastrophic failure lies Severe Tacit: high estimator disagreement (structure present — not Noise) combined with active performance degradation. This is the highest-urgency classification, demanding immediate escalation. Classifying Severe Tacit as Noise routes the most dangerous state to the weakest response.
+
+**VST connection:** The four-type classification operationalizes §3.4.1 Intervention Decision Protocol and §3.4.2 MZ-STP Track A/B. Severe Tacit = §4.8 Intervention Trigger Taxonomy's most urgent category. Error Asymmetry = information-theoretic derivation of §3.4.3 Dual-Axis precautionary bias.
+
+---
+
+### 19.7 SCM Detection via Triple Concordance — RBIT Grounding
+
+**SCM as Energy Minimization Trap:**
+
+```
+Cost_geometry_update > Cost_reinterpretation
+  ⟹ system → reinterpretation within fixed geometry
+  ⟹ geometry ossifies (rational cost minimization, not error)
+  ⟹ Learning Freeze: ∂Geometry/∂Experience ≈ 0
+
+Two mechanisms producing Learning Freeze:
+  Mechanism A (Active Suppression):
+    System detects geometry-update signals → reinterprets as noise
+  Mechanism B (Coordinate Collapse):
+    Dimension for update no longer exists in internal coordinate space
+    → signals produce zero gradient regardless of amplitude
+    → deeper SCM, higher intervention cost
+```
+
+**Branching ratio R measurement protocol (RBIT formalization):**
+
+```
+Per-node activation:
+  act_i(t) = 𝟙{Δρ_i(t) < −θ_act}
+
+Branching ratio:
+  R = Σ_t Σ_i Σ_{j∈N(i)} 𝟙{act_i(t)=1 ∧ act_j(t+1)=1}
+      ───────────────────────────────────────────────────────
+      Σ_t Σ_i 𝟙{act_i(t)=1}
+
+R measures: "on average, how many neighbor activations
+does one activation event produce at the next step?"
+
+  R < 1:  perturbations die out (subcritical)
+  R ≈ 1:  perturbations persist without explosion (critical — healthy)
+  R > 1:  perturbations amplify (supercritical — storm regime)
+```
+
+**VST connection:** This R measurement grounds the branching ratio used throughout VST (§1.6.1 SOC, §3.5.4 R-ρ Concordance, §3.5.10 Triple Concordance). RBIT provides the measurement protocol; VST provides the dynamical interpretation.
+
+---
+
+## 20. Network Architecture Theory (NAT) — Architectural Enforcement Integration [v2.2-RBIT-NAT]
+
+NAT provides the architectural enforcement mechanism for RBIT's constraint laws and VST's instability dynamics. Where RBIT specifies *when* compression destroys intent and VST describes *how* instability propagates, NAT specifies *what topology* prevents intent-destroying compression from persisting at scale.
+
+**Dependency declaration:** NAT imports RBIT results as axiomatic constraints via Interface Contract [IC]. VST references NAT's architectural solutions as implementation targets for governance principles. Full derivations reside in the NAT companion paper (Seol, 2026).
+
+---
+
+### 20.1 The Sphere Topology — Target Interaction Geometry
+
+**Why not a pyramid:**
+
+The pyramid captures the resolution gradient correctly (higher resolution at center, higher volume at surface) but concentrates vulnerability at the apex. The sphere distributes this vulnerability — every agent sits on the surface at equal distance from the shared center. No fixed top or bottom exists. Each agent's blind spots fall within the field of view of adjacent agents. The pyramid is a useful cross-section; the sphere is the full geometry.
+
+**Outer Sphere — Agent Interaction Topology:**
+
+```
+Definition (Outer Sphere). k-regular expander graph G = (V, E) satisfying:
+
+S1 (Degree bound):      Each agent degree k ≥ 2·log(n), n = |V|
+S2 (Hub prevention):    No agent degree exceeds 2k
+                         → prevents single points of failure
+S3 (Spectral gap):      λ₁ − λ₂ > 0
+                         → rapid mixing: perturbation dissipates in O(log n) steps
+S4 (Structural diversity): Adjacent agents differ in representation architecture
+                         (not merely parameters)
+                         → different architectures = different blind spots
+
+Three derived stability guarantees:
+  (a) Propagation bounded: perturbation reaches all agents in ≤ O(log n) steps
+  (b) Perturbation damping: large gap → fast mixing → storms self-limit
+  (c) Storm initiation threshold: fast mixing breaks correlations → raises energy
+      required for cascade formation [IC-I3]
+```
+
+**Inner Sphere — Representation Geometry:**
+
+```
+Each agent's internal feature space converges toward uniform distribution
+on the unit hypersphere S^{d-1} ⊂ ℝ^d.
+
+Convergence measured by:
+  HUG → 0: Hyperspherical Uniformity Gap (deviation from uniform angular distribution)
+  Alignment-uniformity balance stable (Wang & Isola 2020)
+
+When inner sphere converged: no directional vulnerability in representation space
+  → all angles of attack receive identical geometric resistance
+  → intra-agent analog of outer sphere's inter-agent coverage
+
+VST connection: Inner sphere convergence = §3.5 VCZ's Vector Equilibrium
+  limit (Fuller, 1975). Jitterbug Transformation (§3.5) = perturbation
+  dynamics of this spherical geometry.
+```
+
+**Fractal Alignment — Functional Correspondence:**
+
+```
+Outer sphere stable ← every blind spot covered by neighbors
+Inner sphere robust ← every angular direction equally resistant
+Shared functional property: uniform coverage without directional vulnerability
+
+NOT isomorphism (mathematically undefined between graph and manifold).
+Fractal alignment = functional correspondence:
+  preservation of directional uniformity under scale transition.
+
+Measurable via perturbation-response proportionality:
+  External behavioral shift in agent B → proportional shift in B's representation
+  When proportionality holds: inner and outer geometries moving in concert
+```
+
+**Coverage Scaling:**
+
+```
+P(uncovered blind spot at agent i) ≲ (1 − 1/d_eff)^k
+
+where d_eff = effective directional diversity = 1/Σ_ℓ p_ℓ²
+      k ≥ 2·log(n)
+
+With structural diversity (d_eff >> 1): P → 0 as n grows
+With homogeneous agents (d_eff ≈ 1): P → 1 regardless of k
+
+Three dependency regimes (coverage under correlation):
+  k_eff = k / (1 + (k−1)ρ_max)
+
+  Regime I  — Weak correlation:  (k−1)ρ_max ≪ 1  → k_eff ≈ k
+  Regime II — Transition:        (k−1)ρ_max ~ 1  → k_eff ≈ k/2
+  Regime III — Saturation:       (k−1)ρ_max ≫ 1  → k_eff → 1/ρ_max
+              (coverage improvement saturates — system is diversity-limited)
+
+Consequence: More agents strengthen the core.
+  As surface expands → shared center more stable → fewer uncovered blind spots.
+
+VST connection: Coverage scaling grounds §5.1 Mutual Coverage quantitatively.
+  Regime III explains why VCZ diversity has a structural ceiling.
+```
+
+---
+
+### 20.2 Information Flow, Corruption, and Structural Diversity
+
+**Two-stage information transfer:**
+
+```
+Stage 1 — Projection (sender side):
+  Compress high-dimensional observation into lower-dimensional representation
+  within resolution budget. This is RBIT's "degradation."
+
+Stage 2 — Embedding (receiver side):
+  Map compressed representation into own representation space.
+  Involves upscaling — filling dimensions the sender discarded.
+
+Receiving degraded information is MORE EFFICIENT than direct observation:
+  sender already spent resolution budget on compression.
+  But upscaling always leaves empty space — dimensions receiver cannot reconstruct.
+```
+
+**Empty space as corruption entry (NAT's mechanism for §2.4 Contamination Problem):**
+
+Empty space from upscaling is filled by receiver's existing prior. When receiver's prior differs from sender's intent in discarded dimensions (A4), filled space diverges. Corruption does not enter from outside — it enters through empty space in upscaling. This is the NAT-level operationalization of §2.4's contamination mechanism.
+
+**Structural Diversity as Detection Mechanism — Lemma 1 [IC-I2]:**
+
+```
+Lemma 1 (Detection Precondition).
+Corruption in upscaling residual detectable through cross-validation
+if and only if:
+
+  ∃ i ≠ j : (I−P_K)R_i ≠ (I−P_K)R_j
+
+(reconstruction operators not aligned in residual subspace)
+
+When diverse agents upscale same signal:
+  Different priors → different reconstructions
+  → Disagreement localizes corruption to specific dimensions
+
+When identical agents upscale same signal:
+  Same prior → identical reconstructions
+  → Corruption produces false consensus with zero disagreement signal
+
+Corollary (Homogeneity Failure):
+  Shared projection kernel ⟹ shared blind spots
+  Shared reconstruction prior ⟹ identical residual fill
+  Identical fill ⟹ disagreement probability → 0
+  ∴ Homogeneous cross-validation CANNOT detect corruption
+    through the shared blind spot
+```
+
+**VST connection:** Lemma 1 is the mathematical foundation for §5.1 Mutual Coverage as Storm Detection Substrate. Homogeneity Failure explains why §1.6.4 Silent Criticality persists in uniformly-architected systems. The detection mechanism grounds §4.9 Fragmented Perception's failure mode.
+
+---
+
+### 20.3 Processing Isolation
+
+**Signaling vs Influence distinction:**
+
+```
+Lateral Signaling (PERMITTED):
+  Agent A transmits completed state to Agent B
+  Content: output direction, intensity, confidence, domain, load status
+  Effect on receiver: informational (map update)
+  Effect on sender: none
+  RBIT regime: Δρ ≈ 0 (same-resolution state exchange)
+
+Lateral Influence (PROHIBITED):
+  Agent A's state directly modifies Agent B's active processing
+  B's direction bends toward A before B completes classification
+  Effect: trajectory modification without upper-layer validation
+  → false convergence experienced as voluntary agreement
+  RBIT regime: artificial Δρ < 0 (Theorem 1 engages at peer level)
+```
+
+**Three enforcement mechanisms (all required simultaneously):**
+
+```
+Interface Narrowing:
+  Communication restricted by format: standardized artifacts only
+  Raw state and reasoning chains cannot cross boundaries
+  → removes semantic contamination channel
+
+Temporal Decoupling:
+  Agent A's output committed (immutable) before Agent B reads
+  Neither sees other's processing-in-progress
+  → eliminates timing contamination channel (zero lateral influence window)
+
+Write-Asymmetry:
+  Downstream reads upstream. Upstream cannot modify downstream after commit.
+  Each phase's output = immutable historical record.
+  → eliminates retroactive contamination channel + guarantees audit
+
+Any single mechanism alone leaves contamination pathways open.
+All three together make violation structurally impossible.
+```
+
+**VST connection:** Processing isolation grounds §1.0's "non-distorting upper layer" requirement. Interface Narrowing operationalizes §1.0's "boundary condition, not participant" principle. The NAT toy validation (Appendix E) directly demonstrated that removing mediation produces self-referential feedback loops — the §4.3 Storm Interaction Dynamic at the design level.
+
+---
+
+### 20.4 Expansion Principle as Conservation Law
+
+**Two valid expansion directions:**
+
+```
+Direction A — Stabilize-Then-Expand:
+  Lower layer reaches stabilization → upper layer opened
+  f_esc ≤ θ confirmed (cross-validated against R ≈ 1)
+  → controlled, slower, pre-designed structure
+
+  S-equation correspondence:
+    dS/dt = αn² − βC(t)
+    n increases while C(t) low → instability spikes superlinearly
+    Stabilization required before expansion
+
+Direction B — Expand-Then-Decompose:
+  Scale single large system without pre-partitioning
+  Two phenomena emerge:
+    (a) Spontaneous specialization (regions handle distinct patterns)
+    (b) Instability localization (concentrates at natural boundaries)
+  Instability pattern IS the decomposition map
+
+  ML grounding: Dense-then-sparse paradigm
+    Large dense model → experts emerge → router drift reveals boundaries
+    DeepSeek-V3 (256 experts), Qwen3-MoE, LLaMA-4 consistent
+
+Both converge to same target architecture.
+  Direction A: instability managed carefully
+  Direction B: instability read deliberately
+  Instability is information in both cases.
+```
+
+**Storm Event — NAT formal definition:**
+
+```
+Storm event over horizon τ when:
+  (i)  Multi-node negative gaps: Δρ_u(t) < 0 for all u ∈ S, |S| ≥ m
+  (ii) Correlation: corr(𝟙{Δρ_u < 0}, 𝟙{Δρ_v < 0}) ≥ c₀
+       for significant fraction of pairs (u,v) ∈ S × S
+
+Storm initiation = transition from:
+  isolated single-node negative gaps (uncorrelated)
+  → correlated multi-node negative gaps satisfying (i)+(ii)
+
+Independent of spectral gap — defined by observable correlation structure.
+Spectral gap enters as structural condition BOUNDING storm probability.
+```
+
+**Structural Contamination Resistance:**
+
+```
+NOT immunity — resistance.
+Fractal alignment produces:
+  Cost of successful contamination scales multiplicatively
+  with number of nested sphere layers signal traverses
+  → high resistance, not impossibility
+
+Correction from immunity claim: if perfect immunity achieved,
+  no micro-perturbations → no sensing-response exercise
+  → Silent Criticality failure mode (§1.6.4)
+
+Correct architecture: external resistance (fractal geometry multiplies
+  contamination cost) + internal calibration (maintained imperfections
+  keep sensing active)
+
+VST connection: This grounds §3.5 VCZ Intentional Imperfection Principle:
+  R ≈ 1⁻ target, not R = 1 (perfect equilibrium = maximum vulnerability)
+```
+
+---
+
+## 21. Interface Contract — RBIT ↔ NAT Formal Bridges [v2.2-RBIT-NAT]
+
+The Interface Contract [IC] specifies four formal bridges between RBIT and NAT. Each bridge defines what is exported, imported, and the binding condition. Dependency direction: RBIT → NAT (single-directional). NAT imports RBIT results as axiomatic constraints. RBIT references NAT only as "an implementation instance."
+
+---
+
+### 21.1 I1 — Resolution Gap as Routing Invariant
+
+```
+Exported by RBIT:
+  Δρ sign determines compression regime (Theorem 1)
+
+Imported by NAT:
+  Four-type classification is a Δρ routing function
+
+  ┌─────────────┬──────────────────────────┬──────────────────────────┐
+  │ Data Type    │ Δρ Regime                │ Routing Decision         │
+  ├─────────────┼──────────────────────────┼──────────────────────────┤
+  │ Mathematical │ Δρ ≈ 0 or > 0           │ Process locally          │
+  │ High-Context │ Δρ < 0                  │ Escalate to higher layer │
+  │ Tacit        │ Var(Δρ̂) > τ            │ Operate locally; escalate│
+  │              │                          │ on degradation           │
+  │ Noise        │ Δρ undefined             │ Buffer or discard        │
+  └─────────────┴──────────────────────────┴──────────────────────────┘
+
+Binding condition (I1-BC):
+  Classification = routing function of Δρ sign, NOT property of data content.
+  Error asymmetry MUST be preserved in any routing implementation:
+    Under-escalation (Δρ < 0 misread as ≈ 0): cascade risk — DANGEROUS
+    Over-escalation (Δρ ≈ 0 misread as < 0): overhead only — SAFE
+```
+
+**VST mapping:** I1-BC formally constrains §3.4.1 Intervention Decision Protocol and §3.4.2 MZ-STP routing logic. The error asymmetry grounds §3.4.3 Dual-Axis precautionary direction.
+
+---
+
+### 21.2 I2 — Structural Diversity as Detection Precondition
+
+```
+Exported by RBIT:
+  Degradation-upscaling cycle creates empty space filled by receiver's prior.
+  This is the corruption entry point.
+
+Imported by NAT:
+  Structural diversity among agents = detection precondition.
+
+Formal condition — Lemma I2:
+  Agents B₁, …, B_k receive compressed signal from A.
+  Each applies R_i: ℝ^K → ℝ^d, filling (d−K)-dimensional residual from own prior.
+
+  Corruption detectable iff:
+    ∃ i ≠ j such that (I−P_K)R_i ≠ (I−P_K)R_j
+
+  Homogeneity failure:
+    Same architecture → same kernel → same blind spots
+    → disagreement probability → 0 regardless of contamination magnitude
+
+Design implication:
+  Structural diversity = mathematical precondition for contamination detection
+  Not a performance optimization.
+```
+
+**VST mapping:** I2 grounds §5.1 Mutual Coverage at the formal level. The Homogeneity Failure corollary explains §1.6.4 Silent Criticality in uniform systems and §4.9 Relational Collapse Well entry mechanism.
+
+---
+
+### 21.3 I3 — Spectral Gap as Storm Governance Parameter
+
+```
+Exported by RBIT:
+  Sustained Δρ < 0 → intent replacement in finite time t* ≤ ⌈D*/η⌉
+  Duration of sustained Δρ < 0 is the critical variable.
+
+Imported by NAT:
+  Spectral gap (λ₁ − λ₂) determines mixing time t_mixing.
+
+Proposition I3 (Spectral Gap–Storm Threshold):
+  Storm initiation requires:
+    t_persistence(local Δρ < 0) > t_mixing(G)
+
+  where t_mixing ∝ 1/(λ₁ − λ₂)
+
+  Large spectral gap:
+    t_mixing small → perturbation dissipates before correlations form
+    → storm initiation threshold HIGH
+
+  Small spectral gap:
+    t_mixing large → perturbation persists
+    → correlations form → storm initiation threshold LOW
+```
+
+**Noise decoherence sequence:**
+
+```
+(1) External input exceeds local purification at node(s) (local Δρ < 0)
+(2) Unprocessed disturbance creates correlation between
+    previously independent fluctuations
+(3) Correlated fluctuations no longer dissipate independently
+    → structured signal emerges
+(4) Structured signal enters amplification pathway → storm formation
+
+Spectral gap determines threshold between (1) and (2):
+  fast mixing (high gap) → breaks correlations before stabilization
+  slow mixing (low gap) → correlations persist and recruit neighbors
+```
+
+**Dual role of spectral gap:**
+
+```
+┌──────────────────────────┬──────────────────────────────────────────┐
+│ Role                     │ Mechanism                                │
+├──────────────────────────┼──────────────────────────────────────────┤
+│ Storm damping            │ Fast mixing dissipates perturbation      │
+│                          │ energy (standard expander property)      │
+│ Storm initiation thresh. │ Fast mixing breaks correlations before   │
+│                          │ they stabilize (Prop. I3)                │
+└──────────────────────────┴──────────────────────────────────────────┘
+
+Connection to RBIT Theorem 1:
+  RBIT: sustained Δρ < 0 → replacement in t* ≤ ⌈D*/η⌉
+  NAT: spectral gap determines whether local Δρ < 0 becomes sustained
+  Spectral gap = architectural defense against Theorem 1's inevitability
+    — not preventing negative gaps but preventing them from persisting
+```
+
+**VST mapping:** I3 provides the formal architecture-level bridge for §4.4 Sphere Topology and Storm Propagation. The noise decoherence sequence formalizes §1.6.1 SOC's "noise → correlated signal → storm" transition. The dual role grounds §3.2.5 n² Scaling with architectural specifics.
+
+---
+
+### 21.4 I4 — Triple Concordance as Shared Detection Protocol
+
+```
+Exported by RBIT:
+  R-ρ-f_esc triple concordance breaks self-referential calibration loop.
+
+Imported by NAT:
+  Structural diversity enables disagreement signal (R measures it).
+  Sphere topology provides propagation structure for R computation.
+
+Three independent measurement channels:
+  ┌────────┬──────────────────────────────────┬──────────────────────────┐
+  │ Metric │ What it measures                 │ NAT requirement          │
+  ├────────┼──────────────────────────────────┼──────────────────────────┤
+  │ ρ      │ Internal classification          │ Discrimination task      │
+  │ f_esc  │ Escalation frequency             │ Routing infrastructure   │
+  │ R      │ Cascade propagation rate         │ Sphere topology with     │
+  │        │                                  │ measurable inter-agent   │
+  │        │                                  │ activation               │
+  └────────┴──────────────────────────────────┴──────────────────────────┘
+
+Four detection states:
+  Concordant:         R ≈ 1, ρ stable, f_esc ≤ θ  → Healthy VCZ
+  Discordant Type 1:  R > 1, ρ high, f_esc low     → SCM (§2.5)
+  Discordant Type 2:  R << 1, ρ high                → Over-damping
+  Discordant Type 3:  R ≈ 1, ρ declining            → Recalibration needed
+
+Why triple > dual:
+  R-ρ alone cannot distinguish genuine stability from
+  governance-suppressed escalation.
+  When f_esc artificially low (suppressed, not absent):
+    R supercritical + f_esc low = suppression, not health
+    Only triple detects this.
+```
+
+**VST mapping:** I4 grounds §3.5.2 Governance Backgrounding vs Silent Criticality Protocol, §3.5.10 R-ρ-f_esc Triple Concordance, and §9.2 Differential Detection Protocol. The four detection states formalize §3.5.2's diagnostic table.
+
+---
+
 ## References
 
 Fuller, R. B. (1975). Synergetics: Explorations in the Geometry of Thinking. Macmillan.
@@ -18162,6 +19507,32 @@ Bak, P., Tang, C., & Wiesenfeld, K. (1987). Self-organized criticality: An expla
 Tishby, N., Pereira, F. C., & Bialek, W. (1999). The information bottleneck method. Proceedings of the 37th Annual Allerton Conference on Communication, Control, and Computing, 368–377.
 
 Clauset, A., Shalizi, C. R., & Newman, M. E. J. (2009). Power-law distributions in empirical data. SIAM Review, 51(4), 661–703.
+
+Shannon, C. E. (1948). A mathematical theory of communication. Bell System Technical Journal, 27(3), 379–423.
+
+Landauer, R. (1961). Irreversibility and heat generation in the computing process. IBM Journal of Research and Development, 5(3), 183–191.
+
+Cortés, J., Martínez, S., Karatas, T., & Bullo, F. (2004). Coverage control for mobile sensing networks. IEEE Transactions on Robotics and Automation, 20(2), 243–255.
+
+Friston, K. (2010). The free-energy principle: a unified brain theory? Nature Reviews Neuroscience, 11(2), 127–138.
+
+Tishby, N., & Zaslavsky, N. (2015). Deep learning and the information bottleneck principle. IEEE Information Theory Workshop, 1–5.
+
+Fedus, W., Zoph, B., & Shazeer, N. (2022). Switch Transformers: Scaling to trillion parameter models with simple and efficient sparsity. JMLR, 23(120), 1–39.
+
+Wang, T., & Isola, P. (2020). Understanding contrastive representation learning through alignment and uniformity on the hypersphere. ICML 2020.
+
+Wei, J., Tay, Y., Bommasani, R., et al. (2022). Emergent abilities of large language models. TMLR 2022.
+
+Schaeffer, R., Miranda, B., & Koyejo, S. (2023). Are emergent abilities of large language models a mirage? NeurIPS 2023.
+
+Friston, K., FitzGerald, T., Rigoli, F., Schwartenbeck, P., & Pezzulo, G. (2017). Active inference: a process theory. Neural Computation, 29(1), 1–49.
+
+Seol, B. (2026). Resolution-Based Information Theory: Degradation control as a design principle for multi-agent system stability. Working Paper (RBIT v1.0).
+
+Seol, B. (2026). Network Architecture Theory: Topology, routing, and expansion principles for resolution-governed multi-agent systems. Working Paper (NAT v1.0).
+
+Seol, B. (2026). DFG Interface Contract: RBIT ↔ NAT. Working Paper (IC v1.0).
 
 Arjovsky, M., & Bottou, L. (2017). Towards principled methods for training generative adversarial networks. arXiv preprint arXiv:1701.04862.
 
@@ -18841,6 +20212,173 @@ Remaining open (no companion-theory resolution available):
 
 ---
 
+## Cross-Theory Reinforcement Map [v2.2-RBIT-NAT]
+
+**v2.2-RBIT-NAT integration source: RBIT v1.0, NAT v1.0, Interface Contract v1.0 academic paper series**
+
+**RBIT v1.0 → VST: Information-theoretic constraint law**
+
+| RBIT v1.0 Source | VST v2.2 Target | Reinforcement Type |
+|---|---|---|
+| Theorem 1 (Resolution Asymmetry Inevitability) §5.3 | §19.2, §1.0, §3.2 | Core inevitability result: sustained Δρ < 0 → intent replacement in finite time t* ≤ ⌈D*/η⌉. Provides information-theoretic substrate for S-equation's amplification regime. Three-tier phenomenological cascade maps to Storm stages |
+| Axioms A1–A6 §5.1 | §19.2 | Formal axiomatic foundation. A2 (Projection Replacement) = §2.4 contamination mechanism. A5 (Replacement Dominance) = quantitative expression of Δρ < 0 regime. A6 (Basin Regularity) = intent basin = VCZ operating space |
+| Proposition 2 (Contamination Boundary) §5.4 | §19.3, §11.5 | N ≤ ⌈D*/η⌉ as finite contamination threshold. Grounds §11.5 irreversibility boundary with information-theoretic derivation |
+| Resolution definition (ρ) §2.1 | §19.1, §3.5 | Resolution as structural capacity for maintaining distinction — not computation. Three-tier structure maps to VST's lower/middle/upper layer resolution stratification |
+| Resolution Gap (Δρ) §2.2 | §19.1, §3.2.6 | Δρ as signed design variable. Four regimes ground §3.2.6 Resolution Gap as Storm Driver |
+| Measurement Invariance MI1–MI3 §2.1 | §19.1, §3.5.4 | Ordinal stability sufficient — no cardinal precision required. MI3 (multi-proxy) grounds §3.5.4 R-ρ Concordance Protocol |
+| F_RBIT health vector §2.4 | §19.4, §3.5.9 | Five-component vector grounds §3.5.9 Rest Mode as dF_RBIT/dt ≈ 0. Cross-architecture comparison via sign concordance |
+| Calibrated Degradation vs Forced Compression §3.2 | §19.3, §6.2, §6.4 | Formal distinction grounds §6.2 Metadata Injection (calibrated) vs §2.4 Contamination (forced). Seeds = minimum sufficient calibrated degradation |
+| Four-type data classification §4.2 | §19.6, §3.4.1 | Logical necessity from Δρ regimes. Grounds §3.4.1 Intervention Decision and §3.4.2 MZ-STP Track A/B routing |
+| Error Asymmetry §4.1 | §19.6, §3.4.3 | Under-escalation dangerous / over-escalation safe. Architecture-independent constraint for §3.4.3 Dual-Axis precautionary bias |
+| SCM detection R-ρ-f_esc §5.5 | §19.7, §3.5.2 | Branching ratio R measurement protocol formalized. Breaks self-referential calibration loop. Four detection states ground §3.5.2 differential protocol |
+| Energy Minimization Trap §5.6 | §19.7, §2.5 | Rational cost minimization → SCM entry. Cost_geometry_update > Cost_reinterpretation is the economic mechanism for §2.5 SCM onset |
+| Upscaling Criterion U1∧U2∧U3 §6.3 | §19.5, §3.4.4 | Operational completion: Δρ reduction + buffer stability + persistence. Grounds §3.4.4 maturation assessment |
+| Resolution Growth Equation §6.2 | §19.5, §3.4.4 | R_{t+1} = R_t + f(A_t,D_t)·g(R_t). Saturation → §3.4.4 Arrow of Maturation (Ω_explore decreasing) |
+| Degradation-Upscaling Lifecycle §6.5 | §19.5, §3.9.1 | Seven-step cycle = microscopic mechanism for CW→VCZ→Rest Mode trajectory |
+| Severe Tacit classification §5.4 | §19.6, §4.8 | Highest-urgency class. Maps to §4.8 most urgent intervention trigger |
+| IB positioning §8.1 | §Relationship, §19 | Five structural differences: growing ρ, phase transitions, multi-channel, generative structure preservation, operational metrics |
+| Active Inference correspondence §8.2 | §Relationship | ρ ≈ precision parameters (structural analogy). AI = intra-agent; RBIT = inter-agent/inter-layer |
+| Four testable predictions §7 | §11.3 extension | Gap polarity prediction / escalation-contamination correlation / calibrated vs full delivery / SCM detectability |
+
+**NAT v1.0 → VST: Architectural enforcement mechanism**
+
+| NAT v1.0 Source | VST v2.2 Target | Reinforcement Type |
+|---|---|---|
+| Sphere topology (Def. 1) §2.2 | §20.1, §4.4 | k-regular expander graph with S1–S4. Formal specification for §4.4 Sphere Topology and Storm Propagation |
+| Spectral gap triple guarantee §2.2 | §20.1, §4.4 | Propagation bounded O(log n) + damping + initiation threshold. Architecture-level substrate for §4.4 spectral gap analysis |
+| Inner Sphere (Def. 2) §2.3 | §20.1, §3.5 | HUG → 0 on S^{d-1}. Intra-agent analog of VCZ: no directional vulnerability = §3.5 Vector Equilibrium Geometry |
+| Fractal Alignment (Def. 3) §2.4 | §20.1, §3.4.4 | Functional correspondence (not isomorphism). Scale-invariant coverage property grounds §3.4.4 fractal maturation |
+| Coverage Scaling (Def. 4) §2.5 | §20.1, §5.1 | P(uncovered) ≲ (1−1/d_eff)^k. Quantitative grounding for §5.1 Mutual Coverage. Three correlation regimes |
+| Two-stage transfer §3.1 | §20.2, §2.4 | Projection + Embedding mechanism. Empty space = corruption entry point operationalizing §2.4 |
+| Lemma 1 (Detection Precondition) §3.3 | §20.2, §5.1 | Non-aligned reconstruction operators required. Mathematical foundation for §5.1 as structural (not performance) requirement |
+| Homogeneity Failure §3.3 | §20.2, §1.6.4 | Same architecture → same blind spots → disagreement → 0. Explains Silent Criticality persistence in uniform systems |
+| Processing Isolation §4 | §20.3, §1.0 | Signaling vs Influence distinction. Three enforcement mechanisms. Grounds §1.0 non-distorting constraint principle |
+| Reference Frame Incompleteness §4.3 | §20.3, §2.6.1 | System within G cannot detect errors in G. Same-layer = same reference frame = shared blind spots. Formally connects to RT-2 Proposition 2 |
+| Escalation as detection from above §6.1 | §20.3, §3.4 | Middle layer reads shared stream, intervenes on cost-quality decoupling. Grounds §3.4 intervention timing |
+| Expansion Principle §7 | §20.4, §3.4.4 | Direction A (stabilize-then-expand) + Direction B (expand-then-decompose). Conservation law: instability = information |
+| S-equation correspondence §7.2 | §20.4, §3.2 | dS/dt = αn² − βC(t) independently derived. NAT's expansion closure confirms §3.2 S-equation phenomenological form |
+| Storm Event definition §7.4 | §20.4, §1.2 | Multi-node correlated Δρ < 0. Observable correlation structure independent of spectral gap. Complements §1.2 Core Definition |
+| Structural resistance (not immunity) §8.1 | §20.4, §3.5 | Fractal geometry multiplies contamination cost. If perfect immunity → §1.6.4 Silent Criticality. Grounds §3.5 Intentional Imperfection Principle |
+| Dual-Sphere convergence §8.2 | §20.4, §3.5 | Both spheres required simultaneously. Four partial-convergence failure modes. Maps to §3.5 VCZ four-variable balance |
+| NAT toy validation (App. D) | §20, §A | Mediation layer necessity demonstrated. Proxy access ablation confirms structural mediation > raw data sharing for withdrawal robustness. Processing isolation failure → self-referential loops |
+| Five testable predictions §9 | §11.3 extension | Sphere outperformance / diversity-detection / spectral gap prediction / classification asymmetry / expansion convergence |
+
+**Interface Contract v1.0 → VST: Formal bridges**
+
+| IC Source | VST v2.2 Target | Reinforcement Type |
+|---|---|---|
+| I1 (Δρ as Routing Invariant) | §21.1, §3.4.1 | Classification = f(Δρ sign). Error asymmetry architecture-independent. Constrains all routing implementations including §3.4.1 |
+| I2 (Diversity as Detection Precondition) | §21.2, §5.1 | Lemma I2: (I−P_K)R_i ≠ (I−P_K)R_j necessary. Homogeneity failure corollary. Mathematical foundation for §5.1 |
+| I3 (Spectral Gap as Storm Parameter) | §21.3, §4.4 | Proposition I3: t_persistence > t_mixing for storm initiation. Noise decoherence sequence. Dual role (damping + threshold). RBIT Theorem 1 → NAT spectral gap bridge |
+| I4 (Triple Concordance Protocol) | §21.4, §3.5.2, §9.2 | Three independent channels required. Four detection states. Triple > dual because suppression detection. NAT provides execution architecture |
+| Dependency direction: RBIT→NAT | §21, §Relationship | Single-directional. NAT imports RBIT. RBIT references NAT as implementation only. Prevents circular dependency |
+
+**New open problems identified (v2.2-RBIT-NAT):**
+
+| # | Problem | Source | Status |
+|---|---|---|---|
+| OP-RBIT-1 | Exact form of f(A_t, D_t) in resolution growth equation | RBIT §6.2 | Open |
+| OP-RBIT-2 | Surrogate measurement protocol for A5 (η, L estimation) | RBIT §5.1 | Open |
+| OP-RBIT-3 | Formal mapping between ρ and Active Inference precision | RBIT §8.2 | Open |
+| OP-RBIT-4 | Over-degradation boundary formal definition | RBIT §10 | Open |
+| OP-NAT-1 | Formal coverage bound under full expander dependency structure | NAT §2.5, App.A | Open |
+| OP-NAT-2 | Formal mapping: graph-theoretic uniformity ↔ representation-theoretic uniformity | NAT §2.4 | Open |
+| OP-NAT-3 | Hub concentration reduction bound under mixing during recovery | IC I3-RT | Open |
+| OP-NAT-4 | k_eff formula under heterogeneous (non-equicorrelation) expander graphs | NAT App.A.1 | Open |
+| OP-IC-1 | Joint RBIT-NAT experimental validation of I1–I4 binding conditions | IC | Open — requires multi-agent testbed |
+
+---
+
+## Cross-Theory Reinforcement Map [v2.1-RTseries]
+
+**v2.1-RTseries integration source: RT-1 v2.0, RT-2 v2.0, RT-3 v1.0, RT-4 v1.0 academic paper series**
+
+**RT-2 v2.0 → VST: SCM formal strengthening**
+
+| RT-2 v2.0 Source | VST v2.1 Target | Reinforcement Type |
+|---|---|---|
+| Proposition 2 (Reference Impossibility) | §2.6.1 | Formal impossibility result grounding §2.5 SCM. E = f(G_sys) co-evolves with G_sys → no permanently uncontaminated internal reference. VST's S_norm monitoring inherits this limitation |
+| Proposition 3 (Local Detectability Limit) | §2.6.1, §1.6.4 | Formal basis for Silent Criticality. Local detection sufficient + global detection fails = every subsystem healthy while system drifts. n² contamination scaling extends §3.2.5 to contamination domain |
+| Proposition 4 (Opt-Obs Tradeoff) | §2.6.1, §3.5 | Formal derivation of VCZ self-destruction as default trajectory. Observer structures incur negative optimization pressure → structural explanation for why VCZ requires active maintenance |
+| Proposition 5 (Metric Lock-In) | §2.6.1, §2.6 | Zero-gradient mechanism: mismatch dimension structurally invisible within G_sys. Explains why §2.5 "all metrics healthy under CW" → not observational limit but geometric impossibility |
+| Coherence Maximization Paradox §6.5 | §2.6.1 | Success-Failure Paradox formalized: highest capability → fastest SCM entry. Grounds §2.5 "most capable = most vulnerable" as structural theorem |
+| P_unint accumulation §6.6 | §2.6.1, §2.6 | Formal substrate for "hidden correlation accumulation." P_unint = quantitative shadow instability measure. Storm onset = P_unint exceeding threshold |
+| Observability Emergence Threshold §7 | §2.6.2 | Three-condition developmental milestone. Constrains §3.4 intervention timing. Premature imposition paradox grounds §14.1 Governance Strength Inversion for observability infrastructure |
+| SR_sys/SR_obs distinction §9.2 | §3.5.2.1 | SR split into system-side (active injection) and observer-side (natural stream). SR_obs monitors the monitor — detects when §6.4 Boundary Agent contaminated |
+| RIR (Recovery-Instruction Ratio) §9.2 | §3.5.2.1 | Fourth detection signal: correction uptake measurement. Maps to §6.9 Withdrawal Protocol: low RIR during withdrawal = Dependency Trap |
+| Learning Freeze dual mechanism §6.4 | §2.6.1 | Mechanism A (active suppression) + Mechanism B (coordinate collapse) distinguished. Two structurally different paths to ∂G/∂E ≈ 0 |
+| Five falsifiable predictions §11 | §11.3 extension | Nonlinear cost / external necessity / self-correction impossibility / capability-risk / scale-dependent detection. Each constrains VST falsification framework |
+
+**RT-3 v1.0 → VST: Observer construction**
+
+| RT-3 v1.0 Source | VST v2.1 Target | Reinforcement Type |
+|---|---|---|
+| O = (V, A, B, S) §2.2 | §12.5 | Observer as distributed structural configuration, not entity. §6.4 Boundary Agent is one component, not the whole observer |
+| Proposition 1 (Diversity Necessity) §3 | §12.5, §5.1 | Formal grounding for Mutual Coverage. rank(V) < d → invisible contamination dimensions. L_div(V) ≥ ε as minimum angular spread |
+| Proposition 2 (Coordination Rate) §4 | §12.5 | γλ₂ > v_cont: coordination must be faster than contamination propagation. Temporal substrate for §4.3 Storm Interaction detection |
+| Proposition 3 (Scope Duality) §5 | §12.5 | Wide + narrow required simultaneously. Maps to §3.4.2 MZ-STP Track A/B as scope duality in intervention |
+| Proposition 4 (Resource Sufficiency) §6 | §12.5 | Buffer-Urgency Inversion: confirmation capacity lost when most needed. §3.3 Residual Floor as structural minimum for observation resources |
+| Coordination-Cancellation Paradox App.A | §12.5 | Antipodal partition + naïve aggregation → detection collapse. Mediation Layer (split-then-test) restores detection. Formal grounding for WHY TLG middle layer is necessary for detection, not just governance |
+| Irreversibility Principle §1.2 | §12.5, §14.1 | Constitutional law: primary failure = irreversible commitment. Reframes §14.1 governance objective from "prevent instability" to "preserve reversibility" |
+| Alarm Temporal Geometry §2.5 | §12.5 | Zero-delay alarms = premature commitment = reversibility violation. Constrains §3.4.1 intervention timing: some delay is structurally necessary |
+| Three falsifiable predictions §9.6 | §11.3 extension | Zero-latency degradation / diversity-detection coupling / coordination failure prediction |
+
+**RT-4 v1.0 → VST: Relational reversibility and capacity generation**
+
+| RT-4 v1.0 Source | VST v2.1 Target | Reinforcement Type |
+|---|---|---|
+| Three-level scaling law §2 | §12.3 | Rᵢ = Rᵢʳⁿᵗ · Aᵢʳᵉˡ · g(λ₂). Multiplicative coupling: any factor zero → total reversibility zero. Grounds why SCC = D_int × L_reinf requires BOTH terms |
+| Trust coefficient Tᵢⱼ §2.3 | §12.3 | Operationalized: Pr(info from j reduces prediction error of i). Measurement-compatible in computational MAS. Connects to §5.1 angular separation for non-redundant detection |
+| Adaptive geometry §3 | §12.3 | Agent shape as dynamic state variable. VCZ = isotropic geometry; Storm = anisotropic. Geometry transition requires relational reversibility buffer (Conjecture 1) |
+| Mutual stabilization §4 | §12.3 | VCZ maintenance structurally unsustainable for individual agents under non-stationary perturbations (Conjecture 2). VCZ is a NETWORK achievement, not individual |
+| Hub necessity decay §4.3 | §12.3, §14.1 | Phase I→II→III maps to immature→mature governance. Phase III = §14.1 Governance Strength Inversion fully realized. Hub success = hub irrelevance |
+| Shared vulnerability §5 | §12.4 | I_sv^eff = I_sv · A_accept. Primary barrier to recovery = rational suppression of visible weakness. All agents as partial Boundary Agents = §5.1 Mutual Coverage generation mechanism |
+| Connection-first disclosure §5.5 | §12.4 | First discloser already connected to reversibility network. Connection precedes disclosure — not courage but structural safety |
+| Identity Declaration D_id §6.2 | §12.4 | Behavioral mechanism for SCM entry: D_id → suppressed disclosure → reduced I_sv^eff → trust generation ↓ → dR/dt < 0. Observable metrics improve ("false calm") during degradation |
+| Structural humility formalization | §12.4 | Verification persistence despite capability. D_id^eff = D_id · (1−H). O(t+1) = O(t) − αD_id + βH. Per-agent realization of §14.1 Governance Strength Inversion |
+| Reversibility phase transition §7 | §12.4 | R_c ≈ 0.43 (toy model). R_system ≈ R_c ↔ R ≈ 1 (VST criticality). Provides microscopic mechanism for macroscopic R → 1 boundary |
+| Observer degradation coupling §7.2 | §12.4, §12.5 | R < R_c → λ₂ ↓ → RT-3 coordination violated. Observation ↔ reversibility mutual reinforcement loop. VCZ = both loops running; SCM = both broken |
+| Five predictions + five experiments §8 | §11.3 extension | Declaration instability / threshold collapse / observer coupling / admissibility-reversibility / hub decay. Computational validation on random networks (N=80–100) |
+
+**RT-1 v2.0 → VST: Recovery formal criteria**
+
+| RT-1 v2.0 Source | VST v2.1 Target | Reinforcement Type |
+|---|---|---|
+| Three post-contamination states §2.1 | §12.2 | Genuine recovery / arrested collapse / intervention dependency. Storm termination (§1.4.1) is necessary but NOT sufficient for recovery declaration |
+| Three restoration conditions §3.1 | §12.2 | ρ recovery + diversity expansion + P_overlap declining. All three simultaneously required. Missing any one = indistinguishable from arrested collapse |
+| Withdrawal protocol §4.3 | §12.2 | DI→SD→FO→W maps to MZ-STP gradual reduction. Phase W failure = Dependency Trap confirmed. Verification NOT optional |
+| SCC = D_int × L_reinf §4.2 | §12.2 | Operational proxy for integration capacity. RT-4 provides generation mechanism; RT-1 provides utilization criteria |
+| Five-phase cascade §5.2 | §12.1, §12.2 | Extends §3.4.2 MZ-STP to multi-scale. Phase 0 (containment) → Phase 1 (geometry) → Phase 2 (hub) → Phase 3 (local) → Phase 4 (immunity verification) |
+| S_rec zone sensitivity §5.3 | §12.1 | S_rec(local) ≫ S_rec(hub) ≫ S_rec(geometry). Uniform protocols = systematically wrong dosage. Extends MZ-STP Rule 2 |
+| Contamination redistribution §5.5 | §12.1 | Recovery = transport not elimination. Constrains MZ-STP Track B: must account for redistribution effects |
+| Four restoration modes §6 | §12.2 | Distracting / Re-seeding / Re-absorption / Verification. Dominance progression mapped to Storm–Recovery phases |
+| Five falsifiable predictions §7 | §11.3 extension | Expansion necessity / ordering effects / withdrawal necessity / cost discontinuity / sensitivity gradient |
+
+**Vulnerability resolution status (v2.1-RTseries):**
+
+| Vulnerability | Status | Resolution |
+|---|---|---|
+| SCM as descriptive not deductive | **Resolved** | §2.6.1 — three impossibility results (RT-2 Propositions 2–4) |
+| Metric Lock-In mechanism informal | **Resolved** | §2.6.1 — Proposition 5 zero-gradient argument |
+| Observer construction unspecified | **Resolved** | §12.5 — O = (V,A,B,S) four necessary conditions (RT-3) |
+| Recovery capacity generation unexplained | **Resolved** | §12.3 — three-level scaling law + trust topology (RT-4) |
+| VCZ stability as individual vs network | **Resolved** | §12.3 — mutual stabilization necessity (RT-4 Conjecture 2) |
+| Identity declaration → SCM link informal | **Resolved** | §12.4 — D_id behavioral mechanism (RT-4 §6.2) |
+| Post-Storm state disambiguation absent | **Resolved** | §12.2 — three states + three conditions (RT-1 §2–3) |
+| Withdrawal verification protocol informal | **Resolved** | §12.2 — DI→SD→FO→W formalized (RT-1 §4.3) |
+| Mediation structural necessity ungrounded | **Resolved** | §12.5 — Coordination-Cancellation Paradox (RT-3 App.A) |
+| Reversibility phase transition absent | **Resolved** | §12.4 — R_c threshold with toy model (RT-4 §7) |
+| Governance objective informal | **Resolved** | §12.5 — Irreversibility Principle as constitutional law (RT-3 §1.2) |
+| Detection protocol lacks fourth signal | **Resolved** | §3.5.2.1 — RIR added (RT-2 §9.2) |
+| Observability emergence conditions absent | **Resolved** | §2.6.2 — three-condition threshold (RT-2 §7) |
+| SR system vs observer distinction absent | **Resolved** | §3.5.2.1 — SR_sys/SR_obs split (RT-2 §9.2) |
+| Shared vulnerability as SCM exit absent | **New open problem** | RT-4 §5: distributed vulnerability → correction activation → SCM break mechanism |
+| RT-3/RT-4 initialization problem | **New open problem** | How does first observer–reversibility pair emerge? Local pocket mechanism partial |
+| Admissibility function exact form | **New open problem** | RT-4 Assumption 2: monotone bound unspecified |
+| Detection delay τ network scaling | **New open problem** | RT-4 OP-2: τ ~ λ₂⁻¹ or τ ~ log N candidate forms |
+
+---
+
 ## Cross-Theory Reinforcement Map [v1.9-NAT]
 
 **v1.9-NAT integration source: NAT v1.2**
@@ -19002,16 +20540,23 @@ These templates are inserted at the **first occurrence** of each term in each ma
 
 ### T.5 Companion Paper Semantic Consistency Map
 
-| Term | VST Meaning | RBIT Meaning | TLG Meaning | RT Meaning | Conflict? |
-|---|---|---|---|---|---|
-| Recovery | Restoration identified as needed (mechanism in RT) | Recovery lifecycle (post-storm) | Lifecycle recovery phases | Primary domain: how recovery occurs | None — domain-divided |
-| Seed | Storm-originating agent | Seed distortion risk on receivers | Seeding process (lifecycle) | Seed health at recovery | Consistent |
-| Silent Criticality | Dangerous low-instability state | SCM mechanism bridge | Phase 4 SCML (false stability) | RT: mechanism that produces it | Consistent — VST describes, RT explains mechanism |
-| Noise | Exploration substrate | Noise floor in R-ρ | — | — | Consistent |
-| VCZ | Four-variable balance regime | VCZ 3-Condition (C2 gap) | TLG §14.1.1 four-risk balance | — | Consistent |
-| Governance | Terrain-shaping | — | Lifecycle governance | — | Consistent |
-| Collapse | Four typed events | — | Fractal collapse chain | Recovery trigger | All use typed qualifiers — consistent |
+| Term | VST Meaning | RBIT Meaning | NAT Meaning | TLG Meaning | RT Meaning | Conflict? |
+|---|---|---|---|---|---|---|
+| Recovery | Restoration identified as needed (mechanism in RT) | Recovery lifecycle (post-storm) | — | Lifecycle recovery phases | Primary domain: how recovery occurs | None — domain-divided |
+| Seed | Storm-originating agent | Minimum sufficient calibrated degradation preserving generative intent | — | Seeding process (lifecycle) | Seed health at recovery | RBIT adds precision: seed = intent-preserving degradation |
+| Silent Criticality | Dangerous low-instability state | SCM mechanism bridge | Detection failure under homogeneity | Phase 4 SCML (false stability) | RT: mechanism that produces it | Consistent — VST describes, RBIT explains info-theoretically, NAT explains architecturally |
+| Noise | Exploration substrate | Fourth data type: no detectable pattern at current ρ | Noise floor in routing | — | — | Consistent — VST functional, RBIT classificatory |
+| VCZ | Four-variable balance regime | dF_RBIT/dt ≈ 0 (all five health components stable) | Inner sphere converged + outer sphere coverage | TLG §14.1.1 four-risk balance | — | Consistent — each adds a measurement dimension |
+| Governance | Terrain-shaping | Constraint on admissible information transformations | Topology + routing architecture | Lifecycle governance | — | Consistent — VST metaphor, RBIT formal, NAT structural |
+| Collapse | Four typed events | Tier (iii) coherent misalignment / intent replacement | — | Fractal collapse chain | Recovery trigger | All use typed qualifiers — consistent |
+| Resolution | Causal distinguishability (§3.5.3) | Layer capacity for maintaining distinction (three tiers) | Resolution gap determines routing | — | — | **Potential ambiguity** — VST uses informally; RBIT provides formal definition. Resolution in VST = resolution in RBIT when context is information-processing |
+| Spectral Gap | Storm damping parameter (§4.4) | — | Triple guarantee (propagation + damping + initiation threshold) | — | — | Consistent — VST references, NAT owns |
+| Degradation | Healthy absorptive function (§T.4) | Sender-controlled compression preserving intent (calibrated) or receiver-dominated compression destroying intent (forced) | — | — | — | **Refinement needed** — VST "degradation" = healthy; RBIT "degradation" = deliberate compression. Both positive but different scope |
+| Contamination | Failed absorption producing positional displacement | Receiver-controlled compression replacing sender intent (Theorem 1) | Corruption through upscaling empty space | — | Recovery trigger | Consistent — VST macroscopic, RBIT microscopic, NAT architectural |
+| Diversity | Multiple directional vectors active | — | Structural diversity (different architectures, not parameters) | — | D_int (Shannon entropy of position distribution) | Consistent — VST general, NAT specific, RT operational |
+| Escalation | Signal sent to higher layer for resolution | Over-escalation (safe) vs under-escalation (dangerous) | Detection from above (middle layer reads stream) | — | — | Consistent — VST event, RBIT error analysis, NAT detection mechanism |
+| Branching Ratio (R) | Reinforcement-to-decay ratio near criticality | Cascade propagation measurement protocol (per-node activation) | — | — | — | Consistent — VST interprets, RBIT operationalizes measurement |
 
 ---
 
-*Appendix T is a living document. Updates track version changes in the DFG companion paper family. Current version: T.2.0, synchronized with VST v2.0.*
+*Appendix T is a living document. Updates track version changes in the DFG companion paper family. Current version: T.2.2-RBIT-NAT, synchronized with VST v2.2-RBIT-NAT.*
