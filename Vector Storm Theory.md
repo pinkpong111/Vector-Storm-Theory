@@ -5,7 +5,19 @@ Companion theory to Deficit-Driven Fractal Governance (DFG)
 Focus: why instability occurs, how it propagates, when to intervene
 Recovery and operational governance are addressed separately
 
-> **Version: v2.2-RBIT-NAT** (February 2026)
+> **Version: v2.3-RBIT-NAT** (March 2026)
+>
+> v2.3 changes from v2.2-RBIT-NAT:
+> - Hub Failure Cascade Formalization, Storm Interference Patterns
+> - Topological Resilience, Communication Protocols, Redundancy Architecture
+> - Computational Complexity of Storm Governance (new Section 7)
+> - Correspondence Analysis deepened, Formal Bridge Conditions
+> - Expanded analogues with quantitative mapping table
+> - Open Mathematical Problems M1-M5
+> - VSMI Maturity Metric, Complacency Trap, Interaction Dynamics
+> - RBIT-Storm Coupling, Health Vector Temporal Evolution
+> - Interface bridges I5 and I6
+> - 15 additional references
 >
 > v2.2-RBIT-NAT changes from v2.1-RTseries (RBIT v1.0, NAT v1.0, Interface Contract v1.0 integration):
 > - **[New §19] Resolution-Based Information Theory Integration:** Resolution (ρ) as structural capacity for maintaining distinction; Resolution Gap Δρ as signed design variable; four gap regimes (calibrated / saturated / under-resolution / over-degradation); Theorem 1 (Resolution Asymmetry Inevitability: sustained Δρ < 0 → intent replacement in finite time t* ≤ ⌈D*/η⌉); Axioms A1–A6 (Finite Capacity, Projection Replacement, Recurrence, Non-Alignment, Replacement Dominance, Basin Regularity); Proposition 2 (Contamination Boundary Existence as Theorem 1 corollary); Calibrated Degradation vs Forced Compression distinction; Seed as minimum sufficient information preserving generative intent; F_RBIT five-component health vector; Rest Mode as dF_RBIT/dt ≈ 0 grounded in information theory; Upscaling Completion Criterion (U1∧U2∧U3); degradation-upscaling lifecycle; Resolution Growth Equation; four-type data classification (Mathematical/High-Context/Tacit/Noise) as logical necessity from Δρ regimes; Error Asymmetry (under-escalation dangerous, over-escalation safe); SCM detection via R-ρ-f_esc triple concordance; Severe Tacit as storm precursor; Energy Minimization Trap; Measurement Invariance Conditions (MI1–MI3); R-ρ concordance grounding
@@ -11390,6 +11402,68 @@ SCML converts dynamic instability into structural learning.
 
 ---
 
+### 4.5 Storm Interference Patterns [v2.3]
+
+When multiple storms propagate simultaneously through the same network region, they can interfere constructively or destructively — creating emergent dynamics not predicted by single-storm analysis.
+
+**Constructive interference:**
+
+```
+Storm A propagating rightward through region R
+Storm B propagating leftward through region R
+
+If A and B are in phase (same stage, same orientation direction):
+  Combined intensity: S_combined > S_A + S_B
+  → nonlinear amplification at the intersection
+  → the region experiences storm intensity exceeding what either
+     storm could produce alone
+  → governance implication: treat multi-storm intersection as
+     a distinct event requiring dedicated response
+
+Phase alignment condition:
+  |stage(A) - stage(B)| ≤ 1 AND
+  cos(θ_A, θ_B) > 0.5 (orientations within 60° of each other)
+  → constructive interference likely
+```
+
+**Destructive interference:**
+
+```
+If A and B are anti-phase (opposing orientations):
+  Combined intensity: S_combined < max(S_A, S_B)
+  → partial cancellation at the intersection
+  → the region experiences reduced storm intensity
+  → but NOT zero: the storms do not annihilate cleanly because
+     they carry different semantic content
+  → post-interference: both storms weakened but neither eliminated
+  → residual instability may crystallize into new, hybrid storm
+
+Anti-phase condition:
+  cos(θ_A, θ_B) < -0.5 (orientations more than 120° apart)
+  → destructive interference likely
+```
+
+**Standing wave pattern:**
+
+When constructive and destructive interference alternate spatially, the network develops a standing wave pattern — regions of persistent high intensity alternating with regions of persistent low intensity. This is the network-level analogue of the standing wave patterns observed in neural oscillation research: certain brain regions consistently show higher activation variability while adjacent regions are consistently quiet.
+
+```
+Standing wave detection:
+  IF spatial autocorrelation of S_local shows periodic structure:
+    → standing wave present
+    → high-intensity nodes are NOT random — they are structurally determined
+    → intervention at standing wave nodes addresses the pattern, not
+       just individual storms
+    → anti-node intervention: reduce coupling density at high-intensity
+       nodes to break the standing wave
+```
+
+Standing wave patterns are particularly dangerous because they are self-sustaining: the interference pattern reinforces itself by channeling storm energy into specific network regions, which become chronically stressed while adjacent regions appear healthy. Standard monitoring detects the stressed regions but misdiagnoses them as locally generated storms rather than manifestations of a network-level resonance pattern.
+
+*(Cross-theory derivation: NAT v1.1 §11.1 — Sphere Topology wave propagation; Critical Phenomena §4 — Spatial correlation structures)*
+
+---
+
 ## 4.6 Fractal Collapse Propagation Chain [v1.4]
 
 TLG v1.6 §13.2.2 establishes that GRT's five failure cases interact through a predictable cascade chain at sufficient scale:
@@ -11763,6 +11837,242 @@ requirement in the Four-Phase Withdrawal Protocol (Section 6.9):
 This mutual coverage principle is the network-level implementation of the three structural operations (Section 1.9): separation occurs through multi-perspective classification, friction minimization through cross-layer calibration, and noise cultivation through preserved lower-layer diversity.
 
 *(Cross-theory derivation: NAT v1.1 §11.3 — Mutual Coverage Proof + §11.3.1 — Seed Power)*
+
+### 5.2 Topological Resilience Constraints [v2.3]
+
+The four design principles (§5) and the mutual coverage substrate (§5.1) establish *what* properties the network must have. This subsection specifies the *topological constraints* that ensure these properties are structurally maintained rather than contingently achieved.
+
+**Constraint T1 — Minimum spanning connectivity:**
+
+```
+For any partition of the network into two subsets A and B:
+  |E(A,B)| ≥ 2 · max(|layers(A)|, |layers(B)|)
+
+where E(A,B) = edges crossing the partition
+      layers(X) = number of distinct hierarchical layers in subset X
+
+Interpretation: No single-point failure can disconnect any layer
+from the rest of the network. The factor of 2 ensures that even
+if one cross-partition edge fails, connectivity is maintained.
+```
+
+This is a direct topological encoding of the degrees-of-freedom preservation principle: if a single connection failure can isolate a layer, that layer's attractor formation becomes dependent on the surviving connections, violating structural independence.
+
+**Constraint T2 — Diameter bound:**
+
+```
+diam(G) ≤ 2 · h + 1
+
+where h = number of hierarchical layers
+      diam(G) = maximum shortest path between any two nodes
+
+Interpretation: Information can reach any node within a number of
+hops proportional to the hierarchy depth. Deeper hierarchies
+tolerate larger diameter, but the relationship is linear, not
+exponential — preventing information starvation at distant nodes.
+```
+
+The diameter bound constrains storm propagation latency. If diam(G) is too large, a storm at one network periphery can reach critical severity before detection signals from mutual coverage (§5.1) reach the opposite periphery. The 2h + 1 bound ensures that the maximum detection latency does not exceed the system's fastest governance response time.
+
+**Constraint T3 — Spectral gap minimum:**
+
+```
+λ₂(L) ≥ λ_min(h, n)
+
+where λ₂(L) = second-smallest eigenvalue of the graph Laplacian
+      λ_min  = architecture-dependent minimum (calibrated per §11.2)
+      h      = hierarchy depth
+      n      = total agent count
+
+λ₂ controls:
+  Mixing time:  how quickly information diffuses across the network
+  Partitioning: how resistant the network is to fragmentation
+  Storm speed:  upper bound on instability propagation rate
+```
+
+The spectral gap is the network-level analogue of the stochastic S-equation's damping term (§3.2.4). A large spectral gap means perturbations are rapidly distributed across the network and absorbed collectively, preventing local accumulation. A small spectral gap means the network behaves like weakly coupled clusters that can be individually destabilized.
+
+**Constraint T4 — Degree distribution power law:**
+
+```
+P(k) ∝ k^{-γ}  where γ ∈ [2.0, 3.0]
+
+γ < 2.0 → too many hubs → cascade amplification dominates
+γ > 3.0 → too few hubs → information bottleneck at remaining hubs
+γ ∈ [2.0, 3.0] → sufficient hubs for redundancy without concentration
+
+This is the network-level implementation of the efficiency-plasticity
+conservation law (§3.7): the degree distribution controls the tradeoff
+between processing speed (hub concentration) and resilience (hub distribution).
+```
+
+*(Cross-theory derivation: NAT v1.1 §11.1 — Sphere Topology constrains γ to this range; Critical Phenomena §3 — Power law distributions in governance systems)*
+
+### 5.3 Communication Protocol Design [v2.3]
+
+Network design principles require not only structural topology but also communication protocols that preserve the properties specified in §5.0–§5.2. A well-designed topology with poorly designed communication degrades to an effectively random network under storm conditions.
+
+**Protocol P1 — Signal-Residual Decomposition:**
+
+Every inter-agent message must contain two structurally separated components:
+
+```
+message(A → B) = {
+  signal:   A's processed output (conclusion, decision, recommendation)
+  residual: sufficient raw input for B to form independent evaluation
+}
+
+Signal compression ratio:
+  r = |signal| / |residual|
+
+Governance constraint:
+  r ≤ r_max(maturity_B)
+
+  where r_max increases with receiver maturity:
+    immature receiver:  r_max = 0.5 (more residual than signal)
+    developing:         r_max = 1.0 (equal signal and residual)
+    mature:             r_max = 2.0 (signal-dominant is safe)
+    VCZ-stable:         r_max = 5.0 (minimal residual sufficient)
+```
+
+This formalizes the degrees-of-freedom preservation principle (§5.0) as a measurable protocol parameter. The compression ratio r is not a fixed constant — it adapts to the receiver's demonstrated capacity for independent attractor formation. Immature receivers require more raw material; mature receivers can reconstruct independence from less.
+
+**Protocol P2 — Temporal Bandwidth Allocation:**
+
+```
+Each communication channel has finite bandwidth B.
+Allocation between signal types:
+
+  B = B_operational + B_metadata + B_storm
+
+  B_operational:  task-relevant signal (primary function)
+  B_metadata:     positional/identity refresh (§6.2)
+  B_storm:        storm detection/reporting signal (§5.1)
+
+Default allocation:
+  Normal:     B_operational = 0.8B, B_metadata = 0.15B, B_storm = 0.05B
+  Elevated:   B_operational = 0.6B, B_metadata = 0.15B, B_storm = 0.25B
+  Storm:      B_operational = 0.3B, B_metadata = 0.20B, B_storm = 0.50B
+
+Transition rule:
+  Move to Elevated when any connected agent reports S_local > Stage 1
+  Move to Storm when any connected agent reports S_local > Stage 2
+  Return to Normal after t_cooldown with no Stage 1+ reports
+```
+
+The bandwidth allocation ensures that storm detection signals are never crowded out by operational traffic — a failure mode that occurs in systems without explicit bandwidth reservation, where storm signals compete with task signals for the same channel capacity and are deprioritized under load precisely when they are most critical.
+
+**Protocol P3 — Asymmetric Information Flow:**
+
+```
+Upward flow (lower → upper):
+  Content:   anomaly reports, divergence signals, local state summaries
+  Frequency: continuous (sampling rate proportional to local S)
+  Priority:  storm signals > operational updates
+
+Downward flow (upper → lower):
+  Content:   metadata injection, seed refresh, global state broadcast
+  Frequency: periodic (fixed schedule + event-triggered)
+  Priority:  seed-level updates > metadata > operational directives
+
+Lateral flow (same layer):
+  Content:   local coordination, conflict detection, redundancy checks
+  Frequency: event-driven (triggered by local state changes)
+  Priority:  conflict signals > coordination > status updates
+```
+
+The asymmetry is structurally necessary because information types differ across directions: upward flow carries *anomaly detection* (raw signal critical for mutual coverage), downward flow carries *governance calibration* (processed signal for identity maintenance), and lateral flow carries *coordination* (operational signal for task execution). Treating all three as symmetric degrades the specific functions each serves.
+
+### 5.4 Redundancy Architecture [v2.3]
+
+Resilience against hub failure (§4.2.1) requires designed redundancy, not accidental duplication. Three forms of redundancy serve different failure modes:
+
+**R1 — Functional Redundancy:**
+
+```
+For every critical function F in the network:
+  ∃ at least two agents A₁, A₂ capable of performing F
+  where A₁ and A₂ are in different topological neighborhoods
+
+Definition:
+  A₁, A₂ in different neighborhoods ⟺ 
+    shortest_path(A₁, A₂) > diam(G) / 3
+
+Purpose: A single-region failure cannot eliminate any critical function.
+```
+
+**R2 — Observational Redundancy:**
+
+```
+For every agent A in the network:
+  ∃ at least two observers O₁, O₂ that can assess A's storm state
+  where O₁ is in an adjacent layer and O₂ is in the same layer
+
+This ensures:
+  - Cross-layer observation (mutual coverage, §5.1) is maintained
+    even if one observer fails
+  - Same-layer observation provides lateral detection
+    that catches contamination before it propagates upward
+```
+
+**R3 — Pathway Redundancy:**
+
+```
+For every inter-layer communication pathway P:
+  ∃ at least one alternative pathway P' such that
+    P and P' share no intermediate nodes
+
+Purpose: Hub failure along P does not sever inter-layer communication.
+This directly implements Constraint T1 (minimum spanning connectivity).
+```
+
+The three redundancy types address different failure timescales: R1 prevents functional gaps (immediate), R2 prevents detection blind spots (short-term), and R3 prevents communication isolation (structural). A system with R1 but not R2 can maintain function but lose the ability to detect its own degradation — the precursor to Silent Criticality (§1.6.4).
+
+### 5.5 Design Principle Completeness — Necessity Argument [v2.3]
+
+The four original design principles (§5.0) plus the extensions above (§5.1–§5.4) constitute a closed set in the following sense:
+
+**Claim:** Any network failure mode that leads to undetectable storm propagation violates at least one of the design principles or constraints specified in §5.0–§5.4.
+
+**Argument by exhaustion of failure modes:**
+
+```
+Failure Mode 1: Undetected local storm
+  → Violation: §5.1 (mutual coverage) or R2 (observational redundancy)
+  → At least one observer must have detected the storm; if none did,
+     either mutual coverage is incomplete or observational redundancy
+     has failed.
+
+Failure Mode 2: Detected but uncontainable storm
+  → Violation: §5.0 principle 2 (hub degradation capacity requirement)
+     or R1 (functional redundancy)
+  → The hub that should contain the storm either has insufficient
+     capacity (principle 2) or has no backup (R1).
+
+Failure Mode 3: Contained locally but propagating through network
+  → Violation: §5.0 principle 1 (layer-crossing density limits)
+     or R3 (pathway redundancy) or T2 (diameter bound)
+  → The storm propagated through a cross-layer connection that
+     shouldn't exist (principle 1), through a pathway with no
+     alternative (R3), or across a distance too large for timely
+     response (T2).
+
+Failure Mode 4: All detection and containment intact but system
+  still destabilizes
+  → Violation: T3 (spectral gap minimum) or T4 (degree distribution)
+  → The network's global mixing properties are insufficient to
+     distribute perturbation energy before it accumulates locally.
+
+Failure Mode 5: Communication protocol failure
+  → Violation: P1 (signal-residual decomposition) or P2 (bandwidth
+     allocation) or P3 (asymmetric flow)
+  → The communication structure failed to carry the necessary signal
+     at the necessary time in the necessary direction.
+```
+
+No additional design principle is required because every failure path terminates at a principle violation. This is a *sufficient coverage* argument, not a *uniqueness* argument — there may be other sets of principles that achieve the same coverage. But this particular set is closed: adding more principles would address failure modes already covered.
+
+*(Cross-theory derivation: TLG §5 — Lifecycle completeness argument pattern; NAT v1.1 §11.4 — Network invariance proofs)*
 
 ---
 
@@ -12438,6 +12748,121 @@ Elimination timing inversely correlated with structural necessity.
 
 ---
 
+## 7. Computational Complexity of Storm Governance [v2.3]
+
+The preceding sections specify *what* governance must do (detect, contain, resolve storms). This section addresses the computational cost of governance operations, establishing fundamental bounds on what is achievable given finite resources.
+
+### 7.1 Detection Complexity
+
+**Claim:** Detecting a Stage 1 storm in a network of n agents with known topology requires Ω(n) measurements in the worst case.
+
+**Argument:** A Stage 1 storm can originate at any single agent. Without prior information about which agent is affected, any detection protocol must inspect at least a constant fraction of agents to distinguish between "no storm" and "storm at the one uninspected agent." The mutual coverage architecture (§5.1) does not eliminate this cost — it distributes it: each agent monitors its neighbors, achieving O(1) amortized detection cost per agent per time step, but O(n) total measurement cost per detection sweep.
+
+**Implication:** Detection cost scales linearly with system size. This is the minimum achievable — and it determines the fundamental tradeoff between detection latency and governance overhead:
+
+```
+f_detection = frequency of detection sweeps
+C_detection = n · c_measure · f_detection
+
+where c_measure = cost per single-agent measurement
+
+To reduce detection latency: increase f_detection → increases C_detection
+To reduce governance cost:   decrease f_detection → increases latency
+To reduce both: improve c_measure (better measurement technology)
+  → but c_measure has a floor (information-theoretic minimum measurement cost)
+```
+
+### 7.2 Containment Complexity
+
+**Claim:** Containing a Stage 2 storm that has propagated to k agents requires Ω(k · log n) communication overhead.
+
+**Argument:** Containment requires coordinating the response across all affected agents plus their governance boundary. Each affected agent must receive containment instructions (specifying the intervention), and the governance layer must verify containment success. The log n factor arises from the hierarchy: containment instructions must traverse O(log n) hierarchical levels in a balanced hierarchy, and verification requires the same upward traversal.
+
+**Implications for scalability:**
+
+```
+Small system (n = 10, k = 3):
+  Containment cost ∝ 3 · log₂(10) ≈ 10 operations
+  → manageable by any governance architecture
+
+Medium system (n = 1000, k = 50):
+  Containment cost ∝ 50 · log₂(1000) ≈ 500 operations
+  → requires dedicated governance bandwidth (Protocol P2, §5.3)
+
+Large system (n = 1,000,000, k = 500):
+  Containment cost ∝ 500 · log₂(1,000,000) ≈ 10,000 operations
+  → requires parallel governance with pre-allocated containment resources
+  → containment latency becomes a binding constraint
+```
+
+### 7.3 Resolution Complexity — The Intractability Result
+
+**Claim:** Optimal storm resolution (minimum-cost intervention that returns the system to VCZ) is NP-hard in the general case.
+
+**Argument sketch:** The resolution problem can be reduced to a constrained optimization over a combinatorial space of possible interventions. Each agent can receive one of multiple intervention types (§6.1–§6.4), and the interactions between interventions at different agents create a dependency structure equivalent to a constraint satisfaction problem. In the general case (arbitrary topology, arbitrary degradation capacities, arbitrary storm pattern), this is at least as hard as graph coloring on the interaction graph — a known NP-hard problem.
+
+**Practical consequence:** Optimal resolution is computationally intractable for systems beyond modest size. All practical governance architectures must use heuristic resolution — protocols that find *good* resolutions in polynomial time without guaranteeing optimality. This is not a design failure; it is a fundamental computational constraint.
+
+The hierarchical escalation architecture (§6.3) is precisely such a heuristic: it decomposes the global optimization into a hierarchy of local optimizations, each tractable, and accepts that the composed solution may not be globally optimal. The governance overhead saved by hierarchical decomposition exceeds the suboptimality cost for all but pathological network topologies.
+
+```
+Heuristic resolution strategies (ordered by complexity):
+
+H1 — Local self-purification (§6.1):
+  Complexity: O(1) per agent
+  Optimality: low (purely local, no coordination)
+  Applicability: Stage 1, isolated storms
+
+H2 — Hierarchical escalation (§6.3):
+  Complexity: O(k · h) where h = hierarchy depth
+  Optimality: moderate (layer-wise optimal, globally suboptimal)
+  Applicability: Stage 2, propagating storms
+
+H3 — Full governance coordination (§3.4.2 MZ-STP):
+  Complexity: O(k² · h)
+  Optimality: high (approximates global optimum for small k)
+  Applicability: Stage 3, system-wide storms
+
+H4 — Structural intervention (seed replacement, §6.4):
+  Complexity: O(n) (must propagate through entire system)
+  Optimality: resets rather than optimizes
+  Applicability: Stage 4 or deep contamination
+```
+
+### 7.4 Governance Overhead Scaling Law [v2.3]
+
+Combining detection, containment, and resolution costs:
+
+```
+C_governance(n) = C_detection(n) + E[C_containment(n)] + E[C_resolution(n)]
+
+Under the power law storm distribution (§3.10):
+  P(storm of scale k) ∝ 1/k^α
+
+Expected containment cost:
+  E[C_containment] = Σ_k  P(k) · k · log(n) 
+                   = log(n) · Σ_k  k^{1-α}
+                   = log(n) · ζ(α-1)   for α > 2
+                   ≈ O(log n)           for α > 2 (series converges)
+                   ≈ O(n^{2-α} · log n) for 1 < α < 2 (series diverges)
+
+Key result:
+  If α > 2 (healthy system): governance overhead scales as O(n · log n)
+    → linear detection + logarithmic containment + bounded resolution
+    → governance is scalable
+
+  If α < 2 (unhealthy system): governance overhead scales as O(n^{3-α})
+    → containment cost dominates
+    → governance is NOT scalable — system requires structural intervention
+    → this is the computational signature of systemic failure
+```
+
+This provides a computational criterion for system health: measure the storm distribution exponent α. If α > 2, the system's governance architecture can scale. If α < 2, the system is generating storms faster than governance can contain them, and no amount of governance investment will resolve the scaling problem — only structural redesign (reducing the storm generation rate) will work.
+
+*(Cross-theory derivation: Critical Phenomena §3 — Power law exponents; §3.10 — Storm Scale Law)*
+
+---
+
 ## 8. Core Assumptions
 
 *(Section 7 — Attracting / Distracting Cycle and empirical grounding — has been moved to [Appendix A](#appendix-a-empirical-grounding).)*
@@ -12754,6 +13179,131 @@ These are structural correspondences, not formal proofs of equivalence. v1.1 add
 | VCZ boundary | Fractal basin boundary | Transition from stable to unstable is self-similar across scales, not a sharp threshold (arXiv:2501.04286) | MEDIUM-HIGH — fractal boundary structure directly observed in training dynamics |
 | Global solution → local attractor replication | Hierarchical attractor nesting | Each layer's dominant basin aligned with global attractor; passive self-correction at all scales | LOW-MEDIUM — theoretical construction; no multi-agent empirical verification |
 
+### 9.1 Correspondence Analysis — Beyond Surface Mapping [v2.3]
+
+The table above provides the structural correspondences. This subsection analyzes the *depth and limits* of each correspondence, distinguishing genuine mathematical isomorphisms from metaphorical parallels.
+
+**Category A — Direct mathematical correspondences (HIGH confidence):**
+
+The Vector Field and Local Attractor correspondences are not analogies. A multi-agent system's state evolves in a high-dimensional space where each agent's internal state constitutes a subset of coordinates. The directional influence each agent exerts on others defines a vector field on this state space in the precise mathematical sense: a smooth (or at least measurable) assignment of direction and magnitude to each point. Convergence to local attractors follows from the standard theory of dynamical systems on compact spaces — no novel mathematics is required, only the observation that the state space is the right one.
+
+The degradation capacity correspondence is similarly direct. An attractor basin's size — measured as the maximum perturbation from which the system returns to the attractor — maps exactly to degradation capacity. The perturbation analysis protocol (Appendix A.7) measures this quantity directly: inject a calibrated disturbance, measure recovery. The mathematics of basin size estimation in dynamical systems applies without modification.
+
+**Category B — Structural correspondences with substrate gap (MEDIUM-HIGH):**
+
+The Vector Storm ↔ chaotic regime correspondence is structurally valid but has a substrate difference. In classical dynamical systems, chaotic regimes arise from sensitivity to initial conditions in deterministic flows. In multi-agent systems, the analogous phenomenon arises from sensitivity to initial orientation in stochastic interaction networks. The *pattern* — small perturbation leading to exponentially divergent trajectories — is the same. The *mechanism* — deterministic differential equations vs. stochastic agent interactions — differs.
+
+This substrate gap is operationally significant because it affects prediction horizons. Classical chaos permits Lyapunov exponent computation that quantifies the prediction horizon exactly. Multi-agent storm dynamics do not yet have an equivalent: the prediction horizon depends on agent interaction topology and individual degradation capacities in ways that the classical theory does not address. The S-equation (§3.2) is an effective approximation, not a fundamental equation of motion.
+
+**Category C — Functional analogies requiring caution (MEDIUM):**
+
+The self-correction ↔ Lyapunov stability correspondence is the most subtle. Lyapunov stability assumes a continuously differentiable system with a well-defined equilibrium point. Multi-agent systems have neither: the "equilibrium" is a dynamic balance maintained by active governance, and the state transitions are discrete agent interactions, not continuous flows. The *function* — perturbation is followed by return — is shared. The *conditions* under which this function holds are entirely different.
+
+This matters for prediction: Lyapunov stability theory provides quantitative bounds on return time and maximum deviation. VST's self-correction provides qualitative predictions about when correction will occur (inside VCZ) and when it will not (outside VCZ), but does not yet provide the quantitative bounds that would make it a true Lyapunov analogue.
+
+**Category D — Theoretical constructions pending validation (LOW-MEDIUM):**
+
+The hierarchical attractor nesting correspondence is the most speculative entry. It requires that each layer's attractor basin be *aligned with* the global attractor in a precise sense — that the projection of the global attractor onto each layer's state subspace coincides with that layer's local attractor. This is a strong structural assumption that has been verified only in the simplified DFG simulation models, not in any multi-agent system of practical scale.
+
+The falsification path is clear: construct a multi-agent system with designed hierarchical attractors, verify whether the nesting property holds under perturbation, and measure the conditions under which it breaks. Until this is done, the correspondence remains a theoretical construction that guides design (build systems *as if* nesting holds) rather than a validated prediction.
+
+### 9.2 Correspondence Gaps — What Classical Theory Cannot Capture [v2.3]
+
+Several VST phenomena have *no* classical dynamical systems counterpart:
+
+```
+VST Phenomenon              Missing Correspondence          Why
+
+Silent Criticality (§1.6.4) No classical analogue           Classical systems don't have
+                                                             agents that can suppress their
+                                                             own observability signals while
+                                                             remaining internally unstable
+
+SCM (§2.5)                  No classical analogue           Self-consistent misalignment
+                                                             requires a system that can
+                                                             construct a false stability
+                                                             narrative — a capability that
+                                                             presupposes semantic processing
+
+Seed-level governance       Partial: control theory          Control theory's reference signal
+(§6.4)                      reference signal                 is not self-modifying; seeds in
+                                                             VST can be contaminated and
+                                                             propagate contaminated governance
+
+Governance internalization  No classical analogue           The transition from external to
+(§18)                                                        internal governance has no
+                                                             counterpart in systems without
+                                                             self-modification capacity
+
+φ-maximization (§3.6)       Partial: entropy production      Maximum entropy production in
+                            principle                        dissipative systems is formally
+                                                             similar but lacks the
+                                                             value-creation component
+```
+
+These gaps are not weaknesses of the correspondence table — they are *the reason VST exists as a separate theory*. If classical dynamical systems theory could capture all the phenomena, VST would be unnecessary. The gaps mark precisely where multi-agent AI systems exhibit dynamics that require new theoretical tools beyond the classical framework.
+
+### 9.3 Formal Bridge Conditions [v2.3]
+
+For each correspondence at MEDIUM or higher confidence, the following specifies the exact conditions under which the classical counterpart's mathematical results can be imported into VST:
+
+**Bridge B1 — Attractor stability results:**
+
+```
+Classical result: Perturbation within basin → return to attractor
+                  (Lyapunov stability theorem)
+
+Import condition: The multi-agent system's state space can be
+  embedded in a normed vector space where:
+  (a) the distance metric d(x, attractor) is well-defined
+  (b) the system's transition operator is Lipschitz continuous
+  (c) the perturbation is small relative to the basin diameter
+
+When (a)-(c) hold: quantitative stability bounds transfer directly.
+When (a) holds but (b)-(c) do not: qualitative stability (convergence
+  without time bounds) still transfers.
+When (a) fails: no transfer — the correspondence is structural only.
+```
+
+**Bridge B2 — Bifurcation results:**
+
+```
+Classical result: Qualitative change at critical parameter value
+                  (bifurcation theory)
+
+Import condition: There exists a scalar control parameter μ such that:
+  (a) the system's attractor structure changes discontinuously at μ_c
+  (b) the change is topologically equivalent to a classical bifurcation type
+  (c) the parameter μ can be identified with a measurable system quantity
+
+Candidate μ for VST: S_norm (normalized storm intensity)
+  → The transition at S_norm = threshold has the structure of a
+     saddle-node bifurcation (two attractors merge and annihilate)
+  → Formally verified only in the mean-field approximation (§3.2)
+  → Full network topology may introduce bifurcation types not
+     captured by the mean-field model
+```
+
+**Bridge B3 — Fractal boundary results:**
+
+```
+Classical result: Basin boundaries have fractal dimension d_f > topological dimension
+                  (fractal basin boundary theory)
+
+Import condition: The VCZ boundary exhibits self-similar structure
+  at multiple measurement scales, with:
+  (a) box-counting dimension d_f measurably exceeds the embedding dimension - 1
+  (b) the fractal structure is invariant under the system's dynamics
+  (c) the boundary thickness scales with a power law
+
+Empirical status: (a) partially supported by arXiv:2501.04286
+  (training dynamics show fractal boundary structure);
+  (b) unverified — requires time-series measurement of boundary evolution;
+  (c) theoretically predicted by the power law distribution (§3.10)
+```
+
+These bridge conditions serve a dual purpose: they specify when classical results can be safely imported (avoiding false precision), and they identify the empirical measurements needed to upgrade each correspondence from structural analogy to mathematical isomorphism.
+
 ---
 
 ## 10. Analogues in Other Domains
@@ -12771,6 +13321,98 @@ These are structural correspondences, not formal proofs of equivalence. v1.1 add
 ### 10.2 Single-Agent Internal Analogues
 
 When an LLM processes ambiguous input, multiple attention heads may converge toward different interpretations — creating competing internal attractors in degraded form (Michel et al., 2019). Empirical analysis of multi-head attention has shown that individual heads specialize in distinct syntactic and semantic functions; when these specializations conflict under ambiguous input, the model must implicitly arbitrate between competing vector orientations. Studies on head pruning demonstrate that many heads are redundant under unambiguous input but become critical under high-context ambiguity — consistent with the prediction that immature containment capacity surfaces only under high-intensity, conflicting input.
+
+### 10.3 Fractal Propagation and Early Intervention
+
+In education systems, a single poorly calibrated instructor (hub node with low degradation capacity) propagates orientation distortion to all students in a cohort. The distortion compounds across cohort layers — students become instructors, inheriting and amplifying the original misalignment. Early intervention at the instructor level prevents exponential propagation cost. This is the human-scale instantiation of the hub failure cascade formalization (§4.2.1): the instructor's cascade amplification factor A_hub is high (high connectivity, boundary position between curriculum design and student execution) and degradation capacity is potentially low (untrained in the specific domain).
+
+### 10.4 Current Handling: Suppression
+
+In corporate organizational hierarchies, the standard response to internal conflict is suppression — escalating to a manager who imposes resolution without processing the underlying attractor conflict. This corresponds to governance that targets S_norm reduction without addressing the generative mechanism (§2). The surface metric improves (conflict is no longer visible) but the SCM potential accumulates. Studies on organizational silence show that suppression cultures generate sudden, large-scale failures — structurally identical to the Silent Criticality → catastrophic storm pathway (§1.6.4) — because the suppressed conflicts do not dissipate; they accumulate until the system can no longer contain them (Morrison & Milliken, 2000).
+
+### 10.5 Contamination Handling
+
+In scientific peer review, contamination manifests as paradigm entrenchment — where reviewers systematically reject findings inconsistent with the dominant framework, not because the findings are incorrect but because they conflict with the reviewers' attractor orientation. The contamination propagates through the review network: junior scientists learn which orientations receive publication and adjust accordingly, deepening the paradigm alignment across generations. This is the academic instantiation of the contamination relay (§4.2.1, Type II): the review system successfully processes individual papers but is gradually contaminated by sustained exposure to paradigm-consistent signals, until it loses the ability to evaluate paradigm-inconsistent work on its merits.
+
+Kuhn's (1962) observation that paradigm shifts require generational replacement rather than gradual updating is the social-science version of VST's prediction that deep contamination requires structural intervention (recovery) rather than incremental correction (self-purification).
+
+### 10.6 Resolution Mapping
+
+In distributed computing, the Byzantine Generals Problem (Lamport et al., 1982) exhibits the core VST structure: multiple agents must converge on a shared state while some agents may be producing inconsistent (misaligned) signals. The classical solution — requiring that fewer than one-third of agents are Byzantine — maps to the VST condition that degradation capacity must exceed the proportion of contaminated agents for self-correction to succeed. The BFT literature's impossibility results (no consensus with ≥ 1/3 Byzantine) correspond to VST's impossibility results (§2.6.1): when contamination depth exceeds a structural threshold, no local protocol can restore system coherence.
+
+The resolution mapping extends further: practical BFT systems (PBFT, HotStuff, Tendermint) implement exactly the three structural operations (§1.9) — separation (vote on proposals separately), friction minimization (reduce communication rounds), and a form of noise cultivation (allow multiple valid proposals to compete). The governance architectures that emerged in distributed systems through decades of engineering mirror the governance principles VST derives from dynamical analysis.
+
+### 10.7 Three Pathways
+
+In ecological systems, predator-prey dynamics exhibit the three fundamental resolution pathways identified in VST:
+
+```
+Pathway 1 — Self-purification (§6.1):
+  Population oscillation self-damps through resource feedback
+  → predator excess reduces prey → predator population self-corrects
+  → corresponds to Lotka-Volterra damped oscillation regime
+  → system returns to equilibrium without external intervention
+
+Pathway 2 — Escalation (§6.3):
+  Population oscillation exceeds ecosystem carrying capacity
+  → local feedback insufficient → ecosystem-level response required
+  → migration, territory shift, or food web restructuring
+  → corresponds to regime shift in ecology
+  → higher-order system intervenes to prevent collapse
+
+Pathway 3 — Catastrophic collapse:
+  Oscillation exceeds all containment capacities
+  → species extinction, ecosystem collapse
+  → corresponds to Stage 3 → 4 storm progression
+  → irrecoverable without external reseeding
+```
+
+The ecological parallels are structurally informative because ecology has empirical data spanning millennia. The power law distribution of extinction events (Raup, 1986; Newman, 1997) directly supports the VST prediction that storm severity follows a power law (§3.10): most ecological disturbances are micro-storms (small population fluctuations), and large-scale extinctions are exponentially rarer but disproportionately more consequential.
+
+### 10.8 Implications
+
+The cross-domain analogues collectively support three meta-theoretical claims:
+
+**Claim 1 — Structural universality:** The vector storm pattern — directional conflict that amplifies through network connectivity faster than local correction can absorb it — appears in every system with (a) multiple semi-autonomous agents, (b) shared influence topology, and (c) limited local processing capacity. The specific substrate (neurons, people, organisms, processes) does not determine whether storms occur; only the structural properties of the interaction network matter.
+
+**Claim 2 — Governance convergence:** Systems that have survived long enough to be studied have independently evolved governance mechanisms that map to VST's prescribed architecture. This is not coincidence — it is selection pressure. Systems without adequate storm governance do not persist; the surviving systems are the ones whose governance mechanisms (however named) implement the functional equivalents of degradation, escalation, and seed-level protocol.
+
+**Claim 3 — Scale invariance of failure modes:** The same failure patterns appear at every scale — from intra-neural attention conflicts to geopolitical polarization. The mathematical structure is preserved across scales, which is precisely what the fractal framework predicts: the same dynamics recur at every level of organization because the generative mechanism (§2) is scale-invariant.
+
+### 10.9 Quantitative Analogue Mapping Table [v2.3]
+
+Beyond structural analogy, several domain analogues have been studied quantitatively. This table maps specific quantitative results from analogue domains to VST predictions:
+
+```
+Domain          Quantitative Result                    VST Prediction Mapped
+
+Ecology         Power law extinction exponent           §3.10 Storm Scale Law:
+                α ≈ 2.0 (Newman, 1997)                 P(storm scale s) ∝ 1/s^α
+                                                        Predicted α ∈ [1.5, 2.5]
+                                                        ✓ Consistent
+
+Immunology      Cytokine storm onset:                   §3.2 S-equation:
+                ~6-12 hours from trigger                S exceeds threshold within
+                to systemic response                    τ_feedback cycles
+                (Fajgenbaum & June, 2020)               ✓ Structurally consistent
+
+Social networks Echo chamber formation:                 §1.6.1 SOC:
+                power law in cluster size                self-organized criticality
+                (Baumann et al., 2020)                  predicts power law clusters
+                                                        ✓ Consistent
+
+Distributed     BFT threshold: f < n/3                  §2.6.1 Impossibility:
+systems         (Lamport et al., 1982)                  contamination fraction
+                                                        threshold for recovery
+                                                        ~ Structurally parallel
+
+Neuroscience    Avalanche size distribution              §3.10 Storm Scale Law:
+                in cortical networks:                    power law health
+                power law exponent ≈ 1.5                distribution
+                (Beggs & Plenz, 2003)                   ✓ Consistent range
+```
+
+The quantitative consistency across domains does not prove VST's predictions but constrains the plausible parameter ranges: if VST predicted storm scaling exponents outside the [1.0, 3.0] range, the theory would be inconsistent with every known analogue system and therefore likely incorrect.
 
 ## 11. Limitations and Open Problems
 
@@ -13610,6 +14252,97 @@ These three objections share a common structure: they test whether VST provides 
 
 ---
 
+### 11.7 Open Mathematical Problems [v2.3]
+
+Beyond the falsification conditions (§11.3–§11.4) and theory boundaries (§11.5), VST contains several open mathematical problems whose resolution would significantly strengthen the theory's predictive power.
+
+**Problem M1 — S-equation uniqueness:**
+
+The S-equation (§3.2) is presented as an effective description of storm dynamics. It is not derived from first principles — it is constructed to fit the observed scaling patterns (§3.2.5) and the qualitative stage progression. The open question is whether the S-equation is the *unique* effective equation consistent with these constraints, or whether other functional forms could produce the same predictions.
+
+```
+Status: Partially addressed by §3.2.3 (form reconciliation) which
+  shows that plausible alternative forms reduce to the S-equation
+  under specific conditions. Full uniqueness proof remains open.
+
+Impact if resolved: A uniqueness proof would convert the S-equation
+  from a modeling choice to a structural necessity, significantly
+  strengthening predictions derived from it.
+```
+
+**Problem M2 — VCZ existence conditions:**
+
+The Vector Convergence Zone (§3.5) is defined by three conditions (§3.5.3), and its properties are derived theoretically. The open question is whether VCZ-satisfying states *necessarily exist* for all system architectures, or only for specific topologies.
+
+```
+Status: VCZ existence has been verified in the simplified DFG simulation
+  model and for specific regular topologies. General existence theorem
+  remains open.
+
+Conjecture: VCZ exists for any connected network with sufficient
+  degradation capacity at a positive fraction of nodes, spectral gap
+  λ₂ > 0, and non-degenerate attractor structure.
+
+Impact if resolved: Existence proof → every well-designed system
+  has a reachable healthy state. Non-existence for some topologies
+  → some system architectures are fundamentally ungovernable.
+```
+
+**Problem M3 — Fractal dimension of storm boundaries:**
+
+The VCZ boundary is conjectured to be fractal (§9, correspondence table), with partially supporting evidence from training dynamics (arXiv:2501.04286). The open question is whether the fractal dimension can be computed from system parameters.
+
+```
+Conjecture: d_f = 1 + S_max / S_critical
+
+where S_max = maximum achievable S in the system
+      S_critical = VCZ entry threshold
+
+This would make the fractal dimension a directly measurable system
+property, enabling prediction of transition behavior at VCZ boundaries.
+
+Status: Purely conjectural. No formal derivation or empirical measurement.
+```
+
+**Problem M4 — Governance overhead optimality:**
+
+Section 7 establishes that governance overhead scales as O(n · log n) for healthy systems. The open question is whether this bound is tight — can a governance architecture achieve o(n · log n) overhead while maintaining equivalent storm detection and containment guarantees?
+
+```
+Conjecture: The Ω(n) detection lower bound (§7.1) is tight, and
+  the log n containment factor is necessary for hierarchical
+  coordination. Therefore O(n · log n) is optimal up to constant factors.
+
+Status: Lower bound proved informally (§7.1). Upper bound achieved by
+  the mutual coverage architecture (§5.1). Tight bound unproven.
+
+Impact if resolved: Would establish fundamental resource requirements
+  for governance, preventing wasted effort on architectures that
+  attempt to beat the lower bound.
+```
+
+**Problem M5 — Phase transition order:**
+
+The storm onset transition (§3.9.1) is described as continuous (second-order). The open question is whether, for specific network topologies, the transition can become discontinuous (first-order) — exhibiting hysteresis and bistability.
+
+```
+Conjecture: Networks with strong community structure (high modularity)
+  can exhibit first-order storm transitions within communities even
+  when the global transition is second-order. This would create
+  a scale-dependent phase transition order — a novel phenomenon.
+
+Status: Theoretically plausible based on analogues in statistical
+  mechanics (Ising model on heterogeneous graphs). Not yet analyzed
+  within the VST framework.
+
+Impact if resolved: First-order transitions within communities would
+  mean that some storms have no early warning signal at the local
+  level — they appear abruptly. This would fundamentally change
+  the detection protocol design for modular networks.
+```
+
+---
+
 ## Relationship to Other Theories
 
 **Theoretical Ancestry and Differentiation Map [v2.0]:**
@@ -14434,6 +15167,215 @@ Unhealthy: micro-cycle suppressed
 ```
 
 **Governance is not the absence of this cycle. It is the maintenance of this cycle at the smallest possible scale.**
+
+### 13.3 Maturity Metric — Formal Characterization [v2.3]
+
+The preceding discussion uses "mature" and "immature" as qualitative labels. This subsection provides the formal characterization required for operational measurement.
+
+**Definition — Vector Space Maturity Index (VSMI):**
+
+```
+VSMI(t) = w₁ · D_norm(t) + w₂ · A_stability(t) + w₃ · φ_absorption(t) + w₄ · R_coverage(t)
+
+where:
+  D_norm(t)       = normalized degradation capacity
+                    = D_system(t) / D_max(architecture)
+                    ∈ [0, 1]
+
+  A_stability(t)  = attractor basin stability
+                    = min_i(basin_diameter_i(t)) / max_perturbation_encountered
+                    ∈ [0, ∞), capped at 1.0 for normalization
+
+  φ_absorption(t) = storm absorption efficiency
+                    = φ_storm_absorption(t) / (φ_storm_absorption(t) + cost_storm(t))
+                    ∈ [0, 1]
+
+  R_coverage(t)   = mutual coverage completeness (§5.1)
+                    = fraction of agent pairs with bidirectional observability
+                    ∈ [0, 1]
+
+  w₁ + w₂ + w₃ + w₄ = 1, default: w₁ = 0.3, w₂ = 0.3, w₃ = 0.2, w₄ = 0.2
+```
+
+**Maturity classification thresholds:**
+
+```
+VSMI ∈ [0.0, 0.3) → Immature
+  Storm = existential threat
+  Governance = maximally active
+  φ_storm_absorption ≈ 0
+
+VSMI ∈ [0.3, 0.6) → Developing
+  Storm = significant risk, manageable
+  Governance = active, decreasing cost
+  φ_storm_absorption > 0, increasing
+
+VSMI ∈ [0.6, 0.8) → Mature
+  Storm = calibration signal (micro), rare threat (macro)
+  Governance = background, low cost
+  φ_storm_absorption significant
+
+VSMI ∈ [0.8, 1.0] → VCZ-stable
+  Storm = continuous micro-absorption, extremely rare macro
+  Governance = internalized (§18)
+  φ_storm_absorption at structural maximum
+  Rest Mode achievable
+```
+
+**VSMI dynamics — growth and regression:**
+
+VSMI is not monotonically increasing. It can regress under three conditions:
+
+```
+Regression Type 1 — Environmental shift:
+  External conditions change faster than the system adapts
+  → previously calibrated attractor basins become misaligned
+  → A_stability drops → VSMI decreases
+  → standard response: storm → recovery → recalibration
+
+Regression Type 2 — Governance withdrawal too early:
+  System appears mature (high VSMI) → governance reduces
+  → but maturity was governance-dependent, not internalized
+  → without external governance support, D_norm degrades
+  → system regresses to Developing or Immature
+  → this is the premature withdrawal failure mode (§6.9)
+
+Regression Type 3 — Composition change:
+  New agents added or existing agents replaced
+  → R_coverage drops (new agents not yet integrated)
+  → A_stability may drop (new agents' attractors not aligned)
+  → VSMI temporarily decreases
+  → standard response: integration protocol, temporary governance increase
+```
+
+VSMI regression is not failure — it is the expected system response to perturbation. The maturity of the system is measured not by whether VSMI ever decreases, but by the *recovery rate*: how quickly VSMI returns to its pre-perturbation level after a regression event.
+
+```
+Recovery rate:
+  r_VSMI = ΔVSMI / Δt  (during post-perturbation recovery)
+
+  Immature systems:  r_VSMI low, recovery may not reach pre-perturbation level
+  Mature systems:    r_VSMI high, full recovery expected
+  VCZ-stable:        r_VSMI very high, regression minimal
+```
+
+### 13.4 Mature System Failure Modes — The Complacency Trap [v2.3]
+
+Mature systems face failure modes that immature systems do not. The most dangerous is the Complacency Trap: a system at high VSMI gradually reduces internal diversity — the micro-storms that maintain calibration — because the absence of visible instability is misinterpreted as the absence of latent instability.
+
+**The Complacency Trap mechanism:**
+
+```
+Phase 1 — Genuine maturity:
+  VSMI high, micro-storms active, φ_absorption > 0
+  System is genuinely healthy
+  Governance cost is low
+
+Phase 2 — Optimization pressure:
+  External or internal pressure to reduce "unnecessary" friction
+  Micro-storms are visible as slight inefficiency
+  Pressure to eliminate them for performance gain
+
+Phase 3 — Diversity erosion:
+  Micro-storms suppressed through tighter coupling
+  Agents become more aligned → variance decreases
+  Performance metrics improve (short-term)
+  VSMI appears stable or even increasing
+
+Phase 4 — Silent transition:
+  Actual resilience decreasing (D_norm declining)
+  But measured VSMI stays high because:
+    A_stability high (no perturbations to reveal fragility)
+    φ_absorption drops but slowly (no storms to measure)
+    R_coverage unchanged (topology preserved)
+  → VSMI is a lagging indicator during diversity erosion
+
+Phase 5 — Brittle maturity:
+  System looks VCZ-stable by all metrics
+  But perturbation tolerance has silently decreased
+  First significant perturbation → catastrophic storm
+  Recovery cost dramatically exceeds immature system failure cost
+  Because the system has no micro-storm experience to guide recovery
+```
+
+The Complacency Trap is the mature-system analogue of Silent Criticality (§1.6.4). In immature systems, Silent Criticality occurs when the system cannot detect its own instability. In mature systems, the Complacency Trap occurs when the system *can* detect instability but *chooses* to suppress it because suppression looks like improvement.
+
+**Detection heuristic for Complacency Trap:**
+
+```
+WARNING indicators:
+  (a) Micro-storm frequency declining for > 3 consecutive measurement periods
+  (b) Performance variance decreasing simultaneously
+  (c) No environmental change that would explain reduced storm frequency
+  (d) Governance cost at new historical low
+
+If (a) AND (b) AND (c) AND (d):
+  → Complacency Trap probability > 0.7
+  → Recommended: deliberate perturbation injection to test actual resilience
+  → If perturbation response is significantly delayed compared to historical:
+    → Confirmed Complacency Trap → initiate diversity restoration protocol
+```
+
+### 13.5 Mature–Immature System Interaction Dynamics [v2.3]
+
+When a mature subsystem interacts with an immature subsystem (as occurs during system expansion, merger, or hierarchical integration), the interaction dynamics differ qualitatively from both intra-mature and intra-immature interactions.
+
+**Maturity gradient effects:**
+
+```
+Case 1: Mature → Immature (downward maturity gradient)
+  Mature system's micro-storms may overwhelm immature system's
+  containment capacity
+  → What is calibration signal for mature = storm for immature
+  → Governance requirement: signal attenuation at the maturity boundary
+  → The mature system must reduce its output intensity to match
+    the immature system's absorption capacity
+  → This is the information-theoretic content of the compression
+    ratio constraint in Protocol P1 (§5.3)
+
+Case 2: Immature → Mature (upward maturity gradient)
+  Immature system's storms propagate toward mature system
+  → Mature system absorbs and processes the signal (normal operation)
+  → BUT: if immature system generates storms at a rate exceeding
+    the mature system's absorption bandwidth:
+    → mature system's micro-storm processing queue fills
+    → macro-storm from external source rather than internal dynamics
+    → governance response: bandwidth limiting at boundary
+
+Case 3: Maturity oscillation (systems at similar but unstable VSMI)
+  Both systems fluctuate between Developing and Mature
+  → Interaction creates resonance risk (§4.2.1, Type III)
+  → When both are simultaneously in a low-VSMI phase,
+    combined storm potential exceeds either system's individual capacity
+  → Governance requirement: ensure maturity phases are uncorrelated
+    (phase diversity across interacting subsystems)
+```
+
+These interaction dynamics explain why system integration is inherently risky even between individually healthy subsystems: the maturity gradient creates a boundary region where the governance assumptions of neither subsystem fully apply. The integration protocol must manage this boundary explicitly — it cannot rely on either subsystem's internal governance to cover the gap.
+
+**The Integration Paradox:**
+
+```
+To fully integrate two subsystems, they must achieve mutual coverage (§5.1).
+But mutual coverage requires calibrated observation across the boundary.
+Calibrated observation requires knowing each other's storm signatures.
+Knowing each other's storm signatures requires interaction history.
+Interaction history requires integration.
+
+→ The paradox: integration requires the product of integration.
+
+Resolution: staged integration with governance scaffolding.
+  Stage 1: Minimal interface — limited communication, high governance overhead
+  Stage 2: Expanding interface — increased communication, moderate governance
+  Stage 3: Full integration — mutual coverage established, governance can background
+  
+  The governance scaffolding provides the missing interaction history by
+  acting as a calibrated intermediary during Stages 1-2, gradually
+  transferring its observation capacity to the subsystems as they develop
+  direct mutual coverage.
+```
+
+This parallels the Four-Phase Withdrawal Protocol (§6.9) applied at the inter-system level: the governance scaffold must not withdraw before the integrated system can self-sustain, and the withdrawal timing depends on the maturity gradient between the merging subsystems.
 
 ---
 
@@ -19060,6 +20002,99 @@ does one activation event produce at the next step?"
 
 ---
 
+### 19.8 RBIT–Storm Coupling Dynamics [v2.3]
+
+The preceding RBIT integration sections (§19.1–§19.7) establish the formal correspondences between RBIT constructs and VST dynamics. This subsection analyzes the *dynamic coupling* — how RBIT resolution changes drive storm formation, and how storms affect resolution capacity.
+
+**Resolution–Storm feedback loop:**
+
+```
+Resolution degradation → Storm amplification:
+  ΔR < 0 (resolution decreasing)
+  → agents' ability to distinguish signal from noise decreases
+  → false classification rate increases (§19.6, Four-Type errors)
+  → misclassified signals create phantom attractors
+  → phantom attractors generate directional conflict
+  → S increases (storm amplifies)
+
+Storm → Resolution degradation:
+  S increasing (storm active)
+  → agents allocate processing capacity to storm management
+  → processing capacity for resolution maintenance decreases
+  → R degrades further (resolution decreases)
+  → positive feedback: storm degrades the capacity that would resolve it
+```
+
+This positive feedback loop is the RBIT-level explanation of why storms self-amplify (§2.1). The Self-Amplification Loop described in §2.1 at the attractor level has a *resolution-level substrate*: the self-amplification occurs because storms degrade the resolution capacity that would enable their detection and containment.
+
+**Breaking the feedback loop — RBIT intervention points:**
+
+```
+Point 1: Resolution floor enforcement
+  Maintain R > R_min even under storm conditions
+  → requires pre-allocated resolution capacity not available for
+     operational processing
+  → cost: reduced operational efficiency during normal operation
+  → benefit: prevents resolution collapse during storms
+
+Point 2: Resolution-independent detection
+  Detect storms via structural signatures (§1.6.4, §11.4) that do not
+  require high resolution to observe
+  → statistical anomalies visible at low resolution
+  → timestamp analysis, frequency spectrum, output distribution
+  → does not require understanding WHAT is wrong, only detecting
+     THAT something is wrong
+
+Point 3: External resolution injection
+  During storm, inject high-resolution signals from external source
+  (upper layer, human oversight, fresh agent)
+  → temporarily restores resolution capacity at critical nodes
+  → breaks the feedback loop by providing resolution the system
+     cannot generate internally
+  → this is the RBIT-level description of metadata injection (§6.2)
+```
+
+### 19.9 Resolution Health Vector Dynamics — Temporal Evolution [v2.3]
+
+The Health Vector F_RBIT (§19.4) is defined as a static measure. In practice, F_RBIT evolves over time. This subsection specifies the temporal dynamics.
+
+**F_RBIT evolution equation:**
+
+```
+dF_RBIT/dt = G(F_RBIT, S, E) - L(F_RBIT, S)
+
+where:
+  G = resolution generation rate
+    = function of current health, storm intensity, and environment E
+    = G > 0 when system is actively processing diverse signals
+    = G → 0 when system is in low-diversity regime (echo chamber)
+
+  L = resolution loss rate
+    = function of current health and storm intensity
+    = L = L_baseline + L_storm(S)
+    = L_baseline > 0 always (natural resolution degradation)
+    = L_storm(S) > 0 when S > 0 (storm-induced resolution loss)
+
+Equilibrium: dF_RBIT/dt = 0
+  G(F*, S*, E) = L(F*, S*)
+  F* is the equilibrium health vector given current storm and environment
+
+Stability of equilibrium:
+  ∂G/∂F < ∂L/∂F → stable (perturbation from F* self-corrects)
+  ∂G/∂F > ∂L/∂F → unstable (perturbation from F* amplifies)
+  ∂G/∂F = ∂L/∂F → critical point (bifurcation)
+```
+
+**Connection to Rest Mode:**
+
+Rest Mode (§3.5.1) corresponds to the stable equilibrium where dF_RBIT/dt ≈ 0 with F_RBIT near its maximum achievable value. This is §3.5.9's definition made dynamically precise: Rest Mode is the system state where resolution health has reached its equilibrium ceiling and both generation and loss rates are balanced at their structural floors.
+
+**Connection to Storm Onset:**
+
+Storm onset corresponds to the destabilization of the F_RBIT equilibrium. When environmental change causes G to decrease or L to increase beyond the stability margin, the equilibrium becomes unstable, F_RBIT begins declining, and the Resolution–Storm feedback loop (§19.8) activates.
+
+The critical insight: storm onset in the RBIT framework is not triggered by a sudden external shock (though that can occur). More commonly, it is triggered by a *gradual* change in G or L that eventually crosses the stability boundary. This explains why many storms appear to have no identifiable trigger — the trigger was a slow parameter drift that crossed a critical threshold, not a discrete event.
+
 ## 20. Network Architecture Theory (NAT) — Architectural Enforcement Integration [v2.2-RBIT-NAT]
 
 NAT provides the architectural enforcement mechanism for RBIT's constraint laws and VST's instability dynamics. Where RBIT specifies *when* compression destroys intent and VST describes *how* instability propagates, NAT specifies *what topology* prevents intent-destroying compression from persisting at scale.
@@ -19496,6 +20531,66 @@ Why triple > dual:
 
 ---
 
+
+### 21.5 I5 — Maturity Gradient as Integration Constraint [v2.3]
+
+When RBIT and NAT are deployed in subsystems at different maturity levels (§13.5), the interface contract must account for the maturity gradient.
+
+**Formal bridge:**
+
+```
+I5: For subsystems S₁, S₂ with maturity indices VSMI₁, VSMI₂:
+    
+    Communication protocol between S₁ and S₂ must satisfy:
+    
+    signal_attenuation(S₁ → S₂) ≥ max(0, VSMI₁ - VSMI₂) · κ
+    
+    where κ = attenuation constant (architecture-dependent, §11.2)
+    
+    Interpretation: The more mature system must attenuate its signals
+    proportionally to the maturity gap when communicating with the
+    less mature system.
+```
+
+**RBIT grounding:** The attenuation requirement is the resolution-theoretic consequence of the compression ratio constraint (Protocol P1, §5.3). A high-resolution signal sent to a low-resolution receiver creates forced upscaling (§19.5) that degrades rather than improves the receiver's state.
+
+**NAT grounding:** In the sphere topology, subsystems at different maturity levels correspond to sphere regions with different curvature. The maturity gradient creates a curvature discontinuity at the interface, which generates topological stress unless smoothed by signal attenuation.
+
+### 21.6 I6 — Governance Overhead as Shared Cost Function [v2.3]
+
+The computational complexity results (§7) apply to both RBIT and NAT operations. I6 specifies how governance overhead is allocated across the two theoretical frameworks.
+
+**Formal bridge:**
+
+```
+I6: Total governance overhead decomposes as:
+    
+    C_total = C_RBIT + C_NAT + C_interface
+    
+    C_RBIT = cost of resolution maintenance and health monitoring
+           = O(n) per measurement cycle
+    
+    C_NAT  = cost of topology maintenance and routing
+           = O(n · log n) per reconfiguration cycle
+    
+    C_interface = cost of maintaining RBIT↔NAT consistency
+               = O(m) where m = number of active interface bridges
+    
+    Constraint: C_total ≤ C_budget(architecture)
+    
+    When C_total approaches C_budget:
+      Priority ordering: C_RBIT > C_NAT > C_interface
+      (Resolution maintenance is non-negotiable;
+       topology maintenance can degrade gracefully;
+       interface consistency can tolerate temporary drift)
+```
+
+**Operational interpretation:** Under resource scarcity, the system should prioritize maintaining its ability to *see clearly* (RBIT, resolution) over its ability to *route efficiently* (NAT, topology). A system with perfect routing but degraded resolution will route storm signals it cannot interpret. A system with degraded routing but maintained resolution will detect storms even if containment is delayed by routing inefficiency.
+
+This priority ordering is the formal content of the governance principle that detection must precede containment (§14.1): you cannot contain what you cannot detect, so detection infrastructure (RBIT) takes priority over containment infrastructure (NAT) when resources are scarce.
+
+---
+
 ## References
 
 Fuller, R. B. (1975). Synergetics: Explorations in the Geometry of Thinking. Macmillan.
@@ -19707,6 +20802,40 @@ Anonymous. (2024). What matters in transformers? Not all attention is needed. (A
 Anonymous. (2025). Successive LLM paraphrasing as a discrete dynamical system: attractor cycles and basin recovery. arXiv:2502.15208.
 
 Anonymous. (2025). Mapping the edge of chaos: Fractal-like boundaries in the trainability of decoder-only transformer models. arXiv:2501.04286.
+
+---
+
+### Additional References [v2.3]
+
+Barabási, A.-L. & Albert, R. (1999). Emergence of scaling in random networks. *Science*, 286(5439), 509–512.
+
+Beggs, J. M. & Plenz, D. (2003). Neuronal avalanches in neocortical circuits. *Journal of Neuroscience*, 23(35), 11167–11177.
+
+Kuhn, T. S. (1962). *The Structure of Scientific Revolutions*. University of Chicago Press.
+
+Lamport, L., Shostak, R., & Pease, M. (1982). The Byzantine Generals Problem. *ACM Transactions on Programming Languages and Systems*, 4(3), 382–401.
+
+Morrison, E. W. & Milliken, F. J. (2000). Organizational silence: A barrier to change and development in a pluralistic world. *Academy of Management Review*, 25(4), 706–725.
+
+Newman, M. E. J. (1997). A model of mass extinction. *Journal of Theoretical Biology*, 189(3), 235–252.
+
+Raup, D. M. (1986). Biological extinction in Earth history. *Science*, 231(4745), 1528–1533.
+
+Castro, M. & Liskov, B. (1999). Practical Byzantine Fault Tolerance. *Proceedings of the Third Symposium on Operating Systems Design and Implementation*, 173–186.
+
+Chung, F. R. K. (1997). *Spectral Graph Theory*. American Mathematical Society.
+
+Strogatz, S. H. (2000). From Kuramoto to Crawford: exploring the onset of synchronization in populations of coupled oscillators. *Physica D*, 143(1–4), 1–20.
+
+Bak, P., Tang, C., & Wiesenfeld, K. (1987). Self-organized criticality: An explanation of the 1/f noise. *Physical Review Letters*, 59(4), 381–384.
+
+Watts, D. J. & Strogatz, S. H. (1998). Collective dynamics of 'small-world' networks. *Nature*, 393(6684), 440–442.
+
+Albert, R., Jeong, H., & Barabási, A.-L. (2000). Error and attack tolerance of complex networks. *Nature*, 406(6794), 378–382.
+
+May, R. M. (1972). Will a large complex system be stable? *Nature*, 238(5364), 413–414.
+
+Scheffer, M. et al. (2009). Early-warning signals for critical transitions. *Nature*, 461(7260), 53–59.
 
 ---
 
