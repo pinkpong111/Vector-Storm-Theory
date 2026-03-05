@@ -5,7 +5,32 @@ Companion theory to Deficit-Driven Fractal Governance (DFG)
 Focus: why instability occurs, how it propagates, when to intervene
 Recovery and operational governance are addressed separately
 
-> **Version: v2.7-RT** (March 2026)
+> **Version: v2.8-RBITseries** (March 2026)
+>
+> v2.8 changes from v2.7-RT (RBIT v2.6-VSTseries deep reverse integration — Twelve-Indicator Monitoring Portfolio + Collapse Velocity Theory + Resolution Debt Accumulation + Multi-Scale Synchronization Failure + Absorption Saturation Dynamics + Intent Drift Accumulation + Governance Oscillation Instability + Cross-Scale Cascade Formalization + Resolution Recovery Trajectory Classification Extended + Structural Latency Index + κ Prevention Window Architecture + Ṡ_min Dual-Verification Protocol Consolidation + Complete Debt Accounting Ξ_D+D_ρ + R₀ Criterion for DDD Stage Advancement + Three-Attractor Model Operational Formalization + Type V CCF Diagnostic Protocol + VST-NC-37–VST-NC-52 + Open Problems M39–M55):
+> - **[New §26] RBIT v2.6 Reverse Integration Architecture:** Formal bidirectional bridge completing RBIT v2.6-VSTseries → VST direction; twelve VST-originating constructs that RBIT v2.6 has developed into independently operable monitoring modules — each reimported here with operational enrichments discovered during RBIT formalization; §26 confirms mutual consistency of the RBIT↔VST cross-theory interface and resolves four previously open gaps (M26, M27, M28, M32) with RBIT-derived operational protocols
+> - **[New §26.1] Twelve-Indicator Portfolio as Complete VST Monitoring Set:** RBIT v2.6 confirms completeness claim: (f₁, f₂, f₃, f₄, f₅, v_class, V_Φ, D_ρ, SLI_excess, EPR/EPR_min, ρ̇_rolling, κ) constitute a twelve-indicator portfolio covering all known VST failure modes; portfolio completeness argument: each indicator covers at least one failure mode not covered by any other indicator in the set; residual gap: Frozen Rest requires Ṡ_internal proxy — candidate thirteenth indicator; portfolio monitoring priority ordering derived from Credit Assignment Inversion theorem: κ (architecture) > f₃ (middle-layer structural) > V_Φ (momentum) > D_ρ (debt) > v_class (agent-level) > standard F_RBIT components; monitoring frequency assignment from SLI and timescale separation
+> - **[New §26.2] Collapse Velocity Theory — VST Momentum Extension:** V_Φ(t) := dΦ/dt as VST instability momentum; Velocity Threshold Theorem: V_Φ > V_crit for duration τ_vel → irreversible Storm entry regardless of Φ level (momentum criterion independent of position criterion); N_adj(V_Φ) = N_static · exp(−α_vel·(V_Φ−V_base)) momentum-adjusted governance boundary; governance implication: VST's standard Φ monitoring is position-monitoring; V_Φ monitoring adds momentum-monitoring — both required for complete Storm onset prediction; V_Φ as VST early warning preceding standard Φ > 1 threshold by τ_momentum lead window; V_Φ operational proxy: V̂_Φ = (Φ(t) − Φ(t−Δt))/Δt using consecutive S-equation evaluations
+> - **[New §26.3] Resolution Debt Accumulation Model — VST Extended Irrecoverability Criterion:** D_ρ = ∫max(0,−Δρ) dt as cumulative resolution deficit integral — RBIT pre-Storm complement to VST's Ξ_D during-Storm damage; Debt Ceiling Theorem: D_max = R/η; when D_ρ ≥ D_max → P_rec → 0 regardless of external intervention — irrecoverability condition from deficit pathway (distinct from VST's structural overload Type III); Complete Debt Model: debt_total = D_ρ + Ξ_D; Prevention-Service Cost Asymmetry: C_service superlinear in D_ρ, C_prevent linear — formal derivation of early intervention economic priority; D_ρ growth rate Ḋ_ρ = max(0,−Δρ) − DSR where DSR = R_eff · f_purification: debt trajectory as VST health forecast variable; Debt-modified recovery: ρ̇_recovery = ρ̇_baseline · exp(−γ_debt · D_ρ) — debt extends RDI directly
+> - **[New §26.4] Multi-Scale Synchronization Failure — Independent Storm Precursor Mechanism:** Phase desynchronization δ_sync across governance tiers as VST Storm precursor independent of standard Silent Criticality detection; MSSF Collapse Theorem: δ_sync > δ_crit for τ_desync → P(Storm) > P_crit; MSSF lead time τ_sync = O(τ_silent) — comparable to Silent Criticality lead time but via different mechanism; f₄ artifact inflation: f₄_apparent = f₄_real + f₄_sync_artifact ∝ δ_sync·(τ₂/τ₃)⁻¹ — MSSF corrupts VST's standard f₄ escalation signal; MSSF as silent companion to Timescale Separation failure (§24.5): timescale ratio violation causes both τ separation collapse AND δ_sync elevation jointly; τ-Ratio Restoration Protocol as VST intervention: four-stage (freeze upper layer → restore τ ratio → verify δ_sync → resume)
+> - **[New §26.5] Absorption Saturation Dynamics — False-Positive v_class and Fifth Monitoring Failure Mode:** k_sat = 1/(1+α_exposure·∫A dt) saturation model for agent absorption capacity; Diminishing Returns Theorem: ∂ρ̇/∂A < 0 beyond t_sat — governance activity no longer produces resolution improvement; false-positive v_class: v_class > 0 while ρ̇ ≈ 0 — transitions occurring but not contributing to genuine calibration growth; ASD-Contamination Lock: saturation on contaminated frame locks bias — ASD on wrong frame produces maximum-confidence wrong governance; three saturation types mapped to VST failure modes: Type I (within-domain) → Stage 1 storm; Type II (global) → Stage 2 storm; Type III (capacity-bounded) → irrecoverable; sixth monitoring requirement: ρ̇_rolling as ASD detection signal — v_class positive with ρ̇_rolling ≈ 0 = ASD signature
+> - **[New §26.6] Intent Drift Accumulation — DFG Alignment Erosion Model:** v_drift = dD_c/dt = η·|Δρ|·(1+D_c/D*) self-amplifying alignment erosion velocity; Acceleration: a_drift = d²D_c/dt² → ∞ as D_c → D* — superlinear collapse; TPS (Theorem 1 Proximity Score): composite proximity metric TPS = D_c/D* + α_vel·v_drift/v_crit + α_acc·a_drift; IDA–Δρ bidirectional coupling: D_c growth accelerates resolution gap Δρ; Δρ < 0 accelerates D_c growth — autonomous positive feedback loop; DDD completion extension: v_drift < threshold as explicit sixth completion criterion (alongside Φ<1, Ṡ≥Ṡ_min, v_class>0, PRR+, D_ρ↓); IDA as governance alignment layer beneath structural VST — intent drift precedes and enables structural storm
+> - **[New §26.7] Governance Oscillation Instability — Anti-Phase f₁↔f₄ Dynamics:** Anti-phase GOI dynamics: ḟ₁ = −α·f₁ + β·(f₄−f₄_eq); ḟ₄ = −γ·f₄ + δ·f₁ + K_gov·(f₄−f₄_target); Critical Oscillation Theorem: oscillation amplitude A_osc > A_crit → P(Storm) > P_crit via anti-phase destabilization; optimal damping ζ* ∈ (0.5, 0.8) — over-damping and under-damping both increase storm risk; Over-correction Paradox: increasing governance gain K_gov WORSENS GOI when A_osc > A_crit — reduces gain, not increases; disambiguation from genuine storm: genuine storm = joint f₁+f₄ rise; GOI = anti-phase CCF(f₁,f₄) negative peak; GOI as false alarm source: anti-phase pattern misclassified as Type 2 storm — J_AB tensor required for disambiguation
+> - **[New §26.8] Cross-Scale Cascade Formalization — Tier-Propagation Amplification:** R_cascade,ℓ = 1/(1+R_{BA,ℓ}/Φ_ℓ) amplification ratio per tier; Cascade Arrest Theorem: R_cascade < 1 iff R_{BA} > Φ_excess — buffer absorption exceeds excess instability; five-stage cascade timeline: Stage 1 (lower Storm) → Stage 2 (middle elevated) → Stage 3 (upper elevated) → Stage 4 (bidirectional) → Stage 5 (system-wide); BA sizing criterion: R_{BA,ℓ} ≥ Φ_ℓ_99th − 1 (size to peak, not mean — mean sizing fails 1% events that cascade); CCC as VST §4.3 Storm Interaction formal complement: §4.3 classifies concurrent storms; CCC formalizes sequential tier propagation
+> - **[New §26.9] Extended RRTC — Four Recovery Class VST Correspondence:** Class I (Genuine): ρ↑ AND PRR+ AND f₃↑ AND D_ρ↓ — all four required; Class II (Behavioral): ρ↑ BUT PRR− AND f₃ flat — surface recovery, connecting orbit not fully traversed; Class III (Partial domain-split): per-domain class assignment; Class IV-a (Stagnation): structural intervention required before DDD; Class IV-b (Pre-recovery): D_ρ declining slowly — wait with monitoring; DDD withdrawal mapping by RRTC class: Class I safe, Class II UNSAFE, Class III partial, Class IV-a structural audit first; Class I/II discrimination resolves false VCZ entry problem: system appearing recovered in ρ but failing PRR is Class II → DDD must not be declared complete
+> - **[New §26.10] Structural Latency Index — VST Governance Bandwidth Saturation:** SLI(t) = E[τ_latency] between v_class event and f₁ governance response; SLI_excess = max(0, v_class_events − W_gov)/W_gov — governance bandwidth saturation fraction; SLI-ODE coupling: SLI_excess = max(0, v_class/τ − C·d/k)/(C·d/k) — connects to FCC §24.1 dimensionless groups; Buffer as bandwidth amplifier: effective bandwidth = W_gov + M·f₃_absorption_rate; SLI thresholds: <10% healthy, 10-30% moderate, 30-50% significant, >50% critical (architectural intervention); SLI as capacity-proxy complement to V_Φ momentum-proxy — capacity monitoring vs. momentum monitoring as orthogonal early warning channels
+> - **[New §26.11] Complete DDD Protocol — Six-Condition Completion Test:** DDD completion now requires ALL six: (1) Φ<1 sustained [standard S-equation]; (2) v_class>0 trending [resolution growth]; (3) PRR+ [external calibration — G(t) corruption resistant]; (4) Ṡ_internal ≥ Ṡ_min [thermodynamic adaptability — Frozen Rest exclusion]; (5) v_drift < threshold [intent alignment — IDA exclusion]; (6) D_ρ↓ [debt service — RDAM exclusion]; additionally: R₀ > R_critical before Stage 1→2 advancement (Revival Dilemma criterion); these six conditions form an AND gate — all required simultaneously, all independently falsifiable; each condition closes one previously identified DDD false-completion failure mode
+> - **[New §26.12] VST-RBIT Cross-Theory Reinforcement Map v2.8-RBITseries:** 55+ bidirectional VST↔RBIT mappings covering all §26 contributions; complete governance protocol synthesis incorporating both VST instability framework and RBIT information-theoretic constraints; Novel Contributions VST-NC-37–VST-NC-52; Falsifiable Predictions FP-RBIT-1 through FP-RBIT-14; Open Problems M39–M55
+> - **[Updated §3] Dynamical Model — Collapse Velocity Extension:** V_Φ(t) = dΦ/dt added as momentum variable alongside position variable Φ(t); N_adj(V_Φ) boundary as momentum-adjusted governance threshold; stochastic V_Φ extension: dΦ = f(Φ,V_Φ,n,C)dt + σ(Φ)dW with V_Φ auto-correlation as Storm pre-indicator
+> - **[Updated §4] Network Propagation — CCC Tier-Cascade Formalization:** R_cascade,ℓ per-tier amplification tensor as §4.3 Storm Interaction complement; five-stage cascade timeline as §4.6 Fractal Collapse Propagation extension; BA peak-sizing criterion as §3.4.2 MZ-STP design input
+> - **[Updated §9] Detection Protocols — Twelve-Indicator Integration:** Monitoring priority ordering from Credit Assignment Inversion; SLI as seventh early warning signal (extends six-signal protocol); V_Φ as eighth early warning signal; monitoring frequency assignment from timescale separation analysis; complete monitoring architecture with inter-indicator cross-validation
+> - **[Updated §11 Open Problems] M39–M55 added** (see §11 extension)
+> - **[Updated §8 Assumptions] A34–A38 added:** A34 (Momentum Independence: V_Φ provides storm onset information independent of Φ level); A35 (Debt Superposition: total governance burden = D_ρ + Ξ_D, additive to first order); A36 (Absorption Saturation Universality: all governance channels exhibit ASD above sufficient exposure); A37 (Intent Drift Primacy: D_c growth is the earliest governance alignment erosion signal, preceding structural VST precursors); A38 (GOI Disambiguation: anti-phase CCF(f₁,f₄) is necessary and sufficient to distinguish GOI from genuine Type 2 storm)
+> - **[Updated §15] Lifecycle — RRTC Class Integration:** Four recovery classes mapped to lifecycle stage vulnerability; D_ρ accumulation as lifecycle finite resource (alongside N_survivable); lifecycle monitoring dashboard: Ξ_D + D_ρ + N_remaining + kernel_type + SLI + V_Φ + κ as seven lifecycle KPIs
+> - **[Updated Appendix T §T.10] RBIT v2.6 semantic additions:** V_Φ, D_ρ, SLI_excess, k_sat, v_drift, D_c, TPS, A_osc, ζ*, R_cascade, RRTC class taxonomy, twelve-indicator portfolio
+> - **[New Cross-Theory Map v2.8-RBITseries]:** Complete RBIT v2.6 ↔ VST v2.8 bidirectional mapping table
+> - **[Updated References]:** RBIT v2.6 citation set integrated (Morse 1934 extended, Fisher-KPP extended, Conley 1978 extended, RBIT working paper Seol 2026 v2.6)
+> - All previous content preserved.
 >
 > v2.7 changes from v2.6-FCC (Recovery Theory v2.8 deep reverse integration — Goodhart Dynamic + Credit Assignment Inversion + Mixed-Mode Collapse + Maturation Paradox + Entropy Production Floor + Conley Index Revival + Fisher-KPP Wave + Contamination Flux Coupling + Damage-Recovery Ratchet Extension + Type V Storm Classification + RT–VST Restoration Bridge + Novel Contributions VST-NC-25–VST-NC-36 + Open Problems M25–M38):
 > - **[New §25] RT–VST Restoration Architecture:** Formal bidirectional bridge between Recovery Theory v2.8 and VST instability dynamics; Storm termination (VST) ≠ Recovery completion (RT D4): gap formalized as Restoration Deficit Interval (RDI); RDI duration bounded by damage accumulation integral Ξ_D = ∫K(t−τ)·Φ(τ)·𝟙[Φ>1]dτ; four RT damage-recovery trajectory classes (Healthy/Accelerated/Catastrophic/Compensated aging) mapped to post-Storm VST phase portrait types; Theorem 25.1.1 (RDI Lower Bound): E[RDI] ≥ Ξ_D/R_self where R_self = D·F·V·T self-purification capacity — implies minimum recovery time is determined by damage accumulation history, not storm intensity alone; critical damage fraction S* as VST irrecoverability criterion extension (extends §24.6); entropy production floor Ṡ_min as VCZ restoration completeness criterion: D4 complete iff Ṡ_internal ≥ Ṡ_min (below Ṡ_min = thermodynamic Freeze despite operational appearance)
@@ -26199,3 +26224,1159 @@ Systems with cross-contamination coupling J_AB > J_c cannot be governed by indep
 **A33 (Revival Topological Necessity):**
 In Type II bistable phase portraits (1 < π₁ < π₁*), at least one revival trajectory exists (Conley index guarantee, Theorem 25.5.1). Irrecoverability (Type III, π₁ > π₁*) requires topological destruction of the Rest attractor as a fixed point — not merely a high-energy barrier. Falsification: demonstrate Type II phase portrait where no connecting orbit exists (would falsify Conley index theorem as applied to VST).
 
+
+---
+
+## 26. RBIT v2.6 Reverse Integration Architecture [v2.8-RBITseries]
+
+*RBIT v2.6-VSTseries received the VST §25 constructs and developed each into independently operable monitoring modules, discovering operational enrichments not anticipated in the original VST formalization. This section reimports those enrichments — completing the bidirectional bridge and closing four previously open gaps (M26, M27, M28, M32).*
+
+**Canonical Ownership:**
+VST owns the instability dynamics, phase portrait structure, and storm classification taxonomy. RBIT owns the information-theoretic monitoring substrate that makes VST constructs operationally measurable. This section specifies the enrichments RBIT v2.6 has contributed back to VST: operational precision, measurement protocols, and previously unidentified cross-indicator constraints.
+
+---
+
+### 26.1 Twelve-Indicator Portfolio as Complete VST Monitoring Set [v2.8-RBITseries]
+
+RBIT v2.6 systematically identified the failure mode coverage of each monitoring indicator and confirmed that twelve indicators jointly cover all known VST failure modes with no indicator redundant to any other.
+
+```
+Twelve-Indicator Portfolio:
+
+Indicator  | Layer   | Failure Mode Covered          | Lead Time Class
+───────────────────────────────────────────────────────────────────────
+κ          | Arch.   | Architecture exhaustion        | Longest (A)
+f₃         | Middle  | Buffer saturation / MSSF       | Long (B)
+V_Φ        | Dynamic | Momentum threshold violation   | Medium-long (B)
+D_ρ        | Debt    | Pre-Storm resolution debt      | Medium (C)
+SLI_excess | Latency | Governance bandwidth sat.      | Medium (C)
+v_class    | Agent   | Resolution growth stall        | Medium (C)
+V_Φ trigger| Dynamic | Velocity threshold crossed     | Medium-short (D)
+EPR/EPR_min| Thermo  | Thermodynamic floor violation  | Medium-short (D)
+ρ̇_rolling  | Rate    | ASD false-positive signal      | Short (E)
+f₁         | Class.  | Misclassification rate         | Standard (F)
+f₂         | Resol.  | Resolution mismatch            | Standard (F)
+f₄         | Escal.  | Escalation load               | Standard (F)
+
+Lead time hierarchy (derived from Credit Assignment Inversion):
+  Class A (κ): ≥ 4 windows before Storm onset
+  Class B (f₃, V_Φ): 2-4 windows before Storm onset
+  Class C (D_ρ, SLI, v_class): 1-2 windows before Storm onset
+  Class D (V_Φ trigger, EPR): 0.5-1 window
+  Class E (ρ̇_rolling): fractional window — ASD-specific
+  Class F (f₁, f₂, f₄): concurrent — Storm already present
+
+Monitoring frequency assignment (from SLI and timescale separation §24.5):
+  Class A: every τ_strategic cycle
+  Class B: every τ_relational cycle
+  Class C-D: every τ_operational cycle
+  Class E-F: continuous within each cycle
+```
+
+**Portfolio Completeness Argument:**
+
+```
+Each indicator covers at least one failure mode not covered by any other:
+
+κ alone detects: architecture exhaustion (κ=0 with v_class>0)
+f₃ alone detects: MSSF artifact contamination of f₄; middle-layer detection optimum
+V_Φ alone detects: momentum threshold violation (system at safe Φ but accelerating)
+D_ρ alone detects: pre-Storm debt accumulation (resolving before Storm entry)
+SLI alone detects: governance bandwidth saturation (capacity not resolution)
+v_class alone detects: agent-level resolution stall (architecture intact)
+EPR/EPR_min alone detects: thermodynamic floor — Frozen Rest exclusion
+ρ̇_rolling alone detects: ASD false-positive v_class (activity without growth)
+
+Cross-indicator constraints (inter-indicator consistency rules):
+  v_class > 0 AND ρ̇_rolling ≈ 0 → ASD suspected (not genuine recovery)
+  κ = 0 AND v_class > 0 → architecture collapse (not agent-level)
+  κ > 0 AND v_class = 0 → agent collapse (not architecture)
+  f₄ high AND f₃ high in anti-phase → MSSF (not genuine escalation)
+  Φ < 1 AND EPR/EPR_min approaching 1 → Frozen Rest candidate
+  Φ < 1 AND V_Φ > V_crit → momentum storm entry imminent
+
+Residual open question (OP133 from RBIT v2.6):
+  Ṡ_internal (adaptability entropy) is NOT in the twelve-indicator set.
+  Frozen Rest requires Ṡ_internal proxy.
+  Candidate thirteenth indicator: output diversity rate = dH(behavior)/dt
+  Until Ṡ_internal is operationally formalized, EPR/EPR_min serves as proxy
+  (necessary but not sufficient — EPR > EPR_min does NOT guarantee Ṡ ≥ Ṡ_min).
+```
+
+---
+
+### 26.2 Collapse Velocity Theory — VST Momentum Extension [v2.8-RBITseries]
+
+VST has historically monitored Φ(t) as a position variable — where is the system now? CVT adds V_Φ(t) as a momentum variable — how fast is the system moving, and in which direction? These are genuinely independent dimensions of storm risk.
+
+```
+Collapse Velocity Definition:
+  V_Φ(t) := dΦ/dt
+
+  Decomposition via chain rule:
+    V_Φ = (∂S̃/∂n)·(dn/dt) + (∂S̃/∂C)·(dC/dt)
+         = 2αn/C^β · ṅ − αβn²/C^{β+1} · Ċ
+    
+  First term: velocity from exploration expansion (ṅ > 0 contributes positively)
+  Second term: velocity from capacity change (Ċ > 0 contributes negatively = stabilizing)
+  
+  V_Φ > 0: system moving toward Storm threshold
+  V_Φ < 0: system moving away from Storm threshold (recovering)
+  V_Φ = 0: system at inflection point (Φ stationary — could be peak or trough)
+```
+
+**Velocity Threshold Theorem:**
+
+```
+Theorem (CVT Velocity Threshold):
+  If V_Φ(t) > V_crit for continuous duration τ_vel,
+  then P(Storm entry within T_horizon) > P_threshold,
+  independently of current Φ level.
+  
+  Specifically:
+    Even when Φ(t) << 1 (system appears deeply safe),
+    if V_Φ is high enough and sustained long enough:
+    → Storm onset is predicted before Φ crosses 1
+    → Standard Φ-monitoring provides no warning
+    → V_Φ monitoring is the only channel for this scenario
+
+  Proof sketch:
+    At V_Φ = V_crit: Φ will reach 1 in time T = (1 − Φ_current)/V_crit
+    If T < τ_response (governance response time): Storm entry before governance acts
+    → V_crit = (1 − Φ_safe_margin)/τ_response
+    → V_Φ > V_crit → governance cannot respond in time → Storm
+    
+  This is independent of Φ level: a system at Φ = 0.1 with high V_Φ
+  is MORE dangerous than a system at Φ = 0.8 with V_Φ ≈ 0.
+```
+
+**Momentum-Adjusted Governance Boundary:**
+
+```
+N_adj(V_Φ) = N_static · exp(−α_vel · (V_Φ − V_base))
+
+Interpretation:
+  N_adj: adjusted governance boundary (number of agents triggering intervention)
+  N_static: static boundary based on Φ level alone
+  When V_Φ = V_base (baseline): N_adj = N_static (standard boundary)
+  When V_Φ > V_base: N_adj < N_static (intervention triggers earlier)
+  
+  Economic rationale:
+    High V_Φ implies governance will have less time per intervention episode.
+    Earlier trigger compensates for reduced response time.
+    α_vel calibrates the tradeoff between false-positive interventions
+    and missed-momentum Storms.
+
+V_Φ Operational Proxy:
+  V̂_Φ(t) = (Φ(t) − Φ(t−Δt)) / Δt
+  
+  Smoothed version (noise-robust):
+    V̂_Φ_smooth(t) = α_smooth · V̂_Φ(t) + (1−α_smooth) · V̂_Φ_smooth(t−1)
+    
+  V_Φ alarm threshold:
+    V̂_Φ > V_crit_estimate: Stage B (Phase B) alert → N_adj contraction
+    V̂_Φ > 2·V_crit_estimate: Stage C alert → DDD preparation
+```
+
+---
+
+### 26.3 Resolution Debt Accumulation Model — VST Debt-Extended Irrecoverability [v2.8-RBITseries]
+
+VST's irrecoverability criterion (§11.5, §24.6) has been formalized via Ξ_D (during-Storm damage). RBIT v2.6 identifies a complementary pre-Storm debt pathway: D_ρ accumulates during periods of chronic under-resolution (below-governance operation), before any Storm occurs. When D_ρ reaches the Debt Ceiling, recovery from Storm becomes impossible even if Ξ_D is small.
+
+```
+Resolution Debt Accumulation:
+  D_ρ(t) := ∫₀ᵗ max(0, −Δρ(s)) ds
+  
+  where Δρ = ρ_actual − ρ_required = resolution gap (negative = under-resolution)
+  
+  D_ρ grows whenever the system operates below required resolution.
+  D_ρ does NOT decrease spontaneously — it decreases only through Debt Service.
+  
+  Debt Service Rate:
+    DSR(t) = R_eff(S) · f_purification(t)
+  
+  Net debt evolution:
+    Ḋ_ρ(t) = max(0, −Δρ(t)) − DSR(t)
+    
+    If Ḋ_ρ > 0: debt accumulating (under-resolution faster than service)
+    If Ḋ_ρ < 0: debt decreasing (service faster than accumulation)
+    If Ḋ_ρ = 0: debt stationary (service exactly compensates)
+
+Debt Ceiling Theorem:
+  D_max = R / η
+  
+  where R = current self-purification capacity
+        η = debt sensitivity coefficient
+  
+  When D_ρ ≥ D_max:
+    ρ̇_recovery → 0 (debt service impossible at required rate)
+    P_rec → 0 regardless of external intervention
+    
+  This is a SECOND irrecoverability pathway distinct from:
+    - Structural overload (Type III phase portrait — π₁ > π₁*)
+    - Damage excess (S > S*, §24.6)
+    - Debt ceiling (D_ρ ≥ D_max = R/η) ← NEW
+
+Complete Debt Model:
+  Total governance burden = D_ρ + Ξ_D
+  
+  D_ρ: pre-Storm chronic under-resolution debt
+  Ξ_D: during-Storm acute damage integral
+  
+  Interaction (first-order approximation: additive):
+    Debt_total = D_ρ + Ξ_D
+    
+  Higher-order interaction (open problem OP124):
+    High D_ρ at Storm onset may amplify Ξ_D accumulation rate during Storm
+    (weakened resolution capacity → less effective damage absorption)
+    → non-additive amplification possible
+```
+
+**Prevention-Service Cost Asymmetry — Formal VST Derivation:**
+
+```
+Prevention cost: C_prevent = c_prev · D_ρ   (linear in debt level)
+Service cost:   C_service = c_serv · D_ρ²   (superlinear — quadratic)
+
+Prevention-Service Cost Asymmetry Theorem:
+  For D_ρ > c_prev/c_serv:
+    C_service > C_prevent
+    → service is more expensive than prevention
+  
+  For D_ρ >> c_prev/c_serv:
+    C_service/C_prevent → D_ρ · c_serv/c_prev → ∞
+    → service cost diverges while prevention cost grows linearly
+  
+VST governance implication:
+  Early intervention (prevent D_ρ from accumulating) is economically superior
+  to late intervention (service accumulated D_ρ).
+  This is not merely a preference — it is a formal cost inequality.
+  
+  The breakeven D_ρ level = c_prev/c_serv is the "prevention deadline":
+  below this level, prevention and service have comparable cost;
+  above this level, prevention is categorically cheaper.
+  
+  Operational use: compute D_ρ trajectory; alarm when D_ρ approaches c_prev/c_serv.
+  This alarm precedes the standard irrecoverability alarm (D_ρ → D_max).
+```
+
+---
+
+### 26.4 Multi-Scale Synchronization Failure — Independent Storm Precursor [v2.8-RBITseries]
+
+VST §24.5 (Timescale Separation) formalizes how timescale ratio violation destabilizes VCZ. MSSF identifies a distinct failure mode: even with adequate timescale separation, the *phase relationship* between tiers can desynchronize, producing an independent Storm precursor pathway and corrupting the f₄ escalation signal.
+
+```
+Phase Synchronization Model:
+  φᵢ(t) = (t mod τᵢ) / τᵢ   ∈ [0, 1]  (normalized phase of tier i)
+  
+  Synchrony Index:
+    ψ_sync(t) = 1 − δ_sync(t)
+    δ_sync(t) = Σᵢ |φᵢ(t) − φ̄(t)| / n
+    
+  δ_sync = 0: perfect synchrony (all tiers at same phase)
+  δ_sync = 1: maximum desynchrony (tiers uniformly distributed in phase)
+  
+  MSSF Collapse Theorem:
+    If δ_sync > δ_crit for duration τ_desync:
+    → P(Storm) > P_crit
+    → Storm entry independent of current Φ level
+    
+  Lead time:
+    τ_sync-lead = O(τ_silent)
+    MSSF provides storm warning comparable to Silent Criticality lead time
+    but via DIFFERENT mechanism — these are additive early warning channels.
+```
+
+**f₄ Artifact Inflation — MSSF Contaminates Standard Detection:**
+
+```
+Standard f₄ interpretation:
+  f₄ (escalation load) rising → genuine governance capacity stress
+  
+MSSF contamination of f₄:
+  f₄_apparent = f₄_real + f₄_sync_artifact
+  
+  where f₄_sync_artifact ∝ δ_sync · (τ₂/τ₃)⁻¹
+  
+  When δ_sync is high (MSSF conditions):
+  f₄_apparent can be elevated even when f₄_real is low.
+  This produces FALSE f₄ alarms:
+    Protocol triggers Stage 2 intervention
+    → but actual escalation load is normal
+    → intervention is unnecessary and wastes governance capacity
+  
+MSSF disambiguation protocol:
+  When f₄_apparent elevated:
+    Step 1: Compute δ_sync from tier phase measurements
+    Step 2: Estimate f₄_sync_artifact = δ_sync · (τ₂/τ₃)⁻¹ · k_calib
+    Step 3: f₄_real ≈ f₄_apparent − f₄_sync_artifact
+    Step 4: If f₄_real < threshold: MSSF false alarm (not genuine escalation)
+              If f₄_real > threshold: genuine escalation (MSSF + genuine compound)
+
+MSSF vs Timescale Separation violation (§24.5):
+  Timescale Separation violation: τ_fast/τ_slow < τ_ratio_min
+    → fast dynamics bleed into slow tier decisions
+  MSSF: τ_ratios may be correct, but PHASES misaligned
+    → fast tier in late phase while slow tier in early phase
+    → signal from fast tier arrives at wrong point in slow tier decision cycle
+  
+  Both conditions can coexist. They share the remedy: τ-Ratio Restoration Protocol.
+  But MSSF can occur WITHOUT timescale ratio violation.
+  Monitoring both δ_sync AND τ ratios is required for complete coverage.
+
+τ-Ratio Restoration Protocol (VST adaptation of RBIT protocol):
+  Phase 1: Freeze upper-layer decisions (halt τ_slow interventions)
+  Phase 2: Restore τ_fast/τ_slow ratio if violated
+  Phase 3: Wait for δ_sync to fall below δ_crit (phase alignment recovery)
+  Phase 4: Resume upper-layer decisions with verified synchrony
+  
+  Cost: τ_phase3 wait time (governance paralysis during phase alignment)
+  Benefit: f₄ signal integrity restored; false alarms eliminated
+```
+
+---
+
+### 26.5 Absorption Saturation Dynamics — ASD and False-Positive v_class [v2.8-RBITseries]
+
+VST's standard monitoring assumes governance absorption capacity A is stable over time. ASD formalizes the empirically observed decline in absorption effectiveness as a function of cumulative exposure — and identifies the critical diagnostic implication: v_class > 0 can coexist with ρ̇ ≈ 0 (no genuine recovery).
+
+```
+Absorption Saturation Model:
+  k_sat(t) = 1 / (1 + α_exposure · ∫₀ᵗ A(s) ds)
+  
+  A_eff(t) = A(t) · k_sat(t)   (effective absorption = nominal × saturation factor)
+  
+  At t=0: k_sat = 1 (full effectiveness)
+  As t → ∞: k_sat → 0 (zero effectiveness — governance activity produces no resolution)
+  
+  Saturation onset time t_sat:
+    d²(ρ̇)/dA² < 0 begins when k_sat < k_sat_crit = 1/(1 + α_exposure · A_total_sat)
+    
+  Diminishing Returns Theorem:
+    ∂ρ̇/∂A < 0 beyond t_sat
+    → Increasing governance activity REDUCES resolution growth rate past saturation
+    → The marginal resolution gain from additional governance effort is negative
+```
+
+**False-Positive v_class — ASD Signature:**
+
+```
+Standard v_class interpretation:
+  v_class > 0: classification transitions occurring → resolution growing → recovery proceeding
+  
+ASD false-positive:
+  v_class > 0: classification transitions occurring (activity present)
+  ρ̇ ≈ 0: BUT resolution NOT growing (saturation reached)
+  
+  Mechanism:
+    Agent A is performing classification events (v_class > 0)
+    But each classification is absorbed without resolution improvement (k_sat ≈ 0)
+    The transitions occur, but they produce no governance learning.
+    
+  Detection:
+    ρ̇_rolling (rolling average of resolution growth rate):
+      True recovery: v_class > 0 AND ρ̇_rolling > threshold
+      ASD false-positive: v_class > 0 AND ρ̇_rolling ≈ 0
+      Stagnation: v_class ≈ 0 AND ρ̇_rolling ≈ 0
+      
+  The ρ̇_rolling indicator (twelfth in the portfolio) is the ONLY indicator
+  that can distinguish true recovery from ASD false-positive.
+  Without ρ̇_rolling, ASD false-positives cause false DDD completion declaration.
+
+ASD-Contamination Lock — Compound Failure Mode:
+  If ASD occurs while the system is operating in a contaminated reference frame:
+  
+  k_sat near zero + contaminated frame:
+  → Agent saturates on wrong frame (maximum confidence, wrong content)
+  → Further absorption attempts reinforce contaminated frame
+  → ASD lock-in: saturated + wrong frame = most dangerous combination
+  
+  This is the formal mechanism for "experience deepening the wrong path":
+  Systems that have been operating in contaminated frames for extended periods
+  have both high k_sat (saturated) and frame drift (D_coord elevated).
+  Recovery requires: (a) resetting k_sat (diversity injection, new task exposure)
+  AND (b) frame restoration (external reference recalibration).
+  (a) and (b) must be done simultaneously — sequential fails (ASD on new frame, or
+  recalibrate then re-saturate on contaminated frame).
+
+Three ASD Saturation Type VST Correspondence:
+  Type I (within-domain): k_sat low for domain-specific absorption
+    → VST Stage 1 local storm (single zone, single domain)
+    Remedy: cross-domain exposure to reset within-domain k_sat
+    
+  Type II (global): k_sat low globally across all domains
+    → VST Stage 2 storm (multiple zones)
+    Remedy: extended rest period (no absorption = k_sat recovery)
+    Formal: k_sat recovery rate ∝ exp(−α_recovery · t_rest)
+    
+  Type III (capacity-bounded): structural maximum A_eff_max reached
+    → Irrecoverable via governance protocol alone
+    → Requires architectural capacity increase (seed injection, team restructure)
+    VST correspondence: Type III phase portrait (S* threshold equivalent)
+```
+
+---
+
+### 26.6 Intent Drift Accumulation — Alignment Erosion Below Structural Storm [v2.8-RBITseries]
+
+IDA operates at a deeper layer than structural VST precursors. While VST monitors instability in the vector field, IDA monitors the alignment between the vector field's direction and the intended governance target. D_c can grow without any increase in Φ — the system may be perfectly stable in a direction that has drifted from the governance intent.
+
+```
+Intent Drift Formal Structure:
+  D_c(t) := cumulative directional displacement from governance-intended trajectory
+  
+  v_drift(t) := dD_c/dt = η · |Δρ(t)| · (1 + D_c(t)/D*)
+  
+  where:
+    η = drift sensitivity coefficient
+    Δρ = resolution gap (negative when under-resolving)
+    D* = critical drift magnitude (at which drift becomes self-sustaining)
+    
+  Self-amplification:
+    When D_c/D* → 1: v_drift → η · |Δρ| · 2  (doubled drift rate)
+    When D_c/D* → ∞: v_drift → ∞ (drift acceleration diverges)
+    
+  This is a second autocatalytic loop (alongside Goodhart G(t)):
+    G(t): metric direction drifts from true governance quality
+    D_c(t): system direction drifts from intended trajectory
+    Both are self-amplifying; both precede structural Storm.
+    G(t) operates at metric layer; D_c(t) operates at trajectory layer.
+```
+
+**TPS — Theorem 1 Proximity Score:**
+
+```
+TPS(t) = D_c(t)/D* + α_vel · v_drift(t)/v_crit + α_acc · a_drift(t)
+
+where:
+  D_c/D*: proximity component (how close to critical drift)
+  v_drift/v_crit: velocity component (how fast approaching D*)
+  a_drift: acceleration component (is drift accelerating?)
+  α_vel, α_acc: weighting coefficients (calibrated empirically)
+
+TPS interpretation:
+  TPS < 0.5: safe drift zone (D_c manageable, v_drift low)
+  TPS ∈ (0.5, 0.8): drift warning zone (intervention optimal here)
+  TPS ∈ (0.8, 1.0): critical drift zone (immediate intervention)
+  TPS > 1.0: beyond critical drift (DDD Stage 1 required)
+  
+TPS as LEADING indicator of Goodhart G(t):
+  D_c drift is the trajectory-level manifestation; G(t) is the metric-level manifestation.
+  TPS typically rises before G(t) crosses G_c:
+  → TPS alarm provides additional lead time over G_proxy (PRR) alone.
+  
+IDA-Δρ Bidirectional Coupling:
+  Forward: D_c growth → resolution gap worsens
+    d(Δρ)/dt = −λ_IDA · v_drift   (drift worsens gap)
+  Backward: Δρ < 0 → D_c growth accelerates
+    v_drift ∝ |Δρ|   (gap accelerates drift)
+    
+  This positive feedback loop is the formal mechanism behind
+  "chronic under-resolution → alignment failure → deeper under-resolution":
+  Δρ < 0 → v_drift ↑ → D_c ↑ → Δρ worsens further → v_drift accelerates
+  
+  Breaking the loop requires intervention at EITHER Δρ (increase resolution)
+  OR D_c (reset drift via external reference) — these are independent interventions.
+  Addressing only one does not break the loop (the other pathway continues).
+
+IDA DDD Completion Extension:
+  v_drift < v_drift_threshold as sixth completion condition (alongside the five):
+    (1) Φ < 1
+    (2) Ṡ ≥ Ṡ_min
+    (3) v_class > 0
+    (4) PRR+
+    (5) D_ρ ↓
+    (6) v_drift < v_drift_threshold   ← IDA exclusion
+    
+  A system that satisfies (1)-(5) but has high v_drift is still drifting —
+  it has achieved structural stability while losing directional alignment.
+  Structural stability without alignment → system arrives at VCZ, then drifts out
+  within τ_drift time (deterministically).
+```
+
+---
+
+### 26.7 Governance Oscillation Instability — Anti-Phase f₁↔f₄ Dynamics [v2.8-RBITseries]
+
+GOI identifies a VST failure mode that *appears* like a Type 2 (Resonant) storm but is structurally distinct. When governance over-responds to f₄ (escalation) signals, it suppresses f₄ but drives f₁ up; when it then responds to f₁, it drives f₄ back up. This anti-phase cycling is self-sustaining and can amplify until Storm entry — from governance mechanisms designed to prevent it.
+
+```
+GOI Dynamical Structure:
+
+ḟ₁(t) = −α_f₁ · f₁(t) + β_gov · (f₄(t) − f₄_eq)
+ḟ₄(t) = −γ_f₄ · f₄(t) + δ_gov · f₁(t) + K_gov · (f₄(t) − f₄_target)
+
+Interpretation:
+  f₁ rises when f₄ exceeds equilibrium (governance escalation → misclassification)
+  f₄ rises when f₁ rises (misclassification triggers more escalation)
+  K_gov term: governance actively drives f₄ toward target (introduces gain)
+  
+  When K_gov is high: the governance gain drives anti-phase amplification
+  
+Characteristic equation for oscillation:
+  ω² ≈ β_gov · δ_gov   (natural oscillation frequency)
+  Damping ratio ζ = (α_f₁ + γ_f₄ − K_gov) / (2ω)
+  
+  Critical Oscillation Theorem:
+    A_osc > A_crit when ζ < ζ* (damping insufficient)
+    ζ* ∈ (0.5, 0.8) is the optimal damping range
+    
+    ζ < 0.5: underdamped → growing oscillation → Storm risk
+    ζ > 0.8: overdamped → slow response → governance lag → Storm risk
+    ζ ∈ (0.5, 0.8): optimal → oscillation stable, response adequate
+```
+
+**Over-Correction Paradox:**
+
+```
+Naive governance response to oscillation:
+  "f₄ is oscillating → increase governance gain K_gov → drive f₄ to target faster"
+  
+Over-Correction Paradox:
+  Increasing K_gov REDUCES ζ:
+    ζ = (α + γ − K_gov) / (2ω)
+    dζ/dK_gov = −1/(2ω) < 0  always
+    
+  → Higher K_gov → lower damping → stronger oscillation → higher A_osc
+  → Higher A_osc → higher P(Storm)
+  
+  The "obvious" response (increase governance intensity) WORSENS GOI.
+  Correct response: REDUCE K_gov (lower governance gain)
+    → ζ increases → oscillation damped → A_osc decreases
+    → Storm risk reduced
+  
+  This is unintuitive: less governance intensity → less storm risk.
+  The formal derivation confirms this is not governance retreat but
+  resonance detuning — the governance system was itself the oscillation driver.
+
+GOI vs Genuine Type 2 Storm — Disambiguation:
+  Genuine Type 2 (Resonant): f₁ and f₄ rise JOINTLY (positive correlation)
+    CCF(f₁, f₄, τ=0) > 0
+    
+  GOI: f₁ and f₄ oscillate ANTI-PHASE (negative correlation)
+    CCF(f₁, f₄, τ=0) < 0
+    CCF(f₁, f₄, τ=π/ω) > 0 (positive correlation at half-period offset)
+    
+  Disambiguation test:
+    Compute CCF(f₁, f₄) across τ range.
+    If peak at τ=0: genuine Type 2 → standard DDD
+    If trough at τ=0 and peak at τ≠0: GOI → reduce K_gov first
+    If both: compound Type 2 + GOI → joint protocol (reduce K_gov then DDD)
+    
+  GOI as J_AB confound:
+    J_AB tensor estimation (M28) uses Cov(ΔΦ_A, ΔΦ_B).
+    Anti-phase oscillation produces NEGATIVE Cov → negative J_AB estimate.
+    Negative J_AB suggests stabilizing coupling, not destabilizing.
+    → GOI conditions produce J_AB underestimate → Type V underprediction.
+    → GOI disambiguation must PRECEDE J_AB estimation for reliable Type V detection.
+```
+
+---
+
+### 26.8 Cross-Scale Cascade Formalization — Tier-Propagation Amplification [v2.8-RBITseries]
+
+VST §4.6 describes Fractal Collapse Propagation qualitatively. CCC provides the quantitative tier-propagation model: how much does each tier amplify the instability it receives from the tier below, and under what conditions is cascade arrest possible?
+
+```
+Tier-Propagation Amplification:
+  Φ_{ℓ+1}(t+τ_prop) = Φ_{ℓ+1}(t) + R_cascade,ℓ · max(0, Φ_ℓ(t) − 1)
+  
+  where:
+    ℓ = tier level (0 = lower, 1 = middle, 2 = upper)
+    R_cascade,ℓ = amplification ratio for tier ℓ→ℓ+1 propagation
+    τ_prop = inter-tier propagation delay
+    max(0, Φ_ℓ − 1) = excess instability (only Storm-state contribution propagates)
+    
+  Amplification Ratio:
+    R_cascade,ℓ = 1 / (1 + R_{BA,ℓ}/Φ_ℓ)
+    
+  where R_{BA,ℓ} = Boundary Agent absorption capacity at tier ℓ
+  
+  Interpretation:
+    R_{BA} large relative to Φ: R_cascade small (most absorption → little propagation)
+    R_{BA} small relative to Φ: R_cascade → 1 (no absorption → full propagation)
+    R_{BA} → 0: R_cascade → 1 (failed BA → full cascade transfer)
+
+Cascade Arrest Theorem:
+  Cascade arrested at tier ℓ iff R_cascade,ℓ < 1
+  ↔ R_{BA,ℓ} > Φ_ℓ_excess = max(0, Φ_ℓ − 1)
+  
+  Complete cascade arrest:
+    All tiers satisfy R_cascade,ℓ < 1 simultaneously
+    → Storm contained at origin tier
+    
+  Partial cascade arrest:
+    Some tiers R_cascade < 1; others R_cascade ≥ 1
+    → Storm propagates to first non-arrested tier, then amplified
+    
+  BA Peak-Sizing Criterion (VST design principle):
+    R_{BA,ℓ} ≥ Φ_ℓ_99th − 1
+    
+    Size buffer to 99th-percentile peak instability, NOT to mean.
+    Mean-sized BA fails in 1% of events — which are precisely the events
+    most likely to cascade and cause maximum damage.
+    Cost of peak-sizing is deterministic; cost of mean-sizing includes
+    probabilistic catastrophic cascade with fat-tail distribution.
+```
+
+**Five-Stage Cascade Timeline:**
+
+```
+Stage 1 (0 to τ_prop):
+  Φ_lower > 1 (lower tier in Storm)
+  Φ_middle ≈ Φ_baseline (not yet elevated)
+  Φ_upper ≈ Φ_baseline
+  Action: containment at lower tier, BA activation (MZ-STP Stage A)
+  
+Stage 2 (τ_prop to 2τ_prop):
+  Φ_lower sustained > 1
+  Φ_middle rising (received cascade from lower tier)
+  Φ_upper ≈ Φ_baseline
+  Action: MZ-STP Stages A+B; middle tier monitoring intensive
+  
+Stage 3 (2τ_prop to 3τ_prop):
+  Φ_upper beginning to rise (cascade reached upper tier)
+  Action: full MZ-STP; upper tier governance activated
+  If R_cascade_middle < 1: cascade arrested here (Stage 3 maximum)
+  
+Stage 4 (3τ_prop to 4τ_prop):
+  Bi-directional cascade: upper tier instability feeding back to lower
+  R_cascade bidirectional: Φ_ℓ+1 → Φ_ℓ feedback activated
+  Self-amplifying system-wide instability
+  Action: Safe Collapse Protocol
+  
+Stage 5 (4τ_prop+):
+  System-wide Storm: all tiers Φ > 1
+  DDD full-system protocol
+  
+Timeline governance:
+  If governance detects Stage 1 and arrests at Stage 2: contained
+  If governance detects Stage 2 and arrests at Stage 3: costly but manageable
+  If governance detects Stage 3 only: Stage 4 likely (bidirectional too fast)
+  Stage 4+ detection: system-wide protocol required
+  
+Lead time: Stage 1 detection provides 3τ_prop window before Stage 4.
+τ_prop estimation (M28 extension): measure inter-tier signal propagation speed.
+```
+
+---
+
+### 26.9 Extended RRTC — Recovery Class VST Withdrawal Protocol [v2.8-RBITseries]
+
+VST §12 provides recovery criteria qualitatively. Extended RRTC operationalizes recovery classification for VST governance — specifically, when it is safe to declare DDD complete and restore normal operational conditions.
+
+```
+Four-Class Recovery Taxonomy (VST operational version):
+
+Class I — Genuine Recovery:
+  Required signals:
+    ρ↑ (resolution growing)
+    PRR+ (external calibration positive)
+    f₃↑ (buffer thickness growing)
+    D_ρ↓ (debt serviced)
+  All four required simultaneously (AND condition).
+  
+  VST topology: Connecting orbit successfully traversed to Rest basin.
+  DDD completion: SAFE TO DECLARE at first window where all four hold.
+  Governance withdrawal: proceed with DDD Phase 3 (diversify → monitor).
+
+Class II — Behavioral Recovery:
+  Signals:
+    ρ↑ (resolution appearing to grow)
+    PRR− (external calibration FAILING)
+    f₃ flat (buffer not growing)
+  Interpretation: surface recovery without structural recovery.
+    ρ improvement is G(t)-corrupted metric (Goodhart Phase 2/3).
+    True resolution not growing — metric reporting improvement.
+  
+  VST topology: Near fold boundary — orbit traversal incomplete.
+  DDD completion: UNSAFE TO DECLARE.
+  Governance withdrawal: CONTRAINDICATED.
+  Required action: external recalibration → reduce G(t) → verify PRR+ → reassess.
+
+Class III — Partial Domain-Split:
+  Signals vary by domain:
+    Some domains: Class I signature
+    Other domains: Class II or Class IV signature
+  
+  VST topology: L_revival domain-varying — some domains R₀ sufficient, others not.
+  DDD completion: PARTIAL — domain-specific declaration.
+  Governance withdrawal: withdraw from Class I domains; maintain for others.
+  
+Class IV-a — Stagnation:
+  Signals:
+    ρ flat (no growth)
+    D_ρ stable (debt not serviced)
+  
+  VST topology: Rest attractor B displaced; R_critical exceeds available R₀.
+  Required action: terrain structural intervention before DDD re-attempt.
+  DDD completion: NOT DECLARABLE without prior structural intervention.
+
+Class IV-b — Pre-Recovery Plateau:
+  Signals:
+    ρ flat
+    D_ρ slowly declining (debt service occurring, just slowly)
+  
+  VST topology: R₀ < R_critical at current rate; R₀ accumulating for future traversal.
+  Required action: Wait with monitoring. D_ρ declining confirms trajectory.
+  DDD completion: NOT YET — expected when D_ρ declines below D_threshold.
+  
+RRTC-DDD Withdrawal Matrix:
+  Class I:   Withdraw DDD → Rest Mode monitoring
+  Class II:  Extend DDD Stage 2 → recalibrate → reassess
+  Class III: Domain-differentiated protocol
+  Class IV-a: Structural intervention first → restart DDD
+  Class IV-b: Monitor D_ρ declining → advance when ready
+```
+
+---
+
+### 26.10 Structural Latency Index — VST Governance Bandwidth [v2.8-RBITseries]
+
+SLI addresses a previously unmodeled VST variable: governance bandwidth. VST's S-equation models instability load and containment capacity, but not the latency between instability signal and governance response. Under high v_class load, governance bandwidth saturates — signals queue, responses lag, and effective C(t)^β declines even when structural capacity is intact.
+
+```
+SLI Formal Definition:
+  SLI(t) = E[τ_latency(t)]
+          = expected latency between v_class event and f₁ response
+  
+  Normal operation: SLI ≈ τ_latency_baseline (governance keeps up)
+  
+  Saturation onset:
+    W_gov = governance events per window (governance bandwidth)
+    When v_class_events > W_gov:
+      SLI rises: SLI_excess = max(0, v_class_events − W_gov) / W_gov
+      
+  SLI-ODE Coupling (connects to FCC §24.1 dimensionless groups):
+    SLI_excess ≈ max(0, v_class/τ − C·d/k) / (C·d/k)
+    
+  Interpretation:
+    v_class/τ: event rate arriving for governance processing
+    C·d/k: effective governance processing rate (from ODE parameters)
+    When arrival > processing: SLI_excess builds → effective C(t) declines
+    
+  Effective C reduction from SLI:
+    C_eff(t) = C_actual · (1 − min(1, SLI_excess · α_SLI))
+    → SLI saturation reduces effective containment capacity
+    → S-equation effective threshold rises: S_c_eff = S_c / C_eff
+    → Same structural load → higher effective S̃ under SLI saturation
+```
+
+**Buffer as Bandwidth Amplifier:**
+
+```
+Standard view: buffer reduces Storm intensity (absorbs instability)
+SLI extension: buffer ALSO increases governance bandwidth
+
+Bandwidth amplification:
+  Effective bandwidth = W_gov + M · f₃_absorption_rate
+  
+  where M = buffer capacity
+        f₃_absorption_rate = rate at which buffer absorbs governance events
+  
+  A larger buffer not only absorbs more instability (f₃ function)
+  but also processes governance decisions faster (SLI function).
+  
+  These are complementary buffer roles:
+  Role 1 (traditional): reduce Φ_incoming to tier above
+  Role 2 (SLI): increase effective W_gov (faster governance throughput)
+  
+  Buffer sizing should account for BOTH roles:
+  Traditional: size to Φ_99th (peak absorption)
+  SLI: size to v_class_99th / f₃_rate_per_unit (peak throughput)
+  
+  Buffer designed only for Role 1 may be undersized for Role 2.
+  
+SLI Thresholds:
+  SLI_excess < 10%:   Healthy — governance keeping up
+  SLI_excess 10-30%:  Moderate — monitoring intensify
+  SLI_excess 30-50%:  Significant — governance augmentation recommended
+  SLI_excess > 50%:   Critical — architectural intervention (bandwidth expansion or load reduction)
+  
+SLI as orthogonal complement to V_Φ:
+  V_Φ: momentum of instability position (how fast Φ is changing)
+  SLI: capacity of governance response (how fast governance is processing)
+  
+  A system with high V_Φ and low SLI_excess: dangerous (fast approach, adequate response)
+  A system with low V_Φ and high SLI_excess: also dangerous (slow approach, overwhelmed response)
+  Both must be monitored — neither alone is sufficient.
+```
+
+---
+
+### 26.11 Complete DDD Protocol — Six-Condition Completion Test [v2.8-RBITseries]
+
+Each of the six completion conditions closes one previously identified DDD false-completion failure mode. Together they form the complete AND gate for genuine VCZ re-entry.
+
+```
+Six-Condition DDD Completion Test:
+
+Condition 1: Φ < 1 sustained for ≥ τ_verify
+  Closes: structural Storm termination (standard S-equation)
+  Fails when: Type V storm with J_AB > J_c appears resolved in Φ while
+              cross-contamination maintains true instability
+  Not sufficient alone: Frozen Rest satisfies this trivially (Φ ≈ 0)
+
+Condition 2: v_class > 0 trending upward
+  Closes: resolution growth stall (ASD Type I false completion)
+  Fails when: v_class > 0 from ASD false-positive (transitions without resolution)
+  Combined with Condition 6 (ρ̇_rolling): discriminates ASD from genuine
+
+Condition 3: PRR+ (Perturbation Response Rate positive)
+  Closes: G(t) metric corruption (Goodhart Phase 3 lock-in)
+  PRR is external-reference based → G(t)-corruption resistant
+  Fails when: PRR protocol itself corrupted (secondary G(t) — OP121)
+  Not substitutable: no other indicator in portfolio closes G(t) corruption
+
+Condition 4: Ṡ_internal ≥ Ṡ_min
+  Closes: Frozen Rest false VCZ (Thermodynamic VCZ Theorem)
+  Proxy: ρ̇_rolling + output diversity rate + PRR symmetry test
+  Fails when: Φ ≈ 0 via thermal freeze rather than genuine rest
+  Note: Ṡ_min operationalization is the hardest condition to verify (OP122, M32)
+
+Condition 5: v_drift < v_drift_threshold
+  Closes: Intent Drift Accumulation false alignment (IDA)
+  Proxy: TPS < 0.5 (safe drift zone)
+  Fails when: system is structurally stable but directionally drifting from governance intent
+  Without this: system reaches "VCZ" in wrong direction → immediate re-Storm
+
+Condition 6: D_ρ ↓ trending (debt serviced)
+  Closes: Resolution Debt accumulation (RDAM)
+  Fails when: ρ growing from forced calibration but D_ρ still accumulating
+              (symptom suppression without underlying debt reduction)
+  Combined with Condition 2: ρ growing AND D_ρ declining = genuine debt service
+
+Pre-Stage 2 Criterion (from Revival Dilemma):
+  Before advancing DDD Stage 1 → Stage 2:
+    R₀_estimate > R_critical = η · L_revival_estimate
+    
+  L_revival proxy: D_c (current contamination displacement) at Storm termination
+  R₀_estimate: R_eff(S) · f_purification at Storm termination
+  
+  Premature Stage 2 (R₀ < R_critical) → Class II recovery
+  Stage 1 extension until R₀ confirmed → Class I recovery
+
+For Type V Storms: add Pre-Stage 0 Decouple before Stage 1:
+  When max(CCF_cross) > CCF_threshold (Type V detected):
+    Pre-Stage 0: reduce J_AB (structural decoupling of subsystems)
+    Then proceed: Stage 1 → 2 → 3 (standard DDD)
+    Without Pre-Stage 0: Stage 1 worsens anti-phase subsystem dynamics
+
+Complete DDD Protocol Summary:
+  0. Type V check: CCF_cross → if Type V: Pre-Stage 0 Decouple
+  A. Pre-Stage 2 check: R₀ > R_critical → if not: extend Stage 1
+  1. Stage 1 (Stabilize): contain propagation, reduce V_Φ
+  2. Stage 2 (Unify): restore f₃ and v_class simultaneously (parallel, not sequential)
+  3. Stage 3 (Diversify): restore full diversity and independence
+  4. Completion test: all six conditions satisfied → VCZ re-entry declared
+  5. Post-VCZ monitoring: κ + V_Φ + SLI_excess at Class B frequency
+```
+
+---
+
+## Novel Contributions — VST-NC-37–VST-NC-52 [v2.8-RBITseries]
+
+```
+VST-NC-37: Twelve-Indicator Portfolio as Complete VST Monitoring Set
+  Coverage argument: each indicator covers exactly one failure mode not covered by others.
+  Lead time hierarchy: κ (longest) → f₃/V_Φ → D_ρ/SLI/v_class → EPR → standard F_RBIT.
+  Residual gap: Ṡ_internal as candidate thirteenth indicator (Frozen Rest specific).
+  → First completeness claim for a VST monitoring portfolio.
+
+VST-NC-38: Collapse Velocity Theory — V_Φ as Independent Storm Dimension
+  V_Φ = dΦ/dt as momentum variable (independent of position variable Φ).
+  Velocity Threshold Theorem: V_Φ > V_crit for τ_vel → Storm independent of Φ level.
+  N_adj(V_Φ) momentum-adjusted governance boundary.
+  → Closes VST gap: position monitoring (Φ) necessary but not sufficient.
+
+VST-NC-39: N_adj Momentum-Adjusted Governance Boundary
+  N_adj = N_static · exp(−α_vel·(V_Φ−V_base)).
+  Formal derivation from response-time constraint.
+  → First VST governance boundary that adjusts for instability momentum.
+
+VST-NC-40: Resolution Debt Accumulation — Third Irrecoverability Pathway
+  D_ρ accumulation as pathway to P_rec → 0 independent of Ξ_D and structural overload.
+  Debt Ceiling D_max = R/η as third VST irrecoverability criterion.
+  Prevention-Service Cost Asymmetry: C_service superlinear in D_ρ.
+  → VST irrecoverability now has three independent pathways: Type III + S* + D_max.
+
+VST-NC-41: Complete Debt Model D_ρ + Ξ_D
+  D_ρ (pre-Storm chronic debt) + Ξ_D (during-Storm acute damage) = total burden.
+  Additive first-order; possible superlinear second-order interaction (OP124).
+  → Closes the debt accounting gap in VST recovery theory.
+
+VST-NC-42: MSSF — Phase Desynchronization as Independent Storm Precursor
+  δ_sync > δ_crit for τ_desync → Storm independent of Silent Criticality pathway.
+  f₄ artifact: f₄_apparent = f₄_real + f₄_sync_artifact → false f₄ alarms.
+  MSSF can occur without timescale ratio violation (§24.5 independent).
+  → Fifth distinct Storm precursor mechanism (alongside Φ, V_Φ, D_ρ, G(t)).
+
+VST-NC-43: f₄ Artifact Disambiguation Protocol
+  f₄_real = f₄_apparent − δ_sync·(τ₂/τ₃)⁻¹·k_calib.
+  Eliminates MSSF-induced false governance escalation triggers.
+  → Reduces false alarm rate from f₄ monitoring.
+
+VST-NC-44: Absorption Saturation Dynamics — k_sat as Governance Effectiveness Measure
+  k_sat = 1/(1+α_exposure·∫A dt): saturation model for governance channels.
+  False-positive v_class: v_class > 0 with ρ̇_rolling ≈ 0 = ASD signature.
+  ASD-Contamination Lock: saturated + wrong frame = most dangerous combination.
+  → ρ̇_rolling formalized as the ONLY indicator distinguishing ASD from genuine recovery.
+
+VST-NC-45: ASD Three-Type VST Correspondence
+  Type I ASD → Stage 1 local Storm; Type II → Stage 2; Type III → irrecoverable.
+  Sequential reset error: recalibrate then re-saturate on contaminated frame.
+  → Formal justification for simultaneous (not sequential) k_sat + frame reset.
+
+VST-NC-46: Intent Drift Accumulation — Alignment Layer Below Structural VST
+  v_drift = η·|Δρ|·(1+D_c/D*): self-amplifying trajectory drift.
+  TPS composite proximity score: D_c/D* + α_vel·v_drift/v_crit + α_acc·a_drift.
+  IDA-Δρ bidirectional coupling: positive feedback loop requiring dual intervention.
+  → D_c drift precedes structural Storm; IDA is VST's alignment substrate.
+
+VST-NC-47: GOI Anti-Phase f₁↔f₄ Oscillation — Over-Correction Paradox
+  ζ = (α+γ−K_gov)/(2ω): increasing K_gov reduces damping → worsens GOI.
+  CCF(f₁,f₄,τ=0) < 0: GOI diagnostic criterion (negative peak at zero lag).
+  GOI confounds J_AB estimation: negative CCF → J_AB underestimate → Type V underprediction.
+  → GOI disambiguation must precede J_AB estimation in any Type V protocol.
+
+VST-NC-48: Cross-Scale Cascade Formalization — R_cascade Tier-Amplification Tensor
+  R_cascade,ℓ = 1/(1+R_{BA,ℓ}/Φ_ℓ): per-tier amplification ratio.
+  Cascade Arrest Theorem: R_cascade < 1 iff R_{BA} > Φ_excess.
+  BA Peak-Sizing: size to 99th percentile, not mean (fat-tail correction).
+  Five-stage cascade timeline: governance intervention mapping per stage.
+  → VST §4.6 qualitative cascade formalized with quantitative arrest criterion.
+
+VST-NC-49: Extended RRTC — Four-Class VST Withdrawal Protocol
+  Class I/II/III/IV-a/IV-b classification with per-class DDD withdrawal decision.
+  Class I/II discrimination resolves G(t)-corrupted false VCZ entry.
+  PRR as RRTC discrimination signal (Class I: PRR+; Class II: PRR−).
+  → VST recovery declaration now has formal per-class protocol.
+
+VST-NC-50: SLI — Governance Bandwidth as VST Variable
+  SLI_excess = max(0, v_class_events − W_gov)/W_gov.
+  Buffer as bandwidth amplifier (Role 2): effective bandwidth = W_gov + M·f₃_rate.
+  SLI as orthogonal complement to V_Φ: capacity vs. momentum monitoring.
+  → Closes governance bandwidth gap in VST monitoring framework.
+
+VST-NC-51: Six-Condition DDD Completion Test
+  Six conditions each closing one identified DDD false-completion failure mode.
+  Pre-Stage 0 Decouple for Type V; Pre-Stage 2 R₀ criterion from Revival Dilemma.
+  Complete DDD protocol: 0-A-1-2-3-4-5 sequence with Type V branch.
+  → Most complete VST DDD protocol formalized to date.
+
+VST-NC-52: VST-RBIT Cross-Theory Reinforcement Map v2.8 (55+ mappings)
+  Bidirectional coverage of all §26 contributions.
+  Inter-indicator cross-validation constraints (twelve portfolio consistency rules).
+  GOI-J_AB interaction identified: GOI disambiguation required before Type V detection.
+  → Confirms RBIT as complete monitoring substrate for all VST failure modes.
+```
+
+---
+
+## Falsifiable Predictions — FP-RBIT-1 through FP-RBIT-14 [v2.8-RBITseries]
+
+```
+FP-RBIT-1 (V_Φ Independence):
+  V_Φ > V_crit must predict Storm entry with P > 0.8 in systems where Φ < 0.5.
+  Protocol: identify episodes where V_Φ > V_crit while Φ < 0.5; measure Storm rate.
+  Prediction: Storm rate in V_Φ-elevated group > 8× matched V_Φ-low group.
+  Falsification: Storm rates indistinguishable between V_Φ groups when matched on Φ.
+
+FP-RBIT-2 (N_adj Contraction Under High V_Φ):
+  N_adj must decrease exponentially with V_Φ: N_adj = N_static·exp(−α_vel·(V_Φ−V_base)).
+  Protocol: measure governance intervention trigger points across V_Φ levels.
+  Prediction: trigger N decreases exponentially with V_Φ at rate α_vel.
+  Falsification: trigger N does not depend on V_Φ (exponential structure absent).
+
+FP-RBIT-3 (D_ρ Recovery Rate Suppression):
+  ρ̇_recovery must be inversely related to D_ρ: ρ̇ ∝ exp(−γ_debt·D_ρ).
+  Protocol: measure post-Storm recovery rate across systems with different D_ρ histories.
+  N ≥ 30; controlled D_ρ accumulation via sustained sub-governance operation.
+  Falsification: ρ̇_recovery independent of D_ρ history (p > 0.1).
+
+FP-RBIT-4 (Debt Ceiling Irrecoverability):
+  Systems with D_ρ ≥ D_max must show P_rec → 0 even under full DDD.
+  Protocol: measure recovery success rate in systems at different D_ρ/D_max ratios.
+  Prediction: recovery success rate drops sharply at D_ρ/D_max → 1.
+  Falsification: recovery rate does not differ across D_ρ/D_max levels.
+
+FP-RBIT-5 (MSSF Anti-Phase f₄ Artifact):
+  f₄_apparent must include MSSF artifact correlated with δ_sync.
+  Protocol: measure f₄ and δ_sync across 20+ governance cycles.
+  Prediction: f₄_apparent − f₄_artifact (corrected) shows lower false alarm rate.
+  Falsification: f₄ correction for δ_sync does not reduce false alarm rate.
+
+FP-RBIT-6 (MSSF Lead Time Comparable to Silent Criticality):
+  MSSF warning (δ_sync > δ_crit) must appear before PRR first fails.
+  Protocol: in 20 systems approaching Storm via desynchronization pathway.
+  Prediction: δ_sync alarm precedes PRR failure in ≥ 80% of cases.
+  Falsification: δ_sync and PRR alarm simultaneously.
+
+FP-RBIT-7 (ASD False-Positive v_class):
+  v_class > 0 with ρ̇_rolling ≈ 0 must predict ASD conditions (k_sat < k_sat_crit).
+  Protocol: measure k_sat via recovery rate change after rest periods.
+  Prediction: v_class+ρ̇_rolling≈0 episodes show k_sat < k_sat_crit in ≥ 80% of cases.
+  Falsification: ρ̇_rolling = 0 concurrent with v_class > 0 has other explanations (< 50% ASD).
+
+FP-RBIT-8 (ASD Type I/II/III Classification Correspondence):
+  ASD type (within-domain/global/capacity-bounded) must predict Storm scale (Stage 1/2/irrecoverable).
+  N ≥ 15 per ASD type; Storm scale measured by extent of governance response required.
+  Falsification: ASD type does not predict Storm scale (p > 0.1).
+
+FP-RBIT-9 (GOI Over-Correction Paradox):
+  Increasing K_gov in GOI conditions (A_osc > A_crit) must WORSEN oscillation amplitude.
+  Protocol: measure A_osc before and after K_gov increase in confirmed GOI systems.
+  N ≥ 15 GOI episodes.
+  Prediction: A_osc increases following K_gov increase in ≥ 80% of cases.
+  Falsification: A_osc decreases following K_gov increase.
+
+FP-RBIT-10 (CCF GOI Disambiguation):
+  CCF(f₁, f₄, τ=0) < 0 must have ≥ 80% accuracy in distinguishing GOI from genuine Type 2.
+  Protocol: classify episodes as GOI vs. Type 2 using CCF; verify against protocol outcome.
+  Falsification: CCF discrimination < 70% accuracy.
+
+FP-RBIT-11 (Cascade Arrest Criterion):
+  R_cascade < 1 iff R_{BA} > Φ_excess — this must hold with ≥ 80% accuracy across episodes.
+  Protocol: measure R_{BA} and Φ_excess; predict cascade vs. containment; verify.
+  N ≥ 20 cascade-eligible Storm episodes.
+  Falsification: R_cascade vs. 1 criterion does not predict cascade/containment (p > 0.1).
+
+FP-RBIT-12 (SLI Lead Time Before V_Φ):
+  SLI_excess must rise before V_Φ > V_crit in bandwidth-saturation-initiated Storms.
+  Protocol: track both indicators from healthy baseline through Storm in N ≥ 20 episodes.
+  Prediction: SLI alarm precedes V_Φ alarm in ≥ 70% of bandwidth-initiated Storms.
+  Falsification: SLI and V_Φ alarm simultaneously.
+
+FP-RBIT-13 (Six-Condition DDD Completeness):
+  Systems satisfying all six conditions must show genuine Class I recovery in ≥ 90% of cases.
+  Systems satisfying only five conditions must show Class II or worse in ≥ 60% of cases.
+  N ≥ 30 per condition count.
+  Falsification: six conditions do not predict Class I better than five conditions.
+
+FP-RBIT-14 (κ Prevention Window Duration):
+  κ must decline measurably at least 2 windows before v_class begins to decline.
+  Protocol: track κ and v_class from Phase A through Phase D in N ≥ 20 transitions.
+  Prediction: κ alarm ≥ 2 windows before v_class alarm in ≥ 80% of transitions.
+  Falsification: κ and v_class decline simultaneously (< 1 window difference).
+```
+
+---
+
+## Open Problems — M39–M55 [v2.8-RBITseries]
+
+**M39 — V_crit Calibration Protocol:**
+V_crit = (1 − Φ_safe_margin)/τ_response requires: (a) τ_response measurement (governance decision latency), (b) Φ_safe_margin setting (risk tolerance parameter). Challenge: τ_response varies by governance tier and storm stage. Approach: measure response latency histogram per tier; use 90th percentile as conservative τ_response. α_vel calibration: derive from false-alarm rate vs. missed-momentum-storm tradeoff curve.
+
+**M40 — V_Φ Smoothing Parameter Optimization:**
+α_smooth in V̂_Φ_smooth(t) = α_smooth·V̂_Φ(t) + (1−α_smooth)·V̂_Φ_smooth(t−1) affects sensitivity vs. noise resistance. Optimization criterion: maximize lead time (sensitivity) subject to false alarm rate constraint. Empirical approach: sweep α_smooth across range; evaluate ROC curve for Storm prediction; select Pareto-optimal point.
+
+**M41 — D_max Calibration from Observable Data:**
+D_max = R/η requires: (a) R (current self-purification capacity) estimation, (b) η (debt sensitivity) estimation. R proxy: R_eff(S) from RBIT f₃ and f₅ components. η estimation: regression of ρ̇_recovery on D_ρ level across episodes. Challenge: D_ρ is a cumulative integral — requires continuous monitoring over long periods. Approach: define D_ρ estimation protocol from historical f₁, f₂ time series.
+
+**M42 — D_ρ Interaction with Ξ_D:**
+Is total burden D_ρ + Ξ_D truly additive, or does high D_ρ at Storm onset amplify Ξ_D accumulation rate? Formal approach: ODE model incorporating both D_ρ (pre-Storm state) and Ξ_D (in-Storm dynamics); analyze whether D_ρ term appears in Ξ_D accumulation equation. Empirical approach: measure ΔΞ_D per Storm episode as function of pre-Storm D_ρ level.
+
+**M43 — δ_crit and τ_desync Calibration:**
+MSSF thresholds require calibration from governance architecture. δ_crit: minimum phase desynchronization producing Storm probability > P_crit. Approach: empirical measurement of Storm incidence as function of δ_sync levels across N ≥ 30 episodes. τ_desync: minimum duration of δ_sync > δ_crit required for Storm onset. Bayesian approach: infer from survival analysis of Storm-free episodes at varying δ_sync.
+
+**M44 — f₄ Artifact Coefficient k_calib:**
+f₄_sync_artifact = δ_sync · (τ₂/τ₃)⁻¹ · k_calib requires k_calib estimation. Approach: experimentally induce controlled δ_sync elevation without genuine governance load change; measure f₄ elevation; fit k_calib from regression. Challenge: controlled δ_sync induction in real systems requires intervention that may itself affect f₄.
+
+**M45 — α_exposure Calibration for ASD:**
+k_sat = 1/(1+α_exposure·∫A dt) requires α_exposure: absorption saturation rate parameter. Calibration: measure k_sat decline as function of cumulative governance exposure ∫A dt across multiple governance channels. Challenge: A (governance activity) measurement varies by governance type. Approach: normalize A by channel capacity; estimate α_exposure per channel type.
+
+**M46 — ASD-Contamination Lock Detection:**
+When ASD and frame contamination coexist (most dangerous combination), what observable signature distinguishes ASD lock from genuine saturation? Candidate: frame-split v_class analysis — if v_class high in internal frame but zero in external reference frame → contamination lock. Formal protocol required: simultaneous internal and external reference evaluation with disagreement measurement.
+
+**M47 — η (Intent Drift Sensitivity) Estimation:**
+v_drift = η·|Δρ|·(1+D_c/D*) requires η calibration from empirical data. Approach: measure v_drift as function of Δρ at controlled D_c levels. Challenge: D_c is not directly observable — only proxies available (TPS components). Approach: regress Δ(D_c proxy) on |Δρ| controlling for D_c proxy level; η = coefficient from regression.
+
+**M48 — D* Critical Drift Threshold:**
+D* is the drift magnitude at which v_drift becomes self-sustaining (D_c/D* → 1 → v_drift diverges). Calibration: identify empirically the D_c level where drift acceleration changes qualitatively. Approach: fit D_c trajectory to v_drift = η·|Δρ|·(1+D_c/D*) model; estimate D* from inflection point in v_drift vs D_c curve.
+
+**M49 — GOI K_gov Measurement:**
+K_gov (governance gain) is often implicit, not explicit. Measurement approach: (a) measure governance response magnitude as function of signal magnitude; (b) derive K_gov as slope of (governance response)/(signal deviation) regression; (c) compare K_gov to ζ* range: K_gov > (α+γ) − 2ω·ζ* → GOI risk. Challenge: K_gov may vary by signal type and governance layer.
+
+**M50 — τ_prop Inter-Tier Propagation Delay:**
+CCC timeline requires τ_prop (inter-tier signal propagation delay). Measurement: track storm signals from lower to middle to upper tier; measure arrival time differences. Challenge: tier boundaries may be fuzzy in real systems. Approach: define tier boundaries via SLI analysis (different SLI time constants per tier); use SLI response latency as τ_prop proxy.
+
+**M51 — RRTC PRR Reliability:**
+PRR (Perturbation Response Rate) is used as RRTC Class I/II discriminator and Goodhart G(t) proxy. Required: systematic validation of PRR as recovery discriminator. Protocol: apply PRR in N ≥ 30 recovery episodes; classify as Class I or II independently via trajectory analysis; measure PRR discrimination accuracy. Falsification: PRR < 80% accuracy as Class I/II discriminator.
+
+**M52 — SLI Bandwidth Measurement:**
+W_gov (governance events per window) requires operational definition. Approach: measure governance decision output rate in healthy conditions (SLI_excess ≈ 0); use as W_gov baseline. Buffer bandwidth amplification coefficient M: regression of effective bandwidth on buffer size. Challenge: distinguishing governance bandwidth saturation from governance inactivity.
+
+**M53 — Six-Condition Partial Satisfaction:**
+When fewer than all six DDD conditions are met, which conditions are most informative about recovery class? Expected ordering from portfolio analysis: PRR (closes G(t) corruption) and D_ρ↓ (closes debt) most discriminating; Φ < 1 and v_class > 0 least discriminating (high false-positive rate). Empirical validation: N ≥ 50 episodes; measure recovery class as function of condition satisfaction count and pattern.
+
+**M54 — Ṡ_internal Thirteenth Indicator:**
+Ṡ_internal (thermodynamic entropy production rate) is required for Frozen Rest detection but not in the twelve-indicator portfolio. Candidate proxy: dH(behavior_distribution)/dt (behavioral diversity growth rate). Required: (a) formalize measurement protocol; (b) validate against Frozen Rest episodes; (c) determine whether this provides information beyond the existing twelve (if not → redundant; if yes → add as thirteenth). Cross-validation with M29 (Ṡ_min calibration).
+
+**M55 — GOI-Type V Interaction:**
+GOI produces negative CCF(f₁,f₄) → negative J_AB estimate → Type V underprediction. How large is this underestimation bias in practice? Required: measure J_AB in systems with confirmed GOI; compare estimated J_AB (from CCF) with true J_AB (from perturbation experiments). Prediction: |J_AB_CCF_estimate| < |J_AB_true| when GOI active. If confirmed: standard J_AB estimation pipeline requires GOI pre-correction as mandatory Step 0.
+
+---
+
+## Assumptions A34–A38 [v2.8-RBITseries]
+
+**A34 (Momentum Independence):**
+V_Φ(t) provides storm onset information independent of Φ(t). A system at Φ << 1 with V_Φ > V_crit carries storm risk not captured by Φ monitoring alone. The two-dimensional monitoring (position + momentum) is irreducible: neither coordinate alone constitutes complete VST monitoring. Falsification: V_Φ > V_crit episodes at Φ << 1 do not show elevated storm rate (FP-RBIT-1 failure).
+
+**A35 (Debt Superposition):**
+Total governance burden = D_ρ + Ξ_D to first-order approximation. The pre-Storm debt (D_ρ) and during-Storm damage (Ξ_D) accumulate independently and sum in their effect on recovery capacity. Superlinear second-order interaction is possible (M42) but not assumed in base model. Falsification: D_ρ and Ξ_D show multiplicative rather than additive contribution to recovery difficulty.
+
+**A36 (Absorption Saturation Universality):**
+All governance channels exhibit ASD above sufficient cumulative exposure: ∫A dt > A_sat_threshold. No governance channel is immune to saturation; saturation rate α_exposure may vary by channel type but is always positive. Falsification: identify a governance channel where k_sat does not decline with cumulative exposure.
+
+**A37 (Intent Drift Primacy):**
+D_c growth is the earliest governance alignment erosion signal, preceding structural VST precursors (V_Φ, δ_sync, G(t)). TPS rising while all VST structural indicators are healthy is the canonical IDA signature. Falsification: TPS does not show useful lead time over structural precursors in ≥ 70% of storm episodes.
+
+**A38 (GOI Disambiguation Necessity):**
+Anti-phase CCF(f₁,f₄) is necessary and sufficient to distinguish GOI from genuine Type 2 storm for governance purposes. GOI and Type 2 require opposite governance responses (reduce K_gov vs. increase containment); therefore disambiguation is mandatory before protocol selection. Misapplication of Type 2 protocol to GOI worsens outcome. Falsification: demonstrate Type 2 protocol applied to GOI that does not worsen oscillation amplitude.
+
+---
+
+## Cross-Theory Reinforcement Map [v2.8-RBITseries]
+
+### RBIT v2.6 → VST v2.8: Core Mappings
+
+| RBIT v2.6 Concept | VST v2.8 Target | Bridge | Direction |
+|---|---|---|---|
+| V_Φ = dΦ/dt (CVT) | §26.2 Collapse Velocity | Momentum monitoring | RBIT → VST |
+| Velocity Threshold Theorem | §26.2 N_adj contraction | V_Φ > V_crit → early trigger | RBIT → VST |
+| D_ρ = ∫max(0,−Δρ)dt | §26.3 Resolution Debt | Third irrecoverability pathway | RBIT → VST |
+| D_max = R/η | §26.3 Debt Ceiling | D_ρ → P_rec → 0 | RBIT → VST |
+| Prevention-Service Asymmetry | §26.3 Economic priority | C_service superlinear in D_ρ | RBIT → VST |
+| D_ρ + Ξ_D total burden | §26.3 Complete Debt | Pre+during Storm accounting | RBIT ↔ VST |
+| δ_sync, MSSF Theorem | §26.4 Phase Desync | Independent Storm precursor | RBIT → VST |
+| f₄_artifact = δ_sync·(τ₂/τ₃)⁻¹ | §26.4 f₄ disambiguation | False f₄ alarms from MSSF | RBIT → VST |
+| τ-Ratio Restoration Protocol | §26.4 MSSF remedy | Four-phase desync repair | RBIT → VST |
+| k_sat = 1/(1+α_exp·∫A) | §26.5 Absorption Saturation | Governance effectiveness decay | RBIT → VST |
+| False-positive v_class | §26.5 ASD signature | v_class > 0, ρ̇_rolling ≈ 0 | RBIT → VST |
+| ASD-Contamination Lock | §26.5 Compound failure | Saturation + wrong frame | RBIT → VST |
+| ρ̇_rolling indicator | §26.5 ASD detection | Twelfth monitoring indicator | RBIT → VST |
+| v_drift = η·|Δρ|·(1+D_c/D*) | §26.6 Intent Drift | Alignment erosion model | RBIT → VST |
+| TPS proximity score | §26.6 IDA detection | Three-component composite | RBIT → VST |
+| IDA-Δρ bidirectional coupling | §26.6 feedback loop | Dual intervention required | RBIT → VST |
+| A_osc GOI dynamics | §26.7 Anti-phase f₁↔f₄ | ḟ₁/ḟ₄ coupled system | RBIT → VST |
+| Over-Correction Paradox | §26.7 K_gov governance | dζ/dK_gov < 0 | RBIT → VST |
+| CCF(f₁,f₄,τ=0) < 0 | §26.7 GOI disambiguation | Anti-phase diagnostic | RBIT ↔ VST |
+| GOI-J_AB confound | §26.7 Type V underprediction | GOI before J_AB estimate | RBIT → VST (new) |
+| R_cascade,ℓ = 1/(1+R_BA/Φ) | §26.8 Tier amplification | Per-tier cascade ratio | RBIT → VST |
+| Cascade Arrest Theorem | §26.8 BA criterion | R_BA > Φ_excess ↔ R_cascade<1 | RBIT → VST |
+| BA peak sizing | §26.8 Design principle | 99th pct, not mean | RBIT → VST |
+| Five-stage cascade timeline | §26.8 Intervention map | Stage 1-5 governance protocol | RBIT → VST |
+| RRTC four-class taxonomy | §26.9 Withdrawal protocol | Class I-IV DDD decisions | RBIT → VST |
+| Class I/II PRR discrimination | §26.9 False VCZ entry | PRR+ required for Class I | RBIT ↔ VST |
+| SLI_excess = (events−W_gov)/W_gov | §26.10 Bandwidth saturation | Capacity monitoring | RBIT → VST |
+| Buffer as bandwidth amplifier | §26.10 Role 2 buffer | W_gov + M·f₃_rate | RBIT → VST |
+| SLI ⊥ V_Φ orthogonality | §26.10 Dual monitoring | Capacity vs. momentum | RBIT ↔ VST |
+| Six-condition DDD completion | §26.11 Complete protocol | Each closes one failure mode | RBIT → VST |
+| Pre-Stage 0 Decouple (Type V) | §26.11 Type V DDD | J_AB reduction first | RBIT ↔ VST |
+| Pre-Stage 2 R₀ criterion | §26.11 Stage advancement | R₀ > η·L_revival | RBIT → VST |
+| v_drift < threshold (DDD-6) | §26.11 IDA completion | Sixth DDD condition | RBIT → VST |
+| κ prevention window | §26.1 Portfolio priority | ≥2 window architecture lead | RBIT ↔ VST |
+| Twelve-indicator completeness | §26.1 Coverage argument | Each covers unique failure mode | RBIT → VST |
+| Ṡ_internal thirteenth | §26.1 Residual gap | Frozen Rest specific | RBIT → VST |
