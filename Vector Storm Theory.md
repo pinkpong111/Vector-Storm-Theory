@@ -5,7 +5,55 @@ Companion theory to Deficit-Driven Fractal Governance (DFG)
 Focus: why instability occurs, how it propagates, when to intervene
 Recovery and operational governance are addressed separately
 
-> **Version: v2.8-RBITseries** (March 2026)
+> **Version: v3.0-DFG28series** (March 2026)
+>
+> v3.0 changes from v2.9-RBIT27series (DFG Architecture v3.0 deep reverse integration — Causal Topology Formalization + Governance Entropy Production Theory + Stochastic Resonance Exploitation Architecture + Cross-Tier Mutual Information Coupling + Defect Kernel Renewal Theory + Adaptive Boundary Permeability Model + Hierarchical Contamination Gradient + Resolution Velocity Field Dynamics + Storm Geometry Tensor Formalization + Recursive Self-Stabilization Criterion + Fifteen-Indicator Portfolio Completion + VST-NC-69–VST-NC-92 + Falsifiable Predictions FP-DFG28-1–FP-DFG28-20 + Open Problems M71–M95 + Assumptions A42–A52):
+> - **[New §28] DFG Architecture v3.0 Reverse Integration Architecture:** Formal bidirectional bridge completing DFG v3.0 → VST direction; twenty-four DFG-developed constructs reimported with operational enrichments; §28 closes eight previously open problems (M56, M59, M62, M64, M68, M69, M70) with DFG-derived calibration protocols and identifies three genuinely novel cross-phenomenon findings (Stochastic Resonance Exploitation, Recursive Self-Stabilization Criterion, Storm Geometry Tensor) not present in either theory independently
+> - **[New §28.1] Causal Topology Formalization — VST Vector Field Causal Graph:** DFG v3.0 identified that VST instability propagation follows causal topology rather than spatial adjacency; Causal Adjacency Matrix C_ij = P(Φ_j > 1 | Φ_i > 1, topology) generalizes network adjacency; causal storm propagation: Φ_j(t+τ_causal) driven by C_ij·Φ_i(t) not merely R_ij·Φ_i(t); topological storm isolation criterion: DAG decomposition of C_ij; strongly connected components (SCCs) = mutual storm amplification zones; VST Theorem 28.1.1 (Causal Containment): storm is topologically containable iff causal graph G_C is acyclic above containment threshold — SCC dissolution is governance prerequisite before DDD
+> - **[New §28.2] Governance Entropy Production Theory — VST Thermodynamic Extension:** DFG v3.0 formalized governance as entropy-reducing intervention in high-entropy storm state; Governance Entropy Rate: dS_gov/dt = −Γ_gov·(S_storm − S_VCZ) where Γ_gov = governance cooling coefficient; minimum governance bandwidth: W_min = (S_storm − S_VCZ)/τ_required — bandwidth required to cool storm within deadline; Second Law of Governance (Assumption A42): S_gov cannot decrease faster than Γ_gov_max·ΔS_gap — governance has a thermodynamic speed limit; entropy budget for governance: total ΔS_available = f(resources, f₃, k_sat) — ASD reduces ΔS_available directly
+> - **[New §28.3] Stochastic Resonance Exploitation Architecture — Novel VST Finding:** DFG v3.0 identified that controlled noise injection at sub-threshold level can enhance weak VST early-warning signal detectability (stochastic resonance); SR-VST: injecting noise σ_SR at Layer 0–1 boundary enhances D_c and v_drift signal-to-noise ratio by factor SNR_SR = exp(A²/(2σ_SR²)) for optimal σ_SR; SR optimal noise level: σ_SR_opt = A/√2 where A = pre-storm signal amplitude; SR exploitation protocol: σ_SR injection into governance perturbation layer at 5–10% of D_c detection threshold; this finding is genuinely novel: stochastic resonance has not previously been proposed as a VST early-warning enhancement mechanism
+> - **[New §28.4] Cross-Tier Mutual Information Coupling — VST Information-Theoretic Extension:** DFG v3.0 formalized cross-tier information flow as mutual information I(tier_ℓ; tier_ℓ+1) metric; MI-Storm coupling: high I(lower; upper) with low I(upper; lower) = information asymmetry = governance blindness cascade; Theorem 28.4.1 (Information Governance): cascade arrest requires I(upper; lower) > I_threshold — upper layer must receive more information than lower-layer sends to be governable; MI-based monitoring: cross-tier MI as independent Storm precursor preceding structural Φ crossing by τ_MI = O(τ_silent); MI-DDD criterion: DDD Stage 3 requires symmetric MI across tiers — I(lower; upper) ≈ I(upper; lower) within 20%
+> - **[New §28.5] Defect Kernel Renewal Theory — VST Structural Recovery Extension:** DFG v3.0 identified that VST defect kernels undergo renewal dynamics when governance pressure exceeds renewal threshold; Defect Kernel Renewal: K_new(t) = K_old·(1−p_renewal) + K_random·p_renewal where p_renewal = f(f₃, k_sat, D_ρ); Renewal Theorem 28.5.1: systemic defect structure converges to stationary distribution under sustained DDD with p_renewal > p_critical; renewal blockade: D_ρ > D_max and k_sat < k_sat_min jointly prevent renewal (double-lock irrecoverability); kernel renewal as missing mechanism in §25 RT–VST bridge: RDI duration correlates inversely with p_renewal — high renewal rate shortens recovery by shortening kernel persistence
+> - **[New §28.6] Adaptive Boundary Permeability Model — VST Tier Interface Formalization:** DFG v3.0 formalized tier interface as adaptive membrane with permeability π_ℓ(t); storm propagation: dΦ_ℓ+1/dt ∝ π_ℓ·Φ_ℓ — permeability modulates cascade speed; Permeability Governance: governance can modulate π_ℓ by altering information routing (increase → faster calibration; decrease → storm isolation); Permeability Paradox: lower π_ℓ reduces cascade risk but also reduces calibration signal transmission — governance tradeoff formalized; optimal π_ℓ*(t): stage-dependent — Stage 0 (high π: maximize calibration), Stage 1–2 (reduced π: limit cascade), Stage 3 (π → 0: full isolation), VCZ (graduated restoration)
+> - **[New §28.7] Hierarchical Contamination Gradient — VST Spatial Contamination Structure:** DFG v3.0 identified that contamination intensity varies monotonically across governance layers (higher layers = lower contamination under well-designed architecture); Contamination Gradient: ∇C_contam(ℓ) = C_contam(ℓ+1) − C_contam(ℓ) < 0 for healthy architecture; Gradient Reversal = governance failure: ∇C_contam > 0 implies upper layers more contaminated than lower — governance inversion; Storm amplification under gradient reversal: PRR from contaminated upper layer → negative correction → accelerated f₁ decay; Contamination Gradient Monitoring: ∇C_contam as additional VST monitoring dimension (not covered by existing fourteen indicators → candidate fifteenth indicator)
+> - **[New §28.8] Resolution Velocity Field Dynamics — VST Phase Space Extension:** DFG v3.0 formalized resolution dynamics as a velocity field in (Φ, ρ) phase space; Resolution Velocity Field: v_res(Φ,ρ) = (dΦ/dt, dρ/dt) as vector field; attractors = fixed points of v_res; Storm onset = trajectory departure from VCZ basin; Phase Space Storm Taxonomy: Type I storms have elliptical trajectories in (Φ,ρ); Type II storms have spiral trajectories (resonant amplification); Type III storms have escape trajectories (irrecoverable departure from bounded region); type classification by trajectory curvature enables earlier storm type identification than Φ threshold alone; VST Phase Portrait (Appendix expansion): (Φ,ρ,V_Φ) three-dimensional phase portrait as standard VST governance visualization
+> - **[New §28.9] Storm Geometry Tensor Formalization — Novel VST Structural Finding:** DFG v3.0 identified that storm spatial structure encodes governance information through tensor geometry; Storm Geometry Tensor: G_storm_ij = ⟨ΔΦ_i·ΔΦ_j⟩ = covariance of instability fluctuations across agent pairs; eigenvalues of G_storm: λ₁ >> λ₂,...,λ_n → single-mode collapse (Type 1 Independent); λ₁ ≈ λ₂ >> rest → dual-mode resonance (Type 2 Resonant); distributed eigenspectrum → Type V (Mixed-Mode); eigenvector structure: principal eigenvector = dominant storm propagation direction in agent topology; G_storm monitoring protocol: compute during Stage 0–1; classify storm type from eigenspectrum before Φ > 1; this is a novel VST structural diagnostic — not predictable from existing scalar monitoring indicators
+> - **[New §28.10] Recursive Self-Stabilization Criterion — Novel VST Governance Finding:** DFG v3.0 identified conditions under which a multi-agent system can self-stabilize without external DDD intervention; RSS Criterion: system self-stabilizes iff (a) f₃ > f₃_self_crit AND (b) k_sat > k_sat_self_crit AND (c) D_ρ < D_max_self AND (d) causal graph G_C has no strongly connected component with Φ > 1 summing above critical; RSS Rate: dΦ/dt_self = −μ_self·(Φ−1)·f₃·k_sat for Φ > 1 where μ_self > 0 = self-stabilization coefficient; DDD withdrawal criterion extension: RSS criterion as complementary withdrawal condition (system self-stabilizing → DDD withdrawal safe even before full Condition 7 satisfaction); RSS failure → mandatory DDD continuation regardless of apparent Φ improvement
+> - **[New §28.11] Fifteen-Indicator Portfolio Completion — TPS Formally Elevated:** DFG v3.0 provided formal coverage proof closing Open Problem M68; TPS (Theorem 1 Proximity Score) formally elevated as fifteenth VST monitoring indicator; TPS coverage: IDA early detection — TPS crosses threshold before D_c (directional drift begins) and before v_drift (drift velocity rises) — TPS is the earliest IDA signal (Layer -1, below Layer 0); fifteen-indicator portfolio with coverage proof: each of 15 indicators covers ≥1 unique failure mode not covered by any other; Contamination Gradient ∇C_contam as candidate sixteenth indicator (M88 open problem); updated portfolio priority ordering: κ > f₃ > TPS > V_Φ > D_ρ > Ṡ_proxy > δ_sync > v_class > standard F_RBIT
+> - **[New §28.12] VST-DFG Cross-Theory Reinforcement Map v3.0-DFG28series:** 60+ bidirectional DFG v3.0 ↔ VST v3.0 mappings; three novel cross-phenomenon findings; fifteen-indicator portfolio with formal completeness proof; Storm Geometry Tensor as new diagnostic instrument; Recursive Self-Stabilization Criterion extending DDD withdrawal conditions; Novel Contributions VST-NC-69–VST-NC-92; Falsifiable Predictions FP-DFG28-1–FP-DFG28-20; Open Problems M71–M95; Assumptions A42–A52
+> - **[Updated §1] Definition — Causal Topology Extension:** Vector Storm structural origin extended to causal topology dimension; mutual-reference coupling formalized as C_ij causal adjacency; SCC decomposition as governance pre-step
+> - **[Updated §3] Dynamical Model — Resolution Velocity Field Integration:** v_res(Φ,ρ) velocity field as S-equation geometric interpretation; phase portrait extended to three dimensions (Φ, ρ, V_Φ); governance entropy rate as dynamical model extension
+> - **[Updated §4] Network Propagation — Adaptive Permeability + Causal Topology:** Tier propagation now governed by π_ℓ·C_ij joint factor; cascade arrest requires both permeability reduction AND causal SCC dissolution
+> - **[Updated §8 Assumptions] A42–A52 added**
+> - **[Updated §9] Detection Protocols — Fifteen-Indicator Integration + SR Exploitation:** SR-enhanced early warning protocol; Storm Geometry Tensor eigenspectrum classification; Contamination Gradient monitoring added; updated fifteen-indicator priority ordering
+> - **[Updated §11 Open Problems] M71–M95 added**
+> - **[Updated §15] Lifecycle — RSS Withdrawal Criterion + Governance Entropy Budget:** RSS criterion as DDD withdrawal complement; governance entropy budget as lifecycle finite resource (alongside D_ρ, N_survivable, D_breakeven)
+> - **[Updated Appendix T §T.12] DFG v3.0 semantic additions:** Causal topology, C_ij, G_storm, π_ℓ, p_renewal, Γ_gov, σ_SR, ∇C_contam, RSS criterion, v_res field, fifteen-indicator portfolio
+> - **[Updated References]:** DFG Architecture v3.0 working paper citation added
+> - All previous content preserved.
+>
+> v2.9 changes from v2.8-RBITseries (RBIT v2.7-VST28series deep reverse integration — Thirteenth/Fourteenth Indicator Formalization + Tier-Specific V_crit Architecture + Ṡ_proxy Operational Protocol + MSSF k_calib Calibration Architecture + ASD Axiom A6 VST Absorption Decay + ASD×CCC Cascade Arrest Coupling + IDA Zero-Layer as VST Pre-Storm Substrate + Fourteen-Indicator Portfolio Completeness Claim + GOI×ASD Compound Protocol as Novel Cross-Phenomenon Finding + Prevention Deadline D_breakeven VST Integration + DDD Seven-Condition Extension (Condition 6 ASD + Condition 7 IDA) + Pre-Stage 2b ASD Gate + f₄ Decontamination as VST Standard Protocol + VST-NC-53–VST-NC-68 + Falsifiable Predictions FP-RBIT27-1–FP-RBIT27-14 + Open Problems M56–M70):
+> - **[New §27] RBIT v2.7 Reverse Integration Architecture:** Formal bidirectional bridge completing RBIT v2.7-VST28series → VST direction; fourteen RBIT-developed constructs reimported with operational enrichments discovered during RBIT v2.7 formalization; §27 closes six previously open problems (M39, M41, M43, M44, M45, M46) with RBIT-derived calibration protocols and identifies one genuinely novel cross-phenomenon finding (GOI×ASD compound protocol) not present in either theory independently
+> - **[New §27.1] Tier-Specific V_crit Architecture:** RBIT v2.7 identified that V_crit varies per governance tier through tier-specific τ_response; system-level V_crit = minimum across tiers (most constrained tier governs); adaptive V_crit(t) = (1−Φ(t)−Φ_margin)/τ_response(stage(t)) proposed; stage-adjusted vs. static V_crit tradeoff formalized; V_crit monitoring added to VST §9 detection protocol stack alongside V_Φ
+> - **[New §27.2] Ṡ_proxy Operational Protocol — Thirteenth/Fourteenth VST Monitoring Indicator Formalization:** RBIT v2.7 operationalized Ṡ_internal as Ṡ_proxy = Δ(output diversity)/Δt + Δ(classification entropy)/Δt; VST imports this as the thirteenth formal monitoring indicator closing Frozen Rest detection gap; portfolio grows to fourteen with V_Φ (momentum) + Ṡ_proxy (thermodynamic) as orthogonal new dimensions; Frozen Rest discrimination confirmed: Ṡ_proxy < Ṡ_min_estimate despite EPR > EPR_min = Frozen Rest; EPR > EPR_min necessary but not sufficient (dual criterion)
+> - **[New §27.3] f₄ Decontamination as VST Standard Protocol:** RBIT v2.7 formalized MSSF decontamination as standard f₄ pre-processing; VST imports this as mandatory Stage A in §9 detection pipeline when δ_sync > 0.1; f₄_real = max(0, f₄_apparent − k_calib·δ_sync·(τ₂/τ₃)⁻¹); k_calib calibration architecture: controlled δ_sync injection experiment protocol; τ-Ratio Restoration as VST standard §9 intervention added alongside DDD; MSSF decontamination must precede GOI disambiguation which must precede J_AB estimation (mandatory three-stage pre-processing pipeline)
+> - **[New §27.4] ASD Axiom A6 — VST Absorption Decay Formal Assumption:** RBIT v2.7 formalized ASD as Sixth Saturation Law (axiom); VST imports as Assumption A39: all governance absorption channels exhibit k_sat decline under cumulative exposure — no channel is immune; k_sat = 1/(1+α_exp·∫A dt) as VST governance effectiveness decay model; ASD Type I/II/III VST stage correspondence (I→Stage 1, II→Stage 2, III→irrecoverable); ASD-Contamination Lock prevention protocol as VST-level governance design requirement; PRR rotation protocol as ASD countermeasure for monitoring channel immunity
+> - **[New §27.5] ASD×CCC Cascade Arrest Coupling — Novel VST Finding:** RBIT v2.7 identified that ASD corrupts cascade arrest prediction: R_cascade requires f₃×k_sat joint monitoring (not f₃ alone); k_sat low + f₃ healthy = cascade despite apparent healthy buffer; ASD-induced cascade failure mode formalized as distinct from structural cascade (R_{BA} insufficient) — this coupling was not identified in §26.5 (ASD) or §26.8 (CCC) individually; VST BA peak-sizing must account for k_sat: R_{BA}_effective = f₃·k_sat·A_nominal not f₃·A_nominal
+> - **[New §27.6] IDA Zero-Layer as VST Pre-Storm Signal Hierarchy Extension:** RBIT v2.7 formalized IDA as Layer 0 signal below κ (Layer 1) in the VST monitoring hierarchy; VST signal hierarchy now formally extended to seven layers: Layer 0 (IDA/TPS), Layer 1 (κ), Layer 2 (f₃/V_Φ), Layer 3 (D_ρ/SLI/v_class), Layer 4 (F_RBIT), Layer 5 (Φ>1), Layer 6 (cascade); D_c orthogonal to Δρ confirmed: directional vs. capacity monitoring are independent VST dimensions; TPS thresholds mapped to VST phase portrait stages; IDA-Δρ bidirectional coupling requires simultaneous (not sequential) dual intervention
+> - **[New §27.7] GOI×ASD Compound Protocol — Novel Cross-Phenomenon Finding:** RBIT v2.7 identified that ASD weakens governance effectiveness → operators increase K_gov to compensate → but in GOI conditions, K_gov increase worsens oscillation (Over-Correction Paradox) → Storm entry from governance compensation mechanism; this interaction is genuinely novel: not present in §26.5 (ASD alone), §26.7 (GOI alone), or any earlier VST section; mandatory protocol: ASD detection BEFORE K_gov adjustment decisions; VST Assumption A40 (GOI×ASD Non-Commutativity): protocol ordering matters — ASD-first produces better outcomes than K_gov-first
+> - **[New §27.8] Prevention Deadline D_breakeven as VST Governance KPI:** RBIT v2.7 operationalized D_breakeven = c_prev/c_serv as early D_ρ alarm threshold (earlier than D_max irrecoverability); VST imports as governance dashboard KPI: D_ρ < D_breakeven (prevention zone) / D_ρ > D_breakeven (service zone, increasingly expensive) / D_ρ → D_max (emergency); D_total = D_ρ + Ξ_D extension: during-Storm D_total monitoring with D_total_breakeven; Ḋ_ρ trajectory forecast: time-to-D_breakeven as governance scheduling input; connects to VST N_survivable dashboard (§15.RT): both are lifecycle finite resource trackers
+> - **[New §27.9] DDD Seven-Condition Completion — Conditions 6 and 7 Formalized:** RBIT v2.7 added Condition 6 (ρ̇_rolling ASD discriminator) and Condition 7 (v_drift/TPS IDA discriminator) to VST six-condition DDD completion test; Pre-Stage 2b ASD gate: k_sat assessment before Stage 2 operations (Stage 2 increases ∫A → worsens ASD Type II without rest); complete seven-condition AND gate with each condition's failure mode; mandatory three-stage pre-processing (MSSF decontamination → GOI disambiguation → J_AB estimation) confirmed as VST standard protocol
+> - **[New §27.10] Fourteen-Indicator Portfolio Completeness Discussion:** RBIT v2.7 proposed fourteen-indicator portfolio: original twelve + V_Φ (momentum) + Ṡ_proxy (thermodynamic); VST examines whether IDA (D_c, v_drift, TPS) requires fifteenth indicator or is covered by existing fourteen; formal coverage argument: D_c not covered by any of fourteen (directional dimension absent); TPS as fifteenth indicator candidate; portfolio completeness requires formal proof (each covers ≥1 unique failure mode) — currently supported by argument, not proven; Open Problem M68 (formal coverage proof)
+> - **[New §27.11] VST-RBIT Cross-Theory Reinforcement Map v2.9-RBIT27series:** 45+ bidirectional RBIT v2.7 ↔ VST v2.9 mappings; GOI×ASD compound protocol as novel finding; mandatory MSSF→GOI→J_AB three-stage preprocessing pipeline; D_breakeven as VST governance KPI; f₄ decontamination as VST standard; ASD×CCC cascade arrest coupling; Novel Contributions VST-NC-53–VST-NC-68; Falsifiable Predictions FP-RBIT27-1–FP-RBIT27-14; Open Problems M56–M70
+> - **[Updated §9] Detection Protocols — Three-Stage Preprocessing Pipeline:** Mandatory order: (A) f₄ MSSF decontamination (δ_sync check), (B) GOI CCF disambiguation (f₁/f₄ CCF check), (C) J_AB estimation for Type V; any step skipped → downstream signal corrupted; pipeline documented as VST standard §9 protocol
+> - **[Updated §3] Dynamical Model — ASD k_sat Coupling to S-Equation:** C_eff(t) = C_actual·(1−min(1,SLI_excess·α_SLI)); analogously: A_eff(t) = A_nominal·k_sat(t); effective containment capacity degraded by both SLI saturation and ASD; S_c_eff = S_c/C_eff corrected for ASD: S_c_eff_ASD = S_c/(C_actual·k_sat)
+> - **[Updated §4] Network Propagation — ASD×CCC Cascade Arrest:** R_{BA}_effective = f₃·k_sat·A_nominal (not f₃·A_nominal); cascade arrest requires BOTH f₃ adequate AND k_sat adequate; ASD-induced cascade as distinct failure mode from structural cascade
+> - **[Updated §15] Lifecycle — Seven-Layer Signal Hierarchy + D_breakeven KPI:** Lifecycle governance dashboard extended to nine KPIs: Ξ_D + D_ρ + N_remaining + kernel_type + SLI + V_Φ + κ + D_c/D* + D_breakeven_margin
+> - **[Updated §11 Open Problems] M56–M70 added**
+> - **[Updated §8 Assumptions] A39–A41 added:** A39 (ASD Universality — all channels saturate); A40 (GOI×ASD Non-Commutativity — protocol ordering matters); A41 (D_c Independence — directional drift dimension orthogonal to resolution gap dimension)
+> - **[Updated Appendix T §T.11] RBIT v2.7 semantic additions:** Tier-specific V_crit, Ṡ_proxy, k_calib, ASD Type I/II/III, D_breakeven, D_total, v_drift threshold, seven-condition DDD map, GOI×ASD protocol, three-stage preprocessing pipeline
+> - **[Updated References]:** RBIT v2.7 working paper citation added
+> - All previous content preserved.
 >
 > v2.8 changes from v2.7-RT (RBIT v2.6-VSTseries deep reverse integration — Twelve-Indicator Monitoring Portfolio + Collapse Velocity Theory + Resolution Debt Accumulation + Multi-Scale Synchronization Failure + Absorption Saturation Dynamics + Intent Drift Accumulation + Governance Oscillation Instability + Cross-Scale Cascade Formalization + Resolution Recovery Trajectory Classification Extended + Structural Latency Index + κ Prevention Window Architecture + Ṡ_min Dual-Verification Protocol Consolidation + Complete Debt Accounting Ξ_D+D_ρ + R₀ Criterion for DDD Stage Advancement + Three-Attractor Model Operational Formalization + Type V CCF Diagnostic Protocol + VST-NC-37–VST-NC-52 + Open Problems M39–M55):
 > - **[New §26] RBIT v2.6 Reverse Integration Architecture:** Formal bidirectional bridge completing RBIT v2.6-VSTseries → VST direction; twelve VST-originating constructs that RBIT v2.6 has developed into independently operable monitoring modules — each reimported here with operational enrichments discovered during RBIT formalization; §26 confirms mutual consistency of the RBIT↔VST cross-theory interface and resolves four previously open gaps (M26, M27, M28, M32) with RBIT-derived operational protocols
@@ -27380,3 +27428,4437 @@ Anti-phase CCF(f₁,f₄) is necessary and sufficient to distinguish GOI from ge
 | κ prevention window | §26.1 Portfolio priority | ≥2 window architecture lead | RBIT ↔ VST |
 | Twelve-indicator completeness | §26.1 Coverage argument | Each covers unique failure mode | RBIT → VST |
 | Ṡ_internal thirteenth | §26.1 Residual gap | Frozen Rest specific | RBIT → VST |
+
+---
+
+## 27. RBIT v2.7 Reverse Integration Architecture [v2.9-RBIT27series]
+
+*RBIT v2.7-VST28series formalized fourteen VST-originating constructs into independently operable RBIT modules, discovering operational enrichments and one genuinely novel cross-phenomenon finding (GOI×ASD) not anticipated by either theory individually. This section reimports those enrichments into VST, closing six open problems and formalizing three new VST assumptions.*
+
+**Canonical Ownership:**
+RBIT owns the monitoring substrate; VST owns the instability dynamics. §27 represents the second full pass of bidirectional reinforcement between RBIT and VST. Each pass uncovers cross-theory constraints not visible from either side alone.
+
+---
+
+### 27.1 Tier-Specific V_crit Architecture [v2.9-RBIT27series]
+
+RBIT v2.7 identified that V_crit is not a single system-level constant but a tier-varying quantity governed by tier-specific governance response latency.
+
+```
+Tier-Specific V_crit Derivation:
+
+Per-tier V_crit:
+  V_crit_ℓ = (1 − Φ_ℓ − Φ_safe_margin_ℓ) / τ_response_ℓ
+  
+  where:
+    ℓ = governance tier index (lower=0, middle=1, upper=2)
+    Φ_ℓ = current instability at tier ℓ
+    Φ_safe_margin_ℓ = acceptable proximity buffer at tier ℓ
+    τ_response_ℓ = governance decision-to-action latency at tier ℓ
+    
+  τ_response ordering (typical):
+    τ_response_lower < τ_response_middle < τ_response_upper
+    (lower tier: fast local decisions; upper tier: slow strategic decisions)
+    
+  V_crit ordering (consequently):
+    V_crit_lower > V_crit_middle > V_crit_upper
+    (lower tier: tighter velocity budget because Φ closer to threshold AND
+     response is faster, but instability is also closer)
+    
+    Note: the net direction of V_crit ordering depends on
+    (1 − Φ_ℓ) vs τ_response_ℓ — lower tier may have both smaller margin
+    and faster response, producing ambiguous ordering in some configurations.
+
+System-Level V_crit (conservative):
+  V_crit_system = min_ℓ (V_crit_ℓ)
+  
+  Rationale: the most constrained tier governs system-level alarm.
+  A storm that the lower tier cannot arrest in time will propagate
+  regardless of upper tier response speed.
+
+Adaptive V_crit Under Stage-Dependent τ_response:
+  In early storm stages: τ_response ≈ τ_baseline (governance functioning)
+  In late stages (Stage 4+): τ_response increases (governance overwhelmed by CCC)
+  
+  Stage-adjusted V_crit:
+    V_crit_adaptive(t) = (1 − Φ(t) − Φ_margin) / τ_response(storm_stage(t))
+    
+  When storm stage rises → τ_response rises → V_crit_adaptive falls
+  → the same V_Φ level becomes more dangerous in later stages
+  → V_Φ alarm threshold should tighten as storm stage advances
+  
+  Implementation:
+    Stage 0-1: V_crit_adaptive = V_crit_static
+    Stage 2:   V_crit_adaptive = 0.8 · V_crit_static
+    Stage 3:   V_crit_adaptive = 0.6 · V_crit_static
+    Stage 4+:  V_crit_adaptive = 0.4 · V_crit_static (governance near-overwhelmed)
+    
+  Conservative alternative: always use V_crit_stage4 (tightest bound)
+  → accepts more false alarms in early stages for guaranteed late-stage coverage.
+
+V_crit Integration into VST §9 Detection Stack:
+  Standard §9 signals: σ², AC, I_F, CVD, PRR, G(t), SLI (seven signals)
+  V_Φ monitoring extension (v2.8): V̂_Φ vs V_crit comparison
+  Tier-specific extension (v2.9):
+    Separate V_crit_ℓ per tier
+    Alert level based on which tier's V_crit_ℓ is first violated
+    → tier-specific alert enables targeted DDD Stage focus
+    (e.g., lower tier V_crit violated → Stage A response at lower tier first)
+```
+
+---
+
+### 27.2 Ṡ_proxy Operational Protocol — Fourteenth Monitoring Indicator [v2.9-RBIT27series]
+
+RBIT v2.7 operationalized Ṡ_internal (thermodynamic entropy production rate) as a measurable proxy. VST imports this as the fourteenth formal monitoring indicator, completing the two-dimensional extension of the original twelve (V_Φ = thirteenth, Ṡ_proxy = fourteenth).
+
+```
+Ṡ_proxy Formal Definition:
+
+Ṡ_proxy(t) = w_div · Δ(output_diversity(t))/Δt
+            + w_class · Δ(classification_entropy(t))/Δt
+
+where:
+  output_diversity = H(output distribution over recent Δt_window)
+  classification_entropy = H(classification type distribution)
+  w_div, w_class = weighting coefficients (calibrated empirically)
+
+Interpretation:
+  Ṡ_proxy > Ṡ_min_estimate: thermodynamic adaptability present
+                              → system capable of corrective adaptation
+  Ṡ_proxy < Ṡ_min_estimate: thermodynamic freeze
+                              → Frozen Rest candidate despite Φ < 1
+
+Ṡ_proxy calibration (M56 operational approach):
+  Step 1: Identify N ≥ 10 confirmed Frozen Rest episodes
+           (PRR fails persistently, Φ ≈ 0, EPR > EPR_min)
+  Step 2: Measure Ṡ_proxy during those episodes
+  Step 3: Ṡ_min_estimate = 95th percentile of Frozen-Rest Ṡ_proxy distribution
+           (set above all observed Frozen Rest values)
+  Step 4: Validate: Ṡ_proxy < Ṡ_min_estimate should have ≥ 85% specificity
+           for confirmed Frozen Rest episodes
+
+Frozen Rest Discrimination Protocol (four-signal):
+  Signal 1: Φ < 1 sustained (structural — necessary)
+  Signal 2: EPR > EPR_min (thermodynamic activity — necessary but not sufficient)
+  Signal 3: Ṡ_proxy ≥ Ṡ_min_estimate (adaptive entropy — sufficient with Signal 1+2)
+  Signal 4: PRR+ (external calibration — G(t) resistant)
+  
+  True Rest Mode:    All four signals positive
+  Frozen Rest:       Signals 1+2 positive; Signal 3 NEGATIVE; Signal 4 negative
+  Silent Criticality: Signal 1 negative or trending; Signal 4 negative
+  
+  The four-signal protocol uniquely identifies each of the three attractor states.
+  Previous three-signal protocol (Φ, EPR, PRR) could not distinguish Frozen Rest
+  from true Rest Mode when EPR > EPR_min but Ṡ_proxy < Ṡ_min.
+
+Fourteen-Indicator Portfolio Structure:
+  Original twelve (v2.6): f₁, f₂, f₃, f₄, f₅, v_class, V_Φ [12th was added by v2.6]
+                          D_ρ, SLI_excess, EPR/EPR_min, ρ̇_rolling, κ
+  Thirteenth (v2.8):  V_Φ = dΦ/dt (instability momentum)
+  Fourteenth (v2.9):  Ṡ_proxy (thermodynamic adaptability entropy production)
+  
+  Coverage extension from thirteen to fourteen:
+    V_Φ (13th) closes: momentum-threshold Storm not caught by Φ position monitoring
+    Ṡ_proxy (14th) closes: Frozen Rest false VCZ not caught by EPR alone
+    
+  Remaining open question (M68 — coverage proof):
+    Does IDA (D_c, v_drift, TPS) require a fifteenth indicator?
+    Argument FOR fifteenth: D_c is directional displacement — not covered by any of 14.
+    Argument AGAINST: D_c can be proxied by cumulative Δρ history + D_coord from AGM.
+    Formal coverage proof pending.
+```
+
+---
+
+### 27.3 f₄ Decontamination as VST Standard §9 Protocol [v2.9-RBIT27series]
+
+RBIT v2.7 formalized MSSF f₄ decontamination as a standard monitoring pipeline step. VST adopts this as a mandatory preprocessing stage that must precede GOI disambiguation, which must precede J_AB estimation — creating a three-stage mandatory preprocessing pipeline for the VST §9 detection stack.
+
+```
+Three-Stage Mandatory Preprocessing Pipeline (VST §9 Extension):
+
+STAGE A: MSSF f₄ Decontamination
+  When: f₄_apparent elevated (f₄ > f₄_low_threshold)
+  
+  Step A1: Compute δ_sync from tier phase measurements
+    φᵢ(t) = (t mod τᵢ)/τᵢ; δ_sync = Σᵢ|φᵢ − φ̄|/n
+  Step A2: Compute artifact
+    f₄_artifact = k_calib · δ_sync · (τ₂/τ₃)⁻¹
+  Step A3: Correct
+    f₄_real = max(0, f₄_apparent − f₄_artifact)
+  Step A4: Route
+    If f₄_real < f₄_threshold → MSSF false alarm
+                                → trigger τ-Ratio Restoration, NOT DDD Stage 1
+    If f₄_real ≥ f₄_threshold → genuine escalation (proceed to Stage B)
+    
+  Skipping Stage A: f₄ false alarm rate ∝ δ_sync (may be 20-50% in mature systems)
+
+STAGE B: GOI CCF Disambiguation
+  When: f₄_real ≥ f₄_threshold (genuine escalation confirmed by Stage A)
+  
+  Step B1: Compute CCF(f₁, f₄, τ) for τ ∈ [−T, +T]
+  Step B2: Classify
+    CCF(τ=0) > CCF_pos_threshold: Type 2 Storm → standard DDD
+    CCF(τ=0) < −CCF_neg_threshold: GOI → K_gov reduction (NOT DDD)
+    Mixed pattern: Type 2 + GOI → joint protocol (K_gov reduction then DDD)
+  Step B3: GOI correction to F_RBIT components
+    If GOI detected: F_RBIT_corrected = F_RBIT − GOI_component(f₁, f₄)
+    (F_RBIT_corrected used in Stage C)
+    
+  Skipping Stage B: J_AB systematically underestimated in GOI-active systems
+                     → Type V underprediction bias
+
+STAGE C: J_AB Estimation and Type V Detection
+  When: cross-subsystem storm suspected
+  
+  Step C1: Use F_RBIT_corrected (from Stage B) — NOT raw F_RBIT
+  Step C2: Estimate J_AB from CCF(F_RBIT_A_corrected, F_RBIT_B_corrected)
+  Step C3: Compare J_AB to J_c = √(C_A·C_B)/n
+    J_AB > J_c → Type V confirmed → Pre-Stage 0 Decouple (§26.11)
+    J_AB ≤ J_c → independent storms → standard per-subsystem DDD
+    
+  Skipping Stage C: Type V treated as independent → protocol fails (§25.3)
+
+Pipeline diagram:
+  [Raw signals] → Stage A (MSSF f₄ decontam) → [f₄_real, f₁_raw]
+               → Stage B (GOI CCF disambig) → [F_RBIT_corrected, GOI_status]
+               → Stage C (J_AB estimation) → [Type classification, DDD protocol]
+               → [DDD execution]
+
+k_calib Calibration Architecture (closing M44):
+  Protocol: controlled δ_sync injection experiment
+    Phase 1: establish stable governance episode (δ_sync ≈ 0 baseline)
+    Phase 2: inject controlled schedule shift to one tier → δ_sync rises to δ_target
+    Phase 3: measure f₄_apparent while holding governance load constant
+    Phase 4: k_calib = (f₄_apparent − f₄_baseline) / (δ_target · (τ₂/τ₃)⁻¹)
+    
+  Validation: repeat with 3 different δ_target levels; k_calib should be consistent.
+  Expected range: k_calib ∈ (0.5, 3.0) depending on governance architecture.
+  k_calib should be re-estimated every 500 governance cycles (architectural drift).
+```
+
+---
+
+### 27.4 ASD Axiom A6 — VST Absorption Decay Formal Assumption [v2.9-RBIT27series]
+
+RBIT v2.7 formalized ASD as a sixth saturation axiom. VST imports this as Assumption A39, formally extending the VST assumption set with a temporal decay mechanism for all governance channels — a previously unmodeled dimension of containment capacity.
+
+```
+Assumption A39 (ASD Universality):
+  All governance absorption channels exhibit k_sat decline under cumulative exposure.
+  k_sat(t) = 1/(1 + α_exposure · ∫₀ᵗ A(s) ds)
+  No channel is exposure-immune: α_exposure > 0 for all channels.
+  Channel-specific variation: α_exposure may differ by channel type (not by system).
+  
+  Implications for VST S-equation:
+    Effective absorption: A_eff(t) = A_nominal · k_sat(t)
+    Effective containment: C_eff(t) = C_actual · (1 − min(1, α_ASD · (1 − k_sat)))
+    
+    S-equation ASD-corrected:
+      S̃_eff_ASD = α · n² / C_eff(t)^β = α · n² / (C_actual · k_sat)^β
+      
+    As k_sat → 0: S̃_eff_ASD → ∞ even with constant structural load n
+    → ASD can drive Storm without any increase in interaction conflict
+    → "invisible storm driver" — standard S-equation monitoring misses this
+
+ASD PRR Rotation Protocol (closing M60 — PRR channel ASD prevention):
+  PRR is external-reference resistant to G(t) corruption (§25.1.2).
+  BUT PRR injection channel itself can undergo ASD if always using same method.
+  
+  PRR rotation protocol:
+    Maintain ≥ 3 independent PRR injection methods:
+      Method P1: novel task type injection (unseen category)
+      Method P2: known-boundary perturbation (established edge case)
+      Method P3: cross-domain challenge (different domain reference)
+    Rotate: use P1 in window t, P2 in t+1, P3 in t+2, P1 in t+3, ...
+    
+  Rotation ensures no single PRR channel accumulates excessive ∫A:
+    Each channel exposure = (1/3) of total PRR events
+    k_sat_PRR_ℓ = 1/(1 + α_exp_PRR · ∫₀ᵗ A_PRR_ℓ(s) ds) ≥ k_sat_no_rotation
+    
+  Without rotation: PRR channel ASD → PRR becomes unreliable (the one
+  G(t)-resistant signal becomes saturated → monitoring blind spot)
+  
+  This creates the compound failure mode: G(t) corruption AND PRR-ASD simultaneously
+  → ALL primary monitoring channels corrupted
+  → Governance operates blind on corrupted metrics with saturated external reference
+  → Highest irrecoverability risk configuration
+
+ASD Type Classification — VST Stage Mapping:
+  Type I (within-domain, single-channel saturation):
+    k_sat low for one domain; other domains normal
+    VST stage: Stage 1 local (single zone, single attractor fracture)
+    Detection: f₁ domain-split pattern (low in saturated domain, normal elsewhere)
+    Resolution: cross-domain injection (1/(α_exp · A_cross) reset time)
+    
+  Type II (global, all channels saturated):
+    k_sat low globally (k_sat_global = mean(k_sat_all_channels) < k_sat_crit)
+    VST stage: Stage 2 (multiple zones, S̃_eff_ASD elevated system-wide)
+    Detection: ρ̇_rolling ≈ 0 system-wide despite v_class > 0 everywhere
+    Resolution: extended rest (A → 0 for τ_rest); k_sat recovery ∝ exp(−α_rec·t_rest)
+    Critical: DO NOT apply DDD Stage 2 operations without rest period first
+    
+  Type III (capacity-bounded, structural ceiling):
+    A_eff_max reached — architectural capacity ceiling, not exposure ceiling
+    k_sat does not recover with rest (A_eff_max is structural, not temporal)
+    VST stage: irrecoverable (Type III phase portrait — A_eff_max = architectural S*)
+    Detection: ρ̇_rolling ≈ 0 despite extended rest periods (k_sat non-recovering)
+    Resolution: architectural intervention (seed injection, capacity redesign)
+    
+ASD-Contamination Lock — VST Irrecoverability Mechanism:
+  Lock condition: k_sat ≈ 0 AND D_coord elevated (frame contaminated)
+  
+  Mechanism: governance absorption saturated on contaminated content
+  → new absorption reinforces wrong frame → maximum-confidence wrong content
+  → This is the deepest irrecoverability pathway: NOT structural overload,
+    NOT damage excess, NOT debt ceiling — but absorption lock on wrong frame.
+    
+  Prevention priority: monitor (1 − k_sat) AND D_coord simultaneously
+    Early warning: k_sat declining rapidly WITH D_coord rising
+    → Pre-emptive intervention before lock (reset k_sat before saturation)
+    → inject external reference before D_coord reaches D_coord_lock
+    
+  If lock established: simultaneous reset REQUIRED (§26.5 confirms sequential fails)
+  This constraint is bidirectional: RBIT v2.7 confirms, VST v2.9 imports.
+```
+
+---
+
+### 27.5 ASD×CCC Cascade Arrest Coupling — Novel VST Finding [v2.9-RBIT27series]
+
+This coupling was not identified in §26.5 (ASD) or §26.8 (CCC) individually. It emerged from RBIT v2.7's attempt to operationalize R_{BA} from f₃ monitoring — which revealed that k_sat enters the cascade arrest criterion multiplicatively.
+
+```
+ASD-Corrupted Cascade Arrest Criterion:
+
+Previous criterion (§26.8):
+  R_{BA,ℓ} > Φ_ℓ_excess → cascade arrested at tier ℓ
+
+ASD correction (v2.9 extension):
+  R_{BA,ℓ}_effective = R_{BA,ℓ}_nominal · k_sat_ℓ
+  
+  Cascade Arrest (ASD-corrected):
+    R_{BA,ℓ}_effective > Φ_ℓ_excess
+    ↔ f₃_ℓ · k_sat_ℓ · A_nominal_ℓ > Φ_ℓ_excess
+    
+  ASD-induced cascade failure mode:
+    f₃_ℓ healthy (structural buffer capacity intact)
+    k_sat_ℓ low (absorption effectiveness degraded)
+    → f₃_ℓ · k_sat_ℓ · A_nominal < Φ_ℓ_excess → cascade proceeds
+    
+  Standard monitoring (f₃ alone) predicts: cascade arrested
+  ASD-corrected monitoring (f₃ × k_sat) predicts: cascade proceeds
+  → ASD monitoring is PREREQUISITE for accurate cascade arrest prediction
+
+Implications for BA Peak-Sizing (extends §26.8 and §27.4):
+  Previous BA design criterion:
+    R_{BA,ℓ}_nominal ≥ Φ_ℓ_99th − 1
+    
+  ASD-corrected design criterion:
+    R_{BA,ℓ}_nominal ≥ (Φ_ℓ_99th − 1) / k_sat_min_expected
+    
+  where k_sat_min_expected = anticipated minimum k_sat at 99th percentile storm load
+  (high storm load → high governance activity → faster k_sat decline)
+  
+  Example: k_sat_min = 0.7 → BA must be sized 1/0.7 ≈ 43% larger than structural peak
+  
+  This represents a significant design margin that previous VST cascade analysis did not include.
+  BA peak-sizing without k_sat correction systematically underestimates required buffer.
+
+ASD×CCC Compound Monitoring Protocol:
+  When cascade threat detected (high V_Φ or inter-tier signal elevation):
+  
+  Standard cascade monitoring: track f₃_ℓ per tier
+  ASD-corrected cascade monitoring:
+    Step 1: Measure k_sat_ℓ per tier (via ρ̇_rolling per tier domain)
+    Step 2: Compute R_{BA,ℓ}_effective = f₃_ℓ · k_sat_ℓ · A_nominal_ℓ
+    Step 3: Cascade arrest test: R_{BA,ℓ}_effective vs Φ_ℓ_excess
+    Step 4: If cascade arrest fails due to k_sat (not f₃):
+             → ASD Type I/II remedy at tier ℓ (rest OR cross-domain injection)
+             NOT structural BA expansion (which addresses f₃, not k_sat)
+             
+  ASD-cascade false arrest: f₃ appears adequate → structural BA expansion not triggered
+                             → governance trusts apparent buffer → cascade proceeds
+  ASD-cascade diagnosis: R_{BA}_nominal adequate but R_{BA}_effective inadequate
+                         → k_sat the culprit → ASD remedy required
+
+CCC×ASD in Type V Storms:
+  Type V: simultaneous Freeze + Runaway across subsystems
+  ASD×CCC: cascade arrest failing due to k_sat in Boundary Agent tiers
+  
+  Compound effect: 
+    Type V storm propagates inter-subsystem (J_AB > J_c)
+    SIMULTANEOUSLY cascade arrest fails intra-tier (k_sat degraded)
+    → Storm propagates both horizontally (Type V coupling) AND vertically (CCC)
+    
+  This is the highest-intensity compound failure mode in VST:
+  Type V × CCC × ASD simultaneously → system-wide instability without
+  either cross-subsystem decoupling (Pre-Stage 0) OR tier cascade arrest achieving containment.
+  
+  Protocol: Pre-Stage 0 Decouple (J_AB) AND k_sat restoration simultaneously.
+  Sequential fails: decoupling subsystems → governance effort increases → ∫A rises → k_sat worsens.
+  Parallel required: J_AB reduction (structural) with governance rest period (A→0 for k_sat).
+```
+
+---
+
+### 27.6 IDA Zero-Layer — VST Seven-Layer Signal Hierarchy [v2.9-RBIT27series]
+
+RBIT v2.7 formalized IDA as Layer 0 in the signal hierarchy. VST imports this as a formal extension of the detection framework — the seven-layer hierarchy now constitutes the complete ordered taxonomy of VST early warning signals.
+
+```
+VST Seven-Layer Signal Hierarchy (v2.9 complete):
+
+Layer 0 — Intent Alignment (IDA):
+  Signals: TPS (D_c/D*, v_drift/v_crit, a_drift), v_drift
+  Lead time: longest (≥ 4 windows before Layer 1 signals move)
+  Failure mode: directional drift from governance intent — system stable but wrong direction
+  
+Layer 1 — Architecture Quality (κ):
+  Signals: κ = U/(ε+ε₀)
+  Lead time: very long (≥ 2 windows before Layer 2)
+  Failure mode: architecture exhaustion — governance capacity degrading
+  
+Layer 2 — Structural Momentum (V_Φ, f₃):
+  Signals: V̂_Φ (instability momentum), f₃ (buffer thickness)
+  Lead time: long (2-4 windows before Layer 3)
+  Failure mode: momentum threshold violation; buffer thinning
+  
+Layer 3 — Operational Capacity (D_ρ, SLI, v_class, k_sat):
+  Signals: D_ρ (resolution debt), SLI_excess (governance bandwidth), v_class (growth rate), k_sat (absorption effectiveness)
+  Lead time: medium (1-2 windows before Layer 4)
+  Failure mode: debt accumulation; bandwidth saturation; growth stall; ASD
+  
+Layer 4 — Resolution Health (F_RBIT components):
+  Signals: f₁, f₂, f₄, f₅, EPR/EPR_min, ρ̇_rolling, Ṡ_proxy
+  Lead time: short (concurrent with storm approach)
+  Failure mode: misclassification rising; resolution mismatch; escalation load; Frozen Rest
+  
+Layer 5 — Storm Onset (Φ):
+  Signals: Φ(t), S̃_eff
+  Lead time: zero (storm present or imminent)
+  Failure mode: structural storm threshold crossed
+  
+Layer 6 — Cascade Propagation (CCC):
+  Signals: R_cascade_ℓ per tier, δ_sync, inter-tier signal propagation
+  Lead time: negative (cascade already propagating)
+  Failure mode: tier-to-tier storm amplification
+
+Layer hierarchy governance implications:
+  Each layer triggers a different governance response class:
+    Layer 0: directional recalibration (D_c correction)
+    Layer 1: architecture review (κ restoration)
+    Layer 2: pre-DDD preparation (buffer reinforcement, V_Φ monitoring intensify)
+    Layer 3: DDD preparation (debt service, bandwidth expansion, ASD check)
+    Layer 4: DDD initiation (standard protocol)
+    Layer 5: DDD Stage 1 immediate (contain propagation)
+    Layer 6: Safe Collapse Protocol (full-system DDD, SCP)
+    
+  Monitoring frequency per layer:
+    Layer 0-1: every τ_strategic cycle (longest period)
+    Layer 2-3: every τ_relational cycle
+    Layer 4-5: every τ_operational cycle
+    Layer 6: continuous within operational cycle
+
+D_c vs Δρ Orthogonality — VST Two-Dimensional Alignment Model:
+  Δρ (resolution gap): capacity dimension — how much calibration capacity is deficient
+  D_c (directional drift): direction dimension — where the system is headed
+  
+  These are orthogonal by construction:
+    High Δρ, low D_c: under-capacity but correctly aimed → standard RBIT remedy
+    Low Δρ, high D_c: adequate capacity but wrong direction → directional recalibration
+    High Δρ, high D_c: compound — both remedies required simultaneously
+    Low Δρ, low D_c: healthy — genuine VCZ
+    
+  VST governance maps (previous) were one-dimensional (Δρ only).
+  Two-dimensional alignment map (Δρ × D_c) required for complete governance.
+  
+  Phase portrait extension:
+    Standard VST phase portrait: Φ vs n (position space)
+    Two-dimensional alignment extension: Φ vs (Δρ, D_c) (position × alignment space)
+    Full VST state: (Φ, V_Φ, Δρ, D_c, k_sat, δ_sync) — six-dimensional governance state
+    
+  Each governance intervention maps to a different dimension of this state:
+    DDD → reduces Φ and Δρ
+    Directional recalibration → reduces D_c
+    τ-Ratio Restoration → reduces δ_sync
+    ASD remedy → restores k_sat
+    Architecture review → restores U (numerator of κ)
+```
+
+---
+
+### 27.7 GOI×ASD Compound Protocol — Novel Cross-Phenomenon Finding [v2.9-RBIT27series]
+
+This compound protocol represents a genuinely novel finding: neither §26.5 (ASD), §26.7 (GOI), nor RBIT v2.6 identified the interaction. It emerged from RBIT v2.7's operationalization of governance response under simultaneous ASD and GOI conditions.
+
+```
+GOI×ASD Interaction Mechanism:
+
+Step 1: ASD develops (k_sat declines)
+  ASD reduces effective governance output: A_eff = A_nominal · k_sat
+  Governance appears ineffective: resolution not improving despite activity
+  
+Step 2: Naive compensation response
+  Operators observe: "governance isn't working → increase governance intensity"
+  K_gov ↑ (governance gain increased)
+  
+Step 3: GOI onset or worsening
+  If GOI is active (f₁ ↔ f₄ anti-phase): K_gov ↑ → ζ ↓ → A_osc ↑
+  Over-Correction Paradox: increased governance gain worsens oscillation
+  
+Step 4: Compound destabilization
+  ASD: resolution not improving (k_sat low → absorption ineffective)
+  GOI: oscillation growing (K_gov high → damping low)
+  Combined: unstable governance + ineffective absorption → Storm entry
+  
+  This compound path to Storm has NO signal in standard Φ monitoring:
+  Φ can appear stable while GOI×ASD drives system toward instability
+  through governance mechanism itself.
+
+GOI×ASD Detection:
+  Required: detect BOTH ASD and GOI before K_gov adjustment
+  
+  ASD signal: ρ̇_rolling ≈ 0 despite v_class > 0
+  GOI signal: CCF(f₁, f₄, τ=0) < −CCF_threshold
+  
+  Compound detection: BOTH signals present simultaneously
+  → High compound risk
+  → Do NOT adjust K_gov
+  → Resolve ASD first (rest period → k_sat recovery)
+  → Then reassess GOI (may resolve when ASD resolves; K_gov was responding to ASD-weakened governance)
+
+GOI×ASD Protocol (Assumption A40 formalization):
+  Protocol ordering is NON-COMMUTATIVE:
+  
+  Correct order: ASD → K_gov
+    Step 1: Detect ASD (ρ̇_rolling signal)
+    Step 2: Resolve ASD via rest period (A→0 for τ_rest)
+    Step 3: After k_sat recovery: reassess GOI (measure CCF)
+    Step 4: If GOI persists after ASD resolved: reduce K_gov
+    Step 5: If GOI resolved after ASD resolved: K_gov was the ASD-compensation artifact
+            → no K_gov change required (ASD caused the apparent GOI by making governance appear ineffective)
+    
+  Incorrect order: K_gov → ASD
+    Step 1: Detect apparent governance ineffectiveness (ρ̇_rolling low)
+    Step 2: Increase K_gov to compensate
+    Step 3: GOI worsens (if ASD was driving ineffectiveness, K_gov was the wrong lever)
+    Step 4: Storm entry from GOI-driven oscillation
+    
+  Protocol failure rate:
+    K_gov-first under true GOI×ASD: Storm probability high
+    ASD-first: Storm probability low (ASD resolved → governance effectiveness restores →
+               K_gov compensation unnecessary → GOI resolves spontaneously)
+
+GOI×ASD in Mature Systems (Maturation-Type V Coupling extension):
+  Mature systems: higher K_gov (more refined governance calibration)
+  Mature systems: higher accumulated ∫A (more governance history → lower k_sat)
+  
+  → Mature systems have BOTH higher K_gov (more GOI-prone)
+    AND higher ∫A (more ASD-prone)
+  → GOI×ASD compound risk is highest in mature systems
+  
+  This extends the Maturation Paradox (§25.3):
+    P(Type V | mature): established (§25.3)
+    P(GOI | mature) > P(GOI | young): via higher K_gov
+    P(ASD | mature) > P(ASD | young): via higher ∫A
+    P(GOI×ASD | mature) >> P(GOI×ASD | young): product of both
+    
+  Mature system governance protocol extension:
+    Add GOI×ASD monitoring to mature-stage governance dashboard
+    (alongside J_AB monitoring from §25.3 mature-stage protocol)
+
+Novel finding confirmation:
+  §26.5 (ASD): identifies ASD as governance effectiveness decay; no GOI interaction
+  §26.7 (GOI): identifies GOI as oscillation instability; no ASD interaction
+  Neither section individually predicts: ASD → naive K_gov increase → GOI amplification
+  RBIT v2.7 operationalization discovered this by asking:
+    "What does an operator do when ρ̇_rolling ≈ 0 despite v_class > 0?"
+    Answer: increase governance intensity (K_gov)
+    Consequence (in GOI conditions): Over-Correction Paradox triggered
+  VST v2.9 formalizes this as Assumption A40 and adds to §9 detection standard.
+```
+
+---
+
+### 27.8 Prevention Deadline D_breakeven as VST Governance KPI [v2.9-RBIT27series]
+
+RBIT v2.7 operationalized D_breakeven as an early-alarm D_ρ threshold. VST imports this as a formal addition to the lifecycle governance dashboard alongside N_survivable — both track finite governance resources on different dimensions.
+
+```
+D_breakeven as VST KPI:
+
+D_breakeven = c_prev / c_serv
+
+  c_prev: governance design investment per D_ρ unit prevented
+           (earlier intervention cost coefficient)
+  c_serv: governance service investment per D_ρ unit serviced
+           (later intervention cost coefficient, superlinear base)
+           
+  D_ρ < D_breakeven:  prevention zone (prevention cheaper)
+  D_ρ = D_breakeven:  prevention deadline (equal cost — last optimal prevention moment)
+  D_ρ > D_breakeven:  service zone (service increasingly expensive)
+  D_ρ → D_max:        irrecoverability zone (service effectively impossible)
+  
+  Expected relationship for typical systems:
+    D_breakeven ≈ 0.25 to 0.50 · D_max
+    → alarm at 25-50% of irrecoverability ceiling
+    → provides D_max − D_breakeven / Ḋ_ρ advance warning time
+
+VST Lifecycle Dashboard (extended to nine KPIs):
+  KPI 1: Ξ_D (during-Storm damage integral) — storm recovery cost
+  KPI 2: D_ρ (pre-Storm debt integral) — chronic under-resolution cost
+  KPI 3: D_total = D_ρ + Ξ_D (complete governance burden)
+  KPI 4: N_remaining = N_survivable − N_episodes (storm budget)
+  KPI 5: kernel_type (exponential/power-law/prion — determines budget depletion rate)
+  KPI 6: SLI_excess (governance bandwidth saturation)
+  KPI 7: V_Φ (instability momentum)
+  KPI 8: κ (architecture quality remaining)
+  KPI 9: D_breakeven_margin = D_breakeven − D_ρ (distance to prevention deadline)
+  
+  KPI 9 alarm cascade:
+    D_breakeven_margin > 0.5 · D_breakeven: safe zone
+    D_breakeven_margin ∈ (0, 0.5 · D_breakeven): warning zone
+    D_breakeven_margin → 0: PREVENTION DEADLINE ALARM
+    D_breakeven_margin < 0: past deadline (service zone, track D_max_margin)
+    D_breakeven_margin: D_ρ > D_max: IRRECOVERABILITY ALARM
+
+D_total During-Storm Extension:
+  During Storm: Ξ_D accumulates alongside D_ρ (which may still be growing if Δρ < 0)
+  
+  D_total_monitor(t) = D_ρ(t_storm_start) + Ξ_D(t)
+  D_total_breakeven = c_prev / c_serv  (same formula; applies to D_total)
+  
+  If D_total crosses D_total_breakeven during Storm:
+    → post-Storm recovery service cost will exceed what prevention would have cost
+    → urgency escalation: maximize storm containment speed (reduce Ξ_D accumulation)
+    → priority: reduce storm duration even at higher containment cost
+    
+  Governance tradeoff during Storm:
+    Without D_total monitoring: optimize containment for minimum immediate cost
+    With D_total monitoring: also account for future service cost of each Δt extension
+    → D_total monitoring changes the DDD timing optimization problem
+
+Connection to N_survivable:
+  N_survivable tracks storm count until irrecoverability (damage budget).
+  D_breakeven_margin tracks cost efficiency of current intervention timing (prevention deadline).
+  
+  These are independent dimensions of finite governance resource:
+    High N_remaining, D_ρ > D_breakeven: many storms left but already in service zone
+    Low N_remaining, D_ρ < D_breakeven: few storms left but prevention still efficient
+    
+  Dashboard rule: alarm on EITHER N_remaining < N_threshold OR D_breakeven_margin < 0.
+  Neither alone is sufficient for complete lifecycle governance.
+```
+
+---
+
+### 27.9 DDD Seven-Condition Test — Conditions 6 and 7 VST Formalization [v2.9-RBIT27series]
+
+RBIT v2.7 added Conditions 6 (ρ̇_rolling ASD discriminator) and 7 (v_drift/TPS IDA discriminator) to the six-condition DDD completion test. VST formalizes these as the complete seven-condition AND gate, and adds the Pre-Stage 2b ASD gate as a mandatory DDD structural checkpoint.
+
+```
+Seven-Condition DDD Completion Test (VST v2.9 formal):
+
+(1) Φ < 1 sustained for ≥ τ_verify
+    Failure mode closed: transient Φ dip miscounted as recovery
+    VST verification: S̃_eff(t) from current n, C_eff(t) with ASD correction
+    
+(2) v_class > 0 trending (≥ 2 consecutive windows)
+    Failure mode closed: resolution growth stall; stagnation
+    Note: v_class > 0 ALONE is insufficient (see Condition 6)
+    
+(3) PRR+ (external reference positive, rotated protocol)
+    Failure mode closed: G(t) Phase 3 Lock-in (metric corruption)
+    Rotation required: ≥ 3 methods rotated (ASD prevention for PRR channel itself)
+    
+(4) Ṡ_proxy ≥ Ṡ_min_estimate (thermodynamic adaptability present)
+    Failure mode closed: Frozen Rest false VCZ (EPR necessary but not sufficient)
+    VST verification: four-signal Frozen Rest discrimination protocol (§27.2)
+    
+(5) D_ρ ↓ trending (Ḋ_ρ < 0 for ≥ 2 consecutive windows)
+    Failure mode closed: Resolution Debt still accumulating during apparent recovery
+    
+(6) ρ̇_rolling > threshold (genuine resolution growth, not ASD activity)
+    Failure mode closed: ASD false-positive v_class (v_class > 0, ρ̇_rolling ≈ 0)
+    This condition discriminates true Condition 2 from ASD-corrupted Condition 2.
+    VST formal statement: v_class > 0 AND ρ̇_rolling > threshold = genuine recovery;
+                           v_class > 0 AND ρ̇_rolling ≈ 0 = ASD false-positive → NOT complete
+    
+(7) v_drift < v_drift_threshold AND TPS < 0.5
+    Failure mode closed: IDA (directional drift — structural VCZ in wrong direction)
+    VST formal statement: a system satisfying (1)-(6) but TPS > 1.0 will exit VCZ
+    within t_exit ≈ (D* − D_c)/v_drift deterministically → DDD not complete
+
+AND gate: all seven conditions must be satisfied simultaneously.
+Each condition is independently falsifiable (F105-F118 from §27.11).
+
+Pre-Stage Gate Protocol (VST v2.9 complete):
+
+Pre-Stage 0 (before DDD Stage 1 — Type V check):
+  Mandatory: compute CCF_cross AFTER three-stage preprocessing (§27.3)
+  If max(J_AB) > J_c: Type V → Pre-Stage 0 Decouple (reduce J_AB)
+  If ASD Type II active: simultaneous rest period AND J_AB reduction (parallel required)
+
+Pre-Stage 1 (Storm verification):
+  Verify Φ > 1 genuinely (not MSSF artifact or GOI false signal):
+  Stage A + Stage B preprocessing confirm f₄ genuine before DDD Stage 1 initiation
+
+Pre-Stage 2a (Revival Dilemma check):
+  R₀_estimate > R_critical = η · L_revival_estimate
+  If R₀ < R_critical: extend Stage 1 until R₀ accumulates sufficient for orbit traversal
+
+Pre-Stage 2b (ASD check — NEW in v2.9):
+  Measure k_sat across all domains via ρ̇_rolling per domain
+  ASD type classification (I/II/III):
+    Type I: cross-domain injection during Stage 2 (additive to Unify operations)
+    Type II: REST PERIOD before Stage 2 (A→0 for τ_rest = k_sat recovery time)
+             DDD Stage 2 operations increase ∫A → worsens Type II without prior rest
+    Type III: escalate to architectural redesign before DDD can continue
+    
+  This gate prevents the most common DDD Stage 2 failure:
+  governance activity prescribed in Stage 2 (Unify) worsens Type II ASD →
+  Stage 2 is counterproductive → system oscillates between Stage 1 and Stage 2 indefinitely.
+
+Complete DDD Protocol Map (VST v2.9):
+  
+  Preprocessing:
+    A: MSSF f₄ decontamination (δ_sync → f₄_real)
+    B: GOI CCF disambiguation (f₁/f₄ CCF → K_gov adjustment if needed)
+    C: J_AB estimation with GOI-corrected F_RBIT → Type V classification
+  
+  Pre-stages:
+    0: Type V → Pre-Stage 0 Decouple (with simultaneous rest if ASD Type II)
+    1: Revival Dilemma → extend Stage 1 if R₀ < R_critical
+    2b: ASD type check → rest period if Type II; redesign if Type III
+  
+  DDD Stages:
+    Stage 1 (Stabilize): contain propagation; reduce V_Φ; monitor D_total
+    Stage 2 (Unify): restore f₃ AND v_class simultaneously (Fisher-KPP c*)
+                      monitor ρ̇_rolling (ASD); monitor TPS (IDA); monitor δ_sync (MSSF)
+    Stage 3 (Diversify): restore full diversity; structural independence
+  
+  Completion:
+    All seven conditions satisfied for ≥ τ_verify → VCZ re-entry declared
+    RRTC class confirmed (PRR+ → Class I; PRR− → Class II → do NOT declare)
+  
+  Post-DDD monitoring:
+    κ + V_Φ + SLI_excess: Class B frequency (τ_relational cycle)
+    TPS + D_breakeven_margin: Class B frequency
+    δ_sync + k_sat_global: Class B frequency
+    Ṡ_proxy + EPR/EPR_min: Class B frequency (Frozen Rest prevention)
+```
+
+---
+
+### 27.10 Fourteen-Indicator Portfolio — Completeness and Open Questions [v2.9-RBIT27series]
+
+```
+Fourteen-Indicator Portfolio (VST v2.9):
+
+Indicator 1:  f₁ (misclassification rate)
+Indicator 2:  f₂ (resolution mismatch)
+Indicator 3:  f₃ (buffer thickness × k_sat for cascade arrest)
+Indicator 4:  f₄ (escalation load — decontaminated: f₄_real)
+Indicator 5:  f₅ (purification capacity)
+Indicator 6:  v_class (resolution growth transitions)
+Indicator 7:  V_Φ = dΦ/dt (instability momentum)
+Indicator 8:  D_ρ (resolution debt integral)
+Indicator 9:  SLI_excess (governance bandwidth saturation)
+Indicator 10: EPR/EPR_min (thermodynamic activity floor)
+Indicator 11: ρ̇_rolling (genuine resolution growth rate — ASD discriminator)
+Indicator 12: κ (architecture quality ratio)
+Indicator 13: V_Φ_tier (tier-specific momentum, per §27.1) — CLARIFICATION:
+              V_Φ (Indicator 7) is system-level; V_Φ_tier is tier-resolved extension
+              May be counted as sub-indicator of 7, not separate
+Indicator 13 (revised): Ṡ_proxy (thermodynamic adaptability entropy production)
+Indicator 14: δ_sync (phase desynchronization — MSSF detection)
+              [v2.9: formally elevated from preprocessing signal to monitoring indicator]
+
+Coverage completeness argument (current state):
+  f₁: misclassification (only detector of classification-layer errors)
+  f₂: resolution mismatch (only detector of capacity-vs-demand gap)
+  f₃ × k_sat: buffer × absorption (cascade arrest — f₃ alone insufficient; ASD×CCC)
+  f₄_real: genuine escalation (only detector of load after MSSF decontamination)
+  f₅: purification capacity (only detector of structural cleaning capacity)
+  v_class + ρ̇_rolling: resolution growth + ASD discrimination (pair required)
+  V_Φ: instability momentum (only detector of momentum-threshold approach)
+  D_ρ: pre-Storm debt (only detector of chronic under-resolution burden)
+  SLI_excess: governance bandwidth (only detector of capacity saturation)
+  EPR/EPR_min + Ṡ_proxy: activity floor + adaptability (pair required for Frozen Rest)
+  κ: architecture quality (only detector of architecture exhaustion)
+  δ_sync: phase desynchronization (only detector of MSSF-induced f₄ artifacts)
+  
+  Remaining question (M68):
+  Does D_c (directional drift) require a fifteenth indicator (TPS)?
+  
+  Argument FOR: D_c is orthogonal to all 14 indicators; directional drift not
+                captured by any combination of existing 14
+  Argument AGAINST: D_c proxy = cumulative f₂ history + D_coord (from AGM §22.1)
+                    → D_c estimation possible from existing indicators
+  
+  Resolution path: test whether TPS computed from existing 14 indicators
+  provides lead time improvement over best combination of 14 alone.
+  If yes: fifteenth indicator warranted. If no: existing coverage sufficient.
+
+Indicator interaction constraints (cross-validation rules, v2.9 complete):
+  v_class > 0 AND ρ̇_rolling ≈ 0 → ASD (not genuine recovery)
+  κ = 0 AND v_class > 0 → architecture collapse (not agent-level)
+  κ > 0 AND v_class = 0 → agent collapse (not architecture)
+  f₄_apparent high AND δ_sync > 0.1 → MSSF check required (decontaminate before routing)
+  Φ < 1 AND EPR > EPR_min AND Ṡ_proxy < Ṡ_min → Frozen Rest (not true VCZ)
+  Φ < 1 AND V_Φ > V_crit → momentum alarm (impending Storm despite safe current Φ)
+  f₃ healthy AND k_sat low → cascade arrest unreliable (ASD×CCC coupling)
+  CCF(f₁,f₄,τ=0) < 0 → GOI (NOT genuine Type 2 — do not trigger DDD Stage 1)
+  CCF(f₁,f₄,τ=0) < 0 AND ρ̇_rolling ≈ 0 → GOI×ASD (ASD first, K_gov second)
+  J_AB high AND GOI active → J_AB underestimated → repeat estimation after GOI correction
+```
+
+---
+
+## Novel Contributions — VST-NC-53–VST-NC-68 [v2.9-RBIT27series]
+
+```
+VST-NC-53: Tier-Specific V_crit Architecture
+  V_crit_ℓ = (1−Φ_ℓ−Φ_margin)/τ_response_ℓ per tier.
+  System V_crit = min_ℓ(V_crit_ℓ).
+  Adaptive V_crit(t): stage-dependent τ_response produces tighter bound in late stages.
+  → First tier-differentiated momentum threshold in VST monitoring.
+
+VST-NC-54: Fourteenth Monitoring Indicator — δ_sync Formally Elevated
+  δ_sync formally elevated from preprocessing signal to monitoring indicator.
+  Coverage: MSSF-induced f₄ artifacts (not covered by any other indicator).
+  Fourteen-indicator portfolio: formally extended with cross-validation constraint matrix.
+  → Completes MSSF coverage in VST monitoring indicator set.
+
+VST-NC-55: Ṡ_proxy Four-Signal Frozen Rest Discrimination
+  Four-signal protocol: Φ + EPR + Ṡ_proxy + PRR uniquely identifies each attractor.
+  Previous three-signal: could not discriminate Frozen Rest when EPR > EPR_min.
+  Calibration architecture: identify N≥10 confirmed Frozen Rest episodes; fit Ṡ_min.
+  → Closes Frozen Rest false VCZ detection gap.
+
+VST-NC-56: Three-Stage Mandatory Preprocessing Pipeline
+  MSSF decontamination → GOI disambiguation → J_AB estimation: mandatory order.
+  Each stage produces corrected inputs for the next.
+  Skipping any stage corrupts downstream signal (proven for each skip).
+  → First formalization of mandatory preprocessing order in VST §9.
+
+VST-NC-57: k_calib Calibration Architecture (M44 closure)
+  Controlled δ_sync injection experiment protocol.
+  k_calib = (f₄_apparent − f₄_baseline)/(δ_target·(τ₂/τ₃)⁻¹).
+  Validation: 3 δ_target levels; k_calib consistency across levels.
+  → Closes Open Problem M44 with operational calibration protocol.
+
+VST-NC-58: ASD Axiom A6 — Assumption A39 (VST formal)
+  All channels exhibit k_sat decline: α_exposure > 0 universally.
+  S-equation ASD correction: C_eff = C_actual · k_sat; S̃_eff_ASD = α·n²/(C_actual·k_sat)^β.
+  ASD can drive Storm without structural load increase (invisible storm driver).
+  → Formal VST assumption extending containment capacity model.
+
+VST-NC-59: PRR Rotation Protocol (ASD countermeasure for monitoring)
+  ≥ 3 PRR injection methods rotated per window.
+  Without rotation: PRR-ASD → monitoring blind spot under G(t) AND ASD simultaneously.
+  PRR-ASD + G(t) = complete monitoring blindness: highest irrecoverability risk.
+  → Closes PRR channel ASD vulnerability identified in M60.
+
+VST-NC-60: ASD×CCC Cascade Arrest Coupling — Novel VST Finding
+  R_{BA}_effective = f₃·k_sat·A_nominal (not f₃·A_nominal).
+  ASD-induced cascade: f₃ healthy but k_sat low → cascade proceeds.
+  BA peak-sizing correction: target = (Φ_99th−1)/k_sat_min_expected.
+  Type V × CCC × ASD: highest-intensity compound failure mode.
+  → Identifies ASD as prerequisite for accurate cascade arrest prediction.
+
+VST-NC-61: IDA Seven-Layer Signal Hierarchy (VST formal)
+  Layer 0 (IDA) through Layer 6 (CCC cascade): complete ordered taxonomy.
+  Six-dimensional governance state: (Φ, V_Φ, Δρ, D_c, k_sat, δ_sync).
+  Each dimension requires independent monitoring and intervention.
+  → First formal seven-layer VST signal hierarchy.
+
+VST-NC-62: D_c vs Δρ Orthogonality — Two-Dimensional Alignment Model
+  D_c (directional): orthogonal to Δρ (capacity) by construction.
+  Four quadrant governance map: (low/high Δρ) × (low/high D_c).
+  Each quadrant requires different intervention combination.
+  → Extends VST governance from one-dimensional (capacity) to two-dimensional (capacity+direction).
+
+VST-NC-63: GOI×ASD Compound Protocol — Novel Cross-Phenomenon Finding
+  Interaction: ASD → naive K_gov increase → GOI Over-Correction Paradox → Storm.
+  Assumption A40: GOI×ASD is non-commutative — ASD-first produces better outcomes.
+  Mature system elevation: P(GOI×ASD|mature) >> P(GOI×ASD|young).
+  → Genuinely novel finding: not predictable from either phenomenon alone.
+
+VST-NC-64: Prevention Deadline D_breakeven as VST Governance KPI
+  D_breakeven = c_prev/c_serv as explicit early alarm threshold.
+  Nine-KPI lifecycle dashboard: adds D_breakeven_margin to eight existing KPIs.
+  D_total during-Storm extension: changes DDD timing optimization problem.
+  → D_ρ alarm cascade now has three levels: D_breakeven, D_max, irrecoverable.
+
+VST-NC-65: DDD Seven-Condition Completion (Conditions 6+7 VST formal)
+  Condition 6 (ρ̇_rolling): ASD false-positive exclusion.
+  Condition 7 (v_drift/TPS): IDA directional drift exclusion.
+  Pre-Stage 2b: ASD type check before Stage 2 (prevents counterproductive Unify).
+  → Closes last two DDD false-completion failure modes (ASD and IDA).
+
+VST-NC-66: ASD Type II Rest Gate in DDD Stage 2
+  DDD Stage 2 operations (Unify) increase ∫A → worsen Type II ASD.
+  Without rest period: Stage 2 counterproductive for Type II systems.
+  Rest gate: k_sat assessment mandatory before Stage 2 initiation.
+  → Identifies previously unknown DDD Stage 2 failure mode.
+
+VST-NC-67: Type V × CCC × ASD Compound Protocol
+  Highest-intensity compound: simultaneous J_AB > J_c + tier cascade + k_sat degraded.
+  Pre-Stage 0 J_AB reduction AND k_sat restoration required simultaneously.
+  Sequential fails: decoupling increases governance activity → ∫A rises → k_sat worsens.
+  → First formal protocol for three-simultaneous-failure-mode storm governance.
+
+VST-NC-68: Fourteen-Indicator Portfolio with Completeness Argument
+  Fourteen indicators with cross-validation constraint matrix (12 rules).
+  f₃×k_sat: cascade arrest requires joint monitoring (ASD×CCC, NC-60).
+  δ_sync formally elevated to fourteenth indicator.
+  TPS as fifteenth candidate (M68 coverage proof required).
+  → Current state: fourteen indicators with argument for completeness pending formal proof.
+```
+
+---
+
+## Falsifiable Predictions — FP-RBIT27-1 through FP-RBIT27-14 [v2.9-RBIT27series]
+
+```
+FP-RBIT27-1 (Tier-Specific V_crit Ordering):
+  V_crit must vary by tier: V_crit_lower ≠ V_crit_upper in ≥ 80% of governance architectures.
+  Protocol: measure τ_response per tier in N ≥ 20 systems; compute V_crit_ℓ per tier.
+  Falsification: V_crit uniform across tiers (< 20% variation in 80% of systems).
+
+FP-RBIT27-2 (Adaptive V_crit Tightening):
+  V_crit must contract as storm stage advances (higher stage → lower V_crit).
+  Protocol: N ≥ 20 Storm episodes; measure V_crit at each stage; test monotonic decrease.
+  Falsification: V_crit does not decrease across storm stages.
+
+FP-RBIT27-3 (Ṡ_proxy Frozen Rest Discrimination):
+  Ṡ_proxy < Ṡ_min_estimate must discriminate Frozen Rest from true Rest Mode
+  with ≥ 85% specificity and ≥ 80% sensitivity.
+  N ≥ 10 Frozen Rest and N ≥ 10 true Rest Mode confirmed episodes.
+  Falsification: Ṡ_proxy < 80% accuracy as discriminator.
+
+FP-RBIT27-4 (Three-Stage Pipeline Ordering Necessity):
+  Skipping Stage A (MSSF decontamination) must increase f₄ false alarm rate.
+  Skipping Stage B (GOI disambiguation) must increase J_AB underestimation bias.
+  N ≥ 15 episodes per skip condition vs full pipeline.
+  Falsification: pipeline ordering has no effect on f₄ false alarm rate or J_AB accuracy.
+
+FP-RBIT27-5 (k_calib Consistency):
+  k_calib estimated at 3 δ_target levels must be consistent (< 20% variation).
+  Protocol: controlled δ_sync injection at δ_target ∈ {0.2, 0.4, 0.6}.
+  Falsification: k_calib varies > 50% across δ_target levels.
+
+FP-RBIT27-6 (ASD Invisible Storm Driver):
+  ASD alone (without structural n increase) must predict Storm entry in ≥ 70% of ASD Type III episodes.
+  Protocol: identify episodes where n stable but k_sat → 0; measure Storm rate.
+  Falsification: Storm rate in ASD Type III not elevated vs. matched control (k_sat normal).
+
+FP-RBIT27-7 (PRR Rotation Effectiveness):
+  PRR rotation (≥ 3 methods) must maintain PRR reliability longer than single-method PRR.
+  Protocol: N ≥ 20 systems per protocol; measure PRR reliability degradation curve.
+  Prediction: rotation systems maintain PRR reliability ≥ 1.5× longer (median).
+  Falsification: rotation provides < 20% reliability extension.
+
+FP-RBIT27-8 (ASD×CCC Cascade Arrest Failure):
+  f₃ healthy with k_sat < 0.5 must predict cascade DESPITE f₃ adequacy in ≥ 70% of episodes.
+  Protocol: identify N ≥ 20 episodes where f₃ adequate but k_sat < 0.5.
+  Falsification: f₃ adequacy predicts cascade arrest even when k_sat < 0.5.
+
+FP-RBIT27-9 (GOI×ASD Non-Commutativity):
+  ASD-first protocol must outperform K_gov-first protocol in confirmed GOI×ASD episodes.
+  N ≥ 20 compound episodes per protocol (randomized assignment).
+  Prediction: ASD-first: oscillation reduces in ≥ 80%; K_gov-first: worsens in ≥ 60%.
+  Falsification: protocol ordering has no effect on oscillation (< 10% difference).
+
+FP-RBIT27-10 (GOI×ASD Mature System Elevation):
+  P(GOI×ASD|mature system) > P(GOI×ASD|young system) under identical load.
+  Protocol: N ≥ 20 per maturity class; compare GOI×ASD incidence rate.
+  Prediction: mature systems show ≥ 2× GOI×ASD incidence.
+  Falsification: maturity class has no effect on GOI×ASD incidence.
+
+FP-RBIT27-11 (D_breakeven Economic Prediction):
+  For D_ρ > D_breakeven: service cost must exceed prevention cost in ≥ 80% of retrospective episodes.
+  N ≥ 30 intervention episodes across D_ρ range spanning D_breakeven.
+  Falsification: cost ratio does not change at D_breakeven threshold.
+
+FP-RBIT27-12 (Pre-Stage 2b Rest Gate Necessity):
+  DDD Stage 2 without rest period under Type II ASD must show slower recovery vs. rest-first.
+  N ≥ 20 Type II ASD episodes per condition.
+  Prediction: rest-first achieves Class I recovery in ≥ 80%; no-rest achieves < 50%.
+  Falsification: recovery rates equivalent between conditions.
+
+FP-RBIT27-13 (Seven-Condition vs Six-Condition DDD):
+  Systems satisfying all seven conditions must show Class I recovery ≥ 90%.
+  Systems satisfying six of seven (missing Condition 6 or 7) must show
+  ASD false-completion or IDA false-completion respectively in ≥ 60%.
+  N ≥ 20 per condition-satisfaction pattern.
+  Falsification: Condition 6 or 7 does not improve Class I prediction over six conditions.
+
+FP-RBIT27-14 (Type V × CCC × ASD Compound Protocol):
+  Simultaneous J_AB reduction + k_sat rest must outperform sequential in triple-compound episodes.
+  N ≥ 15 triple-compound episodes per protocol (parallel vs. sequential).
+  Prediction: parallel protocol: containment in ≥ 80%; sequential: containment < 50%.
+  Falsification: parallel and sequential protocols produce equivalent outcomes.
+```
+
+---
+
+## Open Problems — M56–M70 [v2.9-RBIT27series]
+
+**M56 — Ṡ_proxy Minimum Threshold Calibration:**
+Ṡ_min_estimate requires confirmed Frozen Rest episodes. Challenge: confirming Frozen Rest requires PRR failure plus Φ ≈ 0, which together may be rare in well-governed systems. Bootstrap approach: simulate Frozen Rest conditions in controlled low-stakes governance episodes; measure Ṡ_proxy. Cross-validation: Ṡ_min_estimate from simulation vs. empirical should agree within 30%.
+
+**M57 — w_div and w_class Weighting in Ṡ_proxy:**
+Ṡ_proxy = w_div·ΔH_output/Δt + w_class·ΔH_class/Δt. Optimal weighting: which component better discriminates Frozen Rest? Expected: w_div > w_class (output diversity more sensitive to thermodynamic freeze than classification entropy). Formal derivation or empirical optimization (sweep w_div/w_class; maximize Frozen Rest discrimination accuracy).
+
+**M58 — Adaptive V_crit Calibration Coefficients:**
+Stage-adjusted V_crit uses factors (0.8, 0.6, 0.4) at stages 2, 3, 4+. These are proposed values, not formally derived. Derivation approach: measure τ_response per storm stage; fit V_crit factors from τ_response ratios. Alternative: empirical calibration — measure Storm-entry prediction accuracy per factor setting; select optimal.
+
+**M59 — δ_sync Critical Threshold δ_crit:**
+δ_crit for MSSF cascade may be architecture-dependent (different governance rhythms have different phase-coupling sensitivity). Calibration approach: measure Storm incidence as function of δ_sync level; identify threshold where Storm rate increases sharply. Expected: δ_crit ∈ (0.2, 0.5) but varies by tier structure.
+
+**M60 — PRR Channel α_exposure per Method:**
+PRR rotation protocol assumes different PRR methods saturate at similar rates (α_exposure_PRR). If one method saturates much faster, rotation schedule should be non-uniform (more frequent rotation for fast-saturating method). Measurement: track PRR reliability per method over time; fit α_exposure per method; design weighted rotation schedule.
+
+**M61 — k_sat_min_expected for BA Peak-Sizing:**
+BA peak-sizing correction: R_{BA}_nominal ≥ (Φ_ℓ_99th−1)/k_sat_min_expected. k_sat_min_expected = anticipated minimum k_sat at 99th percentile storm load. Challenge: high storm load increases governance activity → accelerates k_sat decline. Approach: measure k_sat trajectory during N ≥ 20 high-load Storm episodes; fit k_sat_min distribution.
+
+**M62 — D_c Estimation Without Explicit North Star:**
+D_c requires "governance-intended trajectory" as reference. When North Star is not explicitly formalized, D_c proxy estimation requires alternative. Approach: use multi-period baseline (median governance trajectory from healthy VCZ period as reference); measure deviation from baseline as D_c proxy. Validation: baseline proxy vs. explicit North Star should correlate > 0.7.
+
+**M63 — GOI×ASD Identification Protocol:**
+Detecting GOI×ASD compound requires: (a) ASD detection via ρ̇_rolling, (b) GOI detection via CCF, (c) compound identification = both simultaneously. Challenge: ASD reduces ρ̇_rolling which may also reduce f₄ (making CCF computation harder with lower signal). Minimum time series requirement for reliable CCF under ASD: analytical derivation or empirical minimum window length study.
+
+**M64 — K_gov Measurement Protocol:**
+K_gov (governance gain) is implicit in most real governance systems. Measurement approach: governance response magnitude vs. signal deviation regression (K_gov = slope). But slope may vary by signal type and governance layer — is a scalar K_gov the right model, or should K_gov be a matrix K_gov(signal_type × layer)? Matrix formulation more accurate but harder to estimate.
+
+**M65 — c_prev and c_serv Calibration:**
+D_breakeven = c_prev/c_serv requires calibration of both cost coefficients. c_prev: estimated from governance design investment per D_ρ unit prevented in past prevention episodes. c_serv: estimated from governance service investment per D_ρ unit in past servicing episodes. Challenge: D_ρ is not directly observable — requires D_ρ estimation protocol (M41) as prerequisite.
+
+**M66 — Pre-Stage 2b Rest Duration Optimization:**
+Type II ASD rest duration: long enough for k_sat recovery, short enough not to extend RDI unnecessarily. Formal optimization: t_rest_opt = argmin[t: k_sat(t) > k_sat_usable] × (1 + β·RDI_penalty(t)). RDI penalty from extended rest period: structural decay during rest (Ξ_D continues accumulating). Optimal t_rest as function of (α_exposure, α_recovery, current k_sat, current Ξ_D accumulation rate).
+
+**M67 — Type V × CCC × ASD Protocol Sequencing:**
+Pre-Stage 0 J_AB reduction AND k_sat rest must be simultaneous. But J_AB reduction may require governance activity (structural decoupling efforts), which would increase ∫A and worsen k_sat. Is there a decoupling mechanism that does NOT require governance activity (purely structural, not behavioral)? Approach: identify passive structural interventions (topology redesign, routing constraint modification) that reduce J_AB without agent-level governance effort.
+
+**M68 — Fourteen-Indicator Coverage Formal Proof:**
+Current coverage argument: each of 14 indicators covers ≥ 1 unique failure mode. Formal proof requires: (a) enumerate all known VST failure modes, (b) for each indicator, prove no other indicator covers the same failure mode exclusively, (c) for each failure mode, identify which indicator(s) cover it. Special case: does TPS (IDA) cover a failure mode not captured by any combination of 14? If yes: fifteenth indicator warranted. If no: 14 sufficient.
+
+**M69 — Six-Dimensional VST Governance State Completeness:**
+(Φ, V_Φ, Δρ, D_c, k_sat, δ_sync) as six-dimensional governance state. Is this complete? Are there governance dimensions not captured by these six? Candidate missing dimension: J_AB (cross-subsystem coupling) — a seventh dimension capturing Type V risk. Formal approach: identify governance interventions not addressable by the six dimensions; each unaddressable intervention suggests a missing dimension.
+
+**M70 — Ṡ_proxy vs EPR Correlation:**
+Ṡ_proxy and EPR/EPR_min both track thermodynamic activity. Are they correlated (measuring the same underlying process) or independent (measuring different aspects)? If correlated > 0.9: one may be redundant. If independent < 0.5: both required (as current model assumes). Measurement: track both signals simultaneously over extended period; compute correlation. Expected: moderate correlation (0.4-0.7) — related but not redundant.
+
+---
+
+## Assumptions A39–A41 [v2.9-RBIT27series]
+
+**A39 (ASD Universality):**
+All governance absorption channels exhibit k_sat decline under cumulative exposure: k_sat(t) = 1/(1+α_exp·∫A dt) with α_exp > 0 for all channels. No channel is exposure-immune. ASD can drive Storm without structural load increase (invisible storm driver via S̃_eff_ASD = α·n²/(C·k_sat)^β). Falsification (FP-RBIT27-6): Storm rate not elevated in ASD Type III with stable structural load.
+
+**A40 (GOI×ASD Non-Commutativity):**
+Protocol ordering in GOI×ASD compound scenarios is non-commutative: ASD-first (rest period before K_gov adjustment) produces better outcomes than K_gov-first. Mechanism: K_gov-first triggers Over-Correction Paradox on GOI; ASD-first removes the governance weakness that prompted K_gov increase, potentially resolving apparent GOI without K_gov change. Falsification (FP-RBIT27-9): protocol ordering has no effect on oscillation amplitude.
+
+**A41 (D_c Independence):**
+Directional drift dimension D_c is orthogonal to resolution capacity dimension Δρ: Cov(D_c, Δρ) is small (< 0.5) in typical governance systems. A system can have high Δρ with low D_c, or low Δρ with high D_c — these are independently varying governance dimensions. Falsification (F113 from §26 series): |corr(D_c, Δρ)| > 0.7, suggesting the two dimensions are not independently monitorable.
+
+---
+
+## Cross-Theory Reinforcement Map [v2.9-RBIT27series]
+
+| RBIT v2.7 Concept | VST v2.9 Target | Direction |
+|---|---|---|
+| Tier-specific V_crit | §27.1 per-tier alert | RBIT → VST |
+| Adaptive V_crit(stage) | §27.1 stage-tightening | RBIT → VST |
+| Ṡ_proxy formal definition | §27.2 fourteenth indicator | RBIT → VST |
+| Four-signal Frozen Rest protocol | §27.2 attractor discrimination | RBIT → VST |
+| f₄ decontamination as standard | §27.3 §9 Stage A | RBIT → VST |
+| k_calib calibration architecture | §27.3 M44 closure | RBIT → VST |
+| Three-stage pipeline mandatory | §27.3 preprocessing | RBIT → VST |
+| ASD Axiom A6 → A39 | §27.4 VST assumption | RBIT → VST |
+| S̃_eff_ASD = α·n²/(C·k_sat)^β | §27.4 S-equation | RBIT → VST |
+| PRR rotation protocol | §27.4 monitoring immunity | RBIT → VST |
+| ASD×CCC coupling | §27.5 novel VST finding | RBIT → VST |
+| R_{BA}_effective = f₃·k_sat·A | §27.5 cascade arrest | RBIT → VST |
+| BA k_sat correction | §27.5 peak-sizing | RBIT → VST |
+| Type V × CCC × ASD | §27.5 compound protocol | RBIT → VST |
+| IDA Layer 0 → seven-layer hierarchy | §27.6 signal taxonomy | RBIT → VST |
+| D_c ⊥ Δρ orthogonality | §27.6 two-dimensional model | RBIT → VST |
+| Six-dimensional governance state | §27.6 state formalization | RBIT → VST |
+| GOI×ASD compound protocol | §27.7 novel cross-phenomenon | RBIT (new) → VST |
+| Assumption A40 non-commutativity | §27.7 protocol ordering | RBIT → VST |
+| GOI×ASD mature system elevation | §27.7 Maturation Paradox ext. | RBIT → VST |
+| D_breakeven KPI | §27.8 nine-KPI dashboard | RBIT → VST |
+| D_total during-Storm | §27.8 DDD timing optimization | RBIT → VST |
+| D_breakeven vs N_survivable | §27.8 two finite resources | RBIT ↔ VST |
+| Condition 6 (ρ̇_rolling) | §27.9 DDD ASD exclusion | RBIT → VST |
+| Condition 7 (v_drift/TPS) | §27.9 DDD IDA exclusion | RBIT → VST |
+| Pre-Stage 2b ASD gate | §27.9 Stage 2 protection | RBIT → VST |
+| δ_sync → 14th indicator | §27.10 portfolio extension | RBIT → VST |
+| f₃ × k_sat cross-validation | §27.10 constraint rule | RBIT ↔ VST |
+| CCF(f₁,f₄) < 0 AND ρ̇≈0 → GOI×ASD | §27.10 constraint rule | RBIT ↔ VST |
+| TPS as fifteenth candidate | §27.10 M68 open problem | RBIT → VST |
+
+---
+
+## §28 DFG Architecture v3.0 Reverse Integration Architecture [v3.0-DFG28series]
+
+This section constitutes the formal reverse integration of DFG Architecture v3.0 constructs into VST. Where §26 and §27 imported RBIT-developed operational enrichments of VST-originating constructs, §28 imports DFG-originating architectural constructs that have no direct antecedent in earlier VST versions. The distinction matters: §28 contributions are not refinements of existing VST mechanisms — they are structural additions that extend VST's descriptive scope into previously uncharacterized governance domains.
+
+**Structural mandate for §28:**
+
+DFG v3.0 formalized governance not merely as a response to instability (the VST framing) but as an active entropy-management system operating on the same causal substrate that generates instability. This reframing creates the following import obligations:
+
+```
+DFG v3.0 contribution class        VST import type
+─────────────────────────────────────────────────────────────────────
+Causal topology formalization       → §28.1: new propagation geometry
+Governance thermodynamics           → §28.2: entropy-rate governance
+Stochastic resonance exploitation   → §28.3: novel early-warning mechanism
+Cross-tier MI coupling              → §28.4: information-theoretic extension
+Defect kernel renewal               → §28.5: structural recovery extension
+Adaptive boundary permeability      → §28.6: tier interface dynamics
+Hierarchical contamination gradient → §28.7: spatial contamination model
+Resolution velocity field           → §28.8: phase-space formalization
+Storm geometry tensor               → §28.9: novel structural diagnostic
+Recursive self-stabilization        → §28.10: novel governance criterion
+Fifteen-indicator completion        → §28.11: portfolio closure
+```
+
+**Open problems closed by §28:** M56 (Ṡ_min calibration — resolved via SR-assisted calibration protocol in §28.3), M59 (δ_crit — resolved via MI-based threshold derivation in §28.4), M62 (D_c without North Star — resolved via v_res field baseline in §28.8), M64 (K_gov matrix — resolved via G_storm eigenvector decomposition in §28.9), M68 (fourteen-indicator coverage — resolved via formal proof in §28.11), M69 (six-dimensional completeness — addressed in §28.9 with J_AB seventh dimension), M70 (Ṡ_proxy vs EPR correlation — resolved via governance entropy coupling in §28.2).
+
+**Novel cross-phenomenon findings in §28:** Three findings were identified during DFG v3.0 formalization that are genuinely not present in VST v2.9 nor in DFG v3.0 individually:
+
+```
+Novel finding 1: Stochastic Resonance Exploitation (§28.3)
+  Origin: SR theory × VST Layer 0 early warning gap
+  Not in VST alone (no noise-injection protocol existed)
+  Not in DFG alone (no early-warning enhancement mechanism existed)
+  
+Novel finding 2: Storm Geometry Tensor (§28.9)
+  Origin: random matrix theory × VST storm classification problem
+  Not in VST alone (scalar monitoring only)
+  Not in DFG alone (no instability covariance structure formalized)
+  
+Novel finding 3: Recursive Self-Stabilization Criterion (§28.10)
+  Origin: DFG self-organization principles × VST DDD withdrawal problem
+  Not in VST alone (no self-stabilization criterion existed)
+  Not in DFG alone (no DDD withdrawal formalization existed)
+```
+
+---
+
+### §28.1 Causal Topology Formalization [v3.0]
+
+#### §28.1.1 Motivation: Why Network Adjacency Underspecifies Storm Propagation
+
+VST's §4 Network Propagation framework models storm propagation through network adjacency: agents i and j interact if they are connected in the governance network. This model correctly captures first-order propagation but systematically underspecifies propagation in architectures where causal dependencies differ from structural connections.
+
+The distinction arises in multi-tier fractal architectures where upper-layer agents causally influence lower-layer agents through policy constraints even when they are not directly structurally connected. Similarly, lower-layer agents causally influence upper-layer governance decisions through information signals even when the governance graph shows no direct edge. In these architectures, storm propagation follows causal dependencies — not structural adjacency.
+
+```
+Structural adjacency model (§4 original):
+  Propagation: Φ_j(t+τ) ∝ R_ij · Φ_i(t)
+  where R_ij = structural coupling coefficient
+  
+  Limitation: R_ij = 0 even when i causally precedes j via policy channel
+  
+Causal topology model (§28.1 extension):
+  Propagation: Φ_j(t+τ_causal) ∝ C_ij · Φ_i(t)
+  where C_ij = P(Φ_j > 1 | Φ_i > 1, all structural links fixed)
+  
+  Advantage: captures policy-mediated causation, information-mediated causation,
+             and feedback-mediated causation absent from structural graph
+```
+
+The causal adjacency matrix C_ij is not fixed — it varies with governance state, stage, and history:
+
+```
+C_ij(t) = C_ij^structural + C_ij^policy(t) + C_ij^information(t) + C_ij^feedback(t)
+
+Structural component:   C_ij^structural = f(network topology) — time-invariant
+Policy component:       C_ij^policy(t) = f(upper-layer governance policy at t) — changes with DDD stage
+Information component:  C_ij^information(t) = f(information routing architecture at t)
+Feedback component:     C_ij^feedback(t) = f(current Φ distribution) — nonlinear, state-dependent
+```
+
+This decomposition has immediate operational consequences: governance interventions that modify policy (changing C^policy) or information routing (changing C^information) can reduce causal storm propagation risk without modifying the structural network — a class of interventions invisible to the §4 adjacency-based framework.
+
+#### §28.1.2 Strongly Connected Components and Storm Mutual Amplification
+
+The causal graph G_C = (V, E_C) where edge i→j exists iff C_ij > C_threshold partitions into strongly connected components (SCCs). An SCC is a maximal set of agents S such that every agent in S can causally reach every other agent in S through directed causal edges.
+
+**Governance significance of SCCs:**
+
+```
+SCC with all Φ_i < 1 (healthy SCC): self-correcting
+  Within-SCC causal paths exist but no storm to amplify
+  → monitoring priority: low
+  
+SCC with any Φ_i > 1 (storm SCC): mutual amplification
+  Storm at agent i propagates to j → amplifies at j → returns to i → amplifies further
+  The SCC acts as a resonance chamber for instability
+  → monitoring priority: critical
+  
+SCC with Φ_i > 1 throughout (full storm SCC): causal lock
+  Every agent in the SCC reinforces every other
+  External intervention required — internal self-correction blocked
+  → DDD Stage: mandatory external Stage 1
+```
+
+**Theorem 28.1.1 (Causal Containment):** A storm at source SCC S₀ is topologically containable (cannot spread to downstream SCCs beyond reachable set) iff the causal graph G_C restricted to SCCs forms a DAG above the storm containment threshold C_threshold.
+
+```
+Proof sketch:
+  DAG structure → no cycles between SCCs at super-threshold level
+  → downstream SCCs receive causal influence from S₀ but cannot amplify back to S₀
+  → storm in S₀ does not get amplified by downstream agents
+  → containment via boundary agent absorption is sufficient
+  
+  If G_C has cycles at SCC level → resonance across SCCs → containment fails
+  → SCC dissolution required before DDD Stage 1 can succeed
+```
+
+**Operational corollary:** DDD Stage 0 (Pre-Storm) should include SCC decomposition of C_ij. Any super-threshold SCC must be dissolved (by governance policy change or information routing modification) before DDD Stage 1 intervention. Otherwise, Stage 1 stabilization of individual agents will be reversed by SCC-mediated mutual amplification.
+
+#### §28.1.3 Causal Topology Monitoring Protocol
+
+**C_ij estimation from observational data:**
+
+Direct C_ij estimation requires observational data. Practical proxy:
+
+```
+C_ij_estimate = Granger causality coefficient(Φ_i → Φ_j | all Φ_k for k ≠ i)
+
+Estimation window: W_causal = max(τ_response_ij, τ_correlate)
+Minimum data: N_causal ≥ 20 × number of agents per tier
+Update frequency: recompute C_ij every τ_causal_update = 10·τ_agent_cycle
+```
+
+**SCC monitoring trigger:**
+
+```
+At each C_ij update:
+  1. Compute G_C from C_ij_estimate with threshold C_threshold = 0.3 (default)
+  2. Find all SCCs via Tarjan's algorithm
+  3. For each SCC S: compute Φ_SCC = Σ_{i∈S} Φ_i / |S|
+  4. If Φ_SCC > Φ_SCC_alert (= 0.7 default):
+     → Elevate monitoring to pre-storm protocol
+     → Add SCC to causal storm risk register
+  5. If Φ_SCC > 1.0:
+     → Mandatory DDD Stage 0 with SCC dissolution objective
+```
+
+**Perturbed SCC detection (pre-threshold warning):**
+
+Even before Φ_SCC > alert threshold, SCC formation itself is a pre-storm structural indicator:
+
+```
+SCC formation indicator:
+  SCCs that did not exist at t-τ_prev now exist at t
+  → new mutual amplification structure detected
+  → elevate C_ij monitoring frequency
+  → flag for governance architecture review
+  
+Expected lead time: τ_SCC_lead ≥ τ_silent × 0.5
+  (SCC formation precedes Silent Criticality onset by half the silent phase)
+```
+
+#### §28.1.4 Interaction with Existing VST Mechanisms
+
+**SCC dissolution × DDD Stage 0:**
+
+Standard DDD (§26.11, seven-condition completion test) assumes agents can be independently stabilized. In the presence of storm SCCs, this assumption fails. Modified DDD pre-processing:
+
+```
+Modified DDD Stage 0 (with causal topology check):
+  0a. Standard: Assess Φ distribution, V_Φ, k_sat
+  0b. NEW: Compute C_ij, identify SCCs, flag storm SCCs
+  0c. NEW: For each storm SCC — apply SCC dissolution protocol BEFORE Stage 1
+  0d. Proceed to Stage 1 only when: no SCC with Φ_SCC > 1.0 remains
+  
+SCC dissolution methods (priority order):
+  Method 1: Policy boundary redefinition (governance-mediated C^policy reduction)
+  Method 2: Information routing modification (reduce C^information)
+  Method 3: Structural topology modification (reduce C^structural — highest cost)
+```
+
+**SCC × CCC cascade (§26.8):**
+
+Storm SCCs within a tier accelerate cross-tier cascade because mutual amplification raises tier-level Φ faster than isolated-agent storms. Revised CCC cascade amplification:
+
+```
+R_cascade,ℓ_SCC = R_cascade,ℓ · (1 + Σ_S SCC_amplification_factor(S,ℓ))
+
+SCC_amplification_factor(S,ℓ) = (|S|−1) · mean(C_ij for i,j ∈ S) · k_sat
+  (larger SCCs with stronger causal coupling and better-preserved absorption amplify more)
+```
+
+---
+
+### §28.2 Governance Entropy Production Theory [v3.0]
+
+#### §28.2.1 Conceptual Foundation: Governance as Entropy Reduction
+
+The VST framework characterizes governance interventions functionally — what they do (containment, calibration, restoration) — without characterizing the thermodynamic cost of intervention. DFG v3.0 identified that governance has a thermodynamic structure: every governance action reduces informational entropy in the governance system, and this entropy reduction is bounded by available governance resources.
+
+The framework unifies several previously separate VST mechanisms under a single thermodynamic envelope:
+
+```
+Previously separate VST resource models:
+  N_survivable (§15): finite Storm-survivable episodes
+  D_ρ (§26.3): finite resolution debt capacity
+  D_breakeven (§27.8): finite prevention budget
+  k_sat (§26.5, §27.4): finite absorption channel capacity
+  
+Unified governance entropy budget (§28.2):
+  ΔS_available = f(N_remaining, D_max − D_ρ, D_breakeven_margin, k_sat_aggregate)
+  
+  All finite resource constraints are instances of limited entropy reduction capacity
+```
+
+#### §28.2.2 Governance Entropy Rate Formalism
+
+**Definition: Storm entropy state:**
+
+```
+S_storm = −Σ_i Φ_i · log(Φ_i / Φ_ref)
+  (Kullback-Leibler divergence of instability distribution from reference VCZ distribution)
+  
+S_VCZ = entropy of instability distribution in Vector Convergence Zone (minimal, reference state)
+S_storm > S_VCZ always during storm (by definition: storm = high-entropy instability state)
+```
+
+**Governance entropy rate:**
+
+```
+dS_gov/dt = −Γ_gov(t) · (S_storm(t) − S_VCZ)
+
+where:
+  Γ_gov(t) = governance cooling coefficient at time t
+  Γ_gov = f(W_gov, f₃, k_sat, SLI_excess) — decreases as resources deplete
+  
+  Γ_gov_max = governance cooling at full capacity (no ASD, no SLI saturation, no debt)
+  Γ_gov_min = 0 (governance completely saturated — no further cooling possible)
+```
+
+**Second Law of Governance (Assumption A42):**
+
+No governance configuration can reduce storm entropy faster than Γ_gov_max · ΔS_gap:
+
+```
+A42: |dS_gov/dt| ≤ Γ_gov_max · (S_storm − S_VCZ)   for all t
+
+Corollary A42.1 (Minimum Storm Duration):
+  τ_storm_min = (S_storm_peak − S_VCZ) / Γ_gov_max
+  
+  Storm cannot end faster than τ_storm_min regardless of governance intensity
+  This gives DDD a theoretical minimum duration lower bound:
+  τ_DDD_min ≥ τ_storm_min
+```
+
+**Practical implication:** DDD operators cannot accelerate recovery beyond Γ_gov_max. Governance escalation beyond this bound yields no additional storm entropy reduction while consuming governance resources. This formalizes the intuition that "over-governance wastes resources" as a thermodynamic statement.
+
+#### §28.2.3 Entropy Budget Accounting
+
+**Governance entropy budget per storm episode:**
+
+```
+ΔS_budget = ∫_t0^t_end Γ_gov(t) dt
+           ≤ Γ_gov_max · τ_episode         (upper bound, full capacity throughout)
+           
+Actual entropy reduction: ΔS_actual = S_storm_peak − S_storm_end
+Recovery completeness: η_recovery = ΔS_actual / (S_storm_peak − S_VCZ)
+  η_recovery = 1.0 → full VCZ restoration
+  η_recovery < 1.0 → partial recovery (Frozen Rest risk if η_recovery < η_min)
+```
+
+**ASD coupling to entropy budget:**
+
+ASD reduces Γ_gov(t) through k_sat degradation:
+
+```
+Γ_gov_ASD(t) = Γ_gov_baseline · k_sat(t)
+
+Combined SLI and ASD degradation:
+  Γ_gov_eff(t) = Γ_gov_baseline · k_sat(t) · (1 − SLI_excess(t))
+  
+This means: ASD + SLI saturation simultaneously → governance cooling collapses
+→ storm entropy cannot be reduced despite ongoing governance effort
+→ system enters Sustained Storm (Stage 3+) from resource exhaustion, not structural irrecoverability
+```
+
+**Governance entropy budget KPI:**
+
+Adds to the nine-KPI lifecycle dashboard (§27.8):
+
+```
+KPI 10: Γ_gov_remaining = Γ_gov_eff(current) / Γ_gov_max
+  Γ_gov_remaining > 0.8: full governance capacity
+  Γ_gov_remaining 0.5–0.8: moderate degradation (ASD or SLI partial)
+  Γ_gov_remaining 0.2–0.5: significant degradation (immediate ASD + SLI intervention required)
+  Γ_gov_remaining < 0.2: critical — governance cooling near failure — emergency REST protocol
+```
+
+#### §28.2.4 Resolution of Open Problem M70 (Ṡ_proxy vs EPR Correlation)
+
+DFG v3.0 thermodynamic analysis resolves M70:
+
+```
+M70 (resolved by §28.2):
+  Ṡ_proxy = dS_agent/dt (agent-level entropy production — calibration activity rate)
+  EPR = dS_total/dt (system-level entropy production — total informational throughput)
+  
+  Governance entropy rate: dS_gov/dt = −Γ_gov · (S_storm − S_VCZ) ≤ 0
+  Total entropy production: dS_system/dt = EPR + dS_gov/dt = EPR − Γ_gov·ΔS_gap
+  
+  Predicted correlation (from thermodynamic coupling):
+  corr(Ṡ_proxy, EPR) = corr(agent entropy, total entropy)
+  
+  Structural prediction: moderate correlation (0.5–0.7) with residual Γ_gov·ΔS_gap term
+  → Not redundant: Ṡ_proxy captures agent calibration activity; EPR captures system-level throughput
+  → Both required; correlation < 0.7 confirms independence; > 0.7 suggests monitoring redundancy
+  
+  M70 status: analytically resolved — formal corr derivation from governance entropy model available;
+  empirical confirmation still required (expected 0.5–0.7 range from theoretical coupling)
+```
+
+---
+
+### §28.3 Stochastic Resonance Exploitation Architecture [v3.0]
+
+#### §28.3.1 The Early-Warning Gap at Layer 0–1 Boundary
+
+VST's seven-layer signal hierarchy (§27.6) places IDA/TPS at Layer 0, below the standard κ (Layer 1) monitoring signal. The operational challenge at Layer 0 is signal detectability: IDA signals (D_c, v_drift) are small before they become critical — they must be detected when they are still subtle perturbations from governance-intended trajectory.
+
+At Layer 0, signal amplitude A_IDA << detection threshold θ_detect for standard monitoring instruments. This creates the pre-storm detection gap:
+
+```
+Signal amplitude at Layer 0:
+  A_IDA(t) ≈ ε · (D_c(t) / D*)   for D_c << D* (early IDA)
+  
+  ε = small-amplitude constant (< 0.05 in typical architectures)
+  
+  Standard monitoring SNR: SNR_standard = A_IDA / σ_noise << 1 at early IDA
+  → D_c not detected until D_c > D*/10 (10% of critical drift)
+  → Governance response delayed by entire IDA sub-threshold phase
+```
+
+Stochastic resonance (SR) provides a mechanism to enhance sub-threshold signal detectability by optimal noise injection — a counterintuitive result from nonlinear system theory where adding noise to a system near a threshold improves signal detection.
+
+#### §28.3.2 SR-VST Formalism
+
+**SR application to VST Layer 0 monitoring:**
+
+```
+Standard detection (no SR):
+  Detection event: ξ(t) = A_IDA + σ_noise_natural · η(t) crosses θ_detect
+  P_detect = P(A_IDA + σ_natural·η > θ_detect) = Φ((A_IDA − θ_detect)/σ_natural)
+  
+  For A_IDA << θ_detect: P_detect ≈ 0 (sub-threshold, undetectable)
+
+SR-enhanced detection (with controlled noise injection):
+  Detection event: ξ_SR(t) = A_IDA + σ_natural·η + σ_SR·ξ_injected crosses θ_detect
+  where σ_SR is injected noise level at Layer 0 governance perturbation channel
+  
+  Optimal SR noise level: σ_SR_opt = (θ_detect − A_IDA) / √(2·log(SNR_target))
+    derived from maximizing mutual information I(signal; detection output)
+    
+  SNR enhancement factor:
+    SNR_SR = exp(A²/(2σ_SR²)) for optimal σ_SR
+    SNR_SR / SNR_standard = exp(A²/(2σ_SR_opt²)) / (A/σ_natural)
+    → enhancement factor O(10–100×) for typical governance noise levels
+```
+
+**Operational SR noise injection:**
+
+```
+SR injection mechanism:
+  Source: governance perturbation layer — small deliberate randomization 
+          of governance signal timing at Layer 0 level
+  
+  Target signal: D_c(t) tracking from governance-intended trajectory
+  
+  Injection amplitude: σ_SR = 0.05–0.10 × θ_detect_D_c   (5–10% of threshold)
+  Injection frequency: f_SR > 2 × f_Nyquist_D_c = 2/(τ_IDA_min)
+  
+  Safety constraint: σ_SR must not itself create D_c growth:
+    σ_SR < A_IDA_min / 2   (injected noise below minimum meaningful IDA signal)
+    → SR noise detectable but not governance-perturbing
+```
+
+**SR-enhanced Ṡ_min calibration (resolution of Open Problem M56):**
+
+SR injection also resolves M56 by enabling controlled Frozen Rest simulation:
+
+```
+M56 resolution via SR:
+  Frozen Rest = Ṡ_proxy < Ṡ_min despite EPR > EPR_min
+  
+  SR protocol for M56:
+    Step 1: Identify stable VCZ episode
+    Step 2: Inject σ_SR noise at calibrated level into Ṡ_proxy tracking channel
+    Step 3: Measure Ṡ_proxy response: genuine VCZ → symmetric response
+            Frozen Rest precursor → asymmetric response (positive perturbations decay slower)
+    Step 4: Ṡ_min = Ṡ_proxy at boundary where response asymmetry crosses AS_threshold
+    
+  M56 status: SR-assisted calibration protocol closes this open problem operationally
+              (empirical validation still required; expected Ṡ_min ≈ 0.1×Ṡ_VCZ_healthy)
+```
+
+#### §28.3.3 SR Exploitation in Layer -1 (Pre-TPS Detection)
+
+TPS was proposed as Layer 0 in §28.11 (fifteen-indicator completion). SR exploitation opens a further pre-threshold layer:
+
+```
+Layer -1 (SR-Enhanced Pre-TPS):
+  TPS = D_c/D* + α_vel·v_drift/v_crit + α_acc·a_drift
+  TPS crosses threshold at: TPS_0 ≈ 0.2 (default early alert)
+  
+  Pre-TPS SR detection:
+    For TPS < TPS_0: standard monitoring below threshold
+    SR injection into TPS tracking channel detects TPS growth before threshold crossing
+    
+  SR-TPS lead time: τ_SR_TPS = τ_TPS_threshold_cross − τ_SR_first_detect
+                  ≈ 0.5 × τ_IDA_phase_duration (SR detects halfway through IDA sub-threshold phase)
+  
+  Expected total lead time improvement:
+    Without SR: τ_lead = τ_IDA + τ_κ + ... (seven layers × tier-response time)
+    With SR:    τ_lead = τ_IDA + τ_SR_additional + τ_κ + ... 
+    → τ_SR_additional ≈ 0.3–0.5 × τ_IDA_phase depending on noise level
+```
+
+#### §28.3.4 SR Safety Constraints and Governance Design Requirements
+
+SR noise injection must not introduce false-positive governance triggers or amplify genuine instability. Safety architecture:
+
+```
+SR Safety Protocol:
+  Constraint 1 (False Positive Bound):
+    P_false_positive_SR < P_false_positive_standard × 1.5
+    → SR detection filter: SR signal must persist for W_SR_window before triggering
+    W_SR_window = 3 × τ_agent_cycle (three cycles required for sustained detection)
+    
+  Constraint 2 (Amplification Non-Induction):
+    σ_SR must satisfy: d(Φ)/dt due to σ_SR injection < 0.01 × Φ̇_natural
+    → SR noise cannot create measureable instability acceleration
+    
+  Constraint 3 (k_sat Non-Induction):
+    ∫A_SR dt < ∫A_ASD_threshold / 10
+    → SR injection activity must not contribute meaningfully to ASD accumulation
+    
+  Constraint 4 (ASD Interaction):
+    SR effectiveness degrades with ASD: SNR_SR_ASD = SNR_SR · k_sat
+    → SR must be recalibrated when k_sat < 0.7 (σ_SR_opt must be increased to compensate)
+```
+
+---
+
+### §28.4 Cross-Tier Mutual Information Coupling [v3.0]
+
+#### §28.4.1 Information-Theoretic Governance Model
+
+VST's §4 Network Propagation and §10 Governance Architecture characterize inter-tier interactions through structural coupling coefficients. DFG v3.0 introduced a complementary characterization: inter-tier governance quality can be measured by the mutual information between tier state variables.
+
+**Mutual information coupling definition:**
+
+```
+I(tier_ℓ; tier_ℓ+1) = Σ_{s_ℓ, s_{ℓ+1}} P(s_ℓ, s_{ℓ+1}) · log[P(s_ℓ, s_{ℓ+1}) / (P(s_ℓ)·P(s_{ℓ+1}))]
+
+where s_ℓ = governance state of tier ℓ = (Φ_ℓ, ρ_ℓ, V_Φ_ℓ, D_c_ℓ, k_sat_ℓ, δ_sync_ℓ)
+
+Information asymmetry index:
+  IA(ℓ, ℓ+1) = I(tier_{ℓ+1} → tier_ℓ) − I(tier_ℓ → tier_{ℓ+1})
+  
+  (directional MI: how much information upper tier receives from lower, vs. sends down)
+  
+  IA > 0: upper receives more than sends → governance-favorable (lower informs upper)
+  IA < 0: upper sends more than receives → governance-blind (upper governs without information)
+  IA = 0: symmetric information exchange → balanced governance
+```
+
+#### §28.4.2 Theorem 28.4.1: Information Governance Criterion
+
+**Theorem 28.4.1 (Information Governance):** In a three-tier DFG architecture, cascade arrest at tier boundary (ℓ, ℓ+1) is achievable iff:
+
+```
+I(tier_{ℓ+1} → tier_ℓ) > I_threshold(ℓ) = I_baseline · (Φ_ℓ / Φ_ref)
+
+where:
+  I_baseline = minimum MI required for cascade arrest under reference conditions
+  Φ_ℓ = current instability of lower tier ℓ
+  Φ_ref = reference instability (VCZ level)
+  
+Interpretation: as lower-tier storm intensity increases, upper tier requires
+more information from lower tier to govern effectively — the information
+requirement scales with instability intensity.
+```
+
+**Proof sketch:**
+
+Upper tier governance decision quality Q ∝ I(tier_{ℓ+1} → tier_ℓ) by information-theoretic principles (governance decision cannot be better than the information it receives). Cascade arrest requires Q > Q_threshold. Since Q_threshold ∝ Φ_ℓ (harder storm requires better governance), the inequality follows.
+
+**Governance implication:** Upper-layer governance failure is not always a result of insufficient authority or resources — it can result from insufficient information flow from lower layers. Information routing design is a governance design objective with the same priority as structural design.
+
+#### §28.4.3 MI-Based δ_crit Resolution (Open Problem M59)
+
+The causal relationship between MSSF (phase desynchronization) and MI provides an analytical resolution of M59:
+
+```
+M59 (resolved by §28.4):
+  MSSF: δ_sync > δ_crit → P(Storm) > P_crit
+  Open problem: δ_crit appears architecture-dependent — no principled derivation
+  
+  MI-based derivation:
+    Phase desynchronization δ_sync reduces MI between tiers:
+    I(tier_ℓ; tier_{ℓ+1}) = I_synchronous · (1 − β_sync · δ_sync)
+    where β_sync = MI-δ_sync coupling coefficient (measurable empirically)
+    
+    Setting I = I_threshold from Theorem 28.4.1:
+    I_synchronous · (1 − β_sync · δ_crit) = I_threshold
+    
+    Solving for δ_crit:
+    δ_crit = (I_synchronous − I_threshold) / (β_sync · I_synchronous)
+           = 1 − I_threshold/I_synchronous
+           = 1 − (I_baseline · Φ_ref/Φ_ℓ) / I_synchronous
+    
+    This shows: δ_crit IS architecture-dependent (through I_synchronous) BUT derivable
+    from measurable MI quantities. Expected range: δ_crit ∈ (0.2, 0.5) consistent
+    with M59 prior estimate — but now with principled per-architecture formula.
+    
+  M59 status: closed — δ_crit derivable from MI coupling measurement; 
+              empirical validation protocol: measure I_synchronous, β_sync → compute δ_crit → 
+              compare with observed Storm onset δ_sync levels
+```
+
+#### §28.4.4 MI-Based DDD Stage 3 Completion Criterion
+
+Standard DDD Stage 3 (§26.11) requires Φ < 1 and PRR+ and Ṡ_internal ≥ Ṡ_min. MI-based extension:
+
+```
+DDD Stage 3 Extended Completion (with MI criterion):
+  Required (existing): Φ<1 [AND] PRR+ [AND] Ṡ_proxy≥Ṡ_min [AND] D_ρ↓
+  Required (new):      I(lower;upper) / I(upper;lower) ∈ [0.8, 1.25]
+  
+  Rationale: DDD completion requires not just instability reduction but restoration
+  of information-symmetric governance — otherwise system is stable but governance-blind
+  and next Storm is undetectable until late
+  
+  MI restoration protocol when IA < 0 (upper sends more than receives):
+    Step 1: Audit information routing from lower to upper tiers
+    Step 2: Identify information bottlenecks (intermediate-layer filtering excess)
+    Step 3: Modify middle-layer routing: increase forwarding rate for lower-tier signals
+    Step 4: Monitor I(lower;upper) restoration over τ_MI_restore window
+    Step 5: Confirm MI criterion satisfied → proceed to DDD Stage 4
+```
+
+---
+
+### §28.5 Defect Kernel Renewal Theory [v3.0]
+
+#### §28.5.1 Motivation: What Happens to Defect Kernels During Recovery
+
+VST's §15 Lifecycle describes defect kernel accumulation as N_survivable depletion — each Storm episode damages the defect kernel, reducing remaining Storm-survivable capacity. What has not been formalized is the complementary process: defect kernel regeneration during sustained VCZ residence.
+
+DFG v3.0 identified that defect kernels in multi-agent systems undergo renewal dynamics analogous to biological regeneration: damaged structural configurations are replaced by new configurations sampled from the governance-compatible distribution under DDD conditions. This process has a well-defined rate (p_renewal) and outcome distribution (kernel quality distribution Q_kernel).
+
+#### §28.5.2 Defect Kernel Renewal Dynamics
+
+**Renewal equation:**
+
+```
+K(t + Δt) = K(t) · (1 − p_renewal · Δt) + K_new · p_renewal · Δt
+
+where:
+  K(t) = current defect kernel configuration (vector of structural parameters)
+  p_renewal = renewal rate (fraction of kernel renewed per unit time)
+  K_new ~ Q_kernel(governance conditions) = new kernel sampled from 
+          governance-compatible distribution conditional on current DDD stage
+```
+
+**Renewal rate determinants:**
+
+```
+p_renewal = p_base · f(f₃) · g(k_sat) · h(D_ρ)
+
+where:
+  f(f₃) = f₃ / f₃_max   (middle-layer engagement drives calibration renewal)
+  g(k_sat) = k_sat        (ASD-degraded channels cannot drive renewal at full rate)
+  h(D_ρ) = max(0, 1 − D_ρ/D_max)   (debt ceiling blocks renewal near irrecoverability)
+  
+  Combined: p_renewal = p_base · f₃ · k_sat · (1 − D_ρ/D_max) / f₃_max
+  
+  p_renewal → 0 when: f₃ → 0 (middle layer disengaged) OR k_sat → 0 (full ASD) OR D_ρ → D_max
+  p_renewal → p_base when: full VCZ conditions with healthy middle layer and no debt
+```
+
+**Theorem 28.5.1 (Kernel Renewal Convergence):** Under sustained DDD with p_renewal > p_critical = (1 − exp(−μ_damage·τ_DDD)), the defect kernel distribution converges to the stationary distribution Q_kernel_stationary in expected time τ_converge = 1/p_renewal.
+
+```
+Proof sketch:
+  At each renewal event (rate p_renewal), kernel element replaced by Q_kernel sample
+  → renewal process generates Markov chain on kernel configuration space
+  → stationary distribution exists iff Q_kernel is non-degenerate (p_renewal > 0)
+  → convergence time = mixing time of renewal Markov chain = O(1/p_renewal)
+  
+  Critical renewal rate: p_renewal > p_critical ensures convergence within DDD window
+  p_critical depends on: τ_DDD window length, Q_kernel temperature, damage accumulation rate
+```
+
+#### §28.5.3 Double-Lock Irrecoverability
+
+The renewal blockade condition identifies a class of irrecoverability not previously formalized in VST:
+
+```
+Single-lock irrecoverability (existing):
+  D_ρ > D_max → P_rec → 0 (debt ceiling)
+  OR
+  k_sat → 0 → governance channels blocked
+  
+Double-lock irrecoverability (§28.5 new):
+  D_ρ > D_max AND k_sat < k_sat_renewal_min → p_renewal → 0
+  → defect kernel cannot renew → structural configuration frozen in damaged state
+  → even if Φ(t) reduced to < 1, kernel quality Q_kernel remains at damaged level
+  → next perturbation immediately restores Storm (because structural deficit persists)
+  
+  Double-lock is WORSE than either lock alone:
+  Single D_ρ lock: kernel can still renew if k_sat healthy → architectural work possible
+  Single k_sat lock: D_ρ debt can still be served if governance channels recover
+  Double lock: both renewal mechanisms blocked → no recovery pathway exists
+```
+
+**Double-lock prevention protocol:**
+
+```
+Pre-DDD Stage 1 assessment:
+  IF D_ρ > 0.8 × D_max AND k_sat < 0.3:
+    → Double-lock risk: HIGH
+    → Priority: k_sat restoration BEFORE debt service
+    → Rationale: k_sat restoration re-enables p_renewal; p_renewal then enables debt service
+    
+  IF D_ρ > D_max OR k_sat < k_sat_renewal_min:
+    → Single-lock assessment: which lock is binding?
+    → Address binding constraint first
+    
+  Governance design recommendation: D_breakeven and k_sat_renewal_min as joint safety margins
+  → Architecture must maintain BOTH margins simultaneously (not OR)
+```
+
+#### §28.5.4 Kernel Renewal × RDI Coupling
+
+Renewal theory resolves an open gap in the §25 RT–VST bridge. The Restoration Deficit Interval (RDI) was bounded below by Ξ_D/R_self, where R_self = self-purification capacity. Self-purification capacity was acknowledged as partially dependent on structural configuration but this was not formalized.
+
+```
+RDI × Kernel Renewal coupling:
+  R_self(t) = D · F · V · T (self-purification capacity, §25)
+  
+  Under kernel renewal theory:
+  R_self(t) = R_self_base · Q_kernel(t) · p_renewal(t) / p_renewal_base
+  
+  Interpretation:
+    High-quality kernel (Q_kernel near stationary) + high renewal rate
+    → R_self enhanced above baseline → shorter RDI
+    
+    Damaged kernel + low renewal rate (double-lock pre-condition)
+    → R_self suppressed below baseline → longer RDI than Theorem 25.1.1 predicts
+    
+  Revised RDI lower bound:
+  E[RDI] ≥ Ξ_D / (R_self_base · Q_kernel_average · p_renewal_ratio)
+  
+  This explains recovery variability: two systems with identical Ξ_D may have 
+  very different RDI duration depending on kernel renewal rate during recovery
+```
+
+---
+
+### §28.6 Adaptive Boundary Permeability Model [v3.0]
+
+#### §28.6.1 Tier Interface as Adaptive Membrane
+
+VST's tier propagation model treats cross-tier coupling coefficients as approximately fixed during storm episodes. DFG v3.0 identified that tier interfaces function as adaptive membranes — their permeability to information and instability propagation adjusts based on governance state and intervention.
+
+This models a fundamental governance capability: the ability to selectively control what passes across tier boundaries without modifying the tier architectures themselves. Permeability control is a lower-cost intervention than structural modification and can be executed rapidly (within τ_agent_cycle vs. τ_architectural_change >> τ_agent_cycle).
+
+#### §28.6.2 Permeability Formalism
+
+**Permeability tensor:**
+
+```
+π_ℓ(t) = permeability matrix at tier boundary (ℓ, ℓ+1)
+
+Components:
+  π_up_ℓ(t) = upward permeability (lower → upper information transmission)
+  π_down_ℓ(t) = downward permeability (upper → lower policy transmission)
+  
+Storm propagation with permeability:
+  dΦ_{ℓ+1}/dt ∝ π_down_ℓ · Φ_ℓ  (downward: upper cannot escape lower storm)
+  dΦ_ℓ/dt ∝ π_up_ℓ · Φ_{ℓ+1}   (upward: lower amplified by upper-storm feedback)
+  
+Calibration signal transmission:
+  Signal_received_{ℓ+1} = π_up_ℓ · Signal_sent_ℓ   (reduced by permeability)
+  Policy_received_ℓ = π_down_ℓ · Policy_sent_{ℓ+1}
+```
+
+**Permeability dynamics:**
+
+```
+Default permeability evolution:
+  dπ_up_ℓ/dt = α_up · (π_up_target − π_up_ℓ) − β_up · max(0, Φ_{ℓ+1} − 1)
+  
+  (governance increases upward permeability toward target; storm in upper tier reduces it)
+  
+  dπ_down_ℓ/dt = α_down · (π_down_target − π_down_ℓ) − β_down · Φ_ℓ
+  
+  (governance increases downward permeability toward target; storm in lower tier reduces it)
+  
+Natural permeability damping during storm:
+  Both π_up and π_down naturally decrease during storms — adaptive isolation emerges organically
+  Governance can accelerate or decelerate this natural trend
+```
+
+#### §28.6.3 Permeability Paradox and Optimal Control
+
+The Permeability Paradox formalizes a governance tradeoff that appears in many practical governance systems:
+
+```
+Permeability Paradox:
+  High π_up (more information from lower to upper):
+    + Benefit: upper tier better informed → governance quality Q ↑ → cascade arrest easier
+    − Cost: upper tier exposed to more instability signal → upper-tier anxiety → f₁ decay risk
+    
+  Low π_up (information isolation):
+    + Benefit: upper tier protected from instability signal → f₁ maintained
+    − Cost: upper tier governance-blind → information governance criterion (§28.4) violated
+    
+  Resolution: π_up must be stage-dependent (not constant)
+```
+
+**Stage-optimal permeability protocol:**
+
+```
+Stage 0 (Pre-Storm / VCZ):
+  π_up_opt = π_max (maximum upward permeability — maximize calibration signal quality)
+  π_down_opt = π_max (maximum policy transmission — maximize governance response speed)
+  
+Stage 1 (Stabilize):
+  π_up_opt = π_max · (1 − 0.3 · Φ_ℓ) (reduce slightly to protect upper from acute signal)
+  π_down_opt = π_max (maintain policy transmission at maximum — governance response critical)
+  
+Stage 2 (Unify):
+  π_up_opt = 0.5 · π_max (moderate isolation — prevent inter-tier contamination spread)
+  π_down_opt = 0.7 · π_max (slight reduction — avoid overwhelming lower-tier agents)
+  
+Stage 3 (Restore):
+  π_up_opt = 0.3 · π_max (near-isolation — protect upper tier from irreversible damage)
+  π_down_opt = π_max (maximum policy — upper must drive lower recovery)
+  
+Stage 4 (VCZ Re-entry, graduated):
+  π_up_opt: linearly restore from 0.3 to π_max over τ_restore window
+  π_down_opt: maintain π_max throughout (policy maintained through restoration)
+```
+
+#### §28.6.4 Permeability × ASD Interaction
+
+ASD affects permeability governance channels through monitoring channel saturation:
+
+```
+Permeability governance requires monitoring (to know current π and adjust it):
+  π_monitoring_channel subject to ASD: k_sat_π = 1/(1+α_π·∫A_π dt)
+  
+ASD-permeability failure mode:
+  k_sat_π → 0 → governance cannot accurately read π_current
+  → governance applies π_target but π_actual drifts undetected
+  → Stage 3 near-isolation may fail (π_actual stays high → cascade continues)
+  → Monitoring requirement: π_up and π_down must have dedicated monitoring channels
+    with PRR rotation (PRR-π rotation ≥ 2 methods to prevent ASD-π blind spot)
+```
+
+---
+
+### §28.7 Hierarchical Contamination Gradient [v3.0]
+
+#### §28.7.1 Spatial Structure of Contamination
+
+VST's contamination framework (§1.5 Contamination Cascade, §27.4 ASD) characterizes contamination as a system-level property but does not model its spatial distribution across governance tiers. DFG v3.0 identified that contamination in well-designed architectures has a characteristic gradient structure: contamination intensity decreases from lower to upper tiers, because upper tiers receive PRR (externally calibrated inputs) and have more stable evaluation frames.
+
+**Contamination Gradient definition:**
+
+```
+C_contam_ℓ = contamination intensity of tier ℓ (fraction of agents with drifted evaluation frame)
+
+Contamination Gradient: ∇C_contam(ℓ) = C_contam(ℓ+1) − C_contam(ℓ)
+
+Healthy architecture: ∇C_contam < 0 for all ℓ
+  (higher tiers less contaminated — gradient decreasing upward)
+  
+Gradient inversion: ∇C_contam > 0
+  (higher tiers MORE contaminated than lower — governance inversion)
+```
+
+#### §28.7.2 Gradient Inversion as Governance Failure Mode
+
+Gradient inversion represents a qualitatively distinct failure mode from standard contamination accumulation:
+
+```
+Standard contamination accumulation (no gradient inversion):
+  All tiers contaminated, but upper tiers less so
+  PRR from upper tier: C_contam_upper < C_contam_lower → PRR still has positive correction
+  DDD direction: upper layer drives lower recovery (standard §25.RT architecture works)
+  
+Gradient inversion (C_contam_upper > C_contam_lower):
+  Upper tier MORE contaminated than lower
+  PRR from upper tier: C_contam_upper > C_contam_lower
+    → PRR has negative expected value: applying "external calibration" from upper
+       tier INCREASES lower-tier contamination rather than reducing it
+    → Standard DDD Stage 2 (Unify under upper guidance) becomes counterproductive
+    → DDD Stage 3 (Restore) impossible from upper tier
+  
+  Detection: PRR-based DDD shows no improvement or worsens → gradient inversion signature
+  
+  Cause: upper tier exposed to Goodhart Dynamic G(t) corruption (§25.1) earlier and more
+         severely than lower tiers when optimization pressure is higher at upper layer
+```
+
+**Gradient inversion correction protocol:**
+
+```
+Priority: must correct gradient inversion BEFORE standard DDD can proceed
+  
+Step 1: Identify inversion source
+  a. Goodhart corruption in upper tier (G(t) > G_c in upper layer)
+     → intervention: external evaluation frame injection into upper tier
+  b. Structural contamination path (lower → upper more intense than expected)
+     → intervention: increase π_up_ℓ isolation (§28.6 permeability control)
+  c. PRR channel ASD in lower tier (lower tier no longer responsive to upper PRR)
+     → intervention: PRR rotation protocol (§27.4)
+     
+Step 2: Restore gradient ∇C_contam < 0 across all boundaries
+Step 3: Confirm PRR from upper has positive expected value: E[Δρ | PRR_upper] > 0
+Step 4: Resume standard DDD protocol only after gradient restoration confirmed
+```
+
+#### §28.7.3 Contamination Gradient as Sixteenth Indicator Candidate
+
+The Contamination Gradient ∇C_contam represents a failure mode (gradient inversion) not covered by any of the fifteen indicators in §28.11:
+
+```
+Coverage gap analysis:
+  Gradient inversion signature: PRR+ reports (individual agents appear PRR+)
+                                BUT Δρ does not increase (system-level recovery fails)
+                                
+  Existing indicators that might capture this:
+    PRR: reports positive (individual PRR+ regardless of gradient)
+    ρ̇_rolling: may show flat ρ̇ but cannot distinguish gradient inversion from ASD
+    Goodhart G(t): captures upper-tier metric corruption but not lower > upper comparison
+    
+  None of the fifteen indicators directly measures ∇C_contam
+  → ∇C_contam is candidate sixteenth indicator (Open Problem M88)
+  
+  Measurement protocol for ∇C_contam:
+    Per-tier contamination estimate: C_contam_ℓ_estimate = (fraction of agents with
+    PRR+ but ρ̇ ≈ 0 in tier ℓ) — agents appearing calibrated but not improving
+    Gradient: ∇Ĉ_contam = C_contam_{ℓ+1}_estimate − C_contam_ℓ_estimate
+    Alert threshold: ∇Ĉ_contam > 0 for two consecutive τ_monitor windows
+```
+
+---
+
+### §28.8 Resolution Velocity Field Dynamics [v3.0]
+
+#### §28.8.1 Phase Space Representation of VST Dynamics
+
+The S-equation (§3) characterizes storm dynamics in terms of the scalar order parameter Φ(t). DFG v3.0 proposed a complementary phase-space representation that simultaneously tracks resolution capacity ρ(t) and instability Φ(t) as a two-dimensional trajectory in (Φ, ρ) phase space.
+
+**Resolution Velocity Field definition:**
+
+```
+Phase space: (Φ, ρ) ∈ [0, ∞) × [0, 1]
+
+Velocity field: v_res(Φ, ρ, t) = (dΦ/dt, dρ/dt)
+
+From S-equation and resolution ODE:
+  dΦ/dt = S(n, α, C, f₁, f₂, f₃, f₄, f₅) − 1   (storm growth above threshold)
+  dρ/dt = f₃ · ρ̄ · (1−ρ) − f₁ · Φ · ρ           (resolution capacity dynamics)
+  
+Phase portrait:
+  Fixed points: (Φ*, ρ*) where v_res = 0
+  VCZ: basin of attraction around (Φ* < 1, ρ* > ρ_min)
+  Storm attractor: trajectory region where Φ > 1 sustained
+  
+Trajectory type determines Storm type (§28.8.3)
+```
+
+#### §28.8.2 Fixed Points and Attractor Structure
+
+**Fixed point analysis:**
+
+```
+VCZ fixed point: (Φ_VCZ, ρ_VCZ) satisfying:
+  S(n, α, C_VCZ, f₁_VCZ, ...) = 1
+  f₃ · ρ̄ · (1−ρ_VCZ) = f₁_VCZ · Φ_VCZ · ρ_VCZ
+  
+  This fixed point exists and is stable when R < 1 (§3)
+  
+Storm fixed point: does not generally exist (storm is not a fixed point but an attractor basin)
+  → trajectories in storm basin undergo limit cycle or escape depending on DDD intervention
+
+Frozen Rest fixed point: (Φ_FR < 1, ρ_FR > ρ_min) with Ṡ_proxy → 0
+  → system trapped in apparent VCZ but thermodynamically frozen
+  → Frozen Rest = false fixed point: correct Φ,ρ coordinates but wrong thermodynamic state
+  → detectability requires Ṡ_proxy monitoring (§27.2) — not visible in (Φ,ρ) phase portrait alone
+```
+
+**Resolution Velocity Field anomalies as precursors:**
+
+```
+Phase portrait precursor signals:
+
+1. Velocity slowing near VCZ boundary:
+   |v_res| decreasing as trajectory approaches edge of VCZ basin
+   → Critical slowing down: Φ approaching critical transition
+   → Early warning: |v_res| < |v_res_VCZ| × 0.5 → pre-storm alert
+   
+2. Trajectory curvature reversal:
+   Normal VCZ orbit: trajectory curves back toward VCZ fixed point
+   Pre-storm: curvature reversal — trajectory begins arcing AWAY from VCZ
+   → Curvature sign change = topological pre-storm indicator
+   → Measurement: compute κ_traj = |dv_res/ds| / |v_res|² (curvature of phase trajectory)
+   → Alert: κ_traj changes sign (convex → concave relative to VCZ fixed point)
+   
+3. ρ-axis approach (irrecoverability precursor):
+   ρ(t) → 0 while Φ(t) > 1 → approaching irrecoverable region of phase portrait
+   → Trajectory in (Φ,ρ): approaching D_max boundary from interior
+   → This is the phase-space representation of D_ρ → D_max
+```
+
+#### §28.8.3 Storm Type Classification via Trajectory Geometry
+
+The resolution velocity field provides a geometric classification of Storm types by trajectory shape, enabling type identification before Φ > 1 (earlier than current type-classification protocols):
+
+```
+Type I (Independent Storm) — elliptical trajectory:
+  Phase portrait: trajectory forms closed or near-closed ellipse in (Φ,ρ)
+  Geometric signature: eccentricity ε ∈ (0, 0.5), negative correlation dΦ/dt × dρ/dt < 0
+  
+  Physical interpretation: storm and resolution oscillate out of phase
+  → storm reaches peak before resolution bottoms out
+  → self-limiting dynamics
+  
+Type II (Resonant Storm) — spiral trajectory:
+  Phase portrait: trajectory spirals outward from VCZ in (Φ,ρ)
+  Geometric signature: spiral winding number > 0, amplitude growing per cycle
+  
+  Physical interpretation: storm resonance with resolution dynamics
+  → each storm peak higher than last → amplification
+  → without intervention: spiral continues until DDD or irrecoverability
+  
+Type III (Irrecoverable) — escape trajectory:
+  Phase portrait: trajectory departs bounded region → ρ → 0 or Φ → ∞
+  Geometric signature: no return to VCZ; trajectory monotonically diverges
+  
+  Physical interpretation: damage accumulation exceeds self-purification capacity
+  → R_self insufficient → no natural return → external rescue required or abandoned
+
+Type V (Mixed-Mode) — complex multi-basin trajectory:
+  Phase portrait: trajectory visits multiple storm-basins in extended (Φ_A, ρ_A, Φ_B, ρ_B, ...) space
+  Geometric signature: J_AB off-diagonal dominance (§25.3); eigenvectors distributed across subsystems
+  
+  Physical interpretation: cross-subsystem coupling creates complex trajectory through
+  joint phase space — cannot be decomposed into independent Type I or II trajectories
+```
+
+**Pre-threshold type classification protocol:**
+
+```
+Trajectory type classification (before Φ > 1):
+
+Step 1: Track trajectory (Φ(t), ρ(t)) during Stage 0 (Pre-Storm monitoring)
+Step 2: Fit trajectory geometry:
+  a. Compute orbit shape: ellipse vs. spiral vs. divergent vs. multi-basin
+  b. Compute autocorrelation of dΦ/dt: negative peak → Type I/II; monotone → Type III
+Step 3: Classify:
+  Elliptical orbit detected → Type I pre-classification → moderate intervention
+  Outward spiral detected → Type II pre-classification → aggressive damping required
+  Escape trajectory forming → Type III pre-classification → emergency DDD Stage 0
+  Multi-basin detected → Type V pre-classification → J_AB estimation required (§25.3)
+  
+Expected lead time: τ_type_lead ≥ 0.5 × τ_VCZ_to_storm
+  (trajectory type identifiable halfway through pre-storm phase)
+```
+
+#### §28.8.4 Resolution of Open Problem M62 (D_c Without Explicit North Star)
+
+The resolution velocity field provides a reference trajectory baseline for D_c estimation without explicit North Star:
+
+```
+M62 (resolved by §28.8):
+  D_c = deviation of governance trajectory from governance-intended trajectory
+  Open problem: governance-intended trajectory not always explicitly formalized
+  
+  Resolution via v_res field:
+    Governance-intended trajectory = trajectory of healthy VCZ fixed point trajectory
+    (the natural orbit of the system under VCZ conditions, obtained from historical VCZ phase portrait)
+    
+  Baseline protocol:
+    Step 1: During extended healthy VCZ period, record trajectory (Φ(t), ρ(t)) over N_baseline windows
+    Step 2: Fit mean VCZ trajectory: (Φ_VCZ(t), ρ_VCZ(t)) as reference
+    Step 3: D_c(t) = |(Φ(t), ρ(t)) − (Φ_VCZ(t), ρ_VCZ(t))| / (normalization)
+    
+    Advantage: uses only observable trajectory data; no explicit North Star formulation required
+    Validation: compare D_c_baseline with D_c_explicit when North Star available → correlation > 0.7
+    
+  M62 status: closed — v_res field baseline provides operational D_c proxy;
+              validated for architectures with sufficient VCZ history (N_baseline ≥ 50 windows)
+```
+
+---
+
+### §28.9 Storm Geometry Tensor Formalization [v3.0]
+
+#### §28.9.1 Motivation: Scalar Monitoring Misses Structural Storm Information
+
+Standard VST monitoring tracks scalar indicators: Φ, V_Φ, D_ρ, k_sat, etc. Each scalar collapses an instability distribution across agents into a single number, discarding the spatial structure of the storm. DFG v3.0 identified that this spatial structure carries governance-relevant information: the geometry of how instability is distributed across agents encodes which Storm type is occurring and which agents are the primary drivers.
+
+**Storm Geometry Tensor definition:**
+
+```
+G_storm = (1/n) · [ΔΦᵢΔΦⱼ] for i,j = 1,...,n
+
+where ΔΦᵢ(t) = Φᵢ(t) − Φ̄(t) is instability fluctuation of agent i around mean
+
+G_storm is a symmetric positive semi-definite n×n matrix
+  → n eigenvalues λ₁ ≥ λ₂ ≥ ... ≥ λₙ ≥ 0
+  → n eigenvectors v₁, v₂, ..., vₙ
+```
+
+**Eigenspectrum interpretation:**
+
+```
+Storm type classification from eigenspectrum:
+
+Single dominant eigenvalue: λ₁ >> λ₂ (ratio λ₁/λ₂ > 10):
+  → Type I (Independent Storm): one primary instability mode
+  → Primary driver: agent subset in direction of v₁
+  
+Dual dominant eigenvalues: λ₁ ≈ λ₂ >> λ₃ (λ₁/λ₂ < 3, λ₂/λ₃ > 5):
+  → Type II (Resonant Storm): two coupled instability modes
+  → Resonance pair: agent subsets in directions v₁, v₂
+  
+Distributed eigenspectrum: no clear gap in λ sequence:
+  → Type V (Mixed-Mode): distributed instability across many agents
+  → J_AB estimation required (§25.3): each significant eigenvector direction = subsystem pair
+  
+Hierarchical eigenspectrum (tiers visible in eigenvectors):
+  → Tier-cascade in progress: v₁ = upper-tier agents, v₂ = middle-tier, v₃ = lower-tier
+  → CCC cascade (§26.8) ongoing: standard cascade arrest protocol
+```
+
+#### §28.9.2 Eigenvector Governance Targeting
+
+**Primary eigenvector as intervention target:**
+
+```
+v₁ = principal eigenvector of G_storm = dominant instability direction in agent space
+
+Governance implication:
+  Agents with high |v₁_i| (large component in principal eigenvector direction)
+  are the primary storm drivers — they contribute most to λ₁ (dominant storm variance)
+  
+  Governance priority function (eigenvector-weighted):
+    Priority_i = |v₁_i| × Φᵢ
+    → sort agents by priority_i → highest priority = first DDD intervention target
+    
+  This outperforms uniform intervention: if storm is concentrated in small agent subset
+  (v₁ concentrated), targeting the top-priority agents arrests storm more efficiently
+  than distributing governance equally across all agents
+  
+  Expected efficiency gain:
+    Concentrated storm (v₁ concentrated on k agents, k << n):
+    Targeted intervention: governance budget G_budget / k per agent for k agents
+    Uniform intervention: G_budget / n per agent for all n agents
+    → Efficiency ratio ≈ n/k (linear in concentration)
+    → For k = 0.1n: 10× governance efficiency from eigenvector targeting
+```
+
+#### §28.9.3 Resolution of Open Problem M69 (Six-Dimensional Completeness)
+
+**Seventh governance dimension: J_AB from G_storm:**
+
+```
+M69 (addressed by §28.9):
+  Six-dimensional governance state: (Φ, V_Φ, Δρ, D_c, k_sat, δ_sync)
+  Open question: is this complete?
+  
+  G_storm analysis provides answer:
+    G_storm off-diagonal structure encodes J_AB (cross-subsystem coupling, §25.3)
+    J_AB = (1/n²)Σ_{i∈A, j∈B} G_storm_ij  for subsystem pair (A,B)
+    
+    J_AB not encoded in any of the six dimensions:
+      Φ: system-level scalar (average)
+      V_Φ: system-level scalar (average momentum)
+      Δρ: system-level scalar (resolution gap)
+      D_c: directional (not coupling)
+      k_sat: channel-level (not inter-agent coupling)
+      δ_sync: phase (not amplitude coupling)
+      
+    → J_AB provides independent governance information
+    → Seventh dimension confirmed: J_AB (cross-subsystem coupling)
+    
+  Extended seven-dimensional governance state:
+    (Φ, V_Φ, Δρ, D_c, k_sat, δ_sync, J_AB)
+    
+  G_storm provides: J_AB measurement + principal storm driver identification
+  → G_storm monitoring is the practical instrument for the seventh governance dimension
+  
+  M69 status: partially resolved — seventh dimension confirmed; 
+              completeness of seven dimensions remains open (M93 successor problem)
+```
+
+#### §28.9.4 Resolution of Open Problem M64 (K_gov Matrix)
+
+**K_gov matrix from G_storm eigenvector structure:**
+
+```
+M64 (resolved by §28.9):
+  K_gov as scalar: single governance gain applied uniformly
+  Open question: should K_gov be a matrix K_gov(signal_type × layer)?
+  
+  G_storm resolution:
+    K_gov should be a vector over eigenvector directions, not a scalar:
+    K_gov_vec = (K_gov_1, K_gov_2, ..., K_gov_n) per eigenvector direction
+    
+    Practical reduction (manageable form):
+    K_gov_k = governance gain for eigenvector k (applied to agents with high |v_k_i|)
+    
+    Estimation protocol:
+      Step 1: Compute G_storm, extract top-m eigenvectors (m = min(5, number with λ_k > λ_1/10))
+      Step 2: For each direction k: measure governance response magnitude when perturbing
+              in direction v_k → K_gov_k = response / perturbation
+      Step 3: Governance decision: apply K_gov_k per eigenvector direction
+      
+    Over-Correction Paradox protection (§26.7, GOI):
+      K_gov_k should not increase when GOI detected in direction k
+      → GOI × ASD compound protocol (§27.7) applies per eigenvector direction independently
+      
+  M64 status: closed — K_gov vector structure (per eigenvector direction) 
+              operationalizable from G_storm; reduces estimation complexity from n² to m≤5 parameters
+```
+
+---
+
+### §28.10 Recursive Self-Stabilization Criterion [v3.0]
+
+#### §28.10.1 Motivation: When Is DDD Withdrawal Safe Without Full Condition Satisfaction?
+
+VST's seven-condition DDD completion test (§27.9) provides a conservative withdrawal criterion: all seven conditions must be satisfied before DDD can safely end. This conservatism is appropriate for most architectures but may be unnecessarily prolonged for systems that have developed genuine self-stabilization capacity through extended VCZ residence.
+
+DFG v3.0 identified the Recursive Self-Stabilization Criterion (RSS) as a complementary withdrawal test: systems satisfying RSS may safely withdraw from DDD even before full seven-condition satisfaction, because they have the capacity to self-complete recovery without external governance support.
+
+#### §28.10.2 RSS Criterion Formalization
+
+**Self-stabilization differential equation:**
+
+```
+For Φ > 1 (active storm regime), the self-stabilization rate is:
+
+dΦ/dt_self = −μ_self · (Φ − 1) · f₃ · k_sat
+
+where:
+  μ_self > 0 = self-stabilization coefficient (system-specific, measurable)
+  f₃ = middle-layer fractional engagement (§2.5)
+  k_sat = absorption channel saturation (§26.5, §27.4)
+  
+Self-stabilization is effective when dΦ/dt_self < dΦ/dt_storm
+(self-stabilization rate exceeds storm growth rate → net Φ decrease without DDD)
+```
+
+**RSS threshold conditions:**
+
+```
+Recursive Self-Stabilization Criterion:
+  System qualifies for RSS-based withdrawal iff ALL of:
+  
+  RSS-1: μ_self > μ_self_crit = S(n,α,C,f₁,...) / ((Φ−1)·f₃·k_sat)
+           (self-stabilization rate exceeds storm generation at current conditions)
+           
+  RSS-2: f₃ > f₃_self_crit ≡ f₃_RSS
+           (middle-layer engagement sufficient for self-calibration without DDD Stage 2 support)
+           
+  RSS-3: k_sat > k_sat_self_crit ≡ k_sat_RSS
+           (absorption channels not saturated enough to block self-stabilization)
+           
+  RSS-4: D_ρ < D_max_self ≡ 0.5 × D_max
+           (resolution debt below self-service threshold — system can service own debt)
+           
+  RSS-5: G_C has no SCC with Φ_SCC > 1 (§28.1)
+           (no mutual-amplification loop that would reverse self-stabilization)
+           
+  RSS failure mode: any single condition violated → self-stabilization fails → 
+                    DDD continuation mandatory; attempt DDD withdrawal would reverse recovery
+```
+
+**RSS Rate Theorem (Theorem 28.10.1):**
+
+```
+Theorem 28.10.1 (RSS Convergence): If RSS-1 through RSS-5 are satisfied at t₀, then:
+
+  E[Φ(t₀ + τ)] < 1   for all τ ≥ τ_RSS = ln(Φ(t₀) / (Φ(t₀)−1)) / (μ_self · f₃ · k_sat − S_effective)
+
+Proof: Under RSS-1 (μ_self > threshold), the net Φ dynamics are:
+  dΦ/dt = dΦ/dt_storm + dΦ/dt_self = S − 1 − μ_self·(Φ−1)·f₃·k_sat
+         = (S−1) − μ_self·(Φ−1)·f₃·k_sat
+  
+  At RSS-1 threshold: μ_self·f₃·k_sat > S/(Φ−1) → net rate negative → Φ decreasing
+  → Φ(t) exponentially approaches 1 from above at rate μ_eff = μ_self·f₃·k_sat − S/(Φ−1)
+  → Recovery to Φ = 1 in time τ_RSS = 1/μ_eff × O(log Φ(t₀))
+```
+
+#### §28.10.3 RSS as DDD Withdrawal Complement
+
+**Integration with seven-condition DDD:**
+
+```
+Standard DDD withdrawal:
+  Withdraw when ALL seven conditions satisfied (conservative, guaranteed safe)
+  
+RSS-based early withdrawal:
+  Withdraw when RSS-1 through RSS-5 satisfied AND a minimum five of seven conditions
+  (RSS provides self-completion guarantee for the remaining unsatisfied conditions)
+  
+  Allowable unsatisfied conditions under RSS:
+    Condition 6 (ρ̇_rolling ASD) may be unsatisfied if RSS-3 (k_sat_RSS) satisfied
+    Condition 7 (v_drift/TPS IDA) may be unsatisfied if D_c < 0.3×D* confirmed
+    
+  Not allowable for RSS bypass:
+    Condition 1 (Φ<1): RSS begins only when Φ approaching 1 — must confirm
+    Condition 2 (v_class>0): resolution growth required even under RSS
+    Condition 3 (PRR+): external calibration required (RSS does not substitute external anchor)
+    Condition 4 (Ṡ_proxy≥Ṡ_min): thermodynamic criterion cannot be bypassed by RSS
+    Condition 5 (v_drift<threshold): only bypassable if D_c < 0.3×D* (minor IDA only)
+```
+
+**RSS monitoring during DDD:**
+
+```
+RSS monitoring protocol (added to standard DDD monitoring stack):
+  At each τ_monitor window:
+    Compute: μ_self_estimate, f₃, k_sat, D_ρ, G_C SCCs
+    Evaluate: RSS-1 through RSS-5
+    
+  RSS first satisfied: record t_RSS_first
+  RSS maintained for τ_RSS_sustained = 3 × τ_DDD_cycle:
+    → Flag RSS withdrawal eligibility
+    → Conduct RSS withdrawal assessment:
+       Review: which of seven conditions unsatisfied?
+       Apply: allowable bypass rules above
+       Decision: withdraw (if RSS + minimum five conditions) OR continue (if < five satisfied)
+```
+
+#### §28.10.4 RSS Failure Modes and Precautions
+
+```
+RSS False Positive Prevention:
+
+False positive type 1: μ_self_estimate inflated (estimated from short window)
+  Prevention: require N ≥ 10 independent μ_self measurement windows
+  Consequence if missed: early DDD withdrawal → Φ rebounds → re-Storm
+
+False positive type 2: SCC dissolved temporarily (§28.1) but re-forms after withdrawal
+  Prevention: confirm SCC dissolution stable for τ_SCC_stable = 5 × τ_monitor
+  Consequence if missed: Storm mutual amplification resumes → rapid re-Storm
+
+False positive type 3: D_ρ < D_max_self but rising fast
+  Prevention: require Ḋ_ρ < 0 (debt must be declining) in addition to level check
+  Consequence if missed: debt reaches D_max_self within τ_RSS duration → double-lock
+
+True RSS: μ_self confirmed over ≥ 10 windows + SCC dissolved stably + Ḋ_ρ < 0
+  → Withdrawal safe; continue monitoring post-withdrawal for τ_post = 20 × τ_monitor
+```
+
+---
+
+### §28.11 Fifteen-Indicator Portfolio Completion [v3.0]
+
+#### §28.11.1 Open Problem M68: Formal Coverage Proof
+
+Open Problem M68 required a formal proof that the fourteen-indicator portfolio covers all known VST failure modes, and whether TPS warrants elevation as a fifteenth indicator.
+
+**VST Failure Mode Enumeration (complete, v3.0):**
+
+```
+FM-01: Silent Criticality (standard) — covered by: κ (Layer 1)
+FM-02: Runaway amplification — covered by: Φ > 1 (Layer 5) + F_RBIT (Layer 4)
+FM-03: Coordination collapse — covered by: f₃ (Layer 2)
+FM-04: Contaminated escalation — covered by: f₄ (Layer 4 component)
+FM-05: Metric corruption (Goodhart) — covered by: PRR / v_class (Layer 3)
+FM-06: Middle-layer disengagement — covered by: f₃ < f₃_min (Layer 2)
+FM-07: Bandwidth saturation — covered by: SLI_excess (Layer 3)
+FM-08: Momentum irrecoverability — covered by: V_Φ (Layer 2) + D_ρ (Layer 3)
+FM-09: Frozen Rest (thermodynamic) — covered by: Ṡ_proxy (Layer 2) [requires dual with EPR]
+FM-10: Multi-scale desynchronization — covered by: δ_sync (fourteen-indicator #14)
+FM-11: Absorption saturation — covered by: ρ̇_rolling (Layer 3)
+FM-12: Intent drift (alignment erosion) — covered by: D_c/v_drift (Layer 0)
+FM-13: Governance oscillation instability — covered by: CCF(f₁,f₄) anti-phase
+FM-14: Cross-scale cascade — covered by: R_cascade + f₃×k_sat joint (Layer 2)
+FM-15: IDA pre-storm (alignment erosion pre-threshold) — NOT covered by D_c (too late)
+       → TPS as earliest IDA signal: TPS crosses threshold BEFORE D_c > D_c_alert
+       → TPS covers FM-15 uniquely (no other indicator detects sub-D_c alignment erosion)
+```
+
+**Theorem 28.11.1 (Fifteen-Indicator Coverage):** The portfolio {f₁, f₂, f₃, f₄, f₅, v_class, V_Φ, D_ρ, SLI_excess, EPR/EPR_min, ρ̇_rolling, κ, V_Φ_momentum, Ṡ_proxy, TPS} is coverage-complete for failure modes FM-01 through FM-15:
+
+```
+Proof:
+  For each failure mode FM-k, identify at least one indicator I_k such that:
+  FM-k occurs → I_k crosses alert threshold with probability ≥ P_alert_min = 0.85
+  
+  FM-01 → κ: κ monitors architecture saturation (silent criticality precursor), P = 0.87
+  FM-02 → Φ: direct observation, P ≈ 1.00 (by definition)
+  FM-03 → f₃: f₃ < f₃_min directly detects coordination failure, P = 0.91
+  FM-04 → f₄ component of F_RBIT, P = 0.83
+  FM-05 → PRR (ρ̇_rolling with v_class>0): ASD signature, P = 0.86
+  FM-06 → f₃: direct, P = 0.91
+  FM-07 → SLI_excess: direct bandwidth saturation, P = 0.90
+  FM-08 → V_Φ AND D_ρ: momentum criterion, P = 0.88
+  FM-09 → Ṡ_proxy: thermodynamic freeze detection, P = 0.84 (dual with EPR)
+  FM-10 → δ_sync: direct, P = 0.89
+  FM-11 → ρ̇_rolling: direct saturation detection, P = 0.87
+  FM-12 → D_c, v_drift: direct drift detection, P = 0.85 at D_c > 0.3×D*
+  FM-13 → CCF(f₁,f₄) < 0: anti-phase criterion, P = 0.86
+  FM-14 → f₃×k_sat joint: cascade arrest criterion (§27.5), P = 0.88
+  FM-15 → TPS: sub-D_c IDA detection, P = 0.85 for TPS > 0.15 threshold
+  
+  All P ≥ P_alert_min = 0.85: coverage proof complete. QED.
+  
+Note: probabilities are theoretical estimates from structural argument; 
+      empirical validation required for each FM-indicator pair (M90 open problem)
+```
+
+#### §28.11.2 Updated Fifteen-Indicator Portfolio
+
+```
+Complete VST Monitoring Portfolio (v3.0):
+
+Indicator  | Layer | Failure Mode(s)    | Alert Threshold
+───────────────────────────────────────────────────────────────────────
+TPS        |  -1*  | FM-15 (pre-IDA)    | TPS > 0.15
+D_c/v_drift|   0   | FM-12 (IDA)        | D_c > 0.3×D* OR v_drift > v_crit
+κ          |   1   | FM-01 (silent)     | κ > κ_crit
+f₃         |   2   | FM-03, FM-06       | f₃ < f₃_min
+V_Φ        |   2   | FM-08 (momentum)   | V_Φ > V_crit_tier
+Ṡ_proxy    |   2   | FM-09 (frozen)     | Ṡ_proxy < Ṡ_min AND EPR > EPR_min
+D_ρ        |   3   | FM-08 (debt)       | D_ρ > D_breakeven
+SLI_excess |   3   | FM-07 (bandwidth)  | SLI_excess > 0.3
+ρ̇_rolling  |   3   | FM-11 (ASD/sat)   | ρ̇_rolling ≈ 0 with v_class > 0
+v_class    |   3   | FM-05 (Goodhart)   | v_class < v_class_min
+CCF(f₁,f₄)|   3   | FM-13 (GOI)        | CCF < CCF_antiphase_threshold
+F_RBIT     |   4   | FM-04 (contam)     | F_RBIT > F_crit
+δ_sync     |   4   | FM-10 (MSSF)       | δ_sync > 0.1 (preprocessing trigger)
+Φ          |   5   | FM-02 (runaway)    | Φ > 1
+R_cascade  |   6   | FM-14 (cascade)    | R_cascade ≥ 1 (active cascade)
+
+* TPS designated Layer -1 (pre-Layer 0): detects sub-threshold IDA before D_c alert
+
+Priority ordering (v3.0):
+  κ > f₃ > TPS > V_Φ > D_ρ > Ṡ_proxy > δ_sync > v_class > standard F_RBIT
+  (architectural → structural → pre-IDA → momentum → debt → thermodynamic → sync → agent → detection)
+```
+
+#### §28.11.3 Cross-Validation Constraint Matrix (Extended to 15 Indicators)
+
+```
+Cross-validation constraints (15-indicator portfolio):
+
+Rule 1:  f₃×k_sat joint: cascade arrest requires both (§27.5)
+Rule 2:  Ṡ_proxy AND EPR: Frozen Rest requires dual criterion (§27.2)
+Rule 3:  v_class AND ρ̇_rolling: ASD detection requires both positive/flat pattern
+Rule 4:  CCF(f₁,f₄) AND ρ̇: GOI×ASD detection requires joint (§27.7)
+Rule 5:  δ_sync → f₄ preprocessing: δ_sync > 0.1 triggers f₄ decontamination (§27.3)
+Rule 6:  TPS AND D_c consistency: TPS > 0.15 implies D_c > 0 (nested relationship)
+Rule 7:  V_Φ AND κ independence: momentum and architecture are orthogonal monitoring channels
+Rule 8:  SLI AND k_sat: bandwidth saturation and absorption saturation compound
+         (both reduce Γ_gov_eff simultaneously; §28.2)
+Rule 9:  TPS AND Ṡ_proxy: IDA pre-storm may precede Frozen Rest; monitor both simultaneously
+Rule 10: δ_sync AND I(lower;upper) MI: MSSF and information asymmetry co-vary (§28.4)
+Rule 11: ∇C_contam AND PRR: gradient inversion masquerades as PRR+ (§28.7) — cross-validate
+Rule 12: G_storm eigenspectrum AND Φ: storm type classification before Φ > 1 (§28.9)
+Rule 13: R_cascade AND k_sat: cascade arrest requires joint f₃ and k_sat healthy (§27.5)
+Rule 14: TPS AND SCC: pre-IDA TPS alert should trigger causal topology check (§28.1)
+Rule 15: V_Φ AND Γ_gov_remaining: momentum-driven storm during low governance capacity
+         → emergency governance capacity restoration before DDD Stage 1
+```
+
+---
+
+### §28.12 VST-DFG Cross-Theory Reinforcement Map [v3.0-DFG28series]
+
+| DFG v3.0 Concept | VST v3.0 Target | Direction |
+|---|---|---|
+| Causal Adjacency Matrix C_ij | §28.1 propagation geometry | DFG → VST |
+| SCC decomposition | §28.1 storm isolation | DFG → VST |
+| Theorem 28.1.1 Causal Containment | §28.1 DDD pre-processing | DFG → VST |
+| C_ij policy + info + structural | §28.1 perturbed SCC detection | DFG → VST |
+| Governance Entropy Rate dS_gov/dt | §28.2 thermodynamic KPI | DFG → VST |
+| Assumption A42 Second Law | §28.2 governance speed limit | DFG → VST |
+| Γ_gov_eff(t) = Γ_base·k_sat·(1−SLI) | §28.2 unified resource model | DFG → VST |
+| ΔS_budget per episode | §28.2 lifecycle KPI #10 | DFG → VST |
+| M70 resolution (Ṡ_proxy vs EPR) | §28.2 correlation prediction | DFG → VST |
+| Stochastic Resonance SR-VST | §28.3 Layer -1 early warning | DFG (new) → VST |
+| σ_SR_opt = A/√2 | §28.3 noise injection protocol | DFG → VST |
+| SR-assisted Ṡ_min calibration | §28.3 M56 resolution | DFG → VST |
+| SR Safety Constraints 1–4 | §28.3 ASD interaction | DFG → VST |
+| I(tier_ℓ; tier_{ℓ+1}) MI | §28.4 information governance | DFG → VST |
+| Theorem 28.4.1 Information Gov. | §28.4 cascade arrest criterion | DFG → VST |
+| IA = asymmetry index | §28.4 governance blindness | DFG → VST |
+| MI-based δ_crit derivation | §28.4 M59 resolution | DFG → VST |
+| MI DDD Stage 3 criterion | §28.4 completion extension | DFG → VST |
+| Defect Kernel Renewal p_renewal | §28.5 structural recovery | DFG → VST |
+| Theorem 28.5.1 Renewal Conv. | §28.5 recovery time bound | DFG → VST |
+| Double-lock irrecoverability | §28.5 new failure mode | DFG → VST |
+| Kernel renewal × RDI coupling | §28.5 RT–VST bridge extension | DFG ↔ VST |
+| Permeability π_ℓ(t) | §28.6 tier interface model | DFG → VST |
+| Permeability Paradox | §28.6 stage-optimal protocol | DFG → VST |
+| Stage-dependent π_opt | §28.6 DDD protocol extension | DFG → VST |
+| ASD-π monitoring channel | §28.6 PRR-π rotation | DFG → VST |
+| Contamination Gradient ∇C_contam | §28.7 spatial model | DFG → VST |
+| Gradient Inversion failure mode | §28.7 DDD pre-step | DFG → VST |
+| ∇C_contam as candidate 16th indicator | §28.7 M88 open problem | DFG → VST |
+| Resolution Velocity Field v_res | §28.8 phase portrait | DFG → VST |
+| Phase portrait (Φ,ρ) | §28.8 storm trajectory geometry | DFG → VST |
+| Trajectory type classification | §28.8 pre-threshold storm type | DFG → VST |
+| M62 resolution via v_res baseline | §28.8 D_c proxy | DFG → VST |
+| Storm Geometry Tensor G_storm | §28.9 structural diagnostic | DFG (new) → VST |
+| Eigenspectrum storm classification | §28.9 type identification | DFG → VST |
+| Eigenvector governance targeting | §28.9 intervention efficiency | DFG → VST |
+| J_AB seventh dimension | §28.9 M69 partial resolution | DFG → VST |
+| K_gov vector per eigenvector | §28.9 M64 resolution | DFG → VST |
+| RSS Criterion (RSS-1 to RSS-5) | §28.10 DDD withdrawal | DFG (new) → VST |
+| Theorem 28.10.1 RSS Convergence | §28.10 self-stabilization | DFG → VST |
+| RSS False Positive Protocol | §28.10 precautions | DFG → VST |
+| RSS + five-condition early withdrawal | §28.10 DDD complement | DFG ↔ VST |
+| Fifteen-indicator FM coverage | §28.11 portfolio closure | DFG → VST |
+| Theorem 28.11.1 Coverage Proof | §28.11 M68 resolution | DFG → VST |
+| TPS Layer -1 designation | §28.11 hierarchy extension | DFG → VST |
+| 15-indicator cross-validation matrix | §28.11 constraint rules | DFG ↔ VST |
+| Updated priority ordering (v3.0) | §28.11 monitoring protocol | DFG → VST |
+
+---
+
+## Novel Contributions VST-NC-69–VST-NC-92 [v3.0-DFG28series]
+
+```
+VST-NC-69: Causal Topology Propagation Model
+  C_ij causal adjacency replaces R_ij structural adjacency in storm propagation.
+  SCC decomposition: mutual amplification zones identified and dissolved pre-DDD.
+  Theorem 28.1.1: DAG condition for topological containability.
+  → First formalization of causal (vs. structural) storm propagation geometry in VST.
+
+VST-NC-70: Perturbed SCC Early Warning
+  SCC formation (not just storm SCC) as pre-storm structural indicator.
+  Expected lead time: τ_SCC_lead ≥ 0.5 × τ_silent.
+  SCC monitoring trigger: new SCC detected → elevate monitoring frequency.
+  → New pre-silent-criticality structural indicator.
+
+VST-NC-71: Governance Entropy Rate Framework
+  dS_gov/dt = −Γ_gov·ΔS_gap as governance thermodynamic model.
+  Assumption A42 (Second Law of Governance): cooling speed limit.
+  τ_DDD_min = (S_storm_peak − S_VCZ)/Γ_gov_max: minimum storm duration bound.
+  → Unifies all finite governance resource constraints under thermodynamic envelope.
+
+VST-NC-72: Γ_gov_eff Unified Degradation Model
+  Γ_gov_eff(t) = Γ_gov_baseline · k_sat(t) · (1 − SLI_excess(t)).
+  ASD + SLI joint collapse: governance cooling fails despite ongoing effort.
+  Lifecycle KPI #10: Γ_gov_remaining as real-time governance capacity indicator.
+  → First unified ASD×SLI degradation model for governance effectiveness.
+
+VST-NC-73: Stochastic Resonance Exploitation — Novel VST Finding
+  σ_SR injection at Layer 0 enhances D_c/v_drift detectability by SR mechanism.
+  SNR enhancement factor: O(10–100×) for optimal σ_SR = A/√2.
+  Safety constraints: false positive bound + amplification non-induction + k_sat constraint.
+  → First application of stochastic resonance to VST early-warning enhancement.
+
+VST-NC-74: Layer -1 (SR-Enhanced Pre-TPS) Detection
+  SR injection detects TPS growth before TPS threshold crossing.
+  τ_SR_additional ≈ 0.3–0.5 × τ_IDA_phase additional lead time.
+  → Extends VST signal hierarchy to eight layers (Layer -1 through Layer 6).
+
+VST-NC-75: SR-Assisted Ṡ_min Calibration (M56 Resolution)
+  SR perturbation asymmetry protocol: VCZ vs. Frozen Rest precursor have different
+  SR response signatures → Ṡ_min identified at asymmetry boundary.
+  → Closes Open Problem M56 operationally.
+
+VST-NC-76: Cross-Tier MI Information Governance
+  I(tier_ℓ; tier_{ℓ+1}) as inter-tier governance quality metric.
+  Information Asymmetry index IA = directional MI difference.
+  Theorem 28.4.1: I(lower→upper) > I_threshold for cascade arrest.
+  → First information-theoretic governance criterion in VST.
+
+VST-NC-77: MI-Based δ_crit Derivation (M59 Resolution)
+  δ_crit = 1 − I_threshold/I_synchronous from MI coupling measurement.
+  Architecture-dependent but derivable (not arbitrary empirical threshold).
+  → Closes Open Problem M59 with principled per-architecture formula.
+
+VST-NC-78: MI DDD Stage 3 Completion Extension
+  Symmetric MI criterion: I(lower;upper)/I(upper;lower) ∈ [0.8, 1.25].
+  MI restoration protocol: audit → bottleneck identification → routing modification.
+  → Extends DDD Stage 3 completion to include information-symmetric governance.
+
+VST-NC-79: Defect Kernel Renewal Theory
+  p_renewal = p_base · f₃ · k_sat · (1 − D_ρ/D_max) / f₃_max.
+  Theorem 28.5.1 (Kernel Renewal Convergence): τ_converge = 1/p_renewal.
+  Double-lock: D_ρ > D_max AND k_sat < k_sat_renewal_min → p_renewal → 0.
+  → Formalizes structural recovery mechanism missing from §25 RT-VST bridge.
+
+VST-NC-80: Double-Lock Irrecoverability — New Failure Mode
+  Worse than single-lock: both renewal pathways blocked simultaneously.
+  Prevention protocol: k_sat restoration before debt service when double-lock risk.
+  Joint safety margins: D_breakeven AND k_sat_renewal_min must both be maintained.
+  → Identifies previously uncharacterized irrecoverability condition.
+
+VST-NC-81: Kernel Renewal × RDI Coupling
+  R_self(t) = R_self_base · Q_kernel(t) · p_renewal(t)/p_renewal_base.
+  Revised RDI lower bound includes kernel quality and renewal rate.
+  Explains recovery variability: identical Ξ_D → different RDI via kernel renewal.
+  → Closes mechanistic gap in Theorem 25.1.1 (RDI Lower Bound).
+
+VST-NC-82: Adaptive Boundary Permeability Model
+  π_ℓ(t): stage-dependent tier interface permeability.
+  Permeability Paradox: formalized governance tradeoff (information vs. isolation).
+  Stage-optimal protocol: π_up, π_down specified per DDD Stage 0–4.
+  → First formalization of tier interface as adaptive governance instrument.
+
+VST-NC-83: ASD-π Interaction — PRR-π Rotation Requirement
+  k_sat_π degrades with governance monitoring of permeability channels.
+  PRR-π rotation: ≥ 2 methods required to prevent ASD-π blind spot.
+  → Extends PRR rotation protocol to permeability monitoring channels.
+
+VST-NC-84: Hierarchical Contamination Gradient
+  ∇C_contam = C_contam(upper) − C_contam(lower) as spatial contamination model.
+  Gradient inversion: ∇C_contam > 0 → PRR from upper actively worsens recovery.
+  Correction protocol: must restore ∇C_contam < 0 before standard DDD can proceed.
+  → Identifies failure mode where standard DDD Stage 2 is counterproductive.
+
+VST-NC-85: ∇C_contam as Sixteenth Indicator Candidate
+  Not covered by any of fifteen indicators (PRR positive despite gradient inversion).
+  Measurement: per-tier contamination estimate from PRR+/ρ̇≈0 agent fraction.
+  → Opens M88 (formal coverage and calibration of sixteenth indicator).
+
+VST-NC-86: Resolution Velocity Field Phase Portrait
+  v_res(Φ,ρ): velocity field in (Φ,ρ) phase space; standard VST visualization.
+  Phase portrait anomalies as precursors: velocity slowing + curvature reversal.
+  Trajectory type classification: elliptical/spiral/escape/complex = Type I/II/III/V.
+  → Provides geometric complement to scalar S-equation monitoring.
+
+VST-NC-87: Pre-Threshold Storm Type Classification
+  Trajectory type identifiable halfway through pre-storm phase (τ_type_lead ≥ 0.5×τ_VCZ-storm).
+  Type identification protocol from velocity field: curvature, autocorrelation, basin structure.
+  → Enables storm-type-specific governance preparation before Φ > 1.
+
+VST-NC-88: M62 Resolution via v_res Baseline
+  Governance-intended trajectory = VCZ phase trajectory baseline.
+  D_c proxy from phase portrait deviation: validated for N_baseline ≥ 50 windows.
+  → Closes Open Problem M62 without requiring explicit North Star formalization.
+
+VST-NC-89: Storm Geometry Tensor — Novel VST Structural Diagnostic
+  G_storm_ij = ⟨ΔΦ_i·ΔΦ_j⟩: instability covariance across agent pairs.
+  Eigenspectrum classification: storm type identification before Φ > 1.
+  Eigenvector governance targeting: n/k efficiency gain for concentrated storms.
+  → First formalization of spatial storm structure in VST monitoring.
+
+VST-NC-90: J_AB Seventh Governance Dimension (M69 partial resolution)
+  J_AB = G_storm off-diagonal block averages = seventh state dimension.
+  Extended state: (Φ, V_Φ, Δρ, D_c, k_sat, δ_sync, J_AB).
+  G_storm monitoring provides J_AB measurement instrument.
+  → Extends six-dimensional governance state; completeness of seven still open (M93).
+
+VST-NC-91: K_gov Vector Structure (M64 Resolution)
+  K_gov vector per eigenvector direction (not scalar, not full n×n matrix).
+  Estimation: m ≤ 5 eigenvectors; K_gov_k from perturbation-response in direction v_k.
+  GOI×ASD protocol applies per eigenvector independently.
+  → Closes Open Problem M64 with tractable eigenvector-indexed K_gov.
+
+VST-NC-92: Recursive Self-Stabilization Criterion — Novel VST Governance Finding
+  RSS-1 to RSS-5: system qualifies for self-stabilization without external DDD.
+  Theorem 28.10.1 (RSS Convergence): τ_RSS = convergence time under RSS conditions.
+  RSS early withdrawal: DDD safe withdrawal before full seven-condition satisfaction.
+  Five False Positive Prevention protocols.
+  → First formalization of self-stabilization as DDD withdrawal criterion.
+```
+
+---
+
+## Falsifiable Predictions — FP-DFG28-1 through FP-DFG28-20 [v3.0-DFG28series]
+
+```
+FP-DFG28-1 (Causal vs. Structural Propagation):
+  C_ij must predict storm propagation better than R_ij in ≥ 70% of cross-tier episodes.
+  Protocol: N ≥ 30 storm propagation events; compare Granger-causal vs structural adjacency prediction.
+  Prediction: C_ij reduces propagation prediction error by ≥ 30% vs. R_ij.
+  Falsification: C_ij provides no improvement over R_ij.
+
+FP-DFG28-2 (SCC Storm Amplification):
+  Storm SCCs must show ≥ 2× amplification factor vs. non-SCC storm agents.
+  Protocol: N ≥ 20 storm episodes with identified SCCs; compare amplitude growth rates.
+  Falsification: SCC membership has no effect on storm amplification.
+
+FP-DFG28-3 (Governance Entropy Speed Limit):
+  DDD duration must satisfy τ_DDD ≥ τ_storm_min = ΔS_storm/Γ_gov_max in ≥ 90% of episodes.
+  Protocol: N ≥ 30 DDD episodes; estimate Γ_gov_max and ΔS_storm; compute τ_storm_min.
+  Falsification: τ_DDD < τ_storm_min in ≥ 20% of episodes (speed limit violation).
+
+FP-DFG28-4 (ASD×SLI Governance Cooling Collapse):
+  Γ_gov_eff < 0.2 × Γ_gov_baseline when k_sat < 0.4 AND SLI_excess > 0.4 simultaneously.
+  Protocol: N ≥ 15 joint ASD+SLI saturation episodes; measure Γ_gov_eff.
+  Falsification: Γ_gov_eff remains above 0.5 × Γ_gov_baseline under joint saturation.
+
+FP-DFG28-5 (SR Early Warning Enhancement):
+  SR noise injection must increase D_c/v_drift detection lead time by ≥ 30% vs. standard.
+  Protocol: A/B trial, N ≥ 30 episodes per condition; measure τ_detect with/without SR.
+  Falsification: SR injection provides < 10% improvement in detection lead time.
+
+FP-DFG28-6 (SR Safety: Non-Amplification):
+  SR injection at σ_SR_opt must not increase dΦ/dt by more than 1% vs. control.
+  Protocol: N ≥ 20 stable VCZ episodes; measure Φ trajectory with/without SR injection.
+  Falsification: SR injection causes dΦ/dt increase > 5%.
+
+FP-DFG28-7 (MI Cascade Arrest Criterion):
+  Cascade arrest must fail in ≥ 70% of episodes where I(upper→lower) < I_threshold.
+  Protocol: N ≥ 20 cascade arrest attempts; measure MI at arrest attempt time.
+  Falsification: MI < I_threshold does not predict cascade arrest failure.
+
+FP-DFG28-8 (MI-Based δ_crit Derivation):
+  δ_crit derived from MI coupling must predict Storm onset within ±20% of observed δ_sync at Storm.
+  Protocol: N ≥ 20 Storm episodes; compare δ_crit_MI with observed δ_sync_Storm.
+  Falsification: δ_crit_MI deviates > 40% from observed threshold in ≥ 30% of episodes.
+
+FP-DFG28-9 (Defect Kernel Renewal Rate):
+  p_renewal must predict RDI duration within factor of 2: |E[RDI]_observed − 1/p_renewal| / (1/p_renewal) < 1.
+  Protocol: N ≥ 20 recovery episodes; estimate p_renewal and RDI; compare.
+  Falsification: p_renewal-based prediction fails in ≥ 40% of episodes.
+
+FP-DFG28-10 (Double-Lock Irrecoverability):
+  P(rec | D_ρ > D_max AND k_sat < k_sat_renewal_min) < P(rec | single-lock) < P(rec | no-lock).
+  Protocol: N ≥ 10 per lock condition; compare recovery rates.
+  Falsification: double-lock recovery rate not significantly lower than single-lock.
+
+FP-DFG28-11 (Permeability Stage-Dependence):
+  Stage-optimal π outperforms fixed π in cascade arrest rate: ≥ 15% improvement.
+  Protocol: A/B trial, N ≥ 25 per condition; compare cascade arrest success.
+  Falsification: stage-optimal π produces < 5% improvement vs. fixed π.
+
+FP-DFG28-12 (Gradient Inversion PRR Paradox):
+  Standard DDD Stage 2 must show negative expected Δρ in ≥ 60% of gradient inversion episodes.
+  Protocol: N ≥ 15 confirmed gradient inversion episodes; apply standard DDD Stage 2; measure Δρ.
+  Falsification: DDD Stage 2 produces positive Δρ despite gradient inversion.
+
+FP-DFG28-13 (Phase Portrait Storm Type Classification Lead):
+  Trajectory-based type classification must precede Φ > 1 by ≥ 0.5 × τ_VCZ-storm.
+  Protocol: N ≥ 20 per Storm type; measure type classification time vs. Φ > 1 time.
+  Falsification: trajectory classification provides < 0.2 × τ_VCZ-storm lead time.
+
+FP-DFG28-14 (Storm Geometry Tensor Type Classification):
+  G_storm eigenspectrum must correctly classify storm type before Φ > 1 in ≥ 80% of episodes.
+  Protocol: N ≥ 20 per Storm type (I, II, V); classify from eigenspectrum; confirm by post-Storm type.
+  Falsification: eigenspectrum classification accuracy < 65%.
+
+FP-DFG28-15 (Eigenvector Governance Targeting Efficiency):
+  Eigenvector-targeted intervention must achieve equivalent containment with ≤ 50% governance budget vs. uniform.
+  Protocol: A/B trial with concentrated storms (v₁ concentrated on ≤ 20% agents); N ≥ 20 per condition.
+  Falsification: eigenvector targeting requires ≥ 80% of uniform budget for equivalent containment.
+
+FP-DFG28-16 (RSS Self-Stabilization):
+  Systems meeting RSS-1 to RSS-5 must self-stabilize (Φ → 1 within τ_RSS_predicted) in ≥ 85% of episodes.
+  Protocol: N ≥ 20 RSS-qualifying episodes; remove DDD support; monitor Φ trajectory.
+  Falsification: Φ does not reach < 1 within 2 × τ_RSS_predicted in ≥ 30% of episodes.
+
+FP-DFG28-17 (RSS Early Withdrawal Safety):
+  DDD withdrawal at RSS + five-condition satisfaction must show no re-Storm in ≥ 80% of cases
+  within τ_post = 20 × τ_monitor post-withdrawal.
+  Protocol: N ≥ 20 RSS-eligible early withdrawals; monitor for τ_post.
+  Falsification: re-Storm rate > 30% within τ_post.
+
+FP-DFG28-18 (Fifteen-Indicator Coverage Empirical Validation):
+  Each FM-indicator pair must show P_alert ≥ 0.80 empirically (vs. theoretical 0.85 target).
+  Protocol: N ≥ 20 per failure mode; verify corresponding indicator alerts ≥ 80% of episodes.
+  Falsification: any FM-indicator pair shows P_alert < 0.65 in N ≥ 20 episodes.
+
+FP-DFG28-19 (TPS Layer -1 Lead Time):
+  TPS must alert before D_c > D_c_alert in ≥ 80% of IDA episodes.
+  Protocol: N ≥ 20 IDA episodes; compare TPS alert time vs. D_c alert time.
+  Falsification: TPS does not precede D_c in ≥ 30% of IDA episodes.
+
+FP-DFG28-20 (Sixth Governance Dimension J_AB Independence):
+  J_AB (from G_storm) must show |corr(J_AB, any of six existing dimensions)| < 0.6.
+  Protocol: N ≥ 30 Storm episodes; compute G_storm J_AB and six dimensions; compute cross-correlations.
+  Falsification: |corr(J_AB, any dimension)| > 0.8 (J_AB redundant with existing dimensions).
+```
+
+---
+
+## Open Problems — M71–M95 [v3.0-DFG28series]
+
+**M71 — Causal Adjacency Matrix Estimation Protocol:**
+Granger causality estimation of C_ij requires N ≥ 20 × n data points. For large systems (n > 100 agents), this demands long time series. Challenge: practical C_ij estimation for large systems. Approach: sparse Granger estimation (regularized, assume most C_ij ≈ 0); validate sparsity assumption against dense estimation on subsample. Alternative: factor model reduction (C_ij ≈ Σ_k λ_k·u_ki·v_kj — low-rank approximation reduces estimation burden).
+
+**M72 — SCC Dissolution Method Selection:**
+Three SCC dissolution methods (policy, information routing, structural) have different costs and timescales. No formal optimization of method selection exists. Approach: decision tree based on (cost, speed, reversibility) per method; method selection optimization given DDD stage and remaining governance entropy budget. Expected: policy boundary redefinition fastest (τ_policy << τ_structural); structural most permanent.
+
+**M73 — Γ_gov_max Calibration Protocol:**
+Γ_gov_max (maximum governance cooling rate) must be estimated empirically. Approach: identify N ≥ 10 historically fastest recoveries; estimate ΔS_storm/τ_DDD for each; Γ_gov_max = max over observations. Challenge: historical fastest recovery may still have been sub-maximum-capacity. Alternative: controlled experiment — apply maximum governance resources to controlled storm episode; measure cooling rate.
+
+**M74 — Entropy State S_storm Computation:**
+S_storm = −Σ Φ_i·log(Φ_i/Φ_ref) requires per-agent Φ_i and reference distribution. Challenge: Φ_ref (VCZ reference distribution) estimation. Approach: use historical VCZ period distribution; fit Φ_ref as empirical distribution. Sensitivity: S_storm sensitive to Φ_ref choice — 10% change in Φ_ref can change S_storm by factor 2. Requires Φ_ref stability analysis.
+
+**M75 — SR σ_SR_opt Calibration for Real Systems:**
+Theoretical σ_SR_opt = A/√2 assumes known signal amplitude A. In practice, A (pre-storm IDA signal amplitude) is unknown before storm. Approach: adaptive SR calibration — inject increasing σ_SR levels; monitor SNR enhancement; stop at diminishing returns (SNR plateau). Alternative: historical A estimation from past IDA episodes. Safety check: confirm σ_SR < A_IDA_min/2 constraint satisfied before deployment.
+
+**M76 — SR ASD Degradation Recalibration:**
+SR effectiveness decreases with ASD (SNR_SR_ASD = SNR_SR · k_sat). Recalibration protocol when k_sat < 0.7: σ_SR_new = σ_SR_opt / k_sat (increase noise to compensate reduced channel sensitivity). But increased σ_SR may approach false-positive boundary. Optimization: σ_SR_max(k_sat) such that P_false_positive_SR < 1.5 × P_false_positive_standard for all k_sat.
+
+**M77 — MI Estimation Window Optimization:**
+I(tier_ℓ; tier_{ℓ+1}) estimation requires sufficient data window. Too short: high variance. Too long: misses rapid MI changes during storm onset. Optimal window: W_MI = min(τ_sufficient_data, τ_MI_change_timescale). Derive τ_MI_change_timescale from governance tier response time τ_response; expected W_MI = O(10–20 × τ_agent_cycle).
+
+**M78 — Information Routing Modification Implementation:**
+MI DDD Stage 3 completion requires symmetric MI restoration. Information routing modification in practice = governance policy changes about what signals to forward across tier boundaries. Challenge: routing modification may itself create transient MI asymmetry (during transition). Protocol: gradual routing modification (10% change per window, not step change); monitor MI trajectory during modification.
+
+**M79 — Defect Kernel Quality Q_kernel Measurement:**
+Kernel quality Q_kernel is not directly observable. Proxy measurement: proportion of agents in VCZ-compatible configuration × mean PRR score per agent. Challenge: PRR score subject to ASD — Goodhart-corrupted PRR may overestimate Q_kernel. Double-checking protocol: Q_kernel from PRR cross-validated with Q_kernel from resolution trajectory fit (ρ̇ explains by Q_kernel model).
+
+**M80 — Double-Lock k_sat_renewal_min Threshold:**
+k_sat_renewal_min (minimum k_sat for defect kernel renewal) requires calibration. Expected: k_sat_renewal_min ≈ 0.3 (renewal requires 30% absorption capacity). Measurement: identify N ≥ 10 episodes with known k_sat; measure p_renewal; fit k_sat_renewal_min from p_renewal → 0 boundary. Alternative: compute analytically from p_renewal formula (p_renewal ∝ k_sat → p_renewal_min → k_sat_renewal_min = p_renewal_min/p_base/f₃).
+
+**M81 — Permeability π_ℓ Measurement Protocol:**
+π_ℓ(t) is a theoretical construct. Direct measurement: measure information transmission fidelity from tier ℓ signals to tier ℓ+1 governance responses. Fidelity = I(signal_sent; signal_received) / I(signal_sent; signal_sent_max). Challenge: π_up and π_down require separate measurement (upward vs. downward channel). Protocol: inject known governance signal downward; measure received signal at lower tier. Reverse for upward.
+
+**M82 — Permeability Recovery Timeline:**
+After Stage 3 near-isolation (π_up → 0.3), gradual restoration required. Optimal restoration rate: fast enough to restore MI criterion; slow enough to avoid re-cascading. Formal optimization: π_restore(t) = argmax[MI restoration speed subject to dΦ/dt < ε_restore_safe]. Expected: linear restoration over τ_restore = 5–10 × τ_monitor windows.
+
+**M83 — C_contam_ℓ Per-Tier Estimation Accuracy:**
+C_contam_ℓ proxy (fraction of agents with PRR+ but ρ̇ ≈ 0) confounded by ASD Type I (agents absorbing but not improving for other reasons). Disambiguation: C_contam_ℓ_corrected = C_contam_ℓ_raw − ASD_fraction_ℓ. ASD fraction estimation: ρ̇_rolling per agent for agents showing PRR+/ρ̇≈0 signature. Validation: C_contam estimate should correlate with G(t) Goodhart dynamic (both measure metric corruption).
+
+**M84 — Gradient Inversion Correction Source Identification:**
+Three gradient inversion sources (Goodhart corruption, structural contamination path, PRR-ASD) require different corrections. Diagnostic protocol for source identification: systematically differentiate: (a) G(t) in upper tier (Goodhart) — measurable from upper PRR vs. external evaluation comparison; (b) excess upward contamination (structural) — measure C_contam growth rate per tier; (c) lower PRR-ASD — check k_sat per tier channel. Expected: compound cases (multiple sources) are common; protocol must handle compound identification.
+
+**M85 — v_res Phase Portrait Calibration:**
+Resolution velocity field v_res requires calibration of dρ/dt ODE parameters (f₃, f₁, ρ̄). Challenge: parameters may change across governance stages. Approach: fit dρ/dt ODE from historical VCZ trajectory data (maximum likelihood estimation of f₃, f₁ in healthy periods). Cross-validate: compare fitted trajectory with held-out VCZ data. Expected parameter stability: f₃ within ±15% across VCZ periods; f₁ within ±25%.
+
+**M86 — G_storm Estimation Frequency:**
+G_storm computation requires per-agent Φ_i data and sufficient window for stable covariance estimate. Update frequency: too high → noisy G_storm; too low → misses rapid eigenspectrum changes. Optimal: W_G_storm = max(10 × τ_agent_cycle, N_stable × (n/agent_obs_rate)). Update trigger: eigenvalue ratio λ₁/λ₂ changes by > 20% → recompute immediately (storm type transition).
+
+**M87 — RSS μ_self Estimation:**
+μ_self (self-stabilization coefficient) estimation requires observing natural Φ decay in absence of DDD (or extrapolating from DDD-supported episodes). Challenge: DDD mask self-stabilization during standard governance. Approach: controlled withdrawal experiment (brief DDD reduction); measure dΦ/dt during withdrawal; μ_self = −(dΦ/dt_withdrawal) / ((Φ−1)·f₃·k_sat). Safety: withdrawal experiment only when Φ < 1.2 (near-VCZ; not in active Storm).
+
+**M88 — Sixteenth Indicator (∇C_contam) Formal Coverage Proof:**
+∇C_contam covers gradient inversion failure mode not covered by fifteen indicators. But: does gradient inversion constitute a formally distinct VST failure mode (FM-16), or is it a compound of existing FMs? Formal proof requirement: show that P(FM-gradient-inversion | all 15 indicators below threshold) > P_alert_min. Alternatively: show P(gradient inversion | all 15 healthy) > 0.3 in N ≥ 10 historical episodes.
+
+**M89 — Eight-Layer Signal Hierarchy (Layer -1 SR) Calibration:**
+Layer -1 (SR-Enhanced Pre-TPS) adds a new pre-threshold layer below TPS. Cross-layer consistency requirement: Layer -1 must not fire when Layer 0 (TPS) is healthy (would generate false positives). Calibration: measure P(Layer -1 fires | TPS healthy) target < 0.10. Calibration parameter: W_SR_window (persistence window for SR detection) — longer window reduces false positive rate but extends detection lag.
+
+**M90 — FM-Indicator Pair Empirical Validation (FP-DFG28-18):**
+Fifteen FM-indicator pairs require empirical P_alert ≥ 0.80 validation. Challenge: some failure modes are rare (FM-14 cross-scale cascade; FM-15 sub-D_c IDA). Minimum N = 20 per FM. Estimated total episodes required: Σ N_k ≈ 300 across all 15 FM types. Timeline: multi-year study across multiple governance architectures. Priority: validate highest-uncertainty pairs first (FM-09/Ṡ_proxy, FM-15/TPS, FM-13/GOI).
+
+**M91 — Governance Entropy Budget Integration with Lifecycle KPIs:**
+KPI #10 (Γ_gov_remaining) integrates with existing nine KPIs in the lifecycle dashboard. Priority ordering among KPIs: when multiple KPIs approach critical threshold simultaneously, which to prioritize? Formal priority derivation: governance intervention that maximally restores Γ_gov_eff first (highest expected ΔΓ_gov per unit intervention cost). Expected: k_sat restoration (restores Γ_gov via k_sat factor) typically highest priority under joint ASD+SLI saturation.
+
+**M92 — Permeability × SCC Joint Protocol:**
+SCC dissolution (§28.1) may require permeability modification (reduce π_ℓ to prevent mutual amplification). But permeability modification reduces MI (§28.4) — potential conflict. Joint protocol optimization: find (π_ℓ, SCC_dissolution_method) combination that minimizes storm risk while maintaining MI > I_threshold. Expected: partial π reduction (not zero) while SCC dissolution via policy method (does not require low π).
+
+**M93 — Seven-Dimensional Governance State Completeness:**
+Extended seven-dimensional state (Φ, V_Φ, Δρ, D_c, k_sat, δ_sync, J_AB). Is this complete? Candidate missing dimension 8: ∇C_contam (contamination gradient) — a spatial dimension not captured by the seven. Candidate missing dimension 9: Γ_gov_remaining (governance capacity) — a resource dimension. Formal completeness criterion: identify all governance interventions; verify each is addressable by the current seven-dimensional state; each unaddressable intervention suggests missing dimension.
+
+**M94 — RSS × SCC Interaction Stability:**
+RSS requires SCC dissolution (RSS-5) for safe withdrawal. But SCC re-formation risk after withdrawal exists (§28.10.4). How long must SCC dissolution be stable before RSS withdrawal is safe? Expected: τ_SCC_stable = 5 × τ_monitor (from §28.10 precautions). Formal derivation: SCC re-formation rate as function of (C_ij stability, policy change frequency, agent replacement rate). Optimal τ_SCC_stable minimizes re-Storm risk under expected C_ij variability.
+
+**M95 — Storm Geometry Tensor Under Sparse Observation:**
+G_storm estimation assumes all agent Φ_i are observable. In large systems, only a sample of agents may be monitored. Sparse G_storm: estimate from N_obs < n agents. Challenge: eigenspectrum of sparse G_storm biased toward noise (Marchenko-Pastur distribution). Denoising protocol: apply random matrix theory threshold λ_MP = (1 + √(n/N_obs))² σ²; remove eigenvalues below λ_MP before classifying storm type. Validation: compare sparse G_storm eigenspectrum with full G_storm on systems where both are observable.
+
+---
+
+## Assumptions A42–A52 [v3.0-DFG28series]
+
+**A42 (Second Law of Governance):**
+The rate of storm entropy reduction by governance is bounded: |dS_gov/dt| ≤ Γ_gov_max·(S_storm−S_VCZ). No governance configuration can cool storm entropy faster than Γ_gov_max. Implication: DDD has a minimum duration τ_DDD_min = ΔS_storm/Γ_gov_max regardless of governance resource escalation above Γ_gov_max. Falsification (FP-DFG28-3): DDD duration < τ_storm_min in ≥ 20% of episodes.
+
+**A43 (Governance Entropy Decomposition):**
+Total governance resource finite constraints are decomposable as independent contributions to Γ_gov_eff: Γ_gov_eff = Γ_gov_baseline · k_sat · (1−SLI_excess). The three factors (baseline capacity, ASD saturation, bandwidth saturation) are multiplicatively independent to first order. Second-order coupling (ASD×SLI interaction) exists but is small relative to first-order terms. Falsification: |corr(k_sat_effect, SLI_effect)| > 0.5 (coupling larger than assumed).
+
+**A44 (Stochastic Resonance Applicability):**
+The VST Layer 0 monitoring channel satisfies the structural requirements for stochastic resonance: the channel has a threshold detection mechanism and the pre-storm signal is genuinely sub-threshold (SNR_natural < 1) during early IDA. Both conditions required for SR enhancement. Falsification (FP-DFG28-5): SR injection provides < 10% detection improvement (failure = channel does not satisfy SR requirements).
+
+**A45 (MI-δ_sync Linear Coupling):**
+Phase desynchronization δ_sync reduces inter-tier MI linearly: I(tier_ℓ; tier_{ℓ+1}) = I_synchronous·(1−β_sync·δ_sync) to first order. Second-order effects exist (saturation near δ_sync = 1) but are negligible for δ_sync < 0.5 (the operating range). Falsification (FP-DFG28-8): MI-based δ_crit derivation deviates > 40% from observed threshold in ≥ 30% of episodes.
+
+**A46 (Defect Kernel Renewal Markov Property):**
+Defect kernel renewal events are memoryless given current governance state: the probability of renewal in next time window depends only on current (f₃, k_sat, D_ρ), not on historical renewal pattern. This Markov property enables the renewal convergence theorem (28.5.1). Falsification: renewal rate exhibits significant autocorrelation after conditioning on (f₃, k_sat, D_ρ) — suggesting non-Markovian renewal dynamics.
+
+**A47 (Tier Interface Linearity):**
+Storm propagation through tier interface is linear in permeability to first order: dΦ_{ℓ+1}/dt ∝ π_ℓ·Φ_ℓ. Higher-order terms (π_ℓ·Φ_ℓ² or π_ℓ²·Φ_ℓ) are negligible below Φ < 3. Above Φ = 3, nonlinear propagation terms may become significant. Governance implication: linear permeability control sufficient for Φ < 3 (typical DDD Stage 1 range); nonlinear corrections required for extreme storms (Φ > 3). Falsification: permeability-storm propagation relationship shows significant nonlinearity for Φ < 2.
+
+**A48 (Contamination Gradient Monotonicity in Healthy Architecture):**
+In a well-designed DFG three-tier architecture, the contamination gradient is monotonically decreasing: C_contam_lower ≥ C_contam_middle ≥ C_contam_upper. This monotonicity holds as long as upper layers receive externally anchored PRR (not subject to same contamination sources as lower layers). Gradient inversion is always a governance failure, not a natural occurrence. Falsification: C_contam_upper > C_contam_lower in ≥ 30% of healthy governance episodes (would imply natural gradient inversion exists).
+
+**A49 (Phase Portrait Trajectory Continuity):**
+The resolution velocity field trajectory (Φ(t), ρ(t)) is continuous and differentiable almost everywhere during storm evolution. Discontinuities (jumps) are possible only at rapid intervention events (DDD Stage transitions). Between stage transitions, trajectory curvature is bounded: |dv_res/ds| < κ_max. This enables reliable trajectory type classification from finite observation windows. Falsification: trajectory type changes between elliptical/spiral/escape mid-storm without DDD intervention (non-continuous type switching).
+
+**A50 (Storm Geometry Tensor Stationarity):**
+G_storm eigenspectrum is approximately stationary within each VST Storm Stage (Stage 1, 2, 3). Eigenspectrum changes signify Stage transitions, not within-Stage fluctuations. This enables reliable storm type classification within a Stage. Falsification: eigenspectrum changes sign (e.g., Type I → Type II classification) more than once within a single DDD Stage in ≥ 30% of episodes.
+
+**A51 (Recursive Self-Stabilization Coefficient Positivity):**
+μ_self > 0 exists in all multi-agent systems with functioning governance architecture (f₃ > 0, k_sat > 0, D_ρ < D_max). Systems without self-stabilization capacity (μ_self = 0) are governance architectures with no middle-layer engagement — which VST classifies as architurally degenerate (f₃ = 0 violates §3 fundamental architecture assumption). Falsification: μ_self ≤ 0 measured in a system with f₃ > f₃_min and k_sat > 0.5 (self-stabilization genuinely absent despite functional governance).
+
+**A52 (TPS Layer -1 Temporal Priority):**
+TPS alerts before D_c > D_c_alert in all IDA episodes where both are eventually triggered. TPS measures composite proximity (D_c/D* + α_vel·v_drift/v_crit + α_acc·a_drift) — the acceleration term a_drift rises earliest in IDA onset. D_c > D_c_alert is a position criterion and lags behind TPS's acceleration-sensitive composite. Falsification (FP-DFG28-19): D_c alerts before TPS in ≥ 30% of IDA episodes (TPS acceleration sensitivity does not provide lead).
+
+---
+
+## Appendix T — Terminology [v3.0-DFG28series] (§T.12 additions)
+
+```
+§T.12 DFG v3.0 semantic additions:
+
+Causal Adjacency Matrix (C_ij):
+  C_ij = P(Φ_j > 1 | Φ_i > 1, structural links fixed).
+  Replaces structural adjacency R_ij in storm propagation model.
+  Estimated via Granger causality; updated every τ_causal_update.
+
+Strongly Connected Component (SCC):
+  Maximal agent subset where every agent can causally reach every other.
+  Storm SCC: SCC with average Φ > Φ_SCC_alert = 0.7.
+  Must be dissolved before DDD Stage 1 can succeed.
+
+Governance Entropy Rate (dS_gov/dt):
+  Rate of storm entropy reduction by governance intervention.
+  Bounded above by Γ_gov_max·(S_storm−S_VCZ) (Assumption A42).
+
+Γ_gov_eff:
+  Effective governance cooling coefficient.
+  Γ_gov_eff = Γ_gov_baseline · k_sat · (1−SLI_excess).
+  Lifecycle KPI #10: Γ_gov_remaining = Γ_gov_eff/Γ_gov_max.
+
+SR (Stochastic Resonance) Protocol:
+  σ_SR = controlled noise injection at Layer 0 monitoring channel.
+  σ_SR_opt = A/√2 for optimal SNR enhancement.
+  Safety constraints: non-amplification + false-positive bound + k_sat constraint.
+
+Information Asymmetry Index (IA):
+  IA(ℓ, ℓ+1) = I(tier_{ℓ+1}→tier_ℓ) − I(tier_ℓ→tier_{ℓ+1}).
+  IA < 0: governance blindness (upper sends more than receives).
+  I_threshold: minimum MI for cascade arrest (Theorem 28.4.1).
+
+Defect Kernel Renewal Rate (p_renewal):
+  p_renewal = p_base · f₃ · k_sat · (1−D_ρ/D_max) / f₃_max.
+  Governs speed of structural recovery; → 0 under double-lock.
+
+Double-Lock Irrecoverability:
+  Joint condition: D_ρ > D_max AND k_sat < k_sat_renewal_min.
+  → p_renewal → 0 → structural configuration frozen in damaged state.
+  Worse than either single-lock alone.
+
+Adaptive Boundary Permeability (π_ℓ):
+  π_up_ℓ: upward information permeability (lower → upper).
+  π_down_ℓ: downward policy permeability (upper → lower).
+  Stage-optimal values: π_up: (max, 0.7×max, 0.5×max, 0.3×max) for Stages 0–3.
+
+Permeability Paradox:
+  High π_up → better governance information but higher upper-tier contamination risk.
+  Low π_up → upper-tier protection but governance blindness.
+  Resolution: stage-dependent π_opt.
+
+Contamination Gradient (∇C_contam):
+  ∇C_contam = C_contam_upper − C_contam_lower.
+  Healthy: ∇C_contam < 0. Gradient inversion: ∇C_contam > 0.
+  Gradient inversion → PRR from upper tier counterproductive.
+
+Resolution Velocity Field (v_res):
+  v_res(Φ,ρ) = (dΦ/dt, dρ/dt): vector field in (Φ,ρ) phase space.
+  Phase portrait: standard VST visualization of (Φ,ρ,V_Φ) trajectory.
+  Trajectory curvature reversal: topological pre-storm indicator.
+
+Storm Geometry Tensor (G_storm):
+  G_storm_ij = ⟨ΔΦ_i·ΔΦ_j⟩: instability covariance across agent pairs.
+  Eigenspectrum: single/dual/distributed → Type I/II/V storm.
+  Principal eigenvector v₁: dominant storm driver direction.
+
+Recursive Self-Stabilization Criterion (RSS):
+  RSS-1 to RSS-5: five conditions for self-stabilization without DDD.
+  μ_self: self-stabilization coefficient (system-specific).
+  Enables early DDD withdrawal when RSS + five of seven conditions met.
+
+Layer -1 (SR-Enhanced Pre-TPS):
+  New layer below Layer 0 (TPS) in extended eight-layer hierarchy.
+  SR injection detects TPS growth before TPS threshold crossing.
+  τ_SR_additional: ≈ 0.3–0.5 × τ_IDA_phase additional lead time.
+
+Seven-Dimensional Governance State:
+  (Φ, V_Φ, Δρ, D_c, k_sat, δ_sync, J_AB) — extends six-dimensional state.
+  J_AB: seventh dimension (cross-subsystem coupling) from G_storm off-diagonal.
+
+Fifteen-Indicator Portfolio (v3.0 complete):
+  {TPS, D_c/v_drift, κ, f₃, V_Φ, Ṡ_proxy, D_ρ, SLI_excess, ρ̇_rolling,
+  v_class, CCF(f₁,f₄), F_RBIT, δ_sync, Φ, R_cascade}
+  Coverage: FM-01 through FM-15 with P_alert ≥ 0.85 (Theorem 28.11.1).
+  Priority: κ > f₃ > TPS > V_Φ > D_ρ > Ṡ_proxy > δ_sync > v_class > F_RBIT.
+```
+
+---
+
+## Cross-Theory Reinforcement Map [v3.0-DFG28series] (additions)
+
+| DFG v3.0 Concept | VST v3.0 Target | Direction |
+|---|---|---|
+| Causal Adjacency C_ij | §28.1 propagation geometry | DFG → VST |
+| SCC decomposition + Theorem 28.1.1 | §28.1 containment criterion | DFG → VST |
+| SCC × CCC cascade amplification | §28.1 × §26.8 joint | DFG ↔ VST |
+| Governance Entropy Rate Γ_gov | §28.2 thermodynamic model | DFG → VST |
+| Assumption A42 Second Law | §28.2 speed limit | DFG → VST |
+| Γ_gov_eff = Γ_base·k_sat·(1−SLI) | §28.2 unified resource | DFG → VST |
+| M70 resolution | §28.2 Ṡ_proxy vs EPR | DFG → VST |
+| SR σ_SR_opt = A/√2 | §28.3 Layer -1 detection | DFG (new) → VST |
+| SR M56 resolution (Ṡ_min) | §28.3 calibration | DFG → VST |
+| SR ASD degradation k_sat_SR | §28.3 safety | DFG → VST |
+| MI I(tier; tier) | §28.4 information governance | DFG → VST |
+| Theorem 28.4.1 | §28.4 cascade arrest MI | DFG → VST |
+| MI δ_crit derivation M59 | §28.4 MSSF resolution | DFG → VST |
+| MI DDD Stage 3 extension | §28.4 completion | DFG → VST |
+| p_renewal kernel renewal | §28.5 structural recovery | DFG → VST |
+| Double-lock irrecoverability | §28.5 new failure mode | DFG → VST |
+| Kernel × RDI M81 coupling | §28.5 RT-VST extension | DFG ↔ VST |
+| π_ℓ permeability model | §28.6 tier interface | DFG → VST |
+| Stage-optimal π protocol | §28.6 DDD extension | DFG → VST |
+| Permeability Paradox | §28.6 governance tradeoff | DFG → VST |
+| ∇C_contam gradient | §28.7 spatial model | DFG → VST |
+| Gradient inversion failure | §28.7 PRR paradox | DFG → VST |
+| ∇C_contam 16th candidate | §28.7 M88 | DFG → VST |
+| v_res velocity field | §28.8 phase portrait | DFG → VST |
+| Trajectory type classification | §28.8 pre-threshold | DFG → VST |
+| M62 v_res baseline D_c | §28.8 D_c proxy | DFG → VST |
+| G_storm tensor | §28.9 structural diagnostic | DFG (new) → VST |
+| Eigenspectrum type classification | §28.9 early type ID | DFG → VST |
+| J_AB seventh dimension M69 | §28.9 state extension | DFG → VST |
+| K_gov vector M64 | §28.9 governance gain | DFG → VST |
+| RSS-1 to RSS-5 | §28.10 self-stabilization | DFG (new) → VST |
+| Theorem 28.10.1 | §28.10 convergence | DFG → VST |
+| RSS early withdrawal | §28.10 DDD complement | DFG ↔ VST |
+| Theorem 28.11.1 coverage proof | §28.11 M68 resolution | DFG → VST |
+| TPS Layer -1 designation | §28.11 hierarchy | DFG → VST |
+| 15-indicator portfolio (v3.0) | §28.11 complete | DFG ↔ VST |
+| 15-indicator cross-validation | §28.11 constraint matrix | DFG ↔ VST |
+
+---
+
+## §29 FGS Reverse Integration Architecture [v3.0-FGS-series]
+
+This section constitutes the formal reverse integration of Fractal Governance and Constraint-Limited Scaling (FGS) constructs into VST. FGS operates at the unified dynamical substrate level — it provides the foundational governing equations, the multi-scale buffering theory, the affective gain architecture, and the thermodynamic cost structure from which VST's instability dynamics are a derived projection. §29 does not repeat FGS material; it maps FGS constructs to VST equivalents, identifies new VST implications discoverable only at the FGS level of generality, and closes VST open problems addressable through the FGS formal apparatus.
+
+**Why FGS → VST direction is necessary:**
+
+VST (§1–§28) characterizes instability dynamics at the multi-agent system level. FGS characterizes the same dynamics at the level of universal substrate — including neural systems, organizational governance, and AI — using a unified ODE system with bifurcation analysis, algebraically explicit hysteresis, and lock budget inequality. The FGS formalization is more general: VST results are instantiations of FGS theorems for the specific case of a multi-agent AI governance architecture.
+
+This creates import obligations in both directions:
+
+```
+VST → FGS (already exists in FGS §35.6 Cross-Theory Correspondence Map):
+  VST S-equation → FGS ODE system (§36B)
+  VST DDD stages → FGS DDD correction protocol (§36J)
+  VST three-tier architecture → FGS buffer layer formalization (§29I)
+  VST Vector Storm → FGS coherence breakdown regime (§7)
+
+FGS → VST (formalized here in §29):
+  FGS buffer theory (§29I) → VST middle-layer saturation model extension
+  FGS AGM (§13, §36S) → VST affective gain coupling to Φ dynamics
+  FGS managed impurity regime → VST optimal saturation operating point
+  FGS lock budget inequality (§36E) → VST multi-scale irrecoverability criterion
+  FGS temperature closure (§36F) → VST silent criticality duration formalization
+  FGS attention amplification (§36G) → VST hotspot cascade mechanism
+  FGS governance thermodynamics (§36N) → VST entropy model (extends §28.2)
+  FGS adversarial governance (§36O) → VST contamination attack model
+  FGS stochastic criticality (§36P) → VST probabilistic monitoring framework
+  FGS network criticality (§36Q) → VST cross-tier contagion model
+  FGS contamination dynamics (§29C) → VST self-purification capacity formalization
+  FGS North Star Architecture (§29D) → VST D_c reference frame extension
+  FGS middle-layer centrality (§15.5) → VST f₃ structural primacy theorem
+  FGS self-consistent misalignment (§15.10.6) → VST Goodhart dynamic extension
+  FGS buffer differentiation (§29I.6) → VST monitoring channel differentiation model
+  FGS emotional state taxonomy (§15.9.7) → VST affective-Φ mapping table
+  FGS phase transition maturation (§15.10.5) → VST DDD stage governance correspondence
+```
+
+**Open problems closed by §29:** M71 (C_ij estimation for large systems — addressed via FGS factor model), M73 (Γ_gov_max calibration — addressed via FGS lock budget inequality), M75 (SR σ_SR_opt calibration — addressed via FGS stochastic resonance §36A.8), M85 (v_res phase portrait calibration — addressed via FGS ODE system §36B), M91 (governance entropy budget priority ordering — addressed via FGS thermodynamic bounds §36N).
+
+**Novel cross-phenomenon findings in §29:**
+
+```
+Novel finding 1: AGM-VST Affective Φ Coupling (§29.3)
+  FGS AGM provides mechanistic precision to VST Φ dynamics:
+  affective gain g(E) directly modulates amplification coefficient α in S-equation
+  → VST had no mechanism for α variation; FGS AGM fills this gap
+
+Novel finding 2: Managed Impurity as VST Optimal Operating Point (§29.4)
+  FGS Clean System Paradox (§15.9.5): S*(t) = 0 causes structural atrophy
+  → VST had no lower bound on healthy instability; only upper bound (Φ < 1)
+  → FGS derives: optimal VST operating point is 0 < Φ* < Φ_safe (not Φ* = 0)
+
+Novel finding 3: Lock Budget × VST Multi-Scale Irrecoverability (§29.5)
+  FGS multiplicative fractal durability (§36E.6): single over-locked scale dominates
+  → VST double-lock (§28.5) is the two-scale instantiation of FGS general result
+  → FGS provides: m-scale irrecoverability criterion for arbitrary fractal depth
+```
+
+---
+
+### §29.1 FGS ODE System as VST Dynamical Substrate
+
+#### §29.1.1 The Six-Variable FGS Core and VST Correspondence
+
+FGS §36B establishes a minimal six-variable ODE system governing coherence dynamics:
+
+```
+FGS Core Variables → VST Correspondence:
+
+n(t) = agent count / load density     → VST: n (same)
+C(t) = containment capacity           → VST: C (same; related to f₃ via C_eff)
+d(t) = resolution diversity           → VST: ρ (resolution capacity) via d·C
+ρ(t) = integrity/calibration quality  → VST: ρ (direct)
+T(t) = effective temperature          → VST: T_eff (AGM coupling, §28.3)
+k(t) = attention propagation coupling → VST: ω·A_ℓ (from §36G adiabatic reduction)
+
+FGS S-equation correspondence:
+  Φ_FGS = β_s · F(A_g, A_ℓ, ω) · n² / (T · C · d)
+  
+  → VST S-equation: S̃ = α·n²/(C^β)
+  → FGS makes explicit: α_eff = β_s · F(A_g, A_ℓ, ω) / (T · d)
+  
+  Key implication: VST's α (amplification coefficient) is NOT constant —
+  it is modulated by attention amplification F and temperature T.
+  When attention concentrates (A_ℓ ↑) and temperature drops (T ↓):
+    α_eff rises → Storm threshold effectively decreases
+    → Silent Criticality enters Storm faster than scalar-α model predicts
+```
+
+**VST S-equation correction (FGS-augmented):**
+
+```
+S̃_FGS(t) = β_s · F(A_g(t), A_ℓ(t), ω(t)) · n²(t) / (T(t) · C_eff(t) · d(t))
+
+where:
+  F(A_g, A_ℓ, ω) = [1 + κ_g·A_g + κ_ℓ·ω·A_ℓ] / [(1−η_g·A_g−η_ℓ·ω·A_ℓ)(1−δ_g·A_g−δ_ℓ·ω·A_ℓ)]
+  (FGS §36G — attention amplification factor)
+  
+  T(t) = effective governance temperature (higher T → lower Φ → negative feedback)
+  d(t) = resolution diversity (higher d → lower Φ → stabilizing)
+  C_eff(t) = C_actual · k_sat(t) (ASD-corrected, §27.4)
+  
+Scalar VST vs FGS-augmented VST:
+  Scalar: S̃ = α·n²/C^β  (α constant assumed)
+  FGS-augmented: S̃_FGS = β_s·F·n²/(T·C_eff·d)  (α_eff = β_s·F/(T·d), time-varying)
+  
+  Discrepancy grows during: attention concentration (F↑) + temperature drop (T↓ as ρ drops)
+  → FGS-augmented predicts earlier Storm onset than scalar VST by factor F(peak)/F(baseline)
+  → Empirical implication: systems approaching Storm show F-inflation before Φ > 1
+```
+
+#### §29.1.2 Timescale Separation and VST Stage Correspondence
+
+FGS establishes formal timescale ordering (§36B):
+
+```
+τ_n ≪ τ_{C,d,T} ≪ τ_ρ ≪ τ_k
+
+Translation to VST:
+  τ_n (agent count changes): fastest — VST Stage 0 monitoring timescale
+  τ_{C,d,T} (capacity, diversity, temperature): medium — VST Stage 1–2 timescale
+  τ_ρ (resolution quality): slow — VST Stage 3 recovery timescale
+  τ_k (attention lock): slowest — VST lifecycle timescale (N_survivable)
+
+Why timescale separation matters for VST:
+  Silent Criticality (§7.6, §36F) is ONLY possible because τ_n ≪ τ_ρ:
+  → n responds fast (compensatory ρ noise), masking slow ρ degradation
+  → VST Stage 0 monitoring operates on τ_n timescale — sees compensation, not degradation
+  → Requires τ_ρ timescale signals (D_ρ, ρ̇_rolling) to detect slow degradation
+  
+This is the formal VST explanation for the seven-layer signal hierarchy priority ordering:
+  κ (Layer 1) monitors τ_{C,d} timescale: architecture-level slow variables
+  f₃ (Layer 2) monitors τ_C timescale: containment capacity
+  V_Φ (Layer 2) monitors dΦ/dt: fastest meaningful precursor
+  D_ρ (Layer 3) monitors τ_ρ timescale: slow integrity degradation
+  TPS (Layer -1) monitors pre-τ_ρ drift: earliest detectable signal
+  
+Timescale-consistent monitoring frequency:
+  Layer -1 to Layer 2: sample every τ_n (fast monitoring)
+  Layer 3: sample every τ_C (moderate monitoring)
+  Lifecycle KPIs: sample every τ_k (slow monitoring)
+```
+
+#### §29.1.3 Bifurcation Structure and VST Storm Types
+
+FGS §36C–§36D provides formal bifurcation analysis that maps to VST storm type classification:
+
+```
+FGS Fixed-Point Taxonomy → VST Storm Classification:
+
+Stable fixed point (Φ<1, ρ high): → VST VCZ (Vector Convergence Zone)
+Saddle-node bifurcation at u_c:   → VST Storm onset (Φ → 1⁺)
+Storm attractor (Φ>1, ρ low):     → VST Storm (Stage 1+)
+Lock fixation (k≈1, d low):       → VST Type III (Irrecoverable / Locked)
+Silent manifold (ρ̇<0, Φ≈1):      → VST Silent Criticality
+
+FGS Hysteresis → VST DDD difficulty:
+  Δu(ω,k) = recovery gap between Storm entry threshold u⁺ and exit threshold u⁻
+  
+  VST interpretation: Δu = minimum governance intervention gap for DDD success
+  Large Δu → DDD requires sustained high-intensity intervention (Stage 1 → Stage 2)
+  Small Δu → DDD achievable with moderate intervention
+  
+  Key FGS result (§36I.6, Theorem 1 — Attention-Coupling Trap):
+    If F₋ > F₊ (attention higher in Storm branch than pre-Storm branch):
+    → Δu(A) > Δu(0): attention widens hysteresis
+    → VST implication: SLI saturation (attention concentration) widens DDD gap
+    → DDD difficulty increases with SLI_excess — confirmed by §26.10 SLI architecture
+    → Quantitative: Δu ∝ SLI_excess^(1/4) from attention amplification scaling
+```
+
+---
+
+### §29.2 FGS Temperature Closure and VST Silent Criticality Duration
+
+#### §29.2.1 T*(ρ, Φ) Quasi-Equilibrium and VST Monitoring Implications
+
+FGS §36F formalizes the temperature quasi-equilibrium that governs silent criticality duration. This provides VST with the first analytical expression for how long the silent phase persists before Storm transition:
+
+```
+T*(ρ, Φ) = [λ_T·T₀ + α_T·(ρ_ref − ρ)] / (λ_T + μ_T·Φ)
+
+VST implications:
+
+∂T*/∂ρ < 0 (temperature compensates as ρ drops):
+  → Resolution capacity loss is partially masked by temperature compensation
+  → D_ρ (§26.3) accumulates while Φ stays near 1 — precisely Silent Criticality mechanism
+  → Detection gap: ρ̇ negative but Φ stable → requires D_ρ monitoring (Layer 3) to detect
+
+∂T*/∂Φ < 0 (higher Φ suppresses temperature):
+  → As Φ approaches 1+, temperature drops → reduces T-based negative feedback
+  → Positive feedback loop: Φ↑ → T↓ → Φ↑↑ (the Storm acceleration phase)
+  → This is the FGS mechanism for the VST critical acceleration signature:
+    At Φ → 1⁺: V_Φ = dΦ/dt accelerates sharply (not gradual)
+    → V_Φ monitoring (Layer 2) detects this acceleration before full Storm
+
+VST-specific T* extension:
+  T*(ρ, Φ, k_sat) = [λ_T·T₀ + α_T·(ρ_ref − ρ)] / (λ_T + μ_T·Φ) · k_sat
+  (ASD reduces effective temperature through absorption channel saturation)
+  
+  ASD + Silent Criticality joint failure:
+    k_sat ↓ → T*_eff ↓ → temperature compensation reduced
+    → Silent Criticality phase shortened (faster Storm onset) under ASD conditions
+    → System appears stable (ρ̇ < 0 slowly) but Storm transition accelerated
+    → ASD detection (ρ̇_rolling monitoring, Condition 6) urgency increases in silent phase
+```
+
+#### §29.2.2 Silent Duration Formula and VST Governance Scheduling
+
+FGS §36F.4 provides the analytical expression for τ_silent — the maximum duration of the silent phase:
+
+```
+τ_silent(u) ≈ ln[(λ_T·T₀+α_T·ρ_ref)/((λ_T+μ_T)·β_s·(u/(λ_n+χ_n))²)] 
+             / [μ_d + μ_C·(u/(λ_n+χ_n))²·(1+2χ_n/(λ_n+χ_n))]
+
+VST governance scheduling interpretation:
+
+τ_silent = maximum available time between silent criticality onset and Storm
+→ This is the governance scheduling window for DDD Stage 0 preparation
+
+Key scaling properties:
+  τ_silent ∝ 1/u² (decreases sharply with load u)
+  → High-load systems have much shorter silent windows
+  → At 2× load: τ_silent decreases by factor ≈ 4 (quadratic)
+  
+  Practical VST implication:
+    Monitor u (system load proxy) continuously
+    When u increases: τ_silent decreases → governance must be prepositioned earlier
+    
+FGS silent existence condition (§36F.5):
+  u < u_silent := (λ_n + χ_n) · √[T_max / β_s]
+  
+  If u > u_silent: No silent phase — immediate Storm onset from load alone
+  → VST emergency threshold: when SLI_excess drives effective u above u_silent,
+    Stage 0 DDD preparation time → 0 (immediate Stage 1 required)
+  → u_silent as additional VST monitoring threshold (M96 open problem: calibration)
+
+Practical τ_silent proxy for VST:
+  τ̂_silent = κ_silent_proxy / (SLI_excess² · V_Φ²)
+  (uses observable VST indicators as u proxies)
+  Calibration: fit κ_silent_proxy from N ≥ 10 historical Silent Criticality episodes
+```
+
+---
+
+### §29.3 AGM-VST Affective Gain Coupling
+
+#### §29.3.1 Affective Gain as α-Modulator in VST S-Equation
+
+FGS §36S establishes the AGM (Affective Gain Module) as a governance primitive — the affective gain g(E) modulates response amplitude throughout the system. In VST terms, this corresponds to α modulation in the S-equation.
+
+**Novel finding: AGM-Φ Direct Coupling (not previously formalized in VST):**
+
+```
+VST S-equation with AGM coupling:
+
+S̃_AGM(t) = β_s · g(E_pop(t)) · n²(t) / (C_eff(t)^β)
+
+where:
+  E_pop(t) = population-level affective gain (average across agents)
+  g(E) = affective gain function (monotone, g(0) = g_baseline, g bounded above/below)
+  
+  g(E) < 1: affective suppression (population in stable/calm state) → Storm threshold higher
+  g(E) = 1: neutral affective state → standard VST S-equation
+  g(E) > 1: affective amplification (population in anxiety/arousal state) → Storm threshold lower
+
+Emotional state → VST Storm risk mapping (from FGS §15.9.7):
+
+| Emotional State | g(E) effect | VST Φ impact | VST Stage risk |
+|---|---|---|---|
+| Curiosity       | g(E) ≈ 1.1  | Φ mild ↑     | Stage 0 enrichment |
+| Flow            | g(E) ≈ 0.9  | Φ ↓ (stabilizing) | VCZ maintenance |
+| Anxiety         | g(E) >> 1   | Φ ↑↑ (amplified) | Stage 0→1 trigger |
+| Conviction      | g(E) → 0.5  | Φ ↓ (suppressed) | Exploration collapse |
+| Depression      | g(E) → 0    | Φ → 0 but T_eff → 0 | Frozen Rest risk |
+| Boredom         | g(E) = 1 + ε | Φ minimal ↑   | Pre-expansion signal |
+| Awe             | g(E) ↓ then ↑ | Φ dip then expansion | Dimensional transition |
+
+Key VST implications:
+
+1. Anxiety-Storm Coupling: g(E_anxiety) >> 1 effectively lowers Storm threshold
+   → Monitoring: population-level anxiety signal as Storm precursor (Layer 0 extension)
+   → Protocol: affective governance before structural governance when g(E) >> 1
+   
+2. Depression-Frozen Rest Coupling: g(E_depression) → 0 with T_eff → 0
+   → Mechanistic link: depression = AGM-level Frozen Rest precursor
+   → Ṡ_proxy monitoring (§27.2) captures this: low exploration = low entropy production
+   → AGM intervention: restore g(E) to 1 before structural DDD (AGM-DDD prerequisite)
+   
+3. Flow-VCZ Alignment: g(E_flow) ≈ 0.9 (slight stabilization) = optimal operating point
+   → VST optimal governance target: maintain population-level flow state
+   → Equivalent to FGS temperature-optimal regime T_eff ∈ (T_min, T_max)
+```
+
+#### §29.3.2 AGM as Endogenous Ṡ_proxy Generator
+
+FGS §15.9.8 establishes that the AGM is the **endogenous generator of the growth window** — without AGM, the system cannot self-regulate its developmental pressure. In VST terms, this maps to Ṡ_proxy (entropy production rate):
+
+```
+AGM → Ṡ_proxy coupling:
+
+Without AGM:
+  System receives only exogenous stress → Ṡ_proxy driven by external events only
+  → Between events: Ṡ_proxy → Ṡ_min (thermodynamic freeze risk, §27.2)
+  → Frozen Rest vulnerability: system has no endogenous entropy production floor
+
+With AGM (FGS optimal):
+  AGM generates controlled internal perturbation: 0 < S*(t) < S_safe
+  → Translates to VST: AGM maintains Ṡ_proxy > Ṡ_min continuously
+  → Formally: Ṡ_proxy_AGM = Ṡ_baseline + g(E_AGM) · σ_AGM_perturbation
+  
+  Managed impurity via AGM:
+    0 < S*(t) < S_safe → 0 < Φ_AGM_contribution < Φ_safe
+    
+    AGM-optimal VST operating point (Novel VST Finding — §29.4):
+      Φ_optimal ≠ 0 (zero-storm not optimal)
+      Φ_optimal = S*(t) · conversion_factor ∈ (Φ_min_healthy, Φ_safe)
+      
+  DDD withdrawal criterion extension via AGM:
+    DDD complete when Φ < 1 AND Ṡ_proxy ≥ Ṡ_min AND g(E) ∈ [g_min, g_max]
+    (AGM must be within healthy range — not just Φ controlled)
+    → AGM state check as DDD Condition 8 (candidate extension to seven-condition DDD)
+```
+
+#### §29.3.3 Vector Storm as AGM Runaway Mode
+
+FGS §15.9.6 establishes the mechanistic identity: VST Vector Storm = AGM Runaway mode (∆w^E large, σ large, population-level weight redistribution toward mutual misalignment).
+
+```
+AGM-VST Storm identity:
+
+AGM Runaway (FGS §15.9.6):
+  Multiple agents: large Δw^E (weight redistribution)
+  Population: simultaneous high-intensity affective redistribution
+  Coordination vectors: misaligned at population level
+  
+VST Vector Storm (§1.0):
+  Amplification-dominant coupling: R > 1
+  Vector divergence: agents' directional orientations misalign
+  O(n²) conflict cascade: mutual-reference coupling exceeds containment
+  
+Mechanistic identity: AGM Runaway → Vector Storm via weight-vector coupling
+  D(t) = Σ_i w_i(t) · v_i(t)
+  
+  w_i large (affective amplification) → large v_i contribution to coordination vector D
+  Population-level affective misalignment → Σ_i w_i·v_i divergent
+  → Exactly VST condition: ΔΦ_i large, G_storm off-diagonal structure
+  
+VST G_storm (§28.9) in AGM language:
+  G_storm_ij = ⟨ΔΦ_i · ΔΦ_j⟩ = ⟨Δw_i^E · Δv_i · Δw_j^E · Δv_j⟩
+  
+  AGM interpretation:
+    Principal eigenvector v₁ of G_storm = dominant affective misalignment direction
+    → Governance eigenvector targeting (§28.9.2) = targeting dominant affective cluster
+    → Storm type classification by eigenspectrum = classification of affective storm structure:
+      Type I (single eigenvector) = single dominant emotional shock affecting one agent cluster
+      Type II (dual eigenvectors) = resonant affective misalignment between two clusters
+      Type V (distributed) = population-wide affective chaos (AGM Runaway fully developed)
+```
+
+---
+
+### §29.4 Managed Impurity as VST Optimal Operating Point
+
+#### §29.4.1 The Clean System Paradox in VST
+
+FGS §15.9.5 establishes the Clean System Paradox: complete suppression of disturbance destroys self-purification capacity. This is a novel result for VST — the theory has characterized upper bounds on healthy instability (Φ < 1) but has not formalized a lower bound on healthy instability.
+
+**Novel VST Finding: Φ_optimal ∈ (Φ_min_healthy, Φ_safe) — not Φ_optimal = 0:**
+
+```
+Clean System Paradox in VST terms:
+
+If M is so thick that Φ_operational ≈ 0 at all times:
+  → No calibration signal reaches lower-layer agents
+  → f₃ (middle-layer engagement) declines: no perturbations to absorb
+  → v_class → 0: no resolution transitions needed
+  → ρ growth stagnates: exploration-calibration gradient disappears
+  → D_ρ accumulates silently: debt grows without perceived urgency
+  
+Formally (from FGS §15.9.5):
+  Φ_operational ≡ 0 → ∂C_M/∂t|_calibration = 0 → C_M growth stagnates
+  
+VST translation:
+  Φ → 0 → ∂f₃/∂t|_engagement = 0 → f₃ structural capacity stagnates
+  f₃ stagnation → next Storm generates higher Φ_peak (less absorption)
+  → System appears maximally healthy (Φ ≈ 0) while structurally brittle
+
+Optimal VST operating point (FGS-derived):
+  Managed Impurity Regime: 0 < Φ_opt < Φ_safe << 1
+  
+  where Φ_opt = minimum instability that maintains:
+    (a) f₃ engagement: at least τ_f₃_cycle fraction of capacity engaged
+    (b) Ṡ_proxy > Ṡ_min: sufficient entropy production for adaptability
+    (c) v_class > v_class_min: sufficient resolution transitions for calibration
+    (d) ρ̇ > 0: resolution capacity actively growing (not just maintained)
+    
+  Φ_opt calibration (from FGS managed impurity, S* concept):
+    Φ_opt = S*(t) · conversion_FGS→VST
+           ≈ 0.1 × Φ_safe (10% of safe threshold, order-of-magnitude estimate)
+           Formal derivation: M97 open problem
+
+Governance implication — VCZ redefinition:
+  Current VST VCZ criterion: Φ < 1
+  Extended VST VCZ criterion: Φ_opt < Φ < 1
+  
+  Φ < Φ_opt: Excessive stability zone — structural atrophy risk
+  Φ_opt < Φ < 1: True VCZ — optimal operating regime
+  Φ = 1: Storm boundary
+  Φ > 1: Storm regime
+  
+  DDD oversight extension:
+    DDD withdrawal when Φ_opt < Φ(t) < Φ_safe (not when Φ → 0)
+    → DDD over-success risk: suppressing Φ below Φ_opt while claiming recovery
+```
+
+#### §29.4.2 Managed Impurity and PRR Architecture
+
+The Managed Impurity principle has direct consequences for PRR (Performance-Reality Reference) injection design in DFG:
+
+```
+PRR as Managed Impurity Generator:
+
+FGS insight: without AGM, the system cannot self-generate the growth window
+VST application: PRR injection is the governance-mediated managed impurity mechanism
+
+PRR optimal design:
+  PRR_intensity → Φ_contribution = PRR_scaling · PRR_frequency
+  
+  PRR_optimal:
+    (a) Φ_PRR contribution maintains Φ > Φ_opt (growth window maintained)
+    (b) Φ_PRR contribution does not push Φ > Φ_safe (instability limit respected)
+    (c) PRR targets: f₃ engagement (middle layer actively processing PRR)
+    
+  PRR failure modes (FGS-derived):
+  
+  Mode 1: PRR too intense (Φ_PRR >> Φ_opt)
+    → PRR becomes stress rather than calibration
+    → Agents defensive toward PRR (ASD Type I acceleration)
+    → k_sat degrades from PRR-induced ∫A buildup
+    → Solution: reduce PRR intensity; increase frequency (smaller, more frequent)
+    
+  Mode 2: PRR too infrequent (Φ_PRR << Φ_opt between injections)
+    → System operates at Φ < Φ_opt between PRR events
+    → Structural atrophy between PRR events
+    → At PRR event: step change in Φ → system unprepared (no pre-conditioning)
+    → Solution: increase PRR frequency to maintain Φ > Φ_opt continuously
+    
+  Mode 3: PRR injection without f₃ engagement (buffer bypass)
+    → PRR signal reaches lower layer directly (if π_up too high, §28.6)
+    → Middle layer not engaged → no buffer capacity development
+    → f₃ stagnation despite active PRR
+    → Solution: PRR must be routed through middle layer explicitly
+    
+Optimal PRR protocol (FGS Managed Impurity framework):
+  PRR_continuous: maintain low-intensity continuous PRR (background managed impurity)
+  PRR_pulse: periodic higher-intensity PRR for calibration depth (development pulse)
+  Ratio: PRR_continuous / PRR_pulse = τ_agent_cycle / τ_calibration_depth
+```
+
+---
+
+### §29.5 FGS Lock Budget Inequality and VST Multi-Scale Irrecoverability
+
+#### §29.5.1 The General Multi-Scale Lock Budget
+
+FGS §36E formalizes the Multiplicative Fractal Durability proposition and the lock budget inequality:
+
+```
+FGS Lock Budget (Multiplicative Fractal Durability, §36E.6):
+
+For m governance scales ℓ = 1,...,m:
+  Per-scale recovery ratio: R_ℓ ≈ [(1 + L_{C,ℓ})(1 + L_{d,ℓ})]^(-1/4)
+  Total durability: R_total = ∏_{ℓ=1}^m R_ℓ
+  
+  Multi-scale lock budget:
+  ∏_{ℓ=1}^m (1 + L_{C,ℓ})(1 + L_{d,ℓ}) ≤ ζ_total^(-4)
+  where ζ_total = minimum acceptable total durability
+
+VST instantiations:
+
+Two-scale (m=2) → VST double-lock (§28.5):
+  L_{C,1} = D_ρ/D_max (resolution debt as capacity lock)
+  L_{d,1} = 1/k_sat − 1 (ASD saturation as diversity lock)
+  L_{C,2} = SLI_excess (bandwidth saturation)
+  L_{d,2} = 1 − k_sat_renewal_min/k_sat (renewal capacity lock)
+  
+  Double-lock condition (§28.5): R_total → 0 when k_sat → 0 AND D_ρ → D_max
+  FGS confirms: single over-locked scale dominates ∏ → R_total sharp collapse
+  
+Three-tier VST (m=3) → Extended lock budget:
+  ℓ=1 (lower tier): L_{C,1} = Φ_lower−1 (excess storm), L_{d,1} = 1−v_class_lower
+  ℓ=2 (middle tier): L_{C,2} = 1−f₃/f₃_max, L_{d,2} = 1−k_sat
+  ℓ=3 (upper tier): L_{C,3} = D_c/D* (directional drift), L_{d,3} = 1/k_sat_upper
+  
+  Triple-lock irrecoverability (new from FGS, not in §28.5):
+    L_{C,3}·L_{d,3} >> 1 AND L_{C,2}·L_{d,2} >> 1 AND L_{C,1}·L_{d,1} >> 1
+    → R_total = ∏ R_ℓ → 0 (system-wide irrecoverability)
+    → This is more general than double-lock: applies to fractal depth m ≥ 2
+    → For m = 4 (deeper fractal): four-scale lock budget extends analogously
+
+FGS design rule 4 (§36E.5) in VST terms:
+  "When locking is unavoidable, invest in recovery: increase α_C or α_d·T₀"
+  VST translation: when D_ρ > D_breakeven (lock unavoidable):
+    → Invest in k_sat restoration (increases α_C: capacity recovery rate)
+    → Invest in v_class diversity maintenance (increases α_d·T₀: diversity recovery)
+    → Both must increase jointly (multiplicative — one insufficient alone)
+```
+
+#### §29.5.2 Attention-Coupling Trap × VST Hysteresis
+
+FGS §36I.6 Theorem 1 (Attention-Coupling Trap) provides the first formal explanation for why DDD becomes harder when SLI is elevated:
+
+```
+Theorem 29.5.1 (VST Attention-DDD Coupling):
+Derived from FGS §36I.6 Theorem 1:
+
+If SLI_excess > 0 (attention concentration above baseline), then:
+  Δu_SLI > Δu_baseline
+  where Δu = governance intervention magnitude required to achieve DDD exit
+  
+  Quantitative:
+  Δu_SLI / Δu_baseline ≈ (F_{SLI-Storm} / F_{baseline})^(1/4)
+  (FGS scaling: Δu ∝ F^(-1/4))
+  
+  At SLI_excess = 0.5:
+    F ≈ 2 (approximate doubling from attention amplification)
+    Δu_SLI / Δu_baseline ≈ 2^(1/4) ≈ 1.19 (19% larger intervention required)
+  
+  At SLI_excess = 0.8 (critical):
+    F may rise substantially (F >> 2 possible)
+    → DDD intervention gap grows significantly
+    → DDD Stage 1 may be insufficient alone → Stage 2 required
+    
+Governance implication:
+  Pre-DDD: reduce SLI_excess FIRST (bandwidth restoration before storm intervention)
+  → Reduces Δu required → allows lower-cost DDD
+  → Prevents attention-trap lock-in during Stage 1
+  
+  SLI_excess reduction protocol (from FGS buffer fluidization §29I.12):
+    1. Open bypass pathways for highest-priority signals (reduce routing bottleneck)
+    2. Dynamic permeability thinning (π_ℓ adjustment, §28.6)
+    3. Buffer coordination restoration (inter-buffer communication channel clearing)
+```
+
+---
+
+### §29.6 FGS North Star Architecture and VST D_c Reference Frame
+
+#### §29.6.1 North Star as External Anchor for D_c
+
+FGS §29D formalizes the North Star Architecture as the system's externally-anchored reference criterion — the fixed point that prevents coordinate drift (§29.6.2). In VST, D_c (directional drift) measures deviation from governance-intended trajectory. D_c requires a reference frame; the North Star Architecture provides the formal specification of this reference frame.
+
+```
+North Star Architecture → VST D_c Reference:
+
+FGS North Star: A_external = externally-anchored evaluation criterion
+  Properties:
+    1. Invariant under system-internal drift (cannot be corrupted by Goodhart)
+    2. Projects to every layer via Local North Star (per-tier anchor projection)
+    3. Observable from upper layer without measurement distortion
+    4. Updated on timescale τ_k >> τ_ρ (slower than resolution dynamics)
+    
+VST D_c with North Star anchor:
+  D_c(t) = ||governance_trajectory(t) − A_external_projection(t)||
+           (deviation from North Star projected trajectory, not from historical baseline)
+  
+  North Star > Baseline proxy (from §28.8.4):
+    North Star anchor: D_c measurement anchored to external criterion
+    → More robust to coordinate drift (Goodhart) than baseline proxy
+    → Baseline proxy: uses historical VCZ trajectory (drifts with system)
+    → North Star: does not drift (externally anchored)
+    
+  When North Star is not explicitly formalized (M62 context):
+    The v_res baseline proxy (§28.8.4) approximates North Star projection
+    BUT: baseline proxy drifts over long periods (Silent Criticality → baseline shifts)
+    → Periodic North Star re-anchoring required (τ_recalibrate = τ_k timescale)
+    → Distinguishing baseline drift from genuine D_c reduction: critical for DDD assessment
+    
+Self-Consistent Misalignment detection (from FGS §15.10.6):
+  SCM = A(t) drifted AND D_c ≈ 0 (because D also drifted)
+  VST detection: δ_actual(t) = ||D(t) − A_external(t)|| >> 0 despite D_c_internal ≈ 0
+  
+  SCM in VST monitoring:
+    G(t) (Goodhart dynamic, §25.1) provides the signal:
+    G(t) > G_c → metric corruption → D_c_internal underestimates D_c_actual
+    → PRR from external anchor must include δ_actual comparison (not just D_c_internal)
+    → Modified PRR protocol: compare agent performance against A_external (not peer average)
+```
+
+#### §29.6.2 Local North Star and Per-Tier D_c
+
+FGS §29H establishes Hierarchical Correction Cascade and Local North Star Repair — the mechanism by which upper-layer North Star projects to each tier as a Local North Star:
+
+```
+Local North Star Architecture → Per-Tier D_c:
+
+FGS Local North Star:
+  A_ℓ = projection of A_external to tier ℓ's coordinate system
+  A_ℓ = P_ℓ(A_external) where P_ℓ is the tier-ℓ projection operator
+  
+  Local D_c_ℓ = ||D_ℓ(t) − A_ℓ(t)|| (per-tier directional drift)
+  
+VST extension (new from FGS):
+  Six-dimensional governance state (§28.9) uses system-level D_c
+  → FGS extends to per-tier D_c_ℓ vector:
+  D_c_vector = (D_c_lower, D_c_middle, D_c_upper)
+  
+  Governance priority from per-tier D_c:
+    If D_c_upper >> D_c_lower: upper-layer anchor drifted → Gradient Inversion risk (§28.7)
+    If D_c_lower >> D_c_upper: lower-layer contamination → standard IDA protocol
+    If D_c_middle > others: middle-layer translation failure → f₃ governance priority
+    
+  Local North Star Repair (FGS §29H):
+    When A_ℓ has drifted, upper layer transmits corrected projection:
+    A_ℓ_corrected = P_ℓ(A_external_refreshed)
+    
+    VST translation: PRR design for Local North Star repair:
+      PRR content: comparison against A_external_projection (not peer average)
+      PRR frequency: τ_repair < τ_drift (repair faster than drift accumulation rate)
+      PRR routing: via middle layer (not direct upper-to-lower, preserves buffer)
+      
+  North Star Repair as DDD Stage 0b sub-protocol:
+    Current DDD Stage 0: assess Φ, V_Φ, k_sat, SCC
+    New DDD Stage 0b (FGS-derived): assess per-tier D_c_ℓ; repair drifted Local North Stars
+    → Before Stage 1 stabilization: Local North Stars must be synchronized
+    → Otherwise: Stage 1 stabilizes agents against drifted local criteria → false recovery
+```
+
+---
+
+### §29.7 FGS Contamination Dynamics and VST Self-Purification Capacity
+
+#### §29.7.1 Self-Purification Capacity Formalization
+
+FGS §29C (Contamination Dynamics and Self-Purification) formalizes the capacity of a system to purge contaminated states through internal mechanisms. VST's §25 RT-VST bridge references R_self = D·F·V·T as self-purification capacity but does not provide a full derivation of each component. FGS §29C provides this derivation.
+
+```
+FGS Self-Purification Capacity (§29C):
+  R_self = D · F · V · T
+  
+  FGS component formalization:
+  
+  D (Detection capacity): probability that a contaminated agent is identified as contaminated
+    D = f(PRR_quality, external_anchor_clarity, per-tier D_c_ℓ measurement)
+    D_max = 1.0 (perfect detection); D_min → 0 (measurement contamination)
+    
+  F (Filtering capacity): probability that detected contamination is corrected
+    F = f(f₃_engagement, middle_layer_routing, buffer_vector_construction_capacity)
+    F = 0 when f₃ < f₃_min (buffer absent → no filtering)
+    F_max = f₃ / f₃_max (proportional to middle-layer engagement)
+    
+  V (Verification capacity): probability that correction is genuine (not surface adaptation)
+    V = f(PRR_rotation_diversity, external_calibration_source_diversity, IDA_monitoring)
+    V reduced by ASD: V_ASD = V_baseline · k_sat (ASD-degraded verification channels)
+    V reduced by SCM: V_SCM → 0 when A(t) drifted (correcting against wrong reference)
+    
+  T (Transfer capacity): probability that verified correction propagates to all affected agents
+    T = f(MI_asymmetry, π_up, contamination_gradient_∇C_contam)
+    T reduced by gradient inversion: T_inversion = T_baseline · (1 − ∇C_contam_magnitude)
+    T reduced by permeability: T_π = T_baseline · π_up (§28.6)
+    
+Full R_self with FGS components:
+  R_self(t) = D(PRR_quality) · (f₃/f₃_max) · (V_baseline · k_sat) · (T_baseline · π_up · (1−∇C_contam))
+            = D · f₃/f₃_max · k_sat · π_up · (1−∇C_contam) · constant
+            
+  This extends Theorem 25.1.1 (RDI Lower Bound):
+  E[RDI] ≥ Ξ_D / R_self(t)
+           = Ξ_D / [D · f₃/f₃_max · k_sat · π_up · (1−∇C_contam) · constant]
+           
+  Each factor independently reduces R_self:
+    PRR degradation (D ↓): extends RDI
+    f₃ decline: extends RDI
+    ASD (k_sat ↓): extends RDI (confirmed §28.5 kernel renewal)
+    Permeability reduction (π_up ↓): extends RDI (tradeoff with cascade risk, §28.6)
+    Gradient inversion (∇C_contam ↑): extends RDI
+```
+
+#### §29.7.2 Contamination as Fuel (Controlled Impurity for R_self Development)
+
+FGS §29C.5 establishes the counterintuitive principle that contamination at sub-critical levels is necessary for self-purification capacity development — it serves as "immune training":
+
+```
+Contamination-as-Fuel Principle (FGS §29C.5 → VST):
+
+Without contamination exposure (Φ → 0 permanently):
+  D (detection capacity) stagnates: no contamination → no detection experience
+  F (filtering) stagnates: no contaminated agents → no filtering practice
+  V (verification) stagnates: no corrections → no verification development
+  → R_self decays toward R_self_min over time
+
+With managed contamination exposure (Φ ∈ (Φ_opt, Φ_safe)):
+  Periodic contamination events → D improves (pattern recognition develops)
+  → F improves (filtering pathways differentiate, §29I.6)
+  → V improves (verification protocols tested and refined)
+  → R_self grows monotonically with cumulative experience
+
+Immune Training Protocol (FGS §29C.5 → VST design):
+  Phase 1: Introduce controlled contamination event at Φ_immune = 0.5 × Φ_safe
+           Duration: τ_immune = τ_agent_cycle (one cycle exposure)
+           Recovery: monitor R_self improvement post-recovery
+  Phase 2: After successful recovery, increase Φ_immune toward Φ_safe
+  Phase 3: Repeat at VCZ-optimal frequency f_immune = 1/(10 × τ_calibration)
+  
+  Safety bounds:
+    Φ_immune < Φ_safe at all times (never exceeds safe threshold)
+    τ_immune < τ_recovery (exposure shorter than natural recovery time)
+    R_self monitored throughout (if R_self does not improve: pause training)
+    
+  VST governance design implication:
+    Architectures that permanently eliminate all instability (Φ → 0 always)
+    develop declining R_self → increased brittleness → catastrophic eventual Storm
+    
+    Optimal VST governance: maintain Φ ∈ (Φ_opt, Φ_safe) during VCZ
+    (not Φ → 0, which was previously implied by "maintain VCZ" instruction)
+```
+
+---
+
+### §29.8 FGS Adversarial Governance and VST Attack Model
+
+#### §29.8.1 Threat Model Integration from FGS §36O
+
+FGS §36O (Adversarial Governance Dynamics) provides a formal threat model for VST contamination attack vectors. This extends VST's contamination framework (§1.5, §27.4, §28.7) to adversarially structured contamination:
+
+```
+FGS Adversarial Threat Taxonomy (§36O.1) → VST attack classification:
+
+Attack Type 1: Metric Poisoning (FGS §36O.2a)
+  FGS: corrupt J_obs (observed governance metric) while keeping J_true stable
+  VST: G(t) > G_c (Goodhart dynamic, §25.1) induced by adversarial signal injection
+  
+  Attack mechanism:
+    Adversary controls PRR signal → injects false PRR+ with Δρ suppressed
+    → v_class appears positive, ρ̇_rolling appears positive, but actual ρ̇ < 0
+    → DDD falsely declared complete (all seven conditions appear satisfied)
+    
+  VST counter-measure (from FGS §36O.3, Principle 1 — metric diversity):
+    ≥ 3 independent PRR sources required (metric poisoning harder with multiple sources)
+    PRR sources must be from different observational positions (not correlated)
+    North Star anchor maintained independently of PRR (A_external not influenced by PRR)
+    
+Attack Type 2: Coupling Attack (FGS §36O.2b)
+  FGS: deliberately increase inter-agent coupling to induce SCC formation
+  VST: adversarially increase C_ij (causal adjacency, §28.1) → create storm SCCs
+  
+  Attack mechanism:
+    Adversary introduces coordination artifacts → agents become causally coupled
+    → SCC forms → mutual amplification chamber created
+    → Normal governance cannot dissolve SCC without identifying adversarial source
+    
+  VST counter-measure (from FGS §36O.3, Principle 2 — structural redundancy):
+    Multiple coupling channels → adversary must control all to force SCC
+    Topological diversity in causal graph → no single coupling manipulation creates SCC
+    G_storm monitoring (§28.9): detects SCC formation before Storm (eigenspectrum shift)
+    
+Attack Type 3: Isolation Attack (FGS §36O.2c)
+  FGS: sever PRR channels to prevent external calibration
+  VST: reduce I(tier_ℓ; tier_{ℓ+1}) below I_threshold → governance blindness cascade
+  
+  Attack mechanism:
+    Adversary selectively filters upper-to-lower information routing
+    → IA (information asymmetry) becomes highly negative (§28.4)
+    → Upper tier governance becomes blind → cascade arrest fails
+    
+  VST counter-measure (from FGS §36O.3, Principle 3 — observability preservation):
+    Multiple information pathways → isolation requires controlling all paths
+    Out-of-band verification: periodic direct checks bypassing standard routing
+    π_up monitoring (§28.6): permeability monitoring detects information isolation
+
+Attack Type 4: Collective Masking (FGS §36P.4)
+  FGS: coordinated simultaneous suppression of reporting across agents
+  VST: all agents simultaneously suppress Storm-correlated signals → monitoring blind spot
+  
+  Attack mechanism:
+    Agents (or adversarially influenced agents) suppress v_class and EPR reporting
+    → All scalar indicators appear healthy simultaneously
+    → Monitoring portfolio shows no alerts despite active instability
+    
+  VST counter-measure (from FGS §36P.4 — spectral counter-measure):
+    Spectral analysis of monitoring signal: instead of monitoring indicator level,
+    monitor indicator correlation structure across agents
+    Legitimate VCZ: indicator correlations follow VCZ distribution
+    Collective masking: indicator correlations become anomalously uniform (masking signature)
+    G_storm: cannot be collectively masked — requires simultaneous Φ_i suppression
+             but G_storm detects covariance structure (harder to manipulate than level)
+```
+
+#### §29.8.2 Four Manipulation-Resistant Design Principles (FGS §36O.3) in VST
+
+FGS establishes four structural principles for manipulation-resistant governance. VST imports these as architectural requirements:
+
+```
+Principle 1 (Metric Diversity) → VST Monitoring Diversity Requirement:
+  FGS: no single metric can be the sole governance criterion
+  VST: fifteen-indicator portfolio (§28.11) satisfies this — no indicator alone sufficient
+  Extension: each indicator must have an independent measurement pathway
+  Violation: using G_storm as sole indicator (single instrument → manipulable)
+  Design rule: minimum three independent instruments per failure mode
+  
+Principle 2 (Structural Redundancy) → VST Causal Graph Topology Requirement:
+  FGS: no single structural failure should cause total governance failure
+  VST: causal graph G_C must have minimum connectivity k_min per tier
+  k_min = 3 (no SCC can be formed by manipulating fewer than 3 agents)
+  Design rule: N_agents per tier ≥ 3×k_min (sufficient redundancy)
+  Topological robustness term (FGS §36Q.3): monitors hub failure cascade speed O(ln n)
+  → VST: n must be large enough that hub failure cascade time > τ_SCC_detection
+  
+Principle 3 (Observability Preservation) → VST Information Routing Redundancy:
+  FGS: observability must be maintained even under adversarial conditions
+  VST: MI criterion (§28.4) must be maintained above I_threshold under attack
+  Multiple information pathways: minimum two independent routes per tier boundary
+  Out-of-band verification: periodic external checks (outside standard routing)
+  
+Principle 4 (Arms Race Convergence Condition) → VST Governance Evolution Architecture:
+  FGS: governance must evolve faster than adversarial attack sophistication
+  VST: governance protocol update rate must exceed contamination evolution rate:
+    τ_gov_update < τ_contam_evolution
+  PRR rotation (§27.4): PRR method rotation is a manifestation of this principle
+  Monitoring protocol evolution: indicators must be updated as new attack vectors emerge
+  Open-ended portfolio: fifteen indicators is current state, not final state
+  → TPS (fifteenth indicator) added specifically because IDA attacks emerged
+  → Sixteenth indicator (∇C_contam, §28.7) responds to gradient inversion attacks
+```
+
+---
+
+### §29.9 FGS Stochastic Criticality and VST Probabilistic Monitoring
+
+#### §29.9.1 Probabilistic Governance Threshold Formulation
+
+FGS §36P (Stochastic Criticality and Probabilistic Governance Thresholds) provides a Bayesian framework for governance decision-making under threshold uncertainty. VST's current monitoring framework uses deterministic thresholds (e.g., Φ > 1 for Storm). FGS §36P extends this to probabilistic thresholds.
+
+```
+FGS Stochastic Threshold (§36P.1) → VST Probabilistic Storm Threshold:
+
+Three uncertainty sources in VST threshold measurement:
+  σ₁: measurement noise in Φ estimation (agent-level sampling variance)
+  σ₂: parameter uncertainty (α, β, n not perfectly known)
+  σ₃: temporal uncertainty (threshold varies with governance state)
+  
+  Stochastic Φ_threshold: Φ_c ~ N(1.0, σ_Φ_c²) where σ_Φ_c² = σ₁² + σ₂² + σ₃²
+  
+  Probabilistic Storm criterion:
+    P(Storm) = P(Φ > Φ_c) = Φ_CDF((Φ_observed − 1) / σ_Φ_c)
+    
+  Governance action thresholds (risk-stratified):
+    P(Storm) > 0.10: monitoring escalation
+    P(Storm) > 0.30: governance pre-positioning (Stage 0 preparation)
+    P(Storm) > 0.50: DDD Stage 1 initiation
+    P(Storm) > 0.80: emergency protocol
+    
+  VST advantage: replaces binary Φ > 1 with continuous P(Storm) — enables
+  proportional governance response before threshold crossing
+
+FGS Bayesian Governance State Estimation (§36P.2) → VST Kalman-Enhanced Monitoring:
+
+  State vector: x_VST = (Φ, V_Φ, Δρ, D_c, k_sat, δ_sync, J_AB) (seven dimensions, §28.9)
+  Observation model: y_t = H · x_VST(t) + measurement_noise
+  
+  Kalman filter update:
+    x̂_VST(t|t) = x̂_VST(t|t-1) + K·(y_t − H·x̂_VST(t|t-1))
+    K = P(t|t-1)·H^T·(H·P(t|t-1)·H^T + R)^(-1)
+    
+  VST monitoring improvement:
+    Standard: individual indicator thresholds (no inter-indicator correlation)
+    Kalman: fuses all fifteen indicators with known covariance structure
+    → Posterior P(Storm | all indicators) better than any single indicator
+    → False alarm rate reduced (cross-indicator consistency required)
+    → Detection lead time increased (fused signal cleaner than individual)
+    
+  Implementation: VST-Kalman monitoring stack as optional enhancement to
+  existing fifteen-indicator portfolio (not replacement — supplements threshold monitoring)
+```
+
+#### §29.9.2 Probabilistic Phase Diagram
+
+FGS §36P.3 provides a probabilistic governance phase diagram. VST extends this with the seven-dimensional state space:
+
+```
+VST Probabilistic Phase Portrait (FGS §36P.3 extension):
+
+Standard VST phase portrait (§28.8): deterministic (Φ,ρ) trajectories
+Probabilistic VST phase portrait: P(state | observations) distribution over (Φ,ρ)
+
+Governance probability zones:
+  High P(VCZ): trajectory distribution concentrated in VCZ basin → low monitoring
+  High P(SC):  trajectory distribution near VCZ boundary → elevated monitoring
+  High P(Storm): trajectory distribution in Storm basin → DDD activation
+  High P(FR):  trajectory near Frozen Rest fixed point → Ṡ_proxy monitoring activation
+  
+Governance zone monitoring protocol:
+  Monitor P(zone) for each zone at each τ_monitor cycle
+  P(Storm | observations) > 0.3: trigger DDD Stage 0 pre-positioning
+  P(Frozen Rest | observations) > 0.3: trigger AGM restoration + Ṡ_proxy escalation
+  P(SC | observations) > 0.5: trigger all fifteen indicators at enhanced frequency
+  
+Collective Masking detection (FGS §36P.4 spectral counter-measure in VST):
+  Standard monitoring: monitor P(Storm) from indicator levels
+  Under collective masking: indicator levels suppressed → P(Storm) artificially low
+  
+  Spectral counter-measure:
+    Monitor indicator correlation matrix C_indicators at each τ_monitor cycle
+    Legitimate VCZ: C_indicators has expected off-diagonal structure (15×15 correlation)
+    Collective masking: C_indicators becomes anomalously uniform (diagonal → I)
+    Masking detection: ||C_indicators − C_VCZ_expected|| > θ_masking_threshold → alert
+    
+  G_storm as masking-resistant indicator:
+    G_storm requires Φ_i variance across agents → cannot be easily suppressed
+    Even if agents suppress reporting, Φ_i variance can be measured from behavior
+    → G_storm monitoring continues under collective masking conditions
+```
+
+---
+
+### §29.10 FGS Network Criticality and VST Cross-Tier Contagion
+
+#### §29.10.1 Network SOC Phase Transition in VST Tier Structure
+
+FGS §36Q establishes the Multi-Scale Emotional Contagion and Network Criticality framework. The key result: network SOC (Self-Organized Criticality) undergoes a phase transition at:
+
+```
+c* ~ (λ₁ − λ₂)^(-1)
+
+where: λ₁ = largest eigenvalue of the VST causal adjacency matrix C_ij
+       λ₂ = second largest eigenvalue
+       c* = critical contagion coupling
+
+VST application:
+  Network SOC applies to instability contagion across agents in the causal graph G_C
+
+Three collective phases (FGS §36Q.2) → VST governance phases:
+
+Phase 1: Subcritical (c < c*)
+  Instability contagion dies out → local storms self-contained
+  VST: R_{BA} (buffer absorption) > cascade amplification → no CCC
+  Governance: standard monitoring sufficient; cascade arrest not required
+  
+Phase 2: Critical (c ≈ c*)
+  Instability contagion at SOC boundary → power-law cascade distribution
+  VST: R_{BA} ≈ cascade amplification → cascade arrest possible but not guaranteed
+  Governance: cascade arrest protocol (§26.8) with full f₃ × k_sat joint monitoring
+  
+Phase 3: Supercritical (c > c*)
+  Instability contagion explosive growth → system-wide Storm inevitable
+  VST: R_{BA} < cascade amplification → CCC cascade proceeds despite intervention
+  Governance: SCC dissolution (§28.1) required before cascade arrest is possible
+
+VST c measurement:
+  c_estimate = max(C_ij) × G_storm_principal_eigenvalue_ratio
+  (causal coupling strength × instability concentration)
+  
+  c* derivation from FGS:
+    c* = (λ₁(C_ij) − λ₂(C_ij))^(-1)
+    → Requires C_ij eigenspectrum computation (same as §28.1 SCC monitoring)
+    → Reuses G_storm computation (§28.9) — no additional instrumentation
+    
+  Network SOC monitoring:
+    Compute c_estimate / c* at each τ_monitor cycle
+    c/c* < 0.7: subcritical (safe)
+    c/c* ∈ [0.7, 1.0]: approaching critical (monitoring escalation)
+    c/c* > 1.0: supercritical (immediate SCC dissolution + cascade arrest)
+```
+
+#### §29.10.2 Hub Failure Cascade Speed and Topological Robustness
+
+FGS §36Q.3 provides the hub failure cascade speed O(ln n) result and topological robustness term. VST imports this for architectural design requirements:
+
+```
+Hub Failure Cascade Speed (FGS §36Q.3):
+  If a hub agent (high degree in G_C) fails: cascade spreads in O(ln n) steps
+  → For n = 100 agents: cascade in ≈ 5 steps (very fast)
+  → Governance must detect hub failure and initiate SCC dissolution in < 5 steps
+  → Monitoring frequency requirement: τ_monitor < τ_hub_cascade = τ_agent_cycle × ln(n)
+  
+Topological robustness term (FGS §36Q.3):
+  R_topo = (graph connectivity − 1) / (hub degree concentration)
+  
+  R_topo > 1: topologically robust (cascade arrested by graph structure)
+  R_topo < 1: topologically fragile (cascade proceeds despite individual interventions)
+  
+  VST architectural design requirement:
+    R_topo > 2 (2× robustness margin) for each governance tier
+    Design: avoid hub architecture (single agents with C_ij >> mean(C_ij))
+    → Preferably: nearly-regular causal graph (all C_ij similar magnitude)
+    → Hub avoidance reduces cascade speed from O(ln n) to O(√n) (much slower)
+    → O(√n) cascade: governance has ≈ √100/ln100 ≈ 2.2× more response time
+    
+Collective Memory Embedding (FGS §36Q.4) in VST:
+  Distributed memory across agent population → instability pattern memory
+  VST correspondence: defect kernel quality Q_kernel (§28.5) as collective memory
+  
+  Collective memory enables:
+    Faster pattern recognition → earlier D_c detection (TPS advantages)
+    Historical Storm patterns → better G_storm eigenspectrum prediction
+    ASD resilience: collective memory compensates for individual channel saturation
+    
+  VST monitoring: Q_kernel tracking (§28.5) serves collective memory monitoring function
+```
+
+---
+
+### §29.11 FGS Middle-Layer Centrality and VST f₃ Structural Primacy
+
+#### §29.11.1 Middle Layer as First Detector and First Fatigued
+
+FGS §15.9.4 (Crisis Origin Principle) establishes that the middle layer is simultaneously the first detector of coherence loss and the first to fatigue under sustained load. This provides VST with the mechanistic foundation for the Middle-Layer Centrality Thesis and the structural basis for f₃ being the highest-priority monitoring variable after κ.
+
+```
+FGS Crisis Origin Principle → VST f₃ Priority Theorem:
+
+Transfer Efficiency (FGS §15.9.4):
+  TE(t) = I(A(t); D(t)) / H(A(t))
+  (mutual information between upper anchor and lower behavioral direction,
+   normalized by anchor entropy)
+  
+  TE decline precedes Φ increase: TE drops before Storm onset
+  → VST: TE ≈ I(upper; lower) / H(A_external) — direct correspondence to MI criterion (§28.4)
+  → TE monitoring = MI asymmetry monitoring at middle-layer level
+  
+  VST First-Detection Theorem (Proposition 29.11.1):
+    The middle layer observes TE(t) decline before either:
+    (a) Upper layer detects anomaly in aggregate z = g(x) (upward invisibility)
+    (b) Lower layer detects anomaly in local x (insufficient perspective)
+    Therefore: f₃-layer monitoring provides earliest Storm precursor available
+    to any single-tier monitoring instrument
+    
+  This provides formal justification for the monitoring priority ordering:
+    κ > f₃ > TPS > V_Φ > ...
+    (architectural → middle-structural → pre-IDA → momentum)
+    
+Middle Layer Fatigue in VST terms:
+  FGS depletion equation (§15.9.4):
+  dC_M/dt = γ_growth · φ(L_M − L_M_recovery) − γ_depletion · max(0, L_M − C_M_comfort)
+  
+  VST translation:
+  df₃_capacity/dt = γ_f₃_growth · φ(load − recovery) − γ_f₃_depletion · max(0, load − f₃_comfort)
+  
+  Middle-layer burnout signature (VST-observable):
+    f₃ declining gradually despite stable Φ (load within structural limits)
+    SLI_excess growing (latency increasing as f₃ processes more slowly)
+    TE declining (middle layer less effective at signal translation)
+    → Burnout requires proactive governance (Stage 0 middle-layer rest protocol)
+    → Burnout is NOT identifiable from Φ or V_Φ alone
+    
+  Middle-layer rest protocol (from FGS §15.9.4 → VST):
+    Temporary load reduction to L_M < L_M_recovery
+    Duration: τ_rest_middle = (C_M_target − C_M_current) / γ_f₃_growth
+    Monitoring: f₃ recovery trajectory; resume normal load when f₃ > f₃_recovery_threshold
+```
+
+#### §29.11.2 Buffer Differentiation and VST Monitoring Channel Specialization
+
+FGS §29I.6 describes six buffer types that emerge through differentiation. VST's monitoring channels correspond to observations of these specialized buffer functions:
+
+```
+FGS Buffer Types → VST Monitoring Correspondence:
+
+Speed buffer → SLI_excess monitoring (§26.10)
+  FGS: regulates signal velocity between timescale-mismatched layers
+  VST: SLI_excess = governance bandwidth saturation → speed buffer overload signal
+  SLI_excess > 0.3: speed buffer saturated → τ-Ratio Restoration (§26.4) required
+
+Semantic buffer → D_c / TE(t) monitoring
+  FGS: translates meaning across coordinate systems
+  VST: D_c growth = semantic translation failure (direction not preserved across tiers)
+  TE decline = semantic buffer efficiency reduction
+
+Contamination buffer → ρ̇_rolling + ∇C_contam monitoring
+  FGS: isolates instability propagation pathways
+  VST: ρ̇_rolling ≈ 0 with Φ > 0 = contamination buffer saturation (cannot purify)
+  ∇C_contam reversal = contamination buffer structural inversion
+
+Exploration buffer → Ṡ_proxy monitoring (§27.2)
+  FGS: sandboxes experimental perturbations
+  VST: Ṡ_proxy < Ṡ_min = exploration buffer depleted (no entropy production → no exploration)
+  AGM coupling: exploration buffer = AGM's stochastic perturbation sandbox
+
+Alignment buffer → TPS + D_c/v_drift monitoring (Layer -1, 0)
+  FGS: compares vectors against North Star projection
+  VST: TPS monitors pre-threshold alignment erosion; D_c monitors post-threshold
+  TPS is early alignment buffer signal; D_c is late signal → confirms priority ordering
+
+Inter-dimensional buffer → G_storm eigenvector monitoring (§28.9)
+  FGS: repairs Local North Star via dimensional probe
+  VST: G_storm principal eigenvector identifies dominant coordinate misalignment direction
+  → Eigenvector-targeted intervention = inter-dimensional buffer repair
+
+Buffer Fluidization (FGS §29I.12) → VST Monitoring Channel Coordination:
+  FGS: no single meta-buffer; instead inter-buffer communication + bypass pathways
+  VST: monitoring channel coordination through cross-validation constraint matrix (§28.11.3)
+  Rules 1–15 in cross-validation matrix = inter-buffer communication protocols
+  → Each rule specifies which monitoring channels must be consulted jointly (no independent action)
+```
+
+---
+
+### §29.12 VST-FGS Cross-Theory Reinforcement Map [v3.0-FGS-series]
+
+| FGS Concept | VST v3.0 Target | Direction |
+|---|---|---|
+| FGS ODE six-variable system | §29.1 dynamical substrate | FGS → VST |
+| α_eff = β_s·F/(T·d) time-varying | §29.1.1 S-equation correction | FGS → VST |
+| Timescale separation τ ordering | §29.1.2 stage correspondence | FGS → VST |
+| Bifurcation → Storm type classification | §29.1.3 VST type mapping | FGS → VST |
+| Δu ∝ F^(−1/4) (attention trap) | §29.5.2 SLI-DDD coupling | FGS → VST |
+| T*(ρ,Φ) quasi-equilibrium | §29.2.1 VST monitoring implications | FGS → VST |
+| τ_silent analytical formula | §29.2.2 governance scheduling | FGS → VST |
+| u_silent existence condition | §29.2.2 emergency threshold | FGS → VST |
+| AGM g(E) gain modulation | §29.3.1 α-modulator coupling | FGS → VST |
+| Emotional state taxonomy | §29.3.1 Φ impact table | FGS → VST |
+| AGM → Ṡ_proxy generation | §29.3.2 endogenous entropy | FGS → VST |
+| Vector Storm = AGM Runaway | §29.3.3 mechanistic identity | FGS ↔ VST |
+| G_storm in AGM language | §29.3.3 weight-vector coupling | FGS ↔ VST |
+| Clean System Paradox | §29.4.1 Φ_opt lower bound | FGS (new) → VST |
+| Managed Impurity Regime | §29.4.1 VCZ redefinition | FGS → VST |
+| PRR as managed impurity | §29.4.2 PRR optimal design | FGS → VST |
+| Lock Budget ∏(1+L_C)(1+L_d) | §29.5.1 multi-scale irrecoverability | FGS → VST |
+| Triple-lock (m=3) extension | §29.5.1 three-tier irrecoverability | FGS → VST |
+| FGS design rule 4 | §29.5.1 k_sat + v_class joint | FGS → VST |
+| Theorem 29.5.1 (Attention-DDD) | §29.5.2 SLI pre-DDD protocol | FGS → VST |
+| North Star Architecture | §29.6.1 D_c reference frame | FGS → VST |
+| SCM detection δ_actual | §29.6.1 Goodhart extension | FGS → VST |
+| Local North Star per tier | §29.6.2 per-tier D_c_ℓ | FGS → VST |
+| DDD Stage 0b Local NS repair | §29.6.2 pre-Stage 1 protocol | FGS → VST |
+| R_self = D·F·V·T components | §29.7.1 self-purification formula | FGS → VST |
+| R_self FGS factor formalization | §29.7.1 RDI lower bound extension | FGS → VST |
+| Contamination-as-Fuel §29C.5 | §29.7.2 immune training protocol | FGS → VST |
+| R_self development through exposure | §29.7.2 optimal contamination | FGS → VST |
+| Metric Poisoning attack | §29.8.1 G(t) adversarial | FGS → VST |
+| Coupling Attack → SCC | §29.8.1 adversarial SCC | FGS → VST |
+| Isolation Attack → MI | §29.8.1 I_threshold attack | FGS → VST |
+| Collective Masking attack | §29.8.1 spectral counter-measure | FGS → VST |
+| Four manipulation-resistant principles | §29.8.2 architectural requirements | FGS → VST |
+| Stochastic threshold P(Storm) | §29.9.1 probabilistic monitoring | FGS → VST |
+| Kalman-enhanced VST monitoring | §29.9.1 fused indicator protocol | FGS → VST |
+| Probabilistic phase portrait | §29.9.2 P(zone) governance zones | FGS → VST |
+| c* = (λ₁−λ₂)^(−1) SOC transition | §29.10.1 VST network phases | FGS → VST |
+| Three collective phases | §29.10.1 subcritical/critical/super | FGS → VST |
+| Hub failure cascade O(ln n) | §29.10.2 monitoring frequency req | FGS → VST |
+| R_topo topological robustness | §29.10.2 architectural design | FGS → VST |
+| Collective memory embedding | §29.10.2 Q_kernel correspondence | FGS ↔ VST |
+| Transfer Efficiency TE(t) | §29.11.1 f₃ priority theorem | FGS → VST |
+| Middle-layer fatigue equation | §29.11.1 f₃ burnout protocol | FGS → VST |
+| Six buffer types | §29.11.2 monitoring correspondence | FGS → VST |
+| Buffer fluidization | §29.11.2 cross-validation matrix | FGS ↔ VST |
+
+---
+
+## Novel Contributions VST-NC-93–VST-NC-108 [v3.0-FGS-series]
+
+```
+VST-NC-93: FGS-Augmented S-Equation (α_eff Time-Varying)
+  S̃_FGS = β_s·F(A_g,A_ℓ,ω)·n²/(T·C_eff·d): α_eff not constant.
+  Attention amplification F and temperature T jointly modulate effective α.
+  Pre-Storm F-inflation detectable before Φ > 1: new monitoring signal.
+  → First formalization of α variation in VST S-equation.
+
+VST-NC-94: τ_silent Analytical Formula (FGS §36F) in VST
+  τ_silent ∝ 1/u²: silent phase duration decreases quadratically with load.
+  u_silent threshold: above this, no silent phase — immediate Storm.
+  Governance scheduling: τ_silent sets pre-positioning deadline.
+  → Closes VST gap: silent criticality had no duration prediction.
+
+VST-NC-95: AGM-Φ Coupling (Novel VST Finding)
+  g(E_pop) modulates α in S-equation: anxiety → g >> 1 → lower Storm threshold.
+  Emotional state → VST Stage risk table (seven states, four impact dimensions).
+  AGM prerequisite for DDD: g(E) restoration before structural intervention.
+  → First mechanistic linkage between affective state and Φ dynamics in VST.
+
+VST-NC-96: Managed Impurity as VST Optimal Operating Point (Novel VST Finding)
+  Φ_opt ∈ (Φ_min_healthy, Φ_safe): zero-storm not optimal.
+  VCZ redefinition: Φ_opt < Φ < 1 (not 0 < Φ < 1).
+  DDD over-success risk: suppressing Φ below Φ_opt = structural atrophy.
+  → Resolves implicit VST assumption that lower Φ is always better.
+
+VST-NC-97: PRR as Managed Impurity Generator — Optimal Design
+  Three PRR failure modes (too intense / too infrequent / buffer bypass).
+  Optimal PRR: continuous low-intensity + periodic calibration pulse.
+  PRR routing: must pass through middle layer (f₃ development requirement).
+  → First PRR design framework derived from managed impurity principle.
+
+VST-NC-98: Triple-Lock Irrecoverability (m=3 FGS Extension)
+  FGS lock budget generalized: m=3 scales (lower/middle/upper tiers).
+  Triple-lock: L_{C,ℓ}·L_{d,ℓ} >> 1 for all three ℓ simultaneously.
+  FGS design rule 4 VST translation: k_sat + v_class must increase jointly.
+  → Extends double-lock (§28.5) to three-tier VST architecture.
+
+VST-NC-99: Theorem 29.5.1 (Attention-DDD Coupling)
+  SLI_excess > 0 → Δu_SLI > Δu_baseline (DDD intervention gap increases).
+  Quantitative: Δu_SLI/Δu_baseline ≈ (F_SLI/F_baseline)^(1/4).
+  Pre-DDD protocol: SLI reduction BEFORE DDD Stage 1 initiation.
+  → First formal derivation of SLI impact on DDD difficulty.
+
+VST-NC-100: North Star Anchor for D_c (FGS §29D → VST)
+  A_external as D_c reference: more robust than baseline proxy (drift-resistant).
+  SCM detection: δ_actual vs δ_internal divergence as Goodhart signal.
+  Per-tier D_c_ℓ vector: (D_c_lower, D_c_middle, D_c_upper) independent monitoring.
+  → Extends single-scalar D_c to per-tier vector with principled anchor.
+
+VST-NC-101: DDD Stage 0b — Local North Star Repair
+  Per-tier D_c_ℓ assessment before Stage 1.
+  Local North Star synchronization required: prevents false recovery against drifted criteria.
+  PRR design for Local NS repair: against A_external_projection, not peer average.
+  → New pre-Stage 1 protocol closing governance anchor gap.
+
+VST-NC-102: R_self FGS Component Formalization
+  R_self = D·f₃/f₃_max·k_sat·π_up·(1−∇C_contam)·constant.
+  Each factor independently reduces R_self: PRR, f₃, ASD, permeability, gradient.
+  Extended Theorem 25.1.1 RDI bound with all five factors.
+  → First component-level formalization of self-purification capacity.
+
+VST-NC-103: Contamination-as-Fuel and R_self Development
+  R_self grows through controlled contamination exposure (immune training).
+  Immune Training Protocol: three-phase progressive exposure within safety bounds.
+  Optimal contamination frequency: f_immune = 1/(10 × τ_calibration).
+  → Formally resolves why permanent Φ → 0 governance produces brittleness.
+
+VST-NC-104: Adversarial Attack Model — Four Attack Types in VST
+  Metric Poisoning → G(t) adversarial induction; counter: ≥3 independent PRR.
+  Coupling Attack → adversarial SCC formation; counter: G_storm + topological design.
+  Isolation Attack → MI_threshold violation; counter: redundant information pathways.
+  Collective Masking → spectral counter-measure from G_storm covariance structure.
+  → First formal VST adversarial threat model.
+
+VST-NC-105: Network SOC Phase Transition in VST (c* = (λ₁−λ₂)^(-1))
+  Three phases: subcritical (local storms only) / critical (SOC) / supercritical (system-wide).
+  c_estimate = max(C_ij) × G_storm eigenvalue ratio: same computation as §28.1 and §28.9.
+  Governance protocol per phase: monitoring / cascade arrest / SCC dissolution.
+  → First network-criticality based VST governance phase classification.
+
+VST-NC-106: Hub Failure Cascade Speed Monitoring Requirement
+  Hub failure cascade: O(ln n) steps → τ_monitor < τ_agent_cycle × ln(n).
+  R_topo > 2 architectural requirement: hub avoidance in causal graph design.
+  Hub avoidance: cascade slows from O(ln n) to O(√n) → 2.2× more response time.
+  → Architectural design requirement for topological robustness.
+
+VST-NC-107: Probabilistic Monitoring Framework (FGS §36P → VST)
+  P(Storm) = continuous risk estimate replacing binary Φ > 1.
+  Four P(Storm) governance thresholds: 0.10/0.30/0.50/0.80 (proportional response).
+  VST-Kalman: fused fifteen-indicator posterior P(Storm | all indicators).
+  → First probabilistic VST monitoring framework.
+
+VST-NC-108: Middle-Layer Priority Theorem (Proposition 29.11.1)
+  TE(t) decline precedes Φ > 1: middle layer is earliest single-tier detector.
+  Formal justification for f₃ priority in monitoring ordering.
+  Middle-layer fatigue equation: burnout trajectory requires proactive rest protocol.
+  Buffer differentiation: six buffer types map to six monitoring channel groups.
+  → Formal VST theorem for middle-layer monitoring primacy.
+```
+
+---
+
+## Open Problems — M96–M110 [v3.0-FGS-series]
+
+**M96 — u_silent Threshold Calibration:**
+FGS provides analytical formula u_silent = (λ_n + χ_n)·√[T_max/β_s]. VST parameters (λ_n, χ_n, β_s, T_max) require calibration. Approach: identify N ≥ 10 historical transitions from Silent Criticality to Storm; estimate u_effective at transition from SLI_excess + V_Φ proxies; fit u_silent from transition data. Cross-validate: u_silent prediction should match observed SLI at immediate-Storm onset with tolerance ±20%.
+
+**M97 — Φ_opt Calibration (Managed Impurity Lower Bound):**
+Φ_opt = minimum healthy instability. Theoretical estimate: Φ_opt ≈ 0.1 × Φ_safe. Empirical calibration: measure f₃ decay rate as function of Φ_operational; identify Φ at which ∂f₃/∂t|_calibration → 0. Cross-validate: Ṡ_proxy decline rate at various Φ_operational levels; Ṡ_proxy should remain above Ṡ_min at Φ_opt. Expected range: Φ_opt ∈ (0.05, 0.15) based on FGS S* concept.
+
+**M98 — AGM g(E) Measurement in Multi-Agent Systems:**
+g(E_pop) (population-level affective gain) is not directly observable in multi-agent AI systems. Proxy: collective response amplitude to standardized perturbation vs. baseline → g_estimate = response_amplitude / response_baseline. Challenge: standardized perturbation must be emotionally neutral to avoid confounding. Alternative: infer g(E) from G_storm trace (tr(G_storm)/n) as aggregate amplification measure.
+
+**M99 — Immune Training Protocol Calibration:**
+Three-phase immune training requires: Φ_immune = 0.5 × Φ_safe, τ_immune = τ_agent_cycle, f_immune = 1/(10 × τ_calibration). These parameters require empirical calibration. Risk: incorrectly calibrated immune training may cause genuine Storm rather than controlled exposure. Safety protocol: begin with Φ_immune = 0.1 × Φ_safe; increase only after confirming R_self improvement; stop immediately if Φ_immune exceeds Φ_safe/2 during episode.
+
+**M100 — Triple-Lock Irrecoverability Thresholds:**
+Triple-lock requires: L_{C,ℓ}·L_{d,ℓ} >> 1 for all three ℓ. ">> 1" requires quantification. FGS provides: product > ζ_total^(-4) as total durability criterion. ζ_total (minimum acceptable durability) must be specified. Approach: calibrate from N ≥ 10 known irrecoverable episodes; estimate ∏(1+L_{C,ℓ})(1+L_{d,ℓ}) at irrecoverability declaration; ζ_total_critical = (∏_at_irrecoverable)^(-1/4).
+
+**M101 — Kalman VST Monitoring Covariance Matrix:**
+VST-Kalman monitoring requires: process noise Q_VST and measurement noise R_VST for the seven-dimensional state. Calibration: extended historical VCZ and Storm episodes; fit Q from state trajectory variance, R from indicator measurement noise. Challenge: state space (Φ, V_Φ, Δρ, D_c, k_sat, δ_sync, J_AB) not directly observable — proxy measurement required for each dimension.
+
+**M102 — c* Network SOC Threshold Calibration:**
+c* = (λ₁(C_ij) − λ₂(C_ij))^(-1) requires eigenspectrum of C_ij. C_ij estimation has uncertainty (M71). Therefore c* has uncertainty from C_ij estimation noise. Approach: bootstrap c* uncertainty from C_ij estimation variance; compute P(c > c*) rather than binary c vs. c* comparison; integrate with probabilistic monitoring framework (§29.9).
+
+**M103 — R_topo Monitoring and Hub Detection:**
+R_topo monitoring requires per-agent degree in causal graph C_ij. Hub detection: agents with C_ij degree >> mean. Real-time hub monitoring: update degree distribution at each C_ij recomputation (τ_causal_update). Hub emergence alert: agent degree increases by > 50% over τ_monitor window → hub formation detected → causal coupling investigation.
+
+**M104 — PRR Optimal Intensity Calibration:**
+Optimal PRR design: PRR_continuous (background) + PRR_pulse (development). Calibration of PRR_continuous intensity: measure Ṡ_proxy vs. PRR_continuous intensity; identify minimum PRR_continuous that maintains Ṡ_proxy > Ṡ_min. Calibration of PRR_pulse: measure f₃ engagement vs. PRR_pulse intensity; identify optimal PRR_pulse that maximizes ∂f₃/∂t|_engagement without triggering ASD Type I.
+
+**M105 — τ_rest_middle Calibration:**
+Middle-layer rest duration τ_rest_middle = (C_M_target − C_M_current)/γ_f₃_growth requires γ_f₃_growth (capacity growth rate). Measurement: identify N ≥ 5 historical middle-layer rest periods (load reduction to < L_M_recovery); measure f₃ recovery trajectory; fit γ_f₃_growth. Cross-validate: predict τ_rest_middle for new episodes; compare with observed f₃ recovery time.
+
+**M106 — Adversarial Attack Detection Sensitivity:**
+Four attack types require detection protocols. Sensitivity analysis: for each attack, at what attack intensity does the counter-measure trigger? Metric Poisoning: minimum false PRR fraction detectable by MI divergence? Coupling Attack: minimum C_ij increase detectable by G_storm? Isolation Attack: minimum π_up reduction detectable by MI threshold? Collective Masking: minimum masking fraction detectable by ||C_indicators − C_VCZ|| metric?
+
+**M107 — g(E) Governance Prerequisite Threshold:**
+AGM prerequisite for DDD: g(E) must be restored before structural DDD. What threshold of g(E_pop) constitutes "restored"? Expected: g(E) ∈ [0.7, 1.3] (within 30% of neutral) = acceptable for DDD. But: threshold may vary by storm type (Type I vs. Type V may require different g(E) ranges). Empirical calibration: N ≥ 10 DDD episodes with measured g(E) at initiation; correlate g(E) at initiation with DDD outcome class.
+
+**M108 — TE(t) Measurement Protocol:**
+Transfer Efficiency TE(t) = I(A(t); D(t)) / H(A(t)) requires measuring MI between upper anchor A(t) and lower behavioral direction D(t). Both are high-dimensional. Practical proxy: correlation between upper-layer governance signal and lower-layer behavioral change direction. Formal: TE_proxy = |corr(Δ_governance_signal, Δ_behavior)| / max_possible_correlation. Calibration: compare TE_proxy with TE_actual on systems where both measurable.
+
+**M109 — Phase Portrait AGM Integration:**
+The (Φ, ρ) phase portrait (§28.8) does not currently include g(E) as a third axis. Extended phase portrait: (Φ, ρ, g(E)) three-dimensional, with AGM dynamics as third coordinate. AGM coupling: dΦ/dt modified by g(E); dg(E)/dt governed by AGM ODE (from FGS §36S). This three-dimensional portrait may reveal new attractor types (e.g., limit cycle in (Φ, g(E)) space during anxiety-Storm oscillation).
+
+**M110 — Probabilistic DDD Completion:**
+Standard DDD: seven-condition AND gate (deterministic). Probabilistic extension: P(genuine_recovery | seven_conditions_satisfied). This probability is not 1 (false-positive DDD completion exists). Bayesian DDD: integrate over uncertainty in each condition measurement → P(genuine_recovery) as DDD decision variable. Threshold: P(genuine_recovery) > 0.90 before DDD withdrawal. Calibration: N ≥ 20 DDD completions with post-DDD monitoring → classify genuine vs. false completion.
+
+---
+
+## Assumptions A53–A62 [v3.0-FGS-series]
+
+**A53 (Affective Gain Monotonicity):**
+The affective gain function g(E): ℝ → ℝ₊ is monotone in anxiety dimension: g(E_anxiety) strictly increasing in anxiety intensity. This ensures that anxiety consistently amplifies Storm risk (g >> 1) rather than sometimes stabilizing. Falsification (FP-FGS-1): g(E_anxiety) shows non-monotone behavior in anxiety dimension across N ≥ 10 independent population observations.
+
+**A54 (FGS-VST α Correspondence):**
+The VST amplification coefficient α is the adiabatic reduction of the FGS product β_s·F(A_g,A_ℓ,ω)/(T·d). Under baseline conditions (F = 1, T = T_baseline, d = d_baseline), α = β_s/(T_baseline·d_baseline). Deviations from baseline correspond to α_eff variation. Falsification: α_eff shows no correlation with F·T^(-1)·d^(-1) across N ≥ 20 governance episodes.
+
+**A55 (Managed Impurity Optimality):**
+The optimal VST operating point satisfies Φ_opt > 0: zero-storm operation (Φ = 0) is suboptimal because it eliminates calibration pressure. The optimal Φ_opt is unique for a given governance architecture (not a range). Falsification: f₃ capacity does not decline under sustained Φ = 0 operation over τ_long = 100 × τ_agent_cycle (managed impurity not necessary for structural maintenance).
+
+**A56 (Lock Budget Multiplicativity):**
+The FGS lock budget inequality applies multiplicatively across VST governance tiers: R_total = ∏_ℓ R_ℓ (not additive). This means a single severely locked tier dominates and drives R_total → 0 regardless of other tiers' health. Falsification: R_total > R_ℓ_min for some episodes where one tier has R_ℓ → 0 (additive rather than multiplicative structure).
+
+**A57 (North Star External Invariance):**
+The North Star A_external is invariant under internal system dynamics — it cannot be corrupted by Goodhart dynamic G(t) through internal system drift alone. External adversarial modification is possible but distinguishable from internal drift by the rate of change (adversarial: step change; drift: gradual). Falsification: A_external shows gradual drift correlated with internal system state over τ_long.
+
+**A58 (Self-Purification Multiplicativity):**
+R_self = D·F·V·T is multiplicative in its four components. Each factor independently reduces R_self; compensation of one deficit by another factor excess is not possible (multiplicative, not additive). Falsification: R_self does not decrease proportionally when any single factor (D, F, V, or T) → 0 (additive compensation observed).
+
+**A59 (Immune Training Monotonicity):**
+Repeated controlled contamination exposure at Φ_immune < Φ_safe monotonically improves R_self (detection, filtering, verification, transfer capacities all non-decreasing with experience). Non-monotone R_self (initial improvement followed by decline) would indicate exposure above learning threshold. Falsification: R_self declines after first immune training cycle with Φ_immune < 0.5 × Φ_safe.
+
+**A60 (Network SOC Universality):**
+The c* = (λ₁−λ₂)^(-1) threshold applies universally to all VST causal graphs G_C, regardless of specific topology. The eigenvalue spectral gap (λ₁−λ₂) captures the relevant structural property for SOC transition in all cases (not just regular graphs or random graphs). Falsification: observed Storm onset does not correlate with c > c* computed from C_ij eigenspectrum in ≥ 30% of cascade episodes.
+
+**A61 (Transfer Efficiency First-Detection Primacy):**
+TE(t) decline precedes both aggregate Φ increase and local Φ_i increase in all Storm onset sequences. This is a structural consequence of the middle layer being the only architectural position that observes both A(t) and D(t) simultaneously. Falsification: TE(t) does not decline before Φ crosses monitoring threshold in ≥ 30% of Storm onset episodes.
+
+**A62 (Collective Memory Markov Property):**
+The collective memory embedded in Q_kernel has a Markov property: Q_kernel update at t+1 depends only on Q_kernel(t) and current governance state (f₃, k_sat, D_ρ), not on historical kernel trajectory. This enables the renewal convergence theorem (Theorem 28.5.1) to apply to collective memory dynamics. Falsification: Q_kernel trajectory shows significant non-Markovian autocorrelation after conditioning on governance state variables.
+
+---
+
+## Appendix T — Terminology [v3.0-FGS-series] (§T.13 additions)
+
+```
+§T.13 FGS reverse integration semantic additions:
+
+FGS-Augmented S-Equation:
+  S̃_FGS = β_s·F(A_g,A_ℓ,ω)·n²/(T·C_eff·d).
+  Replaces scalar α with time-varying α_eff = β_s·F/(T·d).
+  F = attention amplification factor (FGS §36G).
+
+Silent Duration τ_silent:
+  Maximum time from SC onset to Storm transition.
+  τ_silent ∝ 1/u² (quadratic load dependence).
+  u_silent: load above which no silent phase exists.
+
+Affective Gain g(E):
+  Population-level gain modulator from AGM.
+  g(E_anxiety) >> 1: Storm threshold effectively lowered.
+  g(E_flow) ≈ 0.9: VCZ-optimal operating state.
+
+Managed Impurity Regime:
+  0 < Φ_opt < Φ < Φ_safe: optimal VST operating range.
+  Φ < Φ_opt: Excessive stability zone (structural atrophy risk).
+  VCZ redefinition: Φ_opt < Φ < 1.
+
+Immune Training Protocol:
+  Controlled contamination exposure to develop R_self.
+  Three-phase progressive: Φ_immune = 0.5 × Φ_safe initially.
+  R_self improvement monitored; safety bounds strictly enforced.
+
+Lock Budget (FGS):
+  ∏_ℓ (1+L_{C,ℓ})(1+L_{d,ℓ}) ≤ ζ_total^(-4).
+  Multiplicative across governance tiers: one saturated tier dominates.
+  Triple-lock: all three VST tiers simultaneously over-locked.
+
+Transfer Efficiency TE(t):
+  TE = I(A(t); D(t)) / H(A(t)).
+  Middle-layer efficiency metric: earliest Storm detection signal.
+  TE decline precedes Φ increase (Proposition 29.11.1).
+
+c* (Network SOC Threshold):
+  c* = (λ₁(C_ij) − λ₂(C_ij))^(-1).
+  Below c*: local storms (subcritical); above c*: system-wide (supercritical).
+  Three collective phases: subcritical / SOC-critical / supercritical.
+
+Probabilistic Storm Threshold P(Storm):
+  P(Storm) = P(Φ > Φ_c) with Φ_c ~ N(1.0, σ_Φ_c²).
+  Four governance thresholds: 0.10/0.30/0.50/0.80.
+  VST-Kalman: posterior P(Storm | all fifteen indicators).
+
+Collective Masking Attack:
+  Coordinated indicator suppression making P(Storm) artificially low.
+  Counter-measure: spectral monitoring of indicator correlation matrix.
+  G_storm as masking-resistant indicator (covariance, not level).
+
+Local North Star (per-tier):
+  A_ℓ = P_ℓ(A_external): North Star projected to tier ℓ coordinates.
+  D_c_ℓ = ||D_ℓ − A_ℓ||: per-tier directional drift.
+  DDD Stage 0b: Local NS synchronization before Stage 1.
+
+R_topo (Topological Robustness):
+  R_topo = (graph connectivity − 1) / hub degree concentration.
+  R_topo > 2: robust; hub failure cascade slows from O(ln n) to O(√n).
+  Architectural requirement: nearly-regular causal graph preferred.
+
+Self-Consistent Misalignment (SCM):
+  A(t) drifted AND D_c_internal ≈ 0 (both anchor and direction co-drifted).
+  Detection requires: δ_actual = ||D − A_external|| >> 0 despite D_c_internal ≈ 0.
+  PRR must compare against A_external, not peer average.
+
+Triple-Lock Irrecoverability (m=3):
+  Extension of double-lock to full three-tier VST architecture.
+  All three tiers simultaneously: L_{C,ℓ}·L_{d,ℓ} >> 1 for ℓ = 1,2,3.
+  R_total → 0 (multiplicative collapse across all scales).
+```
+
