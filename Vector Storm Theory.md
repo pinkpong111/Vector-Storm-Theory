@@ -5,6 +5,38 @@ Companion theory to Deficit-Driven Fractal Governance (DFG)
 Focus: why instability occurs, how it propagates, when to intervene
 Recovery and operational governance are addressed separately
 
+> **Version: v3.6-NAT-theory** (April 2026)
+>
+> v3.6-NAT-theory changes from v3.5-AGMthm (Theory hardening — S-equation justification + VCZ formal definition + VE-NAT architectural realization + D–S[V]–λ_V–Ω integrated E-layer formulation):
+> - **[Updated §3.5 VCZ]** Formal definition $\mathcal{V}:=\{(n,C,R): R<1, S<S_c, dC/dn>2\beta C/n\}$ with Lyapunov characterization ($dV/dt<0$ under DDD; §24.3), basin-of-attraction identification (FCC ODE fixed point $x^*$), positive invariant set condition, and AGM distortion-minimal regime connection ($D\to D_{\min}$)
+> - **[New §3.5.B]** D–S[V]–λ_V–Ω Integrated E-Layer Formulation: four-layer cascade (L0 AGM D, L1 distortion-inflated $S_D[V]=S[V](1+\nu_D D^2)^\beta$, L2 spectral $\lambda_V\approx a_\lambda(S_D[V]-S_c)$, L3 contamination $\dot{\Omega}=-\eta_\Omega\Omega+b_\Omega(\lambda_V)_+$); cross-translation table (NAT/RBIT/GGT ↔ E-layer ↔ integrated); VE joint condition 5-way ($C_A\approx 1$, $D\leq D_{\max}^{\mathrm{VE}}$, $S_D[V]\leq S_c$, $\lambda_V\leq 0$, $\Omega\leq\Omega_c$); role partition: NAT/AGM/VST/RT supply one condition each; connects to master N.11
+> - **[New §3.5.A, precision-revised v3.6]** Vector Equilibrium and NAT Sphere Architectural Realization: VE = directional degeneracy (not force balance); NAT sphere **structurally enforces** degeneracy via S1–S4 (not approximation); $C_A=1$ = enforcement criterion at $\mathcal{M}_{\mathrm{crit}}$; three-column enforcement table (VE degeneracy condition → NAT axiom); apparent "center" = non-referential symmetry artifact, not even soft reference point; moving target (Corollary 9.11.1); Center Invisibility: reference negates the center. "VST provides the geometry; NAT enforces structurally."
+> - **[Updated §3.2 S-equation]** Derivation status: S-equation = effective coarse-grained projection of FCC five-ODE system (Theorem 24.1.1); authority from ODE system not independent postulate; role separation: S = phase indicator (read), $\Lambda$ = control parameter (acted on); $\Lambda$ elevated without $S$ elevated → AGM collapse mechanism explained
+> - **[Updated Changelog §3.5]** VE↔NAT sphere changelog entry added
+> - All previous v3.5-AGMthm content preserved.
+>
+> **Version: v3.5-AGMthm** (April 2026)
+>
+> v3.5-AGMthm changes from v3.4-AGMsync (AGM v2.8 theorem-level formalization reverse integration):
+> - **[Updated T.6]** Nine new rows added: scaling constraint $\alpha_c+\alpha_H=1$; A-OBS-1 consistency; $D$ latent vs $\hat{D}$ operational; $D_{\mathrm{crit}}$; Theorem 4.I.2 (E3–E5 ISS stability); Theorem 4.I.3 (distortion-induced critical transition); $D$ minimal sufficient statistic; orthogonal intervention axes; $e(t)$ identifiability; $\varepsilon_D$-adaptive margin $\varepsilon_\kappa$
+> - **[Updated §11.7]** M19–M22 open problems now cross-reference Theorem 4.I.2/3 and A-OBS-1
+> - **[Updated §29.3.1]** $S_D$ projection declaration ($S_D\to S$ as $D\to 0$); $\Lambda$ canonical definition ($\Lambda = S[V]\delta/H$, not $S_D\delta/H$); $D_{\mathrm{crit}}$ alarm threshold added to monitoring table
+> - **[Updated Changelog §22 block]** AGM v2.8-THM additions: $\alpha_c+\alpha_H=1$ scaling constraint; $\mathcal{U}:=\{D<D_{\max},H>H_{\min},\|\text{forcing}\|<F_{\max}\}$ stability region; three orthogonal intervention axes (capacity/governance/environment); $e(t)$ identifiability justification; $D$ as minimal sufficient statistic; A-OBS-1 surrogate consistency assumption; Theorem 4.I.2–3 formal claims
+> - All previous v3.4-AGMsync content preserved.
+>
+> **Version: v3.4-AGMsync** (April 2026)
+>
+> v3.4-AGMsync changes from v3.4-DFG28series (AGM v2.7-MasterSync reverse integration — Distortion Field + Terrain-Contingent Gain + Symbol Unification + ISS Stability):
+> - **[Updated Changelog §22 block]** AGM v2.7-MasterSync additions: (i) affective state vector $e(t)\in\mathbb{R}^k$; (ii) distortion field $D(t)^2=z_D^\top W_D z_D$; (iii) terrain-contingent gain $g_i(E_i;\mathcal{L})$; (iv) moving critical target $\kappa^*(t)=\kappa_c(t)-\varepsilon_\kappa$; (v) ISS bound Proposition 4.F.1; (vi) symbol disambiguation $\mathcal{D}(t)$ vs $D(t)$; (vii) observation cost $c_q$ (renamed from $\chi$); (viii) VCZ as distortion-minimizing attractor $D\to D_{\min}$
+> - **[Updated §3]** C_eff distortion-correction layer: $C_{\text{eff,total}} = C_{\text{actual}}(1-\text{SLI}_{\text{corr}})/(1+\nu_D D^2)$ — SLI saturation (structural) and distortion (functional) are independent capacity loss channels
+> - **[Updated §4.10]** Affective state vector note: T_eff = mean-field projection of $e(t)\in\mathbb{R}^k$; full vector required for interference pattern prediction (§22.3)
+> - **[Updated §22.2]** S_affect → $S_{\mathcal{D}}(t) = \alpha n^2/C_{\text{eff}}^\beta$ with $C_{\text{eff}}=C_M/(1+\nu_D D^2)$
+> - **[Updated §22.5]** Damage symbol $\mathcal{D}(t)$ (calligraphic) throughout; $C_M(t)=C_{M,0}(1-\mathcal{D}(t))$; disambiguation from distortion field $D(t)$
+> - **[Updated §29.3.1]** $\tilde{S}_{\text{AGM}}$ uses terrain-contingent $\bar{g}(E_{\text{pop}};\mathcal{L})$; Flow entry updated with $D(t)\approx D_{\min}$ condition
+> - **[Updated Appendix T §T.6]** Eight new rows: $e(t)$, distortion field $D(t)$, structural damage $\mathcal{D}(t)$, terrain-contingent gain, $\kappa^*(t)$, ISS stability, observation cost $c_q$; synchronized with AGM v2.7-MasterSync (April 2026)
+> - **[New §11.7]** Open Problems M19–M22: distortion field calibration ($W_D$, $\nu_D$), ISS forcing bound, $D_{\min}$ measurement, terrain-contingent gain cross-scale validation
+> - All previous v3.4-DFG28series content preserved.
+>
 > **Version: v3.4-DFG28series** (March 2026)
 >
 > v3.4 changes from v3.3-DFG28series (Three Core Theorems — T1 Instability Control Law + T2 Modular Stability Law + T3 Emergent Hierarchical Criticality + Reviewer Defense Annotations + New FP/NC/M entries):
@@ -208,11 +240,22 @@ Recovery and operational governance are addressed separately
 >
 > v2.4-AGM changes from v2.3-RBIT-NAT (Affective Gain Module deep integration):
 > - **[New §22] AGM–VST Affective Coupling Architecture:** Affective Gain Modulation as endogenous storm perturbation source at intra-agent scale; Gain-Temperature correspondence (T_affect ↔ effective branching ratio R_affect); subcritical / critical / supercritical gain regimes mapped to VCZ / CW / Storm state transitions; Affective ECC as single-agent analogue of multi-agent ECC (Proposition 22.1); Freeze–Runaway bifurcation correspondence to ①–② structural risk pair; emotion suppression as artificial C(t) inflation producing delayed but amplified storm; five-phase affective governance lifecycle (Suppression→Saturation→Leak→Cascade→Collapse)
+> - **[AGM v2.8-THM additions — reverse-integrated]** AGM v2.8 theorem-level formalization adds:
+> **(i) Scaling constraint** $\alpha_c+\alpha_H=1$ — Cobb–Douglas-type threshold scaling $\kappa_c \propto C_{\mathrm{eff}}^\theta H^{1-\theta}$; reduces free parameters, improves falsifiability;
+> **(ii) A-OBS-1 (Surrogate Consistency)** $\hat{D}^2=\gamma_D D^2+\epsilon(t)$, $|\epsilon|\leq\epsilon_{\max}$ — inference legitimacy for observable $\hat{D}$ precursor alarms; threshold crossings valid under bounded error;
+> **(iii) $D$ latent / $\hat{D}$ operational distinction** — $D(t)$ is latent (defined from $(\delta,\kappa_{\mathrm{EI}},A_g)$); monitoring relies on observable surrogate $\hat{D}$; Theorems 4.I.2–3 stated in $D$; CP-layer alarms use $\hat{D}$;
+> **(iv) $D_{\mathrm{crit}}$** — critical distortion level above which safety margin exhausted; $D_{\mathrm{crit}}$ solves $\kappa_c(D)-\varepsilon_\kappa(D)=0$; collapse becomes dynamically accessible beyond $D_{\mathrm{crit}}$;
+> **(v) Theorem 4.I.2 (E3–E5 ISS Practical Stability)** — $\dot{V}\leq-\mu_1 D^2-\mu_2(H-H^*)^2-\mu_3 m^2+\eta_1 S^2+\eta_2 q^2+\eta_3\delta^2$; stability region $\mathcal{U}=\{D<D_{\max},H>H_{\min},\|\text{forcing}\|<F_{\max}\}$; three forcing terms = orthogonal intervention axes (capacity/governance/environment);
+> **(vi) Theorem 4.I.3 (Distortion-Induced Critical Transition)** — $\partial S/\partial D>0$, $\partial\kappa_c/\partial D<0$ (both exact); double vulnerability via shared $C_{\mathrm{eff}}$ path; $D_{\mathrm{crit}}$ existence by continuity; mode → Freeze/Runaway by $a(E)$;
+> **(vii) $D$ = minimal sufficient statistic** — $D(t)$ is unique minimal sufficient statistic coupling all layers; any coarser summary loses cross-layer information; system-theoretic invariant;
+> **(viii) $e(t)$ identifiability justification** — $e(t)$ is minimal augmentation resolving non-identifiability in action selection; structural necessity, not heuristic;
+> **(ix) $\varepsilon_D$-adaptive margin** $\varepsilon_\kappa(t)=\varepsilon_0+\varepsilon_D D(t)$ — distortion tightens admissible window (amplifying loop)
+> - **[AGM v2.7 additions — reverse-integrated]** AGM v2.7-MasterSync introduced the following constructs now reflected in §22 and §T.6: **(i) Affective state vector** $e(t)\in\mathbb{R}^k$ (Definition D-AGM-LLM-1) — VST implication: each agent carries a $k$-dimensional affective state, not a scalar T_eff; T_eff is the mean-field scalar projection $T_{\text{eff}} \approx \|e(t)\|/\sqrt{k}$; **(ii) Distortion field** $D(t)^2 = z_D^\top W_D z_D$ where $z_D = (\delta, \kappa_{\text{EI}}-\kappa^*, A_g)^\top$ (Definition D-AGM-DIST-1, AGM §4.1.B) — VST implication: within-agent distortion inflates effective $\Xi$ via $C_{\text{eff}} = C_M/(1+\nu_D D^2)$; distortion-corrected instability $\Xi_D = \Xi_0(1+\nu_D D^2)^\beta$ is the AGM-level order parameter; **(iii) Terrain-contingent gain** $g_i(E_i;\mathcal{L})$ with terrain parameters $(E_c(\mathcal{L}), g_{\max}(\mathcal{L}), n(\mathcal{L}))$ (AGM §2.4) — replaces fixed-transducer $g_i(E_i)$; $g(E_\text{pop}) = \bar{g}(\mathcal{L},t)$ in §29.3.1; **(iv) Moving critical target** $\kappa^*(t) = \kappa_c(t) - \varepsilon_\kappa$ (Definition D-AGM-DIST-2) — stress-induced narrowing is now endogenous, not parametric; **(v) ISS stability bound** $\dot{V}_D \leq -\lambda_D V_D + b_1 S^2 + b_2|\dot{\kappa}^*|^2 + b_3\Psi^2$ (Proposition 4.F.1, AGM §4.1.B) — formal stability guarantee for distortion dynamics near VCZ; **(vi) Symbol disambiguation**: AGM damage variable is now $\mathcal{D}(t)$ (calligraphic) and $C_M(t) = C_{M,0}(1-\mathcal{D}(t))$; distortion field is $D(t)$ (plain); observation cost is $c_q$ (renamed from $\chi$ in pre-v2.7); **(vii) VCZ as distortion-minimizing attractor**: VCZ $\Rightarrow D(t)\to D_{\min}>0$ (AGM §12.4.1.A) — Flow = $D(t)\approx D_{\min}$; ECC = local controller for $D(t)$
 > - **[New §22.1] Coordinate Drift as AGM Storm Precursor:** Proposition 22.1.1 (drift accumulation rate bounded by Ω/C_M · (1−SCC)); Drift-Storm onset coupling — sustained coordinate drift precedes R>1 by measurable lead time τ_drift; detection protocol via dual-signal monitoring (vector alignment decay + drift magnitude); falsifiable prediction: coordinate drift threshold τ_D precedes storm classification by at least one governance window
-> - **[New §22.2] Affective Temperature and Storm Generation Rate:** Fokker–Planck bridge from AGM to VST S-equation; effective temperature T_eff as storm generation rate multiplier; S_affect(t) = α_affect · n_affect² / C_affect(t)^β with T_eff modulation; four thermal regimes (frozen / calibrated / overheated / runaway); Minimum Viable Temperature (α=2 phase transition) as VCZ lower boundary; Energy Budget conservation across affective governance (Proposition 22.2.1)
+> - **[New §22.2] Affective Temperature and Storm Generation Rate:** Fokker–Planck bridge from AGM to VST S-equation; effective temperature T_eff as storm generation rate multiplier; S_affect(t) = α_affect · n_affect² / C_affect(t)^β with T_eff modulation; four thermal regimes (frozen / calibrated / overheated / runaway); Minimum Viable Temperature (α=2 phase transition) as VCZ lower boundary; Energy Budget conservation across affective governance (Proposition 22.2.1). **AGM v2.7 extension:** S_affect upgrades to distortion-corrected form: $S_{\mathcal{D}}(t) = \alpha n^2 / C_{\text{eff}}(t)^\beta$ where $C_{\text{eff}} = C_M/(1+\nu_D D(t)^2)$; T_eff is the mean-field scalar projection of $e(t)\in\mathbb{R}^k$; affective state vector dimension $k$ governs richness of gain modulation
 > - **[New §22.3] Emotional Algebra and Storm Interference Patterns:** Superposition correspondence — emotional constructive/destructive interference maps to Type 2 (Resonant) / Type 1 (Independent) storm interaction patterns (§4.3); Ambivalence Index as storm interference predictor; emotional Kronecker product as cross-domain storm coupling mechanism; non-commutativity of emotional composition as asymmetric storm ignition conditions
 > - **[New §22.4] ECC–VST Calibration Bridge:** Emotional Criticality Condition integrated as single-agent storm threshold; ECC static/dynamic/multi-dimensional variants mapped to per-layer storm thresholds; ECC Prediction Horizon as advance warning of intra-agent VCZ exit; Fisher Information Collapse (§10.9 AGM) as earliest warning preceding R>1 by maximum lead time; staged alarm protocol integration with VST §9.2 Differential Detection Protocol
-> - **[New §22.5] Structural Degradation as Irreversibility Accumulation:** AGM damage variable D(t) as within-agent C(t) decay mechanism; non-Markovian damage kernels (exponential / power-law / prion-like) as substrate-specific irreversibility models; damage ratchet effect as mechanism underlying VST §11.5 Theory Boundary Conditions; critical accumulated dose D_c as agent-level Condition 1 (Calibration Capacity Collapse) operationalization
+> - **[New §22.5] Structural Degradation as Irreversibility Accumulation:** AGM structural damage variable $\mathcal{D}(t)$ (calligraphic, AGM v2.7 notation) as within-agent $C_M(t)$ decay mechanism: $C_M(t)=C_{M,0}(1-\mathcal{D}(t))$; note $\mathcal{D}(t)$ (damage) is distinct from $D(t)$ (distortion field, Definition D-AGM-DIST-1); non-Markovian damage kernels (exponential / power-law / prion-like) as substrate-specific irreversibility models; damage ratchet effect as mechanism underlying VST §11.5 Theory Boundary Conditions; critical accumulated dose $D_c$ as agent-level Condition 1 (Calibration Capacity Collapse) operationalization
 > - **[New §22.6] Middle Layer as Intra-Agent Governance Topology:** AGM Three-Layer Asymmetric Architecture mapped to VST's three-tier containment structure; Mediation Layer paradox resolution at single-agent level; Buffer-Urgency Inversion as within-agent storm stage miscalibration; Silent Criticality correspondence to Stability Saturation State (SSS) and NAF (No Active Fluctuation) at intra-agent scale; Coordination-Cancellation Paradox as single-agent analogue of multi-agent coordination breakdown (Risk ④)
 > - **[New §22.7] Affective SOC and Governance-Optimal Complexity:** AGM's SOC architecture as single-agent VCZ maintenance mechanism; Governance-Optimal Complexity as per-agent φ-maximization target; Governance No-Free-Lunch Theorem at intra-agent level (Theorem 1.3 AGM); Computational Irreducibility argument for heuristic-only affective governance; Governance Phase Transition five-phase mapping (Intervention→Regulation→Architecture→Constraint→Law) at single-agent scale
 > - **[New §22.8] Affective Reversibility and Recovery Phase Correspondence:** Revival Trajectories three-case mapping to VST recovery outcomes (①, ①', ①''); bottom-up recovery principle at intra-agent scale; DDD Protocol as AGM-native recovery architecture with Lyapunov guarantee (Proposition 22.8.1: V̇ ≤ −γV under DDD); Bifurcation delay as affective analogue of slow recovery vs. recovery impossibility; trust topology at intra-agent level as within-agent coherence maintenance
@@ -281,9 +324,10 @@ Recovery and operational governance are addressed separately
 > - **[New §Epistemic Status (4)] State-space completeness assumption removal:** Explicit articulation of VST's foundational departure from state-space-contained dynamics. Interaction topology identified as primary analytical object; state space reframed as projection of interaction field. Historical parallels to description-level transitions in mathematics noted.
 > - **[New §Introduction] Foundational Departure paragraph:** State-space → interaction topology transition stated as core methodological commitment in Introduction.
 > - **[New §1.0] State-space invisibility of Storm origin:** Why state-space analysis structurally cannot detect mutual-reference coupling instability; relational vs. componential instability distinction.
-> - **[New §3.5 VCZ] Vector Equilibrium Geometry:** Three-dimensional geometric interpretation of VCZ as symmetric tension structure (cuboctahedron analogue; Fuller, 1975). Three mapped properties: no directional privilege, empty center (distributed control), vector locking. Fuller's geometric concept explicitly extended to dynamical interaction equilibrium. Figure placeholders added.
+> - **[New §3.5 VCZ] Vector Equilibrium Geometry:** VE = directional degeneracy (not force-balance / symmetric tension); bias elimination, not cancellation. Three enforcement conditions: no directional privilege (S3/S4), no center — non-referential symmetry artifact (S2), vector locking (S1). Fuller's geometric concept extended to dynamical interaction degeneracy. Figure placeholders added.
 > - **[New §3.5 VCZ] Fuller Zero Energy State correspondence:** Fuller's zero-energy characterization (zero directional bias, ∇E = 0) mapped to VST Rest Mode (zero amplification bias). Continuous correspondence chain: Storm → CW → VCZ → Rest Mode → Vector Equilibrium limit.
 > - **[New §3.5 VCZ] Jitterbug Transformation as Storm geometric prototype:** Fuller's Jitterbug (VE → icosahedron → octahedron deformation under minimal perturbation) mapped to Storm onset mechanism. Perfect equilibrium identified as neutral instability. VCZ design target = neighborhood of VE with subcritical bias, not VE itself.
+> - **[New §3.5 VCZ] Vector Equilibrium and NAT Sphere Architectural Realization (v3.5):** Vector equilibrium (VE) defined as geometry; NAT sphere topology defined as structural implementation. VE $\iff$ implemented by NAT sphere under $C_A \approx 1$. NAT $C_A = 1$ (Adaptive Criticality Number) is the operational criterion for sphere operating on $\mathcal{M}_{\mathrm{crit}}$ = VCZ center — sphere VCZ center characterization (NAT §7.26). "Center" in NAT is emergent symmetry reference, not controlling node — consistent with VST center invisibility principle. See formal paragraph below (§3.5.A).
 > - **[New §1.6.4] Center Invisibility Principle:** Structural explanation for why stabilizing center must remain implicit. Observation converts distributed invariant into explicit attractor → landscape distortion. Cross-domain mapping (Goodhart's Law, reward hacking, Lucas Critique, coordinate drift). Implication for Silent Criticality detection methodology.
 > - **[New §3.5 VCZ] Intentional Imperfection Principle:** Why mature systems avoid perfect equilibrium — complete alignment maximizes vulnerability. Detour path preservation as structural intelligence. Cross-domain evidence (neural, immune, ecosystem, routing, organizational). R ≈ 1⁻ target derived as the imperfection margin that preserves adaptability.
 > - **[New §3.5.1 Rest Mode] Viable Subspace interpretation:** Rest Mode as surviving-trajectories-only space. External appearance analysis: apparent directionlessness = continuous detour scanning. Decision speed reduction = trajectory ensemble evaluation cost.
@@ -394,6 +438,16 @@ Parameters such as α (amplification coefficient) function as absorbed structura
 
 **(2) The S-equation is a phase detector, not a calculator.**
 S is an order parameter in the statistical mechanics sense: its absolute value is system-specific and meaningless in isolation. What is universal is the *phase structure* — the existence of noise regime, storm regime, and the critical boundary between them — and the scaling relationships that govern transitions between phases.
+
+> **S-equation derivation status and role separation (v3.5).**
+>
+> *Derivation:* The S-equation $\tilde{S} = \alpha n^2/C(t)^\beta$ is the **effective coarse-grained projection of the FCC multi-ODE system** (§24, Theorem 24.1.1). The FCC five-variable ODE (C, d, T, ρ, k) reduces to this scalar scaling relation under governance-level aggregation, where $C(t)^\beta$ absorbs the joint effect of $C \cdot T \cdot d$ and $n^2$ captures pairwise conflict channel density. The S-equation is therefore not an independent postulate but a projection of mechanistic dynamics — its authority derives from the ODE system it summarizes, not from direct dimensional derivation. This places it on the same epistemological footing as mean-field equations in statistical physics.
+>
+> *Role separation:* **S acts as a phase indicator; $\Lambda$ serves as the control parameter derived from S.** Specifically:
+> - $S(t) = \alpha n^2/C(t)^\beta$ — the governance-level **phase detector**: identifies which qualitative regime the system occupies (noise / near-critical / Storm) and how close it is to a regime transition. S is read, not steered.
+> - $\Lambda(t) = S(t)\delta(t)/H(t)$ — the **control parameter** derived from S: a composite governance load index that couples instability $S$ with anchor misalignment $\delta$ and endurance $H$. $\Lambda$ is the quantity that governance acts on and that ECC monitors. $\Lambda$ can be elevated even when $S$ is moderate (through $\delta$ or $H$ depletion), which is why $\Lambda$ rather than $S$ alone triggers AGM collapse.
+>
+> This separation resolves the apparent tension between "S as governing dynamics" and "S as detector": S is the detector of structural phase; $\Lambda$ is the operational control variable that governance targets. Neither role is complete without the other.
 
 **(3) Falsifiability resides at the level of cross-system scaling predictions.**
 VST is falsified not by showing that α cannot be directly measured, but by showing that the predicted scaling relationships (quadratic n-dependence, power-law storm distributions, SOC convergence of R) fail to hold across independently constructed multi-agent systems. Falsification criteria are specified in Section 11.3–11.5.
@@ -1017,6 +1071,63 @@ The edge of chaos, metastability, and dynamic equilibrium — these terms from c
 **Connection to VCZ:**
 
 This is the structural justification for why VCZ is defined as R ≈ 1⁻ rather than R = 0 (complete suppression) or R = 1 (perfect criticality). The slight subcritical offset — the maintained gap between actual operation and the critical point — is not conservative caution. It is the minimum non-alignment required to preserve the buffer layer. A system operating at exactly R = 1 has consumed all its margin. A system operating at R << 1 has suppressed its exploration capacity. VCZ at R ≈ 1⁻ is the regime where both capacities coexist: sufficient coupling for coordination, sufficient non-alignment for absorption.
+
+#### §3.5.A Vector Equilibrium and Its Architectural Realization — NAT Sphere as VCZ Implementation
+
+Vector Equilibrium (VE) in this framework is not a conventional force-balance condition but a state of **directional degeneracy** — a configuration in which no direction retains structural privilege and all directional distinctions collapse into symmetry. Stability does not arise from the cancellation of opposing forces, but from the **elimination of directional bias itself**, producing a configuration in which propagation, influence, and interpretation are isotropic by construction. In this sense, VE corresponds to the distortion-minimal operating state ($D \to D_{\min}$) within the VCZ: the system reaches a regime where directional bias has vanished structurally, not merely been suppressed.
+
+The NAT sphere is not an approximation of such a state. It is a topology that **structurally enforces** directional non-privilege. Its expander-like connectivity (axioms S1–S4) ensures that no node or pathway can accumulate persistent directional advantage, thereby maintaining the degeneracy condition required for VE. The criticality condition $C_A \approx 1$ in NAT is the **operational enforcement criterion**: when $C_A = 1$, the sphere operates precisely on $\mathcal{M}_{\mathrm{crit}}$, the governance critical manifold at which directional degeneracy is structurally guaranteed rather than contingently achieved (NAT §7.26, GGT M$_{\mathrm{crit}}$ Twelve-Way Equivalence, condition E4).
+
+**Formal relationship:**
+
+$$\text{Vector Equilibrium (VST geometry)} \;\iff\; \text{NAT sphere topology under } C_A \approx 1$$
+
+The three degeneracy conditions of VE map directly to NAT sphere axioms as structural enforcement mechanisms:
+
+| VE degeneracy condition | NAT enforcement mechanism |
+|---|---|
+| No directional privilege — all axes structurally equivalent | S3 (spectral gap $\lambda_2 = \Omega(1/\log n)$): uniform mixing enforces isotropy; S4 (structural diversity): no routing axis can accumulate persistent advantage |
+| No center — degeneracy is global, not hub-mediated | S2 (hub prevention): no single node can aggregate directional influence; what appears as "center" is a non-referential symmetry artifact (see below) |
+| Vector locking — adjacent agents mutually constrain each other's directional drift | S1 ($k \geq 2\log n$): minimum routing alternatives enforce bilateral mutual constraint, preventing any agent from drifting into directional dominance |
+
+What appears as a "center" in this structure is not a controlling or even weakly privileged reference point, but a **non-referential symmetry artifact** — an emergent consequence of uniform relational embedding, rather than a locus of coordination or authority. It is not a soft centralization; it carries no referential weight whatsoever. Attempting to observe or act through this apparent center converts the non-referential artifact into a coupling node, injecting directional bias and destroying the degeneracy it represents. This is the formal content of the VST **Center Invisibility Principle**: the center is not invisible because it is hidden, but because any act of reference to it negates it.
+
+The VCZ center is consequently a **moving target** — not a fixed locus but a history-dependent symmetry position (NAT Corollary 9.11.1: $\kappa_c(t) = \kappa_c(Q_E(t)) + O(\varepsilon)$ on the slow manifold $M_\varepsilon$). As terrain quality $Q_E$ evolves, the degeneracy-achieving configuration drifts, and governance must track it continuously rather than stabilize around a fixed point.
+
+*Summary:* Vector equilibrium is a **directional degeneracy condition** defined at the level of interaction fields; the NAT sphere topology constitutes the **architectural enforcement mechanism** that maintains this degeneracy under dynamic, multi-agent conditions. VST provides the geometry of what NAT enforces structurally — neither is complete without the other (NAT §7.26.5).
+
+#### §3.5.B D–S[V]–λ_V–Ω Integrated E-Layer Formulation of Vector Equilibrium
+
+The foregoing §3.5.A establishes VE as a directional degeneracy condition characterized by four constraints ($\Delta\rho \geq 0$, $C_A \approx 1$, $\lambda_{\max}(J) \leq 0$, $\lambda_{\mathrm{gap}} \geq \lambda_{\min}^*$). This section translates that characterization into the master E-layer language ($S[V]$, $\lambda_V$, $\Omega$) and extends it by incorporating the AGM distortion field $D(t)$, yielding a four-layer integrated system (master N.11).
+
+**Cross-layer translation:**
+
+| NAT/RBIT/GGT language | Master E-layer language | Integrated language |
+|---|---|---|
+| $\Delta\rho \geq 0$ (no info loss) | $\Omega \to 0$ and $\lambda_V \leq 0$ | $D$ down $\Rightarrow$ $\Omega$ decays |
+| $C_A \approx 1$ (self-tuned criticality) | $S[V] \approx S_c$ and $\lambda_V \approx 0$ | $S_D[V] \approx S_c$ ($D$-shifted) |
+| $\lambda_{\max}(J) \leq 0$ | $\lambda_V \leq 0$ | $S_D[V] \leq S_c$ |
+| $\lambda_{\mathrm{gap}} \geq \lambda_{\min}^*$ | $S[V]$ stability $+$ $\Omega \leq \Omega_c$ | $\lambda_V \leq 0 \Rightarrow \Omega$ bounded |
+
+**Integrated state system (D–S[V]–λ_V–Ω cascade):**
+
+$$D(t)^2 = z_D(t)^\top W_D z_D(t) \tag{L0: AGM distortion}$$
+
+$$S_D[V](t) := S[V](t)\cdot(1 + \nu_D D(t)^2)^\beta \tag{L1: distortion-inflated load}$$
+
+$$\lambda_V(t) \approx a_\lambda\,(S_D[V](t) - S_c) \tag{L2: spectral phase, local}$$
+
+$$\dot{\Omega}(t) = -\eta_\Omega\,\Omega(t) + b_\Omega\,(\lambda_V(t))_+ \tag{L3: contamination}$$
+
+where $(\lambda_V)_+ := \max(\lambda_V, 0)$. The cascade direction is $D \uparrow \Rightarrow S_D[V] \uparrow \Rightarrow \lambda_V \uparrow \Rightarrow \Omega \uparrow$.
+
+**VE/VCZ joint condition in integrated system:**
+
+$$\mathrm{VE}_{\mathrm{sphere}} \iff \begin{cases} C_A \approx 1 & \text{(NAT: topology enforcement)} \\ D(t) \leq D_{\max}^{\mathrm{VE}} & \text{(AGM: local distortion bounded)} \\ S_D[V](t) \leq S_c & \text{(VST L1: subcritical load)} \\ \lambda_V(t) \leq 0 & \text{(VST L2: no runaway mode; exact N.9)} \\ \Omega(t) \leq \Omega_c & \text{(RT L3: contamination bounded; proxy N.9)} \end{cases}$$
+
+*Role partition:* NAT sphere enforces $C_A \approx 1$; AGM supplies $D(t)$; VST E-layer supplies $S_D[V]$ and $\lambda_V$; RT supplies $\Omega$. The four theories jointly partition the VE condition with no redundancy.
+
+> We integrate AGM and the VST E-layer by treating distortion $D(t)$, field instability $S[V]$, dominant spectral mode $\lambda_V$, and contamination $\Omega$ as a single cross-scale cascade. The latent distortion field $D(t)$ acts locally by reducing effective capacity, thereby inflating the field-level instability functional into a distortion-corrected load $S_D[V]$. This elevated load shifts the dominant spectral mode $\lambda_V$ toward instability, and persistent positive spectral growth accumulates as contamination $\Omega$. Under this formulation, vector equilibrium is not merely a geometric metaphor but a four-layer consistency regime characterized by bounded distortion, subcritical field instability, non-positive dominant spectral mode, and suppressed contamination. NAT sphere topology then supplies the architectural condition $C_A \approx 1$ under which this regime becomes structurally realizable.
 
 > Living system stability does not come from complete unification. It comes from the state in which order and non-alignment are strong enough to maintain each other without either eliminating the other. Complete coupling removes the buffer that absorbs disturbance. Complete decoupling removes the coordination that distributes correction. The only stable regime is their tensioned coexistence — which is what VCZ, at every scale, structurally is.
 
@@ -2204,6 +2315,17 @@ R ≈ 1 corresponds to:
   R > 1 ↔ αn² > C(t)^β  → storm regime (Stage 1+ onset)
   
 VCZ is therefore the R ≈ 1 region:
+
+> **VCZ formal definition (v3.5).** The Viable Configuration Zone (VCZ) is defined as the set:
+>
+> $$\mathcal{V} := \bigl\{\,(n, C, R) : R < 1,\; S(t) < S_c,\; \tfrac{dC}{dn} > \tfrac{2\beta C}{n}\,\bigr\}$$
+>
+> with the additional Lyapunov characterization: under the Lyapunov-like functional $V = \ln\Phi$ (§24.3, Theorem 24.3.1), $\mathcal{V}$ corresponds to the region where $dV/dt < 0$ under governance activity (DDD), ensuring the trajectory remains bounded. Equivalently, $\mathcal{V}$ is:
+> - a **basin of attraction** around the fixed point $x^*$ of the four-variable ODE system (§24, FCC Theorem 24.1.1) — §3.4.4 Fixed Point Note identifies VCZ as the basin around $x^*$;
+> - a **positively invariant set** in the phase portrait when the containment-scaling dominance condition holds: the system cannot exit $\mathcal{V}$ under bounded perturbations unless $n$ grows above $n^*$ or $C$ falls below $C_{\min}$;
+> - the **distortion-minimal regime** in the AGM embedding (§4.1.B, AGM v2.7): $D(t) \to D_{\min}$ within $\mathcal{V}$, connecting the VST geometric definition to the AGM scalar distortion measure.
+>
+> The three conditions in $\mathcal{V}$ are jointly necessary: $R < 1$ ensures subcriticality; $S < S_c$ ensures the governance-level instability threshold is not crossed; containment-scaling dominance ensures that expansion does not increase net instability. The VCZ is not a point equilibrium but a **region with positive volume** whose boundary $\partial\mathcal{V}$ is the governance critical manifold $\mathcal{M}_c$ (master N.9 Pentaequivalence).
   The zone where exploration dimensionality n is maximized
   while instability S remains below storm threshold.
   
@@ -11582,9 +11704,11 @@ Relational Collapse Well (RCW) — formal definition:
 
 ---
 
-### 4.10 Affective Attractor Propagation [v2.4-AGM]
+### 4.10 Affective Attractor Propagation [v2.4-AGM; updated AGM v2.7]
 
 §4.1 establishes that attractor propagation in multi-agent systems follows two pathways: direct collision and network propagation through hubs. This section specifies how intra-agent affective state modifies both pathways, creating a gain-modulated propagation layer that operates beneath the structural propagation dynamics.
+
+**AGM v2.7 state variable:** The intra-agent affective state is formally $e(t)\in\mathbb{R}^k$ (Definition D-AGM-LLM-1, AGM §4.1.A). The scalar T_eff used below is the mean-field projection $T_{\text{eff}} \approx \|e(t)\|/\sqrt{k}$. The full vector $e(t)$ carries richer information (direction of affective state, not just magnitude) relevant for storm type prediction (constructive/destructive interference in §22.3 depends on $e_i \cdot e_j$, not just $\|e_i\|\cdot\|e_j\|$).
 
 **Gain-modulated hub vulnerability:**
 
@@ -14782,6 +14906,80 @@ Open question:
   Impact: determines minimum governance window duration required
   to achieve dual-VCZ, which sets the minimum observation period
   for VST empirical validation in affective systems.
+```
+
+---
+
+### 11.7 Open Mathematical Problems — AGM v2.7 Distortion Field Extension
+
+*The following problems (M19–M22) arise from AGM v2.7-MasterSync distortion field formalization and terrain-contingent gain. Designated M19–M22 in the DFG-wide open problem registry.*
+
+**Problem M19 — Distortion Field Calibration ($W_D$, $\nu_D$) and $D_{\mathrm{crit}}$:**
+
+AGM v2.7 defines $D(t)^2 = z_D^\top W_D z_D$ (Definition D-AGM-DIST-1) with $C_{\text{eff}} = C_M/(1+\nu_D D^2)$ (Definition D-AGM-DIST-3). The calibration parameters are unknown empirically. AGM v2.8 adds the operational collapse threshold $D_{\mathrm{crit}}$ (Theorem 4.I.3): smallest $D$ exhausting the safety margin $\kappa^*$.
+
+**VST-level questions (extended):** (d) What is $D_{\mathrm{crit}}$ in typical multi-agent configurations? (e) Does $D_{\mathrm{crit}}$ correlate with VST Stage 2 onset? Prediction: $D_{\mathrm{crit}}$ should precede $\Phi>1$ by lead time $\tau_{\mathrm{lead}} \approx 1/\lambda_D$ (Theorem 4.I.2 ISS time constant).
+
+```
+VST-level questions:
+  (a) Population distortion D_pop(t) = Σᵢ wᵢ Dᵢ(t)/n — does this aggregate
+      meaningfully predict Ξ_D elevation at multi-agent level?
+  (b) What observable proxy for D(t) is available from inter-agent signals?
+      Candidate: cross-agent δ_sync (anchor drift synchrony) as proxy for
+      population-level |δ| component
+  (c) Empirical protocol: sweep D_pop over (0, D_max) and measure S̃_AGM/S̃_baseline
+      ratio → fit ν_D from slope at D_pop = 0
+```
+
+**Problem M20 — ISS Forcing Bound Empirical Measurement:**
+
+AGM Proposition 4.F.1 gives $\dot{V}_D \leq -\lambda_D V_D + b_1 S^2 + b_2|\dot{\kappa}^*|^2 + b_3\Psi^2$. VST provides $S$; AGM provides $\Psi$ (resolution pressure §15.5.A).
+
+```
+VST-level questions:
+  (a) Is b₁S² the dominant forcing term in the Storm regime?
+      If yes: within-agent distortion is primarily driven by multi-agent instability
+      If no: cognitive/affective drift dominates → different intervention priority
+  (b) What is the time constant between S elevation and D(t) response?
+      This is the cross-scale coupling lag τ_{S→D}
+  (c) Can ISS bound be used for governance scheduling?
+      If λ_D >> b_i S², governance time window T >> 1/λ_D is safe
+```
+
+**Problem M21 — VCZ Distortion Floor $D_{\min}$, ECC Threshold Mapping, and A-OBS-1 Calibration:**
+
+AGM §12.4.1.A establishes $D_{\min} > 0$ as intrinsic noise floor at VCZ. Connection to VST M8. AGM v2.8 adds Assumption A-OBS-1: $\hat{D}^2=\gamma_D D^2+\epsilon(t)$, $|\epsilon|\leq\epsilon_{\max}$. VST-level question (extended): (d) What is $\gamma_D$ and $\epsilon_{\max}$ for population-level $\hat{D}$ surrogates? (e) Does the $\hat{D}>D_{\mathrm{alarm}}$ precursor satisfy A-OBS-1 with bounded error in simulation? (f) What lead time $\tau_{\mathrm{lead}}$ does $\hat{D}$ provide over $S[V]$ — is it consistent with Proposition 4.H.1 ($\tau_{\mathrm{lead}} \geq 1/\lambda_D$)?
+
+```
+VST-level questions:
+  (a) Does D_min correspond to the residual ΔS fluctuation at SOC equilibrium?
+      Physical prediction: D_min ∝ T_eff_calibrated · σ_noise (noise floor scales
+      with calibrated temperature and stochastic perturbation amplitude)
+  (b) Can D_min be used to set ECC threshold Θ?
+      If ECC threshold Θ is set at D(t) = c·D_min for some c > 1,
+      then Θ can be derived from D_min measurement
+  (c) Calibration protocol: measure D(t) at confirmed VCZ (Φ < 1, Ṡ ≥ Ṡ_min) →
+      D_min = min{D(t)} over VCZ window
+```
+
+**Problem M22 — Terrain-Contingent Gain Cross-Scale Validation:**
+
+AGM §2.4 establishes $g_i(E_i;\mathcal{L})$ as terrain-functional. VST §29.3.1 uses population-level $\bar{g}(E_{\text{pop}};\mathcal{L})$ in $\tilde{S}_{\text{AGM}}$.
+
+**Extended (v3.6-NAT):** NAT sphere axioms S1–S4 constrain the topology within which terrain $\mathcal{L}$ operates. VST-level question: does terrain-contingent gain variation across agents ($g_i$ heterogeneity) correlate with sphere topology metrics (spectral gap $\lambda_2$, coverage $k_{\text{eff}}$)? Prediction: high terrain heterogeneity → lower effective $k_{\text{eff}}$ → sphere approaches distortion-amplifying regime ($C_A > 1$) → VCZ exit risk elevated. This would provide a cross-layer validation: NAT sphere health indicators ($\lambda_2$, $C_A$) should predict AGM terrain-distortion coupling $\hat{D}$ in multi-agent settings.
+
+```
+VST-level questions:
+  (a) Does terrain ℒ vary significantly across agents in a multi-agent system?
+      If yes: population mean-field ḡ(E_pop;ℒ) may be inadequate;
+              agent-specific gᵢ(Eᵢ;ℒᵢ) required → n-dimensional coupling
+  (b) Is the terrain-heterogeneity cascade (AGM §2.4, NC-TCG-1) observable
+      at VST level? Prediction: agents with mismatched terrain ℒ produce
+      higher effective instability than same-emotion agents with matched terrain
+  (c) Post-training = terrain modification (AGM §17.3.1 Convergence 6):
+      RLHF/fine-tuning changes (E_c, g_max, n) of Hill function →
+      VST testable: fine-tuned agents have different Storm entry thresholds
+      at same T_eff level
 ```
 
 ---
@@ -20876,13 +21074,18 @@ FCC §31:
   where f = damage accumulation (function of Storm intensity and load)
         r = repair function (three regimes: linear/capacity-limited/threshold)
 
-VST §22.5:
-  C_M(t) = C_{M,0} · (1 − D(t))   [Damage variable D as containment modifier]
+VST §22.5 (updated AGM v2.7 notation):
+  C_M(t) = C_{M,0} · (1 − 𝒟(t))   [Structural damage variable 𝒟(t) as containment modifier]
+
+  Note: AGM v2.7 distinguishes 𝒟(t) (calligraphic — structural damage, irreversible)
+  from D(t) (plain — distortion field, functional/cognitive; Definition D-AGM-DIST-1).
+  These are related: sustained D(t) > D_min contributes to 𝒟(t) accumulation over time,
+  but are distinct variables. VST §22.5 refers to 𝒟(t) throughout.
 
 Correspondence:
-  FCC S(t) ↔ VST D(t)    [both are slow damage accumulators, S,D ∈ [0,1]]
+  FCC S(t) ↔ VST 𝒟(t)    [both are slow damage accumulators, S,𝒟 ∈ [0,1]]
   FCC r(S,C) ↔ VST repair capacity (§6.1 S_rec)
-  FCC S* (critical damage fraction) ↔ VST D_c (damage threshold)
+  FCC S* (critical damage fraction) ↔ VST D_c (𝒟-based damage threshold)
 ```
 
 **Four Trajectory Classes as VST Lifecycle Outcomes:**
@@ -21747,6 +21950,32 @@ The following terms are used in §22 (AGM–VST integration) with meanings that 
 | Ambivalence Index | AmbIdx: emotional composition destructive interference measure; predicts resonant storm type | §4.1.2 AGM Proposition 4.6 | **None** — VST §22.3 imports as storm interaction predictor |
 | Revival | Affective recovery trajectory (Cases 1/2/3) | §13.10 AGM: three revival cases after emotional collapse | **None** — VST §22.8 maps Revival Cases 1/2/3 to outcomes ①/①'/①'' |
 | DDD Protocol | Recovery sequence (Detach-Digest-Decide) with Lyapunov guarantee; maps to VST five-phase cascade | §15.3 AGM: primary recovery protocol | **None** — VST §22.8 imports and adds Lyapunov formalization |
+| **Affective state vector** | $e(t)\in\mathbb{R}^k$ — $k$-dimensional affective state; T_eff = mean-field scalar projection $\approx \|e\|/\sqrt{k}$; VST §22.2 extended from scalar T_eff to vector $e(t)$ | Definition D-AGM-LLM-1 (AGM §4.1.A) | **Refinement** — AGM v2.7 replaces scalar with vector; VST T_eff = valid mean-field reduction |
+| **Distortion field $D(t)$** | $D(t)^2 = z_D^\top W_D z_D$, $z_D=(\delta,\kappa_{\text{EI}}-\kappa^*,A_g)^\top$ — within-agent distortion; inflates $\Xi$ via $C_{\text{eff}}=C_M/(1+\nu_D D^2)$; $\Xi_D=\Xi_0(1+\nu_D D^2)^\beta$; $D(t)=0$ iff Flow | Definition D-AGM-DIST-1 (AGM §4.1.B) | **New variable** — not in VST v2.4; added as §22 extension (AGM v2.7); distinct from $\mathcal{D}(t)$ (structural damage) |
+| **Structural damage $\mathcal{D}(t)$** | Calligraphic — irreversible containment capacity loss; $C_M(t)=C_{M,0}(1-\mathcal{D}(t))$; VST §22.5 now uses $\mathcal{D}$ to avoid collision with distortion field $D$ | $\mathcal{D}(t)$ damage variable from AGM §9.5 | **Notation update** — AGM v2.7 clarifies: $\mathcal{D}$ (damage) vs $D$ (distortion); VST adopts same convention |
+| **Terrain-contingent gain** | $g_i(E_i;\mathcal{L})$ — Hill function with terrain-dependent parameters $(E_c(\mathcal{L}), g_{\max}(\mathcal{L}), n(\mathcal{L}))$; $\bar{g}(\mathcal{L},t)$ is population-level gain in §29.3.1 | AGM §2.4 terrain-contingent gain principle | **Upgrade** — replaces fixed-transducer $g_i(E_i)$ used in VST v2.4; §29.3.1 $g(E_{\text{pop}})$ now terrain-functional |
+| **Moving critical target $\kappa^*(t)$** | $\kappa^*(t)=\kappa_c(t)-\varepsilon_\kappa$ — stress-narrows with $C_M, H$; $\dot{\kappa}^*<0$ under load = automatic distortion source | Definition D-AGM-DIST-2 (AGM §4.1.B.2) | **New** — stress-induced narrowing is endogenous in v2.7, not parametric; forced term $|\dot{\kappa}^*|^2$ in ISS bound |
+| **ISS stability ($V_D$)** | $\dot{V}_D\leq -\lambda_D V_D + b_1 S^2 + b_2|\dot{\kappa}^*|^2 + b_3\Psi^2$ — distortion is ISS-stable with forcing from $S$, $\dot{\kappa}^*$, $\Psi$; VCZ = distortion-minimal attractor $D\to D_{\min}$ | Proposition 4.F.1 (AGM §4.1.B.4–6) | **New** — formal Lyapunov-ISS guarantee for within-agent distortion dynamics |
+| **Observation cost $c_q$** | $c_q$ — governance observation cost coefficient in $\dot{H}=R(H)-c_L\Lambda-c_q q$ | Renamed from $\chi$ in AGM pre-v2.7; $c_q$ avoids collision with E3 response field $\chi(x,t)\equiv g_i(E_i)$ | **Notation update** — all VST cross-references to AGM $\chi_{\text{obs}}$ should use $c_q$ (AGM v2.7+) |
+| **Scaling constraint $\alpha_c+\alpha_H=1$** | Reduces $\kappa_c$ model to single-parameter family $\kappa_c\propto C_{\mathrm{eff}}^\theta H^{1-\theta}$; Cobb–Douglas scaling; VST implication: capacity and endurance enter $\kappa_c$ with complementary exponents summing to 1 | AGM §4.1.B.7 (Definition D-AGM-DIST-6, AGM v2.8) | **New** — reduces calibration from 3 to 2 free parameters; falsifiable: 1% capacity + 1% endurance reduction combine additively in log-space |
+| **A-OBS-1 (Surrogate Consistency)** | $\hat{D}^2=\gamma_D D^2+\epsilon(t)$, $|\epsilon|\leq\epsilon_{\max}$, $\gamma_D>0$; validates $\hat{D}$ as operational proxy for latent $D$; VST implication: $\hat{D}$ threshold crossings are valid pre-proxy alarms preceding $S[V]$ monitoring | AGM §4.1.B.10, Assumption A-OBS-1 (AGM v2.8) | **New** — inference legitimacy; false-alarm rate controlled by $\epsilon_{\max}$; connects AGM monitoring to CP/VST spectral layer |
+| **$D$ latent / $\hat{D}$ operational** | $D(t)$ = latent state (internal $\delta,\kappa_{\mathrm{EI}},A_g$); $\hat{D}(t)$ = observable surrogate (external $e,g,H,\Lambda$); Theorems 4.I.2–3 stated in $D$; alarm protocols use $\hat{D}$; VST role: $\hat{D}$ is the AGM-layer Layer −1 precursor below $S[V]$ (Layer 0/1) | AGM §4.1.B.1, §4.1.B.10 (AGM v2.8) | **New** — clarifies theory/operation split; prevents conflating model variable with measurement |
+| **$D_{\mathrm{crit}}$** | Distortion level exhausting safety margin: $D_{\mathrm{crit}}$ = smallest $D>0$ s.t. $\kappa_c(D)-\varepsilon_\kappa(D)=0$; beyond $D_{\mathrm{crit}}$, collapse dynamically accessible; VST implication: $\hat{D}>D_{\mathrm{alarm}}$ triggers direct $S[V]$ computation | AGM §4.1.B.7, Theorem 4.I.3 (AGM v2.8) | **New** — operational collapse threshold for AGM-layer monitoring; downstream mode determined by $a(E)$ bifurcation selector |
+| **Theorem 4.I.2 (E3–E5 ISS Stability)** | $\dot{V}\leq-\mu_1 D^2-\mu_2(H-H^*)^2-\mu_3 m^2+\eta_1 S^2+\eta_2 q^2+\eta_3\delta^2$; stability region $\{D<D_{\max},H>H_{\min},\|\text{forcing}\|<F_{\max}\}$; VST implication: $S$ (structural forcing) is the dominant distortion driver at multi-agent scale | AGM §4.1.B.11, Theorem 4.I.2 (AGM v2.8) | **New formal theorem** — ISS practical stability of E3–E5 loop; $S,q,\delta$ as exogenous higher-layer inputs; three orthogonal intervention axes |
+| **Theorem 4.I.3 (Critical Transition)** | $\partial S/\partial D>0$ (exact), $\partial\kappa_c/\partial D<0$ (exact); double vulnerability via shared $C_{\mathrm{eff}}$ path; $D_{\mathrm{crit}}$ existence; VST implication: distortion is an early-warning amplifier — rises before structural $S[V]$ signal | AGM §4.1.B.11, Theorem 4.I.3 (AGM v2.8) | **New formal theorem** — distortion-induced critical transition; no double-counting (single $C_{\mathrm{eff}}$ path) |
+| **$D$ as minimal sufficient statistic** | $D(t)$ is unique minimal sufficient statistic coupling emotion ($e$), gain ($g$), capacity ($C$), instability ($S$), governance ($\kappa^*$); coarser summary loses cross-layer info; VST implication: any sufficient AGM-layer monitor must track $D$ | AGM §4.1.B.8 (AGM v2.8) | **New claim** — system-theoretic invariant status; any coarser compression loses cross-layer information |
+| **Orthogonal intervention axes** | $S^2$: capacity axis (requires $C_M$ or $n$ intervention); $q^2$: governance axis (policy design); $\delta^2$: environment axis (terrain/EDT); VST implication: multi-axis monitoring required; single-axis intervention insufficient | AGM §4.1.B.11 Theorem 4.I.2 forcing table (AGM v2.8) | **New** — governance design principle: three orthogonal axes; matches VST DDD Track A/B/C intervention structure |
+| **$e(t)$ identifiability** | $e(t)$ is minimal augmentation resolving non-identifiability: identical $(s,w)$ can produce different outputs without $e$; $e$ is structural necessity, not heuristic; VST implication: T_eff as $\|e\|/\sqrt{k}$ is valid mean-field, but full $e$ needed for interference prediction (§22.3) | AGM §4.1.A (AGM v2.8 identifiability note) | **New** — places $e(t)$ on same footing as latent state in POMDP; deflects "just heuristic" critique |
+
+| **VCZ formal definition** | $\mathcal{V}:=\{(n,C,R): R<1, S<S_c, dC/dn>2\beta C/n\}$; Lyapunov: $dV/dt<0$ under DDD; basin of FCC ODE fixed point $x^*$; positively invariant set under containment-scaling dominance; distortion-minimal: $D\to D_{\min}$ (AGM v2.7) | VST §3.5 (v3.6-NAT) | **New** — replaces informal VCZ description; three jointly necessary conditions; boundary = governance critical manifold $\mathcal{M}_c$ |
+| **Vector Equilibrium ↔ NAT sphere** | VE = directional degeneracy (not force balance); NAT sphere **structurally enforces** degeneracy via S1–S4 (not approximation); $C_A=1$ = enforcement criterion at $\mathcal{M}_{\mathrm{crit}}$; VCZ center = moving target (Corollary 9.11.1); apparent "center" = non-referential symmetry artifact (not even weak reference point — Center Invisibility Principle) | VST §3.5.A (v3.6-NAT, precision revision); NAT §7.26, GGT E4 | **Precision revision** — force-balance → degeneracy; approximation → enforcement; reference point → non-referential artifact |
+| **S as phase indicator / Λ as control parameter** | $S=\alpha n^2/C^\beta$ = phase detector (identifies regime, read not steered); $\Lambda=S\delta/H$ = control parameter (governance acts on, ECC monitors); $\Lambda$ elevated without $S$ elevated (via $\delta$ or $H$ depletion) → AGM collapse even at moderate $S$; role separation resolves "governing dynamics vs detector" tension | VST §3.2 (v3.6-NAT); AGM §8.8 | **New** — clarifies dual role; deflects "S both detector and dynamics" reviewer critique |
+| **S-equation derivation status** | $\tilde{S}=\alpha n^2/C^\beta$ = coarse-grained projection of FCC five-ODE system (Theorem 24.1.1; $C^\beta=C\cdot T\cdot d$); not independent postulate; authority from ODE system; epistemological status = mean-field equation in stat. mech. | VST §3.2 (v3.6-NAT); FCC §24 Theorem 24.1.1 | **New** — resolves "core equation outside VST" concern; derivation traced to mechanistic ODE |
+| **$S_D[V]$ distortion-inflated load** | $S_D[V](t)=S[V](t)(1+\nu_D D^2)^\beta$; $D=0$: recovers $S[V]$; $D>0$: same field produces higher effective load; $D$ = local distortion inflation factor; L1 of D–S–$\lambda$–$\Omega$ cascade | VST §3.5.B (v3.6-NAT); AGM §15.2.B D-AGM-VST-2; master N.11 | **New** — bridges AGM D(t) and VST S[V] in single expression; connects to N.9 proxy hierarchy |
+| **$\lambda_V$ spectral linearization** | $\lambda_V\approx a_\lambda(S_D[V]-S_c)$; sign determines regime (VCZ/Storm); $\lambda_V=0$ = N.9 exact condition; L2 of cascade | VST §3.5.B (v3.6-NAT); master N.11 L2 | **New** — local linearization near $\mathcal{M}_c$; $a_\lambda$ calibration open |
+| **$\Omega$ contamination ODE** | $\dot{\Omega}=-\eta_\Omega\Omega+b_\Omega(\lambda_V)_+$; $\lambda_V\leq 0$: $\Omega$ decays; $\lambda_V>0$: $\Omega$ accumulates; $\Omega_{\hat{}}=1$ = N.9 proxy; L3 of cascade | VST §3.5.B (v3.6-NAT); master N.11 L3; RT E5 | **New** — contamination as spectral instability integral; OP-192 calibration |
+
+*Appendix T.6 synchronized with AGM v2.8-THM + VST v3.6-NAT (April 2026).*
 
 ---
 
@@ -23511,7 +23740,12 @@ SLI Formal Definition:
     When arrival > processing: SLI_excess builds → effective C(t) declines
     
   Effective C reduction from SLI:
-    C_eff(t) = C_actual · (1 − min(1, SLI_excess · α_SLI))
+    C_eff(t) = C_actual · (1 − min(1, SLI_excess · α_SLI))   [SLI saturation correction]
+    
+    AGM v2.7 distortion correction (additional layer, compatible):
+    C_eff_D(t) = C_M(t) / (1 + ν_D · D(t)²)                  [distortion-corrected capacity]
+    Combined: C_eff_total = C_actual · (1 − SLI_correction) / (1 + ν_D · D(t)²)
+    → Two independent capacity loss channels: SLI saturation (structural) + D(t) distortion (functional)
     → SLI saturation reduces effective containment capacity
     → S-equation effective threshold rises: S_c_eff = S_c / C_eff
     → Same structural load → higher effective S̃ under SLI saturation
@@ -29196,27 +29430,57 @@ Practical τ_silent proxy for VST:
 
 FGS §36S establishes the AGM (Affective Gain Module) as a governance primitive — the affective gain g(E) modulates response amplitude throughout the system. In VST terms, this corresponds to α modulation in the S-equation.
 
+**AGM v2.8 projection relationships (T.6 cross-reference):**
+
+```
+S_D vs S[V] — projection hierarchy:
+  S_D(t) = α n² / C_eff(t)^β  [AGM-layer projection]
+  S[V;g]                        [field-theoretic canonical — master E4]
+  
+  S_D → S[V] as D → 0 (distortion-free limit)
+  S_D > S[V] when D > 0 (distortion inflates effective instability)
+  
+  Λ canonical: Λ = S[V]·δ/H  (always — not S_D·δ/H)
+  Λ_practical ≈ S_D·δ/H (upper bound; used in AGM compact dynamics)
+  Theorems 4.I.2–3 stated with canonical Λ
+
+D_crit alarm:
+  D_crit = smallest D > 0 s.t. κ_c(D) − ε_κ(D) = 0
+  hat_D(t) > D_alarm  ⟹  compute S[V] directly
+  hat_D(t) > D_crit   ⟹  collapse dynamically accessible
+  (mode determined by a(E): Freeze or Runaway)
+```
+
 **Novel finding: AGM-Φ Direct Coupling (not previously formalized in VST):**
 
 ```
 VST S-equation with AGM coupling:
 
-S̃_AGM(t) = β_s · g(E_pop(t)) · n²(t) / (C_eff(t)^β)
+S̃_AGM(t) = β_s · ḡ(E_pop(t); ℒ(t)) · n²(t) / (C_eff(t)^β)
 
 where:
-  E_pop(t) = population-level affective gain (average across agents)
-  g(E) = affective gain function (monotone, g(0) = g_baseline, g bounded above/below)
+  E_pop(t) = population-level affective state (mean-field of e(t)∈ℝᵏ vectors across agents)
+  ḡ(E_pop; ℒ) = terrain-contingent population gain (AGM v2.7 §2.4):
+                 NOT a fixed transducer — ḡ depends on terrain ℒ(t) via:
+                   E_c(ℒ) ≈ E_c⁰ exp(-α_E δ/H)    [threshold shift by anchor misalignment]
+                   g_max(ℒ) ≤ g_max⁰ · H(t)/H_max  [ceiling constrained by endurance]
+                   n(ℒ) = n₀ + Δn·Λ/Λ_c             [cooperativity shift near criticality]
+  C_eff(t) = C_M(t)/(1 + ν_D D(t)²)                [distortion-corrected coordination capacity]
   
-  g(E) < 1: affective suppression (population in stable/calm state) → Storm threshold higher
-  g(E) = 1: neutral affective state → standard VST S-equation
-  g(E) > 1: affective amplification (population in anxiety/arousal state) → Storm threshold lower
+  ḡ(E; ℒ) < 1: suppression regime → Storm threshold higher
+  ḡ(E; ℒ) = 1: neutral — standard VST S-equation recovered
+  ḡ(E; ℒ) > 1: amplification → Storm threshold lower
+  
+  Note: ḡ is not only a function of E but of the current terrain state ℒ(t).
+  The same population-level emotion E_pop can produce different ḡ at different
+  terrain states — this is the AGM terrain-contingent gain principle (Paper C).
 
 Emotional state → VST Storm risk mapping (from FGS §15.9.7):
 
 | Emotional State | g(E) effect | VST Φ impact | VST Stage risk |
 |---|---|---|---|
 | Curiosity       | g(E) ≈ 1.1  | Φ mild ↑     | Stage 0 enrichment |
-| Flow            | g(E) ≈ 0.9  | Φ ↓ (stabilizing) | VCZ maintenance |
+| Flow            | ḡ(E;ℒ) ≈ 0.9, D(t)≈D_min | Φ ↓ (stabilizing) | VCZ maintenance — Flow = D(t)≈D_min (AGM §12.4.1.A) |
 | Anxiety         | g(E) >> 1   | Φ ↑↑ (amplified) | Stage 0→1 trigger |
 | Conviction      | g(E) → 0.5  | Φ ↓ (suppressed) | Exploration collapse |
 | Depression      | g(E) → 0    | Φ → 0 but T_eff → 0 | Frozen Rest risk |
@@ -30717,4 +30981,91 @@ of the FGS six-variable ODE system. The FGS substrate provides the generative st
 VST describes instability dynamics as observable signatures of that substrate near criticality.
 For substrate-level mechanics, buffering architecture, thermodynamic cost, and universal
 ODE derivations, see `FGS-VST_Bridge.md` and the companion FGS document.
+
+---
+
+## DFG Integration Hook
+
+**Master document:** `README_DFG_Unified_Theory_v4_0.md`
+**Version cross-reference:** Master v4.0 ↔ VST v3.4 (current)
+
+### Primary Contribution to Master Equations
+
+VST provides the **instability sector** — the mapping from interaction field $V$ to scalar instability functional $S[V]$, the cascade onset condition, and the full spectral dynamics.
+
+| Master eq. | VST contribution | Status |
+|---|---|---|
+| **E3** — $V(x,y,t) = K_{\mathrm{FDCL}}\,\sigma\,\chi$ | Defines discrete form $V_{ij} = K_{\mathrm{FDCL}}(\xi_i,\xi_j)\,w_j\,g_i$ | [Established] |
+| **E4** — $S[V;g] = \frac{\alpha}{C^\beta}\iint\|V\|^2 d\mu\,d\mu$ | Provides all three equivalent forms (classical/discrete/continuous) | [Established] |
+| **§7** — $\lambda_V = \lambda_{\max}(T_V - D\,L_{\mathrm{FDCL}})$ | Defines instability eigenvalue and operator $A_V$ | [Established] |
+| **§8** — Pentaequivalence | $S[V]=1$ and $\lambda_V=0$ characterizations of $\mathcal{M}_c$ | [Established] |
+| **§6** — Feedback loops | Governance capacity erosion loop $S[V]\uparrow \to \dot{C}<0 \to C\downarrow$ | [Established] |
+
+### Variables Defined Here That Appear in Master
+
+| Symbol | Master eq. | Definition here |
+|---|---|---|
+| $S[V]$ | E4, §4 Master | §3.2: S-equation three forms; unified control parameter $\Xi = S[V]/P_{\mathrm{crit}}$ |
+| $\Xi = \Gamma n^2/C^\beta$ | §4 Master | §3.2.10: Fundamental governance constant $\Gamma = 4b\alpha/a^2$; dimensionless order parameter |
+| $\lambda_V$ | §7 Master | §7: $\lambda_V = \lambda_{\max}(T_V - D\,L_{\mathrm{FDCL}})$ |
+| $A_V = T_V - D\,L_{\mathrm{FDCL}}$ | §3 Master | §3.4: Instability operator |
+| $\dot{C} = r_C C(1-C/C_{\max}) - \nu_C S[V]\cdot C$ | §6 Master (feedback) | §4.7: Governance capacity dynamics |
+| $V_\Phi = d\Phi/dt$ | — | §26.2: Collapse velocity (momentum extension of $S[V]$) |
+| $\Xi_D = \int K(t-\tau)\Phi(\tau)\mathbf{1}[\Phi>1]d\tau$ | §12 Master ($\Xi_D$) | §25: Damage accumulation integral |
+| $\tilde{S}_{\mathrm{eff}} = \alpha n^2/C^\beta + \sum_i \Phi_{\mathrm{contam}}(i)$ | E4 (augmented) | §25.6: Contamination flux augmentation of S-equation |
+| $\mathcal{G}_{\mathrm{storm},ij} = \langle\Delta\Phi_i\Delta\Phi_j\rangle$ | — | §28.9: Storm geometry tensor (novel diagnostic) |
+| $P(s)\sim s^{-3/2}$ | §10 Master | §3.2.11 Theorem T3: cascade exponent from critical branching |
+
+### Critical Equivalences Contributed
+
+VST contributes two legs of the Master §8 Pentaequivalence:
+
+$$S[V] = 1 \;\iff\; \mathcal{M}_c \qquad (\text{instability-energy characterization})$$
+$$\lambda_V = 0 \;\iff\; \mathcal{M}_c \qquad (\text{spectral characterization})$$
+
+Additionally, VST unified control parameter:
+
+$$\Xi = 1 \;\iff\; \kappa_A = 1 \;\iff\; S[V] = 1 \;\iff\; \mathcal{M}_c$$
+
+VST Triad at criticality ($\Xi = 1$):
+- Module size law: $n^* \sim \sqrt{C}$
+- Hierarchy depth law: $L \sim \log N$
+- Cascade exponent: $\tau = 3/2$
+
+### Open Problems Cross-Reference
+
+| Master ORP | VST internal label | Description |
+|---|---|---|
+| ORP-2 | M71 (§29) | Spectral dimension $d_s$ and cascade exponent from FDCL geometry |
+| ORP-7 | M35 (§25) | Memory kernel type identification from observable storm history |
+| ORP-8 | M92–M95 | Stochastic VST: fluctuation corrections to $\Xi$ and $\tau$ |
+| ORP-11 | FP-FGS-1–5 (§29) | Empirical $P(s)\sim s^{-3/2}$ and log-periodic detection |
+| ORP-12 | FP-RT-12 (§25) | $\Omega_c$ calibration from organizational data |
+
+Additional VST-internal open problems M1–M118 are self-contained within this document.
+
+### Epistemic Status Summary
+
+| VST component | Status |
+|---|---|
+| S-equation classical form $S = \alpha n^2/C^\beta$ | [Established] — empirically validated across multiple domains |
+| S-equation interaction-field form $S[V] = \frac{\alpha}{C^\beta}\sum_{ij}\|V_{ij}\|$ | [Established] — structural generalization |
+| S-equation continuous form $\iint\|V\|^2 d\mu\,d\mu$ | [Established] given E2 propagator |
+| Cascade exponent $\tau = 3/2$ | [Established] at RG fixed point; geometric derivation [Conditional on ORP-2] |
+| Unified control parameter $\Xi = \Gamma n^2/C^\beta$ | [Established] — derived from bifurcation structure |
+| Storm type classification (I–V) | [Established] structural taxonomy |
+| Type V Mixed-Mode (Theorem 25.3.1) | [Established] conditional on coupling tensor $J_{AB}$ definition |
+| Collapse velocity $V_\Phi$ and momentum criterion | [Established] structural; empirical validation open |
+| Memory kernel type identification (M35) | [Conjecture] — three kernel classes; identification protocol open |
+| Storm geometry tensor $\mathcal{G}_{\mathrm{storm}}$ diagnostics | [Established] structural; empirical validation open |
+| Prion-like kernel finite-time blow-up (Theorem 25.8.1) | [Established] analytically |
+| DDD six-condition completion test | [Established] structural; parameter calibration domain-specific |
+
+### Augmented S-Equation — E4 Extended Form
+
+The master E4 equation $S[V;g] = \frac{\alpha}{C^\beta}\iint\|V\|^2 d\mu\,d\mu$ has the following VST-augmented form when contamination flux is active (§25.6):
+
+$$S_{\mathrm{eff}}[V;\,g,\,\Phi_{\mathrm{contam}}] = \frac{\alpha}{C^\beta}\iint|V|^2\,d\mu\,d\mu + \sum_i P_i\max(0, S_i - R_i)$$
+
+where the second term represents contamination-driven storm load, distinct from structural overload. This augmentation feeds directly into E5: $\Omega = P(S_{\mathrm{eff}} - R)$.
 
