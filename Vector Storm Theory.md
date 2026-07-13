@@ -5,6 +5,79 @@ Companion theory to Deficit-Driven Fractal Governance (DFG)
 Focus: why instability occurs, how it propagates, when to intervene
 Recovery and operational governance are addressed separately
 
+> **Version: v3.7.6-PENDREG** (July 2026)
+>
+> v3.7.6-PENDREG consolidates every deferred DIR-CONN, SCC-STAB, SEED-MOD, and RI-RET experiment into one canonical in-document registry:
+> - **[New §3.5.C.7.A] Unified Pending Experiment Registry:** all heavy work is assigned one owner ID, dependency chain, required artifact set, output contract, promotion gate, and execution batch. Separate local pending lists are superseded as live planning documents.
+> - **[Deduplication]** overlapping switching, delay, nonlinear-basin, rare-event, hybrid, seed/SCC/invariance, and full-DPE tasks are merged rather than scheduled repeatedly by subsystem.
+> - **[Release gate]** no heavy or external-compute run begins until model/object locks, exact counterexamples, result schemas, deterministic code audits, local lightweight checks, and resource/checkpoint plans are complete. GCP or equivalent compute is reserved for one later consolidated batch after local work is exhausted.
+> - **[Promotion discipline]** false-safe rate, worst-case return-bound coverage, matched-pair discrimination, family holdout, scale transfer, and certified numerical residuals precede any numerical-winner or theorem-candidate promotion.
+> - **[Execution status]** no new heavy experiment is executed in this version; only the registry and cross-references are consolidated.
+> - All v3.7.5 robust-invariance/return-time content, v3.7.4 seed-object separation, v3.7.3 SCC-model separation, v3.7.2 directed-correctability content, and earlier mathematical corrections are preserved.
+>
+> **Version: v3.7.5-RIRET** (July 2026)
+>
+> v3.7.5-RIRET quantifies robust invariance and recovery time without promoting a simulation-only claim to theorem status:
+> - **[Updated §3.5.C.6 operational object lock]** DPE now distinguishes a hard safety set $\mathcal H_{\mathrm{hard}}$, the instantaneous admissible set $\mathcal A_{\mathrm{DPE}}$, and a verified robust-invariant core $\mathcal K_{\mathrm{RI}}\subseteq\mathcal A_{\mathrm{DPE}}$. Return to the admissible shell is not treated as durable recovery unless a certified core or terminal invariant target is reached.
+> - **[Quantifier correction]** Robust invariance and return use one non-anticipative causal policy against every admissible disturbance realization. The clairvoyant order “for every disturbance there exists a control” is explicitly rejected.
+> - **[New §3.5.C.6.A–C] Candidate families:** robust predecessor/viability kernels, Hamilton–Jacobi reachability, barrier certificates, invariant Lyapunov sublevel sets, tube/reachable-set methods, stochastic supermartingale barriers, and hybrid certificates are separated from exponential, finite-time, contraction/ISS, predecessor-depth, minimum-time, stochastic hitting-time, and moving-target return bounds.
+> - **[New §3.5.C.6.D] RI-RET-BENCH:** matched benchmark families, ground-truth hierarchy, kernel-boundary error, false-safe invariance, false-fast return bounds, robustness-radius error, peak-excursion error, policy causality, and computational cost are specified. False-safe and underpredicted worst-case return time are primary vetoes.
+> - **[Heavy experiment freeze]** Hamilton–Jacobi grids, high-dimensional polytope/zonotope iterations, SOS/CBF searches, rare-event simulation, switched/delayed reachability, nonlinear basin scans, and full-DPE scale transfer are marked **PENDING — CONSOLIDATED HEAVY BATCH**. Only definitions, candidate registries, benchmark manifests, kill rules, and locked execution scaffolding are added.
+> - All v3.7.4 seed-object separation, v3.7.3 SCC-model separation, v3.7.2 directed-correctability content, and earlier mathematical corrections are preserved.
+>
+> **Version: v3.7.4-SEEDMOD** (July 2026)
+>
+> v3.7.4-SEEDMOD separates state seeding from structural seeding and freezes the distinction as an object-level intervention convention:
+> - **[Updated §3.5.C.4 seed-object lock]** A seed is classified by the mathematical object it changes, not by whether its effect is temporary or persistent. State seeds change the current state/history/distribution while leaving the governing architecture fixed; structural seeds change the graph, update law, parameters, controller, role system, boundary filter, memory/defect kernel, constraints, or state-space dimension; mixed seeds change both.
+> - **[New §3.5.C.4.A–C] Candidate families and model-matched gates:** five state-seed families, six structural-seed families, and staged/mixed interventions are defined. State-seed safety is tested by viability, basin capture, finite-time transient, calibration, and contamination gates. Structural-seed safety requires a post-intervention model declaration, directed-correctability audit, affected-SCC stability certificates, switching/transient bounds, dimension compatibility, and rollback.
+> - **[New §3.5.C.4.D] SEED-MOD-BENCH:** a matched benchmark is specified for seed-type classification, partial-observation identification, efficacy prediction, false-safe screening, basin transfer, structural-margin change, recurrence, reversibility, and intervention-order non-commutativity.
+> - **[Updated DPE admissibility and phase protocol]** Active write interventions must carry a declared seed record and pass a seed-type-matched gate. The stale universal SCC line in the displayed DPE set is synchronized with v3.7.3 and replaced by the model-matched certificate $\mathfrak S_Q^{\mathrm{model}}$.
+> - **[Heavy experiment freeze]** No large basin search, structural-identification run, LLM multi-agent trial, dimension-changing simulation, or mixed-seed optimization is executed here. All such work is marked **PENDING — CONSOLIDATED HEAVY BATCH**; only candidate registries, benchmark manifests, kill rules, and executable scaffolding are added.
+> - All v3.7.3 SCC-model separation, v3.7.2 directed-correctability content, and earlier mathematical corrections are preserved.
+>
+> **Version: v3.7.3-SCCMOD** (July 2026)
+>
+> v3.7.3-SCCMOD separates SCC-local stability certificates by dynamical model class and freezes all heavy numerical work into a later consolidated batch:
+> - **[Updated §3.5.C.3 causal-loop condition]** The former universal-looking $\rho(K_Q)<1$ condition is restricted to frozen discrete-time linear SCC models. General SCC admissibility now uses a declared model-matched certificate $\mathfrak S_Q^{\mathrm{model}}$.
+> - **[New §3.5.C.3.C] SCC stability candidate families:** discrete-time linear, continuous-time linear, nonlinear, positive/monotone, switched/hybrid, delayed, and input-to-state robustness candidates are separated. Spectral, Lyapunov, contraction, positive-system, small-gain, IQC/sector, and viability certificates are assigned distinct claims and kill conditions.
+> - **[New §3.5.C.3.D] SCC-STAB-BENCH:** a model-stratified benchmark specification is added with matched counterexample families, ground-truth outcomes, false-safe/false-unsafe scoring, robustness-radius and basin metrics, and a Pareto-minimal certificate-stack selection rule.
+> - **[Heavy experiment freeze]** No new large simulation or optimization run is promoted in this version. Switching products, delay grids, nonlinear basin searches, SOS/IQC programs, and large SCC ensembles are marked **PENDING — CONSOLIDATED HEAVY BATCH**. Only benchmark objects, manifests, and executable scaffolding are prepared.
+> - All v3.7.2 directed-correctability content and earlier mathematical corrections are preserved.
+>
+> **Version: v3.7.2-DIRCONN** (July 2026)
+>
+> v3.7.2-DIRCONN strengthens the directed-graph correctability layer of Dynamic Partitioned Equilibrium without promoting any unbenchmarked proxy to theorem status:
+> - **[Superseded within-module proxy]** The undirected algebraic-connectivity condition $\lambda_2(L_a)\geq\gamma_a$ is retained only for symmetric/reversible special cases. It is no longer the canonical condition for a general causal digraph.
+> - **[New §3.5.C.3.A] Directed correctability candidate family:** eight complementary candidates are defined: structural rootedness/SCC reachability, Chung directed gap and conductance, block-Dobrushin contraction, stationary-weighted singular contraction, finite-horizon nonnormal transient gain, seed-actuated controllability Gramian, quotient-space switching/joint-spectral-radius stability, and disturbance-to-disagreement input/output gain.
+> - **[New §3.5.C.3.B] DIR-CONN-BENCH:** a task-separated benchmark is specified across bottleneck, nonnormal, asymmetric, nearly reducible, switching, delayed, and edge-failure graph families. Selection is based on predictive validity, false-safe rate, family holdout robustness, computational cost, and observability requirements rather than one aggregate correlation.
+> - **[Pilot local benchmark]** A reproducible 48-case static pilot over seven graph families is included. Block-Dobrushin, spectral-modulus, Chung-gap, conductance, and singular-value candidates all remain live for different tasks; one-step Dobrushin is inadequate as a sole rate metric, while the controllability Gramian is correctly treated as an actuation-specific gate rather than a passive-mixing predictor.
+> - **[DPE admissible-set update]** Condition (b) now invokes a declared directed-correctability gate $\mathfrak C_a^{\mathrm{dir}}$ selected from the candidate family. A provisional multi-gate stack is supplied for experiments, but no universal minimal stack is claimed before switching/delay and adversarial-family validation.
+> - All v3.7.1 mathematical corrections and earlier content are preserved.
+>
+> **Version: v3.7.1-DPE-mathpatch** (July 2026)
+>
+> v3.7.1-DPE-mathpatch corrects the theorem-status and object-type defects identified in the first mathematical audit of §3.5.C:
+> - **[DPE object correction]** DPE is now defined primarily as a property of extended-state trajectories. The pointwise conditions form an instantaneous admissible set $\mathcal A_{\mathrm{DPE}}$, not a history-free equilibrium state set.
+> - **[Fixed-point / flow correction]** The FCC fixed point is stated as a sufficient special realization of flow balance under regularity and stationarity assumptions; $\mathbb E[\dot S]=0$ no longer implies $x=x^*$.
+> - **[VCZ terminology correction]** “stable manifold with volume” is replaced by robust controlled-invariant / attracting operating-region language. Basin and attraction claims are explicitly conditional on verified stability hypotheses.
+> - **[Internal–external dynamics correction]** Internal and external representations are mapped into a common observation space, and the feedback map into the internal state space is made dimensionally explicit.
+> - **[Lag optimality correction]** A positive lag window is no longer universal. An interior lag is obtained only under an explicit noise-filtering versus tracking-error cost with endpoint derivative conditions.
+> - **[Selective-exchange proposition correction]** The feasible permeability interval and endpoint derivative conditions required for a unique interior minimizer are added; positivity of endpoint costs alone is no longer used.
+> - **[Notation correction]** The thermodynamic adaptability floor is renamed $\sigma_{\mathrm{int}}\geq\sigma_{\min}$, separating entropy-production proxy notation from the instability variable $S$.
+> - All v3.7-DPE synthesis content is preserved except where explicitly superseded by these corrections.
+>
+> **Version: v3.7-DPE** (July 2026)
+>
+> v3.7-DPE changes from v3.6-NAT-theory (Dynamic Partitioned Equilibrium synthesis — topology, selective exchange, internal/external lag, and regenerative balance):
+> - **[New §3.5.C] Dynamic Partitioned Equilibrium (DPE):** integrates five equilibrium levels — FCC fixed point $x^*$, flow equilibrium $\mathbb{E}[\dot S]=0$, VCZ viability region, VE directional degeneracy, and a new topological-temporal consistency layer.
+> - **[New §3.5.C.2] Internal–External Equilibrium Lag:** distinguishes internal self-consistency from external calibration; defines $g_{IE}(t)$ and a convergence-direction condition $\overline{\dot g}_{IE,T}\leq 0$. The original universal positive-lag wording is superseded by v3.7.1: an interior lag exists only under the stated filtering–tracking cost assumptions.
+> - **[New §3.5.C.3] Partitioned topology condition:** healthy equilibrium requires sufficient within-module mixing, subcritical amplification in every causal SCC, and interface permeability inside an information–cascade feasibility window. Global $R<1$ is declared necessary but not sufficient when a local SCC remains supercritical.
+> - **[New §3.5.C.4] Selective Permeability and Seeding Principle:** formalizes filtered seed flux, provenance/independence, local spectral safety, contamination non-increase, and rollback conditions. Under explicit convex tradeoff assumptions, a feasible interior permeability $\pi^*$ can be optimal; v3.7.1 adds the necessary endpoint derivative conditions.
+> - **[New §3.5.C.5] Regenerative balance:** order/non-alignment and creation/destruction are assigned different temporal functions rather than averaged into a static compromise. Destructive amplification is removed while exploratory variation and diagnostic information are preserved and selectively re-seeded.
+> - **[Updated §3.5 VCZ reader-safety]** Scalar VCZ conditions are now explicitly marked as necessary but not by themselves sufficient; full operational membership requires the §3.5.C topological-temporal qualification.
+> - **[Status boundary]** Existing VST mechanisms, new synthesis definitions, conditional propositions, falsifiable predictions, and open calibration problems are separated explicitly; no universal Selective Seeding Theorem is claimed without the stated assumptions.
+> - All previous v3.6-NAT-theory content preserved.
+>
 > **Version: v3.6-NAT-theory** (April 2026)
 >
 > v3.6-NAT-theory changes from v3.5-AGMthm (Theory hardening — S-equation justification + VCZ formal definition + VE-NAT architectural realization + D–S[V]–λ_V–Ω integrated E-layer formulation):
@@ -1130,6 +1203,1921 @@ $$\mathrm{VE}_{\mathrm{sphere}} \iff \begin{cases} C_A \approx 1 & \text{(NAT: t
 > We integrate AGM and the VST E-layer by treating distortion $D(t)$, field instability $S[V]$, dominant spectral mode $\lambda_V$, and contamination $\Omega$ as a single cross-scale cascade. The latent distortion field $D(t)$ acts locally by reducing effective capacity, thereby inflating the field-level instability functional into a distortion-corrected load $S_D[V]$. This elevated load shifts the dominant spectral mode $\lambda_V$ toward instability, and persistent positive spectral growth accumulates as contamination $\Omega$. Under this formulation, vector equilibrium is not merely a geometric metaphor but a four-layer consistency regime characterized by bounded distortion, subcritical field instability, non-positive dominant spectral mode, and suppressed contamination. NAT sphere topology then supplies the architectural condition $C_A \approx 1$ under which this regime becomes structurally realizable.
 
 > Living system stability does not come from complete unification. It comes from the state in which order and non-alignment are strong enough to maintain each other without either eliminating the other. Complete coupling removes the buffer that absorbs disturbance. Complete decoupling removes the coordination that distributes correction. The only stable regime is their tensioned coexistence — which is what VCZ, at every scale, structurally is.
+
+
+#### §3.5.C Dynamic Partitioned Equilibrium — Topology, Selective Exchange, and Internal–External Lag [v3.7-DPE]
+
+##### §3.5.C.0 Purpose, scope, and theorem-status boundary
+
+The preceding equilibrium architecture contains several distinct objects that must not be collapsed into a single word. The FCC system supplies a dynamical fixed point; §3.4.4 supplies a non-equilibrium flow balance; §3.5 supplies a viable operating region; §3.5.A supplies directional degeneracy; and §28 supplies causal topology, adaptive permeability, renewal, and timescale mechanisms. This section consolidates those components into **Dynamic Partitioned Equilibrium (DPE)**.
+
+DPE is not proposed as another Nash equilibrium, consensus point, or static energy minimum. It is the additional condition that determines whether an internally stable multi-agent configuration is also:
+
+1. topologically containable,
+2. externally calibrated,
+3. temporally synchronized without being rigidly synchronous,
+4. selectively permeable rather than fully open or closed, and
+5. capable of regeneration without preserving destructive amplification.
+
+**Status labels used in this section:**
+
+| Label | Meaning |
+|---|---|
+| **Established in current VST** | Already defined elsewhere in this document and only reorganized here |
+| **Definition / synthesis** | New unifying definition assembled from existing mechanisms |
+| **Conditional proposition** | Valid only under explicitly stated mathematical assumptions; not yet a universal theorem |
+| **Falsifiable prediction** | Empirical claim intended for simulation or field testing |
+| **Open calibration problem** | Quantity or threshold that remains architecture-dependent |
+
+This separation is essential. In particular, the claim that selective seeding is always superior is **not** made. The weaker and defensible claim is that, under a measurable information–cascade tradeoff and seed-quality constraints, an interior selective-exchange policy can dominate both complete isolation and unrestricted exchange.
+
+---
+
+##### §3.5.C.1 Equilibrium hierarchy — five distinct objects
+
+The word *equilibrium* in VST refers to five related but non-identical objects. They are not automatically nested, because they live in different mathematical categories: points, invariant measures or trajectories, state-space regions, and structural constraints.
+
+| Level | Object | Mathematical role | Failure if used alone |
+|---|---|---|---|
+| E0 | FCC fixed point $x^*=(C^*,G^*,R^*,M^*)$ | Point satisfying $f(x^*)=0$ in the coarse-grained ODE | Does not by itself characterize the size, topology, or robustness of the safe region |
+| E1 | Flow equilibrium $\mathbb{E}[\dot S]=0$ with exploration $>0$ | Stationary or long-run flux-balance property of a trajectory or invariant law | Can occur on a fixed point, periodic orbit, stationary distribution, or through average cancellation; local supercritical components may be hidden |
+| E2 | VCZ $\mathcal V$ | Candidate viable operating region near $R\approx1^-$ | Scalar membership can miss wrong-frame agreement, unsafe SCCs, or failure of robust invariance |
+| E3 | Vector Equilibrium | Directional degeneracy; no direction has persistent structural privilege | Directional symmetry alone does not guarantee external correctness or attraction |
+| E4 | Dynamic Partitioned Equilibrium | Topological, temporal, calibration, and recovery consistency of an extended-state trajectory | Full operational condition introduced here |
+
+Define the fixed-point set
+
+$$\mathcal E_{\mathrm{fp}}:=\{x:f(x)=0\}.$$
+
+Let $\mathfrak F$ denote the class of admissible trajectories or invariant probability laws for which the long-run instability flux is balanced, for example
+
+$$\limsup_{T\to\infty}\left|\frac{1}{T}\int_0^T \mathbb E[\dot S(t)]\,dt\right|=0,$$
+
+with non-zero exploration activity. Under differentiability of $S$, stationarity of the forcing, and existence of a constant solution $x(t)\equiv x^*$,
+
+$$x(t)\equiv x^*\quad\Longrightarrow\quad x(\cdot)\in\mathfrak F.$$
+
+The converse is not valid in general:
+
+$$x(\cdot)\in\mathfrak F\quad\nRightarrow\quad x(t)\equiv x^*.$$
+
+Flow balance may also be produced by a periodic orbit, a stationary stochastic distribution, a quasiperiodic trajectory, or cancellation of positive and negative increments. Consequently no unconditional inclusion such as $x^*\subset\text{flow balance}\subset\mathcal V$ is asserted.
+
+The conceptual distinction is:
+
+```text
+Fixed point:       Where can the coarse state stop drifting?
+Flow equilibrium: Are generation and dissipation balanced over time?
+VCZ:               Is there a viable operating region with verified invariance or attraction?
+VE:                Does any direction retain structural privilege?
+DPE:               Do modules, boundaries, external calibration, lag, and recovery remain jointly safe?
+```
+
+For an extended state $z$ defined in §3.5.C.6, the pointwise VE, topology, and calibration inequalities determine an instantaneous admissible set $\mathcal A_{\mathrm{DPE}}$. **Operational DPE is not the set intersection itself; it is the trajectory property of remaining in, or returning to, that admissible set under the declared disturbance and control class.**
+
+DPE therefore treats equilibrium as a **moving operating regime**, not as a timeless coordinate. The admissible region can change as terrain, environment, agent composition, and reference structure change.
+
+---
+
+##### §3.5.C.2 Internal and external equilibrium with calibrated adaptation lag
+
+Let the internal state space be $\mathcal X_I$, the environmental state space be $\mathcal X_E$, and let both be represented in a common observation or calibration space $\mathcal Y$. For the additive feedback model below, $\mathcal Y$ is assumed to be a normed vector space; on a general metric space, the difference $y_E-y_I$ must be replaced by a declared local error map:
+
+$$h_I:\mathcal X_I\to\mathcal Y,\qquad h_E:\mathcal X_E\to\mathcal Y.$$
+
+Write
+
+$$y_I(t):=h_I(x_I(t)),\qquad y_E(t):=h_E(x_E(t)).$$
+
+**Definition 3.5.C.1 (Internal equilibrium).** Internal equilibrium means that roles, beliefs, policies, and correction loops are mutually self-consistent enough that internal perturbations do not produce net amplification:
+
+$$\mathbb E[\dot S_I]\leq0,$$
+
+with internal exploration and correction activity remaining non-zero.
+
+**Definition 3.5.C.2 (External equilibrium).** External equilibrium means that the system's behavior and internal representation remain calibrated to independent evidence, environmental constraints, or realized outcomes within an architecture-dependent tolerance.
+
+Define the **internal–external equilibrium gap**:
+
+$$g_{IE}(t):=d_{\mathcal Y}\!\left(y_I(t),y_E(t)\right),$$
+
+where $d_{\mathcal Y}$ is a metric or declared discrepancy functional on the common representation space. Examples include prediction error, external validation failure, distributional divergence, calibration loss, or disagreement with independent measurement.
+
+A dimensionally explicit minimal coupling model is
+
+$$\tau_I\dot x_I
+=f_I(x_I)+B_I\!\left(y_E-y_I\right)+\xi_I,$$
+
+$$\tau_E\dot x_E
+=f_E(x_E,x_I)+U_E(t)+\xi_E,$$
+
+where $B_I(x_I):\mathcal Y\to T_{x_I}\mathcal X_I$ maps representation error into an admissible internal-state correction direction. The one-way calibration case is recovered when $f_E$ is independent of $x_I$. A reduced output-level model may instead be used directly:
+
+$$\tau_y\dot y_I=-A_y(y_I-y_E)+\eta_I.$$
+
+No universal claim is made that zero lag is suboptimal. The appropriate adaptation lag depends on a two-sided cost:
+
+$$J_{\mathrm{lag}}(\tau)
+:=J_{\mathrm{noise}}(\tau)+J_{\mathrm{track}}(\tau),$$
+
+where filtering typically reduces noise-transmission cost as $\tau$ increases, while tracking error typically increases with $\tau$. Let $\mathcal T=[0,\bar\tau]$ be a compact feasible lag interval. If $J_{\mathrm{lag}}$ is differentiable and strictly convex on $\mathcal T$, and
+
+$$J_{\mathrm{lag}}'(0)<0,\qquad J_{\mathrm{lag}}'(\bar\tau)>0,$$
+
+then a unique interior optimum $\tau^*\in(0,\bar\tau)$ exists. Without these tradeoff assumptions, $\tau^*=0$ or a boundary value may be optimal.
+
+Define the architecture-specific admissible lag set
+
+$$\mathcal T_{\mathrm{adm}}
+:=\left\{\tau\in\mathcal T:
+J_{\mathrm{lag}}(\tau)\leq J_c
+\ \text{and the closed-loop calibration dynamics satisfy the declared stability margin}\right\}.$$
+
+DPE therefore requires
+
+$$g_{IE}(t)\leq g_c,$$
+
+$$\overline{\dot g}_{IE,T}:=\frac{g_{IE}(t)-g_{IE}(t-T)}{T}\leq0
+\quad\text{outside declared transition windows},$$
+
+and
+
+$$\tau_{\mathrm{lag}}\in\mathcal T_{\mathrm{adm}},$$
+
+rather than a universal positive-lag inequality.
+
+Interpretation:
+
+| Lag regime | Possible structural consequence |
+|---|---|
+| Lag below the noise-filtering optimum | External noise or adversarial perturbation may be transmitted directly; over-correction and GOI risk can increase |
+| Interior calibrated lag, when it exists | Filtering, memory, and independent local correction coexist with acceptable tracking |
+| Lag beyond the tracking margin | Internal consensus tracks an obsolete environment; wrong-frame equilibrium and Silent Criticality become likely |
+
+Internal and external equilibria can continually approach one another without being identical or moving at the same rate. The admissible lag is a calibrated property of the coupled dynamics, not a universal constant.
+
+**Definition 3.5.C.3 (Wrong-frame equilibrium).** A system is in wrong-frame equilibrium when internal instability is low but external calibration error is persistently high or increasing:
+
+$$\mathbb E[\dot S_I]\leq0,\qquad g_{IE}>g_c\ \text{or}\ \overline{\dot g}_{IE,T}>0.$$
+
+This definition separates genuine viable operation from internally coherent error, echo-chamber lock-in, and Frozen Rest. High internal agreement is therefore not evidence of full equilibrium unless the external gap and its trend are also measured.
+
+---
+
+##### §3.5.C.3 Partitioned topology — connected interiors, selective boundaries
+
+Let the causal interaction graph be partitioned into modules:
+
+$$G_C=\bigcup_{a=1}^{m}G_a\ \cup\ E_{\partial},$$
+
+where $G_a$ is the internal graph of module $a$ and $E_{\partial}$ is the set of cross-module interfaces. DPE requires different conditions inside modules and across their boundaries.
+
+**Within-module condition — directed correctability, not undirected connectivity alone.** For a symmetric or reversible correction graph, the familiar special-case proxy
+
+$$\lambda_2(L_a)\geq\gamma_a>0$$
+
+can bound disagreement decay. For a general causal digraph, however, $L_a$ is non-symmetric, its eigenvectors can be ill-conditioned, and a positive asymptotic spectral gap can coexist with severe transient amplification or poor access from the actual correction/seed channels. The canonical DPE requirement is therefore replaced by
+
+$$\mathfrak C_a^{\mathrm{dir}}(H,T,\mathcal P_a,B_a)\in\mathcal C_a^{\mathrm{adm}},$$
+
+where the declared directed-correctability object $\mathfrak C_a^{\mathrm{dir}}$ must specify the dynamics, norm, horizon, switching class, and correction-input map. Candidate realizations and the benchmark used to select among them are given in §3.5.C.3.A–B. Until that benchmark is complete, no single directed analogue of $\lambda_2$ is treated as universal.
+
+**Causal-loop condition — every amplification component must pass a model-matched local stability certificate.** For each active strongly connected component $Q$ of the thresholded causal graph, declare its local model class, reference object, disturbance class, domain, norm/metric, switching-delay convention, and certificate family. Write
+
+$$\mathfrak S_Q^{\mathrm{model}}\in\mathcal S_Q^{\mathrm{adm}}.$$
+
+The familiar condition
+
+$$\rho(K_Q)<1$$
+
+is retained only for a **frozen discrete-time linear** SCC $z_{k+1}=K_Qz_k$ on the declared disagreement space. A frozen continuous-time linear SCC requires a Hurwitz-type condition such as $\alpha(A_Q)<0$; a nonlinear SCC requires a domain-qualified Lyapunov, contraction, incremental-stability, ISS/small-gain, or other matching certificate. Switched, delayed, hybrid, and uncertain SCCs require product-, functional-, or robustness-aware extensions. Candidate families and their benchmark are defined in §3.5.C.3.C–D.
+
+This is stronger than a global average requirement. A system can satisfy global $R<1$ while containing a small SCC whose model-matched local certificate fails; that component can remain a dormant amplification nucleus until coupling, delay, forcing, or load changes.
+
+**Boundary condition — neither full closure nor unrestricted opening.** For each relevant interface $(a,b)$, let $\pi_{ab}(t)\in[0,1]$ denote permeability. Two constraints act simultaneously:
+
+$$\pi_{ab}(t)\geq\pi_{ab}^{\mathrm{info}}\quad\text{(minimum exchange needed for calibration)},$$
+
+$$\pi_{ab}(t)\leq\pi_{ab}^{\mathrm{cascade}}\quad\text{(maximum exchange compatible with containment)}.$$
+
+The interface is feasible only when:
+
+$$\pi_{ab}^{\mathrm{info}}\leq\pi_{ab}^{\mathrm{cascade}}.$$
+
+When this interval is empty, a single undifferentiated channel cannot simultaneously carry enough calibration information and suppress cascade. The response must then change channel architecture — filtering, hierarchy, coding, delay, directional asymmetry, or independent validation — rather than merely selecting a different scalar permeability.
+
+**Topological qualification of VCZ.** Scalar VCZ conditions such as $R<1$ and $S<S_c$ are necessary but not sufficient. DPE additionally requires:
+
+```text
+1. Each operational module remains internally correctable.
+2. Every causal SCC remains locally subcritical.
+3. Required calibration channels remain open above their information floor.
+4. Cascade channels remain below their propagation ceiling.
+5. No global average is allowed to hide a local amplification nucleus.
+```
+
+This formalizes the distinction between an **isolated interval** and a **connected region**. Isolation is not a property of a node alone; it is a temporary boundary condition around a component. Connection is not automatically beneficial; it is beneficial only when the induced loop gain remains subcritical and the transmitted information improves calibration.
+
+
+##### §3.5.C.3.A Directed correctability model candidates [v3.7.2-DIRCONN]
+
+The objective is not to invent one scalar called “directed connectivity.” A directed module must pass several logically distinct questions:
+
+```text
+Reachability:       Can corrective information reach the required agents at all?
+Rate:               How fast does disagreement contract after it becomes reachable?
+Transient safety:   Can a stable directed operator amplify a disturbance before decay?
+Actuation:          Can the actual trusted seed/control channels reach the dangerous modes?
+Switching safety:   Do the preceding properties survive graph changes, delays, and failures?
+```
+
+A candidate that answers only one question must not be used as evidence for the others.
+
+**Model lock for the first benchmark.** Let $P_a$ be a nonnegative row-stochastic correction operator on module $a$,
+
+$$x_{k+1}=P_ax_k+B_au_k+D_aw_k,$$
+
+with information convention $P_{ij}>0$ meaning that agent $i$ uses information from agent $j$ (edge $j\to i$). Assume initially that $P_a$ is primitive on the active correction component. Let
+
+$$\phi_a^\top P_a=\phi_a^\top,
+\qquad
+\phi_a>0,
+\qquad
+\phi_a^\top\mathbf 1=1,$$
+
+$$\Phi_a:=\operatorname{diag}(\phi_a),
+\qquad
+\widetilde P_a:=\Phi_a^{1/2}P_a\Phi_a^{-1/2},$$
+
+$$Q_a:=I-\sqrt{\phi_a}\sqrt{\phi_a}^{\,\top},$$
+
+where $Q_a$ is the orthogonal disagreement projector in the stationary-weighted coordinates. The continuous-time analogue uses $\dot x=-L_ax+B_au+D_aw$ and the corresponding disagreement generator. Signed, antagonistic, set-valued, and node-changing systems are deferred to a second benchmark layer; they must not be silently absorbed into the positive Markov model.
+
+**Candidate C0 — structural reachability/rootedness gate.**
+
+- For all-to-all self-correction: require strong connectivity of the active correction component.
+- For leader/reference correction: require a directed spanning tree rooted at an admissible reference or trusted seed set.
+- For dynamic graphs: require the appropriate rootedness or stable-root property over a declared time window.
+
+C0 is a necessary existence gate in the corresponding consensus model. It says nothing quantitative about correction time, transient amplification, or input energy.
+
+**Candidate C1 — stationary-weighted Chung gap and directed conductance.** Define
+
+$$\mathcal L_{\mathrm{Ch},a}
+:=I-\frac12\left(\widetilde P_a+\widetilde P_a^\top\right),$$
+
+$$\gamma_{\mathrm{Ch},a}:=\lambda_2(\mathcal L_{\mathrm{Ch},a}).$$
+
+A related bottleneck proxy is the stationary directed conductance
+
+$$h_{\mathrm{dir},a}
+:=\min_{0<\phi_a(S)\leq1/2}
+\frac{\sum_{i\in S,\,j\notin S}\phi_{a,i}(P_a)_{ij}}
+{\phi_a(S)}.$$
+
+These candidates preserve directional stationary weights while converting the rate question into a self-adjoint comparison problem. They are attractive scalable proxies for bottlenecks and asymptotic mixing, but symmetrization can hide nonnormal transient growth and seed-location effects.
+
+**Candidate C2 — Dobrushin/Hopf oscillation contraction.** For a row-stochastic matrix,
+
+$$\delta(P)
+:=\frac12\max_{i,j}\sum_k|P_{ik}-P_{jk}|
+=1-\min_{i,j}\sum_k\min(P_{ik},P_{jk}),$$
+
+so that
+
+$$\operatorname{osc}(Px)\leq\delta(P)\operatorname{osc}(x),
+\qquad
+\operatorname{osc}(x):=\max_i x_i-\min_i x_i.$$
+
+Sparse directed graphs often have $\delta(P)=1$ even when a short product mixes. Therefore the live candidate is the **block-Dobrushin rate**
+
+$$\gamma_{\mathrm{Dob},a}^{(\mathcal H)}
+:=\max_{h\in\mathcal H}
+\left[1-\delta(P_a^h)^{1/h}\right],$$
+
+or, for time-varying graphs,
+
+$$\sup_k\delta\!\left(P_{k+h-1}\cdots P_k\right)
+\leq\bar\delta_h<1.$$
+
+This candidate directly controls a worst-case oscillation seminorm and extends naturally to products. Its weaknesses are horizon dependence and possible conservatism outside positive averaging dynamics.
+
+**Candidate C3 — stationary-weighted singular contraction.** Define
+
+$$\kappa_{2,a}:=\left\|Q_a\widetilde P_aQ_a\right\|_2,
+\qquad
+\gamma_{\mathrm{sv},a}:=1-\kappa_{2,a}.$$
+
+Unlike an eigenvalue modulus, $\kappa_{2,a}$ measures the worst one-step Euclidean amplification of weighted disagreement. It can exceed one, in which case $\gamma_{\mathrm{sv},a}<0$ exposes immediate nonnormal growth even when every non-consensus eigenvalue lies inside the unit disk. C3 is norm-specific and can be conservative for long-run rate.
+
+**Candidate C4 — finite-horizon transient and pseudospectral safety.** Define
+
+$$G_a(H)
+:=\max_{1\leq h\leq H}
+\left\|Q_a\widetilde P_a^hQ_a\right\|_2.$$
+
+For continuous time with disagreement generator $A_{a,\perp}$, use
+
+$$G_a^{\mathrm{ct}}(H)
+:=\sup_{0\leq t\leq H}\|e^{A_{a,\perp}t}\|_2,$$
+
+with the numerical abscissa
+
+$$\omega(A_{a,\perp})
+:=\lambda_{\max}\!\left(\frac{A_{a,\perp}+A_{a,\perp}^\top}{2}\right)$$
+
+as an instantaneous reactivity screen and a Kreiss/pseudospectral bound when a horizon-free transient certificate is needed. C4 is closest to VST’s Storm semantics because it measures the largest excursion before decay. It is computationally heavier and must always declare the norm and horizon.
+
+**Candidate C5 — trusted-seed actuated correctability.** Let $U_a$ have orthonormal columns spanning $\sqrt{\phi_a}^{\,\perp}$ and define
+
+$$P_{a,\perp}:=U_a^\top\widetilde P_aU_a,
+\qquad
+B_{a,\perp}:=U_a^\top\Phi_a^{1/2}B_a.$$
+
+The finite-horizon controllability Gramian is
+
+$$W_{c,a}(T)
+:=\sum_{t=0}^{T-1}
+P_{a,\perp}^{t}B_{a,\perp}B_{a,\perp}^\top
+(P_{a,\perp}^\top)^{t}.$$
+
+Use
+
+$$\chi_{c,a}(T):=\lambda_{\min}(W_{c,a}(T))$$
+
+or an explicitly regularized/log-volume variant. A positive lower bound means that every disagreement direction can be influenced through the declared trusted seed channels within the horizon. This is not a passive connectivity metric: it depends on where and how correction enters. It must therefore be benchmarked against correction energy and recovery success, not merely against unforced consensus time.
+
+**Candidate C6 — switched quotient contraction / joint spectral radius.** Let $\mathcal P_a$ be the admissible family of correction operators and let $\overline P$ denote the induced operator on the quotient $\mathbb R^{n_a}/\operatorname{span}\{\mathbf1\}$. Define
+
+$$\widehat\rho_{\perp}(\mathcal P_a)
+:=\limsup_{h\to\infty}
+\sup_{P_1,\ldots,P_h\in\mathcal P_a}
+\left\|\overline P_h\cdots\overline P_1\right\|^{1/h}.$$
+
+The robust switching condition is
+
+$$\widehat\rho_{\perp}(\mathcal P_a)<1.$$
+
+A common Lyapunov or path-complete certificate can replace direct joint-spectral-radius computation. For positive averaging systems, block-Dobrushin product contraction is a cheaper competing certificate. C6 is required when graph switching is material; individual-matrix spectral gaps do not certify arbitrary products.
+
+**Candidate C7 — disturbance-to-disagreement input/output gain.** When a disturbance channel $D_a$ is known, define the induced gain from $w$ to a declared disagreement output $y=C_ax$:
+
+$$\gamma_{w,a}
+:=\left\|C_{a,\perp}(zI-P_{a,\perp})^{-1}D_{a,\perp}\right\|_{\infty}$$
+
+in discrete time, with the standard continuous-time analogue. C7 asks not merely whether disagreement eventually contracts, but how strongly persistent or frequency-structured disturbances are transmitted. It is particularly relevant when the causal graph is safe under isolated shocks but unsafe under repeated external forcing.
+
+**Candidate-role map.**
+
+| Candidate | Primary question | Main blind spot |
+|---|---|---|
+| C0 rootedness/SCC | Is correction structurally possible? | No rate or transient bound |
+| C1 Chung gap/conductance | Is there a stationary bottleneck; what is the reversible comparison rate? | Nonnormality and input placement |
+| C2 block Dobrushin | Is worst-case range contraction achieved over finite products? | Positive averaging assumption; horizon choice |
+| C3 singular contraction | Can weighted disagreement expand in one step? | Long-run rate can be pessimistic |
+| C4 transient/Kreiss | How large can the pre-decay Storm excursion become? | Computational cost; norm/horizon dependence |
+| C5 controllability Gramian | Can trusted seeds reach every dangerous mode with bounded energy? | Says little about disturbance amplification by itself |
+| C6 quotient JSR | Is every admissible switching sequence contracting? | Hard computation; conservative certificates |
+| C7 input/output gain | How much persistent disturbance reaches disagreement? | Requires a declared dynamical and disturbance model |
+
+**Provisional experimental gate stack — not yet a theorem.** Until DIR-CONN-BENCH selects a minimal sufficient family, a module should be treated as directed-correctable only if it passes a complementary stack:
+
+$$\boxed{
+\text{C0 reachability}
+\ \land\ 
+\text{C2 or C1 rate}
+\ \land\ 
+G_a(H)\leq G_a^{\max}
+\ \land\ 
+\chi_{c,a}(T)\geq\chi_a^{\min}
+\ \land\ 
+\text{C6 when switching is active}.}$$
+
+C1/C2 are competing rate candidates; C4 and C5 are veto gates for transient safety and actual correction authority. Passing a rate proxy must never override a failed transient or actuation gate.
+
+---
+
+##### §3.5.C.3.B DIR-CONN-BENCH — candidate benchmark and kill protocol [v3.7.2]
+
+**Benchmark aim.** The benchmark does not ask which scalar correlates best on average. It asks for the **smallest complementary gate set** that predicts:
+
+1. whether correction reaches all required agents;
+2. whether it arrives before local drift becomes persistent;
+3. whether a nominally stable directed module experiences unsafe transient amplification;
+4. whether trusted seeds can correct the dangerous modes with bounded energy;
+5. whether those guarantees survive switching, delays, and edge failures.
+
+**B0 — object lock.** Every run must record:
+
+```text
+Update convention:       row-stochastic / column-stochastic / continuous-time
+Edge meaning:             information j→i or physical influence i→j
+Norm and weights:         oscillation, L2(phi), Euclidean, or application loss
+Reference class:          leaderless, leader-following, or external calibration
+Control map:              exact trusted seed/control nodes and write permissions
+Disturbance map:          injection nodes, persistence, frequency, and magnitude
+Time model:               static, switched, delayed, asynchronous, or event-triggered
+```
+
+Results from different locks are not pooled without an explicit translation.
+
+**B1 — graph-family suite.** At minimum include:
+
+| Family | Failure mode isolated |
+|---|---|
+| Balanced complete/ring | sanity baseline and reversible limit |
+| Highly asymmetric star | stationary-weight concentration and leader dependence |
+| Two dense SCCs with weak bridge | information bottleneck / nearly reducible chain |
+| One-way inter-SCC bridge | reachability without reciprocal correction |
+| Nearly feed-forward strongly connected chain | nonnormal transient amplification |
+| Isospectral or near-isospectral nonnormal pairs | failure of eigenvalue-only ranking |
+| Rooted but not strongly connected leader graph | leader-following versus mutual correction |
+| Alternating disconnected graphs with connected union | product contraction and window rootedness |
+| Individually stable switching matrices with unsafe products | need for quotient JSR/common Lyapunov |
+| Edge deletion, latency, and packet-loss variants | robustness margin |
+| Seed-location permutations | actuation/controllability dependence |
+| Local supercritical SCC inside globally subcritical graph | VST local-masking prediction |
+
+Signed or antagonistic edges form a separate B1-S extension because positive Markov contraction formulas cannot be reused unchanged.
+
+**B2 — dynamical tasks.** Run each candidate on distinct tasks rather than a single consensus simulation:
+
+```text
+D1 Local shock recovery:         inject a unit disagreement at each node/SCC.
+D2 External-reference tracking:  step, ramp, and band-limited moving targets.
+D3 Trusted-seed correction:      fixed and optimized seed locations with rollback.
+D4 Persistent disturbance:      white, colored, periodic, and adversarial bounded inputs.
+D5 Switching topology:           random, periodic, constrained, and adversarial sequences.
+D6 Delay/asynchrony:              heterogeneous communication and update delays.
+D7 Boundary reconnection:         contain → seed → reopen schedules with permeability ramps.
+```
+
+**B3 — ground-truth outcomes.** Report at least:
+
+$$T_{\mathrm{corr}}(\epsilon)
+:=\inf\{t:\|e(s)\|\leq\epsilon\ \forall s\geq t\},$$
+
+$$G_{\mathrm{peak}}(H)
+:=\sup_{0\leq t\leq H}\frac{\|e(t)\|}{\|e(0)\|},$$
+
+$$J_{\mathrm{int}}(H):=\int_0^H\|e(t)\|\,dt,$$
+
+plus worst-case seed energy, final external-calibration bias, disturbance gain, recurrence after reopening, and probability of violating a declared DPE hard constraint. For nonlinear models, these are estimated over a declared perturbation set; for linear models, operator norms or reachability calculations should replace Monte Carlo where possible.
+
+**B4 — task-separated predictive scoring.** For each candidate and each relevant target compute:
+
+- Spearman/Kendall rank correlation;
+- threshold AUROC and precision–recall AUC;
+- calibration or Brier score when a probability is produced;
+- **false-safe rate** at the operational threshold;
+- worst-family regret and worst-case error;
+- runtime, memory, and required observability.
+
+A high average correlation cannot compensate for a high false-safe rate on the nonnormal, bottleneck, local-SCC, or switching families.
+
+**B5 — family holdout and scale transfer.** Use leave-one-family-out evaluation, then hold out graph sizes and density ranges. Thresholds are fitted only on the training families. A candidate is not promoted if its ranking depends on seeing the same generator family during calibration.
+
+**B6 — pairwise discrimination tests.** Include deliberately matched pairs:
+
+```text
+Same spectral radius, different transient gain.
+Same Chung gap, different seed controllability.
+Same one-step Dobrushin coefficient, different block contraction.
+Same global R, different maximum local SCC gain.
+Same static metrics, different switching product behavior.
+```
+
+These pairs are more informative than random averages because each one targets a specific mathematical blind spot.
+
+**B7 — candidate kill rules.** A candidate is killed as a standalone DPE gate if any of the following persists after reasonable threshold calibration:
+
+1. false-safe rate exceeds the declared tolerance on a targeted counterexample family;
+2. the metric is invariant across a matched pair with materially different DPE outcomes;
+3. its threshold fails scale or family transfer;
+4. it requires latent quantities unavailable to the intended operational system;
+5. a cheaper candidate weakly dominates it in accuracy, false-safe rate, and computation;
+6. it duplicates another gate without improving any unique failure mode.
+
+A killed standalone candidate may remain as a cheap screen or theorem-side sufficient bound.
+
+**B8 — selection rule.** Select a Pareto-minimal stack, not an unrestricted weighted sum. The preferred architecture is:
+
+```text
+Existence gate      → C0
+Rate gate           → winner among C1/C2 and spectral-modulus baselines
+Transient veto      → C3/C4
+Actuation veto      → C5
+Switching veto      → C6 or block-product C2
+Forcing veto        → C7 when persistent disturbance is material
+```
+
+A module passes only when every required gate passes. This preserves interpretability: each failure identifies a different repair action—add a path, widen a bottleneck, reduce nonnormality, move the seed, restrict switching, or attenuate disturbance.
+
+**B9 — local pilot result [diagnostic only].** The accompanying local script evaluated 48 static row-stochastic cases across seven families: complete, directed ring, biased ring, asymmetric star, two-cluster bottleneck, nearly feed-forward nonnormal chain, and random strongly connected graphs. Over four passive dynamical targets, mean Spearman rank correlations were:
+
+| Candidate | Mean rank correlation |
+|---|---:|
+| Block-Dobrushin gap | 0.9660 |
+| Chung directed gap | 0.9576 |
+| Spectral-modulus gap | 0.9518 |
+| Weighted singular gap | 0.9337 |
+| Directed conductance | 0.9312 |
+| One-step Dobrushin gap | 0.4613 |
+
+Leave-one-family-out correlation with settling rank was 0.9599 for block Dobrushin, 0.9541 for the spectral-modulus gap, and 0.9416 for directed conductance. The weighted singular gap ranked peak amplification best in this static suite. The Gramian candidates did not predict passive mixing—and were not expected to—confirming that actuation-specific correctability must be scored against correction energy/recovery tasks rather than averaged into passive-consensus targets.
+
+**Pilot decision.**
+
+```text
+KEEP LIVE:   block Dobrushin, spectral-modulus baseline, Chung gap/conductance,
+             singular/transient gain, seed Gramian, switching JSR/product tests.
+REJECT AS SOLE RATE GATE: one-step Dobrushin.
+DO NOT PROMOTE YET: any universal directed-correctability theorem condition.
+CANONICAL PENDING IDS: H1.2 matched nonnormal pairs; H1.3 local masking;
+                       H1.4 seed-energy tasks; H2.1 switching; H2.2 delay/asynchrony.
+See §3.5.C.7.A. No separate DIR-CONN pending list remains live.
+```
+
+The pilot is deliberately local and small. It validates the benchmark architecture and catches a clear one-step-Dobrushin weakness; it does not establish universality or select the final DPE gate stack.
+
+---
+
+##### §3.5.C.3.C SCC-local stability model candidates — discrete, continuous, and nonlinear [v3.7.3-SCCMOD]
+
+**Purpose and scope.** SCC-local subcriticality is not represented by one formula across all dynamics. The symbol $\rho(K_Q)<1$ is exact for a frozen discrete-time linear operator, but it is not the canonical condition for continuous time, nonlinear dynamics, switched products, delays, or hybrid resets. Every SCC certificate must therefore begin with a **model lock**.
+
+For each active SCC $Q$, record
+
+```text
+Time convention:       discrete / continuous / hybrid / event-triggered
+State model:            linear / affine / nonlinear / set-valued
+Reference object:       equilibrium / consensus manifold / orbit / invariant set
+Domain of claim:        local neighborhood / declared compact set / global
+Input class:            none / bounded / stochastic / adversarial / seed-control
+Uncertainty class:      parametric / switching / delay / topology change
+Norm or metric:         Euclidean / weighted / oscillation / contraction metric
+Claim type:             asymptotic stability / exponential rate / ISS / viability
+```
+
+A certificate is invalid outside its declared lock. In particular, a local Jacobian test must not be presented as a global nonlinear theorem, and stability of each frozen matrix must not be presented as stability of arbitrary switching.
+
+###### Candidate family DT — discrete-time linear or frozen-linear SCCs
+
+Let the SCC disagreement dynamics be
+
+$$z_{k+1}=A_Qz_k+B_Qu_k+D_Qw_k.$$
+
+**DT1 — Schur spectral margin.**
+
+$$\eta_{\rho,Q}:=1-\rho(A_Q)>0.$$
+
+This is necessary and sufficient for asymptotic stability of a fixed finite-dimensional LTI operator. It does not control eigenvector conditioning, finite-time amplification, disturbance gain, or switching.
+
+**DT2 — quadratic Lyapunov/LMI certificate.** Seek $P_Q\succ0$ and $\lambda_Q>0$ such that
+
+$$A_Q^\top P_QA_Q-P_Q\preceq-\lambda_QP_Q.$$
+
+This gives an explicit weighted norm, exponential rate, and a route to uncertainty and input bounds. It can be conservative when one common quadratic metric is imposed on a switched family.
+
+**DT3 — induced-norm or block-contraction certificate.** Require, for a declared horizon $h$,
+
+$$\|A_Q^h\|_{P_Q}\leq c_Qr_Q^h,\qquad r_Q<1,$$
+
+or use block-Dobrushin/Hopf contraction for positive averaging dynamics. This directly exposes a finite mixing horizon but is norm- and horizon-dependent.
+
+**DT4 — positive-system Perron–Frobenius certificate.** If $A_Q\geq0$, seek $v_Q\gg0$ and $\varepsilon_Q>0$ such that
+
+$$A_Qv_Q\leq(1-\varepsilon_Q)v_Q.$$
+
+The associated weighted max norm gives a scalable certificate. It is invalid for signed or antagonistic interactions unless a valid comparison system is supplied.
+
+**DT5 — switched/uncertain product certificate.** For $A_Q(k)\in\mathcal A_Q$, use one of:
+
+$$\widehat\rho(\mathcal A_Q)<1,$$
+
+$$A^\top P_QA-P_Q\prec0\quad\forall A\in\mathcal A_Q,$$
+
+or a declared path-dependent/multiple-Lyapunov dwell-time certificate. Stability of each $A\in\mathcal A_Q$ alone is not sufficient.
+
+**DT6 — discrete ISS and disturbance-gain certificate.** Establish
+
+$$V(z_{k+1})-V(z_k)\leq-\alpha(\|z_k\|)+\sigma(\|w_k\|),$$
+
+or a finite $\ell_2/\ell_\infty$ input-to-disagreement gain. This is required when persistent forcing is part of the operational model.
+
+###### Candidate family CT — continuous-time linear or frozen-linear SCCs
+
+Let
+
+$$\dot z=A_Qz+B_Qu+D_Qw.$$
+
+**CT1 — Hurwitz spectral-abscissa margin.**
+
+$$\eta_{\alpha,Q}:=-\alpha(A_Q)>0,\qquad
+\alpha(A_Q):=\max_{\lambda\in\sigma(A_Q)}\Re\lambda.$$
+
+This is necessary and sufficient for fixed LTI asymptotic stability, but it does not bound nonnormal transient amplification.
+
+**CT2 — quadratic Lyapunov/LMI certificate.** Seek $P_Q\succ0$ and $\lambda_Q>0$ such that
+
+$$A_Q^\top P_Q+P_QA_Q\preceq-2\lambda_QP_Q.$$
+
+The condition supplies a weighted exponential decay rate and supports robust uncertainty bounds.
+
+**CT3 — matrix-measure/contraction certificate.** In a declared norm or metric, require
+
+$$\mu_{P_Q}(A_Q)\leq-\lambda_Q<0.$$
+
+This directly rules out instantaneous expansion in that metric. It is stronger than Hurwitz stability and may reject stable but transiently reactive systems—useful as a Storm veto, not automatically as a minimal stability condition.
+
+**CT4 — positive Metzler/copolyhedral certificate.** If $A_Q$ is Metzler, seek $v_Q\gg0$ such that
+
+$$A_Qv_Q\leq-\varepsilon_Qv_Q,$$
+
+or the dual inequality $p_Q^\top A_Q\leq-\varepsilon_Qp_Q^\top$. This gives scalable weighted-$L_\infty$ or weighted-$L_1$ decay.
+
+**CT5 — switched, delayed, and uncertain certificate.** Use a common/multiple Lyapunov function with dwell-time restrictions, a Lyapunov–Krasovskii or Razumikhin functional for declared delays, or a robust LMI over the uncertainty set. A frozen Hurwitz test is only a screen.
+
+**CT6 — continuous ISS/$H_\infty$ certificate.** Establish
+
+$$\dot V(z)\leq-\alpha(\|z\|)+\sigma(\|w\|),$$
+
+or a finite induced gain from $w$ to the declared disagreement/output variable. This separates autonomous decay from forced operational safety.
+
+###### Candidate family NL — nonlinear SCCs
+
+Let either
+
+$$z_{k+1}=F_Q(z_k,u_k,w_k)$$
+
+or
+
+$$\dot z=f_Q(z,u,w),$$
+
+with a declared equilibrium, consensus manifold, orbit, or invariant set $\mathcal E_Q$ and a declared domain $\mathcal D_Q$.
+
+**NL0 — reference and domain lock.** Before any stability claim, specify $\mathcal E_Q$, the distance $d(z,\mathcal E_Q)$, the admissible domain $\mathcal D_Q$, and whether the claim is local, regional, or global. Multiple attractors and unsafe basin boundaries must be recorded rather than averaged away.
+
+**NL1 — local Jacobian screen.** At an equilibrium $z_Q^*$, require
+
+$$\rho(D F_Q(z_Q^*))<1$$
+
+for discrete time or
+
+$$\alpha(D f_Q(z_Q^*))<0$$
+
+for continuous time. Under standard regularity this supports local asymptotic stability, but it supplies neither a basin radius nor global safety. It is a screen, not the default nonlinear DPE certificate.
+
+**NL2 — Lyapunov decrease certificate.** Seek a positive-definite $V_Q$ with, respectively,
+
+$$V_Q(F_Q(z))-V_Q(z)\leq-W_Q(z),$$
+
+or
+
+$$\nabla V_Q(z)^\top f_Q(z)\leq-W_Q(z)$$
+
+throughout the declared domain. Add input terms for ISS and sublevel-set containment for a certified region of attraction.
+
+**NL3 — contraction/incremental-stability metric.** Seek a uniformly positive metric $M_Q(z)$ such that the differential dynamics contract. Representative continuous-time form:
+
+$$\dot M_Q+J_Q^\top M_Q+M_QJ_Q\preceq-2\lambda_QM_Q,$$
+
+where $J_Q=D_zf_Q$. The discrete analogue uses the pullback metric under $D F_Q$. Contraction is especially suitable when DPE requires trajectories to forget internal initial disagreement rather than converge to one preselected point.
+
+**NL4 — incremental ISS and nonlinear small-gain.** Decompose the SCC into interacting subsystems with gains $\gamma_{ij}$. Require a nonlinear small-gain condition, e.g. no gain cycle dominates the identity. This is a natural SCC-level counterpart of “every directed loop remains subcritical,” but the gain operators and domains must be explicitly identified.
+
+**NL5 — monotone/positive nonlinear comparison certificate.** For cooperative or order-preserving systems, dominate the dynamics by a certified stable positive comparison system or use a nonlinear Perron–Frobenius/weighted monotone norm condition. This can scale to large SCCs but is valid only when the comparison inequalities are proved.
+
+**NL6 — sector/IQC/passivity certificate.** When nonlinearities lie in declared sectors or satisfy integral quadratic constraints, combine them with the linear interconnection through circle-, passivity-, or IQC-type conditions. This is suitable for saturation, dead zones, bounded rational responses, and feedback agents, but its conclusion is only as strong as the sector/IQC model.
+
+**NL7 — barrier/viability certificate paired with stability.** A control barrier or viability condition can prove that trajectories remain inside hard safety constraints. It does not by itself prove convergence or correction. DPE therefore treats barrier safety and Lyapunov/contraction recovery as complementary gates.
+
+###### Candidate family role table
+
+| Candidate | Valid primary claim | Critical blind spot / kill condition |
+|---|---|---|
+| DT1 / CT1 spectral margin | Fixed LTI asymptotic stability | Killed as sole Storm gate by nonnormal transient or switching counterexample |
+| DT2 / CT2 quadratic Lyapunov | Weighted exponential stability and robustness | May be conservative; common-$P$ failure does not imply instability |
+| DT3 / CT3 contraction | Direct finite-time or instantaneous contraction | Norm/metric dependence; may reject stable reactive systems |
+| DT4 / CT4 positive certificate | Scalable positive-system decay | Invalid without nonnegativity/Metzler or proved comparison |
+| DT5 / CT5 switching-delay | Product/delay-aware stability | Computationally heavy; assumptions must match actual schedule |
+| DT6 / CT6 ISS gain | Forced operational robustness | Requires declared input and output channels |
+| NL1 Jacobian | Local screen near one reference | Killed as global certificate by finite escape, multiple basins, or hidden attractors |
+| NL2 Lyapunov | Regional/global decay on proved domain | Certificate search may fail even when system is stable |
+| NL3 contraction | Incremental convergence and forgetting | Strong condition; metric construction can be difficult |
+| NL4 small-gain | Loop-level nonlinear compositional stability | Invalid if gains/domains are not independently bounded |
+| NL6 IQC/sector | Structured nonlinear feedback robustness | Sector mismatch creates false safety |
+| NL7 barrier | Hard-constraint invariance | Not a convergence certificate |
+
+**Provisional model-matched SCC gate — not a theorem.** Until SCC-STAB-BENCH selects minimal stacks, use:
+
+```text
+Frozen DT-LTI:   DT1 + transient veto + DT6 when forced.
+Frozen CT-LTI:   CT1 + transient/reactivity veto + CT6 when forced.
+Positive model:  PF/Metzler certificate may replace a generic dense LMI when valid.
+Switched/delayed: frozen tests + DT5/CT5; frozen tests alone never pass.
+Nonlinear:       NL0 + one proved recovery certificate (NL2/NL3/NL4/NL6)
+                 + NL7 when hard safety matters; NL1 is only a screen.
+```
+
+No candidate is promoted to a universal SCC law in this version.
+
+---
+
+##### §3.5.C.3.D SCC-STAB-BENCH — model-stratified benchmark and pending heavy batch [v3.7.3]
+
+**Benchmark objective.** Select the smallest certificate stack that minimizes false-safe declarations while retaining useful coverage across discrete, continuous, and nonlinear SCC dynamics. Scores are never pooled across incompatible model locks without stratification.
+
+**SB0 — object lock.** Every case stores:
+
+```text
+Model class and equation
+Reference equilibrium/manifold/invariant set
+Claim domain and perturbation radius
+Norm/metric and output variable
+Input, seed, and disturbance channels
+Uncertainty, switching, delay, and reset class
+Ground-truth solver or analytic oracle
+Certificate search budget and numerical tolerances
+```
+
+**SB1 — discrete-time linear families.** Include:
+
+| Family | Targeted blind spot |
+|---|---|
+| Normal Schur matrices with controlled margin | baseline rate calibration |
+| Same $\rho(A)$, different eigenvector conditioning | spectral margin versus transient growth |
+| Positive nearly reducible SCCs | PF and bottleneck behavior |
+| Stable matrices with unsafe switching products | frozen stability versus JSR |
+| Parametric/interval uncertainty | robust-LMI coverage |
+| Persistent disturbance channels | ISS and induced-gain prediction |
+
+**SB2 — continuous-time linear families.** Include:
+
+| Family | Targeted blind spot |
+|---|---|
+| Normal Hurwitz matrices with controlled abscissa | baseline decay rate |
+| Same $\alpha(A)$, different numerical abscissa/Kreiss gain | reactivity and transient Storm excursion |
+| Metzler positive SCCs | copositive versus dense quadratic certificates |
+| Stable frozen modes with destabilizing switching | common/multiple Lyapunov need |
+| Delay-stable and delay-destabilized matched pairs | Lyapunov–Krasovskii/Razumikhin need |
+| Forced systems with matched autonomous poles | input-output gain separation |
+
+**SB3 — nonlinear families.** Include analytically controlled and numerically checkable matched cases:
+
+```text
+N1 Local stable equilibrium with finite escape outside a small basin.
+N2 Globally stable but non-contractive dynamics.
+N3 Contractive dynamics with moving equilibrium/reference.
+N4 Multiple attractors with safe and unsafe basins.
+N5 Stable limit cycle or invariant manifold where point convergence is the wrong target.
+N6 Saturation, dead-zone, and sector-bounded feedback loops.
+N7 Cooperative/monotone nonlinear SCCs with comparison-system certificates.
+N8 Small-gain networks near and across the gain-cycle threshold.
+N9 Hybrid reset or event-triggered SCCs with safe and unsafe schedules.
+N10 Nonlinear systems whose Jacobian screen passes locally but operational return fails.
+```
+
+**SB4 — ground-truth outcome vector.** Each case reports, where meaningful:
+
+$$y_Q:=\bigl(
+\text{stability label},
+\lambda_{\mathrm{decay}},
+G_{\mathrm{peak}},
+T_{\mathrm{return}},
+r_{\mathrm{basin}},
+\gamma_{w\to e},
+m_{\mathrm{safety}},
+\delta_{\mathrm{rob}}
+\bigr).$$
+
+Here $r_{\mathrm{basin}}$ is a certified or conservatively estimated basin radius, $\gamma_{w\to e}$ is the disturbance-to-disagreement gain, $m_{\mathrm{safety}}$ is the minimum hard-constraint margin, and $\delta_{\mathrm{rob}}$ is the smallest declared perturbation that destroys the target property.
+
+**SB5 — certificate scoring.** For each candidate certificate record:
+
+- false-safe rate and false-unsafe rate;
+- coverage: fraction of genuinely safe cases certified;
+- margin calibration against decay, robustness radius, and basin size;
+- matched-pair discrimination accuracy;
+- family and scale holdout performance;
+- runtime, memory, solver failures, and conditioning;
+- required observability and model-identification burden;
+- theorem-side status: necessary, sufficient, exact, or heuristic screen.
+
+False-safe rate is the primary veto. A certificate with excellent average rate prediction is not retained as a DPE gate if it certifies unsafe nonnormal, switched, delayed, or finite-basin cases.
+
+**SB6 — matched-pair tests.** Required pairs include:
+
+```text
+Same DT spectral radius, different transient gain.
+Same CT spectral abscissa, different numerical abscissa.
+Same frozen modes, different switching schedule stability.
+Same local Jacobian, different nonlinear basin/global behavior.
+Same Lyapunov decay near equilibrium, different barrier safety.
+Same autonomous stability, different persistent-input gain.
+Same positive comparison bound, one valid and one violated comparison assumption.
+```
+
+**SB7 — selection architecture.** Select a Pareto-minimal, model-specific stack rather than one cross-model score:
+
+```text
+DT-LTI stack:       spectral exactness + transient veto + forced-gain gate.
+CT-LTI stack:       Hurwitz exactness + reactivity/transient veto + forced-gain gate.
+Positive stack:     PF/Metzler screen + comparison-validity audit + forcing gate.
+Switching/delay:    frozen stack + product/functional certificate.
+Nonlinear stack:    reference/domain lock + Lyapunov/contraction/small-gain certificate
+                    + basin/viability gate + forcing robustness when applicable.
+```
+
+**SB8 — candidate kill rules.** A candidate is killed as a standalone SCC gate if it:
+
+1. produces a persistent false-safe on its targeted counterexample family;
+2. silently upgrades a local claim to regional/global status;
+3. ignores switching, delay, forcing, or reset classes present in the model lock;
+4. cannot distinguish a required matched pair;
+5. depends on an unverified positivity, sector, comparison, or observability assumption;
+6. is strictly dominated by a cheaper certificate with equal or lower false-safe rate and greater coverage.
+
+A killed standalone gate may remain a cheap diagnostic screen or theorem-side sufficient condition.
+
+**SB9 — heavy experiment freeze and canonical pointer.** SCC-local deferred work is owned by the unified registry in §3.5.C.7.A rather than by a separate list. The relevant packages are H1 (directed linear/SCC foundations), H2 (switching, delay, and hybrid dynamics), H3 (nonlinear and certified robust analysis), and H6 (full-DPE integration). The common H0 release gate must pass before any heavy or external-compute run.
+
+**SB10 — current status.**
+
+```text
+MODEL CANDIDATES:       DEFINED.
+BENCHMARK OUTCOMES:     DEFINED.
+MATCHED COUNTEREXAMPLES: SPECIFIED.
+LIGHTWEIGHT SCAFFOLD:   PREPARED.
+NUMERICAL WINNER:       NOT SELECTED.
+THEOREM PROMOTION:      NONE.
+HEAVY RUNS:             PENDING — CONSOLIDATED HEAVY BATCH.
+```
+
+---
+
+##### §3.5.C.4 Selective permeability and seed-object lock [v3.7.4-SEEDMOD]
+
+A permeable boundary does not imply indiscriminate exchange, and the word **seed** must not hide two mathematically different interventions. DPE therefore separates channel access from the object modified by the accepted intervention.
+
+Let the extended local model of module $a$ be represented by
+
+$$
+\mathcal M_a=(\mathcal X_a,F_a,G_a,\Theta_a,\mathcal U_a,\mathcal C_a,\mathcal H_a),
+$$
+
+where $\mathcal X_a$ is the state space, $F_a$ the update law or vector field, $G_a$ the causal/interconnection structure, $\Theta_a$ persistent parameters and kernels, $\mathcal U_a$ the admissible input or governance class, $\mathcal C_a$ hard constraints, and $\mathcal H_a$ memory/history architecture. Write the current dynamical state as $x_a$ and the persistent structural descriptor as
+
+$$
+\vartheta_a:=(\mathcal X_a,F_a,G_a,\Theta_a,\mathcal U_a,\mathcal C_a,\mathcal H_a).
+$$
+
+A declared seed record is
+
+$$
+\Sigma_{a\leftarrow b}
+:=\bigl(\pi_{ab}^{\mathrm{read}},\pi_{ab}^{\mathrm{write}},q_x,q_\vartheta,
+\varepsilon_x,\varepsilon_\vartheta,\delta x,\delta\vartheta,
+\mathsf{mode},\mathsf{provenance},\mathsf{rollback}\bigr).
+$$
+
+The classification is **object-based**, not duration-based.
+
+**Definition 3.5.C.S1 (Pure state seed).** A pure state seed changes the current state, distribution, belief, context, delay-line state, or finite memory realization while leaving the persistent structural descriptor fixed:
+
+$$
+x_a^+=\mathcal R_x(x_a;\delta x),
+\qquad
+\vartheta_a^+=\vartheta_a.
+$$
+
+For a discrete system this may be an impulsive reset $x_{k^+}=\mathcal R_x(x_k;\delta x)$. For a continuous system it may be an impulse $x(t^+)=\mathcal R_x(x(t^-);\delta x)$ or a finite-horizon input $\dot x=F_a(x)+B_su_s(t)$ whose removal restores the original vector field. A state seed may have a permanent consequence by moving the trajectory into another basin; that persistence does **not** make it structural.
+
+**Definition 3.5.C.S2 (Pure structural seed).** A pure structural seed changes at least one persistent component of $\vartheta_a$ while the intervention map does not directly reset the physical/informational state:
+
+$$
+x_a^+=\iota_{\vartheta^-\to\vartheta^+}(x_a),
+\qquad
+\vartheta_a^+=\mathcal R_\vartheta(\vartheta_a;\delta\vartheta),
+\qquad
+\delta\vartheta\neq0.
+$$
+
+The compatibility map $\iota_{\vartheta^-\to\vartheta^+}$ is required when the state representation or dimension changes. Structural seeds include graph rewiring, persistent edge-weight changes, update-rule or parameter changes, controller/policy installation, role or permission changes, boundary-filter modification, persistent memory/defect-kernel replacement, and node/module insertion or deletion.
+
+**Definition 3.5.C.S3 (Mixed seed).** A mixed seed changes both objects:
+
+$$
+\delta x\neq0,
+\qquad
+\delta\vartheta\neq0.
+$$
+
+A staged intervention is recorded as an ordered word such as $\mathsf S_x\circ\mathsf S_\vartheta$ or $\mathsf S_\vartheta\circ\mathsf S_x$. These orders are not assumed to commute.
+
+**Reader-safety examples.** In an LLM multi-agent system, inserting an external result into an existing context is normally a state/history seed; changing the system prompt, persistent memory rule, tool permission, role graph, routing policy, or update procedure is structural. Adding a message that is subsequently written into persistent retrieval memory is mixed unless the write is explicitly ephemeral. In an organization, providing a new case or counterexample is a state seed; changing reporting lines, veto rights, review rules, or team composition is structural.
+
+DPE separates at least five interface quantities:
+
+1. read permeability $\pi_{ab}^{\mathrm{read}}$,
+2. state-write permeability $\pi_{ab}^{x}$,
+3. architecture-write permeability $\pi_{ab}^{\vartheta}$,
+4. state-seed quality $q_x\in[0,1]$ and structural-seed quality $q_\vartheta\in[0,1]$,
+5. state and structural magnitudes $\varepsilon_x,\varepsilon_\vartheta\ge0$.
+
+The accepted fluxes are therefore distinct:
+
+$$
+J^x_{a\leftarrow b}(t)
+:=\pi_{ab}^{x}(t)q_x(t)\varepsilon_x(t),
+$$
+
+$$
+J^\vartheta_{a\leftarrow b}(t)
+:=\pi_{ab}^{\vartheta}(t)q_\vartheta(t)\varepsilon_\vartheta(t).
+$$
+
+A scalar $J^{\mathrm{seed}}$ may be reported only as an aggregate dashboard quantity; it is not sufficient for certification because equal total flux can represent radically different interventions.
+
+The quality factors are not popularity or similarity scores. They should include at least:
+
+```text
+Provenance:        Is the seed traceable and independently generated?
+Object identity:   Does it change x, persistent structure vartheta, or both?
+Diversity gain:    Does it add a correction path not already represented?
+Calibration:       Does it improve independent external validation?
+Contamination:     Does it import known defect-kernel structure?
+Persistence:       Which effects remain after the write channel is closed?
+Compatibility:     Is the seed well-defined in the target state/model space?
+Reversibility:     Is there a declared rollback or safe fallback?
+```
+
+---
+
+##### §3.5.C.4.A State-seed candidate families and gates [v3.7.4]
+
+State seeds leave $\vartheta_a$ fixed. Their main question is not whether the spectrum changed, but whether the new state lies in a safe, correctable, externally calibrated part of the unchanged dynamics.
+
+| Candidate | Canonical form | Intended use | What it does **not** establish |
+|---|---|---|---|
+| **SS1 Impulsive additive/reset seed** | $x^+=x+B_s\xi$ or $x^+=\mathcal R_x(x,\xi)$ | Counterexample injection, state reset, context insertion | Structural stability improvement |
+| **SS2 Finite-horizon probe/input seed** | $\dot x=F(x)+B_su_s(t)$ or $x_{k+1}=F(x_k)+B_su_{s,k}$ for $t\le T_s$ | Diagnostic excitation, temporary calibration input | Persistence after input removal |
+| **SS3 Belief/distribution seed** | $\mu^+=\mathcal T_s(\mu,\xi)$ on a simplex or measure space | Population belief, posterior, ensemble redistribution | Change of agent update law |
+| **SS4 Basin-targeted state seed** | $x^+\in\mathcal B_{\mathrm{target}}$ | Escape from wrong attractor or dormant basin | Global basin enlargement |
+| **SS5 Diversity packet / multi-point seed** | $X^+=\{x+\xi_j\}_{j=1}^m$ with aggregation rule fixed | Preserve alternatives, stress-test consensus | New routing, role, or aggregation architecture |
+
+A state seed is admissible only under a declared **state gate** $\mathfrak G_x$. The provisional gate stack is:
+
+1. **object-preservation audit**
+   $$d_\vartheta(\vartheta_a^+,\vartheta_a)=0;$$
+2. **well-posed reset/input map** in the declared state space;
+3. **hard safety or recoverability**
+   $$x_a^+\in\mathcal K_a^{\mathrm{safe}}\quad\text{or}\quad
+   T_{\mathrm{return}}(x_a^+)\le T_{\max};$$
+4. **finite-time transient budget**
+   $$\sup_{0\le t\le H_s}\ell_{\mathrm{storm}}(x_a(t))\le B_{\mathrm{peak}};$$
+5. **basin/viability target**, when multistability is present;
+6. **calibration and contamination gates**
+   $$\Delta g_{IE,a}<0,\qquad \Delta\Omega_a\le B_\Omega;$$
+7. **state rollback or safe re-reset**, when available.
+
+For a fixed linear system, eigenvalues and SCC structural margins are unchanged by a pure state seed. A spectral-margin improvement attributed to a pure state seed is therefore a classification or estimation error unless the model is state-dependent and the certificate is explicitly local along the new trajectory.
+
+---
+
+##### §3.5.C.4.B Structural-seed candidate families and gates [v3.7.4]
+
+Structural seeds change the future evolution law, admissible actions, constraints, memory, or causal pathways. Their certification must therefore be model-matched and must be repeated on every affected SCC and interface.
+
+| Candidate | Structural object changed | Typical realization | Primary danger |
+|---|---|---|---|
+| **ST1 Edge/topology seed** | $G_a$, edge set, edge weights, routing | add/remove/reweight communication or causal links | new SCC, nonnormal transient, hidden cascade path |
+| **ST2 Dynamics/parameter/kernel seed** | $F_a$, $\Theta_a$ | local gain, learning rule, response kernel, defect-kernel renewal | destabilized local mode or timescale |
+| **ST3 Controller/policy/role seed** | $\mathcal U_a$, policy/controller, role and permission map | new verifier, veto, coordinator, tool policy | governance oscillation, loss of autonomy/correctability |
+| **ST4 Persistent memory seed** | $\mathcal H_a$, retrieval/update kernel | write durable rule, schema, memory item, prior | long-lived contamination or wrong-frame lock-in |
+| **ST5 Node/module/dimension seed** | $\mathcal X_a$, module set | add/remove agent, expert, subsystem, state variable | ill-defined embedding, mode creation, capacity mismatch |
+| **ST6 Boundary/filter architecture seed** | interface filter, read/write separation, permeability law | provenance gate, rate limiter, quarantine, staged release | information starvation or bypass route |
+
+A structural seed is admissible only under a declared **structural gate** $\mathfrak G_\vartheta$. The provisional gate stack is:
+
+1. **post-seed model lock:** declare whether the updated object is discrete/continuous, linear/nonlinear, switched, delayed, hybrid, stochastic, or dimension-changing;
+2. **compatibility map:** define $\iota_{\vartheta^-\to\vartheta^+}$ and preserve hard invariants;
+3. **causal-graph audit:** recompute SCCs, root/reachability structure, required interfaces, and bypass channels;
+4. **directed correctability audit:** every affected module must satisfy a declared $\mathfrak C_a^{\mathrm{dir}}$ from §3.5.C.3.A–B;
+5. **model-matched SCC stability audit:** every affected SCC must satisfy
+   $$\mathfrak S_Q^{\mathrm{model}}(\vartheta_a^+)\in\mathcal S_Q^{\mathrm{adm}}$$
+   according to §3.5.C.3.C–D;
+6. **operator-switch transient bound:** account for nonnormal, switching, reset, and delay-induced peak amplification;
+7. **viability and external-calibration audit:** the new architecture must not preserve stability by destroying adaptability or independent correction;
+8. **rollback map and rollback cost:** define $\mathcal R_\vartheta^{-1}$ when possible, or a certified fallback architecture when exact reversal is impossible.
+
+The former expression
+
+$$
+\rho(K_a+\varepsilon B_{ab})<1
+$$
+
+is therefore retained only as a **pure structural-seed special case** for a frozen discrete-time linear model. It is not a valid state-seed gate, and it is not universal for continuous, nonlinear, switched, delayed, or hybrid architectures.
+
+---
+
+##### §3.5.C.4.C Mixed and staged seed policies — non-commutativity [v3.7.4]
+
+A mixed seed must pass both $\mathfrak G_x$ and $\mathfrak G_\vartheta$, plus an interaction gate. Let
+
+$$
+\mathsf S_x:(x,\vartheta)\mapsto(\mathcal R_x(x),\vartheta),
+\qquad
+\mathsf S_\vartheta:(x,\vartheta)\mapsto
+(\iota(x),\mathcal R_\vartheta(\vartheta)).
+$$
+
+In general,
+
+$$
+\mathsf S_x\circ\mathsf S_\vartheta
+\neq
+\mathsf S_\vartheta\circ\mathsf S_x.
+$$
+
+For example, a state seed selected for the old basin geometry may become unsafe after rewiring, while a structural seed may enlarge a viable basin and make a previously unsafe state reset admissible. DPE therefore records intervention order, dwell time, verification windows, and rollback points.
+
+The provisional staged policies are:
+
+```text
+P1  state-first diagnostic:      probe/reset -> observe -> structural change only if defect persists
+P2  structure-first receptivity: repair channel/rule -> verify margin -> inject state seed
+P3  alternating small steps:     small state seed <-> small structural update with gate after each step
+P4  containment-first mixed:     isolate -> structural prune -> state calibration -> gradual reconnection
+P5  dual-control experiment:     choose seed to improve state while identifying uncertain structure
+```
+
+**Kill rule.** No mixed intervention may be certified by checking only the final state or only the final spectrum. It must pass object classification, the state gate, the structural gate, and the order-specific transient/viability gate.
+
+---
+
+##### §3.5.C.4.D SEED-MOD-BENCH — candidate benchmark and pending heavy batch [v3.7.4]
+
+The benchmark has four separate tasks. A candidate may be useful for one task and invalid for another.
+
+1. **Seed-type identification:** determine whether the intervention changed $x$, $\vartheta$, or both.
+2. **Safety certification:** predict false-safe and false-unsafe outcomes under the matching gate.
+3. **Efficacy prediction:** predict calibration gain, return time, basin capture, recurrence, and structural margin change.
+4. **Policy-order selection:** compare $\mathsf S_x\circ\mathsf S_\vartheta$ with $\mathsf S_\vartheta\circ\mathsf S_x$ and staged alternatives.
+
+###### A. Ground-truth labels
+
+When the simulator/model is fully observed, define
+
+$$
+L_x=\mathbf 1\{d_x(x^+,\iota x)>\epsilon_x\},
+\qquad
+L_\vartheta=\mathbf 1\{d_\vartheta(\vartheta^+,\vartheta)>\epsilon_\vartheta\}.
+$$
+
+The four labels are null $(0,0)$, pure state $(1,0)$, pure structural $(0,1)$, and mixed $(1,1)$. Under partial observability, seed-type identification becomes a system-identification task and must report uncertainty rather than silently forcing a label.
+
+###### B. Matched benchmark families
+
+| Family | Construction | Necessary discrimination |
+|---|---|---|
+| **B1 Fixed operator / varied initial state** | same $\vartheta$, different $x^+$ | state seed must not claim structural-margin change |
+| **B2 Bistable nonlinear basin transfer** | state impulse crosses separatrix | persistent outcome can still be pure state |
+| **B3 Unstable structure / favorable state** | short-term trajectory improves although operator remains unsafe | reject state-only false cure |
+| **B4 Stable state / destabilizing rewiring** | $x$ initially quiet, $G$ gains dangerous SCC | detect structural false-safe |
+| **B5 Stabilizing structure / adverse reset** | margin improves but initial transient is large | separate asymptotic safety from peak safety |
+| **B6 Isospectral or near-isospectral rewiring** | similar eigenvalues, different nonnormal transient or reachability | require graph/transient audit beyond spectrum |
+| **B7 Persistent-memory write** | same current output, future retrieval/update differs | identify hidden structural seed |
+| **B8 Dimension-changing agent/module insertion** | $\dim\mathcal X$ changes | require compatibility embedding and new modes |
+| **B9 Short-horizon observational twins** | state and structural seeds produce similar early outputs | evaluate identifiability horizon |
+| **B10 Contaminated high-quality-looking seed** | improves agreement but worsens external calibration | distinguish agreement from calibration |
+| **B11 Switching/delay seed** | modifies schedule or latency without static graph change | classify timing law as structural |
+| **B12 Mixed-order pair** | same ingredients, reversed order | measure non-commutativity and rollback cost |
+
+###### C. Outcome measurements
+
+Each case records at least
+
+$$
+\mathcal Y_{\mathrm{seed}}
+=\bigl(
+L_x,L_\vartheta,
+T_{\mathrm{return}},G_{\mathrm{peak}},
+P_{\mathrm{basin}},
+\Delta m_{\mathrm{stab}},
+\Delta\mathfrak C^{\mathrm{dir}},
+\Delta g_{IE},\Delta\Omega,
+P_{\mathrm{recurrence}},
+E_{\mathrm{intervention}},
+C_{\mathrm{rollback}},
+H_{\mathrm{persistence}}
+\bigr).
+$$
+
+Here $\Delta m_{\mathrm{stab}}$ is model-matched: Schur margin for a frozen discrete-time linear system, spectral-abscissa/Lyapunov margin for continuous linear systems, or a domain-qualified Lyapunov/contraction/ISS/barrier margin for nonlinear systems. No cross-model scalar is assumed canonical before calibration.
+
+###### D. Scoring and kill protocol
+
+The selection criteria are ordered:
+
+1. **false-safe rate** for safety gates;
+2. **seed-type confusion matrix**, especially structural-as-state errors;
+3. matched-pair discrimination;
+4. basin/return/recurrence predictive validity;
+5. family holdout and scale transfer;
+6. observability requirements and identification horizon;
+7. computational cost;
+8. rollback and reversibility coverage.
+
+A candidate or stack is killed as a universal gate if it:
+
+- classifies intervention type by persistence alone;
+- applies an eigenvalue/spectral test as a pure state-seed certificate;
+- certifies a structural seed without rebuilding affected SCCs and directed-correctability objects;
+- treats a favorable short trajectory as evidence of structural repair;
+- treats an improved asymptotic margin as sufficient despite an unsafe transient;
+- ignores dimension/representation compatibility;
+- or forces a pure label when state and structure change together.
+
+The target output is not a single universal seed score. It is a Pareto-minimal registry:
+
+$$
+\boxed{
+\text{object classifier}
++\text{state viability/basin gate}
++\text{structural SCC/correctability gate}
++\text{transient gate}
++\text{calibration/contamination gate}
++\text{rollback/order gate}
+}
+$$
+
+###### E. Experiment status and canonical pointer
+
+**PENDING — UNIFIED REGISTRY.** Seed-object deferred work is owned by §3.5.C.7.A, primarily H4 (seed identification, persistence, dimension change, order, contamination, and recurrence), with switching/delay dependencies in H2, nonlinear basin dependencies in H3, and joint scale-transfer work in H6. This section retains the seed-specific benchmark contract but no longer maintains a separate execution list.
+
+---
+
+##### §3.5.C.4.E Conditional selective-exchange proposition [object-split revision]
+
+**Conditional Proposition 3.5.C.1 (Seed-type-specific interior selective-exchange optimum).** For fixed declared seed type $m\in\{x,\vartheta,\mathrm{mixed}\}$, seed quality $q_m$, and magnitude $\varepsilon_m$, let the feasible permeability interval be
+
+$$
+\Pi_{ab}^{m}(q_m,\varepsilon_m)
+:=\left[\pi_{ab}^{\mathrm{info},m}(q_m,\varepsilon_m),
+\pi_{ab}^{\mathrm{cascade},m}(q_m,\varepsilon_m)\right]\subseteq[0,1],
+$$
+
+where the lower endpoint is the minimum openness required for useful calibration and the upper endpoint is the maximum openness permitted by the **matching** state, structural, or mixed gate. Assume $\Pi_{ab}^{m}$ is non-empty and compact.
+
+Define
+
+$$
+\mathcal J_{ab}^{m}(\pi,\varepsilon_m;q_m)
+=w_C\mathcal C_{\mathrm{cascade}}^{m}
++w_E\mathcal E_{\mathrm{calibration}}^{m}
++w_\Omega\Omega_{\mathrm{import}}^{m}
++w_R\mathcal C_{\mathrm{rollback}}^{m}.
+$$
+
+Assume, on $\Pi_{ab}^{m}$:
+
+1. $\mathcal J_{ab}^{m}$ is continuous, differentiable in $\pi$, and strictly convex;
+2. the one-sided endpoint derivatives satisfy
+
+$$
+\partial_\pi\mathcal J_{ab}^{m}
+\!\left(\pi_{ab}^{\mathrm{info},m},\varepsilon_m;q_m\right)<0,
+$$
+
+$$
+\partial_\pi\mathcal J_{ab}^{m}
+\!\left(\pi_{ab}^{\mathrm{cascade},m},\varepsilon_m;q_m\right)>0;
+$$
+
+3. every $\pi\in\Pi_{ab}^{m}$ satisfies the gate matching $m$.
+
+Then there exists a unique minimizer
+
+$$
+\pi_{ab}^{*,m}(\varepsilon_m;q_m)
+\in\operatorname{int}\Pi_{ab}^{m}(q_m,\varepsilon_m).
+$$
+
+For fixed $(\pi,\varepsilon_m)$, improved quality weakly reduces cost only under
+
+$$
+\partial_{q_m}\mathcal J_{ab}^{m}(\pi,\varepsilon_m;q_m)\le0.
+$$
+
+**Limit.** The proposition compares permeability only after seed type and its safety gate are fixed. It does not imply that a state seed and a structural seed with equal scalar magnitude are comparable, nor that mixed interventions inherit convexity from their components. If the feasible interval collapses, the endpoint derivatives fail, or all available seeds are contaminated, a boundary policy may be optimal.
+
+---
+
+##### §3.5.C.5 Regenerative balance — order/non-alignment and creation/destruction
+
+DPE does not define stability as the victory of order over disorder. It assigns the two processes different functions:
+
+| Process | Constructive function | Failure when excessive |
+|---|---|---|
+| Order / alignment | coordination, shared reference, efficient correction | synchronization fragility, echo chambers, zero buffer |
+| Non-alignment / variation | exploration, redundancy, shock absorption, anomaly detection | fragmentation, incoherence, ungovernable diffusion |
+| Destruction / pruning | removal of defect kernels, supercritical edges, obsolete attractors | loss of memory, capacity, and viable diversity |
+| Creation / seeding | generation of new response paths and updated calibration | uncontrolled novelty, contamination, new amplification loops |
+
+The stable regime is therefore not a static compromise such as “half order and half disorder.” It is a **temporally ordered functional cycle**:
+
+$$\text{variation}
+\rightarrow\text{local test}
+\rightarrow\text{amplification detection}
+\rightarrow\text{selective isolation/pruning}
+\rightarrow\text{information preservation}
+\rightarrow\text{validated seeding}
+\rightarrow\text{gradual reconnection}.$$
+
+The governing rule is:
+
+> Preserve the information carried by variation; remove the loop structure that converts variation into destructive amplification.
+
+This distinguishes regenerative destruction from indiscriminate collapse. A Storm may expose obsolete structure and useful mismatch information, but damage is not automatically productive. Destruction becomes regenerative only when the system can localize the defect, retain diagnostic information, replace or renew the defective kernel, and verify the new structure before reopening the boundary.
+
+**Creation–destruction timing condition:**
+
+```text
+Pruning before diagnosis      → information loss
+Seeding before containment    → contamination spread
+Reconnection before testing   → recurrent Storm
+Permanent isolation           → calibration drift / Frozen Rest
+Permanent opening             → imported cascade
+Correct order                 → contain → diagnose → prune → seed → test → reopen
+```
+
+This is the temporal mechanism by which apparently opposite concepts become jointly stabilizing. Their coexistence is not simultaneous equality; it is role-separated sequencing with feedback.
+
+---
+
+##### §3.5.C.6 Instantaneous admissible set and operational DPE trajectories
+
+The DPE conditions depend on graph structure, filtered lag estimates, moving environmental references, interface policies, and finite-time trend variables. They therefore cannot be properties of the coarse state $x$ alone.
+
+Define an **extended state**
+
+$$z(t):=\bigl(x_I(t),x_E(t),G_C(t),\pi(t),\vartheta(t),\Sigma(t),\eta(t)\bigr)\in\mathcal Z,$$
+
+where $\vartheta(t)$ collects the persistent dynamical/architectural descriptors defined in §3.5.C.4, $\Sigma(t)$ is the active or most recent declared seed record, and $\eta(t)$ contains the filter, delay-line or history, estimator, and budget states used to evaluate $\overline{\dot g}_{IE,T}$, lag, entropy-production proxy, and transition-window budgets; $\eta$ may be infinite-dimensional when exact delays are retained. Let $x=P_xz$ denote the coarse VST state obtained by a declared projection $P_x:\mathcal Z\to\mathcal X$, let $\mathcal Q(G_C)$ be the active SCCs of the causal graph, and let $\mathcal I$ be the required interfaces.
+
+Define the **instantaneous DPE-admissible set**
+
+$$
+\mathcal A_{\mathrm{DPE}}
+:=\left\{z\in\mathcal Z:\begin{array}{ll}
+\text{(a)}& x\in\mathcal V,\ C_A\approx1,\ D\leq D_{\max}^{\mathrm{VE}},\ S_D[V]\leq S_c,\ \lambda_V\leq0,\ \Omega\leq\Omega_c,\\[1mm]
+\text{(b)}& \mathfrak C_a^{\mathrm{dir}}(H,T,\mathcal P_a,B_a)\in\mathcal C_a^{\mathrm{adm}}\quad\forall a,\\[1mm]
+\text{(c)}& \mathfrak S_Q^{\mathrm{model}}(z)\in\mathcal S_Q^{\mathrm{adm}}\quad\forall Q\in\mathcal Q(G_C),\\[1mm]
+\text{(d)}& \pi_{ab}^{\mathrm{info}}\leq\pi_{ab}\leq\pi_{ab}^{\mathrm{cascade}}\quad\forall(a,b)\in\mathcal I,\\[1mm]
+\text{(e)}& g_{IE}\leq g_c,\quad \overline{\dot g}_{IE,T}\leq0\ \text{outside declared transition windows},\\[1mm]
+\text{(f)}& \tau_{\mathrm{lag}}\in\mathcal T_{\mathrm{adm}},\\[1mm]
+\text{(g)}& \sigma_{\mathrm{int}}\geq\sigma_{\min}\quad\text{(Frozen Rest excluded)},\\[1mm]
+\text{(h)}& \mathfrak G_{ab}^{\mathrm{seed}}(\Sigma_{a\leftarrow b},z)\in\mathcal G_{ab}^{\mathrm{adm}}
+\quad\text{for every active write intervention}. 
+\end{array}\right\}.
+$$
+
+Here $\sigma_{\mathrm{int}}$ is the internal entropy-production or adaptability proxy imported from §25.4. It is deliberately not denoted by $\dot S$, because $S$ already denotes VST instability. Thus flow balance and adaptability can coexist without notational contradiction:
+
+$$\mathbb E[\dot S_{\mathrm{inst}}]=0,
+\qquad
+\sigma_{\mathrm{int}}\geq\sigma_{\min}.$$
+
+In condition (b), $\mathfrak C_a^{\mathrm{dir}}$ is not a free label: its model convention, candidate gates, thresholds, norm, horizons, switching class, and seed/control map must be declared according to §3.5.C.3.A–B. For a symmetric/reversible static module it may reduce to an algebraic-connectivity bound; for a general causal digraph the provisional stack uses reachability, a rate certificate, a transient bound, actual seed correctability, and—when applicable—a switching certificate. In condition (c), $\mathfrak S_Q^{\mathrm{model}}$ must be chosen under the discrete/continuous/nonlinear model lock in §3.5.C.3.C and evaluated by the benchmark protocol in §3.5.C.3.D. A spectral-radius test is admissible there only for a frozen discrete-time linear SCC. In condition (h), the seed gate must first classify the intervention by the object changed and then apply the state, structural, or mixed stack from §3.5.C.4.A–D; a structural margin is not a pure state-seed certificate, and state viability is not a structural repair certificate.
+
+Conditions (a)–(h) are pointwise admissibility tests on the extended state. They do **not** by themselves prove invariance, attraction, or recoverability.
+
+**Definition 3.5.C.4 (Operational DPE trajectory; v3.7.5 quantifier lock).** Fix:
+
+- a hard safety set $\mathcal H_{\mathrm{hard}}\subseteq\mathcal Z$ with $\mathcal A_{\mathrm{DPE}}\subseteq\mathcal H_{\mathrm{hard}}$,
+- an admissible disturbance-signal class $\mathbb W$,
+- a class $\Pi_{\mathrm{causal}}$ of non-anticipative state-feedback or output-feedback policies,
+- a declared target core $\mathcal K_{\mathrm{tar}}\subseteq\mathcal A_{\mathrm{DPE}}$,
+- a maximum worst-case recovery time $T_{\mathrm{rec}}^{\max}$,
+- and an excursion budget $B_{\mathrm{exc}}$.
+
+A closed-loop extended-state trajectory $z(\cdot)$ is in operational DPE over $[t_0,t_1]$ when:
+
+1. $z(t)\in\mathcal H_{\mathrm{hard}}$ for the whole interval and $z(t)\in\mathcal A_{\mathrm{DPE}}$ outside explicitly declared transition windows;
+2. the total duration, peak distance, and integrated magnitude of excursions from $\mathcal A_{\mathrm{DPE}}$ do not exceed the declared components of $B_{\mathrm{exc}}$;
+3. there exists one admissible causal policy $\mu\in\Pi_{\mathrm{causal}}$ such that, for every admissible disturbance signal $w(\cdot)\in\mathbb W$, each declared perturbation episode returns the trajectory to $\mathcal K_{\mathrm{tar}}$ within $T_{\mathrm{rec}}^{\max}$ without leaving $\mathcal H_{\mathrm{hard}}$;
+4. once $\mathcal K_{\mathrm{tar}}$ is reached, the same policy or a declared terminal policy keeps the trajectory in a verified robust-invariant core $\mathcal K_{\mathrm{RI}}\subseteq\mathcal K_{\mathrm{tar}}$ or drives it there within a separately declared terminal time.
+
+The quantifier order is essential:
+
+$$
+\exists\mu\in\Pi_{\mathrm{causal}}\;\forall w(\cdot)\in\mathbb W,
+$$
+
+not the clairvoyant order $\forall w\,\exists u$ in which the controller is allowed to know the future disturbance realization. Establishing conditions 3–4 requires a model-matched Lyapunov, barrier, viability, reachability, dynamic-programming, contraction, or stochastic hitting-time certificate; it is not supplied by the pointwise inequalities defining $\mathcal A_{\mathrm{DPE}}$.
+
+
+##### §3.5.C.6.A Robust-invariance and recovery-time object lock [v3.7.5-RIRET]
+
+A low instantaneous instability score, local SCC stability, or return to the boundary of the admissible set is not yet a robust recovery certificate. DPE therefore freezes three nested objects:
+
+$$
+\mathcal K_{\mathrm{RI}}
+\subseteq
+\mathcal K_{\mathrm{tar}}
+\subseteq
+\mathcal A_{\mathrm{DPE}}
+\subseteq
+\mathcal H_{\mathrm{hard}}.
+$$
+
+- $\mathcal H_{\mathrm{hard}}$: states that satisfy non-negotiable safety constraints;
+- $\mathcal A_{\mathrm{DPE}}$: states satisfying the instantaneous topology, calibration, permeability, lag, adaptability, SCC, and seed gates;
+- $\mathcal K_{\mathrm{tar}}$: the declared recovery target, chosen inside the admissible set with a nonzero safety margin where possible;
+- $\mathcal K_{\mathrm{RI}}$: a subset certified to remain safe against the declared disturbance class under a causal policy.
+
+Returning merely to $\partial\mathcal A_{\mathrm{DPE}}$ can produce immediate re-exit. Operational recovery should therefore target a robust core or a terminal invariant set rather than only first re-entry into the admissible shell.
+
+For a discrete-time system
+
+$$
+z_{k+1}=F(z_k,u_k,w_k),
+$$
+
+a set $K$ is robust controlled invariant under a feedback law $u_k=\mu(z_{0:k},y_{0:k})$ when
+
+$$
+\forall z_0\in K,\qquad
+\exists\mu\in\Pi_{\mathrm{causal}},\qquad
+\forall w_{0:\infty}\in\mathbb W:
+\quad z_k\in K\ \text{for all }k\ge0.
+$$
+
+A one-step Markov policy gives the familiar sufficient condition
+
+$$
+\forall z\in K\ \exists u\in\mathcal U(z)\ \forall w\in\mathcal W(z,u):
+\quad F(z,u,w)\in K.
+$$
+
+For a continuous-time differential inclusion
+
+$$
+\dot z\in\mathcal F(z,u,w),
+$$
+
+robust invariance can be certified by a tangent-cone condition, a robust control barrier condition, a Hamilton--Jacobi viability inequality, or another model-matched condition. Smooth-boundary shorthand such as
+
+$$
+\inf_{u\in\mathcal U(z)}\sup_{w\in\mathcal W(z,u)}
+\nabla h(z)^\top f(z,u,w)
+\ge -\alpha(h(z))
+$$
+
+is admissible only after the sign convention $K=\{h\ge0\}$, regularity, information pattern, and control/disturbance ordering are declared.
+
+**Recovery-time map.** For a target set $K$, define the first-entry time
+
+$$
+\tau_K(z_0;\mu,w)
+:=
+\inf\{t\ge0:z(t;z_0,\mu,w)\in K\},
+$$
+
+with $\tau_K=+\infty$ when the target is never reached. For an initial shell $B\subseteq\mathcal H_{\mathrm{hard}}$, the worst-case causal recovery time is
+
+$$
+T_{\mathrm{rec}}^{\mathrm{wc}}(B\to K)
+:=
+\sup_{z_0\in B}
+\inf_{\mu\in\Pi_{\mathrm{causal}}}
+\sup_{w\in\mathbb W}
+\tau_K(z_0;\mu,w),
+$$
+
+subject to $z(t)\in\mathcal H_{\mathrm{hard}}$ before entry. This is distinct from mean return time, nominal return time, or a simulation percentile. If the environment or admissible set moves, $K$ is replaced by a time-indexed tube $K(t)$ and entry is measured by $d(z(t),K(t))$.
+
+**Recoverable shell.** For a time budget $T$,
+
+$$
+\mathcal R_T(K)
+:=
+\left\{z_0\in\mathcal H_{\mathrm{hard}}:
+\inf_{\mu\in\Pi_{\mathrm{causal}}}
+\sup_{w\in\mathbb W}
+\tau_K(z_0;\mu,w)\le T,
+\ z(t)\in\mathcal H_{\mathrm{hard}}\ \text{before entry}
+\right\}.
+$$
+
+The robust radius around a core can be recorded as
+
+$$
+\delta_{\mathrm{rob}}(K;T)
+:=
+\sup\{r\ge0:K\oplus r\mathbb B\subseteq\mathcal R_T(K)\}.
+$$
+
+Return-time reporting should be accompanied by at least the peak excursion, integral excursion, control cost, and terminal margin:
+
+$$
+E_{\mathrm{peak}}:=\sup_{t<\tau_K}d(z(t),\mathcal A_{\mathrm{DPE}}),
+\qquad
+E_{\mathrm{int}}:=\int_0^{\tau_K}d(z(t),\mathcal A_{\mathrm{DPE}})\,dt,
+$$
+
+$$
+J_u:=\int_0^{\tau_K}\ell_u(u(t))\,dt,
+\qquad
+m_{\mathrm{term}}:=d(z(\tau_K),\partial\mathcal H_{\mathrm{hard}}).
+$$
+
+A fast return that violates a hard constraint, requires unbounded intervention, or lands on a zero-margin boundary is not accepted as DPE recovery.
+
+---
+
+##### §3.5.C.6.B Robust-invariance candidate families
+
+No single certificate is canonical across discrete, continuous, nonlinear, stochastic, switched, delayed, and hybrid SCC/DPE models. The following candidates are retained for benchmarking.
+
+**RI0 — exact/minimax predecessor fixed point.** For discrete systems define
+
+$$
+\operatorname{Pre}(K)
+:=
+\{z:\exists u\ \forall w,\ F(z,u,w)\in K\},
+$$
+
+and iterate $K_{j+1}=K_j\cap\operatorname{Pre}(K_j)$. In finite-state and low-dimensional polytopic systems this can provide an exact or controlled-accuracy maximal robust controlled-invariant kernel. Its cost can grow rapidly with dimension and nonconvexity.
+
+**RI1 — viability kernel / Hamilton--Jacobi reachability.** Solve a backward-reachability or viability variational inequality for the declared hard set and dynamics. This is a strong low-dimensional reference candidate and a benchmark ground-truth generator, but suffers from grid dimensionality and model dependence.
+
+**RI2 — robust control barrier function.** Search for $h$ such that $K_h=\{h\ge0\}$ satisfies a robust barrier inequality under admissible controls and disturbances. Polynomial/SOS, neural, piecewise, and compositional barriers are distinct subfamilies. A barrier certifies safety/invariance, not convergence or a return time unless paired with a progress certificate.
+
+**RI3 — invariant Lyapunov sublevel / robust positively invariant set.** For stable linear or locally stable nonlinear dynamics, construct
+
+$$
+K_V(c)=\{z:V(z)\le c\}
+$$
+
+with robust inward decrease on its boundary. Ellipsoidal, polytopic, and piecewise-quadratic variants are candidates. They can be conservative under saturation, asymmetry, and nonnormal transients.
+
+**RI4 — reachable tube / tube-MPC invariant set.** Propagate bounded disturbance tubes around a nominal or controlled trajectory and require the tube to remain inside $\mathcal H_{\mathrm{hard}}$, terminating in a verified invariant set. This candidate naturally joins online control and terminal safety, but depends on error dynamics, tightening rules, and optimization feasibility.
+
+**RI5 — support-function, zonotope, or interval reachable-set enclosure.** Compute outer reachable sets and reject a candidate core if any enclosure crosses the hard boundary. These methods scale better than exact grids in some sparse systems but may accumulate wrapping or dependency overestimation.
+
+**RI6 — stochastic barrier / supermartingale safety.** For stochastic dynamics, use a supermartingale, chance-constrained barrier, or probabilistic reachable set to bound exit probability over a declared horizon. A probability-$1-\varepsilon$ invariance claim must not be reported as worst-case invariance, and confidence/calibration must be recorded.
+
+**RI7 — switched, delayed, and hybrid invariance.** Use common/multiple barriers, dwell-time rules, barrier functionals, guard/reset compatibility, or mode-dependent invariant families. Modewise invariant sets are insufficient when switching, delay, or reset maps can cross the safety boundary.
+
+A candidate can be used as a DPE gate only with its model, domain, information pattern, uncertainty class, horizon, and guarantee type explicitly attached.
+
+---
+
+##### §3.5.C.6.C Recovery-time candidate families
+
+Invariance and return are separate claims. The following return-time candidates are therefore benchmarked independently and in paired stacks.
+
+**RT0 — minimax dynamic-programming value.** Use the exact or approximated minimum-time value function
+
+$$
+T^*(z)=\inf_{\mu\in\Pi_{\mathrm{causal}}}\sup_{w\in\mathbb W}\tau_K(z;\mu,w).
+$$
+
+This is the reference concept, but exact computation is generally restricted to small systems or structured models.
+
+**RT1 — exponential Lyapunov bound.** If, outside the target sublevel set,
+
+$$
+\dot V\le-\lambda V+\chi(\|w\|)
+$$
+
+or $V_{k+1}\le qV_k+\chi(\|w_k\|)$ with $q<1$, derive a practical return bound to a disturbance-dependent target. In the unforced continuous case,
+
+$$
+T_{\mathrm{rec}}
+\le
+\lambda^{-1}\log\frac{V(z_0)}{V_{\mathrm{tar}}}.
+$$
+
+The bound is invalid when the required decrease holds only locally or when disturbance terms prevent the target from being reached.
+
+**RT2 — finite-time Lyapunov bound.** If
+
+$$
+\dot V\le-cV^\alpha,
+\qquad 0\le\alpha<1,
+$$
+
+then
+
+$$
+T_{\mathrm{rec}}
+\le
+\frac{V(z_0)^{1-\alpha}}{c(1-\alpha)}.
+$$
+
+Nonsmoothness, input saturation, disturbance floors, and implementation regularization must be included in the claim.
+
+**RT3 — contraction / incremental-ISS envelope.** A contraction rate or incremental stability estimate can bound forgetting of the perturbed trajectory relative to a safe reference:
+
+$$
+d_M(z(t),z_{\mathrm{ref}}(t))
+\le
+\beta(d_M(z_0,z_{\mathrm{ref},0}),t)
++
+\gamma(\|w\|).
+$$
+
+Return time follows by solving when the right side enters the target-tube radius. This is useful for moving DPE targets but can be metric-conservative.
+
+**RT4 — predecessor depth / graph distance.** In finite-state or discretized discrete systems, the number of robust predecessor iterations needed to include $z_0$ gives a worst-case step bound. Resolution and abstraction error must be attached.
+
+**RT5 — Hamilton--Jacobi minimum-time or reach-avoid value.** Solve the reach-avoid minimum-time PDE/variational inequality. This jointly respects hard safety and adversarial disturbance in low dimension and serves as a benchmark reference where feasible.
+
+**RT6 — stochastic hitting-time/drift bound.** Use Foster--Lyapunov drift, optional-stopping arguments, spectral methods, or calibrated rare-event estimation to bound expected or high-probability hitting times. Expected return, quantile return, and almost-sure return are distinct outputs and must not be interchanged.
+
+**RT7 — recovery funnel / time-varying terminal tube.** Construct a time-indexed sequence of sets $F(t)$ whose backward evolution remains safe and terminates in $\mathcal K_{\mathrm{RI}}$. This is natural for phase-dependent DPE, moving references, structural seeds, and hybrid recovery schedules.
+
+**Joint stacks.** Candidate pairings include:
+
+- J1: robust CBF + control Lyapunov function / CLF--CBF filter;
+- J2: exact/approximate viability kernel + minimum-time value;
+- J3: tube MPC + terminal robust-invariant set;
+- J4: stochastic barrier + Foster--Lyapunov return bound;
+- J5: hybrid mode-dependent barrier + dwell-time/funnel return;
+- J6: moving-target contraction tube + terminal DPE core.
+
+DPE does not assume that the least conservative invariance certificate gives the tightest return-time bound. The two tasks are scored separately before a Pareto-minimal joint stack is selected.
+
+---
+
+##### §3.5.C.6.D RI-RET-BENCH — robust invariance and return-time benchmark
+
+**Status:** benchmark design frozen; heavy numerical execution pending.
+
+**B0 — benchmark claim registry.** Every candidate result must record:
+
+1. model class: discrete/continuous/nonlinear/stochastic/switched/delayed/hybrid;
+2. target type: fixed point, invariant set, moving tube, cycle, or DPE core;
+3. guarantee: worst-case, deterministic nominal, probability-$1-\varepsilon$, expectation, or empirical quantile;
+4. domain: local, regional, or global;
+5. information pattern and policy causality;
+6. disturbance norm, amplitude, frequency, and correlation assumptions;
+7. hard set, admissible shell, target set, and terminal core;
+8. numerical relaxation and solver tolerances.
+
+**B1 — benchmark families.** The initial suite contains:
+
+| ID | Family | Primary separation target |
+|---|---|---|
+| R1 | scalar integrator with bounded control/disturbance | exact control-authority threshold and return time |
+| R2 | saturated double integrator in a box | local RCI kernel versus globally controllable intuition |
+| R3 | stable nonnormal linear system with hard constraints | asymptotic stability versus transient safety |
+| R4 | discrete polytopic system | exact predecessor depth and kernel boundary |
+| R5 | matched authority pair $u_{\max}\gtrless w_{\max}$ | false-safe invariance near the viability threshold |
+| R6 | narrow safe corridor / obstacle reach-avoid | attraction versus viable path existence |
+| R7 | nonlinear bistable system near a separatrix | local basin, wrong-attractor capture, and return discontinuity |
+| R8 | stable limit cycle with target tube | set return versus point-equilibrium assumptions |
+| R9 | moving target with speed threshold | tracking tube and finite lag capacity |
+| R10 | individually stable switched modes with unsafe products | frozen-mode false safety |
+| R11 | delayed feedback with overshoot | delay-aware hard-safety and return inflation |
+| R12 | stochastic rare-exit system | worst-case, expected, and quantile distinction |
+| R13 | hybrid guard/reset system | reset compatibility and post-jump invariant core |
+| R14 | state-seed versus structural-seed recovery pair | unchanged basin versus changed viability geometry |
+| R15 | sparse high-dimensional SCC network | scaling and compositional certificates |
+
+Matched pairs vary one failure mechanism while keeping nominal decay, short-horizon output, or equilibrium location approximately fixed. This prevents a proxy from winning by identifying an irrelevant easy feature.
+
+**B2 — ground-truth hierarchy.** Ground truth is assigned in this order where available:
+
+1. analytic solution or exact finite-state dynamic programming;
+2. exact/controlled-accuracy low-dimensional predecessor or Hamilton--Jacobi computation;
+3. certified optimization bounds with independently checked residuals;
+4. exhaustive gridded reachability with refinement study;
+5. adversarial simulation and rare-event search as evidence only, not proof.
+
+Simulation non-escape is never labeled invariance without a certificate or a finite-horizon qualifier.
+
+**B3 — primary metrics.** For each case record:
+
+$$
+\mathrm{FS}_{\mathrm{inv}}
+:=
+\Pr(\text{candidate certifies invariant}\mid\text{ground truth unsafe}),
+$$
+
+$$
+\mathrm{FF}_{T}
+:=
+\Pr(\widehat T_{\mathrm{rec}}<T_{\mathrm{rec}}^{\mathrm{truth}}-\epsilon_T),
+$$
+
+plus:
+
+- false-unsafe rate;
+- certified-core volume or measure ratio;
+- Hausdorff/support-function error of the invariant-kernel boundary;
+- robust-radius error $|\widehat\delta_{\mathrm{rob}}-\delta_{\mathrm{rob}}|$;
+- return-bound coverage and tightness $\widehat T/T^{\mathrm{truth}}$;
+- peak- and integral-excursion underestimation;
+- hard-safety violation rate under adversarial search;
+- terminal-margin prediction;
+- control effort and saturation frequency;
+- policy-causality and quantifier audit;
+- compute time, memory, solver failures, and scaling slope.
+
+For probabilistic certificates, also record empirical coverage, confidence calibration, and rare-event sensitivity. Expected return-time accuracy is not credited toward worst-case return-time coverage.
+
+**B4 — kill rules.** A candidate is killed as a standalone DPE gate when any of the following persists after reasonable calibration:
+
+1. it uses $\forall w\exists u$ or future disturbance information while claiming causal robustness;
+2. it certifies safety for a matched unsafe pair at a non-negligible rate;
+3. its claimed worst-case return upper bound is violated beyond tolerance;
+4. a barrier-only method is promoted to recovery without a progress certificate;
+5. a Lyapunov/CLF-only method is promoted to hard safety without an invariance gate;
+6. a local certificate is reported as regional/global without a certified domain;
+7. expected, nominal, or percentile return is relabeled worst-case return;
+8. modewise, delay-free, or pre-seed certificates are reused after model switching without re-audit;
+9. the target is reached only by crossing $\mathcal H_{\mathrm{hard}}^c$;
+10. the certified core is operationally empty or has vanishing margin under declared uncertainty without being labeled as such.
+
+**B5 — selection rule.** No universal winner is assumed. Candidates are selected by task:
+
+$$
+\text{hard-safety gate}
+\land
+\text{robust-core gate}
+\land
+\text{return-progress gate}
+\land
+\text{excursion/cost gate},
+$$
+
+with additional stochastic, switched, delay, seed, or moving-target gates when required. The retained stack is Pareto-minimal subject first to zero or controlled false-safe rate and valid return-time coverage, then to kernel size, tightness, observability, and computational cost.
+
+**B6 — heavy-batch freeze and canonical pointer.** RI/return deferred work is owned by §3.5.C.7.A: H3 contains Hamilton--Jacobi, high-dimensional RCI, barrier/CLF/contraction, and certified nonlinear work; H5 contains stochastic exits, hitting times, and moving-target funnels; H2 contains switched/delayed/hybrid reachability; and H6 contains joint seed/SCC/RI rollback and scale transfer. No numerical winner, universal threshold, or theorem promotion is claimed before the unified promotion gates pass.
+
+---
+
+**DPE as viability plus regeneration:**
+
+$$\text{DPE}=\text{hard safety}+\text{robust invariant core}+\text{external calibration}+\text{bounded excursion}+\text{verified finite-time return}+\text{controlled renewal}.$$
+
+A system can therefore fail operational DPE while looking stable under a single metric:
+
+| Apparent condition | Hidden failure |
+|---|---|
+| Global $R<1$ | a local SCC fails its model-matched stability certificate |
+| Internal agreement high | $g_{IE}$ large or increasing |
+| Low activity | $\sigma_{\mathrm{int}}<\sigma_{\min}$: Frozen Rest |
+| Strong isolation | calibration channel below information floor |
+| Strong connectivity | cascade channel above propagation ceiling |
+| Very fast adaptation | noise following or GOI when filtering tradeoff requires lag |
+| Slow adaptation | wrong-frame lock-in |
+
+---
+
+##### §3.5.C.7 Phase-dependent boundary and seeding protocol
+
+DPE uses different connectivity policies at different phases. The same intervention can stabilize one phase and destabilize another.
+
+| Phase | Boundary policy | Seeding policy | Primary test |
+|---|---|---|---|
+| VCZ exploration | Moderate/high filtered permeability | Low-rate diversity seeding | Model-matched SCC gates pass; external gap bounded |
+| Early drift | Reduce high-gain channels selectively | Independent diagnostic probes | Does $g_{IE}$ fall without degrading the declared model-matched SCC margin? |
+| Active Storm | Strong isolation of affected SCCs | No generative seeding into uncontained region | Containment and causal-loop dissolution |
+| Post-containment diagnosis | Directional read-only permeability | Counterfactual/test seeds only | Defect localization and provenance validation |
+| Renewal | Narrow write channels | Small validated seeds with rollback | Seed-type-matched state/structural safety and contamination budget |
+| Reconnection | Gradually increase $\pi$ | Continue only seeds with measured gain | No recurrent SCC; calibration improves |
+| Mature Rest Mode | Background selective exchange | Sparse renewal to prevent Frozen Rest | Adaptability floor $\sigma_{\mathrm{int}}$ and perturbation response |
+
+The protocol is intentionally asymmetric. During Storm containment, downward or outward isolation may coexist with upward diagnostic channels. During recovery, read access may precede write access. A scalar “open/closed” boundary is generally too crude for DPE governance.
+
+---
+
+##### §3.5.C.7.A Unified Pending Experiment Registry — canonical heavy-batch ledger [v3.7.6-PENDREG]
+
+**Canonicality rule.** This subsection is the sole live planning source for deferred DIR-CONN, SCC-STAB, SEED-MOD, and RI-RET experiments. Task-specific benchmark sections retain definitions, candidate families, metrics, and kill rules, but their former execution lists are superseded by the registry below. New standalone pending notes must not be created; new work is added as a row or subtask here.
+
+**Freeze rule.** Every package below remains
+
+$$\boxed{\text{PENDING — CONSOLIDATED HEAVY BATCH}}$$
+
+until the H0 release gate is signed off. No result is implied by its inclusion. In particular, “pending” means unexecuted unless a later version records an explicit run ID, environment lock, artifact path, and audit result.
+
+###### H0. Release gate — mandatory local completion before heavy compute
+
+Heavy execution may begin only after all six conditions pass:
+
+| ID | Required pre-run artifact | Pass condition |
+|---|---|---|
+| H0.1 | Model and object locks | dynamics, state/structure distinction, graph convention, target set, disturbance class, norm, horizon, and claim domain are explicit |
+| H0.2 | Exact counterexample catalogue | each candidate has analytic or controlled low-dimensional matched pairs targeting its known blind spot |
+| H0.3 | Benchmark manifests and schemas | family IDs, deterministic seeds, ground-truth contract, result fields, tolerances, and failure labels are frozen |
+| H0.4 | Code-path audit | lightweight dry runs, unit checks, quantifier/causality audit, reproducibility check, and heavy-run lock all pass |
+| H0.5 | Local-work exhaustion | cheap analytic derivations, exact matrix calculations, low-dimensional sanity tests, and local diagnostic pilots are complete |
+| H0.6 | Resource and checkpoint plan | compute budget, storage, restart/checkpoint policy, failure recovery, and artifact naming are fixed |
+
+**External-compute policy.** GCP or equivalent external compute is not used to compensate for unfinished H0 work. After H0 passes, external jobs are submitted once as a coordinated batch, with shared checkpoints and reusable trajectories/operators across packages.
+
+###### H1. Directed linear and SCC-foundation batch
+
+| ID | Pending work | Primary owner | Required outputs | Depends on |
+|---|---|---|---|---|
+| H1.1 | Large random and adversarial discrete/continuous SCC ensembles | SCC-STAB | false-safe/false-unsafe curves, stability-margin error, compute scaling | H0 |
+| H1.2 | Isospectral or near-isospectral nonnormal matched pairs | DIR-CONN + SCC-STAB | transient-gain discrimination, peak-excursion coverage, eigenvalue-only kill audit | H0 |
+| H1.3 | Global-subcritical/local-supercritical masking families | DIR-CONN + SCC-STAB | weakest-SCC versus global-$R$ predictive comparison, recurrence risk | H0 |
+| H1.4 | Seed-location controllability and correction-energy campaigns | DIR-CONN + SEED-MOD | Gramian/energy ranking, unreachable-mode false-safe rate, placement robustness | H0 |
+| H1.5 | Directed conductance, Chung gap, block-Dobrushin, singular/transient baseline sweep | DIR-CONN | family holdout, scale transfer, Pareto-minimal rate/transient stack | H0, H1.1--H1.3 |
+
+H1 does not claim switching, nonlinear, delay, or hard-set invariance. Its purpose is to settle static/frozen directed foundations and to produce reusable operators for later batches.
+
+###### H2. Switching, delay, asynchronous, and hybrid batch
+
+| ID | Pending work | Primary owner | Required outputs | Depends on |
+|---|---|---|---|---|
+| H2.1 | Joint-spectral-radius and constrained switching-product search | DIR-CONN + SCC-STAB | unsafe-product discovery rate, common/multiple-Lyapunov coverage, product contraction | H1 |
+| H2.2 | Heterogeneous delay and asynchronous-update grids | SCC-STAB + RI-RET | delay margin, overshoot, hard-set violation, return-time inflation | H1 |
+| H2.3 | Edge failure, packet loss, and event-triggered switching | DIR-CONN | window-rootedness/product-contraction robustness, correction outage tolerance | H1, H2.1 |
+| H2.4 | Hybrid guard/reset and topology-changing SCC campaigns | SCC-STAB + SEED-MOD + RI-RET | reset compatibility, post-jump core membership, SCC rebuild correctness | H1, H2.1 |
+| H2.5 | Switching/delay structural-seed suites | SEED-MOD | state-versus-timing-law classification, order transient, rollback cost | H2.1--H2.4 |
+
+Frozen-mode stability must not be promoted across H2 without product-, delay-, or reset-aware evidence.
+
+###### H3. Nonlinear, viability, and certified robust-analysis batch
+
+| ID | Pending work | Primary owner | Required outputs | Depends on |
+|---|---|---|---|---|
+| H3.1 | Nonlinear separatrix, basin-volume, and wrong-attractor scans | SCC-STAB + SEED-MOD | basin capture, separatrix error, local-versus-regional claim audit | H0; H1 baselines where applicable |
+| H3.2 | Low-dimensional Hamilton--Jacobi reach-avoid and minimum-time grids | RI-RET | controlled-accuracy viability kernel, hard-safe minimum return time | H0 |
+| H3.3 | High-dimensional polytopic, zonotopic, interval, and support-function RCI iterations | RI-RET | kernel boundary error, volume/support error, scaling slope | H1.1 |
+| H3.4 | SOS/neural CBF, CLF, Lyapunov, and contraction-metric searches | SCC-STAB + RI-RET | certified residuals, domain coverage, false-safe and false-fast rates | H3.1--H3.3 |
+| H3.5 | IQC/sector/passivity and model-mismatch sweeps | SCC-STAB | assumption-validity audit, robust radius, mismatch failure map | H1; H3.1 |
+| H3.6 | Nonlinear small-gain and monotone-comparison composition | SCC-STAB | compositional certificate coverage and conservatism | H3.1, H3.4--H3.5 |
+
+Simulation non-escape does not count as robust invariance in H3. Numerical certificates must carry residual and domain audits.
+
+###### H4. Seed-object identification, persistence, and order batch
+
+| ID | Pending work | Primary owner | Required outputs | Depends on |
+|---|---|---|---|---|
+| H4.1 | Partial-observation identification of state, structural, and mixed seeds | SEED-MOD | confusion matrix, uncertainty calibration, identification horizon | H0; H1/H3 generators |
+| H4.2 | Persistent-memory and LLM multi-agent seed trials | SEED-MOD | hidden-structure detection, external calibration, recurrence, provenance sensitivity | H4.1 |
+| H4.3 | Dimension-changing node/module insertion ensembles | SEED-MOD + SCC-STAB | embedding compatibility, new-mode/SCC audit, rollback feasibility | H1; H4.1 |
+| H4.4 | Mixed-order policy and non-commutativity maps | SEED-MOD + RI-RET | $\mathsf S_x\circ\mathsf S_\vartheta$ versus $\mathsf S_\vartheta\circ\mathsf S_x$, peak risk, cost, return | H3; H4.1--H4.3 |
+| H4.5 | Contaminated-seed, independence, and rare-recurrence stress tests | SEED-MOD | agreement/calibration divergence, contamination gain, recurrence probability | H4.1--H4.4; H5 methods when rare |
+| H4.6 | State-seed versus structural-seed observational twins | SEED-MOD | matched-pair discrimination beyond short-horizon output | H4.1; H1/H3 |
+
+The primary veto in H4 is **structural-as-state false safety**: any method that skips graph/SCC/model re-audit after a structural intervention is rejected as a DPE write gate.
+
+###### H5. Stochastic exit, hitting time, and moving-target recovery batch
+
+| ID | Pending work | Primary owner | Required outputs | Depends on |
+|---|---|---|---|---|
+| H5.1 | Rare-event exit and recurrence estimation | RI-RET + SEED-MOD | confidence-calibrated exit/recurrence probabilities, rare-event sensitivity | H3; H4.5 where seeded |
+| H5.2 | Expected, quantile, and worst-case-compatible hitting-time study | RI-RET | clear guarantee labels, coverage, underprediction rate | H3.2--H3.4 |
+| H5.3 | Stochastic barrier and Foster--Lyapunov pairing | RI-RET | safety probability plus return/hitting-time bounds | H5.1--H5.2 |
+| H5.4 | Moving-target and time-varying recovery-funnel optimization | RI-RET | trackable-speed threshold, funnel feasibility, lag and terminal margin | H2.2; H3.2--H3.4 |
+| H5.5 | Colored, correlated, and adversarial-bounded disturbance transfer | DIR-CONN + SCC-STAB + RI-RET | disturbance-to-disagreement gain, robust radius, return inflation | H1; H2/H3 as applicable |
+
+Expected or percentile return results in H5 must never be relabeled as worst-case return guarantees.
+
+###### H6. Integrated DPE and scale-transfer batch
+
+| ID | Pending work | Primary owner | Required outputs | Depends on |
+|---|---|---|---|---|
+| H6.1 | Joint seed/SCC/robust-invariance interaction and rollback | all four benchmarks | full gate trace, causal rollback, post-seed SCC rebuild, hard safety | H1--H5 relevant subsets |
+| H6.2 | Contain → diagnose → prune → seed → reopen schedules | DIR-CONN + SEED-MOD + RI-RET | recurrence, calibration gain, peak excursion, permeability trajectory | H2--H5 |
+| H6.3 | Full-DPE scale transfer across size, density, modularity, and time-scale ratios | all | threshold transfer, worst-family regret, computational scaling | H6.1--H6.2 |
+| H6.4 | Cross-domain validation: synthetic MAS, LLM MAS, organization/market/biological proxies where available | all | domain-specific estimator validity and explicit non-transfer failures | H6.3 |
+| H6.5 | Final minimal-gate selection and theorem-candidate packet | all | Pareto-minimal stack, assumptions, certificates, killed routes, unresolved gaps | H6.1--H6.4 |
+
+H6 is the only batch allowed to claim system-level DPE evidence. Subsystem success in H1--H5 cannot be silently promoted to full DPE.
+
+###### Unified result contract
+
+Every heavy run must emit a common record containing at least:
+
+```text
+run_id, code_commit, environment_lock, deterministic_seed,
+model_class, object/seed_class, graph convention, target/reference,
+disturbance and information pattern, candidate/certificate family,
+claim type and domain, solver tolerances and residuals,
+false-safe / false-unsafe labels, matched-pair ID,
+family/size holdout split, peak excursion, integral excursion,
+robustness radius, return-time guarantee type and coverage,
+control/intervention/rollback cost, runtime, memory, checkpoint path,
+and final epistemic status.
+```
+
+The shared primary outputs are
+
+$$\mathrm{FS}_{\mathrm{safe}},\qquad
+\mathrm{FF}_{T},\qquad
+G_{\mathrm{peak}},\qquad
+T_{\mathrm{rec}},\qquad
+\delta_{\mathrm{rob}},\qquad
+P_{\mathrm{recurrence}},\qquad
+C_{\mathrm{intervention}},$$
+
+with model-specific additions. No aggregate score may hide a veto failure.
+
+###### Promotion and stop rules
+
+A candidate or stack is not promoted unless all applicable gates pass:
+
+1. **False-safe gate:** zero or predeclared controlled false-safe rate on targeted counterexamples.
+2. **Bound-validity gate:** claimed worst-case safety/return bounds cover ground truth within tolerance.
+3. **Matched-pair gate:** the candidate separates the failure mechanism it claims to detect.
+4. **Family-holdout gate:** threshold and ranking survive generator-family holdout.
+5. **Scale-transfer gate:** margins and error do not collapse outside fitted sizes/densities.
+6. **Causality gate:** policies do not use future disturbance or unavailable latent structure.
+7. **Residual gate:** optimization/PDE/SOS/JSR certificates carry independently checked residuals.
+8. **Claim-scope gate:** local, regional, stochastic, expected, and worst-case claims remain distinct.
+
+Execution stops early for a package when a targeted analytic counterexample kills the candidate, a cheaper candidate dominates it on every unique task, or the required observability is unavailable in the intended system. Killed candidates may remain as diagnostics or theorem-side sufficient screens, but are not carried into H6 as live universal gates.
+
+###### Planned execution order after freeze release
+
+```text
+H0 local release gate
+  -> H1 static/frozen directed and SCC foundations
+  -> H2 switching/delay/hybrid products
+  -> H3 nonlinear/viability/certified robustness
+  -> H4 seed identification and intervention order
+  -> H5 stochastic and moving-target recovery
+  -> H6 integrated DPE and scale transfer
+```
+
+Independent subtasks may run in parallel only when they share frozen generators and cannot invalidate one another's model locks. The registry is updated in place with `PENDING`, `RUNNING`, `BLOCKED`, `KILLED`, or `PASS/FAIL-AUDITED`; no additional planning note is created.
+
+---
+
+##### §3.5.C.8 Relation to existing equilibrium theories
+
+DPE should be compared carefully with established theories rather than presented as replacing them.
+
+| Existing framework | Equilibrium question | DPE extension |
+|---|---|---|
+| Nash / Markov perfect equilibrium | Can one agent profitably deviate? | Is the resulting strategic equilibrium dynamically safe, externally calibrated, and topologically containable? |
+| Correlated / coarse correlated equilibrium | Is deviation from a recommendation or long-run distribution profitable? | Can the coordination channel remain informative without becoming a cascade channel? |
+| Consensus theory | Do agent states or estimates agree? | Is agreement preserving diversity and external correctness, or producing zero-buffer wrong-frame lock-in? |
+| Potential games | Does a common potential cease improving? | Are local potential minima inside the viable externally calibrated basin? |
+| Mean-field equilibrium | Are individual best responses consistent with the population distribution? | Do local subpopulations and SCCs remain safe when the global mean hides heterogeneity? |
+| Viability / controlled invariant sets | Can constraints be satisfied indefinitely? | Adds moving external calibration, selective renewal, and internal–external lag |
+| Non-equilibrium steady states | Are long-run fluxes balanced? | Adds causal partition topology and governed information permeability |
+| Metastability / edge of chaos / SOC | Does the system persist near a critical regime? | Adds operational rules for isolation, seeding, and phase-dependent reconnection |
+
+The originality claim, if supported, is therefore not that VST is the first theory to combine order and disorder or to study non-equilibrium stability. The stronger and more defensible claim is that VST attempts to integrate:
+
+```text
+time-explicit flow balance
++ moving viability region
++ directional degeneracy
++ causal SCC containment
++ selective boundary permeability
++ validated regenerative seeding
++ internal/external calibration lag
+```
+
+into one operational multi-agent equilibrium architecture.
+
+---
+
+##### §3.5.C.9 Falsifiable predictions and open calibration problems
+
+**Falsifiable Prediction DPE-1 — local-supercritical masking.** Systems with the same global $R<1$ but different worst model-matched SCC stability margins will show different recurrence risk; recurrence will be better predicted by the weakest local SCC certificate than by the global average. In the frozen discrete-time linear subclass this reduces to comparing $\max_Q\rho(K_Q)$.
+
+**Falsifiable Prediction DPE-2 — U-shaped lag risk.** Storm or governance-oscillation risk as a function of internal–external lag will be U-shaped: both near-zero lag and excessive lag will be worse than an intermediate range.
+
+**Falsifiable Prediction DPE-3 — interior permeability advantage.** Under non-zero environmental drift and non-zero cascade susceptibility, a filtered intermediate permeability will yield longer VCZ residence time than both complete closure and unrestricted opening.
+
+**Falsifiable Prediction DPE-4 — seed object and quality dominate aggregate volume.** After containment, equal aggregate seed fluxes will have different outcomes depending on whether they are state, structural, or mixed interventions. Within a fixed seed class, low-volume high-independence seeds are predicted to reduce $g_{IE}$ with lower recurrence than equal-volume unfiltered or similarity-selected seeds.
+
+**Falsifiable Prediction DPE-5 — agreement/calibration divergence.** Rising internal agreement combined with non-decreasing $g_{IE}$ will predict wrong-frame lock-in earlier than internal instability indicators alone.
+
+**Falsifiable Prediction DPE-6 — sequencing non-commutativity.** The sequence contain → diagnose → prune → seed → reconnect will produce lower recurrence than permutations that seed before containment or reconnect before seed-type-matched state/structural testing.
+
+**Open calibration problems:**
+
+1. Define domain-specific estimators for $g_{IE}$ and distinguish measurement delay from true adaptation lag.
+2. Estimate directed-correctability and model-matched SCC stability certificates in systems whose graph and local dynamics change during interaction.
+3. Calibrate interface-specific $\pi^{\mathrm{info}}$ and $\pi^{\mathrm{cascade}}$ without assuming a single scalar channel.
+4. Construct separate seed-quality scores $q_x$ and $q_\vartheta$ that reward independence and calibration rather than mere agreement.
+5. Determine when a transition window is admissible and how excursion budgets scale with system size.
+6. Test whether the conditional convex tradeoff behind Proposition 3.5.C.1 holds in LLM multi-agent systems, organizations, markets, and biological networks.
+7. Calibrate observability thresholds for distinguishing state, structural, and mixed seeds when the underlying architecture is only partially observed.
+8. Determine which seed-order policies minimize transient risk and rollback cost under non-commuting state and structural interventions.
+
+---
+
+##### §3.5.C.10 One-line compression
+
+> **Dynamic Partitioned Equilibrium is the regime in which connected interiors remain correctable, dangerous loops remain isolated or subcritical, external calibration is tracked with a calibrated admissible lag, and controlled destruction and selective seeding regenerate the system without allowing instability to accumulate.**
+
+---
 
 **The upper layer does not require an external entity — internalized meta-structure:**
 
@@ -2320,10 +4308,11 @@ VCZ is therefore the R ≈ 1 region:
 >
 > $$\mathcal{V} := \bigl\{\,(n, C, R) : R < 1,\; S(t) < S_c,\; \tfrac{dC}{dn} > \tfrac{2\beta C}{n}\,\bigr\}$$
 >
-> with the additional Lyapunov characterization: under the Lyapunov-like functional $V = \ln\Phi$ (§24.3, Theorem 24.3.1), $\mathcal{V}$ corresponds to the region where $dV/dt < 0$ under governance activity (DDD), ensuring the trajectory remains bounded. Equivalently, $\mathcal{V}$ is:
-> - a **basin of attraction** around the fixed point $x^*$ of the four-variable ODE system (§24, FCC Theorem 24.1.1) — §3.4.4 Fixed Point Note identifies VCZ as the basin around $x^*$;
-> - a **positively invariant set** in the phase portrait when the containment-scaling dominance condition holds: the system cannot exit $\mathcal{V}$ under bounded perturbations unless $n$ grows above $n^*$ or $C$ falls below $C_{\min}$;
-> - the **distortion-minimal regime** in the AGM embedding (§4.1.B, AGM v2.7): $D(t) \to D_{\min}$ within $\mathcal{V}$, connecting the VST geometric definition to the AGM scalar distortion measure.
+> The scalar inequalities above define a **candidate VCZ region**. Additional dynamical properties require separate hypotheses and verification:
+> - if a Lyapunov or barrier certificate establishes $dV/dt<0$ on the relevant boundary under DDD, a subset may be certified as attracting or controlled invariant;
+> - if the FCC fixed point $x^*$ is asymptotically stable and the candidate region lies in its basin, that verified subset may be interpreted as an attracting kernel around $x^*$; the VCZ is not identified with the entire basin by definition;
+> - robustness to bounded perturbations requires a robust-invariance or input-to-state stability argument, not the scalar inequalities alone;
+> - the AGM embedding proposes $D(t)\to D_{\min}$ inside the viable regime, but this remains a cross-model condition to be verified for the chosen architecture.
 >
 > The three conditions in $\mathcal{V}$ are jointly necessary: $R < 1$ ensures subcriticality; $S < S_c$ ensures the governance-level instability threshold is not crossed; containment-scaling dominance ensures that expansion does not increase net instability. The VCZ is not a point equilibrium but a **region with positive volume** whose boundary $\partial\mathcal{V}$ is the governance critical manifold $\mathcal{M}_c$ (master N.9 Pentaequivalence).
   The zone where exploration dimensionality n is maximized
@@ -8487,35 +10476,43 @@ RT provides the operational grounding for each geometric region:
 
 ---
 
-> **Connection to Unified Dynamical System (v3.1):**
+> **Connection to Unified Dynamical System — precision correction (v3.7.1):**
 >
-> The flow equilibrium condition E[dS/dt] = 0 defined in §3.4.4 is the *observational* characterization of structural equilibrium. §28.0 establishes its *generative* counterpart.
+> The flow equilibrium condition $\mathbb E[dS/dt]=0$ in §3.4.4 is an observational flux-balance property. The four-variable system in §28.0 supplies one generative mechanism that can realize such a balance.
 >
-> **The flow equilibrium E[dS/dt] = 0 corresponds exactly to the critical fixed point x* = (C*, G*, R*, M*) of the four-variable dynamical system in §28.0.2.** Specifically:
+> Let $x^*=(C^*,G^*,R^*,M^*)$ satisfy $f(x^*)=0$. If $S$ is differentiable at $x^*$, the forcing statistics are stationary, and $x(t)\equiv x^*$ is an admissible constant solution with non-zero exploration forcing, then
 >
-> ```
-> Flow equilibrium (§3.4.4):   E[dS/dt] = 0, exploration > 0
+> $$x(t)\equiv x^*\quad\Longrightarrow\quad\mathbb E[dS/dt]=0.$$
+>
+> The converse is false without additional identifiability and invariance assumptions:
+>
+> $$\mathbb E[dS/dt]=0\quad\nRightarrow\quad x(t)\equiv x^*.$$
+>
+> Periodic orbits, quasiperiodic motion, stationary stochastic laws, and average cancellation can all satisfy flow balance without being the fixed point.
+>
+> ```text
+> Flow equilibrium (§3.4.4):   long-run generation and dissipation balance
 >
 > Four-variable fixed point (§28.0.2):
->   Ċ = 0  →  C* determined by governance balance
->   Ġ = 0  →  G* = u / (α − κ_C C* + ηM*)  (storm geometry stable)
->   Ṙ = 0  →  R* = [aM* − b(M*)²] / P     (RSS index stable)
->   Ṁ = 0  →  M* = [ρ_gov(1−R*) + σG* + χC*] / ω  (governance stable)
+>   Ċ = 0, Ġ = 0, Ṙ = 0, Ṁ = 0
 >
-> Correspondence:
->   dS/dt ≈ 0  ⟺  G* and C* simultaneously at equilibrium
->   exploration > 0  ⟺  u > 0  (non-zero storm geometry excitation)
+> Valid relation:
+>   verified constant fixed-point trajectory  =>  flow balance
+>   flow balance alone                         !=> fixed point
 > ```
 >
-> **Implication for VCZ interpretation:** The VCZ is not merely the region where S < S_c. It is the basin of attraction around the critical fixed point x* — the set of initial conditions from which trajectories converge to x* rather than diverging. VCZ size = basin of attraction volume; Rest Mode = x* reached with stable eigenstructure.
+> **Implication for VCZ interpretation:** When $x^*$ is asymptotically stable and a verified region $\mathcal K$ lies inside its basin of attraction, $\mathcal K$ may serve as an attracting VCZ kernel. VCZ is not defined to equal the entire basin, and it may in principle contain or be organized around other invariant objects. Rest Mode therefore means verified viable operation with appropriate eigenstructure and recovery properties, not necessarily exact arrival at $x^*$.
 >
-> This connection elevates the equilibrium concept from a statistical average to a specific point in the four-variable state space with computable stability properties (§28.0.4 Jacobian analysis).
+> This correction preserves the fixed point as an important analytic anchor while preventing a scalar time-average from being identified with a unique state-space point.
 
 ---
 
 ### 3.5 Vector Convergence Zone (VCZ) — The Anti-Storm
 
 > **Terminology — VCZ:** The *Vector Convergence Zone* is not a stable equilibrium, resting state, or goal endpoint. It is a dynamically maintained operating regime — a region where the system operates slightly below criticality (R ≈ 1⁻) with four-variable balance: exploration dimensionality, stability, diversity, and coordination simultaneously maintained. Entering VCZ is not "success achieved"; it is "the regime where governance cost drops to near-zero while exploration value is maximized." Active maintenance is still required.
+
+> **v3.7 topological-temporal qualification:** The scalar conditions defining $\mathcal V$ are necessary but not sufficient for full operational equilibrium. A trajectory may satisfy global $R<1$ and $S<S_c$ while containing a locally supercritical SCC, an information-starved isolated module, a wrong-frame internal consensus, excessive internal–external lag, or Frozen Rest. Full operational membership therefore requires the Dynamic Partitioned Equilibrium trajectory conditions in §3.5.C: module-level correctability, SCC-local subcriticality, feasible selective permeability, bounded calibration gap, calibrated adaptation lag, a preserved adaptability floor $\sigma_{\mathrm{int}}\geq\sigma_{\min}$, and verified return after admissible perturbations.
+
 
 Vector Storm is the instability regime. Its structural opposite is the **Vector Convergence Zone (VCZ)** — the stable attractor region that a well-governed system naturally tends toward, and from which small perturbations can be absorbed and recovered.
 
@@ -8526,7 +10523,7 @@ A Vector Convergence Zone is a region of vector space where:
 3. Deviations from the zone are self-correcting — return trajectories exist and are traversable at low cost
 4. The zone is self-similar across fractal layers: the same convergence structure repeats at system, agent, and intra-agent levels
 
-This is not a fixed point. It is a **stable manifold** — a region with volume, not a position. The system can move within the zone freely. Only exits from the zone require corrective energy.
+This is not a fixed point. It is intended as a **positive-volume operating region**. The mathematically appropriate designation depends on what has actually been proved: a trapping region if forward invariance is established, a controlled-invariant or viability region if suitable governance actions keep trajectories inside, and an attracting region only if return or attraction is verified. “Stable manifold” is not used here, because a stable manifold is a distinct dynamical-systems object and need not have positive volume. The system may move within the region; claims about low-cost return from its boundary require a separate recovery proof.
 
 **Vector Equilibrium Geometry — Why VCZ Is a Region, Not a Point [v2.0]:**
 
@@ -9091,7 +11088,7 @@ Orbital proximity:
     → perturbation shifts orbit slightly, not catastrophically
 
   DFG interpretation:
-    Mature system is on the stable manifold where:
+    Mature system inhabits a verified viable operating region where:
       viable trajectories cluster
       goals are nearby by construction
       environmental change = small orbital perturbation
@@ -13052,7 +15049,7 @@ This provides a computational criterion for system health: measure the storm dis
 13. The lowest fractal layer retains a residual degradation state. Zero-storm is not a valid design target.
 14. The attracting/distracting cycle operates continuously. Distracting is structurally more expensive than attracting.
 15. Vector Storm operates at two scales simultaneously — intra-agent and inter-agent — consistent with fractal architecture. The mechanism is identical; only the scope of impact differs.
-16. The structural opposite of Vector Storm is the Vector Convergence Zone — a stable manifold where global solution structure is replicated as local attractors at every scale, exploration is maximized, and governance cost is minimized.
+16. The structural opposite of Vector Storm is the Vector Convergence Zone — a candidate viable and attracting operating region where global solution structure is replicated as local attractors at every scale, exploration is maximized, and governance cost is minimized. Invariance and attraction require separate verification.
 17. Fractal governance optimizes for simultaneous VCZ at system and agent levels. This is the condition of minimum risk, minimum cost, and maximum utility — not a fixed equilibrium but a dynamically maintained attractor region.
 18. φ (value yield per unit of exploration) is an explanatory variable in the governance objective function, not a judgment variable (v1.1, aligned with Recovery Theory v1.7). φ ≈ P(exploration → stable vector). φ explains why governance states produce their observed outcomes; governance decisions use directly measurable proxies (f_esc, ρ, buffer thickness, entropy). n is recoverable; φ is architectural. Governance errors that damage φ are more costly to reverse than governance errors that reduce n.
 19. VCZ is primarily a φ-maximization zone, not a stability zone. Stability is the byproduct of φ maximization, not the primary objective. The difference in utility between well-governed and poorly-governed systems is explained more by φ than by n.
@@ -21687,6 +23684,18 @@ Anderson, P. W. (1972). More is different. *Science*, 177(4047), 393–396.
 Friston, K. (2010). The free-energy principle: A unified brain theory? *Nature Reviews Neuroscience*, 11(2), 127–138.
 
 Olfati-Saber, R., & Murray, R. M. (2004). Consensus problems in networks of agents with switching topology and time-delays. *IEEE Transactions on Automatic Control*, 49(9), 1520–1533.
+
+Moreau, L. (2005). Stability of multiagent systems with time-dependent communication links. *IEEE Transactions on Automatic Control*, 50(2), 169–182.
+
+Chung, F. R. K. (2005). Laplacians and the Cheeger inequality for directed graphs. *Annals of Combinatorics*, 9, 1–19.
+
+Gaubert, S., & Qu, Z. (2014). Dobrushin's ergodicity coefficient for Markov operators on cones. *Integral Equations and Operator Theory*, 81, 127–150.
+
+Ipsen, I. C. F., & Selee, T. M. (2011). Ergodicity coefficients defined by vector norms. *SIAM Journal on Matrix Analysis and Applications*, 32(1), 153–200.
+
+Asllani, M., Lambiotte, R., & Carletti, T. (2018). Structure and dynamical behavior of non-normal networks. *Science Advances*, 4(12), eaau9403.
+
+Apkarian, P., & Noll, D. (2020). Optimizing the Kreiss constant. *SIAM Journal on Control and Optimization*, 58(6), 3342–3362.
 
 Conley, C. C. (1978). *Isolated Invariant Sets and the Morse Index*. American Mathematical Society.
 
