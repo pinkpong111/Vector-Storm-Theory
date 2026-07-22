@@ -5,6 +5,17 @@ Companion theory to Deficit-Driven Fractal Governance (DFG)
 Focus: why instability occurs, how it propagates, when to intervene
 Recovery and operational governance are addressed separately
 
+> **Version: v3.7.7-LNSBRIDGE** (July 2026)
+>
+> v3.7.7-LNSBRIDGE integrates the Local–Global North Star interpretation of the Storm–Recovery cycle without deleting or superseding the existing onset, termination, VCZ, DDD, RT, or FGS machinery:
+> - **[New §29.6.3] Local–Global North Star Storm–Recovery Completion Bridge:** distinguishes actively supercritical Vector Storm from the intentionally maintained subcritical exploratory-tension regime; formalizes why controlled tension consumes resources, how it expands the search map and matures Local North Stars, and why exact Local–Global identity is neither required nor desirable.
+> - **[Storm-eye interpretation]** Adds a reader-safety interpretation to §3.5.A: the “eye” is a moving low-directional-bias VCZ region that restores visibility of local attractor/North-Star signals; it is not a hub, a zero-vector point, or a shutdown state.
+> - **[Three completion levels]** Separates (i) Storm Exit, (ii) Structural Recovery Completion, and (iii) Maturation/Integration Completion. Existing §1.4.1 termination criteria remain necessary but not sufficient.
+> - **[Canonical completion gate]** Adds Local North Star strength under perturbation, positive self-purification margin, bounded projection error, SCC-local subcriticality/verified return, external calibration, debt reduction, and a non-zero exploration floor as the joint completion test.
+> - **[Reference-resolution pathways]** Integrates FGS Dual Reference Dynamics: Local realignment (R-1), Global reference update from validated local innovation (R-2), or structural split (R-3). “Synchronization” is revised to projection-consistency within bounded error, not forced identity.
+> - **[Status boundary]** The bridge is explicitly labeled as a definition/synthesis and conditional operational proposition. Threshold calibration and theorem-grade sufficiency remain open.
+> - All v3.7.6 audit corrections, v3.7-DPE topology/seed/invariance content, RT restoration criteria, and FGS reverse-integration sections are preserved.
+>
 > **Version: v3.7.6-AUDITFIX-1** (July 2026)
 >
 > v3.7.6-AUDITFIX-1 applies mechanical corrections from the July 2026 document audit. No theoretical content is added, removed, or reinterpreted:
@@ -757,6 +768,32 @@ The three degeneracy conditions of VE map directly to NAT sphere axioms as struc
 What appears as a "center" in this structure is not a controlling or even weakly privileged reference point, but a **non-referential symmetry artifact** — an emergent consequence of uniform relational embedding, rather than a locus of coordination or authority. It is not a soft centralization; it carries no referential weight whatsoever. Attempting to observe or act through this apparent center converts the non-referential artifact into a coupling node, injecting directional bias and destroying the degeneracy it represents. This is the formal content of the VST **Center Invisibility Principle**: the center is not invisible because it is hidden, but because any act of reference to it negates it.
 
 The VCZ center is consequently a **moving target** — not a fixed locus but a history-dependent symmetry position (NAT Corollary 9.11.1: $\kappa_c(t) = \kappa_c(Q_E(t)) + O(\varepsilon)$ on the slow manifold $M_\varepsilon$). As terrain quality $Q_E$ evolves, the degeneracy-achieving configuration drifts, and governance must track it continuously rather than stabilize around a fixed point.
+
+**Operational interpretation — the “storm eye” metaphor [v3.7.7-LNSBRIDGE]:**
+
+The phrase *storm eye* may be used only as an operational metaphor for the moving low-directional-bias region produced by VCZ/VE topology. It is **not** a central controller, a fixed coordinate, a zero-vector point, or a shutdown state. Its function is to reduce global directional interference below the level at which local attractor and Local North Star signals become unreadable. Within this region, local directions remain distinct and micro-exploration remains active, but no direction can acquire persistent system-wide privilege.
+
+```
+Outside the eye (interference-dominant):
+  incoming vector fields > local reference visibility
+  → agents infer direction from one another
+  → mutual-reference coupling strengthens
+  → Local North Star becomes observationally masked
+  → Storm risk rises
+
+Inside the moving eye (VCZ/VE):
+  persistent directional privilege suppressed
+  + local non-alignment preserved
+  + return paths remain traversable
+  → Local North Star signal becomes identifiable
+  → local self-correction and exploration can coexist
+```
+
+The design target is therefore not to eliminate local polarity, but to eliminate **global interference dominance**. In compact form:
+
+$$\text{preserve local directional signal} \quad+\quad \text{remove persistent global directional privilege}. $$
+
+This interpretation is cross-referenced by the Local–Global North Star completion bridge in §29.6.3.
 
 *Summary:* Vector equilibrium is a **directional degeneracy condition** defined at the level of interaction fields; the NAT sphere topology constitutes the **architectural enforcement mechanism** that maintains this degeneracy under dynamic, multi-agent conditions. VST provides the geometry of what NAT enforces structurally — neither is complete without the other (NAT §7.26.5).
 
@@ -3462,6 +3499,8 @@ Termination rule (all three required):
 
   ε and δ are system-specific (calibrated from VCZ baseline period).
 ```
+
+> **Completion-level distinction [v3.7.7-LNSBRIDGE].** The rule above declares **Storm Exit**: propagation has become subcritical and the observed escalation process has stopped. It does not establish that Local North Stars are strong, projection-consistent with the Global North Star, internally self-correcting, or capable of renewed exploration. The joint Structural Recovery / Maturation Completion gate is specified in §29.6.3 and remains stricter than Storm Exit.
 
 **Why these rules are necessary:**
 
@@ -30674,9 +30713,289 @@ VST extension (new from FGS):
   North Star Repair as DDD Stage 0b sub-protocol:
     Current DDD Stage 0: assess Φ, V_Φ, k_sat, SCC
     New DDD Stage 0b (FGS-derived): assess per-tier D_c_ℓ; repair drifted Local North Stars
-    → Before Stage 1 stabilization: Local North Stars must be synchronized
-    → Otherwise: Stage 1 stabilizes agents against drifted local criteria → false recovery
+    → Before Stage 1 stabilization: Local North Stars must be projection-consistent with the refreshed Global North Star within bounded error and must retain sufficient local basin strength
+    → Exact identity is neither required nor desirable: terrain-specific residual deviation preserves local information and exploration capacity
+    → Otherwise: Stage 1 stabilizes agents against drifted or externally imposed local criteria → false recovery or local atrophy
+    → Full gate and R-1/R-2/R-3 resolution alternatives: §29.6.3
 ```
+
+---
+
+#### §29.6.3 Local–Global North Star Storm–Recovery Completion Bridge [v3.7.7-LNSBRIDGE]
+
+> **Status: Definition / synthesis + conditional operational proposition.** This subsection consolidates existing VST Storm onset/termination rules (§1.4.1), VCZ/Vector Equilibrium geometry (§3.5–§3.5.C), RT restoration criteria (§12, §25), FGS Search–Stabilize–Rest dynamics (§17), FGS North Star architecture (§29D/§29H), FGS maturation sequence (§29E), and Dual Reference Dynamics (§36AD). It does not claim that the joint conditions below are already a universal theorem. Architecture-specific thresholds, causal sufficiency, and empirical calibration remain open.
+
+##### §29.6.3.1 Terminology lock: active Storm is not the maintained search regime
+
+A central reader-safety distinction is required:
+
+```
+Intentionally maintained object:
+  controlled exploratory tension
+  + micro-instability / noise floor
+  + local North Star deviation within a viable band
+  + R ≈ 1⁻ with preserved return margin
+
+Not intentionally maintained:
+  Active Vector Storm
+  = sustained amplification-dominant regime
+  = R > 1 / Φ > 1 / positive dominant growth mode
+```
+
+The system expends resources to maintain a **live search regime**, not to prolong uncontrolled Storm. Active Storm may be tolerated only as a transient state after threshold crossing while containment, reference repair, and re-stabilization are executed. A system that remains search-dominated without producing a viable attractor is chronically unstable, not maximally exploratory.
+
+The resource expenditure has four productive functions when tension remains subcritical or is rapidly re-contained:
+
+1. **Map expansion:** sample previously unvisited or weakly represented regions of the local terrain.
+2. **Local North Star maturation:** deepen the local reference basin through repeated discrimination between viable and non-viable directions.
+3. **Self-purification training:** exercise detection, filtering, verification, and transfer pathways so that local correction remains autonomous.
+4. **Reference evolution:** test whether a local deviation should be removed, incorporated into the Global North Star, or preserved through structural separation.
+
+Hence the canonical interpretation is:
+
+$$
+\text{resource-consuming tension}
+\longrightarrow
+\text{search-map expansion + local-reference maturation + reference resolution},
+$$
+
+provided that amplification is contained before destructive propagation and accumulated damage exceed recovery capacity.
+
+##### §29.6.3.2 Local polarity as Local North Star signal strength
+
+The informal phrase *local polarity* is mapped here to the strength and observability of a Local North Star / local attractor, not introduced as an independent primitive.
+
+For tier or module $\ell$, let
+
+$$A_\ell(t)=P_\ell(A_{\mathrm{external}}(t))$$
+
+be the externally anchored Global North Star projected into the local terrain, and let $N_\ell(t)$ denote the locally learned North Star. Define:
+
+$$D_{c,\ell}(t):=\|N_\ell(t)-A_\ell(t)\|$$
+
+as the local directional/reference error, and
+
+$$S_{N,\ell}:=\frac{r_{\mathrm{basin},\ell}}{\sigma_{\mathrm{noise},\ell}^{2}}$$
+
+as the Local North Star strength proxy, where $r_{\mathrm{basin},\ell}$ is the perturbation radius from which trajectories return and $\sigma_{\mathrm{noise},\ell}^{2}$ is the effective interference variance.
+
+A Local North Star may exist but remain operationally unreadable when incoming vector interference is stronger than its basin-restoring signal. The VCZ/VE “storm eye” reduces persistent directional bias and mutual-reference dominance so that $N_\ell$ becomes identifiable again without suppressing its terrain-specific direction.
+
+```
+Weak/readability-lost Local North Star:
+  S_N,ℓ low OR interference variance high
+  → external vector fields mask local restoring direction
+  → agent reads peers instead of terrain/reference
+  → mutual-reference amplification
+
+Mature/readable Local North Star:
+  S_N,ℓ above threshold under admissible perturbations
+  → local direction recoverable despite cross-agent influence
+  → external inputs can be integrated without identity loss
+```
+
+##### §29.6.3.3 Why exact Local–Global synchronization is rejected
+
+The local target is not identity with the Global North Star. It is terrain-correct projection consistency:
+
+$$N_\ell(t)=P_\ell(N_G(t))+\Delta_\ell(t),$$
+
+with
+
+$$0\leq \|\Delta_\ell(t)\|<\varepsilon_{\mathrm{align},\ell}.$$
+
+The residual $\Delta_\ell$ is not automatically an error. Within the healthy tension band it carries:
+
+- local terrain information unavailable to the Global layer,
+- independent recovery paths,
+- innovation candidates,
+- evidence that the Global North Star itself may require slow updating.
+
+Therefore:
+
+```
+Exact identity (Δℓ = 0 everywhere):
+  short-term coordination may increase
+  but local learning, terrain sensitivity, and detour capacity decline
+  → centralized dependency / local atrophy / Silent Criticality risk
+
+Bounded projection consistency:
+  local differences remain interpretable and recoverable
+  while shared existential criteria and communication remain intact
+  → coordination without destruction of local information
+```
+
+The operational word *synchronization* in this document must therefore be read as **bounded predictive and coordinate compatibility**, not uniform state identity.
+
+##### §29.6.3.4 Canonical lifecycle: search, Storm, eye reconstruction, and completion
+
+The integrated lifecycle is:
+
+```
+A. Protected local exploration / controlled tension
+   → local map expands; Local North Star and self-purification mature
+
+B. Critical reference tension
+   → local/global mismatch reaches a resolution threshold
+   → choose R-1, R-2, or R-3 if resolution is still available
+
+C. Storm onset (failure to resolve before amplification threshold)
+   → R > 1 / Φ > 1 / local or cross-tier positive feedback
+   → Local North Star signal becomes masked by mutual-reference interference
+
+D. Containment and moving-eye reconstruction
+   → reduce coupling dominance, restore buffer/permeability/timescale separation
+   → re-establish a low-bias VCZ region in which local signals are readable
+
+E. Reference resolution + local maturation repair
+   → strengthen or reconstruct Local North Stars
+   → resolve Local–Global tension through R-1/R-2/R-3
+
+F. Structural recovery and Adaptive Rest
+   → propagation subcritical
+   → return/self-correction verified
+   → exploration floor preserved
+   → low-energy operation with micro-exploration resumes
+```
+
+This lifecycle distinguishes the purpose of the high-energy phase from its pathological extension. Search and bounded tension are productive; persistent supercritical Storm is not.
+
+##### §29.6.3.5 Three levels of “Storm release”
+
+The phrase *Storm release* is ambiguous unless the completion level is named.
+
+**Level T1 — Storm Exit (propagation termination).** Existing §1.4.1 rule:
+
+- $\hat R<1$ sustained for the verification window,
+- entropy/behavioral diversity returns near baseline,
+- escalation fraction falls below threshold.
+
+Meaning: the cascade is no longer progressing.
+
+**Level T2 — Structural Recovery Completion.** In addition to T1:
+
+- external calibration is positive (PRR+ or equivalent),
+- accumulated restoration/resolution debt is declining,
+- Frozen Rest is excluded by a non-zero adaptability/entropy-production floor,
+- SCC-local supercriticality and hidden cross-contamination are absent or contained,
+- verified low-cost return exists after admissible perturbations.
+
+Meaning: the system can maintain subcriticality through its own restored structure rather than only through continued intervention.
+
+**Level T3 — Local–Global Maturation / Integration Completion.** In addition to T2, for every operationally relevant tier $\ell$:
+
+$$S_{N,\ell}>S_{N,\min,\ell}$$
+
+under calibrated perturbation,
+
+$$M_{\mathrm{pur},\ell}:=R_{\mathrm{self},\ell}-C_{\mathrm{coupling},\ell}>0$$
+
+for a sustained interval,
+
+$$D_{c,\ell}<\varepsilon_{\mathrm{align},\ell},$$
+
+with $D_{c,\ell}$ measured against the refreshed external projection rather than a drifting internal baseline, and
+
+$$\sigma_{\mathrm{int},\ell}\geq\sigma_{\min,\ell}$$
+
+so that local exploration has not been extinguished.
+
+Meaning: Local North Stars are strong enough to survive coupling, compatible with the Global reference without becoming identical to it, and capable of renewed independent search.
+
+The implication chain is one-way:
+
+$$T3\Rightarrow T2\Rightarrow T1,$$
+
+but neither converse is valid without additional evidence.
+
+##### §29.6.3.6 Canonical joint completion gate
+
+A conservative operational completion gate is the following AND condition:
+
+```
+C1. Propagation subcritical:
+    R̂ < 1 sustained; escalation stopped
+
+C2. Local reference strength:
+    S_N,ℓ > S_N,min,ℓ under calibrated perturbation
+
+C3. Positive self-purification margin:
+    R_self,ℓ > coupling_costℓ for sustained periods
+
+C4. Bounded projection error:
+    ||Nℓ − Pℓ(N_G)|| < ε_alignment,ℓ
+    (not exact identity)
+
+C5. Local topology safety:
+    no model-matched local SCC remains supercritical;
+    transient amplification/return certificate passes
+
+C6. External correctness:
+    PRR+ or equivalent external-anchor test passes;
+    internal agreement alone is insufficient
+
+C7. Debt service:
+    restoration/resolution debt declines rather than being hidden by suppression
+
+C8. Adaptability floor:
+    σ_int,ℓ ≥ σ_min,ℓ and output/search diversity is non-decreasing
+    → Frozen Rest and local atrophy excluded
+
+C9. Withdrawal robustness:
+    removal or reduction of extraordinary intervention does not immediately re-ignite Storm
+```
+
+Failure of C1 means the Storm is still active. Failure of C2–C5 means the local system has not matured enough to carry coupling. Failure of C6–C7 means apparent recovery may be referenced to a corrupted frame. Failure of C8 means the system may be stable only because exploration was destroyed. Failure of C9 indicates intervention dependency rather than autonomous recovery.
+
+##### §29.6.3.7 Three reference-resolution pathways
+
+When Local–Global tension reaches its critical band, the correct resolution is not automatically forced local conformity.
+
+**R-1 — Local realignment.** Use when the local deviation is unsupported by terrain evidence, fails external calibration, or creates destructive coupling. The Local North Star is moved toward the refreshed Global projection while preserving a terrain-specific residual where viable.
+
+**R-2 — Global reference update.** Use when a local deviation is externally validated, repeatable, transferable, and improves value yield or survival without violating the existential criterion. The Global North Star slowly incorporates the local discovery.
+
+**R-3 — Structural split.** Use when both references are internally coherent but cannot remain coupled without recurrent supercritical tension. The branch becomes an autonomous unit with its Local North Star promoted to the new unit's Global reference, while preserving inter-unit communication and boundary compatibility.
+
+Selection principle:
+
+$$
+\mathrm{Path}^{*}
+=\arg\min_{R1,R2,R3}
+\left(C_{\mathrm{path}}+D_{\mathrm{information\ loss}}+C_{\mathrm{recurrence}}\right).
+$$
+
+This path selection closes the false dichotomy between “Local submits to Global” and “Global loses control.” Mature governance can correct the local map, learn from it, or change the topology.
+
+##### §29.6.3.8 Operational interpretation and predictions
+
+The integrated proposition generates the following testable predictions:
+
+1. **Moderate-tension maturation:** Local units maintained in a bounded non-zero tension band will develop larger perturbation-return basins and higher validated innovation rates than units subjected either to exact alignment or persistent supercritical conflict.
+2. **Recurrence prediction:** recurrence after apparent Storm termination will be predicted better by the weakest Local North Star strength / self-purification margin / SCC certificate than by global $\hat R$ alone.
+3. **Forced-identity cost:** policies that minimize $D_{c,\ell}$ by direct prescription rather than projection learning will initially reduce visible conflict but later increase intervention dependency, reference brittleness, or Silent Criticality.
+4. **Bidirectional learning advantage:** permitting R-2 updates from independently validated local innovations will increase long-run VCZ residence time relative to systems that allow only R-1 correction.
+5. **Eye-readability prediction:** interventions that reduce directional privilege and mutual-reference gain while preserving local variance will restore Local North Star identifiability faster than interventions that merely reduce all activity.
+
+##### §29.6.3.9 Status boundary and open calibration
+
+The following are established elsewhere and only reorganized here:
+
+- Storm onset/exit thresholds and propagation criteria,
+- VCZ as a positive-volume near-critical operating region,
+- North Star external anchoring and per-tier projection,
+- Search–Stabilize–Rest and Separate–Mature–Couple–Integrate–Expand cycles,
+- R-1/R-2/R-3 reference-resolution alternatives,
+- RT distinction between Storm termination and genuine recovery.
+
+The following are new synthesis claims in this subsection:
+
+- the explicit identification of the “storm eye” as a Local North Star readability region,
+- the three-level T1/T2/T3 release hierarchy,
+- the nine-condition joint completion gate,
+- the claim that Local North Star maturation plus bounded Local–Global projection consistency is the structural completion criterion for the Storm–Recovery cycle.
+
+Open problems include architecture-specific calibration of $S_{N,\min,\ell}$, $\varepsilon_{\mathrm{align},\ell}$, $\sigma_{\min,\ell}$, perturbation classes, SCC model families, path-selection costs, and the minimum withdrawal-verification horizon. Until these are calibrated, §29.6.3 is an operational synthesis and theorem candidate, not a universal sufficiency theorem.
 
 ---
 
